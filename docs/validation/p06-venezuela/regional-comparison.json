@@ -1,0 +1,50 @@
+{
+  "regional_checks": [
+    {
+      "region": "Mor\u00f3n coast",
+      "bbox": [
+        -68.3,
+        10.45,
+        -68.05,
+        10.65
+      ],
+      "valid_cells": 2362,
+      "median_cm": -18.35488510131836,
+      "p10_cm": -25.1759033203125,
+      "p90_cm": 30.18828010559082
+    },
+    {
+      "region": "Airport / Catia La Mar",
+      "bbox": [
+        -67.1,
+        10.55,
+        -66.95,
+        10.64
+      ],
+      "valid_cells": 862,
+      "median_cm": -27.614599227905273,
+      "p10_cm": -51.526580810546875,
+      "p90_cm": 15.373825073242188
+    },
+    {
+      "region": "La Guaira coast",
+      "bbox": [
+        -66.97,
+        10.56,
+        -66.8,
+        10.65
+      ],
+      "valid_cells": 315,
+      "median_cm": -74.75514221191406,
+      "p10_cm": -86.32625579833984,
+      "p90_cm": -54.854034423828125
+    }
+  ],
+  "overlap_difference_cm": {
+    "median": 2.652495861053467,
+    "p90": 40.3112907409668,
+    "max": 79.50665283203125
+  },
+  "meaning": "Regional boxes are approximate engineering comparisons. Percentiles describe spatial values, not uncertainty or independent validation. Source dates, LOS vectors and reference origins differ.",
+  "job_id": "4c623596cf8442de8127a14a7071d11e"
+}

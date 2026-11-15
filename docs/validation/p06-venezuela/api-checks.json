@@ -1,0 +1,79 @@
+[
+  {
+    "job_id": "4c623596cf8442de8127a14a7071d11e",
+    "layer": "event_displacement_cm",
+    "status": 200,
+    "geoTiff_status": 200,
+    "range": [
+      -50.0,
+      50.0
+    ],
+    "palette": "quake"
+  },
+  {
+    "job_id": "4c623596cf8442de8127a14a7071d11e",
+    "layer": "event_source",
+    "status": 200,
+    "geoTiff_status": 200,
+    "range": [
+      1.0,
+      3.0
+    ],
+    "palette": "standard"
+  },
+  {
+    "job_id": "4c623596cf8442de8127a14a7071d11e",
+    "layer": "event_coverage",
+    "status": 200,
+    "geoTiff_status": 200,
+    "range": [
+      1.0,
+      2.0
+    ],
+    "palette": "standard"
+  },
+  {
+    "job_id": "4c623596cf8442de8127a14a7071d11e",
+    "layer": "event_overlap_spread",
+    "status": 200,
+    "geoTiff_status": 200,
+    "range": [
+      1.930320029258728,
+      55.22238098144531
+    ],
+    "palette": "standard"
+  },
+  {
+    "job_id": "4c623596cf8442de8127a14a7071d11e",
+    "layer": "reference_support",
+    "status": 200,
+    "geoTiff_status": 200,
+    "range": [
+      0.0,
+      1.0
+    ],
+    "palette": "standard"
+  },
+  {
+    "job_id": "4c623596cf8442de8127a14a7071d11e",
+    "layer": "observation_0",
+    "status": 200,
+    "geoTiff_status": 200,
+    "range": [
+      -50.0,
+      50.0
+    ],
+    "palette": "quake"
+  },
+  {
+    "job_id": "4c623596cf8442de8127a14a7071d11e",
+    "layer": "group_1_pair_0",
+    "status": 200,
+    "geoTiff_status": 200,
+    "range": [
+      -500.0,
+      500.0
+    ],
+    "palette": "quake"
+  }
+]

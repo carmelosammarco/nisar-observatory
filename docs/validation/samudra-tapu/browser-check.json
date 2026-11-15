@@ -1,0 +1,54 @@
+{
+  "checked_date": "2026-10-20",
+  "provider_constraint": "NASA Earthdata/ASF L-band only; user declined Bhoonidhi sign-in",
+  "area_wsen": [
+    77.36,
+    32.39,
+    77.57,
+    32.56
+  ],
+  "vertex": {
+    "url": "https://search.asf.alaska.edu/",
+    "science_product": "GOFF",
+    "initial_calendar_range": [
+      "2026-01-01",
+      "2026-01-31"
+    ],
+    "widened_calendar_range": [
+      "2025-12-01",
+      "2026-02-28"
+    ],
+    "production_configurations": [
+      "PR",
+      "UR",
+      "OD"
+    ],
+    "maturity_filter": "unrestricted",
+    "displayed_result": "0 Files / NO RESULTS",
+    "interpretation": "Not sufficient to prove absence during catalog instability",
+    "evidence": "browser/vertex-search.png"
+  },
+  "earthdata_search": {
+    "url": "https://search.earthdata.nasa.gov/search?q=NISAR%20GOFF",
+    "displayed_error": "Something went wrong fetching collection search results",
+    "official_alert": "Starting in the afternoon of 10/19/26, CMR has had issues with Elasticsearch stability. CMR is up and running at the time of writing this. We are currently working on getting a new elasticsearch cluster running, and are monitoring the current cluster in case we need to revive it again.",
+    "evidence": "browser/earthdata-search-error.png"
+  },
+  "bhoonidhi": {
+    "url": "https://bhoonidhi.nrsc.gov.in/bhoonidhi/index.html",
+    "calendar_range": [
+      "2026-01-01",
+      "2026-01-31"
+    ],
+    "selected_satellite": "NISAR",
+    "anonymous_sensor_listing": "NISAR_SSAR_GOFF disabled / unavailable for selected date range",
+    "public_banner": "NISAR S-SAR data available from 08-Jul-2026 onwards.",
+    "release_page": "https://bhoonidhi.nrsc.gov.in/NISAR/NisarProducts.html",
+    "release_page_access_text": "Register at Bhoonidhi --- Login --- Browse Data for Jan-Feb 2026 --- Download",
+    "interpretation": "Public access text mentions Jan-Feb but does not identify a Samudra Tapu GOFF pair. No authenticated catalog checked. No band inference made for the study.",
+    "evidence": "browser/bhoonidhi-january.png"
+  },
+  "exact_january_pair_dates": "not verified",
+  "satellite_files_downloaded": 0,
+  "application_or_examples_changed": false
+}

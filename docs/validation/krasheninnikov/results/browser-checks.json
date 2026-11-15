@@ -1,0 +1,35 @@
+{
+  "run": "ebdcd1ba74a246ebada10123d2817e32",
+  "preset": "Krasheninnikov NASA area",
+  "automatically_selected_local_sources": 5,
+  "search_dates": [
+    "2025-07-30",
+    "2026-10-20"
+  ],
+  "settings": {
+    "method": "evolving",
+    "cell_spacing_m": 20,
+    "baseline_end": "2026-06-18",
+    "channel": "HHHH",
+    "smoothing_sigma_m": 40
+  },
+  "completed_in_browser": true,
+  "reopened_saved_view": {
+    "layer": "latest_departure",
+    "palette": "diverging",
+    "range_db": [
+      -8,
+      8
+    ]
+  },
+  "time_exploration": {
+    "final_date": "2026-08-17",
+    "shared_range_db": [
+      -17.716499,
+      -2.36319
+    ],
+    "custom_change_range_reset": true
+  },
+  "screenshot": "../figures/browser-p06-result.png",
+  "new_example_installed": false
+}

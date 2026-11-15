@@ -1,0 +1,25 @@
+{
+  "id": "3e234a4c589947f99ce7978fa4cf2c5e",
+  "kind": "area_download",
+  "status": "running",
+  "created_at": "2026-10-20T18:41:09.706450+00:00",
+  "message": "Preparing native-grid area extracts",
+  "progress": 0,
+  "results": {},
+  "cancelled": false,
+  "request": {
+    "bbox": [
+      160.15,
+      54.51,
+      160.5,
+      54.7
+    ],
+    "granules": [
+      "G4240345872-ASF",
+      "G4250844505-ASF",
+      "G4252643155-ASF",
+      "G4260821003-ASF",
+      "G4285465897-ASF"
+    ]
+  }
+}

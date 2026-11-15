@@ -1,0 +1,479 @@
+{
+  "application_version": "0.8.9",
+  "processing_trace": {
+    "version": "1.0.0",
+    "stages": 4,
+    "captured_maps": 0,
+    "stage_evidence": [
+      {
+        "step": 1,
+        "operation": "water_rule",
+        "maps": [
+          {
+            "id": "observation_0",
+            "role": "Saved method evidence",
+            "unit": "class",
+            "label": "Open-water candidate \u00b7 2026-08-10"
+          },
+          {
+            "id": "observation_1",
+            "role": "Saved method evidence",
+            "unit": "class",
+            "label": "Open-water candidate \u00b7 2026-08-22"
+          },
+          {
+            "id": "observation_2",
+            "role": "Saved method evidence",
+            "unit": "class",
+            "label": "Open-water candidate \u00b7 2026-09-03"
+          },
+          {
+            "id": "observation_3",
+            "role": "Saved method evidence",
+            "unit": "class",
+            "label": "Open-water candidate \u00b7 2026-09-15"
+          },
+          {
+            "id": "observation_4",
+            "role": "Saved method evidence",
+            "unit": "class",
+            "label": "Open-water candidate \u00b7 2026-09-27"
+          },
+          {
+            "id": "observation_5",
+            "role": "Saved method evidence",
+            "unit": "class",
+            "label": "Open-water candidate \u00b7 2026-10-09"
+          },
+          {
+            "id": "hh_sigma",
+            "role": "Saved method evidence",
+            "unit": "dB",
+            "label": "Latest HH sigma-zero backscatter"
+          },
+          {
+            "id": "hv_sigma",
+            "role": "Saved method evidence",
+            "unit": "dB",
+            "label": "Latest HV sigma-zero backscatter"
+          },
+          {
+            "id": "water",
+            "role": "Saved method evidence",
+            "unit": "class",
+            "label": "Latest open-water candidate"
+          },
+          {
+            "id": "water_state",
+            "role": "Saved method evidence",
+            "unit": "class",
+            "label": "Latest water state \u00b7 0 dry candidate, 1 water candidate, 2 ambiguous"
+          }
+        ],
+        "diagnostic_keys": [
+          "water_method",
+          "water_states",
+          "water_validation"
+        ],
+        "unavailable_reason": null
+      },
+      {
+        "step": 2,
+        "operation": "wetland_history",
+        "maps": [
+          {
+            "id": "count",
+            "role": "Saved method evidence",
+            "unit": "count",
+            "label": "Number of valid observations"
+          },
+          {
+            "id": "threshold_sensitive",
+            "role": "Saved method evidence",
+            "unit": "class",
+            "label": "Classification changes within the declared 2 dB threshold scenarios"
+          },
+          {
+            "id": "occupancy",
+            "role": "Saved method evidence",
+            "unit": "fraction",
+            "label": "Observed water-candidate fraction"
+          }
+        ],
+        "diagnostic_keys": [
+          "zones",
+          "threshold_sensitivity",
+          "grid_sensitivity"
+        ],
+        "unavailable_reason": null
+      },
+      {
+        "step": 3,
+        "operation": "water_tracking",
+        "maps": [],
+        "diagnostic_keys": [
+          "tracking"
+        ],
+        "unavailable_reason": null
+      },
+      {
+        "step": 4,
+        "operation": "publish",
+        "maps": [
+          {
+            "id": "occupancy",
+            "role": "Saved method evidence",
+            "unit": "fraction",
+            "label": "Observed water-candidate fraction"
+          }
+        ],
+        "diagnostic_keys": [],
+        "unavailable_reason": null
+      }
+    ]
+  },
+  "metrics": {
+    "common_valid_area_km2": 2.8648000000000002,
+    "baseline_water_candidate_km2": 0.2548,
+    "latest_water_candidate_km2": 0.24600000000000002,
+    "water_gain_km2": 0.0592,
+    "water_loss_km2": 0.068,
+    "net_water_change_km2": -0.0088,
+    "intermittent_water_candidate_km2": 0.732,
+    "always_water_candidate_km2": 0.054400000000000004
+  },
+  "historical_metric_comparison": {
+    "common_valid_area_km2": {
+      "previous": 2.8648000000000002,
+      "current": 2.8648000000000002,
+      "unchanged": true
+    },
+    "baseline_water_candidate_km2": {
+      "previous": 0.2548,
+      "current": 0.2548,
+      "unchanged": true
+    },
+    "latest_water_candidate_km2": {
+      "previous": 0.24600000000000002,
+      "current": 0.24600000000000002,
+      "unchanged": true
+    },
+    "water_gain_km2": {
+      "previous": 0.0592,
+      "current": 0.0592,
+      "unchanged": true
+    },
+    "water_loss_km2": {
+      "previous": 0.068,
+      "current": 0.068,
+      "unchanged": true
+    },
+    "net_water_change_km2": {
+      "previous": -0.0088,
+      "current": -0.0088,
+      "unchanged": true
+    },
+    "intermittent_water_candidate_km2": {
+      "previous": 0.732,
+      "current": 0.732,
+      "unchanged": true
+    },
+    "always_water_candidate_km2": {
+      "previous": 0.054400000000000004,
+      "current": 0.054400000000000004,
+      "unchanged": true
+    }
+  },
+  "case": "P02_Wheeler_Marsh",
+  "method": "P02",
+  "source_count": 6,
+  "grid_shape": [
+    242,
+    242
+  ],
+  "resolution": 20.0,
+  "steps": [
+    {
+      "operation": "water_rule",
+      "parameters": {
+        "method": "hh_hv",
+        "threshold_db": -17.0,
+        "hh_db": -14.0,
+        "hv_db": -23.0
+      }
+    },
+    {
+      "operation": "wetland_history",
+      "parameters": {
+        "ambiguity_db": 1.0
+      }
+    },
+    {
+      "operation": "water_tracking",
+      "parameters": {
+        "minimum_m2": 30000.0
+      }
+    },
+    {
+      "operation": "publish",
+      "parameters": {
+        "layer": "occupancy"
+      }
+    }
+  ],
+  "reader_arrays_identical": true,
+  "engine_version": "1.1.0",
+  "comparisons": {
+    "backscatter": {
+      "editable_layer": "backscatter",
+      "identical": true,
+      "sha256": "b18b183d34efd99c191c762aca4053a6b2a4b65707397a2a0f8720d52c67ea85"
+    },
+    "observation_0": {
+      "editable_layer": "observation_0",
+      "identical": true,
+      "sha256": "1d48842428c85b04ebe5712207a574705c2780da5a217c85fbbac9b79eb0be26"
+    },
+    "observation_1": {
+      "editable_layer": "observation_1",
+      "identical": true,
+      "sha256": "a0f19212d5f37031cb42a7ff7eda16dd263c882d982880d5074b8f6dadfbcf87"
+    },
+    "observation_2": {
+      "editable_layer": "observation_2",
+      "identical": true,
+      "sha256": "302cf01ecbc693936563b500b1d102deb962258a9827f75cb26de3880e6b7b51"
+    },
+    "observation_3": {
+      "editable_layer": "observation_3",
+      "identical": true,
+      "sha256": "818f8f3f4649f69d92585840d17ea505722bd9585826ea1ef8d87befbf05dca7"
+    },
+    "observation_4": {
+      "editable_layer": "observation_4",
+      "identical": true,
+      "sha256": "667c43a5420e734d6dc16d8be82c1a4018294510d22eaf604773e2502616e28b"
+    },
+    "observation_5": {
+      "editable_layer": "observation_5",
+      "identical": true,
+      "sha256": "bb9587a1697fab55c5f13c1afa797474782b5cf3cd05e028847371b539fb10ca"
+    },
+    "change": {
+      "editable_layer": "change",
+      "identical": true,
+      "sha256": "dae0d30ae34a3486bd44855f81d04597b84803510fb572564197333608e4f6d4"
+    },
+    "variability": {
+      "editable_layer": "variability",
+      "identical": true,
+      "sha256": "a0e02e88f6b742dca1a3782aea179038fa6a7318669ff6172a9c3c1893d34839"
+    },
+    "count": {
+      "editable_layer": "count",
+      "identical": true,
+      "sha256": "74d4e27b1627a0ae5bcb609573c8a693f5da4301839b034d9e0dae233c4cab0f"
+    },
+    "baseline_departure": {
+      "editable_layer": "baseline_departure",
+      "identical": true,
+      "sha256": "dae0d30ae34a3486bd44855f81d04597b84803510fb572564197333608e4f6d4"
+    },
+    "standardized_departure": {
+      "editable_layer": "standardized_departure",
+      "identical": true,
+      "sha256": "dae0d30ae34a3486bd44855f81d04597b84803510fb572564197333608e4f6d4"
+    },
+    "hh_sigma": {
+      "editable_layer": "hh_sigma",
+      "identical": true,
+      "sha256": "e823cfc188792e74351ff749f5e2770b4461016317e3846019d5d93b215cc7d6"
+    },
+    "hv_sigma": {
+      "editable_layer": "hv_sigma",
+      "identical": true,
+      "sha256": "b94f5e8c65090a48b1f991c1c2e146fff181b4e14fd72351127e373afc7b0d81"
+    },
+    "water": {
+      "editable_layer": "water",
+      "identical": true,
+      "sha256": "bb9587a1697fab55c5f13c1afa797474782b5cf3cd05e028847371b539fb10ca"
+    },
+    "water_state": {
+      "editable_layer": "water_state",
+      "identical": true,
+      "sha256": "28518b3ee2d666e82161ceede59b719db8f62125c616f4887811f0389f1e26f4"
+    },
+    "threshold_sensitive": {
+      "editable_layer": "threshold_sensitive",
+      "identical": true,
+      "sha256": "205d7dcb6d2f0c6e496247090b28123955b5e676275407d4d04d0aa1331df549"
+    },
+    "occupancy": {
+      "editable_layer": "occupancy",
+      "identical": true,
+      "sha256": "8d3ec821627affe446905a51d2f5be5611c8dcbfd0cae9e238689e341afd983e"
+    },
+    "quality_accepted_fraction_0": {
+      "editable_layer": "quality_accepted_fraction_0",
+      "identical": true,
+      "sha256": "3a32f46c88c23be8cf42e12f8716c22c718c0d9ae4b4e49b57708c42e0e4a0f0"
+    },
+    "quality_missing_fraction_0": {
+      "editable_layer": "quality_missing_fraction_0",
+      "identical": true,
+      "sha256": "4d2f95f6bf89ccd3991b27c5531484f20440a9de1de69ac5a66a3f834b5a2a25"
+    },
+    "quality_rejected_nonpositive_power_0": {
+      "editable_layer": "quality_rejected_nonpositive_power_0",
+      "identical": true,
+      "sha256": "4d2f95f6bf89ccd3991b27c5531484f20440a9de1de69ac5a66a3f834b5a2a25"
+    },
+    "quality_rejected_source_mask_0": {
+      "editable_layer": "quality_rejected_source_mask_0",
+      "identical": true,
+      "sha256": "4d2f95f6bf89ccd3991b27c5531484f20440a9de1de69ac5a66a3f834b5a2a25"
+    },
+    "quality_water_joint_accepted_fraction_0": {
+      "editable_layer": "quality_water_joint_accepted_fraction_0",
+      "identical": true,
+      "sha256": "3a32f46c88c23be8cf42e12f8716c22c718c0d9ae4b4e49b57708c42e0e4a0f0"
+    },
+    "quality_accepted_fraction_1": {
+      "editable_layer": "quality_accepted_fraction_1",
+      "identical": true,
+      "sha256": "3a32f46c88c23be8cf42e12f8716c22c718c0d9ae4b4e49b57708c42e0e4a0f0"
+    },
+    "quality_missing_fraction_1": {
+      "editable_layer": "quality_missing_fraction_1",
+      "identical": true,
+      "sha256": "4d2f95f6bf89ccd3991b27c5531484f20440a9de1de69ac5a66a3f834b5a2a25"
+    },
+    "quality_rejected_nonpositive_power_1": {
+      "editable_layer": "quality_rejected_nonpositive_power_1",
+      "identical": true,
+      "sha256": "4d2f95f6bf89ccd3991b27c5531484f20440a9de1de69ac5a66a3f834b5a2a25"
+    },
+    "quality_rejected_source_mask_1": {
+      "editable_layer": "quality_rejected_source_mask_1",
+      "identical": true,
+      "sha256": "4d2f95f6bf89ccd3991b27c5531484f20440a9de1de69ac5a66a3f834b5a2a25"
+    },
+    "quality_water_joint_accepted_fraction_1": {
+      "editable_layer": "quality_water_joint_accepted_fraction_1",
+      "identical": true,
+      "sha256": "3a32f46c88c23be8cf42e12f8716c22c718c0d9ae4b4e49b57708c42e0e4a0f0"
+    },
+    "quality_accepted_fraction_2": {
+      "editable_layer": "quality_accepted_fraction_2",
+      "identical": true,
+      "sha256": "3a32f46c88c23be8cf42e12f8716c22c718c0d9ae4b4e49b57708c42e0e4a0f0"
+    },
+    "quality_missing_fraction_2": {
+      "editable_layer": "quality_missing_fraction_2",
+      "identical": true,
+      "sha256": "4d2f95f6bf89ccd3991b27c5531484f20440a9de1de69ac5a66a3f834b5a2a25"
+    },
+    "quality_rejected_nonpositive_power_2": {
+      "editable_layer": "quality_rejected_nonpositive_power_2",
+      "identical": true,
+      "sha256": "4d2f95f6bf89ccd3991b27c5531484f20440a9de1de69ac5a66a3f834b5a2a25"
+    },
+    "quality_rejected_source_mask_2": {
+      "editable_layer": "quality_rejected_source_mask_2",
+      "identical": true,
+      "sha256": "4d2f95f6bf89ccd3991b27c5531484f20440a9de1de69ac5a66a3f834b5a2a25"
+    },
+    "quality_water_joint_accepted_fraction_2": {
+      "editable_layer": "quality_water_joint_accepted_fraction_2",
+      "identical": true,
+      "sha256": "3a32f46c88c23be8cf42e12f8716c22c718c0d9ae4b4e49b57708c42e0e4a0f0"
+    },
+    "quality_accepted_fraction_3": {
+      "editable_layer": "quality_accepted_fraction_3",
+      "identical": true,
+      "sha256": "3a32f46c88c23be8cf42e12f8716c22c718c0d9ae4b4e49b57708c42e0e4a0f0"
+    },
+    "quality_missing_fraction_3": {
+      "editable_layer": "quality_missing_fraction_3",
+      "identical": true,
+      "sha256": "4d2f95f6bf89ccd3991b27c5531484f20440a9de1de69ac5a66a3f834b5a2a25"
+    },
+    "quality_rejected_nonpositive_power_3": {
+      "editable_layer": "quality_rejected_nonpositive_power_3",
+      "identical": true,
+      "sha256": "4d2f95f6bf89ccd3991b27c5531484f20440a9de1de69ac5a66a3f834b5a2a25"
+    },
+    "quality_rejected_source_mask_3": {
+      "editable_layer": "quality_rejected_source_mask_3",
+      "identical": true,
+      "sha256": "4d2f95f6bf89ccd3991b27c5531484f20440a9de1de69ac5a66a3f834b5a2a25"
+    },
+    "quality_water_joint_accepted_fraction_3": {
+      "editable_layer": "quality_water_joint_accepted_fraction_3",
+      "identical": true,
+      "sha256": "3a32f46c88c23be8cf42e12f8716c22c718c0d9ae4b4e49b57708c42e0e4a0f0"
+    },
+    "quality_accepted_fraction_4": {
+      "editable_layer": "quality_accepted_fraction_4",
+      "identical": true,
+      "sha256": "3a32f46c88c23be8cf42e12f8716c22c718c0d9ae4b4e49b57708c42e0e4a0f0"
+    },
+    "quality_missing_fraction_4": {
+      "editable_layer": "quality_missing_fraction_4",
+      "identical": true,
+      "sha256": "4d2f95f6bf89ccd3991b27c5531484f20440a9de1de69ac5a66a3f834b5a2a25"
+    },
+    "quality_rejected_nonpositive_power_4": {
+      "editable_layer": "quality_rejected_nonpositive_power_4",
+      "identical": true,
+      "sha256": "4d2f95f6bf89ccd3991b27c5531484f20440a9de1de69ac5a66a3f834b5a2a25"
+    },
+    "quality_rejected_source_mask_4": {
+      "editable_layer": "quality_rejected_source_mask_4",
+      "identical": true,
+      "sha256": "4d2f95f6bf89ccd3991b27c5531484f20440a9de1de69ac5a66a3f834b5a2a25"
+    },
+    "quality_water_joint_accepted_fraction_4": {
+      "editable_layer": "quality_water_joint_accepted_fraction_4",
+      "identical": true,
+      "sha256": "3a32f46c88c23be8cf42e12f8716c22c718c0d9ae4b4e49b57708c42e0e4a0f0"
+    },
+    "quality_accepted_fraction_5": {
+      "editable_layer": "quality_accepted_fraction_5",
+      "identical": true,
+      "sha256": "3a32f46c88c23be8cf42e12f8716c22c718c0d9ae4b4e49b57708c42e0e4a0f0"
+    },
+    "quality_missing_fraction_5": {
+      "editable_layer": "quality_missing_fraction_5",
+      "identical": true,
+      "sha256": "4d2f95f6bf89ccd3991b27c5531484f20440a9de1de69ac5a66a3f834b5a2a25"
+    },
+    "quality_rejected_nonpositive_power_5": {
+      "editable_layer": "quality_rejected_nonpositive_power_5",
+      "identical": true,
+      "sha256": "4d2f95f6bf89ccd3991b27c5531484f20440a9de1de69ac5a66a3f834b5a2a25"
+    },
+    "quality_rejected_source_mask_5": {
+      "editable_layer": "quality_rejected_source_mask_5",
+      "identical": true,
+      "sha256": "4d2f95f6bf89ccd3991b27c5531484f20440a9de1de69ac5a66a3f834b5a2a25"
+    },
+    "quality_water_joint_accepted_fraction_5": {
+      "editable_layer": "quality_water_joint_accepted_fraction_5",
+      "identical": true,
+      "sha256": "3a32f46c88c23be8cf42e12f8716c22c718c0d9ae4b4e49b57708c42e0e4a0f0"
+    },
+    "polarization_ratio_change": {
+      "editable_layer": "polarization_ratio_change",
+      "identical": true,
+      "sha256": "d5b30fb709d8a0f8d12180a7d4258947bba2d016a5a8ca92e04d11dc1f2b245d"
+    }
+  },
+  "metrics_identical": true,
+  "series_identical": true,
+  "verification_scope": "All existing numeric layers, metrics and dated series",
+  "result": "PASS",
+  "remote_science_bytes": 0,
+  "browser_export_check": "not available: historical saved run was cleared; direct protected-input comparison still completed"
+}

@@ -1,0 +1,444 @@
+{
+  "application_version": "0.8.9",
+  "processing_trace": {
+    "version": "1.0.0",
+    "stages": 6,
+    "captured_maps": 3,
+    "stage_evidence": [
+      {
+        "step": 1,
+        "operation": "surface_baseline",
+        "maps": [
+          {
+            "id": "trace_surface_baseline_baseline_brightness_e3b0c442",
+            "role": "Captured intermediate",
+            "unit": "dB",
+            "label": "Declared median brightness baseline"
+          },
+          {
+            "id": "trace_surface_baseline_baseline_spread_e3b0c442",
+            "role": "Captured intermediate",
+            "unit": "dB",
+            "label": "Baseline robust spread with the declared noise floor"
+          },
+          {
+            "id": "baseline_departure",
+            "role": "Saved method evidence",
+            "unit": "dB",
+            "label": "Latest minus median of the declared baseline dates"
+          },
+          {
+            "id": "standardized_departure",
+            "role": "Saved method evidence",
+            "unit": "ratio",
+            "label": "Baseline departure divided by robust spread with declared noise floor"
+          }
+        ],
+        "diagnostic_keys": [
+          "baseline"
+        ],
+        "unavailable_reason": null
+      },
+      {
+        "step": 2,
+        "operation": "smooth",
+        "maps": [
+          {
+            "id": "latest_departure",
+            "role": "Saved method evidence",
+            "unit": "dB",
+            "label": "Latest smoothed change from the declared baseline"
+          }
+        ],
+        "diagnostic_keys": [],
+        "unavailable_reason": null
+      },
+      {
+        "step": 3,
+        "operation": "signed_change",
+        "maps": [
+          {
+            "id": "trace_signed_change_signed_before_patches_e3b0c442",
+            "role": "Captured intermediate",
+            "unit": "class",
+            "label": "Latest signed threshold before patch filtering"
+          }
+        ],
+        "diagnostic_keys": [
+          "surface_method"
+        ],
+        "unavailable_reason": null
+      },
+      {
+        "step": 4,
+        "operation": "patches",
+        "maps": [
+          {
+            "id": "surface",
+            "role": "Saved method evidence",
+            "unit": "class",
+            "label": "Changed patches at the latest observation"
+          },
+          {
+            "id": "change_direction",
+            "role": "Saved method evidence",
+            "unit": "class",
+            "label": "Latest qualifying brightness increase (+1) or decrease (\u22121)"
+          }
+        ],
+        "diagnostic_keys": [],
+        "unavailable_reason": null
+      },
+      {
+        "step": 5,
+        "operation": "surface_history",
+        "maps": [
+          {
+            "id": "confirmed_change",
+            "role": "Saved method evidence",
+            "unit": "class",
+            "label": "Latest same-sign change observed on at least two consecutive later dates"
+          },
+          {
+            "id": "first_change",
+            "role": "Saved method evidence",
+            "unit": "observation index",
+            "label": "First acquired date meeting the signed change and patch rules"
+          },
+          {
+            "id": "repeat_count",
+            "role": "Saved method evidence",
+            "unit": "count",
+            "label": "Consecutive latest observations supporting the same change direction"
+          },
+          {
+            "id": "largest_step",
+            "role": "Saved method evidence",
+            "unit": "observation index",
+            "label": "Index of observation ending the largest unsmoothed brightness step"
+          }
+        ],
+        "diagnostic_keys": [
+          "surface_method",
+          "first_change_calendar",
+          "step_calendar"
+        ],
+        "unavailable_reason": null
+      },
+      {
+        "step": 6,
+        "operation": "publish",
+        "maps": [
+          {
+            "id": "latest_departure",
+            "role": "Saved method evidence",
+            "unit": "dB",
+            "label": "Latest smoothed change from the declared baseline"
+          }
+        ],
+        "diagnostic_keys": [],
+        "unavailable_reason": null
+      }
+    ]
+  },
+  "metrics": {
+    "latest_change_area_km2": 145.6028,
+    "repeated_latest_change_area_km2": 128.292,
+    "increasing_area_km2": 145.6028,
+    "decreasing_area_km2": 0.0,
+    "common_valid_area_km2": 478.0604
+  },
+  "historical_metric_comparison": {
+    "latest_change_area_km2": {
+      "previous": 145.6028,
+      "current": 145.6028,
+      "unchanged": true
+    },
+    "repeated_latest_change_area_km2": {
+      "previous": 128.292,
+      "current": 128.292,
+      "unchanged": true
+    },
+    "increasing_area_km2": {
+      "previous": 145.6028,
+      "current": 145.6028,
+      "unchanged": true
+    },
+    "decreasing_area_km2": {
+      "previous": 0.0,
+      "current": 0.0,
+      "unchanged": true
+    },
+    "common_valid_area_km2": {
+      "previous": 478.0604,
+      "current": 478.0604,
+      "unchanged": true
+    }
+  },
+  "case": "P06_Krasheninnikov",
+  "method": "P06",
+  "source_count": 5,
+  "grid_shape": [
+    1080,
+    1151
+  ],
+  "resolution": 20.0,
+  "steps": [
+    {
+      "operation": "surface_baseline",
+      "parameters": {
+        "count": 1,
+        "end": "2026-06-18",
+        "noise_floor_db": 1.0
+      }
+    },
+    {
+      "operation": "smooth",
+      "parameters": {
+        "sigma_m": 40.0
+      }
+    },
+    {
+      "operation": "signed_change",
+      "parameters": {
+        "threshold_db": 3.0
+      }
+    },
+    {
+      "operation": "patches",
+      "parameters": {
+        "minimum_m2": 30000.0
+      }
+    },
+    {
+      "operation": "surface_history",
+      "parameters": {}
+    },
+    {
+      "operation": "publish",
+      "parameters": {
+        "layer": "latest_departure"
+      }
+    }
+  ],
+  "reader_arrays_identical": true,
+  "engine_version": "1.1.0",
+  "comparisons": {
+    "backscatter": {
+      "editable_layer": "backscatter",
+      "identical": true,
+      "sha256": "7220aca8390f316e35bca824448985f6de46bc907919c031ed4f894111c66e35"
+    },
+    "observation_0": {
+      "editable_layer": "observation_0",
+      "identical": true,
+      "sha256": "3619cae053b46ac83981017e3677b233d3cb85ef92ae96f59311cc5ae1071765"
+    },
+    "observation_1": {
+      "editable_layer": "observation_1",
+      "identical": true,
+      "sha256": "06e231d006e01d3130901004f63b97a605a1823bf71ff9123f942bc4740fb55f"
+    },
+    "observation_2": {
+      "editable_layer": "observation_2",
+      "identical": true,
+      "sha256": "9cb3dc846d8f8c21c44656a2d1bf24c5afe46bcbb86da72f099e2a7dff4e8487"
+    },
+    "observation_3": {
+      "editable_layer": "observation_3",
+      "identical": true,
+      "sha256": "d6d50153b3e32cec7f834b377732030b1659184e50949d8de13ec07768af2044"
+    },
+    "observation_4": {
+      "editable_layer": "observation_4",
+      "identical": true,
+      "sha256": "7220aca8390f316e35bca824448985f6de46bc907919c031ed4f894111c66e35"
+    },
+    "change": {
+      "editable_layer": "change",
+      "identical": true,
+      "sha256": "8d20a31cf787520ce46a0db5c11fea128169635e1712490bf580012ee9a15ef3"
+    },
+    "variability": {
+      "editable_layer": "variability",
+      "identical": true,
+      "sha256": "7a3ecc4342d542df1db564a337fd67910e919dd215d98abebbd4cf66978b8c36"
+    },
+    "count": {
+      "editable_layer": "count",
+      "identical": true,
+      "sha256": "2f1e896153f17fd07359f6f99d3f40a1603e81fb83aeb30239cddbeaa3262b93"
+    },
+    "baseline_departure": {
+      "editable_layer": "baseline_departure",
+      "identical": true,
+      "sha256": "8d20a31cf787520ce46a0db5c11fea128169635e1712490bf580012ee9a15ef3"
+    },
+    "standardized_departure": {
+      "editable_layer": "standardized_departure",
+      "identical": true,
+      "sha256": "8d20a31cf787520ce46a0db5c11fea128169635e1712490bf580012ee9a15ef3"
+    },
+    "latest_departure": {
+      "editable_layer": "latest_departure",
+      "identical": true,
+      "sha256": "c2c177f85862870ba0855f63822ca42ae74147177c8120f806fdfbab3941d54f"
+    },
+    "surface": {
+      "editable_layer": "surface",
+      "identical": true,
+      "sha256": "a389e0e50b4dc6c34143061edec3afc91fd2ea1c9ad20c703347d0ca68d8b68c"
+    },
+    "confirmed_change": {
+      "editable_layer": "confirmed_change",
+      "identical": true,
+      "sha256": "6c4af0f91c1a32a064603e2896278b6e58f01ad2765edac04d8b320413391004"
+    },
+    "change_direction": {
+      "editable_layer": "change_direction",
+      "identical": true,
+      "sha256": "a389e0e50b4dc6c34143061edec3afc91fd2ea1c9ad20c703347d0ca68d8b68c"
+    },
+    "first_change": {
+      "editable_layer": "first_change",
+      "identical": true,
+      "sha256": "c19229d022d6a2ff14b5bced3ad6f3c0dded0dc0acf2fa17e93c4e21cb7575ba"
+    },
+    "repeat_count": {
+      "editable_layer": "repeat_count",
+      "identical": true,
+      "sha256": "4c302e707af82355bd1f654488f0a8f97e1607ab16bbc6867388c6005b34be2b"
+    },
+    "dated_departure_1": {
+      "editable_layer": "dated_departure_1",
+      "identical": true,
+      "sha256": "941f3dd9a8281d773ae91a18f1da1ab1fe13f7bcf35a83d89c682c3de5d18995"
+    },
+    "dated_departure_2": {
+      "editable_layer": "dated_departure_2",
+      "identical": true,
+      "sha256": "ae3aa83177d93fad38cfcd3118e638728f7bc5ae45cf498324db99ed0f748926"
+    },
+    "dated_departure_3": {
+      "editable_layer": "dated_departure_3",
+      "identical": true,
+      "sha256": "78ad52120671b8c10427e0c83357f4989d835f1203613a4f1d7324bda63856c4"
+    },
+    "dated_departure_4": {
+      "editable_layer": "dated_departure_4",
+      "identical": true,
+      "sha256": "c2c177f85862870ba0855f63822ca42ae74147177c8120f806fdfbab3941d54f"
+    },
+    "largest_step": {
+      "editable_layer": "largest_step",
+      "identical": true,
+      "sha256": "246980ad501d23e25b48634b6c784a05c4e906005f09972620f166800eacc243"
+    },
+    "quality_accepted_fraction_0": {
+      "editable_layer": "quality_accepted_fraction_0",
+      "identical": true,
+      "sha256": "04393df12abda74fafd6f27c975bddeecaac457d578bfa229d77d170f2a62277"
+    },
+    "quality_missing_fraction_0": {
+      "editable_layer": "quality_missing_fraction_0",
+      "identical": true,
+      "sha256": "88b1b0a04d7fc473de6aabf38e540de8493c4fa77a4ecf92fcc6f347055fa145"
+    },
+    "quality_rejected_nonpositive_power_0": {
+      "editable_layer": "quality_rejected_nonpositive_power_0",
+      "identical": true,
+      "sha256": "9f4c42870a7f04c6dcd8474c6f6ae38350423ebe52b259709f8522d311c8d1a1"
+    },
+    "quality_rejected_source_mask_0": {
+      "editable_layer": "quality_rejected_source_mask_0",
+      "identical": true,
+      "sha256": "9f4c42870a7f04c6dcd8474c6f6ae38350423ebe52b259709f8522d311c8d1a1"
+    },
+    "quality_accepted_fraction_1": {
+      "editable_layer": "quality_accepted_fraction_1",
+      "identical": true,
+      "sha256": "a86e274eec241ca8dc17d4db2acc2d15b324fcaa56abad42e82d6c14b8144679"
+    },
+    "quality_missing_fraction_1": {
+      "editable_layer": "quality_missing_fraction_1",
+      "identical": true,
+      "sha256": "3ea59a483376f8dd6a701c69e922662cbeaa4c2bee75ebc1458b64f5a972f9ed"
+    },
+    "quality_rejected_nonpositive_power_1": {
+      "editable_layer": "quality_rejected_nonpositive_power_1",
+      "identical": true,
+      "sha256": "9f4c42870a7f04c6dcd8474c6f6ae38350423ebe52b259709f8522d311c8d1a1"
+    },
+    "quality_rejected_source_mask_1": {
+      "editable_layer": "quality_rejected_source_mask_1",
+      "identical": true,
+      "sha256": "9f4c42870a7f04c6dcd8474c6f6ae38350423ebe52b259709f8522d311c8d1a1"
+    },
+    "quality_accepted_fraction_2": {
+      "editable_layer": "quality_accepted_fraction_2",
+      "identical": true,
+      "sha256": "1cceaf143782a59730b8460fa08310da9befbae5dda1c4afdd517689c1ac2091"
+    },
+    "quality_missing_fraction_2": {
+      "editable_layer": "quality_missing_fraction_2",
+      "identical": true,
+      "sha256": "75ea8e55b0ee0736da449eb2214f498a5e658be8c6c2e61f08b99399eaf3ed18"
+    },
+    "quality_rejected_nonpositive_power_2": {
+      "editable_layer": "quality_rejected_nonpositive_power_2",
+      "identical": true,
+      "sha256": "9f4c42870a7f04c6dcd8474c6f6ae38350423ebe52b259709f8522d311c8d1a1"
+    },
+    "quality_rejected_source_mask_2": {
+      "editable_layer": "quality_rejected_source_mask_2",
+      "identical": true,
+      "sha256": "9f4c42870a7f04c6dcd8474c6f6ae38350423ebe52b259709f8522d311c8d1a1"
+    },
+    "quality_accepted_fraction_3": {
+      "editable_layer": "quality_accepted_fraction_3",
+      "identical": true,
+      "sha256": "6baaf20359c4149e4fb5be01c9fc6580fadceec8a1ac4c7a80bc9ee23fce5b72"
+    },
+    "quality_missing_fraction_3": {
+      "editable_layer": "quality_missing_fraction_3",
+      "identical": true,
+      "sha256": "0a17f3b40367e2ebcf42d19cdcb0d7aa83cec0f778dc0bfcc712ebc5a7dac606"
+    },
+    "quality_rejected_nonpositive_power_3": {
+      "editable_layer": "quality_rejected_nonpositive_power_3",
+      "identical": true,
+      "sha256": "9f4c42870a7f04c6dcd8474c6f6ae38350423ebe52b259709f8522d311c8d1a1"
+    },
+    "quality_rejected_source_mask_3": {
+      "editable_layer": "quality_rejected_source_mask_3",
+      "identical": true,
+      "sha256": "9f4c42870a7f04c6dcd8474c6f6ae38350423ebe52b259709f8522d311c8d1a1"
+    },
+    "quality_accepted_fraction_4": {
+      "editable_layer": "quality_accepted_fraction_4",
+      "identical": true,
+      "sha256": "d9f9b35800479a64e0754d3570882b31403938b5bd4647649849bc403254b981"
+    },
+    "quality_missing_fraction_4": {
+      "editable_layer": "quality_missing_fraction_4",
+      "identical": true,
+      "sha256": "1b4660361fd780f98fbed90aca768199aeaf674997ca202e38fd4bd36236ea1a"
+    },
+    "quality_rejected_nonpositive_power_4": {
+      "editable_layer": "quality_rejected_nonpositive_power_4",
+      "identical": true,
+      "sha256": "9f4c42870a7f04c6dcd8474c6f6ae38350423ebe52b259709f8522d311c8d1a1"
+    },
+    "quality_rejected_source_mask_4": {
+      "editable_layer": "quality_rejected_source_mask_4",
+      "identical": true,
+      "sha256": "9f4c42870a7f04c6dcd8474c6f6ae38350423ebe52b259709f8522d311c8d1a1"
+    }
+  },
+  "metrics_identical": true,
+  "series_identical": true,
+  "verification_scope": "All existing numeric layers, metrics and dated series",
+  "result": "PASS",
+  "remote_science_bytes": 0,
+  "browser_export_check": "not available: historical saved run was cleared; direct protected-input comparison still completed"
+}

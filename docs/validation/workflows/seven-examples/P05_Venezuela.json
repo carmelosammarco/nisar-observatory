@@ -1,0 +1,516 @@
+{
+  "application_version": "0.8.9",
+  "processing_trace": {
+    "version": "1.0.0",
+    "stages": 3,
+    "captured_maps": 3,
+    "stage_evidence": [
+      {
+        "step": 1,
+        "operation": "event_pairs",
+        "maps": [
+          {
+            "id": "trace_event_pairs_selected_phase_a666dafa",
+            "role": "Captured intermediate",
+            "unit": "rad",
+            "label": "Selected quality-screened input phase \u00b7 061_A_007_4000_SH_P05023"
+          },
+          {
+            "id": "trace_event_pairs_selected_phase_23b92b9e",
+            "role": "Captured intermediate",
+            "unit": "rad",
+            "label": "Selected quality-screened input phase \u00b7 162_A_006_4000_SH_P05023"
+          },
+          {
+            "id": "trace_event_pairs_selected_phase_7edbf6b4",
+            "role": "Captured intermediate",
+            "unit": "rad",
+            "label": "Selected quality-screened input phase \u00b7 162_A_007_4000_SH_P05023"
+          }
+        ],
+        "diagnostic_keys": [
+          "event_selection",
+          "event_mosaic",
+          "event_measurement"
+        ],
+        "unavailable_reason": null
+      },
+      {
+        "step": 2,
+        "operation": "event_los",
+        "maps": [
+          {
+            "id": "group_1_reference_support",
+            "role": "Saved method evidence",
+            "unit": "class",
+            "label": "Fixed reference support shared by every pair \u00b7 061_A_007_4000_SH_P05023"
+          },
+          {
+            "id": "group_1_event_displacement_cm",
+            "role": "Saved method evidence",
+            "unit": "cm",
+            "label": "Relative LOS displacement across the earthquake interval \u00b7 061_A_007_4000_SH_P05023"
+          },
+          {
+            "id": "group_2_reference_support",
+            "role": "Saved method evidence",
+            "unit": "class",
+            "label": "Fixed reference support shared by every pair \u00b7 162_A_006_4000_SH_P05023"
+          },
+          {
+            "id": "group_2_event_displacement_cm",
+            "role": "Saved method evidence",
+            "unit": "cm",
+            "label": "Relative LOS displacement across the earthquake interval \u00b7 162_A_006_4000_SH_P05023"
+          },
+          {
+            "id": "group_3_reference_support",
+            "role": "Saved method evidence",
+            "unit": "class",
+            "label": "Fixed reference support shared by every pair \u00b7 162_A_007_4000_SH_P05023"
+          },
+          {
+            "id": "group_3_event_displacement_cm",
+            "role": "Saved method evidence",
+            "unit": "cm",
+            "label": "Relative LOS displacement across the earthquake interval \u00b7 162_A_007_4000_SH_P05023"
+          },
+          {
+            "id": "event_displacement_cm",
+            "role": "Saved method evidence",
+            "unit": "cm",
+            "label": "Relative LOS displacement \u00b7 event coverage mosaic"
+          },
+          {
+            "id": "event_source",
+            "role": "Saved method evidence",
+            "unit": "source index",
+            "label": "Source group used at each cell \u00b7 see source key"
+          },
+          {
+            "id": "reference_support",
+            "role": "Saved method evidence",
+            "unit": "class",
+            "label": "Union of reference cells used \u00b7 inspect per-group references"
+          },
+          {
+            "id": "event_overlap_spread",
+            "role": "Saved method evidence",
+            "unit": "cm",
+            "label": "Difference between overlapping referenced LOS views"
+          }
+        ],
+        "diagnostic_keys": [
+          "event_mosaic",
+          "event_measurement"
+        ],
+        "unavailable_reason": null
+      },
+      {
+        "step": 3,
+        "operation": "publish",
+        "maps": [
+          {
+            "id": "event_displacement_cm",
+            "role": "Saved method evidence",
+            "unit": "cm",
+            "label": "Relative LOS displacement \u00b7 event coverage mosaic"
+          }
+        ],
+        "diagnostic_keys": [],
+        "unavailable_reason": null
+      }
+    ]
+  },
+  "metrics": {
+    "valid_pixels": 278983,
+    "valid_fraction": 0.4010104930286043,
+    "median": -2.2451109886169434,
+    "p10": -19.17642593383789,
+    "p90": 7.876505374908447,
+    "mapped_area_km2": 22517.262803708938,
+    "event_groups": 3,
+    "overlap_area_km2": 2231.120518751774,
+    "reference_pixels": 979
+  },
+  "historical_metric_comparison": {
+    "valid_pixels": {
+      "previous": 278983,
+      "current": 278983,
+      "unchanged": true
+    },
+    "valid_fraction": {
+      "previous": 0.4010104930286043,
+      "current": 0.4010104930286043,
+      "unchanged": true
+    },
+    "median": {
+      "previous": -2.2451109886169434,
+      "current": -2.2451109886169434,
+      "unchanged": true
+    },
+    "p10": {
+      "previous": -19.17642593383789,
+      "current": -19.17642593383789,
+      "unchanged": true
+    },
+    "p90": {
+      "previous": 7.876505374908447,
+      "current": 7.876505374908447,
+      "unchanged": true
+    },
+    "mapped_area_km2": {
+      "previous": 22517.262803708938,
+      "current": 22517.262803708938,
+      "unchanged": true
+    },
+    "event_groups": {
+      "previous": 3,
+      "current": 3,
+      "unchanged": true
+    },
+    "overlap_area_km2": {
+      "previous": 2231.120518751774,
+      "current": 2231.120518751774,
+      "unchanged": true
+    },
+    "reference_pixels": {
+      "previous": 979,
+      "current": 979,
+      "unchanged": true
+    }
+  },
+  "case": "P05_Venezuela",
+  "method": "P05",
+  "source_count": 3,
+  "grid_shape": [
+    773,
+    900
+  ],
+  "resolution": 284.09849184986206,
+  "steps": [
+    {
+      "operation": "event_pairs",
+      "parameters": {
+        "timestamp": "2026-06-24T22:05:04.053Z",
+        "date": "2026-06-24",
+        "mosaic": true
+      }
+    },
+    {
+      "operation": "event_los",
+      "parameters": {}
+    },
+    {
+      "operation": "publish",
+      "parameters": {
+        "layer": "event_displacement_cm"
+      }
+    }
+  ],
+  "reader_arrays_identical": true,
+  "engine_version": "1.1.0",
+  "comparisons": {
+    "group_1_count": {
+      "editable_layer": "group_1_count",
+      "identical": true,
+      "sha256": "74371d07feaa184879414e99d82b72bace801ec27e27990a0c96911e67790d6f"
+    },
+    "group_1_reference_support": {
+      "editable_layer": "group_1_reference_support",
+      "identical": true,
+      "sha256": "61393aaec6efcc731faff97dc146780fb039b23131ebbba84391105b14644e0a"
+    },
+    "group_1_interval_rate": {
+      "editable_layer": "group_1_interval_rate",
+      "identical": true,
+      "sha256": "1978554fc7bc90553135dfc659fb15898b54c92356e562367dc682f2641860ee"
+    },
+    "group_1_range": {
+      "editable_layer": "group_1_range",
+      "identical": true,
+      "sha256": "176bf4736da7192c5c7c21f749c9806aa875826e9329d249b3b6f8df82d7e4ce"
+    },
+    "group_1_pair_0": {
+      "editable_layer": "group_1_pair_0",
+      "identical": true,
+      "sha256": "176bf4736da7192c5c7c21f749c9806aa875826e9329d249b3b6f8df82d7e4ce"
+    },
+    "group_1_event_displacement_cm": {
+      "editable_layer": "group_1_event_displacement_cm",
+      "identical": true,
+      "sha256": "a669a7eae942b4ba56bb4382cc2bdf8b1d57e27cda957cc22f8e35b9d91f2cb7"
+    },
+    "quality_accepted_fraction_0_group_1": {
+      "editable_layer": "quality_accepted_fraction_0_group_1",
+      "identical": true,
+      "sha256": "cbb1e7d08cb6d93a5f4c0a843c305ac576737cb3384321a26312dc0be765a400"
+    },
+    "quality_missing_fraction_0_group_1": {
+      "editable_layer": "quality_missing_fraction_0_group_1",
+      "identical": true,
+      "sha256": "b2b48550c890bae6645d154c226bb4712ad83b48731b363926e22fadc6215bfb"
+    },
+    "quality_rejected_invalid_subswath_0_group_1": {
+      "editable_layer": "quality_rejected_invalid_subswath_0_group_1",
+      "identical": true,
+      "sha256": "8fb5593559b7c10565f60f0dc7a6c235df3394dc31ff8a6b326682df9893275a"
+    },
+    "quality_rejected_source_anomaly_0_group_1": {
+      "editable_layer": "quality_rejected_source_anomaly_0_group_1",
+      "identical": true,
+      "sha256": "09a686dc61e50a7edd19226ae676c02eff1698deea8da7174a7d547754fabded"
+    },
+    "quality_rejected_coherence_0_group_1": {
+      "editable_layer": "quality_rejected_coherence_0_group_1",
+      "identical": true,
+      "sha256": "a6a2c90c18364189cca00d2a19d5da4dd3728b16e080eb2377ec02bb40765e26"
+    },
+    "quality_rejected_component_missing_0_group_1": {
+      "editable_layer": "quality_rejected_component_missing_0_group_1",
+      "identical": true,
+      "sha256": "63fb78a92f672964dffeb3185dccc8f9f18de3affb68666674ad47e2b4ac677f"
+    },
+    "quality_rejected_other_component_0_group_1": {
+      "editable_layer": "quality_rejected_other_component_0_group_1",
+      "identical": true,
+      "sha256": "09a686dc61e50a7edd19226ae676c02eff1698deea8da7174a7d547754fabded"
+    },
+    "quality_rejected_missing_correction_0_group_1": {
+      "editable_layer": "quality_rejected_missing_correction_0_group_1",
+      "identical": true,
+      "sha256": "bd6b4c9cff5fc9204571b1b78e38c8001e967d6a45cbef5b8106b8f28e003c41"
+    },
+    "quality_ionosphere_interpolated_0_group_1": {
+      "editable_layer": "quality_ionosphere_interpolated_0_group_1",
+      "identical": true,
+      "sha256": "312935f23176afbd6fa4be4afdfc39c00f2ac11695384f8c31d803008ced4b35"
+    },
+    "quality_coherence_0_group_1": {
+      "editable_layer": "quality_coherence_0_group_1",
+      "identical": true,
+      "sha256": "9b2cb6646739997d471cb86ee0ade5ac4c247eb48932be1a269471fcb9b2d186"
+    },
+    "quality_ionospheric_phase_correction_0_group_1": {
+      "editable_layer": "quality_ionospheric_phase_correction_0_group_1",
+      "identical": true,
+      "sha256": "b3562dd0d9b1e37a9cde4fba2c97babcf2329b2c9054619e5166eb544aa8f671"
+    },
+    "group_2_count": {
+      "editable_layer": "group_2_count",
+      "identical": true,
+      "sha256": "6c9c0f59522aa17ced2f1a6daa40533d6cfb5a114edd3253216b3985bdcf1af2"
+    },
+    "group_2_reference_support": {
+      "editable_layer": "group_2_reference_support",
+      "identical": true,
+      "sha256": "70d1f4f93150e4e24df5cb8cfc0632e772b33475d9e98ce13fa660035040c4ef"
+    },
+    "group_2_interval_rate": {
+      "editable_layer": "group_2_interval_rate",
+      "identical": true,
+      "sha256": "d8bbadc05a228714a5cdfd2aeff6b46f9e060bf6c1ed2d406fee31f5ad331cdd"
+    },
+    "group_2_range": {
+      "editable_layer": "group_2_range",
+      "identical": true,
+      "sha256": "4aa7640ce41ce4f3cd716cdd1eb305c6a14b557cc7644e1910aff6fb8b4cedd8"
+    },
+    "group_2_pair_0": {
+      "editable_layer": "group_2_pair_0",
+      "identical": true,
+      "sha256": "4aa7640ce41ce4f3cd716cdd1eb305c6a14b557cc7644e1910aff6fb8b4cedd8"
+    },
+    "group_2_event_displacement_cm": {
+      "editable_layer": "group_2_event_displacement_cm",
+      "identical": true,
+      "sha256": "f57ad421aa2f4ba8bad19194fe322b5d49fb53c2d3e586018180fbb0803c54c4"
+    },
+    "quality_accepted_fraction_0_group_2": {
+      "editable_layer": "quality_accepted_fraction_0_group_2",
+      "identical": true,
+      "sha256": "e286caee1170e637f7678e1cae76ac6042bb88d0673010dca14219f71b2d6c0d"
+    },
+    "quality_missing_fraction_0_group_2": {
+      "editable_layer": "quality_missing_fraction_0_group_2",
+      "identical": true,
+      "sha256": "f58dcfe0ffafb340a592962136ab0b058a6cadd54f14a17f0e9912a86ea8010e"
+    },
+    "quality_rejected_invalid_subswath_0_group_2": {
+      "editable_layer": "quality_rejected_invalid_subswath_0_group_2",
+      "identical": true,
+      "sha256": "5a94a0d7e2b3f030dd6636bdc59310b9c80130bc828e9c333bc37b0fb770eada"
+    },
+    "quality_rejected_source_anomaly_0_group_2": {
+      "editable_layer": "quality_rejected_source_anomaly_0_group_2",
+      "identical": true,
+      "sha256": "03c05ce9afd407e8a0b2cbbee0b53e282e7ff214d8e0748ccdb23b357dea4bee"
+    },
+    "quality_rejected_coherence_0_group_2": {
+      "editable_layer": "quality_rejected_coherence_0_group_2",
+      "identical": true,
+      "sha256": "7e1de4ea1074e09b471c7c679849989ce13fc0cc3c8b1e53cb137504ab163144"
+    },
+    "quality_rejected_component_missing_0_group_2": {
+      "editable_layer": "quality_rejected_component_missing_0_group_2",
+      "identical": true,
+      "sha256": "36cec509558afe1cce17f7f963d22d02e2f8795795b18e2455209a392b8177d0"
+    },
+    "quality_rejected_other_component_0_group_2": {
+      "editable_layer": "quality_rejected_other_component_0_group_2",
+      "identical": true,
+      "sha256": "03c05ce9afd407e8a0b2cbbee0b53e282e7ff214d8e0748ccdb23b357dea4bee"
+    },
+    "quality_rejected_missing_correction_0_group_2": {
+      "editable_layer": "quality_rejected_missing_correction_0_group_2",
+      "identical": true,
+      "sha256": "03c05ce9afd407e8a0b2cbbee0b53e282e7ff214d8e0748ccdb23b357dea4bee"
+    },
+    "quality_ionosphere_interpolated_0_group_2": {
+      "editable_layer": "quality_ionosphere_interpolated_0_group_2",
+      "identical": true,
+      "sha256": "6e9821a052e4169fbd636967e0e4958a4b451f43782903557d9a84509346192a"
+    },
+    "quality_coherence_0_group_2": {
+      "editable_layer": "quality_coherence_0_group_2",
+      "identical": true,
+      "sha256": "4079a329b44d99665744dec810684da0586d510b5d5f58ca092dc87a4159f36c"
+    },
+    "quality_ionospheric_phase_correction_0_group_2": {
+      "editable_layer": "quality_ionospheric_phase_correction_0_group_2",
+      "identical": true,
+      "sha256": "93678cc2cbb1d9ce92d503cd6664cb4d8fd288d69640b6499c28f7bfcbef64eb"
+    },
+    "group_3_count": {
+      "editable_layer": "group_3_count",
+      "identical": true,
+      "sha256": "d5b59b9ed51abab6819aa78f3e95b81495f235c2f88f211d6c0be776c9786886"
+    },
+    "group_3_reference_support": {
+      "editable_layer": "group_3_reference_support",
+      "identical": true,
+      "sha256": "4e590f971c3f7933026c30cd384ed4f4434871610e1810e4d8b0c239db188830"
+    },
+    "group_3_interval_rate": {
+      "editable_layer": "group_3_interval_rate",
+      "identical": true,
+      "sha256": "d4164871b7f09df09be9579a09aa5d4bd532c8f5e58ca3f17b169166928cc433"
+    },
+    "group_3_range": {
+      "editable_layer": "group_3_range",
+      "identical": true,
+      "sha256": "28541c0e4e26076d9b6dcfa47e9e055f2edf5b8294c5a5e577cc0e0d054d0d0a"
+    },
+    "group_3_pair_0": {
+      "editable_layer": "group_3_pair_0",
+      "identical": true,
+      "sha256": "28541c0e4e26076d9b6dcfa47e9e055f2edf5b8294c5a5e577cc0e0d054d0d0a"
+    },
+    "group_3_event_displacement_cm": {
+      "editable_layer": "group_3_event_displacement_cm",
+      "identical": true,
+      "sha256": "0654e5aebb19a6b875a4f6f0ecfb242bec559594cc71975198822c1c94e9b5f4"
+    },
+    "quality_accepted_fraction_0_group_3": {
+      "editable_layer": "quality_accepted_fraction_0_group_3",
+      "identical": true,
+      "sha256": "a81ae1579e92a4c024742582207e018e0df9ef0716d0e05d653bf472967676c0"
+    },
+    "quality_missing_fraction_0_group_3": {
+      "editable_layer": "quality_missing_fraction_0_group_3",
+      "identical": true,
+      "sha256": "6f50965c03dea838375a8bc027142ebf8899ce924af72a14d1c69f35a14f8304"
+    },
+    "quality_rejected_invalid_subswath_0_group_3": {
+      "editable_layer": "quality_rejected_invalid_subswath_0_group_3",
+      "identical": true,
+      "sha256": "60d0bb7c336745b861d2cac938d32a237ebf951621fd3e6d5a70a90c52ab7beb"
+    },
+    "quality_rejected_source_anomaly_0_group_3": {
+      "editable_layer": "quality_rejected_source_anomaly_0_group_3",
+      "identical": true,
+      "sha256": "3c4fa1b2163bae57ad6231dc26508e5a2689108dc8f1a29fba141b86f91cc76c"
+    },
+    "quality_rejected_coherence_0_group_3": {
+      "editable_layer": "quality_rejected_coherence_0_group_3",
+      "identical": true,
+      "sha256": "b5a3adaee807771ed96135467f49049e966da897642f29d6aaa0bede0f798220"
+    },
+    "quality_rejected_component_missing_0_group_3": {
+      "editable_layer": "quality_rejected_component_missing_0_group_3",
+      "identical": true,
+      "sha256": "a77e0a16e40c6f930c75bbb3756b1f6954942af5151b3f25b10bf3d4422ac1a5"
+    },
+    "quality_rejected_other_component_0_group_3": {
+      "editable_layer": "quality_rejected_other_component_0_group_3",
+      "identical": true,
+      "sha256": "3c4fa1b2163bae57ad6231dc26508e5a2689108dc8f1a29fba141b86f91cc76c"
+    },
+    "quality_rejected_missing_correction_0_group_3": {
+      "editable_layer": "quality_rejected_missing_correction_0_group_3",
+      "identical": true,
+      "sha256": "3c4fa1b2163bae57ad6231dc26508e5a2689108dc8f1a29fba141b86f91cc76c"
+    },
+    "quality_ionosphere_interpolated_0_group_3": {
+      "editable_layer": "quality_ionosphere_interpolated_0_group_3",
+      "identical": true,
+      "sha256": "a8a73024ca78c0f21680b42779364eeb774497aefc265a1967eb3ed5e8300db4"
+    },
+    "quality_coherence_0_group_3": {
+      "editable_layer": "quality_coherence_0_group_3",
+      "identical": true,
+      "sha256": "1f240699c7591fe54b8ec3832fc81bca150a024b00078c229a1c9fdaf9472538"
+    },
+    "quality_ionospheric_phase_correction_0_group_3": {
+      "editable_layer": "quality_ionospheric_phase_correction_0_group_3",
+      "identical": true,
+      "sha256": "64920c9156c391be4efb2e1979807573347749ea5550200db16676e9acc2c67e"
+    },
+    "observation_0": {
+      "editable_layer": "observation_0",
+      "identical": true,
+      "sha256": "f57ad421aa2f4ba8bad19194fe322b5d49fb53c2d3e586018180fbb0803c54c4"
+    },
+    "observation_1": {
+      "editable_layer": "observation_1",
+      "identical": true,
+      "sha256": "0654e5aebb19a6b875a4f6f0ecfb242bec559594cc71975198822c1c94e9b5f4"
+    },
+    "observation_2": {
+      "editable_layer": "observation_2",
+      "identical": true,
+      "sha256": "a669a7eae942b4ba56bb4382cc2bdf8b1d57e27cda957cc22f8e35b9d91f2cb7"
+    },
+    "event_displacement_cm": {
+      "editable_layer": "event_displacement_cm",
+      "identical": true,
+      "sha256": "49054b11b48318ee023fbf3f0d5cc35b8aeb0dc71e2f2f43acd5dc4377585b52"
+    },
+    "event_source": {
+      "editable_layer": "event_source",
+      "identical": true,
+      "sha256": "6b7869c56f13e8794aec2a2e4f497392c824bd01b7305dfe2232559fb3c5b7ca"
+    },
+    "event_coverage": {
+      "editable_layer": "event_coverage",
+      "identical": true,
+      "sha256": "a8ea5eb8576a3243c1f851a54564c4e94f3b5962a8f6691df4717bfa05ee8bd5"
+    },
+    "reference_support": {
+      "editable_layer": "reference_support",
+      "identical": true,
+      "sha256": "2d0d1825ed468975a2cf694a21fc3ca05c8dd578282eb228d64ac2d0ac7d8e63"
+    },
+    "event_overlap_spread": {
+      "editable_layer": "event_overlap_spread",
+      "identical": true,
+      "sha256": "cb93b95cb17343a8fb49dee221b94a678f8b19200bd8939bd41f9ec213730aec"
+    }
+  },
+  "metrics_identical": true,
+  "series_identical": true,
+  "verification_scope": "All existing numeric layers, metrics and dated series",
+  "result": "PASS",
+  "remote_science_bytes": 0,
+  "browser_export_check": "not available: historical saved run was cleared; direct protected-input comparison still completed"
+}

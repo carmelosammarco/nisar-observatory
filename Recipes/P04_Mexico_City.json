@@ -1,0 +1,109 @@
+{
+  "format": "nisar-observatory-workflow",
+  "schema_version": 1,
+  "engine_version": "1.1.0",
+  "name": "Mexico City, Mexico · editable workflow",
+  "description": "Loaded from the tested P04 case study. Compound blocks retain their documented geometry and radiometry assumptions. Editing creates a new experiment.",
+  "product": "GUNW",
+  "method": "custom",
+  "steps": [
+    {
+      "operation": "los",
+      "parameters": {}
+    },
+    {
+      "operation": "network",
+      "parameters": {
+        "require_cycles": false
+      }
+    },
+    {
+      "operation": "trend",
+      "parameters": {
+        "annualized": true
+      }
+    },
+    {
+      "operation": "summary",
+      "parameters": {
+        "statistic": "mean"
+      }
+    }
+  ],
+  "options": {
+    "apply_ionosphere": true,
+    "phase_network": true,
+    "phase_allow_mixed_revisions": true,
+    "resolution": 80.0,
+    "coherence": 0.3,
+    "min_valid_fraction": 0.5,
+    "reference_bbox": [
+      -99.28,
+      19.4,
+      -99.24,
+      19.44
+    ]
+  },
+  "display": {
+    "palette": "rainbow",
+    "mode": "custom",
+    "layer": "summary",
+    "unit": "cm/year",
+    "low": -30.0,
+    "high": 30.0,
+    "category_colors": {},
+    "category_opacity": {}
+  },
+  "context": {
+    "bbox": [
+      -99.4,
+      19.14,
+      -98.75,
+      19.65
+    ],
+    "sources": [
+      {
+        "name": "NISAR_L2_PR_GUNW_003_113_D_079_004_4000_SH_20251025T011329_20251025T011404_20251106T011330_20251106T011404_X05009_N_F_J_001",
+        "catalog_id": "G4058281119-ASF",
+        "start": "2025-10-25T01:13:29Z",
+        "end": "2025-11-06T01:13:30Z",
+        "group": "113_D_079_4000_SH_X05009"
+      },
+      {
+        "name": "NISAR_L2_PR_GUNW_004_113_D_079_005_4000_SH_20251106T011330_20251106T011404_20251118T011330_20251118T011405_X05010_N_F_J_001",
+        "catalog_id": "G4058288661-ASF",
+        "start": "2025-11-06T01:13:30Z",
+        "end": "2025-11-18T01:13:30Z",
+        "group": "113_D_079_4000_SH_X05010"
+      },
+      {
+        "name": "NISAR_L2_PR_GUNW_005_113_D_079_007_4000_SH_20251118T011330_20251118T011405_20251212T011331_20251212T011406_X05010_N_F_J_001",
+        "catalog_id": "G4058338815-ASF",
+        "start": "2025-11-18T01:13:30Z",
+        "end": "2025-12-12T01:13:31Z",
+        "group": "113_D_079_4000_SH_X05010"
+      },
+      {
+        "name": "NISAR_L2_PR_GUNW_007_113_D_079_008_4000_SH_20251212T011331_20251212T011406_20251224T011332_20251224T011406_X05010_N_F_J_001",
+        "catalog_id": "G4058459579-ASF",
+        "start": "2025-12-12T01:13:31Z",
+        "end": "2025-12-24T01:13:32Z",
+        "group": "113_D_079_4000_SH_X05010"
+      },
+      {
+        "name": "NISAR_L2_PR_GUNW_008_113_D_079_009_4000_SH_20251224T011332_20251224T011406_20260105T011332_20260105T011407_X05010_N_F_J_001",
+        "catalog_id": "G4058584016-ASF",
+        "start": "2025-12-24T01:13:32Z",
+        "end": "2026-01-05T01:13:32Z",
+        "group": "113_D_079_4000_SH_X05010"
+      },
+      {
+        "name": "NISAR_L2_PR_GUNW_009_113_D_079_010_4000_SH_20260105T011332_20260105T011407_20260117T011333_20260117T011407_X05010_N_F_J_001",
+        "catalog_id": "G4058733834-ASF",
+        "start": "2026-01-05T01:13:32Z",
+        "end": "2026-01-17T01:13:33Z",
+        "group": "113_D_079_4000_SH_X05010"
+      }
+    ]
+  }
+}

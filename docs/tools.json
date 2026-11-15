@@ -1,0 +1,406 @@
+[
+  {
+    "id": "P01",
+    "name": "Flood Memory",
+    "product": "GCOV",
+    "minimum": 2,
+    "tagline": "New water and observed return to dry",
+    "summary": "Choose a comparison date or use the largest consecutive candidate expansion. Form a median backscatter baseline before that observation; map new candidate water. Report first later dry observations, last-wet/first-dry bounds, unresolved area and overlap-linked patch histories.",
+    "question": "Which surfaces changed into plausible open water, and on which later observation did they appear dry again?",
+    "inputs": [
+      "2 or more compatible GCOV observations",
+      "Selected analysis area and one acquisition group",
+      "Optional spatial context and independent validation references"
+    ],
+    "steps": [
+      "Choose a comparison date or use the largest consecutive candidate expansion.",
+      "Form a median backscatter baseline before that observation; map new candidate water.",
+      "Report first later dry observations, last-wet/first-dry bounds, unresolved area and overlap-linked patch histories."
+    ],
+    "outputs": [
+      "New-water candidates and baseline-departure maps",
+      "First later dry index and day bounds",
+      "Water states, threshold/grid sensitivity, patch GeoJSON and dated links"
+    ],
+    "reading": "Two dates support a before/after candidate-water comparison. Add later acquisitions to observe a return to dry; at least two earlier baseline dates help assess variability. Choose a documented comparison date, or inspect the automatically selected expansion interval. Two dates cannot establish recovery.",
+    "limitations": [
+      "Candidate water is not a verified flood. Unknown intervals, depth and damage are not inferred.",
+      "Synthetic tests check calculations; independent environmental accuracy is not established automatically.",
+      "Published illustrations without georeferenced reference masks cannot establish pixelwise classification accuracy. Open-water thresholding does not fully capture flooded vegetation."
+    ],
+    "references": [],
+    "technology": [
+      "FastAPI and Requests for the local service and NASA access",
+      "h5py, NumPy, SciPy, rasterio and pyproj for bounded HDF5/geospatial calculations",
+      "Shapely and rasterio for supplied polygons and candidate outlines",
+      "Leaflet and Plotly for map, chart and date exploration"
+    ],
+    "version": "0.4.0",
+    "reading_guide": {
+      "version": "1.0",
+      "measurement": "A before/comparison-date test for newly appearing low-return water candidates, with later dry observations only where those dates exist.",
+      "colours": "Category numbers are labels. New water means the rule changed from not-water in the baseline to water at the comparison date. Zero is a valid non-candidate result; transparency means missing evidence or a chosen display opacity.",
+      "checks": "Check the same usable footprint, baseline and comparison dates, native support and threshold-sensitivity maps. Recovery requires later observations; no later dry observation is not proof that flooding continued.",
+      "cannot": "This rule does not confirm inundation, isolate flooded vegetation, measure water depth, or establish exact onset, duration or recovery between acquisitions."
+    }
+  },
+  {
+    "id": "P02",
+    "name": "Wetland Pulse",
+    "product": "GCOV",
+    "minimum": 3,
+    "tagline": "HH/HV water candidates and observed wetness frequency",
+    "summary": "Choose the paper-inspired joint HH/HV sigma-zero rule or the previous single-channel gamma-zero rule. Convert native HH/HV power before averaging, require joint valid support, classify each acquired date and map candidate frequency with named zones, quality and sensitivity evidence.",
+    "question": "How does observed inundation vary between wetland zones during the available NISAR record?",
+    "inputs": [
+      "3 or more compatible GCOV observations from one acquisition group",
+      "HHHH, HVHV, native gamma-to-sigma factor and source mask for HH/HV mode; single-channel remains available for earlier data",
+      "Selected area; optional named wetland GeoJSON and independent validation labels"
+    ],
+    "steps": [
+      "For HH/HV mode, screen both native powers, the conversion factor, sample mask and delivered exception mask on the same grid. Stop if required layers are missing.",
+      "Multiply native linear gamma-zero HH/HV power by the delivered factor before averaging onto the analysis grid; retain joint contribution evidence.",
+      "Apply HH sigma-zero < declared HH threshold AND HV sigma-zero < declared HV threshold; the paper-inspired starting values are -14/-23 dB. Single-channel mode retains its own gamma-zero threshold.",
+      "On identical support across dates, calculate observed candidate-water frequency, intermittent/always-observed candidates, named-zone trajectories and patch histories.",
+      "Report joint threshold-shift and grid sensitivity, separate ambiguity, source paths and method/threshold provenance. Independent test labels evaluate the declared rule without fitting dual thresholds."
+    ],
+    "outputs": [
+      "Candidate-water frequency, counts and acquired-date snapshots",
+      "Named-zone trajectories, gap record and candidate-object histories",
+      "Latest HH/HV sigma-zero maps and joint native contribution checks in HH/HV mode",
+      "Threshold/grid sensitivity, separate ambiguity, numeric rasters and map images with legends"
+    ],
+    "reading": "Choose HH/HV sigma-zero in Area & analysis settings for the paper-inspired rule; both thresholds must be met. A clean workspace offers this method; reusing an older run without method metadata restores Single-channel to preserve its previous calculation. Default -14/-23 dB values come from historical PALSAR research and need local NISAR validation. Frequency counts selected observations, not all elapsed time. Optional domain polygons restrict the study footprint; named habitat zones provide spatial context rather than flood labels.",
+    "limitations": [
+      "The nominal HH/HV thresholds originate in historical PALSAR research. Transferring a rule to NISAR does not reproduce the original dates, maps or published accuracy.",
+      "HH/HV mode applies the joint threshold rule after native sigma-zero conversion, but does not reproduce Enhanced Lee filtering, synthetic tide gauges, depth or volume.",
+      "Open-water candidates do not capture all flooded vegetation or define habitat loss. Twelve-day repeat sampling does not resolve individual tidal cycles.",
+      "Nearby tide gauges provide context rather than pixelwise inundation labels. Local tidal lag, vegetation, wind and ponding can differ.",
+      "Synthetic checks and gauge association do not establish classification accuracy. Independent contemporaneous observations are needed for environmental evaluation."
+    ],
+    "references": [
+      "https://nisar-docs.asf.alaska.edu/gcov/"
+    ],
+    "technology": [
+      "FastAPI and Requests for the local service and NASA access",
+      "h5py, NumPy, SciPy, rasterio and pyproj for bounded HDF5/geospatial calculations",
+      "Shapely and rasterio for supplied polygons and candidate outlines",
+      "Leaflet and Plotly for map, chart and date exploration"
+    ],
+    "version": "0.5.0",
+    "example": {
+      "title": "Wheeler Marsh, Connecticut",
+      "description": "Choose Wheeler Marsh paper's area in Explore Earth. This example tests the published tidal-marsh idea with a new real NISAR series, rather than replaying historical PALSAR maps.",
+      "data": "GCOV PROVISIONAL · track 133 ascending · frame 022 · P05023 · 10 and 22 August, 3, 15 and 27 September, 9 October 2026.",
+      "settings": "HH/HV · sigma-zero; HH -14 dB, HV -23 dB; 20 m analysis grid; minimum joint native valid fraction 0.5. The preset keeps shared settings, so review them before processing.",
+      "context_url": "/assets/wheeler-wetland-context.geojson",
+      "context_note": "Download these optional NWI polygons, then import the file under Area & analysis settings → Advanced options → Spatial context. They restrict the calculation to mapped emergent wetlands and replace geometric west/east halves with regularly/irregularly flooded inventory zones. This is not the exact published study boundary.",
+      "limitations": "This is an adaptation of a historical PALSAR decision rule to real NISAR, not an exact published-map replay. Nearby measured tides provide context; no independent 2026 marsh labels, water depth or volume are supplied.",
+      "outcome": "The earlier single-channel run had rank association 0.31 with nearby measured water level; the same-data HH/HV calculation gave 0.83. Neither is classification accuracy. Both methods are now selectable; the historical comparison evidence is retained. Independent marsh labels and calibration are still needed.",
+      "context_label": "Download named wetland zones"
+    },
+    "reading_guide": {
+      "version": "1.0",
+      "measurement": "The fraction of selected usable acquisitions that meet the water-candidate rule at each location.",
+      "colours": "A fraction of 0 means no selected usable observation met the rule; 1 means every usable observation did. Read the observation-count map: identical fractions can have different sample counts.",
+      "checks": "Inspect native support, threshold sensitivity and the number and timing of observations. Compare tide-gauge context only at acquisition times; a nearby gauge is not a pixel-level inundation label.",
+      "cannot": "Observed frequency is not the percentage of all elapsed time flooded. It does not provide flood depth, water volume or validated habitat condition; historical paper accuracy does not transfer to a new run."
+    }
+  },
+  {
+    "id": "P03",
+    "name": "After Fire Observatory",
+    "product": "GCOV",
+    "minimum": 4,
+    "tagline": "Combined HH/HV surface-change evidence",
+    "summary": "Combine absolute HH and HV changes against a separate pre-fire baseline per viewing group. Average the latest valid view magnitudes, smooth, robustly standardize across the selected land window and retain candidate patches above the threshold and minimum area. The previous reference-relative method remains available.",
+    "question": "Where did radar surface scattering change around a documented fire?",
+    "inputs": [
+      "L-band GCOV frequency-A HH and HV on every selected date; Auto or HH channel.",
+      "At least three pre-fire observations and one later observation per viewing group; select a single revision per date.",
+      "A land window including the event and surrounding background; optional independently justified domain polygons exclude water.",
+      "Combined change needs no reference rectangle. The previous reference-relative method still needs one and supports the shared assistant."
+    ],
+    "steps": [
+      "Choose the last baseline date before the independently documented fire, or explicitly choose at least three first observations per group.",
+      "Screen native positive power and delivered masks before averaging to a bounded local UTM grid; force HH plus HV reading, with no single-channel fallback.",
+      "Take the per-pixel median linear power over all declared baseline dates separately per view. Compute 10 log10(post/baseline) in HH and HV, and sum their absolute values.",
+      "Average latest valid magnitudes across viewing groups. Apply normalized Gaussian smoothing (default sigma 80 m), preserving missing cells and requiring 0.3 filter support.",
+      "Standardize over the whole valid land window by median and 1.4826 MAD. Keep score ≥ 2 and four-connected patches ≥ 10 ha by default.",
+      "Read primary score, candidate patches, view coverage and individually acquired post-baseline change frames. Save exact settings and source provenance."
+    ],
+    "outputs": [
+      "Combined surface-change score (dimensionless z) and candidate changed-patch raster.",
+      "Candidate area in hectares, valid land area, fraction and contributing view count.",
+      "Per-view HH/HV signed changes, unsmoothed/smoothed magnitude and source-quality fractions.",
+      "Dated individual-view change frames and exact baseline/latest dates."
+    ],
+    "reading": "Start with the combined score and candidate patches. High values indicate unusually strong radar change within the chosen land window. Confirm the cause independently. A zero in the candidate mask means the threshold/patch rule was not met; missing cells remain blank. Time frames show individual views in dB, not the fused score.",
+    "limitations": [
+      "A radar change candidate is not a field-validated burn, severity, biomass loss or ecological recovery.",
+      "Area selection, land masks and the burned share affect robust normalization. Include enough surrounding background; do not tune the crop to obtain desired agreement.",
+      "Native sample masks do not remove terrain layover/shadow. No DEM/LOS terrain mask is implemented; water exclusions require independent justification.",
+      "Default 20 m posting is bounded to 2048 cells per side / 4 million cells. Sigma 80 m smoothing has approximately 188 m full width at half maximum.",
+      "Latest views can have different dates; the fused primary map is not a synchronized acquisition or a continuous recovery record.",
+      "The Timber case agrees closely with a single-fire preprint benchmark; that does not establish accuracy elsewhere."
+    ],
+    "references": [
+      "https://nisar-docs.asf.alaska.edu/gcov/"
+    ],
+    "technology": [
+      "Native HDF5 window reading and quality screening; NumPy median power ratios.",
+      "Rasterio local UTM resampling, SciPy normalized Gaussian filtering and four-connected component filtering.",
+      "GeoTIFF/JSON/PNG exports, reproducible protected Example recipes and shared map controls."
+    ],
+    "version": "0.8.0",
+    "reading_guide": {
+      "version": "1.0",
+      "measurement": "A combined HH/HV scattering-change score from separate pre-event baselines for each radar view, plus thresholded candidate patches.",
+      "colours": "Higher z means more unusual unsigned radar change relative to this selected land window. The score is not a probability. Candidate 0 means the rule was not met, not confirmed unburned; the score can be negative.",
+      "checks": "Check baseline dates and land exclusions, contributing-view count, smoothing and patch threshold. The latest contributing dates can differ by view. Assess terrain/shadow and compare with independent fire evidence.",
+      "cannot": "Scattering change does not establish fire by itself, burn severity, burned vegetation type or ecological recovery. Case-study perimeter agreement does not establish accuracy for another fire.",
+      "variants": {
+        "relative": {
+          "measurement": "A radar-brightness trajectory relative to the declared unaffected comparison area and observed baseline.",
+          "colours": "Positive or negative dB is brighter or darker relative to that reference trajectory; it is not the combined HH/HV z score.",
+          "checks": "Check reference support and independent evidence that the comparison area was unaffected. Inspect baseline, viewing geometry and sensitivity to reference choice."
+        }
+      }
+    }
+  },
+  {
+    "id": "P04",
+    "name": "Sinking City Atlas",
+    "product": "GUNW",
+    "minimum": 1,
+    "tagline": "Relative LOS motion across acquired dates",
+    "summary": "Reconstruct acquired-date line-of-sight (LOS) changes from connected GUNW pairs, then fit a relative rate in cm/year and cm/month. Inspect cumulative date maps, original intervals, reference support, native quality and internal residuals together. One pair retains interval-only evidence.",
+    "question": "Which coherent parts of the selected region move differently relative to the chosen reference, and how does that evidence vary over the acquired dates?",
+    "inputs": [
+      "GUNW: at least two connected pairs linking three dates for a rate; four or more dates over several weeks are preferable. One pair gives an interval map only.",
+      "One viewing geometry/mode/polarization/release family, one version per pair; no external dataset is required.",
+      "A reference rectangle or reference polygon with identical valid cells in every pair. Stability must be justified by the user.",
+      "Optional explicit consent to join processing revisions within the same release family for P04 only; compare single-revision results because algorithm changes can imitate motion.",
+      "Optional reference assistant: assess all selected pairs before running, inspect up to three candidate patches or your existing reference, then explicitly choose a reference. No external dataset is required; stable ground is not certified."
+    ],
+    "steps": [
+      "Screen native coherence and component validity before averaging; retain shared finite support. The guided setup recommends 80 m posting, coherence 0.30 and delivered ionospheric subtraction; actual grid posting and applied corrections are saved.",
+      "The optional assistant samples the whole study grid and screens up to 225 patches at up to three sizes for shared support, ranks by worst-pair median accepted-sample coherence, coverage and spatial phase MAD, and excludes supplied affected polygons. It reports reference-choice sensitivity without selecting by near-zero apparent motion. A chosen candidate is saved as provenance and rejected if source/settings context changes.",
+      "Subtract the delivered radian ionospheric screen when requested; then subtract each pair’s median over the same physical reference cells. Convert phase with the source wavelength: −λ × referenced phase / (4π).",
+      "Use a connected full-rank pair incidence least-squares solution with the first acquired date fixed to zero. Overlapping pairs are solved as constraints, never blindly added.",
+      "Fit intercept + linear trend over reconstructed acquired epochs using actual elapsed days, 365.25 days/year. Connected trees are allowed but explicitly have no independent closure check. Disconnected or short records retain pair maps and explain why no rate was fitted."
+    ],
+    "outputs": [
+      "Opening map: fitted relative LOS rate in cm/year, plus the exact equivalent cm/month map (divide by 12).",
+      "Acquired-date playback and regional median chart: accumulated relative LOS change in cm, with the first date zero by definition.",
+      "First-to-last change, trend-fit RMS and pair-network residual in cm; original pair maps in mm and interval rates in mm/day.",
+      "Reference support, coherence/contribution/correction maps, graph diagnostics, factual summary and numeric GeoTIFF/JSON exports.",
+      "Rainbow or standard palette, automatic shared/per-map ranges, custom limits and a fixed ±30 cm/year (±2.5 cm/month) comparison preset. Numeric exports do not change with appearance."
+    ],
+    "reading": "Negative LOS values mean away from the satellite; positive means toward it. These are relative LOS measurements, not automatically vertical sinking. Annualized rates can describe a much shorter observed span. Blank cells are missing common evidence. The reference fixes spatial zero; the first date fixes temporal zero.",
+    "limitations": [
+      "A tree has zero pair residual by construction; this does not validate unwrapping or motion. Temporal-fit RMS is internal consistency, not accuracy, a confidence interval or a guarantee of stability.",
+      "Delivered ionospheric subtraction alone is not complete geodetic correction. Tropospheric/tidal lookup correction, DEM-error modeling and vertical/east-west decomposition are not automated.",
+      "Reference stability is an assumption, processing revisions can cause artifacts, and short windows should not be extrapolated as long-term subsidence. NASA’s exact map cannot be numerically reproduced without its full recipe and reference raster.",
+      "Reference screening rules are engineering heuristics, not confidence scores. No land-cover, elevation, GNSS or stable-ground evidence is inferred; even strong shared data can move. Choosing another reference changes the spatial origin."
+    ],
+    "references": [
+      "https://nisar-docs.asf.alaska.edu/gunw/",
+      "https://doi.org/10.1016/j.cageo.2019.104331",
+      "https://www.jpl.nasa.gov/news/us-indian-space-mission-maps-extreme-subsidence-in-mexico-city/",
+      "https://www.jpl.nasa.gov/images/pia26709-us-indian-spacecraft-captures-mexico-city-subsidence/",
+      "https://github.com/insarlab/MintPy/blob/main/src/mintpy/reference_point.py"
+    ],
+    "technology": [
+      "FastAPI and Requests for the local service and NASA access",
+      "h5py, NumPy, SciPy, rasterio and pyproj for bounded HDF5/geospatial calculations",
+      "Shapely and rasterio for supplied polygons and candidate outlines",
+      "Leaflet and Plotly for map, chart and date exploration"
+    ],
+    "version": "0.4.1",
+    "reading_guide": {
+      "version": "1.0",
+      "measurement": "A fitted rate of relative line-of-sight (LOS) movement from connected acquisition-date estimates.",
+      "colours": "Positive LOS is toward the satellite; negative is away, relative to the chosen reference. cm/year and cm/month express the same fitted rate; annualizing a short record does not create a year of observations.",
+      "checks": "Check the shared reference support and its independent physical stability, record span, coherence, fit residuals and network redundancy. A tree has no redundant closure test; a zero pair residual can occur by construction.",
+      "cannot": "One viewing direction mixes horizontal and vertical motion. This is not a direct vertical subsidence rate, a guaranteed forecast or independently established geodetic accuracy.",
+      "variants": {
+        "pair": {
+          "measurement": "Relative LOS change over each measured acquisition-pair interval; this record did not support a fitted multi-date rate.",
+          "colours": "Positive is toward the satellite and negative away from it, relative to the saved reference. Read each layer’s mm or cm unit and pair dates. Separate interval maps must not be added without a valid connected reconstruction."
+        }
+      }
+    }
+  },
+  {
+    "id": "P05",
+    "name": "Quake Evidence Explorer",
+    "product": "GUNW",
+    "minimum": 1,
+    "tagline": "Earthquake-interval displacement in centimeters",
+    "summary": "Select the shortest GUNW pair strictly bracketing a documented earthquake within each acquisition group. Convert referenced unwrapped phase to relative LOS displacement in cm. A P05-only event-coverage mosaic can assemble adjacent same-direction tracks/frames without averaging overlap or decomposing motion. Preserve source, reference, quality and date evidence. Native validity masks exclude source-gap artifacts; shared coherent reference cells are preferred across groups.",
+    "question": "What deformation signal is supported by NISAR observations that bracket a documented earthquake?",
+    "inputs": [
+      "One or more GUNW files: each chosen group must contain an event-bracketing pair",
+      "Documented event date or exact timestamp with timezone",
+      "An independently justified stable reference rectangle or reference polygons inside the analysis area",
+      "For event coverage: same direction, bandwidth, polarization mode and processing release; valid reference cells in every group",
+      "Optional shared reference assistant: check your drawn reference or locate up to three candidate patches before processing. Choose explicitly; stationary or unaffected terrain is not automatically established."
+    ],
+    "steps": [
+      "The shared reference assistant uses the same processing grid and native quality reader. It checks common support, excludes supplied affected zones and assesses up to 225 spatially stratified windows at multiple sizes. GCOV uses positive-power dB uniformity; GUNW also checks coherence. Candidate offsets show reference-choice sensitivity in dB, cm for phase tools; they are not accuracy estimates.",
+      "Use actual reference-pass end and secondary-pass start timestamps when the original filename provides them; select the shortest interval strictly bracketing the supplied event in each group.",
+      "Decode delivered valid-sample/subswath and anomaly masks losslessly before native averaging, then screen coherence and connected components. Prefer identical coherent reference cells shared across views; if fewer than 25 exist, explicitly report independent reference origins. Convert using the delivered wavelength.",
+      "Show event-interval relative LOS displacement first. Preserve original mm pairs, interval-average rates, source screening, reference cells and controls.",
+      "In explicit event-coverage mode, retain independent per-group references and dates. At overlaps choose the valid group with highest accepted-sample coherence, with deterministic ties; export the source-index, coverage and overlap-spread maps. No inferred filling or averaging."
+    ],
+    "outputs": [
+      "Main event-interval relative LOS displacement in cm",
+      "Acquired pair views in cm, original measured pairs in mm and interval-average rates in mm/day",
+      "Single-group profile, reference counts/spread, corrections and network diagnostics",
+      "For event mosaics: source key, per-group reference/date table, coverage and overlap differences",
+      "GeoTIFF for every layer, current-map PNG with legend, and complete provenance JSON"
+    ],
+    "reading": "Negative LOS values mean away from the satellite and positive values toward it. Read the shared palette and range controls: Rainbow has many colors; Diverging emphasizes a midpoint. Use Custom for fixed limits such as −50 to +50 cm. Blank pixels are missing evidence. A radar view mixes horizontal and vertical motion; the app does not solve east/up motion from phase alone.",
+    "limitations": [
+      "A bracketing interval includes all deformation and propagation effects during that interval; the June 2026 example spans both earthquakes and cannot isolate each shock. This is not a building-damage map.",
+      "Mosaics contain different LOS vectors, dates and independent reference cells. Seams and overlap differences may reflect these differences as well as errors; inspect each source separately.",
+      "Coherence supports phase suitability but does not certify stable ground. Reference stability needs independent justification.",
+      "NASA’s source is an Earth Observatory visualization article, not a numerical validation raster. Standard production files can differ from the original Urgent Response processing. Pixel-exact reproduction and independent accuracy are not established by matching colors."
+    ],
+    "references": [
+      "https://nisar-docs.asf.alaska.edu/gunw/",
+      "https://nisar-docs.asf.alaska.edu/urgent-response/"
+    ],
+    "technology": [
+      "FastAPI and Requests for the local service and NASA access",
+      "h5py, NumPy, SciPy, rasterio and pyproj for bounded HDF5/geospatial calculations",
+      "Shapely and rasterio for supplied polygons and candidate outlines",
+      "Leaflet and Plotly for map, chart and date exploration"
+    ],
+    "version": "0.4.3",
+    "reading_guide": {
+      "version": "1.0",
+      "measurement": "Relative LOS displacement across an event-bracketing interval, or a coverage mosaic of separately measured groups.",
+      "colours": "Positive cm is toward the satellite and negative away, relative to the reference. Zero is relative zero, not proof of unchanged terrain. A mosaic can mix viewing directions and intervals; it cannot by itself separate east/west from vertical motion.",
+      "checks": "Check the event time, actual before/after dates, coherence, reference support and independent stability. Inspect individual groups, source-index and overlap-difference maps before interpreting seams. Spatial percentiles and overlap spread are not accuracy bounds.",
+      "cannot": "The pair contains all movement during its interval; it cannot isolate individual shocks, prove earthquake causation at every pixel or map building damage."
+    }
+  },
+  {
+    "id": "P06",
+    "name": "Volcano Surface Diary",
+    "product": "GCOV",
+    "minimum": 2,
+    "tagline": "Dated surface-scattering diary",
+    "summary": "Compare acquired radar brightness with an observed baseline. Separate latest changed patches, first observed change and repeated same-sign evidence, retaining late-growing features.",
+    "question": "Where and when do calibrated radar scattering patterns change around a volcano?",
+    "inputs": [
+      "2 or more compatible GCOV observations",
+      "Selected analysis area and one acquisition group",
+      "Optional spatial context and independent validation references"
+    ],
+    "steps": [
+      "Select one compatible viewing group and an observed baseline. A baseline during an eruption measures later change only.",
+      "Compare each later date in dB on a common valid metric grid. Apply missing-data-preserving Gaussian smoothing and a signed change threshold.",
+      "Exclude signed patches smaller than the minimum physical area. Separate latest changes from same-sign change on consecutive later acquisitions.",
+      "Retain original acquired brightness, dated departures, first-change dates and overlap-based patch histories. The previous all-later-dates method remains selectable."
+    ],
+    "outputs": [
+      "Latest smoothed signed brightness departure · dB",
+      "Latest changed patches and consecutive-date repeat evidence",
+      "First observed change date key, largest-step intervals and patch histories",
+      "Acquired brightness frames, contribution maps and downloadable numeric rasters"
+    ],
+    "reading": "Start with the latest dB departure, then changed patches and repeated evidence. Two dates allow a comparison; three or more allow repetition checks. Zero at baseline is by definition, not proof that no lava existed.",
+    "limitations": [
+      "Brightness change alone does not identify lava, temperature, volume or eruption cause. Snowmelt, moisture and terrain effects can dominate.",
+      "The default 3 dB threshold, smoothing and minimum patch are engineering choices; validate them locally. Cell spacing is not resolving power.",
+      "NASA’s oblique 3D visualization is a qualitative reference, not a georeferenced classification ground truth.",
+      "First observed change is an acquisition date; onset between passes remains unknown. Shared-support comparisons exclude missing coverage."
+    ],
+    "references": [
+      "https://nisar-docs.asf.alaska.edu/gcov/"
+    ],
+    "technology": [
+      "FastAPI and Requests for the local service and NASA access",
+      "h5py, NumPy, SciPy, rasterio and pyproj for bounded HDF5/geospatial calculations",
+      "Shapely and rasterio for supplied polygons and candidate outlines",
+      "Leaflet and Plotly for map, chart and date exploration"
+    ],
+    "version": "0.7.1",
+    "reading_guide": {
+      "version": "1.0",
+      "measurement": "Radar-brightness changes relative to the declared observed baseline, with candidate patches and repeated evidence where supported.",
+      "colours": "Positive dB is brighter and negative darker than the baseline. Repeated change means agreement on selected later observations, not continuous activity. First detection is an observation date, not an eruption onset date.",
+      "checks": "Compare change maps with acquired brightness, baseline timing, native support and later observation counts. Check snow, wetness, terrain geometry and independent eruption/flow evidence; a baseline may already contain lava.",
+      "cannot": "This processing does not reliably separate lava from snowmelt or wetness. It does not measure lava area, temperature, magma volume, deformation or eruption probability."
+    }
+  },
+  {
+    "id": "P07",
+    "name": "Glacier Motion Pulse",
+    "product": "GOFF",
+    "minimum": 1,
+    "tagline": "Radar components and constrained horizontal speed",
+    "summary": "Choose a delivered GOFF layer and screen native offsets by its SNR. Inspect radar-component rates directly, or solve east/north velocity using both components and the delivered viewing geometry with an explicit zero-vertical-velocity assumption. Compare intervals on common support and inspect geometry, filtering and vertical-motion sensitivity.",
+    "question": "Where and how quickly do matched surface patterns move, and what can the radar geometry support?",
+    "inputs": [
+      "1 or more compatible GOFF observations",
+      "Selected analysis area and one acquisition group",
+      "Optional spatial context and independent validation references",
+      "For horizontal speed: both offset components, delivered viewing cubes and a representative ellipsoidal geometry height. Older local subsets can be prepared as new copies through Earthdata."
+    ],
+    "steps": [
+      "Choose layer 1, 2 or 3 when delivered; source matching-window sizes are recorded. Larger windows trade detail for matching behaviour, not finer map resolution.",
+      "Screen finite native offsets using the selected layer’s own SNR before analysis-grid averaging. Missing layers are reported without substitution.",
+      "Compare optional global/local spatial screening against filter-off results. A global spatial filter can remove genuine concentrated glacier motion.",
+      "Optionally subtract independently justified stable-terrain biases separately from both radar components. No bias is inferred automatically.",
+      "Divide by exact pair duration. Annualized m/year equals m/day × 365.25. Show the latest signed component, filtered two-component magnitude, interval differences, dated maps and quality evidence.",
+      "For horizontal mode, require joint native component support before averaging. Interpolate the delivered height/y/x cubes at an explicitly supplied constant ellipsoidal height, without extrapolation.",
+      "Verify East/North vector descriptions, units and geometry consistency. Solve range = −LOS_E vE − LOS_N vN and along = AT_E vE + AT_N vN with vUp = 0; exclude invalid or ill-conditioned systems.",
+      "Map horizontal speed and interval change separately from radar diagnostics. Inspect east/north components, true-north bearing, condition number and the stated vertical-motion sensitivity scenario."
+    ],
+    "outputs": [
+      "Latest signed component rate and dated interval maps",
+      "Filtered two-component radar-plane magnitude on joint valid support, plus raw diagnostics",
+      "First-to-last rate difference and observed rate spread when two intervals are available",
+      "Selected correlation layer, source-window metadata, cutoffs, support and stable-bias diagnostics",
+      "Numeric GeoTIFFs, JSON evidence and presentation PNGs with the chosen scale",
+      "Conditional horizontal speed, east/north velocity and direction, with geometry and vertical-motion sensitivity diagnostics when horizontal mode is selected."
+    ],
+    "reading": "One pair measures its own interval-average radar-component rate. Two compatible pairs enable interval comparison. Read signed components before the norm: a positive magnitude can include noise. Review SNR, selected layer, missing support, raw maps and filter sensitivity. Choose another viewing group as a separate run. Horizontal mode fixes vertical velocity at zero; it does not measure that constraint. Down-slope flow may violate it. The sensitivity scenario is not a confidence interval. Use one compatible viewing group per run.",
+    "limitations": [
+      "Horizontal speed is conditional on zero vertical velocity and delivered ENU geometry. It is not full 3D velocity or DEM-based surface-parallel flow. A constant geometry height does not supply terrain slope.",
+      "m/year annualizes the measured interval; it does not provide an annual record. Positive norms can be inflated by noise.",
+      "Spatial filters can remove real localized flow. Layer windows, SNR distributions and support differ; no layer is universally best.",
+      "A named stable polygon does not prove stability. The assistant for phase references is not used to declare glacier terrain stationary.",
+      "Published-map comparisons require exact source pairs, matching physical quantities and temporal/spatial support; similar ranges are not independent accuracy validation.",
+      "GOFF offsets can retain registration, timing and geometric residuals. Geometry inversion alone does not remove these; stable-ground subtraction requires independently justified terrain."
+    ],
+    "references": [
+      "https://nisar-docs.asf.alaska.edu/goff/"
+    ],
+    "technology": [
+      "FastAPI and Requests for the local service and NASA access",
+      "h5py, NumPy, SciPy, rasterio and pyproj for bounded HDF5/geospatial calculations",
+      "Shapely and rasterio for supplied polygons and candidate outlines",
+      "Leaflet and Plotly for map, chart and date exploration"
+    ],
+    "version": "0.4.2",
+    "reading_guide": {
+      "version": "1.0",
+      "measurement": "Horizontal speed estimated from both delivered radar offsets and viewing geometry, conditional on zero vertical velocity.",
+      "colours": "m/day expresses a daily rate; m/year annualizes the measured pair interval rather than adding a year of observations. Horizontal speed is a nonnegative vector magnitude, not a signed LOS displacement. The recorded geometry height is an assumption.",
+      "checks": "Inspect joint offset/SNR support, geometry validity and condition number, filtering and any stable-ground correction. Read the vertical-motion sensitivity scenario and actual footprint; a historical glacier outline may differ from the current ice boundary.",
+      "cannot": "This is not full 3D velocity or independently validated speed. Vertical glacier motion can bias the horizontal estimate; matching a published maximum or colour does not establish pixelwise agreement.",
+      "variants": {
+        "radar": {
+          "measurement": "Delivered image-matching displacement converted to signed radar-component rates, with a radar-plane magnitude where both components are usable.",
+          "colours": "Read the selected range/along-track component, its sign convention and m/day or m/year unit. Radar-plane magnitude is not horizontal surface speed.",
+          "checks": "Check SNR, native joint support, offset layer, filtering and independently justified stable-ground corrections. Read the exact pair duration; a single interval does not establish a long-term trend."
+        }
+      }
+    }
+  }
+]

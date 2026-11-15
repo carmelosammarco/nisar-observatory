@@ -1,0 +1,31 @@
+{
+  "scope": "One 2000\u00d72000 float32 diverging map; separate fresh processes. Includes imports, input, exact percentiles and RGBA rendering. Not a full processing run or general memory limit.",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "python": "3.12.14",
+  "cells": 4000000,
+  "colour_block_pixels": 65536,
+  "pixel_and_range_identity": true,
+  "measurements": [
+    {
+      "renderer": "legacy",
+      "peak_rss_bytes": 556269568,
+      "render_seconds": 0.13154025000403635,
+      "sha256": "bcfeb592582bdd56d0b3e04d56905415f55b7cb0fcd81d3e9ac61d1193ee6c7e",
+      "range": [
+        -0.9980289936065674,
+        0.9980289936065674
+      ]
+    },
+    {
+      "renderer": "streamed",
+      "peak_rss_bytes": 134037504,
+      "render_seconds": 0.1090561669843737,
+      "sha256": "bcfeb592582bdd56d0b3e04d56905415f55b7cb0fcd81d3e9ac61d1193ee6c7e",
+      "range": [
+        -0.9980289936065674,
+        0.9980289936065674
+      ]
+    }
+  ],
+  "peak_rss_reduction_fraction": 0.7590421771913289
+}

@@ -1,0 +1,76 @@
+{
+  "checked": "2026-10-22",
+  "checks": [
+    {
+      "case": "P02_Wheeler_Marsh",
+      "title": "Wheeler Marsh, Connecticut · editable workflow",
+      "selected": "6",
+      "raster": "/api/artifacts/310ab13750ce47c0934d1dd770227e78/LAB/occupancy.tif",
+      "palette": "standard",
+      "range": "custom"
+    },
+    {
+      "case": "P01_Mozambique",
+      "title": "Chókwè flood, Mozambique · editable workflow",
+      "selected": "2",
+      "raster": "/api/artifacts/54bcd768c7994419816d42053fcb93e1/LAB/event.tif",
+      "palette": "standard",
+      "range": "shared"
+    },
+    {
+      "case": "P03_Timber_Fire",
+      "selected": "8",
+      "raster": "/api/artifacts/623f49883eb7498f8dddb889549850b0/LAB/fire_score.tif",
+      "palette": "diverging",
+      "range": "shared"
+    },
+    {
+      "case": "P04_Mexico_City",
+      "selected": "6",
+      "raster": "/api/artifacts/6203cb6624e84ae9a3920f275ef03c91/LAB/summary.tif",
+      "palette": "rainbow",
+      "range": "custom",
+      "low": "-30",
+      "high": "30"
+    },
+    {
+      "case": "P05_Venezuela",
+      "selected": "3",
+      "raster": "/api/artifacts/4d41bac50b4544859b572a2593e04157/LAB/event_displacement_cm.tif",
+      "palette": "diverging",
+      "range": "custom"
+    },
+    {
+      "case": "P06_Krasheninnikov",
+      "selected": "5",
+      "raster": "/api/artifacts/deed4ba43194490682c4aa014390b003/LAB/latest_departure.tif",
+      "palette": "diverging",
+      "range": "custom"
+    },
+    {
+      "case": "P07_Samudra_Tapu",
+      "title": "Samudra Tapu, Himalaya · editable workflow",
+      "selected": "1",
+      "raster": "/api/artifacts/48f27346d4a64b79ab6dff1ecdf4bcc3/LAB/horizontal_speed.tif",
+      "palette": "rainbow",
+      "range": "custom"
+    },
+    {
+      "case": "P01_Mozambique",
+      "title": "Chókwè flood, Mozambique · editable workflow",
+      "selected": "2",
+      "raster": "/api/artifacts/25bf6f51965a408781226dadd3b95dd4/LAB/event.tif",
+      "palette": "standard",
+      "range": "shared"
+    }
+  ],
+  "saved_tool": {
+    "name": "Mozambique · editable change demonstration",
+    "threshold": -3,
+    "direction": "below",
+    "reopened_sources": 2,
+    "output": "workflow_output",
+    "run": "1be0df9e5326416cb28dfee135a2ff02"
+  },
+  "scope": "All seven tutorials opened and loaded as editable cards, processed locally, map/export controls and opening palettes checked. An added numeric threshold was run, saved in My Tools and reopened after reload."
+}

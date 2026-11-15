@@ -1,0 +1,88 @@
+{
+  "job_id": "c6dc32cf7ce747a19b7e95586f1fb1e8",
+  "baseline_job": "4c623596cf8442de8127a14a7071d11e",
+  "baseline_reconstructed_from_retained_old_cache": true,
+  "reference_bbox": [
+    -68.9,
+    9.85,
+    -66.45,
+    10.15
+  ],
+  "reference_shared_cells": 979,
+  "grid": {
+    "crs": "EPSG:6933",
+    "resolution_m": 284.09849184986206,
+    "shape": [
+      773,
+      900
+    ],
+    "bbox": [
+      -69.0,
+      9.8,
+      -66.35,
+      11.55
+    ]
+  },
+  "source_checks": [
+    {
+      "group": "061_A_007_4000_SH_P05023",
+      "reader": "0.3.1",
+      "valid_cells": 50173,
+      "exact_zero_phase_on_valid_cells": 0,
+      "reference_cells": 979,
+      "max_independent_conversion_error_cm": 1.4346609219728634e-05,
+      "remote_bytes": 0
+    },
+    {
+      "group": "162_A_006_4000_SH_P05023",
+      "reader": "0.3.1",
+      "valid_cells": 37083,
+      "exact_zero_phase_on_valid_cells": 0,
+      "reference_cells": 979,
+      "max_independent_conversion_error_cm": 1.0840481703411342e-06,
+      "remote_bytes": 0
+    },
+    {
+      "group": "162_A_007_4000_SH_P05023",
+      "reader": "0.3.1",
+      "valid_cells": 220349,
+      "exact_zero_phase_on_valid_cells": 0,
+      "reference_cells": 979,
+      "max_independent_conversion_error_cm": 1.1406853964501806e-05,
+      "remote_bytes": 0
+    }
+  ],
+  "overlap_before": {
+    "n": 32815,
+    "median_cm": 2.652495861053467,
+    "p90_cm": 40.3112907409668
+  },
+  "overlap_after": {
+    "n": 27643,
+    "median_cm": 0.4873781204223633,
+    "p90_cm": 4.6202392578125
+  },
+  "overlap_same_cells_before": {
+    "n": 27643,
+    "median_cm": 2.411855697631836,
+    "p90_cm": 12.086149215698242
+  },
+  "overlap_same_cells_after": {
+    "n": 27643,
+    "median_cm": 0.4873781204223633,
+    "p90_cm": 4.6202392578125
+  },
+  "metrics": {
+    "valid_pixels": 278983,
+    "valid_fraction": 0.4010104930286043,
+    "median": -2.2451109886169434,
+    "p10": -19.17642593383789,
+    "p90": 7.876505374908447,
+    "mapped_area_km2": 22517.262803708938,
+    "event_groups": 3,
+    "overlap_area_km2": 2231.120518751774,
+    "reference_pixels": 979
+  },
+  "remote_science_bytes": 0,
+  "independent_geophysical_accuracy": "Not established. Internal overlap agreement is not ground-truth validation; the reference requires independent stability evidence."
+}

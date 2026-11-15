@@ -1,0 +1,29 @@
+{
+  "checked_date": "2026-10-20",
+  "workflow": "Browser interaction with local app Explore Earth; user requests app rather than external website",
+  "earthdata_connected": true,
+  "tool": "P07",
+  "bbox_wsen": [
+    77.36,
+    32.39,
+    77.57,
+    32.56
+  ],
+  "search_dates": [
+    "2025-12-01",
+    "2026-02-28"
+  ],
+  "reason_for_wider_dates": "Include acquisition pairs spanning January",
+  "releases_checked": [
+    "BETA",
+    "PROVISIONAL"
+  ],
+  "both_app_search_results": "NASA catalog request failed. Check network access and try again.",
+  "goff_displayed_count": 0,
+  "interpretation": "A failed discovery query cannot establish that no files exist. No exact pair dates have been identified.",
+  "satellite_downloads": 0,
+  "analysis_runs": 0,
+  "added_to_examples": false,
+  "app_code_modified": false,
+  "screenshot": "browser/app-search-recheck.png"
+}

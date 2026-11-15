@@ -1,0 +1,104 @@
+{
+  "previous_run": "0abb2d9e13ba4c3f96f908c26743f780",
+  "baseline_replay_run": "74898694f2ee4c84950e556815c581b9",
+  "new_run": "7b6de3d3262944169feaf532383861f0",
+  "old_result_sha256": "c4fa5b60b16161662d832e8d484f7f0ddeb1c87671a57dc883624f36734216e2",
+  "algorithm_version": "0.5.0",
+  "application_version": "0.4.9",
+  "common_area_km2": 2.8648000000000002,
+  "rows": [
+    {
+      "date": "2026-08-10",
+      "gauge_m_NAVD88": -0.3747611111111111,
+      "gauge_quality": "v",
+      "previous_HH_gamma_km2": 0.09000000000000001,
+      "integrated_HH_HV_sigma_km2": 0.2548
+    },
+    {
+      "date": "2026-08-22",
+      "gauge_m_NAVD88": 0.5620222222222222,
+      "gauge_quality": "v",
+      "previous_HH_gamma_km2": 0.2412,
+      "integrated_HH_HV_sigma_km2": 0.5064000000000001
+    },
+    {
+      "date": "2026-09-03",
+      "gauge_m_NAVD88": 0.6601666666666667,
+      "gauge_quality": "v",
+      "previous_HH_gamma_km2": 0.10600000000000001,
+      "integrated_HH_HV_sigma_km2": 0.6784
+    },
+    {
+      "date": "2026-09-15",
+      "gauge_m_NAVD88": -0.043116666666666664,
+      "gauge_quality": "v",
+      "previous_HH_gamma_km2": 0.126,
+      "integrated_HH_HV_sigma_km2": 0.3044
+    },
+    {
+      "date": "2026-09-27",
+      "gauge_m_NAVD88": -0.18649166666666667,
+      "gauge_quality": "v",
+      "previous_HH_gamma_km2": 0.010400000000000001,
+      "integrated_HH_HV_sigma_km2": 0.1228
+    },
+    {
+      "date": "2026-10-09",
+      "gauge_m_NAVD88": -0.773,
+      "gauge_quality": "p",
+      "previous_HH_gamma_km2": 0.1076,
+      "integrated_HH_HV_sigma_km2": 0.24600000000000002
+    }
+  ],
+  "previous_tide_rho": 0.3142857142857143,
+  "new_tide_rho": 0.8285714285714287,
+  "metrics": {
+    "common_valid_area_km2": 2.8648000000000002,
+    "baseline_water_candidate_km2": 0.2548,
+    "latest_water_candidate_km2": 0.24600000000000002,
+    "water_gain_km2": 0.0592,
+    "water_loss_km2": 0.068,
+    "net_water_change_km2": -0.0088,
+    "intermittent_water_candidate_km2": 0.732,
+    "always_water_candidate_km2": 0.054400000000000004
+  },
+  "sources": [
+    {
+      "id": "subset-ff0ca125d2bf2580f8a9a432837ca5fa",
+      "sha256": "f14da99c7622a951362f8026cc5ea6d474b7a5634ab0989b2da6a8563d6f9f56"
+    },
+    {
+      "id": "subset-8f5d4d6d3aaabdeea953b34d11dac1cd",
+      "sha256": "f80975c8f61ad6b7c839a5dc1227eb07485f9527b55d3d5088ead4cb5f48bd40"
+    },
+    {
+      "id": "subset-244198dea00ebbbfa640e2acf989e5a3",
+      "sha256": "a32b1e0d803420a0cd07c64662c170a8a464f2a21d985719f2dfa4ddb3405d94"
+    },
+    {
+      "id": "subset-d3dc72e713b64489d9c90e090b2081fd",
+      "sha256": "dc57de137c5f3b9e0509021af95146ccc4c911bbfd1b06a6148282f31ede151d"
+    },
+    {
+      "id": "subset-c3e452a23e2b68bca08237f3d8bfc958",
+      "sha256": "3f12dd81d525f6f8e365284b2fe463e9a7f98af0a0c45d980e4b63d365e5d1ff"
+    },
+    {
+      "id": "subset-8d3be757e5e34da35f6350b5b1a3e42d",
+      "sha256": "27779724d686016766f91e2798d292163564d6d987ca6ba7f1101276624681d9"
+    }
+  ],
+  "checks": {
+    "same_six_sources": true,
+    "native_joint_inputs_all_valid": true,
+    "source_hashes_match": true,
+    "direct_native_sigma_conversion_and_reprojection_matches": true,
+    "dated_rasters_and_areas_match": true,
+    "occupancy_matches": true,
+    "latest_sigma_rasters_match": true,
+    "named_zone_fractions_match": true,
+    "matches_previous_separate_diagnostic": true,
+    "historical_evidence_preserved_and_baseline_replay_matches": true
+  },
+  "limitations": "Six selected dates, not independent accuracy; historical PALSAR thresholds not calibrated for these NISAR scenes; no Enhanced Lee filter, exact study polygon, contemporaneous field labels, local tide calibration, depth or volume."
+}

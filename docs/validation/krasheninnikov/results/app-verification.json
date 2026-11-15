@@ -1,0 +1,357 @@
+{
+  "job_id": "ebdcd1ba74a246ebada10123d2817e32",
+  "status": "completed",
+  "application_version": "0.7.1",
+  "algorithm_version": "0.7.1",
+  "local_science_bytes_transferred": 0,
+  "sources": 5,
+  "layers_verified": 42,
+  "checks": [
+    {
+      "layer": "backscatter",
+      "valid_pixels": 1195151,
+      "range": [
+        -15.245979309082031,
+        -2.540078639984131
+      ]
+    },
+    {
+      "layer": "observation_0",
+      "valid_pixels": 1195152,
+      "range": [
+        -17.716455459594727,
+        -2.363194370269776
+      ]
+    },
+    {
+      "layer": "observation_1",
+      "valid_pixels": 1195151,
+      "range": [
+        -17.716455459594727,
+        -2.363194370269776
+      ]
+    },
+    {
+      "layer": "observation_2",
+      "valid_pixels": 1195152,
+      "range": [
+        -17.716455459594727,
+        -2.363194370269776
+      ]
+    },
+    {
+      "layer": "observation_3",
+      "valid_pixels": 1195151,
+      "range": [
+        -17.716455459594727,
+        -2.363194370269776
+      ]
+    },
+    {
+      "layer": "observation_4",
+      "valid_pixels": 1195151,
+      "range": [
+        -17.716455459594727,
+        -2.363194370269776
+      ]
+    },
+    {
+      "layer": "change",
+      "valid_pixels": 1195151,
+      "range": [
+        -12.247171401977539,
+        12.247171401977539
+      ]
+    },
+    {
+      "layer": "variability",
+      "valid_pixels": 1195151,
+      "range": [
+        0.9737167358398438,
+        13.132548332214355
+      ]
+    },
+    {
+      "layer": "count",
+      "valid_pixels": 1195153,
+      "range": [
+        4.95,
+        5.05
+      ]
+    },
+    {
+      "layer": "baseline_departure",
+      "valid_pixels": 1195151,
+      "range": [
+        -12.247171401977539,
+        12.247171401977539
+      ]
+    },
+    {
+      "layer": "standardized_departure",
+      "valid_pixels": 1195151,
+      "range": [
+        -12.247171401977539,
+        12.247171401977539
+      ]
+    },
+    {
+      "layer": "latest_departure",
+      "valid_pixels": 1195151,
+      "range": [
+        -9.535993576049805,
+        9.535993576049805
+      ]
+    },
+    {
+      "layer": "surface",
+      "valid_pixels": 1195151,
+      "range": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "layer": "confirmed_change",
+      "valid_pixels": 1195151,
+      "range": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "layer": "change_direction",
+      "valid_pixels": 1195151,
+      "range": [
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "layer": "first_change",
+      "valid_pixels": 396556,
+      "range": [
+        1.0,
+        4.0
+      ]
+    },
+    {
+      "layer": "repeat_count",
+      "valid_pixels": 1195151,
+      "range": [
+        0.0,
+        4.0
+      ]
+    },
+    {
+      "layer": "dated_departure_1",
+      "valid_pixels": 1195151,
+      "range": [
+        -5.118825435638428,
+        5.118825435638428
+      ]
+    },
+    {
+      "layer": "dated_departure_2",
+      "valid_pixels": 1195151,
+      "range": [
+        -7.750923156738281,
+        7.750923156738281
+      ]
+    },
+    {
+      "layer": "dated_departure_3",
+      "valid_pixels": 1195151,
+      "range": [
+        -8.836936950683594,
+        8.836936950683594
+      ]
+    },
+    {
+      "layer": "dated_departure_4",
+      "valid_pixels": 1195151,
+      "range": [
+        -9.535993576049805,
+        9.535993576049805
+      ]
+    },
+    {
+      "layer": "largest_step",
+      "valid_pixels": 1195151,
+      "range": [
+        1.0,
+        4.0
+      ]
+    },
+    {
+      "layer": "quality_accepted_fraction_0",
+      "valid_pixels": 1243080,
+      "range": [
+        0.99,
+        1.01
+      ]
+    },
+    {
+      "layer": "quality_missing_fraction_0",
+      "valid_pixels": 1243080,
+      "range": [
+        0.0,
+        1e-06
+      ]
+    },
+    {
+      "layer": "quality_rejected_nonpositive_power_0",
+      "valid_pixels": 1243080,
+      "range": [
+        0.0,
+        1e-06
+      ]
+    },
+    {
+      "layer": "quality_rejected_source_mask_0",
+      "valid_pixels": 1243080,
+      "range": [
+        0.0,
+        1e-06
+      ]
+    },
+    {
+      "layer": "quality_accepted_fraction_1",
+      "valid_pixels": 1243080,
+      "range": [
+        0.99,
+        1.01
+      ]
+    },
+    {
+      "layer": "quality_missing_fraction_1",
+      "valid_pixels": 1243080,
+      "range": [
+        0.0,
+        1e-06
+      ]
+    },
+    {
+      "layer": "quality_rejected_nonpositive_power_1",
+      "valid_pixels": 1243080,
+      "range": [
+        0.0,
+        1e-06
+      ]
+    },
+    {
+      "layer": "quality_rejected_source_mask_1",
+      "valid_pixels": 1243080,
+      "range": [
+        0.0,
+        1e-06
+      ]
+    },
+    {
+      "layer": "quality_accepted_fraction_2",
+      "valid_pixels": 1243080,
+      "range": [
+        0.99,
+        1.01
+      ]
+    },
+    {
+      "layer": "quality_missing_fraction_2",
+      "valid_pixels": 1243080,
+      "range": [
+        0.0,
+        1e-06
+      ]
+    },
+    {
+      "layer": "quality_rejected_nonpositive_power_2",
+      "valid_pixels": 1243080,
+      "range": [
+        0.0,
+        1e-06
+      ]
+    },
+    {
+      "layer": "quality_rejected_source_mask_2",
+      "valid_pixels": 1243080,
+      "range": [
+        0.0,
+        1e-06
+      ]
+    },
+    {
+      "layer": "quality_accepted_fraction_3",
+      "valid_pixels": 1243080,
+      "range": [
+        0.99,
+        1.01
+      ]
+    },
+    {
+      "layer": "quality_missing_fraction_3",
+      "valid_pixels": 1243080,
+      "range": [
+        0.0,
+        1e-06
+      ]
+    },
+    {
+      "layer": "quality_rejected_nonpositive_power_3",
+      "valid_pixels": 1243080,
+      "range": [
+        0.0,
+        1e-06
+      ]
+    },
+    {
+      "layer": "quality_rejected_source_mask_3",
+      "valid_pixels": 1243080,
+      "range": [
+        0.0,
+        1e-06
+      ]
+    },
+    {
+      "layer": "quality_accepted_fraction_4",
+      "valid_pixels": 1243080,
+      "range": [
+        0.99,
+        1.01
+      ]
+    },
+    {
+      "layer": "quality_missing_fraction_4",
+      "valid_pixels": 1243080,
+      "range": [
+        0.0,
+        1e-06
+      ]
+    },
+    {
+      "layer": "quality_rejected_nonpositive_power_4",
+      "valid_pixels": 1243080,
+      "range": [
+        0.0,
+        1e-06
+      ]
+    },
+    {
+      "layer": "quality_rejected_source_mask_4",
+      "valid_pixels": 1243080,
+      "range": [
+        0.0,
+        1e-06
+      ]
+    }
+  ],
+  "saved_display": {
+    "layer": "latest_departure",
+    "unit": "dB",
+    "palette": "diverging",
+    "mode": "custom",
+    "low": -8,
+    "high": 8
+  },
+  "metrics_match_local_study": true,
+  "existing_examples": 5
+}

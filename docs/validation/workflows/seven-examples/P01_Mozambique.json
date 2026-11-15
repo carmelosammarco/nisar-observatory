@@ -1,0 +1,358 @@
+{
+  "application_version": "0.8.9",
+  "processing_trace": {
+    "version": "1.0.0",
+    "stages": 4,
+    "captured_maps": 1,
+    "stage_evidence": [
+      {
+        "step": 1,
+        "operation": "water_rule",
+        "maps": [
+          {
+            "id": "observation_0",
+            "role": "Saved method evidence",
+            "unit": "class",
+            "label": "Open-water candidate \u00b7 2026-01-05"
+          },
+          {
+            "id": "observation_1",
+            "role": "Saved method evidence",
+            "unit": "class",
+            "label": "Open-water candidate \u00b7 2026-01-17"
+          },
+          {
+            "id": "water",
+            "role": "Saved method evidence",
+            "unit": "class",
+            "label": "Latest open-water candidate"
+          },
+          {
+            "id": "water_state",
+            "role": "Saved method evidence",
+            "unit": "class",
+            "label": "Latest water state \u00b7 0 dry candidate, 1 water candidate, 2 ambiguous"
+          }
+        ],
+        "diagnostic_keys": [
+          "water_states",
+          "water_validation"
+        ],
+        "unavailable_reason": null
+      },
+      {
+        "step": 2,
+        "operation": "flood_history",
+        "maps": [
+          {
+            "id": "trace_flood_history_baseline_brightness_e3b0c442",
+            "role": "Captured intermediate",
+            "unit": "dB",
+            "label": "Median brightness before the comparison observation"
+          },
+          {
+            "id": "event_baseline_departure",
+            "role": "Saved method evidence",
+            "unit": "dB",
+            "label": "Comparison observation minus median pre-comparison baseline"
+          },
+          {
+            "id": "event",
+            "role": "Saved method evidence",
+            "unit": "class",
+            "label": "New water candidate at the selected comparison observation"
+          },
+          {
+            "id": "recovery",
+            "role": "Saved method evidence",
+            "unit": "observation index",
+            "label": "First later dry observation index"
+          },
+          {
+            "id": "recovery_lower_days",
+            "role": "Saved method evidence",
+            "unit": "days",
+            "label": "Last wet observation before first dry state \u00b7 days after comparison"
+          },
+          {
+            "id": "recovery_upper_days",
+            "role": "Saved method evidence",
+            "unit": "days",
+            "label": "First dry observation \u00b7 days after comparison"
+          },
+          {
+            "id": "unresolved",
+            "role": "Saved method evidence",
+            "unit": "class",
+            "label": "New water candidate without a later dry observation"
+          }
+        ],
+        "diagnostic_keys": [
+          "event_selection",
+          "event_baseline",
+          "recovery_calendar"
+        ],
+        "unavailable_reason": null
+      },
+      {
+        "step": 3,
+        "operation": "water_tracking",
+        "maps": [],
+        "diagnostic_keys": [
+          "tracking"
+        ],
+        "unavailable_reason": null
+      },
+      {
+        "step": 4,
+        "operation": "publish",
+        "maps": [
+          {
+            "id": "event",
+            "role": "Saved method evidence",
+            "unit": "class",
+            "label": "New water candidate at the selected comparison observation"
+          }
+        ],
+        "diagnostic_keys": [],
+        "unavailable_reason": null
+      }
+    ]
+  },
+  "metrics": {
+    "common_valid_area_km2": 593.92,
+    "baseline_water_candidate_km2": 25.16,
+    "latest_water_candidate_km2": 100.65,
+    "water_gain_km2": 90.47,
+    "water_loss_km2": 14.98,
+    "net_water_change_km2": 75.49,
+    "new_water_candidate_km2": 90.47,
+    "observed_dry_again_km2": 0.0,
+    "unresolved_water_candidate_km2": 90.47
+  },
+  "historical_metric_comparison": {
+    "common_valid_area_km2": {
+      "previous": 593.92,
+      "current": 593.92,
+      "unchanged": true
+    },
+    "baseline_water_candidate_km2": {
+      "previous": 25.16,
+      "current": 25.16,
+      "unchanged": true
+    },
+    "latest_water_candidate_km2": {
+      "previous": 100.65,
+      "current": 100.65,
+      "unchanged": true
+    },
+    "water_gain_km2": {
+      "previous": 90.47,
+      "current": 90.47,
+      "unchanged": true
+    },
+    "water_loss_km2": {
+      "previous": 14.98,
+      "current": 14.98,
+      "unchanged": true
+    },
+    "net_water_change_km2": {
+      "previous": 75.49,
+      "current": 75.49,
+      "unchanged": true
+    },
+    "new_water_candidate_km2": {
+      "previous": 90.47,
+      "current": 90.47,
+      "unchanged": true
+    },
+    "observed_dry_again_km2": {
+      "previous": 0.0,
+      "current": 0.0,
+      "unchanged": true
+    },
+    "unresolved_water_candidate_km2": {
+      "previous": 90.47,
+      "current": 90.47,
+      "unchanged": true
+    }
+  },
+  "case": "P01_Mozambique",
+  "method": "P01",
+  "source_count": 2,
+  "grid_shape": [
+    256,
+    232
+  ],
+  "resolution": 100.0,
+  "steps": [
+    {
+      "operation": "water_rule",
+      "parameters": {
+        "method": "single",
+        "threshold_db": -17.0,
+        "hh_db": -14.0,
+        "hv_db": -23.0
+      }
+    },
+    {
+      "operation": "flood_history",
+      "parameters": {
+        "comparison_date": "2026-01-17",
+        "ambiguity_db": 1.0
+      }
+    },
+    {
+      "operation": "water_tracking",
+      "parameters": {
+        "minimum_m2": 30000.0
+      }
+    },
+    {
+      "operation": "publish",
+      "parameters": {
+        "layer": "event"
+      }
+    }
+  ],
+  "reader_arrays_identical": true,
+  "engine_version": "1.1.0",
+  "comparisons": {
+    "backscatter": {
+      "editable_layer": "backscatter",
+      "identical": true,
+      "sha256": "1153e578934f7b28e9fcdb686ba5eeb14d0fa06977c71cb91b08b17ca46bc643"
+    },
+    "observation_0": {
+      "editable_layer": "observation_0",
+      "identical": true,
+      "sha256": "1dbf245a5b6fc79b37219328fd929a8f77e79bd89c172e5d7eb9bbc359fbcaae"
+    },
+    "observation_1": {
+      "editable_layer": "observation_1",
+      "identical": true,
+      "sha256": "4a0febdc1dd8e42e712a1874ff593d12cab20fca77183d3d6462529c0ad9d101"
+    },
+    "change": {
+      "editable_layer": "change",
+      "identical": true,
+      "sha256": "dbf65084bf23c6f5c6a5715cdacf99652d0db1d2bae3aada74cbdad63bd60fd5"
+    },
+    "variability": {
+      "editable_layer": "variability",
+      "identical": true,
+      "sha256": "35d0cab7742ed5f9486c796aaace7b85531348e35fc9543a48785d8ae827963c"
+    },
+    "count": {
+      "editable_layer": "count",
+      "identical": true,
+      "sha256": "fd84a4771658d20b21d7842c20443d708f2eefe8909b7675b3c8f05102af34ba"
+    },
+    "baseline_departure": {
+      "editable_layer": "baseline_departure",
+      "identical": true,
+      "sha256": "dbf65084bf23c6f5c6a5715cdacf99652d0db1d2bae3aada74cbdad63bd60fd5"
+    },
+    "standardized_departure": {
+      "editable_layer": "standardized_departure",
+      "identical": true,
+      "sha256": "dbf65084bf23c6f5c6a5715cdacf99652d0db1d2bae3aada74cbdad63bd60fd5"
+    },
+    "water": {
+      "editable_layer": "water",
+      "identical": true,
+      "sha256": "4a0febdc1dd8e42e712a1874ff593d12cab20fca77183d3d6462529c0ad9d101"
+    },
+    "water_state": {
+      "editable_layer": "water_state",
+      "identical": true,
+      "sha256": "7e9e19bbf23043253c8e06555cd480056cebc630b49af1d4d2ece3ced0686e34"
+    },
+    "threshold_sensitive": {
+      "editable_layer": "threshold_sensitive",
+      "identical": true,
+      "sha256": "e774933d639335f18e6ba8fc5cbc2cfebea2f1127bd24200aa2552ce35b122ab"
+    },
+    "occupancy": {
+      "editable_layer": "occupancy",
+      "identical": true,
+      "sha256": "69b42f8a4ca33898c1352fb98f82b16b835ab4fbd623851d622d53d3d2966972"
+    },
+    "event_baseline_departure": {
+      "editable_layer": "event_baseline_departure",
+      "identical": true,
+      "sha256": "dbf65084bf23c6f5c6a5715cdacf99652d0db1d2bae3aada74cbdad63bd60fd5"
+    },
+    "event": {
+      "editable_layer": "event",
+      "identical": true,
+      "sha256": "ce1aaf8e4da94f2db7dfd82ea6fe07ebb13ee4e50232fb302b294acf03825839"
+    },
+    "recovery": {
+      "editable_layer": "recovery",
+      "identical": true,
+      "sha256": "076e616449b1c2c66303b182246705ed1c43d7a9d0951c990a9b815d1154073c"
+    },
+    "recovery_lower_days": {
+      "editable_layer": "recovery_lower_days",
+      "identical": true,
+      "sha256": "076e616449b1c2c66303b182246705ed1c43d7a9d0951c990a9b815d1154073c"
+    },
+    "recovery_upper_days": {
+      "editable_layer": "recovery_upper_days",
+      "identical": true,
+      "sha256": "076e616449b1c2c66303b182246705ed1c43d7a9d0951c990a9b815d1154073c"
+    },
+    "unresolved": {
+      "editable_layer": "unresolved",
+      "identical": true,
+      "sha256": "588ac36a63899ce871727a882ff59ee446aad32c4f4667aff1ef90f09b6c60a4"
+    },
+    "quality_accepted_fraction_0": {
+      "editable_layer": "quality_accepted_fraction_0",
+      "identical": true,
+      "sha256": "94489399a56f430e29e62521afbf0a38eb3fff0bd43bd89ee46bc5bdea5ecdeb"
+    },
+    "quality_missing_fraction_0": {
+      "editable_layer": "quality_missing_fraction_0",
+      "identical": true,
+      "sha256": "c5126a9b5e718019bf5982e85b4b0b42bcd584d88ed9a547a3352aac51718b43"
+    },
+    "quality_rejected_nonpositive_power_0": {
+      "editable_layer": "quality_rejected_nonpositive_power_0",
+      "identical": true,
+      "sha256": "c5126a9b5e718019bf5982e85b4b0b42bcd584d88ed9a547a3352aac51718b43"
+    },
+    "quality_rejected_source_mask_0": {
+      "editable_layer": "quality_rejected_source_mask_0",
+      "identical": true,
+      "sha256": "c5126a9b5e718019bf5982e85b4b0b42bcd584d88ed9a547a3352aac51718b43"
+    },
+    "quality_accepted_fraction_1": {
+      "editable_layer": "quality_accepted_fraction_1",
+      "identical": true,
+      "sha256": "94489399a56f430e29e62521afbf0a38eb3fff0bd43bd89ee46bc5bdea5ecdeb"
+    },
+    "quality_missing_fraction_1": {
+      "editable_layer": "quality_missing_fraction_1",
+      "identical": true,
+      "sha256": "c5126a9b5e718019bf5982e85b4b0b42bcd584d88ed9a547a3352aac51718b43"
+    },
+    "quality_rejected_nonpositive_power_1": {
+      "editable_layer": "quality_rejected_nonpositive_power_1",
+      "identical": true,
+      "sha256": "c5126a9b5e718019bf5982e85b4b0b42bcd584d88ed9a547a3352aac51718b43"
+    },
+    "quality_rejected_source_mask_1": {
+      "editable_layer": "quality_rejected_source_mask_1",
+      "identical": true,
+      "sha256": "c5126a9b5e718019bf5982e85b4b0b42bcd584d88ed9a547a3352aac51718b43"
+    }
+  },
+  "metrics_identical": true,
+  "series_identical": true,
+  "verification_scope": "All existing numeric layers, metrics and dated series",
+  "result": "PASS",
+  "remote_science_bytes": 0,
+  "browser_export_check": "not available: historical saved run was cleared; direct protected-input comparison still completed"
+}

@@ -1,0 +1,331 @@
+{
+  "project": "P06",
+  "title": "Previous all-later-dates classification \u00b7 tracking exceeded limit",
+  "unit": "dB",
+  "status": "exploratory",
+  "algorithm_version": "0.4.0",
+  "series": [],
+  "metrics": {
+    "persistent_change_area_km2": 66.986,
+    "increasing_area_km2": 63.084,
+    "decreasing_area_km2": 3.902
+  },
+  "notes": [
+    "Candidate tracking exceeds 1000 objects; increase minimum patch area or narrow the area/date selection.",
+    "Comparison raster reconstructed from the exact legacy formula; the full legacy processor did not finish object tracking."
+  ],
+  "extra": {
+    "tracking_status": "Candidate tracking exceeds 1000 objects; increase minimum patch area or narrow the area/date selection."
+  },
+  "sources": [
+    {
+      "id": "subset-77b9e708f03ebe015cdc2667f2a5cef5",
+      "catalog_id": "G4240345872-ASF",
+      "name": "NISAR_L2_PR_GCOV_023_060_D_061_4005_DHDH_A_20260618T084927_20260618T085005_P05023_N_F_J_001",
+      "start": "2026-06-18T08:49:27Z",
+      "end": "2026-06-18T08:50:05Z",
+      "group": "060_D_061_4005_DHDH_P05023",
+      "path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+      "reader_version": "0.3.1",
+      "quality_paths": [
+        "/science/LSAR/GCOV/grids/frequencyA/mask"
+      ],
+      "additional_paths": {},
+      "attributes": {
+        "_FillValue": null,
+        "description": "Covariance between HH and HH",
+        "grid_mapping": "projection",
+        "long_name": "Geocoded polarimetric covariance term HHHH",
+        "max_value": 70347.09375,
+        "mean_value": 0.3636434078216553,
+        "min_value": 2.2135311832888393e-17,
+        "sample_stddev": 9.527234077453613,
+        "units": "1",
+        "valid_min": 0.0,
+        "native_spacing_source_crs": [
+          10.0,
+          10.0
+        ],
+        "native_epsg": 32657,
+        "native_finite_samples": 4967698,
+        "native_accepted_samples": 4967698,
+        "native_accepted_fraction": 1.0,
+        "minimum_native_valid_fraction": 0.5,
+        "native_quality_before_aggregation": true,
+        "source_subset": {
+          "bbox": [
+            160.15,
+            54.51,
+            160.5,
+            54.7
+          ],
+          "source_id": "G4240345872-ASF",
+          "version": "area-1"
+        }
+      },
+      "bytes_transferred": 0,
+      "cache_hit": true
+    },
+    {
+      "id": "subset-0fcfff051a8ea84bd835ccdcd0eb1f48",
+      "catalog_id": "G4250844505-ASF",
+      "name": "NISAR_L2_PR_GCOV_024_060_D_061_4005_DHDH_A_20260630T084926_20260630T085005_P05023_N_F_J_001",
+      "start": "2026-06-30T08:49:26Z",
+      "end": "2026-06-30T08:50:05Z",
+      "group": "060_D_061_4005_DHDH_P05023",
+      "path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+      "reader_version": "0.3.1",
+      "quality_paths": [
+        "/science/LSAR/GCOV/grids/frequencyA/mask"
+      ],
+      "additional_paths": {},
+      "attributes": {
+        "_FillValue": null,
+        "description": "Covariance between HH and HH",
+        "grid_mapping": "projection",
+        "long_name": "Geocoded polarimetric covariance term HHHH",
+        "max_value": 120835.734375,
+        "mean_value": 0.45197394490242004,
+        "min_value": 2.4828090783575143e-17,
+        "sample_stddev": 14.713988304138184,
+        "units": "1",
+        "valid_min": 0.0,
+        "native_spacing_source_crs": [
+          10.0,
+          10.0
+        ],
+        "native_epsg": 32657,
+        "native_finite_samples": 4967695,
+        "native_accepted_samples": 4967695,
+        "native_accepted_fraction": 1.0,
+        "minimum_native_valid_fraction": 0.5,
+        "native_quality_before_aggregation": true,
+        "source_subset": {
+          "bbox": [
+            160.15,
+            54.51,
+            160.5,
+            54.7
+          ],
+          "source_id": "G4250844505-ASF",
+          "version": "area-1"
+        }
+      },
+      "bytes_transferred": 0,
+      "cache_hit": true
+    },
+    {
+      "id": "subset-52173242b1c76f71ea0f883f6dfade29",
+      "catalog_id": "G4252643155-ASF",
+      "name": "NISAR_L2_PR_GCOV_025_060_D_061_4005_DHDH_A_20260712T084929_20260712T085004_P05023_N_F_J_001",
+      "start": "2026-07-12T08:49:29Z",
+      "end": "2026-07-12T08:50:04Z",
+      "group": "060_D_061_4005_DHDH_P05023",
+      "path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+      "reader_version": "0.3.1",
+      "quality_paths": [
+        "/science/LSAR/GCOV/grids/frequencyA/mask"
+      ],
+      "additional_paths": {},
+      "attributes": {
+        "_FillValue": null,
+        "description": "Covariance between HH and HH",
+        "grid_mapping": "projection",
+        "long_name": "Geocoded polarimetric covariance term HHHH",
+        "max_value": 74071.2265625,
+        "mean_value": 0.5194534659385681,
+        "min_value": 3.3112787691771446e-17,
+        "sample_stddev": 7.3016533851623535,
+        "units": "1",
+        "valid_min": 0.0,
+        "native_spacing_source_crs": [
+          10.0,
+          10.0
+        ],
+        "native_epsg": 32657,
+        "native_finite_samples": 4967697,
+        "native_accepted_samples": 4967697,
+        "native_accepted_fraction": 1.0,
+        "minimum_native_valid_fraction": 0.5,
+        "native_quality_before_aggregation": true,
+        "source_subset": {
+          "bbox": [
+            160.15,
+            54.51,
+            160.5,
+            54.7
+          ],
+          "source_id": "G4252643155-ASF",
+          "version": "area-1"
+        }
+      },
+      "bytes_transferred": 0,
+      "cache_hit": true
+    },
+    {
+      "id": "subset-8bb599bf718fcd0077f87f236c8107b5",
+      "catalog_id": "G4260821003-ASF",
+      "name": "NISAR_L2_PR_GCOV_026_060_D_061_4005_DHDH_A_20260724T084925_20260724T085003_P05023_N_F_J_001",
+      "start": "2026-07-24T08:49:25Z",
+      "end": "2026-07-24T08:50:03Z",
+      "group": "060_D_061_4005_DHDH_P05023",
+      "path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+      "reader_version": "0.3.1",
+      "quality_paths": [
+        "/science/LSAR/GCOV/grids/frequencyA/mask"
+      ],
+      "additional_paths": {},
+      "attributes": {
+        "_FillValue": null,
+        "description": "Covariance between HH and HH",
+        "grid_mapping": "projection",
+        "long_name": "Geocoded polarimetric covariance term HHHH",
+        "max_value": 44565.62109375,
+        "mean_value": 0.3537803590297699,
+        "min_value": 1.2955180331074862e-17,
+        "sample_stddev": 8.311861038208008,
+        "units": "1",
+        "valid_min": 0.0,
+        "native_spacing_source_crs": [
+          10.0,
+          10.0
+        ],
+        "native_epsg": 32657,
+        "native_finite_samples": 4967698,
+        "native_accepted_samples": 4967698,
+        "native_accepted_fraction": 1.0,
+        "minimum_native_valid_fraction": 0.5,
+        "native_quality_before_aggregation": true,
+        "source_subset": {
+          "bbox": [
+            160.15,
+            54.51,
+            160.5,
+            54.7
+          ],
+          "source_id": "G4260821003-ASF",
+          "version": "area-1"
+        }
+      },
+      "bytes_transferred": 0,
+      "cache_hit": true
+    },
+    {
+      "id": "subset-c7d5dc882c12434c4a8a73ca7c0bcd4c",
+      "catalog_id": "G4285465897-ASF",
+      "name": "NISAR_L2_PR_GCOV_028_060_D_061_4005_DHDH_A_20260817T084924_20260817T085002_P05023_N_F_J_001",
+      "start": "2026-08-17T08:49:24Z",
+      "end": "2026-08-17T08:50:02Z",
+      "group": "060_D_061_4005_DHDH_P05023",
+      "path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+      "reader_version": "0.3.1",
+      "quality_paths": [
+        "/science/LSAR/GCOV/grids/frequencyA/mask"
+      ],
+      "additional_paths": {},
+      "attributes": {
+        "_FillValue": null,
+        "description": "Covariance between HH and HH",
+        "grid_mapping": "projection",
+        "long_name": "Geocoded polarimetric covariance term HHHH",
+        "max_value": 145591.796875,
+        "mean_value": 0.4103280305862427,
+        "min_value": 3.133601076704275e-19,
+        "sample_stddev": 15.014083862304688,
+        "units": "1",
+        "valid_min": 0.0,
+        "native_spacing_source_crs": [
+          10.0,
+          10.0
+        ],
+        "native_epsg": 32657,
+        "native_finite_samples": 4967697,
+        "native_accepted_samples": 4967697,
+        "native_accepted_fraction": 1.0,
+        "minimum_native_valid_fraction": 0.5,
+        "native_quality_before_aggregation": true,
+        "source_subset": {
+          "bbox": [
+            160.15,
+            54.51,
+            160.5,
+            54.7
+          ],
+          "source_id": "G4285465897-ASF",
+          "version": "area-1"
+        }
+      },
+      "bytes_transferred": 0,
+      "cache_hit": true
+    }
+  ],
+  "processing_options": {
+    "surface_method": "legacy",
+    "channel": "HHHH",
+    "resolution": 20,
+    "baseline_count": 1,
+    "baseline_end": "2026-06-18",
+    "change_threshold": 3,
+    "smoothing_m": 40,
+    "patch_area_m2": 30000,
+    "min_valid_fraction": 0.5
+  },
+  "application_version": "0.7.1",
+  "layers": [
+    {
+      "id": "surface",
+      "label": "Previous all-later-dates change rule",
+      "unit": "class",
+      "kind": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          54.50602733167603,
+          160.14449955696
+        ],
+        [
+          54.70399461345987,
+          160.507083794158
+        ]
+      ],
+      "image": "surface.png",
+      "raster": "surface.tif"
+    },
+    {
+      "id": "change_direction",
+      "label": "Previous same-sign direction",
+      "unit": "class",
+      "kind": "diverging",
+      "min": -1.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          54.50602733167603,
+          160.14449955696
+        ],
+        [
+          54.70399461345987,
+          160.507083794158
+        ]
+      ],
+      "image": "change_direction.png",
+      "raster": "change_direction.tif"
+    }
+  ],
+  "grid": {
+    "crs": "EPSG:32657",
+    "resolution_m": 20.0,
+    "shape": [
+      1080,
+      1151
+    ],
+    "bbox": [
+      160.15,
+      54.51,
+      160.5,
+      54.7
+    ]
+  },
+  "validation_status": "Exploratory; independent scientific accuracy has not been established."
+}

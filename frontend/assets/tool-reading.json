@@ -1,0 +1,233 @@
+{
+  "reviewed": "2026-10-21",
+  "purpose": "Curated background papers and observed examples; separate from implemented processing references.",
+  "sources": {
+    "https://doi.org/10.3390/rs17020263": {
+      "title": "Radar observations of tidal-marsh inundation",
+      "kind": "Journal paper · Lamb et al., 2025",
+      "scope": "Multi-mission SAR · pre-NISAR study",
+      "description": "Compares SAR inundation evidence with radiometric modeling and measured water levels at tidal marshes. Explains why vegetation and tide context matter for wetness interpretation.",
+      "group": "Scientific papers",
+      "reviewed": "2026-10-18",
+      "review_scope": "Publisher-indexed abstract, study-site description and author publication listing reviewed; direct publisher fetch was rate-limited",
+      "review_urls": [
+        "https://www.mdpi.com/2072-4292/17/2/263",
+        "https://www.mariatzortziou.com/publications.html"
+      ],
+      "citation": "Characterizing Tidal Marsh Inundation with Synthetic Aperture Radar, Radiometric Modeling, and In Situ Water Level Observations. Remote Sensing 17, 263."
+    },
+    "https://deltax.jpl.nasa.gov/science/overview/": {
+      "title": "Delta-X: following water through Louisiana wetlands",
+      "kind": "NASA / JPL · Field campaign",
+      "scope": "UAVSAR + AirSWOT + field observations",
+      "description": "Explore radar observations and field measurements of tidal water movement in the Mississippi Delta. Delta-X uses multiple instruments and hydrodynamic models; P02 does not retrieve water level.",
+      "group": "Real examples & datasets",
+      "reviewed": "2026-10-18",
+      "review_scope": "Primary abstract or documented case description reviewed",
+      "review_urls": [
+        "https://deltax.jpl.nasa.gov/science/overview/"
+      ]
+    },
+    "https://doi.org/10.1016/j.rse.2011.04.009": {
+      "title": "How radar responds to post-fire forest regrowth",
+      "kind": "Journal paper · Tanase et al., 2011",
+      "scope": "ALOS, Envisat and TerraSAR-X · other SAR missions",
+      "description": "Compares SAR sensitivity to forest regrowth in Spain and Alaska. Supports careful reading of brightness trajectories; it does not make P03 a validated recovery or biomass estimator.",
+      "group": "Scientific papers",
+      "reviewed": "2026-10-18",
+      "review_scope": "Primary abstract or documented case description reviewed",
+      "review_urls": [
+        "https://www.sciencedirect.com/science/article/pii/S0034425711001192"
+      ],
+      "citation": "Sensitivity of SAR data to post-fire forest regrowth in Mediterranean and boreal forests. Remote Sensing of Environment 115, 2075–2085."
+    },
+    "https://science.nasa.gov/earth/earth-observatory/a-mosaic-of-fire-data-147872/": {
+      "title": "A decade of fire scars and regrowth near Los Angeles",
+      "kind": "NASA Earth Observatory · Radar maps",
+      "scope": "UAVSAR · airborne L-band radar",
+      "description": "Compare radar observations of Angeles National Forest from 2010, 2017 and 2020. The mosaics illustrate changing vegetation after fires; their method differs from P03’s reference-normalized trajectory.",
+      "group": "Real examples & datasets",
+      "reviewed": "2026-10-18",
+      "review_scope": "Primary abstract or documented case description reviewed",
+      "review_urls": [
+        "https://science.nasa.gov/earth/earth-observatory/a-mosaic-of-fire-data-147872/"
+      ]
+    },
+    "https://doi.org/10.1186/s40623-015-0359-z": {
+      "title": "Mapping the 2015 Gorkha earthquake with InSAR",
+      "kind": "Journal paper · Kobayashi et al., 2015",
+      "scope": "ALOS-2 · other SAR mission",
+      "description": "Uses interferograms to investigate earthquake deformation and fault rupture in Nepal. Background for event-pair interpretation; detailed fault modeling is beyond P05.",
+      "group": "Scientific papers",
+      "reviewed": "2026-10-18",
+      "review_scope": "Primary abstract or documented case description reviewed",
+      "review_urls": [
+        "https://d-nb.info/1084059908/34"
+      ],
+      "citation": "Detailed crustal deformation and fault rupture of the 2015 Gorkha earthquake, Nepal, revealed from ScanSAR-based interferograms of ALOS-2. Earth, Planets and Space 67, 201."
+    },
+    "https://science.nasa.gov/earth/earth-observatory/where-venezuelas-earthquakes-shifted-the-ground/": {
+      "group": "Real examples & datasets",
+      "kind": "NASA Earth Observatory · NISAR example",
+      "title": "Venezuela earthquake displacement · June 2026",
+      "description": "Published centimeter-scale map using June 13–25 and June 18–30 acquisitions. Compare regional patterns and read its geometry and Urgent Response context; no numerical ground-truth raster is supplied.",
+      "scope": "NISAR · actual mission observations · multiple frames/tracks",
+      "reviewed": "2026-10-18",
+      "review_urls": [
+        "https://science.nasa.gov/earth/earth-observatory/where-venezuelas-earthquakes-shifted-the-ground/",
+        "https://nisar-docs.asf.alaska.edu/urgent-response/"
+      ],
+      "review_scope": "Acquisition dates, centimeter legend, viewing-geometry interpretation and urgent-response limitations checked against NASA and ASF documentation. No pixel-exact numerical comparison is claimed."
+    },
+    "https://www.usgs.gov/publications/synthetic-aperture-radar-volcanic-flow-maps-sar-vfms-a-simple-method-rapid": {
+      "title": "Combining radar brightness and coherence to map volcanic flows",
+      "kind": "Journal paper · Poland, 2022",
+      "scope": "Multi-mission SAR · other missions",
+      "description": "Explains volcanic flow maps that combine cross-polarized amplitude changes with coherence. Relevant method background; P06’s GCOV scattering diary does not implement the full combined technique.",
+      "group": "Scientific papers",
+      "reviewed": "2026-10-18",
+      "review_scope": "Primary abstract or documented case description reviewed",
+      "review_urls": [
+        "https://www.usgs.gov/publications/synthetic-aperture-radar-volcanic-flow-maps-sar-vfms-a-simple-method-rapid"
+      ],
+      "citation": "Synthetic aperture radar volcanic flow maps (SAR VFMs): A simple method for rapid identification and mapping of volcanic mass flows. DOI: 10.1007/s00445-022-01539-7."
+    },
+    "https://www.jpl.nasa.gov/news/us-india-satellite-captures-time-lapse-video-of-volcanic-eruption/": {
+      "title": "Watch NISAR track lava at Krasheninnikov",
+      "kind": "NASA / JPL · Time-lapse, 2026",
+      "scope": "NISAR · actual mission observations",
+      "description": "NASA’s dated HH L-band sequence shows the evolving bright flow field. It uses an oblique 3D presentation, not a georeferenced lava classification; P06 measures changes since an observed baseline and cannot reconstruct older deposits automatically.",
+      "group": "Real examples & datasets",
+      "reviewed": "2026-10-20",
+      "review_scope": "NASA article, SVS dataset metadata and dated video frames reviewed",
+      "review_urls": [
+        "https://www.jpl.nasa.gov/news/us-india-satellite-captures-time-lapse-video-of-volcanic-eruption/",
+        "https://svs.gsfc.nasa.gov/5675/"
+      ]
+    },
+    "https://escholarship.org/uc/item/4f48k1mq": {
+      "title": "Mapping the flow of Antarctica’s ice sheet",
+      "kind": "Journal paper · Rignot et al., 2011",
+      "scope": "Multi-mission satellite SAR · pre-NISAR",
+      "description": "Explains continental ice-flow mapping from radar measurements. Its geographic ice velocities require processing beyond the radar-component offset rates displayed by P07.",
+      "group": "Scientific papers",
+      "reviewed": "2026-10-18",
+      "review_scope": "Primary abstract or documented case description reviewed",
+      "review_urls": [
+        "https://escholarship.org/uc/item/4f48k1mq",
+        "https://sealevel.nasa.gov/publications/3986/ice-flow-of-the-antarctic-ice-sheet/"
+      ],
+      "citation": "Ice Flow of the Antarctic Ice Sheet. Science 333, 1427–1430. DOI: 10.1126/science.1208336."
+    },
+    "https://science.nasa.gov/earth/earth-observatory/first-map-of-antarcticas-moving-ice-51781/": {
+      "title": "Antarctica’s moving ice: the published map",
+      "kind": "NASA Earth Observatory · Ice-flow example, 2011",
+      "scope": "Multi-mission satellite radar · pre-NISAR",
+      "description": "Explore the published Antarctic flow map and its spatial patterns. This illustrates the science context; P07 does not automatically reproduce a continental geographic velocity mosaic.",
+      "group": "Real examples & datasets",
+      "reviewed": "2026-10-18",
+      "review_scope": "Primary abstract or documented case description reviewed",
+      "review_urls": [
+        "https://science.nasa.gov/earth/earth-observatory/first-map-of-antarcticas-moving-ice-51781/"
+      ]
+    },
+    "https://svs.gsfc.nasa.gov/5661/": {
+      "title": "NISAR reveals flooding around Chókwè, Mozambique",
+      "kind": "NASA SVS · Observed event, 2026",
+      "scope": "NISAR GCOV · actual mission observations",
+      "description": "Compare 5 and 17 January 2026 open-water views and HH/HV false-color composites. The Mozambique preset selects a smaller Chókwè study window. This is a NASA visualization, not a peer-reviewed paper or an independent accuracy mask; two dates show change but cannot establish recovery.",
+      "group": "Real examples & datasets",
+      "reviewed": "2026-10-18",
+      "review_scope": "Official NASA page, dated comparison images and public CMR acquisition metadata reviewed",
+      "review_urls": [
+        "https://svs.gsfc.nasa.gov/5661/"
+      ]
+    },
+    "https://doi.org/10.3390/rs18081172": {
+      "title": "Wheeler Marsh: inundation, depth and tide-gauge methods",
+      "kind": "Journal paper · Lamb et al., 2026",
+      "scope": "Historical PALSAR + elevation + field sensors · pre-NISAR observations",
+      "description": "Extends the Wheeler study with HH/HV sigma-zero thresholds, a DEM and calibrated synthetic tide gauges. P02 now adapts the joint threshold rule after native conversion, but does not reproduce the filtering, depth, volume or published accuracy.",
+      "group": "Scientific papers",
+      "review_urls": [
+        "https://www.mdpi.com/2072-4292/18/8/1172"
+      ],
+      "reviewed": "2026-10-18",
+      "review_scope": "Primary publication indexed full text or official agency page reviewed"
+    },
+    "https://eros.usgs.gov/doi-remote-sensing-activities/2025/usgs/coastal-inundation-monitoring-nisar": {
+      "title": "Wheeler Marsh: USGS NISAR validation site",
+      "kind": "USGS · Field validation programme, 2026",
+      "scope": "Milford marsh sensor deployments for NISAR calibration/validation",
+      "description": "Explains current water-level sensor deployments and shows historical PALSAR inundation maps. The illustrated 90% accuracy belongs to that earlier study, not this app or our 2026 NISAR test.",
+      "group": "Real examples & datasets",
+      "review_urls": [
+        "https://eros.usgs.gov/doi-remote-sensing-activities/2025/usgs/coastal-inundation-monitoring-nisar"
+      ],
+      "reviewed": "2026-10-18",
+      "review_scope": "Primary publication indexed full text or official agency page reviewed"
+    },
+    "https://www.tidesandcurrents.noaa.gov/stationhome.html?id=8467150": {
+      "title": "Bridgeport tide gauge: context for the satellite dates",
+      "kind": "NOAA · Station 8467150",
+      "scope": "Measured estuary water levels · separate from NISAR radar data",
+      "description": "Check measured water levels at each acquisition time, rather than predictions alone. Levels use a stated vertical datum and do not measure water depth in each marsh pixel; local tidal lag and ponding still matter.",
+      "group": "Real examples & datasets",
+      "review_urls": [
+        "https://www.tidesandcurrents.noaa.gov/stationhome.html?id=8467150"
+      ],
+      "reviewed": "2026-10-18",
+      "review_scope": "Primary publication indexed full text or official agency page reviewed"
+    },
+    "https://science.iirs.gov.in/nisar-for-monitoring-glacier-motion/": {
+      "title": "NISAR glacier motion at Samudra Tapu and other glaciers",
+      "kind": "IIRS science article · Malviya, Garg & Thakur, 2026",
+      "scope": "Real NISAR GOFF study · exact pairs and band not specified",
+      "description": "Publishes January 2026 Samudra Tapu maps alongside ITS_LIVE. P07 now offers a delivered-geometry horizontal estimate with zero vertical velocity, but this is not exact reproduction: the article omits pair IDs and conversion details. Compare support and assumptions as well as speed ranges.",
+      "group": "Real examples & datasets",
+      "reviewed": "2026-10-21",
+      "review_scope": "Complete official article, figure and cited data references reviewed; January-ending NASA GOFF subsets tested separately by viewing group",
+      "review_urls": [
+        "https://science.iirs.gov.in/nisar-for-monitoring-glacier-motion/",
+        "https://doi.org/10.65456/iirs.2026.10.3.1"
+      ],
+      "citation": "Malviya, A., Garg, V. & Thakur, P. (2026). NISAR for Monitoring Glacier Motion. Sudoor Manthan, 3(4). DOI: 10.65456/iirs.2026.10.3.1."
+    },
+    "https://nisar-docs.asf.alaska.edu/urgent-response/": {
+      "group": "Understand the input data",
+      "kind": "ASF · Data-access guide",
+      "title": "NISAR urgent-response observations",
+      "description": "Archive guidance for urgent-response observations and access. Check the delivered acquisition intervals and coverage before interpreting an event mosaic."
+    }
+  },
+  "tools": {
+    "P01": [
+      "https://svs.gsfc.nasa.gov/5661/"
+    ],
+    "P02": [
+      "https://doi.org/10.3390/rs17020263",
+      "https://doi.org/10.3390/rs18081172",
+      "https://eros.usgs.gov/doi-remote-sensing-activities/2025/usgs/coastal-inundation-monitoring-nisar",
+      "https://www.tidesandcurrents.noaa.gov/stationhome.html?id=8467150",
+      "https://deltax.jpl.nasa.gov/science/overview/"
+    ],
+    "P03": [
+      "https://doi.org/10.1016/j.rse.2011.04.009",
+      "https://science.nasa.gov/earth/earth-observatory/a-mosaic-of-fire-data-147872/"
+    ],
+    "P05": [
+      "https://doi.org/10.1186/s40623-015-0359-z",
+      "https://science.nasa.gov/earth/earth-observatory/where-venezuelas-earthquakes-shifted-the-ground/"
+    ],
+    "P06": [
+      "https://www.usgs.gov/publications/synthetic-aperture-radar-volcanic-flow-maps-sar-vfms-a-simple-method-rapid",
+      "https://www.jpl.nasa.gov/news/us-india-satellite-captures-time-lapse-video-of-volcanic-eruption/"
+    ],
+    "P07": [
+      "https://escholarship.org/uc/item/4f48k1mq",
+      "https://science.nasa.gov/earth/earth-observatory/first-map-of-antarcticas-moving-ice-51781/",
+      "https://science.iirs.gov.in/nisar-for-monitoring-glacier-motion/"
+    ],
+    "P04": []
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Example zone \u2014 replace coordinates for your area",
+        "role": "zone",
+        "source": "user defined comparison zone"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.53,
+              43.48
+            ],
+            [
+              4.55,
+              43.48
+            ],
+            [
+              4.55,
+              43.5
+            ],
+            [
+              4.53,
+              43.5
+            ],
+            [
+              4.53,
+              43.48
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

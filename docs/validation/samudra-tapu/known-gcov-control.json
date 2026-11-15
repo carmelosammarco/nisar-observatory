@@ -1,0 +1,14 @@
+{
+  "checked_at_utc": "2026-10-20T19:44:35.116881+00:00",
+  "url": "https://cmr.earthdata.nasa.gov/search/granules.json?concept_id=G4285465897-ASF&page_size=1&sort_key=start_date",
+  "status": 200,
+  "hits": "0",
+  "response": {
+    "feed": {
+      "updated": "2026-10-20T19:44:35.042Z",
+      "id": "https://cmr.earthdata.nasa.gov:443/search/granules.json?concept_id=G4285465897-ASF&page_size=1&sort_key=start_date",
+      "title": "ECHO granule metadata",
+      "entry": []
+    }
+  }
+}

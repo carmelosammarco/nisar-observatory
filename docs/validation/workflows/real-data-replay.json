@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-22",
+  "case": "Protected Mozambique GCOV \u00b7 custom ordered-step demonstration",
+  "steps": [
+    "power to dB",
+    "first-observation baseline subtraction",
+    "mean summary"
+  ],
+  "runs": [
+    {
+      "job_id": "e21e86d4a40e44e087798df6d4507944",
+      "workflow_id": null,
+      "metrics": {
+        "valid_pixels": 59392,
+        "valid_fraction": 1.0,
+        "median": 0.9782047271728516,
+        "p10": -3.185589075088501,
+        "p90": 2.4991188049316406,
+        "common_area_km2": 593.92,
+        "observations": 2
+      },
+      "processing_remote_bytes": 0,
+      "source_ids": [
+        "subset-5cd6e37b9e9335e8ecdf7669d38abf46",
+        "subset-d199429468cfcff711fe8c797f0abeca"
+      ],
+      "recipe_fingerprint": "484f9d8d3f5e950224147d2437f600427b068851bd9fb3956201b21061a1da08"
+    },
+    {
+      "job_id": "a9aa1c6542fe47f2b4baf6b7a669a825",
+      "workflow_id": "0c622508b01040e0b009d3d77022a18b",
+      "metrics": {
+        "valid_pixels": 59392,
+        "valid_fraction": 1.0,
+        "median": 0.9782047271728516,
+        "p10": -3.185589075088501,
+        "p90": 2.4991188049316406,
+        "common_area_km2": 593.92,
+        "observations": 2
+      },
+      "processing_remote_bytes": 0,
+      "source_ids": [
+        "subset-5cd6e37b9e9335e8ecdf7669d38abf46",
+        "subset-d199429468cfcff711fe8c797f0abeca"
+      ],
+      "recipe_fingerprint": "484f9d8d3f5e950224147d2437f600427b068851bd9fb3956201b21061a1da08"
+    }
+  ],
+  "identical_numeric_summary": true,
+  "scope": "Local numerical replay; not independent flood accuracy. Both runs initiated through the browser."
+}

@@ -1,0 +1,47 @@
+{
+  "job_id": "4c623596cf8442de8127a14a7071d11e",
+  "request": {
+    "bbox": [
+      -69.0,
+      9.8,
+      -66.35,
+      11.55
+    ],
+    "projects": [
+      "P06"
+    ],
+    "granules": [
+      "subset-85edd49270001ced9c8aaa5fcee26020",
+      "subset-1ef777939636f7bfe8461f14bc1d97d8",
+      "subset-d19d37d31a7ea07b613d70f50ef575f2"
+    ],
+    "options": {
+      "resolution": 80,
+      "coherence": 0.3,
+      "apply_ionosphere": true,
+      "min_valid_fraction": 0.5,
+      "reference_bbox": [
+        -68.9,
+        9.85,
+        -66.45,
+        10.15
+      ],
+      "event_timestamp": "2026-06-24T22:05:04.053Z",
+      "event_date": "2026-06-24",
+      "quake_mosaic": true,
+      "phase_network": false
+    }
+  },
+  "initial_quality_check_job": "eb2bb82799054c58a848f8c25bae6e9e",
+  "excluded_sources": [
+    {
+      "source": "subset-ca1c0b5c4eae3424970aa2d1b2a923b3",
+      "name": "NISAR_L2_PR_GUNW_023_061_A_006_024_4000_SH_20260618T095803_20260618T095837_20260630T095802_20260630T095836_P05023_N_F_J_001",
+      "start": "2026-06-18T09:58:03Z",
+      "end": "2026-06-30T09:58:02Z",
+      "product": "GUNW",
+      "message": "No coherent connected-component pixels survive quality screening."
+    }
+  ],
+  "earlier_engineering_run": "9cce390213e74ce4b2c4d95875f3cc42"
+}

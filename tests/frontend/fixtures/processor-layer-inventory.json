@@ -1,0 +1,1327 @@
+{
+  "evidence": "Layer inventories from three explicitly synthetic observations per product; no Earth measurements. Generated from current processors for navigation checks.",
+  "results": {
+    "P01": {
+      "project": "P01",
+      "algorithm_version": "0.4.0",
+      "series": [
+        {
+          "date": "2026-08-01T00:00:00+00:00",
+          "median_db": -10.0,
+          "water_candidate_km2": 0.0,
+          "valid_fraction": 1.0,
+          "comparison_pixels": 928
+        },
+        {
+          "date": "2026-08-13T00:00:00+00:00",
+          "median_db": -10.0,
+          "water_candidate_km2": 0.0,
+          "valid_fraction": 1.0,
+          "comparison_pixels": 928
+        },
+        {
+          "date": "2026-08-25T00:00:00+00:00",
+          "median_db": -10.0,
+          "water_candidate_km2": 0.0,
+          "valid_fraction": 1.0,
+          "comparison_pixels": 928
+        }
+      ],
+      "extra": {
+        "event_selection": {
+          "index": 1,
+          "date": "2026-08-13T00:00:00+00:00",
+          "method": "largest consecutive new-water candidate area; earliest tie",
+          "baseline_dates": [
+            "2026-08-01T00:00:00+00:00"
+          ]
+        },
+        "recovery_calendar": [
+          {
+            "index": 2,
+            "date": "2026-08-25T00:00:00+00:00"
+          }
+        ]
+      },
+      "layers": [
+        {
+          "id": "backscatter",
+          "label": "Latest calibrated backscatter",
+          "unit": "dB",
+          "kind": "continuous",
+          "raster": "backscatter.tif"
+        },
+        {
+          "id": "observation_0",
+          "label": "Open-water candidate \u00b7 2026-08-01",
+          "unit": "class",
+          "kind": "binary",
+          "frame_index": 0,
+          "start": "2026-08-01T00:00:00+00:00",
+          "end": "2026-08-01T00:00:30+00:00",
+          "raster": "observation_0.tif"
+        },
+        {
+          "id": "observation_1",
+          "label": "Open-water candidate \u00b7 2026-08-13",
+          "unit": "class",
+          "kind": "binary",
+          "frame_index": 1,
+          "start": "2026-08-13T00:00:00+00:00",
+          "end": "2026-08-13T00:00:30+00:00",
+          "raster": "observation_1.tif"
+        },
+        {
+          "id": "observation_2",
+          "label": "Open-water candidate \u00b7 2026-08-25",
+          "unit": "class",
+          "kind": "binary",
+          "frame_index": 2,
+          "start": "2026-08-25T00:00:00+00:00",
+          "end": "2026-08-25T00:00:30+00:00",
+          "raster": "observation_2.tif"
+        },
+        {
+          "id": "change",
+          "label": "Latest minus baseline backscatter",
+          "unit": "dB",
+          "kind": "diverging",
+          "raster": "change.tif"
+        },
+        {
+          "id": "variability",
+          "label": "Observed maximum minus minimum across acquisitions",
+          "unit": "dB",
+          "kind": "continuous",
+          "raster": "variability.tif"
+        },
+        {
+          "id": "count",
+          "label": "Number of valid observations",
+          "unit": "count",
+          "kind": "continuous",
+          "raster": "count.tif"
+        },
+        {
+          "id": "baseline_departure",
+          "label": "Latest minus median of the declared baseline dates",
+          "unit": "dB",
+          "kind": "diverging",
+          "raster": "baseline_departure.tif"
+        },
+        {
+          "id": "standardized_departure",
+          "label": "Baseline departure divided by robust spread with declared noise floor",
+          "unit": "ratio",
+          "kind": "diverging",
+          "raster": "standardized_departure.tif"
+        },
+        {
+          "id": "water",
+          "label": "Latest open-water candidate",
+          "unit": "class",
+          "kind": "binary",
+          "raster": "water.tif"
+        },
+        {
+          "id": "water_state",
+          "label": "Latest water state \u00b7 0 dry candidate, 1 water candidate, 2 ambiguous",
+          "unit": "class",
+          "kind": "water_state",
+          "raster": "water_state.tif"
+        },
+        {
+          "id": "threshold_sensitive",
+          "label": "At least one observation within 2 dB of the water threshold",
+          "unit": "class",
+          "kind": "binary",
+          "raster": "threshold_sensitive.tif"
+        },
+        {
+          "id": "occupancy",
+          "label": "Observed water-candidate fraction",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "occupancy.tif"
+        },
+        {
+          "id": "event_baseline_departure",
+          "label": "Comparison observation minus median pre-comparison baseline",
+          "unit": "dB",
+          "kind": "diverging",
+          "raster": "event_baseline_departure.tif"
+        },
+        {
+          "id": "event",
+          "label": "New water candidate at the selected comparison observation",
+          "unit": "class",
+          "kind": "binary",
+          "raster": "event.tif"
+        },
+        {
+          "id": "recovery",
+          "label": "First later dry observation index",
+          "unit": "observation index",
+          "kind": "continuous",
+          "raster": "recovery.tif"
+        },
+        {
+          "id": "recovery_lower_days",
+          "label": "Last wet observation before first dry state \u00b7 days after comparison",
+          "unit": "days",
+          "kind": "continuous",
+          "raster": "recovery_lower_days.tif"
+        },
+        {
+          "id": "recovery_upper_days",
+          "label": "First dry observation \u00b7 days after comparison",
+          "unit": "days",
+          "kind": "continuous",
+          "raster": "recovery_upper_days.tif"
+        },
+        {
+          "id": "unresolved",
+          "label": "New water candidate without a later dry observation",
+          "unit": "class",
+          "kind": "binary",
+          "raster": "unresolved.tif"
+        },
+        {
+          "id": "quality_accepted_fraction_0",
+          "label": "accepted fraction \u00b7 2026-08-01",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_accepted_fraction_0.tif"
+        },
+        {
+          "id": "quality_missing_fraction_0",
+          "label": "missing fraction \u00b7 2026-08-01",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_missing_fraction_0.tif"
+        },
+        {
+          "id": "quality_accepted_fraction_1",
+          "label": "accepted fraction \u00b7 2026-08-13",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_accepted_fraction_1.tif"
+        },
+        {
+          "id": "quality_missing_fraction_1",
+          "label": "missing fraction \u00b7 2026-08-13",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_missing_fraction_1.tif"
+        },
+        {
+          "id": "quality_accepted_fraction_2",
+          "label": "accepted fraction \u00b7 2026-08-25",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_accepted_fraction_2.tif"
+        },
+        {
+          "id": "quality_missing_fraction_2",
+          "label": "missing fraction \u00b7 2026-08-25",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_missing_fraction_2.tif"
+        }
+      ]
+    },
+    "P02": {
+      "project": "P02",
+      "algorithm_version": "0.4.0",
+      "series": [
+        {
+          "date": "2026-08-01T00:00:00+00:00",
+          "median_db": -10.0,
+          "water_candidate_km2": 0.0,
+          "valid_fraction": 1.0,
+          "comparison_pixels": 928
+        },
+        {
+          "date": "2026-08-13T00:00:00+00:00",
+          "median_db": -10.0,
+          "water_candidate_km2": 0.0,
+          "valid_fraction": 1.0,
+          "comparison_pixels": 928
+        },
+        {
+          "date": "2026-08-25T00:00:00+00:00",
+          "median_db": -10.0,
+          "water_candidate_km2": 0.0,
+          "valid_fraction": 1.0,
+          "comparison_pixels": 928
+        }
+      ],
+      "extra": {},
+      "layers": [
+        {
+          "id": "backscatter",
+          "label": "Latest calibrated backscatter",
+          "unit": "dB",
+          "kind": "continuous",
+          "raster": "backscatter.tif"
+        },
+        {
+          "id": "observation_0",
+          "label": "Open-water candidate \u00b7 2026-08-01",
+          "unit": "class",
+          "kind": "binary",
+          "frame_index": 0,
+          "start": "2026-08-01T00:00:00+00:00",
+          "end": "2026-08-01T00:00:30+00:00",
+          "raster": "observation_0.tif"
+        },
+        {
+          "id": "observation_1",
+          "label": "Open-water candidate \u00b7 2026-08-13",
+          "unit": "class",
+          "kind": "binary",
+          "frame_index": 1,
+          "start": "2026-08-13T00:00:00+00:00",
+          "end": "2026-08-13T00:00:30+00:00",
+          "raster": "observation_1.tif"
+        },
+        {
+          "id": "observation_2",
+          "label": "Open-water candidate \u00b7 2026-08-25",
+          "unit": "class",
+          "kind": "binary",
+          "frame_index": 2,
+          "start": "2026-08-25T00:00:00+00:00",
+          "end": "2026-08-25T00:00:30+00:00",
+          "raster": "observation_2.tif"
+        },
+        {
+          "id": "change",
+          "label": "Latest minus baseline backscatter",
+          "unit": "dB",
+          "kind": "diverging",
+          "raster": "change.tif"
+        },
+        {
+          "id": "variability",
+          "label": "Observed maximum minus minimum across acquisitions",
+          "unit": "dB",
+          "kind": "continuous",
+          "raster": "variability.tif"
+        },
+        {
+          "id": "count",
+          "label": "Number of valid observations",
+          "unit": "count",
+          "kind": "continuous",
+          "raster": "count.tif"
+        },
+        {
+          "id": "baseline_departure",
+          "label": "Latest minus median of the declared baseline dates",
+          "unit": "dB",
+          "kind": "diverging",
+          "raster": "baseline_departure.tif"
+        },
+        {
+          "id": "standardized_departure",
+          "label": "Baseline departure divided by robust spread with declared noise floor",
+          "unit": "ratio",
+          "kind": "diverging",
+          "raster": "standardized_departure.tif"
+        },
+        {
+          "id": "water",
+          "label": "Latest open-water candidate",
+          "unit": "class",
+          "kind": "binary",
+          "raster": "water.tif"
+        },
+        {
+          "id": "water_state",
+          "label": "Latest water state \u00b7 0 dry candidate, 1 water candidate, 2 ambiguous",
+          "unit": "class",
+          "kind": "water_state",
+          "raster": "water_state.tif"
+        },
+        {
+          "id": "threshold_sensitive",
+          "label": "At least one observation within 2 dB of the water threshold",
+          "unit": "class",
+          "kind": "binary",
+          "raster": "threshold_sensitive.tif"
+        },
+        {
+          "id": "occupancy",
+          "label": "Observed water-candidate fraction",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "occupancy.tif"
+        },
+        {
+          "id": "quality_accepted_fraction_0",
+          "label": "accepted fraction \u00b7 2026-08-01",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_accepted_fraction_0.tif"
+        },
+        {
+          "id": "quality_missing_fraction_0",
+          "label": "missing fraction \u00b7 2026-08-01",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_missing_fraction_0.tif"
+        },
+        {
+          "id": "quality_accepted_fraction_1",
+          "label": "accepted fraction \u00b7 2026-08-13",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_accepted_fraction_1.tif"
+        },
+        {
+          "id": "quality_missing_fraction_1",
+          "label": "missing fraction \u00b7 2026-08-13",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_missing_fraction_1.tif"
+        },
+        {
+          "id": "quality_accepted_fraction_2",
+          "label": "accepted fraction \u00b7 2026-08-25",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_accepted_fraction_2.tif"
+        },
+        {
+          "id": "quality_missing_fraction_2",
+          "label": "missing fraction \u00b7 2026-08-25",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_missing_fraction_2.tif"
+        }
+      ]
+    },
+    "P03": {
+      "project": "P03",
+      "algorithm_version": "0.4.0",
+      "series": [
+        {
+          "date": "2026-08-01T00:00:00+00:00",
+          "median_db": -10.0,
+          "water_candidate_km2": 0.0,
+          "valid_fraction": 1.0,
+          "reference_median_db": -10.0,
+          "affected_median_db": -10.0,
+          "relative_trajectory_db": 0.0,
+          "comparison_pixels": 928
+        },
+        {
+          "date": "2026-08-13T00:00:00+00:00",
+          "median_db": -10.0,
+          "water_candidate_km2": 0.0,
+          "valid_fraction": 1.0,
+          "reference_median_db": -10.0,
+          "affected_median_db": -10.0,
+          "relative_trajectory_db": 0.0,
+          "comparison_pixels": 928
+        },
+        {
+          "date": "2026-08-25T00:00:00+00:00",
+          "median_db": -10.0,
+          "water_candidate_km2": 0.0,
+          "valid_fraction": 1.0,
+          "reference_median_db": -10.0,
+          "affected_median_db": -10.0,
+          "relative_trajectory_db": 0.0,
+          "comparison_pixels": 928
+        }
+      ],
+      "extra": {},
+      "layers": [
+        {
+          "id": "backscatter",
+          "label": "Latest calibrated backscatter",
+          "unit": "dB",
+          "kind": "continuous",
+          "raster": "backscatter.tif"
+        },
+        {
+          "id": "observation_0",
+          "label": "Backscatter \u00b7 2026-08-01",
+          "unit": "dB",
+          "kind": "continuous",
+          "frame_index": 0,
+          "start": "2026-08-01T00:00:00+00:00",
+          "end": "2026-08-01T00:00:30+00:00",
+          "raster": "observation_0.tif"
+        },
+        {
+          "id": "observation_1",
+          "label": "Backscatter \u00b7 2026-08-13",
+          "unit": "dB",
+          "kind": "continuous",
+          "frame_index": 1,
+          "start": "2026-08-13T00:00:00+00:00",
+          "end": "2026-08-13T00:00:30+00:00",
+          "raster": "observation_1.tif"
+        },
+        {
+          "id": "observation_2",
+          "label": "Backscatter \u00b7 2026-08-25",
+          "unit": "dB",
+          "kind": "continuous",
+          "frame_index": 2,
+          "start": "2026-08-25T00:00:00+00:00",
+          "end": "2026-08-25T00:00:30+00:00",
+          "raster": "observation_2.tif"
+        },
+        {
+          "id": "change",
+          "label": "Latest minus baseline backscatter",
+          "unit": "dB",
+          "kind": "diverging",
+          "raster": "change.tif"
+        },
+        {
+          "id": "variability",
+          "label": "Observed maximum minus minimum across acquisitions",
+          "unit": "dB",
+          "kind": "continuous",
+          "raster": "variability.tif"
+        },
+        {
+          "id": "count",
+          "label": "Number of valid observations",
+          "unit": "count",
+          "kind": "continuous",
+          "raster": "count.tif"
+        },
+        {
+          "id": "baseline_departure",
+          "label": "Latest minus median of the declared baseline dates",
+          "unit": "dB",
+          "kind": "diverging",
+          "raster": "baseline_departure.tif"
+        },
+        {
+          "id": "standardized_departure",
+          "label": "Baseline departure divided by robust spread with declared noise floor",
+          "unit": "ratio",
+          "kind": "diverging",
+          "raster": "standardized_departure.tif"
+        },
+        {
+          "id": "relative_change",
+          "label": "Change relative to reference median",
+          "unit": "dB",
+          "kind": "diverging",
+          "raster": "relative_change.tif"
+        },
+        {
+          "id": "reference_support",
+          "label": "Reference cells used on every date",
+          "unit": "class",
+          "kind": "binary",
+          "raster": "reference_support.tif"
+        },
+        {
+          "id": "quality_accepted_fraction_0",
+          "label": "accepted fraction \u00b7 2026-08-01",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_accepted_fraction_0.tif"
+        },
+        {
+          "id": "quality_missing_fraction_0",
+          "label": "missing fraction \u00b7 2026-08-01",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_missing_fraction_0.tif"
+        },
+        {
+          "id": "quality_accepted_fraction_1",
+          "label": "accepted fraction \u00b7 2026-08-13",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_accepted_fraction_1.tif"
+        },
+        {
+          "id": "quality_missing_fraction_1",
+          "label": "missing fraction \u00b7 2026-08-13",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_missing_fraction_1.tif"
+        },
+        {
+          "id": "quality_accepted_fraction_2",
+          "label": "accepted fraction \u00b7 2026-08-25",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_accepted_fraction_2.tif"
+        },
+        {
+          "id": "quality_missing_fraction_2",
+          "label": "missing fraction \u00b7 2026-08-25",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_missing_fraction_2.tif"
+        }
+      ]
+    },
+    "P04": {
+      "project": "P04",
+      "algorithm_version": "0.4.0",
+      "series": [
+        {
+          "date": "2026-08-01T00:00:00+00:00",
+          "end": "2026-08-13T00:00:00+00:00",
+          "median_mm": -0.0,
+          "p10_mm": -0.0,
+          "p90_mm": 0.0,
+          "valid_fraction": 1.0,
+          "comparison_pixels": 928,
+          "interval_days": 12.0,
+          "median_rate_mm_day": -0.0
+        },
+        {
+          "date": "2026-08-13T00:00:00+00:00",
+          "end": "2026-08-25T00:00:00+00:00",
+          "median_mm": -0.0,
+          "p10_mm": -0.0,
+          "p90_mm": 0.0,
+          "valid_fraction": 1.0,
+          "comparison_pixels": 928,
+          "interval_days": 12.0,
+          "median_rate_mm_day": -0.0
+        },
+        {
+          "date": "2026-08-25T00:00:00+00:00",
+          "end": "2026-09-06T00:00:00+00:00",
+          "median_mm": -0.0,
+          "p10_mm": -0.0,
+          "p90_mm": 0.0,
+          "valid_fraction": 1.0,
+          "comparison_pixels": 928,
+          "interval_days": 12.0,
+          "median_rate_mm_day": -0.0
+        }
+      ],
+      "extra": {
+        "selected_interval": {
+          "start": "2026-08-25T00:00:00+00:00",
+          "end": "2026-09-06T00:00:00+00:00"
+        },
+        "los_series": [
+          {
+            "date": "2026-08-01T00:00:00+00:00",
+            "median_cm": 0.0,
+            "p10_cm": 0.0,
+            "p90_cm": 0.0
+          },
+          {
+            "date": "2026-08-13T00:00:00+00:00",
+            "median_cm": 0.0,
+            "p10_cm": 0.0,
+            "p90_cm": 0.0
+          },
+          {
+            "date": "2026-08-25T00:00:00+00:00",
+            "median_cm": 0.0,
+            "p10_cm": 0.0,
+            "p90_cm": 0.0
+          },
+          {
+            "date": "2026-09-06T00:00:00+00:00",
+            "median_cm": 0.0,
+            "p10_cm": 0.0,
+            "p90_cm": 0.0
+          }
+        ]
+      },
+      "layers": [
+        {
+          "id": "count",
+          "label": "Number of quality-screened pair observations",
+          "unit": "count",
+          "kind": "continuous",
+          "raster": "count.tif"
+        },
+        {
+          "id": "reference_support",
+          "label": "Fixed reference support shared by every pair",
+          "unit": "class",
+          "kind": "binary",
+          "raster": "reference_support.tif"
+        },
+        {
+          "id": "interval_rate",
+          "label": "Relative phase-equivalent change divided by selected pair days",
+          "unit": "mm/day",
+          "kind": "diverging",
+          "raster": "interval_rate.tif"
+        },
+        {
+          "id": "range",
+          "label": "Relative phase-equivalent range change",
+          "unit": "mm",
+          "kind": "diverging",
+          "raster": "range.tif"
+        },
+        {
+          "id": "pair_0",
+          "label": "Pair \u00b7 2026-08-01 \u2192 2026-08-13",
+          "unit": "mm",
+          "kind": "diverging",
+          "frame_index": 0,
+          "start": "2026-08-01T00:00:00+00:00",
+          "end": "2026-08-13T00:00:00+00:00",
+          "raster": "pair_0.tif"
+        },
+        {
+          "id": "pair_1",
+          "label": "Pair \u00b7 2026-08-13 \u2192 2026-08-25",
+          "unit": "mm",
+          "kind": "diverging",
+          "frame_index": 1,
+          "start": "2026-08-13T00:00:00+00:00",
+          "end": "2026-08-25T00:00:00+00:00",
+          "raster": "pair_1.tif"
+        },
+        {
+          "id": "pair_2",
+          "label": "Pair \u00b7 2026-08-25 \u2192 2026-09-06",
+          "unit": "mm",
+          "kind": "diverging",
+          "frame_index": 2,
+          "start": "2026-08-25T00:00:00+00:00",
+          "end": "2026-09-06T00:00:00+00:00",
+          "raster": "pair_2.tif"
+        },
+        {
+          "id": "observation_0",
+          "label": "Reconstructed relative LOS change \u00b7 2026-08-01",
+          "unit": "cm",
+          "kind": "diverging",
+          "frame_index": 0,
+          "start": "2026-08-01T00:00:00+00:00",
+          "frame_scope": "epoch",
+          "raster": "observation_0.tif"
+        },
+        {
+          "id": "observation_1",
+          "label": "Reconstructed relative LOS change \u00b7 2026-08-13",
+          "unit": "cm",
+          "kind": "diverging",
+          "frame_index": 1,
+          "start": "2026-08-13T00:00:00+00:00",
+          "frame_scope": "epoch",
+          "raster": "observation_1.tif"
+        },
+        {
+          "id": "observation_2",
+          "label": "Reconstructed relative LOS change \u00b7 2026-08-25",
+          "unit": "cm",
+          "kind": "diverging",
+          "frame_index": 2,
+          "start": "2026-08-25T00:00:00+00:00",
+          "frame_scope": "epoch",
+          "raster": "observation_2.tif"
+        },
+        {
+          "id": "observation_3",
+          "label": "Reconstructed relative LOS change \u00b7 2026-09-06",
+          "unit": "cm",
+          "kind": "diverging",
+          "frame_index": 3,
+          "start": "2026-09-06T00:00:00+00:00",
+          "frame_scope": "epoch",
+          "raster": "observation_3.tif"
+        },
+        {
+          "id": "los_rate_year",
+          "label": "Fitted relative LOS rate \u00b7 annualized",
+          "unit": "cm/year",
+          "kind": "diverging",
+          "raster": "los_rate_year.tif"
+        },
+        {
+          "id": "los_rate_month",
+          "label": "Fitted relative LOS rate \u00b7 per mean month",
+          "unit": "cm/month",
+          "kind": "diverging",
+          "raster": "los_rate_month.tif"
+        },
+        {
+          "id": "los_change",
+          "label": "Reconstructed first-to-last relative LOS change",
+          "unit": "cm",
+          "kind": "diverging",
+          "raster": "los_change.tif"
+        },
+        {
+          "id": "los_fit_residual",
+          "label": "Linear-trend residual RMS \u00b7 internal fit only",
+          "unit": "cm",
+          "kind": "continuous",
+          "raster": "los_fit_residual.tif"
+        },
+        {
+          "id": "los_pair_residual",
+          "label": "Pair-network residual RMS \u00b7 zero by construction for a tree",
+          "unit": "cm",
+          "kind": "continuous",
+          "raster": "los_pair_residual.tif"
+        },
+        {
+          "id": "quality_accepted_fraction_0",
+          "label": "accepted fraction \u00b7 2026-08-01",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_accepted_fraction_0.tif"
+        },
+        {
+          "id": "quality_missing_fraction_0",
+          "label": "missing fraction \u00b7 2026-08-01",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_missing_fraction_0.tif"
+        },
+        {
+          "id": "quality_accepted_fraction_1",
+          "label": "accepted fraction \u00b7 2026-08-13",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_accepted_fraction_1.tif"
+        },
+        {
+          "id": "quality_missing_fraction_1",
+          "label": "missing fraction \u00b7 2026-08-13",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_missing_fraction_1.tif"
+        },
+        {
+          "id": "quality_accepted_fraction_2",
+          "label": "accepted fraction \u00b7 2026-08-25",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_accepted_fraction_2.tif"
+        },
+        {
+          "id": "quality_missing_fraction_2",
+          "label": "missing fraction \u00b7 2026-08-25",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_missing_fraction_2.tif"
+        }
+      ]
+    },
+    "P05": {
+      "project": "P05",
+      "algorithm_version": "0.4.0",
+      "series": [
+        {
+          "date": "2026-08-01T00:00:00+00:00",
+          "end": "2026-08-13T00:00:00+00:00",
+          "median_mm": -0.0,
+          "p10_mm": -0.0,
+          "p90_mm": 0.0,
+          "valid_fraction": 1.0,
+          "comparison_pixels": 928,
+          "interval_days": 12.0,
+          "median_rate_mm_day": -0.0
+        },
+        {
+          "date": "2026-08-13T00:00:00+00:00",
+          "end": "2026-08-25T00:00:00+00:00",
+          "median_mm": -0.0,
+          "p10_mm": -0.0,
+          "p90_mm": 0.0,
+          "valid_fraction": 1.0,
+          "comparison_pixels": 928,
+          "interval_days": 12.0,
+          "median_rate_mm_day": -0.0
+        },
+        {
+          "date": "2026-08-25T00:00:00+00:00",
+          "end": "2026-09-06T00:00:00+00:00",
+          "median_mm": -0.0,
+          "p10_mm": -0.0,
+          "p90_mm": 0.0,
+          "valid_fraction": 1.0,
+          "comparison_pixels": 928,
+          "interval_days": 12.0,
+          "median_rate_mm_day": -0.0
+        }
+      ],
+      "extra": {
+        "event_selection": {
+          "timing_precision": "calendar date",
+          "matching_pairs": 1,
+          "selection": "shortest pair strictly bracketing the documented date",
+          "event_date": "2026-08-05"
+        },
+        "selected_interval": {
+          "start": "2026-08-01T00:00:00+00:00",
+          "end": "2026-08-13T00:00:00+00:00"
+        }
+      },
+      "layers": [
+        {
+          "id": "count",
+          "label": "Number of quality-screened pair observations",
+          "unit": "count",
+          "kind": "continuous",
+          "raster": "count.tif"
+        },
+        {
+          "id": "reference_support",
+          "label": "Fixed reference support shared by every pair",
+          "unit": "class",
+          "kind": "binary",
+          "raster": "reference_support.tif"
+        },
+        {
+          "id": "observation_0",
+          "label": "Pair \u00b7 2026-08-01 \u2192 2026-08-13",
+          "unit": "mm",
+          "kind": "diverging",
+          "frame_index": 0,
+          "start": "2026-08-01T00:00:00+00:00",
+          "end": "2026-08-13T00:00:00+00:00",
+          "raster": "observation_0.tif"
+        },
+        {
+          "id": "observation_1",
+          "label": "Pair \u00b7 2026-08-13 \u2192 2026-08-25",
+          "unit": "mm",
+          "kind": "diverging",
+          "frame_index": 1,
+          "start": "2026-08-13T00:00:00+00:00",
+          "end": "2026-08-25T00:00:00+00:00",
+          "raster": "observation_1.tif"
+        },
+        {
+          "id": "observation_2",
+          "label": "Pair \u00b7 2026-08-25 \u2192 2026-09-06",
+          "unit": "mm",
+          "kind": "diverging",
+          "frame_index": 2,
+          "start": "2026-08-25T00:00:00+00:00",
+          "end": "2026-09-06T00:00:00+00:00",
+          "raster": "observation_2.tif"
+        },
+        {
+          "id": "interval_rate",
+          "label": "Relative phase-equivalent change divided by selected pair days",
+          "unit": "mm/day",
+          "kind": "diverging",
+          "raster": "interval_rate.tif"
+        },
+        {
+          "id": "range",
+          "label": "Relative phase-equivalent range change",
+          "unit": "mm",
+          "kind": "diverging",
+          "raster": "range.tif"
+        },
+        {
+          "id": "quality_accepted_fraction_0",
+          "label": "accepted fraction \u00b7 2026-08-01",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_accepted_fraction_0.tif"
+        },
+        {
+          "id": "quality_missing_fraction_0",
+          "label": "missing fraction \u00b7 2026-08-01",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_missing_fraction_0.tif"
+        },
+        {
+          "id": "quality_accepted_fraction_1",
+          "label": "accepted fraction \u00b7 2026-08-13",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_accepted_fraction_1.tif"
+        },
+        {
+          "id": "quality_missing_fraction_1",
+          "label": "missing fraction \u00b7 2026-08-13",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_missing_fraction_1.tif"
+        },
+        {
+          "id": "quality_accepted_fraction_2",
+          "label": "accepted fraction \u00b7 2026-08-25",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_accepted_fraction_2.tif"
+        },
+        {
+          "id": "quality_missing_fraction_2",
+          "label": "missing fraction \u00b7 2026-08-25",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_missing_fraction_2.tif"
+        }
+      ]
+    },
+    "P06": {
+      "project": "P06",
+      "algorithm_version": "0.4.0",
+      "series": [
+        {
+          "date": "2026-08-01T00:00:00+00:00",
+          "median_db": -10.0,
+          "water_candidate_km2": 0.0,
+          "valid_fraction": 1.0,
+          "comparison_pixels": 928
+        },
+        {
+          "date": "2026-08-13T00:00:00+00:00",
+          "median_db": -10.0,
+          "water_candidate_km2": 0.0,
+          "valid_fraction": 1.0,
+          "comparison_pixels": 928
+        },
+        {
+          "date": "2026-08-25T00:00:00+00:00",
+          "median_db": -10.0,
+          "water_candidate_km2": 0.0,
+          "valid_fraction": 1.0,
+          "comparison_pixels": 928
+        }
+      ],
+      "extra": {
+        "step_calendar": [
+          {
+            "index": 1,
+            "start": "2026-08-01T00:00:00+00:00",
+            "end": "2026-08-13T00:00:00+00:00"
+          },
+          {
+            "index": 2,
+            "start": "2026-08-13T00:00:00+00:00",
+            "end": "2026-08-25T00:00:00+00:00"
+          }
+        ]
+      },
+      "layers": [
+        {
+          "id": "backscatter",
+          "label": "Latest calibrated backscatter",
+          "unit": "dB",
+          "kind": "continuous",
+          "raster": "backscatter.tif"
+        },
+        {
+          "id": "observation_0",
+          "label": "Backscatter \u00b7 2026-08-01",
+          "unit": "dB",
+          "kind": "continuous",
+          "frame_index": 0,
+          "start": "2026-08-01T00:00:00+00:00",
+          "end": "2026-08-01T00:00:30+00:00",
+          "raster": "observation_0.tif"
+        },
+        {
+          "id": "observation_1",
+          "label": "Backscatter \u00b7 2026-08-13",
+          "unit": "dB",
+          "kind": "continuous",
+          "frame_index": 1,
+          "start": "2026-08-13T00:00:00+00:00",
+          "end": "2026-08-13T00:00:30+00:00",
+          "raster": "observation_1.tif"
+        },
+        {
+          "id": "observation_2",
+          "label": "Backscatter \u00b7 2026-08-25",
+          "unit": "dB",
+          "kind": "continuous",
+          "frame_index": 2,
+          "start": "2026-08-25T00:00:00+00:00",
+          "end": "2026-08-25T00:00:30+00:00",
+          "raster": "observation_2.tif"
+        },
+        {
+          "id": "change",
+          "label": "Latest minus baseline backscatter",
+          "unit": "dB",
+          "kind": "diverging",
+          "raster": "change.tif"
+        },
+        {
+          "id": "variability",
+          "label": "Observed maximum minus minimum across acquisitions",
+          "unit": "dB",
+          "kind": "continuous",
+          "raster": "variability.tif"
+        },
+        {
+          "id": "count",
+          "label": "Number of valid observations",
+          "unit": "count",
+          "kind": "continuous",
+          "raster": "count.tif"
+        },
+        {
+          "id": "baseline_departure",
+          "label": "Latest minus median of the declared baseline dates",
+          "unit": "dB",
+          "kind": "diverging",
+          "raster": "baseline_departure.tif"
+        },
+        {
+          "id": "standardized_departure",
+          "label": "Baseline departure divided by robust spread with declared noise floor",
+          "unit": "ratio",
+          "kind": "diverging",
+          "raster": "standardized_departure.tif"
+        },
+        {
+          "id": "change_direction",
+          "label": "Consistent brightness increase (+1) or decrease (\u22121)",
+          "unit": "class",
+          "kind": "diverging",
+          "raster": "change_direction.tif"
+        },
+        {
+          "id": "largest_step",
+          "label": "Index of observation ending the largest brightness step",
+          "unit": "observation index",
+          "kind": "continuous",
+          "raster": "largest_step.tif"
+        },
+        {
+          "id": "surface",
+          "label": "Persistent candidate surface change",
+          "unit": "class",
+          "kind": "binary",
+          "raster": "surface.tif"
+        },
+        {
+          "id": "quality_accepted_fraction_0",
+          "label": "accepted fraction \u00b7 2026-08-01",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_accepted_fraction_0.tif"
+        },
+        {
+          "id": "quality_missing_fraction_0",
+          "label": "missing fraction \u00b7 2026-08-01",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_missing_fraction_0.tif"
+        },
+        {
+          "id": "quality_accepted_fraction_1",
+          "label": "accepted fraction \u00b7 2026-08-13",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_accepted_fraction_1.tif"
+        },
+        {
+          "id": "quality_missing_fraction_1",
+          "label": "missing fraction \u00b7 2026-08-13",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_missing_fraction_1.tif"
+        },
+        {
+          "id": "quality_accepted_fraction_2",
+          "label": "accepted fraction \u00b7 2026-08-25",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_accepted_fraction_2.tif"
+        },
+        {
+          "id": "quality_missing_fraction_2",
+          "label": "missing fraction \u00b7 2026-08-25",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_missing_fraction_2.tif"
+        }
+      ]
+    },
+    "P07": {
+      "project": "P07",
+      "algorithm_version": "0.4.0",
+      "series": [
+        {
+          "date": "2026-08-01T00:00:00+00:00",
+          "end": "2026-08-13T00:00:00+00:00",
+          "median": 0.0,
+          "west": 0.0,
+          "east": 0.0,
+          "valid_fraction": 1.0
+        },
+        {
+          "date": "2026-08-13T00:00:00+00:00",
+          "end": "2026-08-25T00:00:00+00:00",
+          "median": 0.0,
+          "west": 0.0,
+          "east": 0.0,
+          "valid_fraction": 1.0
+        },
+        {
+          "date": "2026-08-25T00:00:00+00:00",
+          "end": "2026-09-06T00:00:00+00:00",
+          "median": 0.0,
+          "west": 0.0,
+          "east": 0.0,
+          "valid_fraction": 1.0
+        }
+      ],
+      "extra": {},
+      "layers": [
+        {
+          "id": "offset_raw_0",
+          "label": "SNR-screened offset rate before spatial filtering \u00b7 2026-08-01",
+          "unit": "m/day",
+          "kind": "diverging",
+          "raster": "offset_raw_0.tif"
+        },
+        {
+          "id": "offset_rejected_0",
+          "label": "Spatial-filter rejection mask \u00b7 2026-08-01",
+          "unit": "class",
+          "kind": "binary",
+          "raster": "offset_rejected_0.tif"
+        },
+        {
+          "id": "offset_raw_1",
+          "label": "SNR-screened offset rate before spatial filtering \u00b7 2026-08-13",
+          "unit": "m/day",
+          "kind": "diverging",
+          "raster": "offset_raw_1.tif"
+        },
+        {
+          "id": "offset_rejected_1",
+          "label": "Spatial-filter rejection mask \u00b7 2026-08-13",
+          "unit": "class",
+          "kind": "binary",
+          "raster": "offset_rejected_1.tif"
+        },
+        {
+          "id": "offset_raw_2",
+          "label": "SNR-screened offset rate before spatial filtering \u00b7 2026-08-25",
+          "unit": "m/day",
+          "kind": "diverging",
+          "raster": "offset_raw_2.tif"
+        },
+        {
+          "id": "offset_rejected_2",
+          "label": "Spatial-filter rejection mask \u00b7 2026-08-25",
+          "unit": "class",
+          "kind": "binary",
+          "raster": "offset_rejected_2.tif"
+        },
+        {
+          "id": "observation_0",
+          "label": "Observation \u00b7 2026-08-01",
+          "unit": "m/day",
+          "kind": "diverging",
+          "frame_index": 0,
+          "start": "2026-08-01T00:00:00+00:00",
+          "end": "2026-08-13T00:00:00+00:00",
+          "raster": "observation_0.tif"
+        },
+        {
+          "id": "observation_1",
+          "label": "Observation \u00b7 2026-08-13",
+          "unit": "m/day",
+          "kind": "diverging",
+          "frame_index": 1,
+          "start": "2026-08-13T00:00:00+00:00",
+          "end": "2026-08-25T00:00:00+00:00",
+          "raster": "observation_1.tif"
+        },
+        {
+          "id": "observation_2",
+          "label": "Observation \u00b7 2026-08-25",
+          "unit": "m/day",
+          "kind": "diverging",
+          "frame_index": 2,
+          "start": "2026-08-25T00:00:00+00:00",
+          "end": "2026-09-06T00:00:00+00:00",
+          "raster": "observation_2.tif"
+        },
+        {
+          "id": "value",
+          "label": "Screened radar-component offset rates",
+          "unit": "m/day",
+          "kind": "continuous",
+          "raster": "value.tif"
+        },
+        {
+          "id": "change",
+          "label": "Difference between last and first observed values",
+          "unit": "m/day",
+          "kind": "diverging",
+          "raster": "change.tif"
+        },
+        {
+          "id": "variability",
+          "label": "Observed maximum minus minimum across acquisitions",
+          "unit": "m/day",
+          "kind": "continuous",
+          "raster": "variability.tif"
+        },
+        {
+          "id": "count",
+          "label": "Number of valid observations",
+          "unit": "count",
+          "kind": "continuous",
+          "raster": "count.tif"
+        },
+        {
+          "id": "quality_accepted_fraction_0",
+          "label": "accepted fraction \u00b7 2026-08-01",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_accepted_fraction_0.tif"
+        },
+        {
+          "id": "quality_missing_fraction_0",
+          "label": "missing fraction \u00b7 2026-08-01",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_missing_fraction_0.tif"
+        },
+        {
+          "id": "quality_accepted_fraction_1",
+          "label": "accepted fraction \u00b7 2026-08-13",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_accepted_fraction_1.tif"
+        },
+        {
+          "id": "quality_missing_fraction_1",
+          "label": "missing fraction \u00b7 2026-08-13",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_missing_fraction_1.tif"
+        },
+        {
+          "id": "quality_accepted_fraction_2",
+          "label": "accepted fraction \u00b7 2026-08-25",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_accepted_fraction_2.tif"
+        },
+        {
+          "id": "quality_missing_fraction_2",
+          "label": "missing fraction \u00b7 2026-08-25",
+          "unit": "fraction",
+          "kind": "continuous",
+          "raster": "quality_missing_fraction_2.tif"
+        }
+      ]
+    }
+  }
+}

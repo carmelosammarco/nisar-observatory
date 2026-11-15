@@ -1,0 +1,52 @@
+{
+  "version": "0.8.10",
+  "scope": "Shared metadata resource admission; not a whole-process memory quota or new scientific validation.",
+  "reproduced_before_fix": {
+    "route": "/api/reference-assistant",
+    "grid_shape": [
+      1000,
+      1000
+    ],
+    "selected_sources": 3,
+    "estimated_grid_bytes": 416000000,
+    "configured_memory_budget_bytes": 1048576,
+    "previous_http_status": 200,
+    "previous_job_status": "queued"
+  },
+  "fixed_behavior": [
+    "The same grid/trace estimate and destination disk gate protect guided, editable and reference-assistant admission.",
+    "Rejected reference checks do not persist a job, queue work or read science.",
+    "Workers recheck before source reads; failed rechecks persist current evidence and an actionable needs_input state.",
+    "Direct assistant calls check before stack allocation.",
+    "Invalid memory configuration fails startup before runtime ownership."
+  ],
+  "tests": {
+    "python": 653,
+    "frontend": 265,
+    "all_passed": true,
+    "new_adversarial_cases": 11,
+    "warning": "Existing Starlette/httpx TestClient deprecation"
+  },
+  "browser": {
+    "run": "8b4988c4676d44998c19dc861b318b4c",
+    "case": "P04_Mexico_City",
+    "flow": [
+      "Open protected tutorial",
+      "View prepared workspace",
+      "Prepare Sinking City Atlas",
+      "Continue: check data and reference"
+    ],
+    "selected_sources": 6,
+    "candidate_count": 3,
+    "current_reference_cells": 2698,
+    "common_cells": 509887,
+    "estimated_grid_bytes": 424438784,
+    "memory_budget_bytes": 3221225472,
+    "remote_science_bytes": 0,
+    "analysis_runs_preserved": 19,
+    "reference_assessments_added": 1,
+    "console_errors_and_warnings": [],
+    "screenshot": "docs/screenshots/reference-admission-0.8.10.png"
+  },
+  "scientific_regression": "No scientific or display arithmetic changed. The prior 0.8.9 seven-case / 251-map replay remains the current protected-case baseline; it was not repeated for this admission-only change."
+}

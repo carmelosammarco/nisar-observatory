@@ -1,0 +1,103 @@
+{
+  "version": "0.8.9",
+  "scope": "Custom study-domain isolation, auxiliary-role preservation and dual-component filter populations. Synthetic known answers establish implementation behavior; protected replays check reproducibility, not independent environmental accuracy.",
+  "reproduced_before_fix": [
+    {
+      "case": "P01 domain plus auxiliary polygons",
+      "expected_study_cells": 372,
+      "previous_reported_common_cells": 713,
+      "previous_water_cells_outside_study": 341
+    },
+    {
+      "case": "P04 without common study coverage",
+      "previous_status": "exploratory with zero common study cells"
+    },
+    {
+      "case": "P05 without common study coverage",
+      "previous_error": "TypeError formatting a missing median"
+    },
+    {
+      "case": "P07 with extreme other-component values outside the study",
+      "previous_error": "No common usable horizontal-speed support",
+      "known_speed_m_day": 5
+    }
+  ],
+  "fixed_behavior": [
+    "Only actual consumed auxiliary roles extend the processing footprint.",
+    "Measurement maps/statistics use the study domain; raw source/quality/reference/intermediate diagnostics retain explicit wider scopes where appropriate.",
+    "A phase reference can lie outside the study, but comparison ground must remain inside it.",
+    "Both offset components use the same study population for spatial screening; outside stable samples retain native-quality screening for median-bias checks.",
+    "Elementary workflows retain/apply shared domain geometry and retain phase reference samples until LOS conversion.",
+    "COG tags and scientific fingerprints record the spatial contract; affected historical boundary paths get a rerun notice."
+  ],
+  "tests": {
+    "python": 642,
+    "frontend": 265,
+    "all_passed": true
+  },
+  "protected_cases": [
+    {
+      "case": "P01_Mozambique",
+      "original_maps": 26,
+      "prior_receipt_identical_except_application_version": true,
+      "remote_science_bytes": 0
+    },
+    {
+      "case": "P02_Wheeler_Marsh",
+      "original_maps": 49,
+      "prior_receipt_identical_except_application_version": true,
+      "remote_science_bytes": 0
+    },
+    {
+      "case": "P03_Timber_Fire",
+      "original_maps": 43,
+      "prior_receipt_identical_except_application_version": true,
+      "remote_science_bytes": 0
+    },
+    {
+      "case": "P04_Mexico_City",
+      "original_maps": 11,
+      "prior_receipt_identical_except_application_version": true,
+      "remote_science_bytes": 0
+    },
+    {
+      "case": "P05_Venezuela",
+      "original_maps": 59,
+      "prior_receipt_identical_except_application_version": true,
+      "remote_science_bytes": 0
+    },
+    {
+      "case": "P06_Krasheninnikov",
+      "original_maps": 42,
+      "prior_receipt_identical_except_application_version": true,
+      "remote_science_bytes": 0
+    },
+    {
+      "case": "P07_Samudra_Tapu",
+      "original_maps": 21,
+      "prior_receipt_identical_except_application_version": true,
+      "remote_science_bytes": 0
+    }
+  ],
+  "protected_original_maps": 251,
+  "browser": {
+    "case": "P02_Wheeler_Marsh",
+    "run": "0ebee08085314571948433a6fdb7f095",
+    "flow": [
+      "Open tutorial",
+      "Load editable workflow",
+      "Check workflow",
+      "Run",
+      "Reload and reopen from Runs"
+    ],
+    "original_maps_identical": 49,
+    "metrics_identical": true,
+    "series_identical": true,
+    "study_domain_cells": 7162,
+    "common_valid_study_cells": 7162,
+    "console_errors_and_warnings": [],
+    "screenshot": "docs/screenshots/study-domain-result-0.8.9.png",
+    "existing_runs_preserved": 18,
+    "saved_runs_after_check": 19
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "job_id": "824646edbe874b0eac34ac7ba695d095",
+  "assessment_id": "6cb26edc61ff4e20a8bc1abe5eb058c5",
+  "request": {
+    "bbox": [
+      -99.4,
+      19.14,
+      -98.75,
+      19.65
+    ],
+    "granules": [
+      "G4058281119-ASF",
+      "G4058288661-ASF",
+      "G4058338815-ASF",
+      "G4058459579-ASF",
+      "G4058584016-ASF",
+      "G4058733834-ASF"
+    ],
+    "projects": [
+      "P05"
+    ],
+    "options": {
+      "resolution": 80,
+      "coherence": 0.3,
+      "min_valid_fraction": 0.5,
+      "apply_ionosphere": true,
+      "phase_allow_mixed_revisions": true,
+      "reference_bbox": [
+        -99.28,
+        19.4,
+        -99.24,
+        19.44
+      ],
+      "reference_assistant_id": "6cb26edc61ff4e20a8bc1abe5eb058c5",
+      "reference_candidate_id": "current"
+    },
+    "display": {
+      "palette": "rainbow",
+      "mode": "custom",
+      "layer": "los_rate_year",
+      "unit": "cm/year",
+      "low": -30,
+      "high": 30
+    }
+  },
+  "original_bytes": 14151581696,
+  "same_source_names_and_sizes_as_archived_case": true,
+  "current_reference": {
+    "patch_cells": 2880,
+    "shared_cells": 2698,
+    "shared_fraction": 0.9368055555555556,
+    "worst_pair_median_coherence": 0.6096587181091309,
+    "maximum_pair_spatial_mad_rad": 0.14429521560668945,
+    "spatial_spread": 0.14429521560668945,
+    "spread_unit": "rad",
+    "pair_reference_phase_rad": [
+      -10.45755386352539,
+      -62.989112854003906,
+      -75.17278289794922,
+      -15.436586380004883,
+      -43.730648040771484,
+      20.04350471496582
+    ],
+    "reference_values": [
+      -10.45755386352539,
+      -62.989112854003906,
+      -75.17278289794922,
+      -15.436586380004883,
+      -43.730648040771484,
+      20.04350471496582
+    ],
+    "data_suitability": "review needed",
+    "stability": "not independently established",
+    "warnings": [
+      "Worst-pair median accepted-sample coherence is below 0.70; inspect the quality maps."
+    ],
+    "origin": "current reference rectangle",
+    "relative_rate_to_candidate_1_cm_year": 18.96097183227539,
+    "relative_reference_offsets": [
+      -1.3138935566513834,
+      3.6686143666111173,
+      -0.949475845438397,
+      1.943147350694556,
+      -0.4699342063288351,
+      1.1848432583020114
+    ]
+  },
+  "metrics": {
+    "valid_pixels": 510464,
+    "valid_fraction": 0.8466866590589421,
+    "median": 1.5972440242767334,
+    "p10": -6.169743537902832,
+    "p90": 8.836731910705566,
+    "median_rate_cm_year": 1.5972440242767334,
+    "median_rate_cm_month": 0.13310366868972778,
+    "reference_pixels": 2698,
+    "span_days": 84.00004629629629,
+    "acquisition_dates": 7
+  },
+  "display": {
+    "palette": "rainbow",
+    "mode": "custom",
+    "layer": "los_rate_year",
+    "unit": "cm/year",
+    "low": -30.0,
+    "high": 30.0
+  },
+  "remote_science_bytes_processing": 0
+}

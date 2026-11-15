@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite the software and the original NISAR data and study references used in your analysis. Software reproducibility is distinct from environmental validation."
+title: "NISAR Observatory"
+type: software
+version: 0.9.0
+license: MIT
+authors:
+  - family-names: Sammarco
+    given-names: Carmelo
+    website: "https://carmelosammarco.vercel.app/"
+abstract: "A local, single-user research application for exploring NISAR L-band surface-change observations through documented examples and repeatable scientific workflows."
+keywords:
+  - NISAR
+  - synthetic aperture radar
+  - surface change
+  - reproducible workflows
+  - remote sensing

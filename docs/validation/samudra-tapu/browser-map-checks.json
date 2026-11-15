@@ -1,0 +1,148 @@
+{
+  "job_id": "827f80ba56fd4bc1b1e76765fe7f5bb0",
+  "maps": [
+    {
+      "layer": "offset_raw_0",
+      "http_status": 200,
+      "available": true,
+      "valid_pixels": 6726,
+      "range": [
+        -71.97318267822266,
+        71.97318267822266
+      ]
+    },
+    {
+      "layer": "offset_rejected_0",
+      "http_status": 200,
+      "available": true,
+      "valid_pixels": 6726,
+      "range": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "layer": "other_component_0",
+      "http_status": 200,
+      "available": true,
+      "valid_pixels": 35114,
+      "range": [
+        -21.625603561401356,
+        21.625603561401356
+      ]
+    },
+    {
+      "layer": "radar_magnitude_0",
+      "http_status": 200,
+      "available": true,
+      "valid_pixels": 6703,
+      "range": [
+        6.697564601898193,
+        73.47841217041015
+      ]
+    },
+    {
+      "layer": "other_filtered_0",
+      "http_status": 200,
+      "available": true,
+      "valid_pixels": 6703,
+      "range": [
+        -35.059126739501956,
+        35.059126739501956
+      ]
+    },
+    {
+      "layer": "radar_filtered_0",
+      "http_status": 200,
+      "available": true,
+      "valid_pixels": 6703,
+      "range": [
+        6.697564601898193,
+        73.47841217041015
+      ]
+    },
+    {
+      "layer": "radar_magnitude",
+      "http_status": 200,
+      "available": true,
+      "valid_pixels": 6703,
+      "range": [
+        6.697564601898193,
+        73.47841217041015
+      ]
+    },
+    {
+      "layer": "observation_0",
+      "http_status": 200,
+      "available": true,
+      "valid_pixels": 6726,
+      "range": [
+        -71.97318267822266,
+        71.97318267822266
+      ]
+    },
+    {
+      "layer": "value",
+      "http_status": 200,
+      "available": true,
+      "valid_pixels": 6726,
+      "range": [
+        -71.97318267822266,
+        71.97318267822266
+      ]
+    },
+    {
+      "layer": "quality_accepted_fraction_0",
+      "http_status": 200,
+      "available": true,
+      "valid_pixels": 58420,
+      "range": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "layer": "quality_missing_fraction_0",
+      "http_status": 200,
+      "available": true,
+      "valid_pixels": 58420,
+      "range": [
+        0.0,
+        1e-06
+      ]
+    },
+    {
+      "layer": "quality_rejected_snr_0",
+      "http_status": 200,
+      "available": true,
+      "valid_pixels": 58420,
+      "range": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "layer": "quality_snr_0",
+      "http_status": 200,
+      "available": true,
+      "valid_pixels": 39762,
+      "range": [
+        5.122751216888428,
+        86.02414947509764
+      ]
+    }
+  ],
+  "saved_display": {
+    "palette": "rainbow",
+    "mode": "custom",
+    "layer": "radar_magnitude",
+    "unit": "m/year",
+    "low": 0.0,
+    "high": 140.0
+  },
+  "export": {
+    "url": "http://127.0.0.1:8765/api/map-image/827f80ba56fd4bc1b1e76765fe7f5bb0/P07/radar_magnitude?mode=custom&palette=rainbow&low=0&high=140",
+    "http_status": 200,
+    "bytes": 141403
+  }
+}

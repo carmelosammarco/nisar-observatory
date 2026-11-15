@@ -1,0 +1,338 @@
+{
+  "application_version": "0.8.12",
+  "processing_trace": {
+    "version": "1.0.0",
+    "stages": 5,
+    "captured_maps": 5,
+    "stage_evidence": [
+      {
+        "step": 1,
+        "operation": "offset_screen",
+        "maps": [
+          {
+            "id": "trace_offset_screen_slantrangeoffset_79892d4a",
+            "role": "Captured intermediate",
+            "unit": "m",
+            "label": "slantRange offset after spatial screening, before time normalization"
+          },
+          {
+            "id": "trace_offset_screen_alongtrackoffset_79892d4a",
+            "role": "Captured intermediate",
+            "unit": "m",
+            "label": "alongTrack offset after spatial screening, before time normalization"
+          },
+          {
+            "id": "offset_rejected_0",
+            "role": "Saved method evidence",
+            "unit": "class",
+            "label": "Spatial-filter rejection mask \u00b7 2026-01-01"
+          }
+        ],
+        "diagnostic_keys": [
+          "offset_filter_diagnostics",
+          "offset_measurement"
+        ],
+        "unavailable_reason": null
+      },
+      {
+        "step": 2,
+        "operation": "offset_bias",
+        "maps": [
+          {
+            "id": "trace_offset_bias_primary_rate_79892d4a",
+            "role": "Captured intermediate",
+            "unit": "m/day",
+            "label": "Selected radar-component rate after the bias option \u00b7 2026-01-01"
+          },
+          {
+            "id": "trace_offset_bias_other_rate_79892d4a",
+            "role": "Captured intermediate",
+            "unit": "m/day",
+            "label": "Other radar-component rate after the bias option \u00b7 2026-01-01"
+          }
+        ],
+        "diagnostic_keys": [
+          "stable_terrain"
+        ],
+        "unavailable_reason": null
+      },
+      {
+        "step": 3,
+        "operation": "horizontal_velocity",
+        "maps": [
+          {
+            "id": "trace_horizontal_velocity_speed_daily_79892d4a",
+            "role": "Captured intermediate",
+            "unit": "m/day",
+            "label": "Estimated horizontal speed before display-unit conversion \u00b7 2026-01-01"
+          },
+          {
+            "id": "horizontal_condition_0",
+            "role": "Saved method evidence",
+            "unit": "ratio",
+            "label": "Horizontal-inversion condition number \u00b7 2026-01-01"
+          },
+          {
+            "id": "horizontal_vertical_sensitivity_0",
+            "role": "Saved method evidence",
+            "unit": "m/year",
+            "label": "Horizontal-vector sensitivity to the vertical-motion scenario \u00b7 2026-01-01"
+          }
+        ],
+        "diagnostic_keys": [
+          "horizontal_velocity"
+        ],
+        "unavailable_reason": null
+      },
+      {
+        "step": 4,
+        "operation": "rate_units",
+        "maps": [
+          {
+            "id": "horizontal_speed",
+            "role": "Saved method evidence",
+            "unit": "m/year",
+            "label": "Estimated horizontal glacier speed \u00b7 zero vertical velocity"
+          },
+          {
+            "id": "radar_magnitude",
+            "role": "Saved method evidence",
+            "unit": "m/year",
+            "label": "Latest filtered radar-plane motion magnitude \u00b7 not horizontal glacier speed"
+          },
+          {
+            "id": "observation_0",
+            "role": "Saved method evidence",
+            "unit": "m/year",
+            "label": "Estimated horizontal speed \u00b7 2026-01-01 \u2192 2026-01-13"
+          },
+          {
+            "id": "value",
+            "role": "Saved method evidence",
+            "unit": "m/year",
+            "label": "Selected radar-component rate \u00b7 supporting diagnostic"
+          }
+        ],
+        "diagnostic_keys": [
+          "offset_measurement",
+          "horizontal_velocity"
+        ],
+        "unavailable_reason": null
+      },
+      {
+        "step": 5,
+        "operation": "publish",
+        "maps": [
+          {
+            "id": "horizontal_speed",
+            "role": "Saved method evidence",
+            "unit": "m/year",
+            "label": "Estimated horizontal glacier speed \u00b7 zero vertical velocity"
+          }
+        ],
+        "diagnostic_keys": [],
+        "unavailable_reason": null
+      }
+    ]
+  },
+  "metrics": {
+    "valid_pixels": 6703,
+    "valid_fraction": 0.11473810338925025,
+    "median": 21.787776947021484,
+    "p10": 13.661437034606934,
+    "p90": 49.928428649902344,
+    "common_valid_area_km2": 42.8992
+  },
+  "historical_metric_comparison": {
+    "valid_pixels": {
+      "previous": 6703,
+      "current": 6703,
+      "unchanged": true
+    },
+    "valid_fraction": {
+      "previous": 0.11473810338925025,
+      "current": 0.11473810338925025,
+      "unchanged": true
+    },
+    "median": {
+      "previous": 21.787776947021484,
+      "current": 21.787776947021484,
+      "unchanged": true
+    },
+    "p10": {
+      "previous": 13.661437034606934,
+      "current": 13.661437034606934,
+      "unchanged": true
+    },
+    "p90": {
+      "previous": 49.928428649902344,
+      "current": 49.928428649902344,
+      "unchanged": true
+    },
+    "common_valid_area_km2": {
+      "previous": 42.8992,
+      "current": 42.8992,
+      "unchanged": true
+    }
+  },
+  "case": "P07_Samudra_Tapu",
+  "method": "P07",
+  "source_count": 1,
+  "grid_shape": [
+    230,
+    254
+  ],
+  "resolution": 80.0,
+  "steps": [
+    {
+      "operation": "offset_screen",
+      "parameters": {
+        "global_filter": false,
+        "local_filter": false,
+        "minimum_cutoff_m": 1.0,
+        "mad_multiplier": 8.0
+      }
+    },
+    {
+      "operation": "offset_bias",
+      "parameters": {
+        "enabled": false
+      }
+    },
+    {
+      "operation": "horizontal_velocity",
+      "parameters": {
+        "height_m": 5000.0,
+        "condition_limit": 10.0,
+        "vertical_scenario_m_year": 20.0
+      }
+    },
+    {
+      "operation": "rate_units",
+      "parameters": {
+        "unit": "m/year"
+      }
+    },
+    {
+      "operation": "publish",
+      "parameters": {
+        "layer": "horizontal_speed"
+      }
+    }
+  ],
+  "reader_arrays_identical": true,
+  "engine_version": "1.1.0",
+  "comparisons": {
+    "offset_raw_0": {
+      "editable_layer": "offset_raw_0",
+      "identical": true,
+      "sha256": "7051923fb7540f0b80e09e8e5c87c97e09de9ece4f1733a4d375ced68cd1d1e1"
+    },
+    "offset_rejected_0": {
+      "editable_layer": "offset_rejected_0",
+      "identical": true,
+      "sha256": "3fbb4b8fd5fb293f3ecc72be0808148ce3757b59a5fe2d3eacc6b4a10eb6559b"
+    },
+    "other_component_0": {
+      "editable_layer": "other_component_0",
+      "identical": true,
+      "sha256": "8f0480e9cda8989bd26a524ef761df6b3cef0dd1613e8047d01cadac45022fbd"
+    },
+    "radar_magnitude_0": {
+      "editable_layer": "radar_magnitude_0",
+      "identical": true,
+      "sha256": "0c32cc4294d3ae64a06aa01cf4c45aa05fff452f0a3a0a8a5c753eb7fe5b3e43"
+    },
+    "other_filtered_0": {
+      "editable_layer": "other_filtered_0",
+      "identical": true,
+      "sha256": "b76baf53a49840ff6053ecb71a0cf6ea03e5c03ce63abe45c53b2b822d1c99de"
+    },
+    "radar_filtered_0": {
+      "editable_layer": "radar_filtered_0",
+      "identical": true,
+      "sha256": "0c32cc4294d3ae64a06aa01cf4c45aa05fff452f0a3a0a8a5c753eb7fe5b3e43"
+    },
+    "horizontal_east_0": {
+      "editable_layer": "horizontal_east_0",
+      "identical": true,
+      "sha256": "6dbdf62bf3305d74ff7a9772a8734d9012d1cc4d0dc6b28f50d583a1f9a4a6e0"
+    },
+    "horizontal_north_0": {
+      "editable_layer": "horizontal_north_0",
+      "identical": true,
+      "sha256": "1f45d8e3a16285b40f89088a7c5fc84e974e7196f17c251c36dfa50c5f2aa921"
+    },
+    "horizontal_bearing_0": {
+      "editable_layer": "horizontal_bearing_0",
+      "identical": true,
+      "sha256": "b9420e898a2ea25663c67fddc7be629af528c9e6f5f76984682e779baf1112c0"
+    },
+    "horizontal_condition_0": {
+      "editable_layer": "horizontal_condition_0",
+      "identical": true,
+      "sha256": "f6903563f81e14a2992e654575126d019a1e44ea3edf4ce4ab0e9111138b0b20"
+    },
+    "horizontal_vertical_sensitivity_0": {
+      "editable_layer": "horizontal_vertical_sensitivity_0",
+      "identical": true,
+      "sha256": "4d803c974326e4cd04cca7c2ca8ff9fdb34faccce0f72dbcd1916cdc3d33fff1"
+    },
+    "horizontal_speed": {
+      "editable_layer": "horizontal_speed",
+      "identical": true,
+      "sha256": "1930cbfb110acb12c144aeef0cf0c12214d8cebf6e9887266e67ef432593e795"
+    },
+    "radar_magnitude": {
+      "editable_layer": "radar_magnitude",
+      "identical": true,
+      "sha256": "0c32cc4294d3ae64a06aa01cf4c45aa05fff452f0a3a0a8a5c753eb7fe5b3e43"
+    },
+    "radar_observation_0": {
+      "editable_layer": "radar_observation_0",
+      "identical": true,
+      "sha256": "039aeafcab113ee9ea7a45276f29654e6896090e146f4b2407a70961a0234e85"
+    },
+    "observation_0": {
+      "editable_layer": "observation_0",
+      "identical": true,
+      "sha256": "1930cbfb110acb12c144aeef0cf0c12214d8cebf6e9887266e67ef432593e795"
+    },
+    "value": {
+      "editable_layer": "value",
+      "identical": true,
+      "sha256": "039aeafcab113ee9ea7a45276f29654e6896090e146f4b2407a70961a0234e85"
+    },
+    "quality_accepted_fraction_0": {
+      "editable_layer": "quality_accepted_fraction_0",
+      "identical": true,
+      "sha256": "a61b3b54e28ee1418296a663f06fb4726a13514e78ea0cad71d031ced2dc0a30"
+    },
+    "quality_missing_fraction_0": {
+      "editable_layer": "quality_missing_fraction_0",
+      "identical": true,
+      "sha256": "14a9190340a748d785de21bdc96b02ff41dc6cfd05f4bff53a25d31ff1f4c8bc"
+    },
+    "quality_rejected_snr_0": {
+      "editable_layer": "quality_rejected_snr_0",
+      "identical": true,
+      "sha256": "0119474f172a39984ed24f35021d37a1967fd35c92b20b9ef985b59532249b33"
+    },
+    "quality_rejected_unpaired_offset_0": {
+      "editable_layer": "quality_rejected_unpaired_offset_0",
+      "identical": true,
+      "sha256": "dcb1eee3deb8282fda2fad52c50333fb8007139fa7e9737bf6d41072c66ea15f"
+    },
+    "quality_snr_0": {
+      "editable_layer": "quality_snr_0",
+      "identical": true,
+      "sha256": "c5b2f1aeaa37b1f42bb6c64122ff057db82b4fb8013a8ec319d7876b3e9a360d"
+    }
+  },
+  "metrics_identical": true,
+  "series_identical": true,
+  "verification_scope": "All existing numeric layers, metrics and dated series",
+  "result": "PASS",
+  "remote_science_bytes": 0,
+  "browser_export_check": "not available: historical saved run was cleared; direct protected-input comparison still completed"
+}

@@ -1,0 +1,11 @@
+{
+  "surface_method": "evolving",
+  "channel": "HHHH",
+  "resolution": 20,
+  "baseline_count": 1,
+  "baseline_end": "2026-06-18",
+  "change_threshold": 3,
+  "smoothing_m": 40,
+  "patch_area_m2": 30000,
+  "min_valid_fraction": 0.5
+}

@@ -1,0 +1,718 @@
+{
+  "project": "P07",
+  "title": "Estimated horizontal glacier speed \u00b7 zero vertical velocity",
+  "unit": "m/year",
+  "series": [
+    {
+      "date": "2026-01-01T00:05:27Z",
+      "end": "2026-01-13T00:05:27Z",
+      "median": 21.787776947021484,
+      "west": 22.001920700073242,
+      "east": 20.865272521972656,
+      "valid_fraction": 0.11473810338925025,
+      "comparison_pixels": 6703
+    }
+  ],
+  "metrics": {
+    "valid_pixels": 6703,
+    "valid_fraction": 0.11473810338925025,
+    "median": 21.787776947021484,
+    "p10": 13.661437034606934,
+    "p90": 49.928428649902344,
+    "common_valid_area_km2": 42.8992
+  },
+  "notes": [
+    "All plotted regional comparisons use the same pixels valid on every selected date or pair. Per-date coverage is shown separately; missing coverage is never reported as zero change.",
+    "Horizontal speed uses the delivered ENU viewing vectors and a zero-vertical-velocity constraint. Geometry is interpolated at the explicitly supplied constant ellipsoidal height without extrapolation. Ill-conditioned systems and invalid vectors are excluded. Down-slope motion, residual registration bias, snow matching and offset noise can bias this estimate. Inspect the vertical-motion sensitivity scenario; it is not a confidence interval.",
+    "Radar diagnostic maps show range or along-track components per exact elapsed day; horizontal estimates, when requested, are reported separately. The configurable spatial MAD filter can remove real localized motion: compare a run with filtering disabled. Diagnostics give cutoff and rejected counts.",
+    "The selected delivered offset layer is used consistently for both components and its own SNR. Filtered radar-plane magnitude requires both components to survive the same configured screening procedure; each component has its own cutoff and optional stable-ground bias. The raw magnitude remains an advanced diagnostic. Norms are positively biased by measurement noise and are not horizontal glacier speed. m/year = m/day \u00d7 365.25, not a year of measurements.",
+    "Input is a local native-grid area extract, not a complete original NASA product; only the saved rectangle can be analyzed.",
+    "Native offsets are SNR-screened before averaging. Radar components are not horizontal flow vectors."
+  ],
+  "extra": {
+    "support": {
+      "mode": "fixed common footprint across all selected observations",
+      "common_pixels": 6703,
+      "common_area_km2": 42.8992,
+      "common_fraction": 0.11473810338925025,
+      "per_observation_valid_pixels": [
+        6703
+      ],
+      "basis": "Estimated horizontal speed; zero vertical velocity",
+      "radar_common_pixels": 6703
+    },
+    "spatial_context": [
+      {
+        "name": "Samudra Tapu \u00b7 historical RGI6 outline",
+        "role": "domain",
+        "pixels": 12502,
+        "source": "GLIMS WFS RGI_SouthAsiaWest; RGI60-14.15613; outline BGNDATE 20020802, not a 2026 ice boundary; topology repaired with Shapely make_valid, original WFS geometry preserved in rgi-bbox.geojson"
+      }
+    ],
+    "offset_filter_diagnostics": [
+      {
+        "source": "subset-39fb4c0cd7c48a8db6b66f8449008d58",
+        "interval_days": 12.0,
+        "native_screened_grid_pixels": 6703,
+        "spatial_median_offset_m": -0.4100285768508911,
+        "mad_m": 0.11021733283996582,
+        "cutoff_m": 1.3072657413482665,
+        "candidate_outlier_pixels": 351,
+        "removed_pixels": 0
+      }
+    ],
+    "horizontal_velocity": {
+      "assumption": "Vertical velocity is fixed at zero in the local East/North/Up frame. This is a constrained estimate; glacier flow down a slope can violate it. No DEM surface-parallel correction is applied.",
+      "equations": "range_rate = -LOS_E * vE - LOS_N * vN - LOS_U * vU; along_rate = AT_E * vE + AT_N * vN; vU = 0. Solve the per-cell 2x2 system.",
+      "height_above_ellipsoid_m": 5000.0,
+      "height_source": "User-specified constant height used for trilinear geometry interpolation, not a per-pixel DEM",
+      "maximum_condition_number": 10.0,
+      "vertical_scenario_m_year": 20.0,
+      "vertical_scenario_meaning": "Magnitude of possible horizontal-vector bias if actual vertical velocity differs from zero by the stated value. It is a sensitivity scenario, not an error bar or confidence interval.",
+      "common_cells": 6703,
+      "latest_speed": {
+        "valid_pixels": 6703,
+        "valid_fraction": 0.11473810338925025,
+        "median": 21.787776947021484,
+        "p10": 13.661437034606934,
+        "p90": 49.928428649902344
+      },
+      "series": [
+        {
+          "date": "2026-01-01T00:05:27Z",
+          "end": "2026-01-13T00:05:27Z",
+          "median": 21.787776947021484
+        }
+      ],
+      "pairs": [
+        {
+          "source": "subset-39fb4c0cd7c48a8db6b66f8449008d58",
+          "start": "2026-01-01T00:05:27Z",
+          "end": "2026-01-13T00:05:27Z",
+          "geometry_valid_cells": 58420,
+          "joint_offset_cells": 6703,
+          "accepted_cells": 6703,
+          "condition_rejected_cells": 0,
+          "geometry": {
+            "version": "goff-geometry-1",
+            "height_above_ellipsoid_m": 5000.0,
+            "height_source": "User-specified constant ellipsoidal height; not a per-pixel DEM",
+            "interpolation": "Trilinear on delivered height/y/x cube axes; no extrapolation",
+            "vector_basis": "East/North/Up (ENU), verified from source dataset descriptions",
+            "source_descriptions": {
+              "losUnitVectorX": "East component of the line-of-sight (LOS) unit vector, defined from the target to the sensor, expressed in the east-north-up (ENU) coordinate system with its origin at the target location",
+              "losUnitVectorY": "North component of the line-of-sight (LOS) unit vector, defined from the target to the sensor, expressed in the east-north-up (ENU) coordinate system with its origin at the target location",
+              "alongTrackUnitVectorX": "East component of the along-track unit vector at the target location, expressed in the east-north-up (ENU) coordinate system and projected onto the horizontal plane (i.e., excluding the up component)",
+              "alongTrackUnitVectorY": "North component of the along-track unit vector at the target location, expressed in the east-north-up (ENU) coordinate system and projected onto the horizontal plane (i.e., excluding the up component)",
+              "incidenceAngle": "Incidence angle is defined as the angle between the LOS vector and the normal to the ellipsoid at the target height"
+            },
+            "paths": [
+              "/science/LSAR/GOFF/metadata/radarGrid/losUnitVectorX",
+              "/science/LSAR/GOFF/metadata/radarGrid/losUnitVectorY",
+              "/science/LSAR/GOFF/metadata/radarGrid/alongTrackUnitVectorX",
+              "/science/LSAR/GOFF/metadata/radarGrid/alongTrackUnitVectorY",
+              "/science/LSAR/GOFF/metadata/radarGrid/incidenceAngle"
+            ],
+            "projection_epsg": 32643
+          }
+        }
+      ],
+      "unit": "m/year"
+    },
+    "offset_measurement": {
+      "layer": "layer3",
+      "component": "slantRangeOffset",
+      "unit": "m/year",
+      "annualization_factor": 365.25,
+      "other_component_diagnostics": [
+        {
+          "source": "subset-39fb4c0cd7c48a8db6b66f8449008d58",
+          "interval_days": 12.0,
+          "native_screened_grid_pixels": 35114,
+          "spatial_median_offset_m": 0.0549900084733963,
+          "mad_m": 0.06807903945446014,
+          "cutoff_m": 1.0,
+          "candidate_outlier_pixels": 341,
+          "removed_pixels": 0,
+          "local_removed_pixels": 0,
+          "joint_pixels": 6703,
+          "stable_pixels": 0,
+          "median_rate_bias_m_day": null,
+          "bias_applied": false
+        }
+      ],
+      "meaning": "These diagnostic maps retain signed radar components and their radar-plane norm; they are not horizontal speed. Any constrained horizontal estimate is described separately. Annualized units extrapolate the pair rate, not observed annual displacement.",
+      "radar_component_series": [
+        {
+          "date": "2026-01-01T00:05:27Z",
+          "end": "2026-01-13T00:05:27Z",
+          "median": -12.480244636535645,
+          "west": -12.25452995300293,
+          "east": -13.394392013549805,
+          "valid_fraction": 0.11473810338925025
+        }
+      ]
+    },
+    "stable_terrain": [
+      {
+        "date": "2026-01-01T00:05:27Z",
+        "stable_pixels": 0,
+        "median_rate_bias_m_day": null,
+        "applied": false
+      }
+    ],
+    "observation_gaps": {
+      "days_between_starts": [],
+      "longest_gap_days": null,
+      "meaning": "Intervals without an acquisition are unobserved, not unchanged."
+    },
+    "independent_validation": {
+      "status": "not evaluated: no independent matched observations"
+    },
+    "method_references": [
+      "https://nisar-docs.asf.alaska.edu/goff/"
+    ]
+  },
+  "sources": [
+    {
+      "id": "subset-39fb4c0cd7c48a8db6b66f8449008d58",
+      "catalog_id": "G4058734792-ASF",
+      "name": "NISAR_L2_PR_GOFF_009_055_A_018_010_4000_SH_20260101T000527_20260101T000601_20260113T000527_20260113T000602_X05010_N_F_J_001",
+      "start": "2026-01-01T00:05:27Z",
+      "end": "2026-01-13T00:05:27Z",
+      "group": "055_A_018_4000_SH_X05010",
+      "path": "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer3/slantRangeOffset",
+      "reader_version": "0.3.3",
+      "quality_paths": [
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer3/snr",
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer3/slantRangeOffset",
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer3/alongTrackOffset",
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer3/snr",
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer3/slantRangeOffset",
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer3/alongTrackOffset"
+      ],
+      "additional_paths": {
+        "other_offset": "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer3/alongTrackOffset"
+      },
+      "attributes": {
+        "_FillValue": null,
+        "description": "Raw (unculled, unfiltered) slant range pixel offsets",
+        "grid_mapping": "projection",
+        "max_value": 99.26393127441406,
+        "mean_value": -0.3175792396068573,
+        "min_value": -99.93082427978516,
+        "sample_stddev": 3.1907432079315186,
+        "units": "meters",
+        "native_spacing_source_crs": [
+          80.0,
+          80.0
+        ],
+        "native_epsg": 32643,
+        "native_finite_samples": 61976,
+        "native_accepted_samples": 37052,
+        "native_accepted_fraction": 0.5978443268361947,
+        "minimum_native_valid_fraction": 0.5,
+        "native_quality_before_aggregation": true,
+        "offset_layer": "layer3",
+        "correlation_window_samples": {
+          "slantRangeWindowSize": 128,
+          "alongTrackWindowSize": 128
+        },
+        "source_subset": {
+          "bbox": [
+            77.36,
+            32.39,
+            77.57,
+            32.56
+          ],
+          "source_id": "G4058734792-ASF",
+          "version": "area-1"
+        },
+        "viewing_geometry": {
+          "version": "goff-geometry-1",
+          "height_above_ellipsoid_m": 5000.0,
+          "height_source": "User-specified constant ellipsoidal height; not a per-pixel DEM",
+          "interpolation": "Trilinear on delivered height/y/x cube axes; no extrapolation",
+          "vector_basis": "East/North/Up (ENU), verified from source dataset descriptions",
+          "source_descriptions": {
+            "losUnitVectorX": "East component of the line-of-sight (LOS) unit vector, defined from the target to the sensor, expressed in the east-north-up (ENU) coordinate system with its origin at the target location",
+            "losUnitVectorY": "North component of the line-of-sight (LOS) unit vector, defined from the target to the sensor, expressed in the east-north-up (ENU) coordinate system with its origin at the target location",
+            "alongTrackUnitVectorX": "East component of the along-track unit vector at the target location, expressed in the east-north-up (ENU) coordinate system and projected onto the horizontal plane (i.e., excluding the up component)",
+            "alongTrackUnitVectorY": "North component of the along-track unit vector at the target location, expressed in the east-north-up (ENU) coordinate system and projected onto the horizontal plane (i.e., excluding the up component)",
+            "incidenceAngle": "Incidence angle is defined as the angle between the LOS vector and the normal to the ellipsoid at the target height"
+          },
+          "paths": [
+            "/science/LSAR/GOFF/metadata/radarGrid/losUnitVectorX",
+            "/science/LSAR/GOFF/metadata/radarGrid/losUnitVectorY",
+            "/science/LSAR/GOFF/metadata/radarGrid/alongTrackUnitVectorX",
+            "/science/LSAR/GOFF/metadata/radarGrid/alongTrackUnitVectorY",
+            "/science/LSAR/GOFF/metadata/radarGrid/incidenceAngle"
+          ],
+          "projection_epsg": 32643
+        }
+      },
+      "bytes_transferred": 0,
+      "cache_hit": true
+    }
+  ],
+  "status": "exploratory",
+  "algorithm_version": "0.4.2",
+  "report": {
+    "headline": "What these observations show",
+    "findings": [
+      "1 compatible GOFF observations cover 2026-01-01 to 2026-01-13. Regional comparisons use 6,703 common analysis cells (42.899 km\u00b2).",
+      "The constrained horizontal estimate retains 6,703 latest-interval cells. Its median is 21.788 m/year. Vertical velocity was fixed at zero; this is not independently validated glacier speed.",
+      "Spatial outlier filtering removed 0 selected-component analysis-cell values across intervals. Supporting radar diagnostics remain component rates in m/year; the selected motion estimate is described separately. Delivered offset layer: layer3."
+    ],
+    "comparison_basis": "fixed common footprint across all selected observations",
+    "next_checks": [
+      "Inspect observation counts and source quality before interpreting a pattern.",
+      "Compare the map and observed dates; blank pixels are missing evidence.",
+      "Use independent observations to test environmental attribution."
+    ],
+    "validation": "Synthetic engineering tests check known calculations and missing-data behavior; independent real-world accuracy is not established."
+  },
+  "layers": [
+    {
+      "id": "offset_raw_0",
+      "label": "SNR-screened offset rate before spatial filtering \u00b7 2026-01-01",
+      "unit": "m/year",
+      "kind": "diverging",
+      "min": -72.0075454711914,
+      "max": 72.0075454711914,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "offset_raw_0.png",
+      "raster": "offset_raw_0.tif"
+    },
+    {
+      "id": "offset_rejected_0",
+      "label": "Spatial-filter rejection mask \u00b7 2026-01-01",
+      "unit": "class",
+      "kind": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "offset_rejected_0.png",
+      "raster": "offset_rejected_0.tif"
+    },
+    {
+      "id": "other_component_0",
+      "label": "Other SNR-screened radar-component rate before spatial filtering \u00b7 2026-01-01",
+      "unit": "m/year",
+      "kind": "diverging",
+      "min": -21.62560272216797,
+      "max": 21.62560272216797,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "other_component_0.png",
+      "raster": "other_component_0.tif"
+    },
+    {
+      "id": "radar_magnitude_0",
+      "label": "Two-component radar-plane magnitude before spatial filtering \u00b7 not geographic speed",
+      "unit": "m/year",
+      "kind": "continuous",
+      "min": 6.697564601898193,
+      "max": 73.47840881347656,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "radar_magnitude_0.png",
+      "raster": "radar_magnitude_0.tif"
+    },
+    {
+      "id": "other_filtered_0",
+      "label": "Other filtered radar-component rate \u00b7 2026-01-01",
+      "unit": "m/year",
+      "kind": "diverging",
+      "min": -35.05912780761719,
+      "max": 35.05912780761719,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "other_filtered_0.png",
+      "raster": "other_filtered_0.tif"
+    },
+    {
+      "id": "radar_filtered_0",
+      "label": "Filtered two-component radar-plane magnitude \u00b7 2026-01-01 \u00b7 not horizontal speed",
+      "unit": "m/year",
+      "kind": "continuous",
+      "min": 6.697564601898193,
+      "max": 73.47840881347656,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "radar_filtered_0.png",
+      "raster": "radar_filtered_0.tif"
+    },
+    {
+      "id": "horizontal_east_0",
+      "label": "Eastward horizontal velocity \u00b7 2026-01-01",
+      "unit": "m/year",
+      "kind": "diverging",
+      "min": -104.11664581298828,
+      "max": 104.11664581298828,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "horizontal_east_0.png",
+      "raster": "horizontal_east_0.tif"
+    },
+    {
+      "id": "horizontal_north_0",
+      "label": "Northward horizontal velocity \u00b7 2026-01-01",
+      "unit": "m/year",
+      "kind": "diverging",
+      "min": -47.44834899902344,
+      "max": 47.44834899902344,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "horizontal_north_0.png",
+      "raster": "horizontal_north_0.tif"
+    },
+    {
+      "id": "horizontal_bearing_0",
+      "label": "Horizontal flow direction clockwise from true north \u00b7 2026-01-01",
+      "unit": "degrees",
+      "kind": "continuous",
+      "min": 9.606952667236328,
+      "max": 158.1568145751953,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "horizontal_bearing_0.png",
+      "raster": "horizontal_bearing_0.tif"
+    },
+    {
+      "id": "horizontal_condition_0",
+      "label": "Horizontal-inversion condition number \u00b7 2026-01-01",
+      "unit": "ratio",
+      "kind": "continuous",
+      "min": 1.5053911209106445,
+      "max": 1.525566577911377,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "horizontal_condition_0.png",
+      "raster": "horizontal_condition_0.tif"
+    },
+    {
+      "id": "horizontal_vertical_sensitivity_0",
+      "label": "Horizontal-vector sensitivity to the vertical-motion scenario \u00b7 2026-01-01",
+      "unit": "m/year",
+      "kind": "continuous",
+      "min": 22.489337921142578,
+      "max": 23.04050636291504,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "horizontal_vertical_sensitivity_0.png",
+      "raster": "horizontal_vertical_sensitivity_0.tif"
+    },
+    {
+      "id": "horizontal_speed",
+      "label": "Estimated horizontal glacier speed \u00b7 zero vertical velocity",
+      "unit": "m/year",
+      "kind": "continuous",
+      "min": 9.125656127929688,
+      "max": 109.759521484375,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "horizontal_speed.png",
+      "raster": "horizontal_speed.tif"
+    },
+    {
+      "id": "radar_magnitude",
+      "label": "Latest filtered radar-plane motion magnitude \u00b7 not horizontal glacier speed",
+      "unit": "m/year",
+      "kind": "continuous",
+      "min": 6.697564601898193,
+      "max": 73.47840881347656,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "radar_magnitude.png",
+      "raster": "radar_magnitude.tif"
+    },
+    {
+      "id": "radar_observation_0",
+      "label": "Observation \u00b7 2026-01-01",
+      "unit": "m/year",
+      "kind": "diverging",
+      "frame_index": 0,
+      "start": "2026-01-01T00:05:27Z",
+      "end": "2026-01-13T00:05:27Z",
+      "min": -72.0075454711914,
+      "max": 72.0075454711914,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "radar_observation_0.png",
+      "raster": "radar_observation_0.tif"
+    },
+    {
+      "id": "observation_0",
+      "label": "Estimated horizontal speed \u00b7 2026-01-01 \u2192 2026-01-13",
+      "unit": "m/year",
+      "kind": "continuous",
+      "frame_index": 0,
+      "start": "2026-01-01T00:05:27Z",
+      "end": "2026-01-13T00:05:27Z",
+      "min": 9.125656127929688,
+      "max": 109.759521484375,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "observation_0.png",
+      "raster": "observation_0.tif"
+    },
+    {
+      "id": "value",
+      "label": "Selected radar-component rate \u00b7 supporting diagnostic",
+      "unit": "m/year",
+      "kind": "diverging",
+      "min": -72.0075454711914,
+      "max": 72.0075454711914,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "value.png",
+      "raster": "value.tif"
+    },
+    {
+      "id": "quality_accepted_fraction_0",
+      "label": "accepted fraction \u00b7 2026-01-01",
+      "unit": "fraction",
+      "kind": "continuous",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "quality_accepted_fraction_0.png",
+      "raster": "quality_accepted_fraction_0.tif"
+    },
+    {
+      "id": "quality_missing_fraction_0",
+      "label": "missing fraction \u00b7 2026-01-01",
+      "unit": "fraction",
+      "kind": "continuous",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "quality_missing_fraction_0.png",
+      "raster": "quality_missing_fraction_0.tif"
+    },
+    {
+      "id": "quality_rejected_snr_0",
+      "label": "rejected snr \u00b7 2026-01-01",
+      "unit": "fraction",
+      "kind": "continuous",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "quality_rejected_snr_0.png",
+      "raster": "quality_rejected_snr_0.tif"
+    },
+    {
+      "id": "quality_rejected_unpaired_offset_0",
+      "label": "rejected unpaired offset \u00b7 2026-01-01",
+      "unit": "fraction",
+      "kind": "continuous",
+      "min": 0.0,
+      "max": 0.11387815326452255,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "quality_rejected_unpaired_offset_0.png",
+      "raster": "quality_rejected_unpaired_offset_0.tif"
+    },
+    {
+      "id": "quality_snr_0",
+      "label": "snr \u00b7 2026-01-01",
+      "unit": "score",
+      "kind": "continuous",
+      "min": 5.123401165008545,
+      "max": 86.48735046386719,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "quality_snr_0.png",
+      "raster": "quality_snr_0.tif"
+    }
+  ],
+  "grid": {
+    "crs": "EPSG:6933",
+    "resolution_m": 80.0,
+    "shape": [
+      230,
+      254
+    ],
+    "bbox": [
+      77.36,
+      32.39,
+      77.57,
+      32.56
+    ]
+  },
+  "validation_status": "Exploratory; independent scientific accuracy has not been established."
+}

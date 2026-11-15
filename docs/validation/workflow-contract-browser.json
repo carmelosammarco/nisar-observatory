@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-10-22T17:53:11.045968+00:00",
+  "version": "0.8.3",
+  "browser_run": "218ba2badce3424d841203b7750b4e2b",
+  "baseline_run": "a6ef1e31e66342eabc9ebac7676e9328",
+  "case": "P01_Mozambique",
+  "input_count": 2,
+  "remote_science_bytes": 0,
+  "identical_numeric_maps": 26,
+  "metrics_identical": true,
+  "dated_series_identical": true,
+  "contract_version": "1.0.0",
+  "contract_sha256": "5e3c61cbbb5971f36bed004421ac7d0b225fd39903546b8e414488664456646f",
+  "geotiff_contract_tags_checked": 26,
+  "other_browser_checks": [
+    "Timber Fire real-input readiness passes for the unchanged tested setup.",
+    "Extra smoother preview identifies insertion position and selected result branch.",
+    "Zero combined-score cutoff disables Run; restoring 2 restores readiness.",
+    "No added step, parameter edit or run modified protected inputs or saved My Tools."
+  ]
+}

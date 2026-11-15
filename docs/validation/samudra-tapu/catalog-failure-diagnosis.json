@@ -1,0 +1,24 @@
+{
+  "checked_date": "2026-10-20",
+  "root_cause": "NASA CMR Elasticsearch search index closed",
+  "original_http_status": 400,
+  "original_exception": "index_closed_exception",
+  "index": "1_small_collections_700_shards",
+  "original_request_ids": {
+    "BETA": "086a4523-9b1a-4786-90ad-4f25a0ee623a",
+    "PROVISIONAL": "f9ebbbad-7059-4c47-bc69-0ae8249190cc"
+  },
+  "app_defect": "Discovery suppressed all upstream diagnostics and rendered failed product searches as zero files / No matching science files.",
+  "fix": "Typed safe diagnostics, null hit count and unknown availability for failed products; Unavailable tab label; no false empty-result notice; successful product tabs preserved.",
+  "verification": {
+    "python_tests_passed": 319,
+    "frontend_tests_passed": 168,
+    "browser": "Retried both releases through Explore Earth. Final selected tab GOFF PROVISIONAL, Samudra area, December 2025\u2013February 2026.",
+    "latest_live_response": "HTTP 200 with zero GOFF records in both releases; no pairs identified. This does not establish complete recovery after the confirmed index failure.",
+    "screenshot": "browser/catalog-fix-goff-retry.png"
+  },
+  "restart": "Required once to activate backend fix; previous RAM-only Earthdata session cleared. Public discovery needs no login.",
+  "satellite_data_downloaded": false,
+  "analysis_run": false,
+  "added_to_examples": false
+}

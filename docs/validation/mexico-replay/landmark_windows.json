@@ -1,0 +1,53 @@
+[
+  {
+    "name": "Airport",
+    "window_bbox": [
+      -99.08210000000001,
+      19.426099999999998,
+      -99.0621,
+      19.4461
+    ],
+    "valid_cells": 285,
+    "requested_window_cells": 750,
+    "median_cm_year": -16.61082649230957,
+    "median_cm_month": -1.3842355012893677,
+    "p10_cm_year": -20.14376449584961,
+    "p90_cm_year": -4.9008965492248535,
+    "fraction_at_or_below_minus24_cm_year": 0.0035087719298245615,
+    "meaning": "Spatial summary of accepted cells in an approximately 2 km window; not a point validation or vertical-motion estimate."
+  },
+  {
+    "name": "Angel",
+    "window_bbox": [
+      -99.1777,
+      19.416999999999998,
+      -99.15769999999999,
+      19.437
+    ],
+    "valid_cells": 682,
+    "requested_window_cells": 720,
+    "median_cm_year": -3.397589683532715,
+    "median_cm_month": -0.2831324636936188,
+    "p10_cm_year": -5.499818325042725,
+    "p90_cm_year": -1.1525365114212036,
+    "fraction_at_or_below_minus24_cm_year": 0.0,
+    "meaning": "Spatial summary of accepted cells in an approximately 2 km window; not a point validation or vertical-motion estimate."
+  },
+  {
+    "name": "Chalco Lake",
+    "window_bbox": [
+      -98.985,
+      19.259999999999998,
+      -98.96499999999999,
+      19.28
+    ],
+    "valid_cells": 103,
+    "requested_window_cells": 720,
+    "median_cm_year": -14.5861234664917,
+    "median_cm_month": -1.2155102491378784,
+    "p10_cm_year": -21.74083709716797,
+    "p90_cm_year": -3.987090587615967,
+    "fraction_at_or_below_minus24_cm_year": 0.07766990291262135,
+    "meaning": "Spatial summary of accepted cells in an approximately 2 km window; not a point validation or vertical-motion estimate."
+  }
+]

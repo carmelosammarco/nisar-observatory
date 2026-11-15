@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-22",
+  "browser_runs": [
+    "3372073614a84071855ca673c8572e54",
+    "9beb37fdc64d4cf694b1009eea98b913"
+  ],
+  "saved_tool_id": "dcff82ed3586407985a0d3d4b02ee445",
+  "name": "Mozambique · radar brightness change",
+  "settings": {
+    "resolution": 100.0,
+    "min_valid_fraction": 0.5,
+    "channel": "HHHH"
+  },
+  "bbox": [
+    32.9,
+    -24.65,
+    33.14,
+    -24.43
+  ],
+  "appearance": {
+    "palette": "diverging",
+    "mode": "shared",
+    "layer": "change",
+    "unit": "dB",
+    "low": null,
+    "high": null,
+    "category_colors": {},
+    "category_opacity": {}
+  },
+  "metrics": {
+    "valid_pixels": 59392,
+    "valid_fraction": 1.0,
+    "median": 0.9782047271728516,
+    "p10": -3.185589075088501,
+    "p90": 2.4991188049316406,
+    "common_area_km2": 593.92,
+    "observations": 2
+  },
+  "remote_science_bytes": [
+    0,
+    0
+  ],
+  "raster_checks": {
+    "summary": {
+      "identical_values": true,
+      "identical_georeferencing": true,
+      "median": 0.9782047271728516,
+      "sha256": "c8b8362ad6f907e021f32d46649410460da20c96d64afc616664bd068cfe90d0"
+    },
+    "change": {
+      "identical_values": true,
+      "identical_georeferencing": true,
+      "median": 1.9564094543457031,
+      "sha256": "7a11e8194c277ff725b30d443d12a22e5f0c508cdc7ab494fe65e5ab90d3c34a"
+    },
+    "observation_0": {
+      "identical_values": true,
+      "identical_georeferencing": true,
+      "median": 0.0,
+      "sha256": "c6edf2a890ecc298dd9836cdf1ee351f3c66524e64092bcc5312e166cf4f2318"
+    },
+    "observation_1": {
+      "identical_values": true,
+      "identical_georeferencing": true,
+      "median": 1.9564094543457031,
+      "sha256": "7a11e8194c277ff725b30d443d12a22e5f0c508cdc7ab494fe65e5ab90d3c34a"
+    }
+  },
+  "png_endpoint_ok": true,
+  "geotiff_download_matches_file": true,
+  "limitations": "Radar scattering experiment, not independent flood classification or accuracy validation."
+}

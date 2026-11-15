@@ -1,0 +1,57 @@
+{
+  "runs": [
+    {
+      "id": "f08440bf2d744e04bdc0963eaa2b3d97",
+      "metrics": {
+        "valid_pixels": 510464,
+        "valid_fraction": 0.8466866590589421,
+        "median": 1.5972440242767334,
+        "p10": -6.169743537902832,
+        "p90": 8.836731910705566,
+        "common_area_km2": 3266.9696,
+        "observations": 6,
+        "acquisition_dates": 7
+      },
+      "source_count": 6,
+      "timeline_dates": 7,
+      "remote_bytes": 0,
+      "appearance": {
+        "palette": "rainbow",
+        "mode": "custom",
+        "layer": "summary",
+        "unit": "cm/year",
+        "low": -30.0,
+        "high": 30.0,
+        "category_colors": {},
+        "category_opacity": {}
+      }
+    },
+    {
+      "id": "b523791d24ce4f43a133fd8398d16984",
+      "metrics": {
+        "valid_pixels": 510464,
+        "valid_fraction": 0.8466866590589421,
+        "median": 1.5972440242767334,
+        "p10": -6.169743537902832,
+        "p90": 8.836731910705566,
+        "common_area_km2": 3266.9696,
+        "observations": 6,
+        "acquisition_dates": 7
+      },
+      "source_count": 6,
+      "timeline_dates": 7,
+      "remote_bytes": 0,
+      "appearance": {
+        "palette": "rainbow",
+        "mode": "custom",
+        "layer": "summary",
+        "unit": "cm/year",
+        "low": -30.0,
+        "high": 30.0,
+        "category_colors": {},
+        "category_opacity": {}
+      }
+    }
+  ],
+  "numeric_replays_identical": true
+}

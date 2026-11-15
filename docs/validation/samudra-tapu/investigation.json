@@ -1,0 +1,74 @@
+{
+  "checked_at_utc": "2026-10-20T19:45:00.739979+00:00",
+  "status": "discovery_unresolved_no_satellite_download_or_analysis",
+  "study": {
+    "title": "NISAR for Monitoring Glacier Motion",
+    "url": "https://science.iirs.gov.in/nisar-for-monitoring-glacier-motion/",
+    "doi": "10.65456/iirs.2026.10.3.1",
+    "published": "2026-10-13",
+    "target_site": "Samudra Tapu",
+    "reported_period": "January 2026",
+    "reported_nisar_range_m_year": [
+      5.7,
+      139.19
+    ],
+    "reported_its_live_range_m_year": [
+      0.7,
+      132.53
+    ],
+    "missing_reproduction_details": [
+      "Exact reference and secondary acquisition dates and granule IDs",
+      "Radar band for the analyzed GOFF files",
+      "Polarization and offset layer",
+      "Equation and assumptions used to convert radar components to mapped speed",
+      "Exact glacier mask and ITS_LIVE mosaic/version/epoch selection",
+      "Filtering and uncertainty settings"
+    ]
+  },
+  "proposed_bbox_wsen": [
+    77.36,
+    32.39,
+    77.57,
+    32.56
+  ],
+  "bbox_status": "Provisional extraction window, not a published exact boundary",
+  "current_preset": {
+    "name": "Jakobshavn region",
+    "bbox": [
+      -50.5,
+      68.7,
+      -49,
+      69.5
+    ],
+    "unchanged": true
+  },
+  "availability": {
+    "cmr_beta_january": "HTTP 200, 0 hits",
+    "cmr_provisional_january": "HTTP 200, 0 hits",
+    "cmr_alternate_umm_global_beta": "HTTP 200, 0 hits",
+    "cmr_global_gcov_control": "HTTP 200, 0 hits",
+    "known_gcov_control": "HTTP 200, 0 hits for a previously used granule",
+    "asf_january": "HTTP 502",
+    "asf_global_name_control": "HTTP 200, empty FeatureCollection",
+    "other_cmr_queries": "HTTP 400 Elasticsearch errors",
+    "interpretation": "Current discovery responses do not establish that the target files are unavailable; a wider catalog/discovery problem is possible."
+  },
+  "velocity_comparison": {
+    "existing_p07": "Selected range or along-track offset divided by exact pair duration, m/day; optional spatial filtering and explicit optional stable-terrain bias correction. Other component and radar-plane magnitude are diagnostics.",
+    "annualization": "365.25 times an m/day component is an annualized component, not horizontal speed or a measured annual displacement.",
+    "geometry_requirement": "For geographic horizontal speed, resolve geographic components using look/along-track geometry and an explicit vertical or surface-parallel-flow assumption; screen conditioning and terrain/layover, and propagate errors. A single view does not independently determine 3D motion.",
+    "reference_comparison": "Use identical masks, spatial support and equivalent physical quantities. A multiyear ITS_LIVE mosaic is a spatial-pattern benchmark, not same-date truth. Prefer independent time-matched image pairs for quantitative evaluation.",
+    "statistics": "Do not tune filtering to reproduce the published maximum; compare maps and robust distributions, retain rejected counts and sensitivity."
+  },
+  "satellite_bytes_downloaded": 0,
+  "runs_started": 0,
+  "app_code_changed": false,
+  "added_to_examples": false,
+  "next_steps": [
+    "Recheck official discovery once catalog responses are usable or import identifiable original GOFF files",
+    "Inspect file band, acquisition pair, units, offsets and metadata geometry before selecting a velocity model",
+    "Obtain an independent glacier mask and a precisely identified ITS_LIVE comparison product",
+    "Download only the required area subsets and execute P07 with filtering sensitivity",
+    "Produce published-versus-derived map comparison with explicit non-equivalences before any Examples registration"
+  ]
+}

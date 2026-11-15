@@ -1,0 +1,132 @@
+{
+  "date": "2026-10-21",
+  "browser": "Codex in-app browser",
+  "tutorials_opened": 7,
+  "analyses_started_in_browser": 7,
+  "saved_runs_reopened": 7,
+  "protected_inputs_verified": 31,
+  "case_receipts": {
+    "P01_Mozambique": {
+      "job_id": "6f2a3ffcf869465fac9169b897e96633",
+      "inputs": 2,
+      "opening": {
+        "palette": "standard",
+        "mode": "shared",
+        "layer": "event",
+        "unit": "class",
+        "low": null,
+        "high": null,
+        "category_colors": {},
+        "category_opacity": {}
+      },
+      "saved_opening_reopened": true,
+      "all_rasters_and_previews": 26
+    },
+    "P02_Wheeler_Marsh": {
+      "job_id": "82b02533bd054d989c2ec47fdd1dac50",
+      "inputs": 6,
+      "opening": {
+        "palette": "standard",
+        "mode": "custom",
+        "layer": "occupancy",
+        "unit": "fraction",
+        "low": 0.0,
+        "high": 1.0,
+        "category_colors": {},
+        "category_opacity": {}
+      },
+      "saved_opening_reopened": true,
+      "all_rasters_and_previews": 49
+    },
+    "P03_Timber_Fire": {
+      "job_id": "4b905c09a5b84419b42143847612564c",
+      "inputs": 8,
+      "opening": {
+        "palette": "diverging",
+        "mode": "shared",
+        "layer": "fire_score",
+        "unit": "z",
+        "low": null,
+        "high": null,
+        "category_colors": {},
+        "category_opacity": {}
+      },
+      "saved_opening_reopened": true,
+      "all_rasters_and_previews": 43
+    },
+    "P04_Mexico_City": {
+      "job_id": "ed92dbe9cb9945fc8076c3d8cf6b33f8",
+      "inputs": 6,
+      "opening": {
+        "palette": "rainbow",
+        "mode": "custom",
+        "layer": "los_rate_year",
+        "unit": "cm/year",
+        "low": -30.0,
+        "high": 30.0,
+        "category_colors": {},
+        "category_opacity": {}
+      },
+      "saved_opening_reopened": true,
+      "all_rasters_and_previews": 88
+    },
+    "P05_Venezuela": {
+      "job_id": "955b7ba344984b97a65cdc340c5f37da",
+      "inputs": 3,
+      "opening": {
+        "palette": "diverging",
+        "mode": "custom",
+        "layer": "event_displacement_cm",
+        "unit": "cm",
+        "low": -50.0,
+        "high": 50.0,
+        "category_colors": {},
+        "category_opacity": {}
+      },
+      "saved_opening_reopened": true,
+      "all_rasters_and_previews": 59
+    },
+    "P06_Krasheninnikov": {
+      "job_id": "ead96ebe0d1a4dc181ccd966b364b405",
+      "inputs": 5,
+      "opening": {
+        "palette": "diverging",
+        "mode": "custom",
+        "layer": "latest_departure",
+        "unit": "dB",
+        "low": -8.0,
+        "high": 8.0,
+        "category_colors": {},
+        "category_opacity": {}
+      },
+      "saved_opening_reopened": true,
+      "all_rasters_and_previews": 42
+    },
+    "P07_Samudra_Tapu": {
+      "job_id": "803aa824d0264918b363eef355aa4745",
+      "inputs": 1,
+      "opening": {
+        "palette": "rainbow",
+        "mode": "custom",
+        "layer": "horizontal_speed",
+        "unit": "m/year",
+        "low": 0.0,
+        "high": 140.0,
+        "category_colors": {},
+        "category_opacity": {}
+      },
+      "saved_opening_reopened": true,
+      "all_rasters_and_previews": 21
+    }
+  },
+  "additional_checks": [
+    "P01 unavailable recovery view explains absent later acquisitions",
+    "All eight opening map exports inspected visually; existing curated figures preserved"
+  ],
+  "regression": {
+    "python_passed": 360,
+    "frontend_passed": 183
+  },
+  "scope": "Historical checks for retained cases only; removed case omitted.",
+  "tutorial_assets_checked": 53
+}

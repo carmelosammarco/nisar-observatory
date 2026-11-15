@@ -1,0 +1,40 @@
+.example-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.example-card{padding:0;overflow:hidden;text-align:left;color:var(--ink,#183d38);background:#fff;border:1px solid #dce5db;border-radius:16px;box-shadow:0 5px 20px #123a3206;transition:transform .15s,box-shadow .15s;cursor:pointer}.example-card:hover{transform:translateY(-3px);box-shadow:0 10px 24px #123a3212}.example-card:focus-visible{outline:3px solid #2b927c;outline-offset:4px}.example-card-art{height:190px;background:#eaf1e9;display:flex;align-items:center;justify-content:center;overflow:hidden}.example-card-art img{height:100%;width:100%;object-fit:contain}.example-card-body{padding:24px}.example-card h2{font-size:23px;line-height:1.2;margin:12px 0}.example-card p{line-height:1.6}.example-card b{display:block;margin-top:16px;color:#19745d}.example-detail-heading{display:flex;justify-content:space-between;align-items:start;gap:20px}.example-detail-heading h1{margin:10px 0}.example-jumps{display:flex;flex-wrap:wrap;gap:10px 22px;border-block:1px solid #dce5db;padding:17px 0;margin:22px 0}.example-launch{padding:24px;margin:20px 0}.example-launch-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center}.example-launch-actions a{text-decoration:none}.example-tutorial{max-width:1100px}.example-tutorial section{padding:26px 0;border-bottom:1px solid #dce5db;scroll-margin-top:30px}.example-tutorial p{font-size:15px;line-height:1.8;max-width:95ch}.example-tutorial h2{margin:10px 0 18px}.example-table{overflow-x:auto;margin:18px 0;background:#fff;border:1px solid #dce5db;border-radius:12px}.example-table table{width:100%;border-collapse:collapse;text-align:left;font-size:13px}.example-table th,.example-table td{padding:12px 16px;border-bottom:1px solid #edf0e9;vertical-align:top}.example-table thead{background:#eaf1e9}.example-table th{font-weight:600}.example-table code{overflow-wrap:anywhere}.example-figure{margin:26px 0;padding:15px;background:#fff;border:1px solid #dce5db;border-radius:12px}.example-figure img{max-width:100%;max-height:680px;display:block;margin:auto;object-fit:contain}.example-figure figcaption{font-size:12px;color:#5d756d;line-height:1.6;margin-top:12px}@media(min-width:701px) and (max-width:1250px){.example-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:700px){.example-detail-heading{display:block}.example-grid{grid-template-columns:1fr}.example-launch-actions>*{width:100%;text-align:center}}
+
+@media print{body:has(#examples.active) .sidebar,body:has(#examples.active) .topbar,body:has(#examples.active) .example-launch-actions,body:has(#examples.active) .example-jumps,body:has(#examples.active) #example-back{display:none!important}body:has(#examples.active) main{margin:0;padding:0}body:has(#examples.active) .example-figure{break-inside:avoid}body:has(#examples.active) .example-table{overflow:visible}body:has(#examples.active) .example-tutorial section{padding:15px 0}}
+
+.example-card{display:flex;flex-direction:column}.example-card-art{width:100%;flex-shrink:0}.example-card-body{flex:1;display:flex;flex-direction:column}.example-card-body>b{margin-top:auto;padding-top:16px}.example-card-body .badge{align-self:flex-start}
+
+#example-intro[hidden]{display:none}
+.example-grid[hidden],#example-detail[hidden],#example-intro[hidden]{display:none}
+
+/* Keep publisher evidence distinct from app output; never crop tutorial legends. */
+.example-card-art{position:relative;height:220px;background:#e4ece5}
+.example-card-art img{object-fit:cover;object-position:center}
+.example-tutorial{max-width:1300px}
+.example-comparison-note{margin:24px 0}
+.example-comparison-note h3{margin-top:0}
+.example-comparison-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;align-items:start;margin:26px 0}
+.example-comparison-panel{min-width:0;border:1px solid #dce5db;border-radius:14px;background:#f3f6f1;overflow:hidden}
+.example-comparison-heading{padding:22px 22px 0}
+.example-image-role{display:inline-block;padding:5px 9px;border-radius:5px;background:#e1e8f2;color:#35526b;font-size:11px;text-transform:uppercase;font-weight:700;letter-spacing:.07em}
+.example-comparison-result .example-image-role{background:#d8eae0;color:#155d49}
+.example-comparison-heading h3{margin:12px 0 8px;font-size:22px}
+.example-tutorial .example-comparison-heading p{font-size:13px;line-height:1.65;margin:0}
+.example-comparison-panel .example-figure{margin:18px 14px 14px;padding:14px}
+.example-figure h4{margin:0 0 14px;font-size:15px;line-height:1.45}
+.example-image-link{display:block;background:#f7f8f5;border-radius:5px;overflow:hidden}
+.example-figure img{width:100%;height:auto;max-height:720px;object-fit:contain}
+.example-tutorial .example-figure figcaption p{font-size:13px;line-height:1.7;margin:12px 0}
+.example-credit{display:block;font-size:11px;color:#60736b;line-height:1.6}
+.example-figure-links{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:12px;font-size:12px;font-weight:600}
+.example-supporting{margin-top:30px}
+.example-supporting .example-figure{max-width:850px}
+@media(max-width:900px){.example-comparison-grid{grid-template-columns:1fr}.example-comparison-panel .example-figure{margin:14px}.example-card-art{height:210px}}
+@media print{.example-comparison-grid{display:block}.example-comparison-panel{margin-bottom:20px}.example-comparison-heading{break-after:avoid}.example-image-link{background:#fff}}
+
+/* Evidence and presentation order share one readable layout on narrow screens. */
+.example-evidence-overview h2{font-size:25px;margin:8px 0 12px}
+.example-evidence-overview{margin-top:32px;padding:24px;background:#fff;border:1px solid #d7e2d5;border-radius:14px}.example-evidence-overview th,.example-evidence-overview td{vertical-align:top;line-height:1.6;min-width:140px}.example-review{margin:18px 0;padding:22px;border:1px solid #cbdace;border-radius:12px;background:#f1f5ee}.example-review-conclusion{font-size:16px;line-height:1.7}.example-review-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.example-review-grid h3{font-size:17px}.example-review-grid ul{padding-left:18px}.example-review-grid li{line-height:1.7;margin-bottom:10px}.result-reading-question{padding:12px 0;border-bottom:1px solid #d5e0d4}.result-reading-question h3{font-size:16px;margin:0 0 8px}.result-reading-question p{line-height:1.75;margin:7px 0}.result-evidence-boundary{padding:14px;background:#edf3eb;border-radius:8px;line-height:1.7}
+@media(max-width:1100px){.example-review-grid{grid-template-columns:1fr}}
+
+#example-detail .example-review{padding:22px}.example-table caption{caption-side:top;text-align:left;font-weight:700;padding:14px 0;color:#173f3c}

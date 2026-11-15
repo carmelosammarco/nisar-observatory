@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-22",
+  "examples": [
+    {
+      "case": "P01_Mozambique",
+      "inputs": 2,
+      "ready": true
+    },
+    {
+      "case": "P02_Wheeler_Marsh",
+      "inputs": 6,
+      "ready": true
+    },
+    {
+      "case": "P03_Timber_Fire",
+      "inputs": 8,
+      "ready": true
+    },
+    {
+      "case": "P04_Mexico_City",
+      "inputs": 6,
+      "ready": true
+    },
+    {
+      "case": "P05_Venezuela",
+      "inputs": 3,
+      "ready": true
+    },
+    {
+      "case": "P06_Krasheninnikov",
+      "inputs": 5,
+      "ready": true
+    },
+    {
+      "case": "P07_Samudra_Tapu",
+      "inputs": 1,
+      "ready": true
+    }
+  ],
+  "verified_input_count": 31,
+  "broken_local_markdown_links": [],
+  "python_tests": 438,
+  "frontend_tests": 222,
+  "recent_browser_errors": [],
+  "browser_tabs_reviewed": [
+    "Explore Earth",
+    "Tools",
+    "Examples",
+    "Mission library",
+    "Runs",
+    "Connection",
+    "About"
+  ],
+  "settings_review": {
+    "generic_label": "Experimental workspace",
+    "card_owned_fields_duplicated": false,
+    "scientific_GUNW_coherence_visible": true
+  },
+  "live_NASA_authentication_retested": false,
+  "science_processors_changed": false
+}

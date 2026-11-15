@@ -1,0 +1,56 @@
+[
+  {
+    "reference_bbox": [
+      -68.9,
+      9.85,
+      -66.45,
+      10.15
+    ],
+    "mode": "shared physical cells",
+    "shared_cells": 979,
+    "overlap": {
+      "valid_pixels": 27643,
+      "valid_fraction": 0.03973408078194624,
+      "median": 0.4873781204223633,
+      "p10": 0.20752020180225372,
+      "p90": 4.6202392578125
+    },
+    "regional_median_cm": -2.2451109886169434
+  },
+  {
+    "reference_bbox": [
+      -67.1,
+      9.9,
+      -66.9,
+      10.1
+    ],
+    "mode": "shared physical cells",
+    "shared_cells": 585,
+    "overlap": {
+      "valid_pixels": 27643,
+      "valid_fraction": 0.03973408078194624,
+      "median": 0.5344529151916504,
+      "p10": 0.24043512344360352,
+      "p90": 4.468982696533203
+    },
+    "regional_median_cm": -2.46213960647583
+  },
+  {
+    "reference_bbox": [
+      -67.15,
+      9.9,
+      -66.95,
+      10.05
+    ],
+    "mode": "shared physical cells",
+    "shared_cells": 340,
+    "overlap": {
+      "valid_pixels": 27643,
+      "valid_fraction": 0.03973408078194624,
+      "median": 1.0433714389801025,
+      "p10": 0.5806750655174255,
+      "p90": 5.360991477966309
+    },
+    "regional_median_cm": -2.122243642807007
+  }
+]

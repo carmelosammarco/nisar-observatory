@@ -1,0 +1,65 @@
+{
+  "p05_browser_run": "f58acf0419da406ebff39bebea43858b",
+  "p06_browser_run": "76126bac554347888055dbec6a837f33",
+  "p05_display": {
+    "palette": "rainbow",
+    "mode": "custom",
+    "layer": "los_rate_year",
+    "unit": "cm/year",
+    "low": -30.0,
+    "high": 30.0
+  },
+  "p05_metrics": {
+    "valid_pixels": 510464,
+    "valid_fraction": 0.8466866590589421,
+    "median": 1.5972440242767334,
+    "p10": -6.169743537902832,
+    "p90": 8.836731910705566,
+    "median_rate_cm_year": 1.5972440242767334,
+    "median_rate_cm_month": 0.13310366868972778,
+    "reference_pixels": 2698,
+    "span_days": 84.00004629629629,
+    "acquisition_dates": 7
+  },
+  "p05_numeric_raster_sha256": "dfc121fce8e4ee80b08f068df57e22b6addd9720231a53ada8ba2a2a55c6677b",
+  "original_files_downloaded_this_check": 0,
+  "mexico_subset_bytes": 63022520,
+  "all_inputs_local": true,
+  "service_restart_persisted_display": true,
+  "runtime_pid": 57537,
+  "browser_acceptance": true,
+  "browser": "Chrome",
+  "p05_steps": [
+    "Restore six local subset inputs using Reuse this setup",
+    "Continue to check data/reference",
+    "Keep original checked reference",
+    "Run P05 and inspect main result",
+    "Save a temporary -24/+24 annual range and reopen it",
+    "Restore and save -30/+30 cm/year Rainbow",
+    "Switch to cm/month and verify visible -2.5/+2.5 limits",
+    "Open P06, then reopen Mexico after service restart: annual Rainbow -30/+30 restored"
+  ],
+  "p06_steps": [
+    "Venezuela preset and Use saved data",
+    "Continue selects event coverage from one initially checked view",
+    "Explicitly deselect unusable 061 A frame 006",
+    "Strict default coherence 0.40 gives no candidate: inspect recovery",
+    "Explicitly apply shared recommended phase settings: coherence 0.30, ionosphere subtraction",
+    "Locate candidate, return to reference choices, choose candidate 1",
+    "Run and inspect main displacement map",
+    "Next and Play source-interval views; playback reaches final view",
+    "Reopen saved result after service restart"
+  ],
+  "p05_final_dom": {
+    "palette": "rainbow",
+    "mode": "custom",
+    "unit": "cm/year",
+    "low": -30,
+    "high": 30
+  },
+  "p06_reference_cells": 34,
+  "p06_valid_pixels": 278983,
+  "p06_review_warning": "Small reference sample and worst-pair median coherence below 0.70; stability unverified",
+  "browser_console_errors": [],
+  "p05_matches_baseline_numeric_raster": true
+}

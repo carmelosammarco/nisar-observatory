@@ -1,0 +1,585 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "P01_Mozambique",
+      "recorded": {
+        "kind": "recorded",
+        "layer": "event",
+        "palette": "standard",
+        "job": "example-P01_Mozambique"
+      },
+      "guided": {
+        "job": "19efd42746d14e188b8f8e0456497b62",
+        "pid": "P01"
+      },
+      "editable": {
+        "job": "beca493a5eb3430780be763593f583ee",
+        "pid": "LAB"
+      }
+    },
+    {
+      "case": "P02_Wheeler_Marsh",
+      "recorded": {
+        "kind": "recorded",
+        "layer": "occupancy",
+        "palette": "standard",
+        "job": "example-P02_Wheeler_Marsh"
+      },
+      "guided": {
+        "job": "7f37a7cb39464ce6abbffbde5bea7c24",
+        "pid": "P02"
+      },
+      "editable": {
+        "job": "437506def85445638c272f575f34a332",
+        "pid": "LAB"
+      }
+    },
+    {
+      "case": "P03_Timber_Fire",
+      "recorded": {
+        "kind": "recorded",
+        "layer": "fire_score",
+        "palette": "diverging",
+        "job": "example-P03_Timber_Fire"
+      },
+      "guided": {
+        "job": "1ead6412a9a0496bbe7c9bb0aff9ae61",
+        "pid": "P03"
+      },
+      "editable": {
+        "job": "3fb93b730dd643cdab7fb52bca1f8227",
+        "pid": "LAB"
+      }
+    },
+    {
+      "case": "P04_Mexico_City",
+      "recorded": {
+        "kind": "recorded",
+        "layer": "los_rate_year",
+        "palette": "rainbow",
+        "job": "example-P04_Mexico_City"
+      },
+      "guided": {
+        "job": "da8beb5ce99840e2b23f39732078b01d",
+        "pid": "P04"
+      },
+      "editable": {
+        "job": "12a617394e5440939b9be4b82377a53c",
+        "pid": "LAB"
+      }
+    },
+    {
+      "case": "P05_Venezuela",
+      "recorded": {
+        "kind": "recorded",
+        "layer": "event_displacement_cm",
+        "palette": "diverging",
+        "job": "example-P05_Venezuela"
+      },
+      "guided": {
+        "job": "582994932646494686d8de1d93778bc2",
+        "pid": "P05"
+      },
+      "editable": {
+        "job": "66770b3a96544e8dbe4002a88081dfef",
+        "pid": "LAB"
+      }
+    },
+    {
+      "case": "P06_Krasheninnikov",
+      "recorded": {
+        "kind": "recorded",
+        "layer": "latest_departure",
+        "palette": "diverging",
+        "job": "example-P06_Krasheninnikov"
+      },
+      "guided": {
+        "job": "3bc6012ef79b4fb7a561ce0e6841b296",
+        "pid": "P06"
+      },
+      "editable": {
+        "job": "8eabc0ee7b0a46f88101fc915b6e4df9",
+        "pid": "LAB"
+      }
+    },
+    {
+      "case": "P07_Samudra_Tapu",
+      "recorded": {
+        "kind": "recorded",
+        "layer": "horizontal_speed",
+        "palette": "rainbow",
+        "job": "example-P07_Samudra_Tapu"
+      },
+      "guided": {
+        "job": "d9f2e39953fb40229b38dae028949969",
+        "pid": "P07"
+      },
+      "editable": {
+        "job": "4475e1652fe844f4901cd3e8102c7db5",
+        "pid": "LAB"
+      }
+    }
+  ],
+  "variant": {
+    "job": "0ba7a571022b42238cfd3f483d226d1a",
+    "pid": "LAB",
+    "new_candidates_km2": 51.4,
+    "comparison": {
+      "same_sources": true,
+      "same_area": true,
+      "same_method": true,
+      "settings": [
+        {
+          "setting": "water_threshold",
+          "before": "-17.0",
+          "after": "-18.0"
+        },
+        {
+          "setting": "Ordered processing steps",
+          "before": "Guided P01 · internal sequence; exact scientific options compared above",
+          "after": "1. water rule {\"hh_db\": -14.0, \"hv_db\": -23.0, \"method\": \"single\", \"threshold_db\": -18.0} → 2. flood history {\"ambiguity_db\": 1.0, \"comparison_date\": \"2026-01-17\"} → 3. water tracking {\"minimum_m2\": 30000.0} → 4. publish {\"layer\": \"event\"}"
+        }
+      ],
+      "layers": [
+        {
+          "id": "backscatter",
+          "before_layer": "backscatter",
+          "after_layer": "backscatter",
+          "label": "Latest calibrated backscatter",
+          "unit": "dB",
+          "available": true,
+          "common_cells": 59392,
+          "before_valid_cells": 59392,
+          "after_valid_cells": 59392,
+          "changed_cells": 0,
+          "changed_percent": 0,
+          "quantity_type": "measurement difference",
+          "mean_change": 0,
+          "mean_absolute_change": 0,
+          "maximum_absolute_change": 0
+        },
+        {
+          "id": "observation_0",
+          "before_layer": "observation_0",
+          "after_layer": "observation_0",
+          "label": "Open-water candidate · 2026-01-05",
+          "unit": "class",
+          "available": true,
+          "common_cells": 59392,
+          "before_valid_cells": 59392,
+          "after_valid_cells": 59392,
+          "changed_cells": 1629,
+          "changed_percent": 2.7427936422413794,
+          "quantity_type": "category agreement"
+        },
+        {
+          "id": "observation_1",
+          "before_layer": "observation_1",
+          "after_layer": "observation_1",
+          "label": "Open-water candidate · 2026-01-17",
+          "unit": "class",
+          "available": true,
+          "common_cells": 59392,
+          "before_valid_cells": 59392,
+          "after_valid_cells": 59392,
+          "changed_cells": 4522,
+          "changed_percent": 7.613820043103448,
+          "quantity_type": "category agreement"
+        },
+        {
+          "id": "change",
+          "before_layer": "change",
+          "after_layer": "change",
+          "label": "Latest minus first backscatter",
+          "unit": "dB",
+          "available": true,
+          "common_cells": 59392,
+          "before_valid_cells": 59392,
+          "after_valid_cells": 59392,
+          "changed_cells": 0,
+          "changed_percent": 0,
+          "quantity_type": "measurement difference",
+          "mean_change": 0,
+          "mean_absolute_change": 0,
+          "maximum_absolute_change": 0
+        },
+        {
+          "id": "variability",
+          "before_layer": "variability",
+          "after_layer": "variability",
+          "label": "Observed maximum minus minimum across acquisitions",
+          "unit": "dB",
+          "available": true,
+          "common_cells": 59392,
+          "before_valid_cells": 59392,
+          "after_valid_cells": 59392,
+          "changed_cells": 0,
+          "changed_percent": 0,
+          "quantity_type": "measurement difference",
+          "mean_change": 0,
+          "mean_absolute_change": 0,
+          "maximum_absolute_change": 0
+        },
+        {
+          "id": "count",
+          "before_layer": "count",
+          "after_layer": "count",
+          "label": "Number of valid observations",
+          "unit": "count",
+          "available": true,
+          "common_cells": 59392,
+          "before_valid_cells": 59392,
+          "after_valid_cells": 59392,
+          "changed_cells": 0,
+          "changed_percent": 0,
+          "quantity_type": "measurement difference",
+          "mean_change": 0,
+          "mean_absolute_change": 0,
+          "maximum_absolute_change": 0
+        },
+        {
+          "id": "baseline_departure",
+          "before_layer": "baseline_departure",
+          "after_layer": "baseline_departure",
+          "label": "Latest minus median of the declared baseline dates",
+          "unit": "dB",
+          "available": true,
+          "common_cells": 59392,
+          "before_valid_cells": 59392,
+          "after_valid_cells": 59392,
+          "changed_cells": 0,
+          "changed_percent": 0,
+          "quantity_type": "measurement difference",
+          "mean_change": 0,
+          "mean_absolute_change": 0,
+          "maximum_absolute_change": 0
+        },
+        {
+          "id": "standardized_departure",
+          "before_layer": "standardized_departure",
+          "after_layer": "standardized_departure",
+          "label": "Baseline departure divided by robust spread with declared noise floor",
+          "unit": "ratio",
+          "available": true,
+          "common_cells": 59392,
+          "before_valid_cells": 59392,
+          "after_valid_cells": 59392,
+          "changed_cells": 0,
+          "changed_percent": 0,
+          "quantity_type": "measurement difference",
+          "mean_change": 0,
+          "mean_absolute_change": 0,
+          "maximum_absolute_change": 0
+        },
+        {
+          "id": "water",
+          "before_layer": "water",
+          "after_layer": "water",
+          "label": "Latest open-water candidate",
+          "unit": "class",
+          "available": true,
+          "common_cells": 59392,
+          "before_valid_cells": 59392,
+          "after_valid_cells": 59392,
+          "changed_cells": 4522,
+          "changed_percent": 7.613820043103448,
+          "quantity_type": "category agreement"
+        },
+        {
+          "id": "water_state",
+          "before_layer": "water_state",
+          "after_layer": "water_state",
+          "label": "Latest water state · 0 dry candidate, 1 water candidate, 2 ambiguous",
+          "unit": "class",
+          "available": true,
+          "common_cells": 59392,
+          "before_valid_cells": 59392,
+          "after_valid_cells": 59392,
+          "changed_cells": 7015,
+          "changed_percent": 11.811355064655173,
+          "quantity_type": "category agreement"
+        },
+        {
+          "id": "threshold_sensitive",
+          "before_layer": "threshold_sensitive",
+          "after_layer": "threshold_sensitive",
+          "label": "Classification changes within the declared 2 dB threshold scenarios",
+          "unit": "class",
+          "available": true,
+          "common_cells": 59392,
+          "before_valid_cells": 59392,
+          "after_valid_cells": 59392,
+          "changed_cells": 6450,
+          "changed_percent": 10.86004849137931,
+          "quantity_type": "category agreement"
+        },
+        {
+          "id": "occupancy",
+          "before_layer": "occupancy",
+          "after_layer": "occupancy",
+          "label": "Observed water-candidate fraction",
+          "unit": "fraction",
+          "available": true,
+          "common_cells": 59392,
+          "before_valid_cells": 59392,
+          "after_valid_cells": 59392,
+          "changed_cells": 5919,
+          "changed_percent": 9.965988685344827,
+          "quantity_type": "measurement difference",
+          "mean_change": -0.05178306842672414,
+          "mean_absolute_change": 0.05178306842672414,
+          "maximum_absolute_change": 1
+        },
+        {
+          "id": "event_baseline_departure",
+          "before_layer": "event_baseline_departure",
+          "after_layer": "event_baseline_departure",
+          "label": "Comparison observation minus median pre-comparison baseline",
+          "unit": "dB",
+          "available": true,
+          "common_cells": 59392,
+          "before_valid_cells": 59392,
+          "after_valid_cells": 59392,
+          "changed_cells": 0,
+          "changed_percent": 0,
+          "quantity_type": "measurement difference",
+          "mean_change": 0,
+          "mean_absolute_change": 0,
+          "maximum_absolute_change": 0
+        },
+        {
+          "id": "event",
+          "before_layer": "event",
+          "after_layer": "event",
+          "label": "New water candidate at the selected comparison observation",
+          "unit": "class",
+          "available": true,
+          "common_cells": 59392,
+          "before_valid_cells": 59392,
+          "after_valid_cells": 59392,
+          "changed_cells": 4335,
+          "changed_percent": 7.298962823275862,
+          "quantity_type": "category agreement"
+        },
+        {
+          "id": "recovery",
+          "before_layer": "recovery",
+          "after_layer": "recovery",
+          "label": "First later dry observation index",
+          "unit": "observation index",
+          "available": false,
+          "reason": "No jointly valid cells. Missing support is not zero difference."
+        },
+        {
+          "id": "recovery_lower_days",
+          "before_layer": "recovery_lower_days",
+          "after_layer": "recovery_lower_days",
+          "label": "Last wet observation before first dry state · days after comparison",
+          "unit": "days",
+          "available": false,
+          "reason": "No jointly valid cells. Missing support is not zero difference."
+        },
+        {
+          "id": "recovery_upper_days",
+          "before_layer": "recovery_upper_days",
+          "after_layer": "recovery_upper_days",
+          "label": "First dry observation · days after comparison",
+          "unit": "days",
+          "available": false,
+          "reason": "No jointly valid cells. Missing support is not zero difference."
+        },
+        {
+          "id": "unresolved",
+          "before_layer": "unresolved",
+          "after_layer": "unresolved",
+          "label": "New water candidate without a later dry observation",
+          "unit": "class",
+          "available": true,
+          "common_cells": 4926,
+          "before_valid_cells": 9047,
+          "after_valid_cells": 5140,
+          "changed_cells": 0,
+          "changed_percent": 0,
+          "quantity_type": "category agreement"
+        },
+        {
+          "id": "quality_accepted_fraction_0",
+          "before_layer": "quality_accepted_fraction_0",
+          "after_layer": "quality_accepted_fraction_0",
+          "label": "accepted fraction · 2026-01-05",
+          "unit": "fraction",
+          "available": true,
+          "common_cells": 59392,
+          "before_valid_cells": 59392,
+          "after_valid_cells": 59392,
+          "changed_cells": 0,
+          "changed_percent": 0,
+          "quantity_type": "measurement difference",
+          "mean_change": 0,
+          "mean_absolute_change": 0,
+          "maximum_absolute_change": 0
+        },
+        {
+          "id": "quality_missing_fraction_0",
+          "before_layer": "quality_missing_fraction_0",
+          "after_layer": "quality_missing_fraction_0",
+          "label": "missing fraction · 2026-01-05",
+          "unit": "fraction",
+          "available": true,
+          "common_cells": 59392,
+          "before_valid_cells": 59392,
+          "after_valid_cells": 59392,
+          "changed_cells": 0,
+          "changed_percent": 0,
+          "quantity_type": "measurement difference",
+          "mean_change": 0,
+          "mean_absolute_change": 0,
+          "maximum_absolute_change": 0
+        },
+        {
+          "id": "quality_rejected_nonpositive_power_0",
+          "before_layer": "quality_rejected_nonpositive_power_0",
+          "after_layer": "quality_rejected_nonpositive_power_0",
+          "label": "rejected nonpositive power · 2026-01-05",
+          "unit": "fraction",
+          "available": true,
+          "common_cells": 59392,
+          "before_valid_cells": 59392,
+          "after_valid_cells": 59392,
+          "changed_cells": 0,
+          "changed_percent": 0,
+          "quantity_type": "measurement difference",
+          "mean_change": 0,
+          "mean_absolute_change": 0,
+          "maximum_absolute_change": 0
+        },
+        {
+          "id": "quality_rejected_source_mask_0",
+          "before_layer": "quality_rejected_source_mask_0",
+          "after_layer": "quality_rejected_source_mask_0",
+          "label": "rejected source mask · 2026-01-05",
+          "unit": "fraction",
+          "available": true,
+          "common_cells": 59392,
+          "before_valid_cells": 59392,
+          "after_valid_cells": 59392,
+          "changed_cells": 0,
+          "changed_percent": 0,
+          "quantity_type": "measurement difference",
+          "mean_change": 0,
+          "mean_absolute_change": 0,
+          "maximum_absolute_change": 0
+        },
+        {
+          "id": "quality_accepted_fraction_1",
+          "before_layer": "quality_accepted_fraction_1",
+          "after_layer": "quality_accepted_fraction_1",
+          "label": "accepted fraction · 2026-01-17",
+          "unit": "fraction",
+          "available": true,
+          "common_cells": 59392,
+          "before_valid_cells": 59392,
+          "after_valid_cells": 59392,
+          "changed_cells": 0,
+          "changed_percent": 0,
+          "quantity_type": "measurement difference",
+          "mean_change": 0,
+          "mean_absolute_change": 0,
+          "maximum_absolute_change": 0
+        },
+        {
+          "id": "quality_missing_fraction_1",
+          "before_layer": "quality_missing_fraction_1",
+          "after_layer": "quality_missing_fraction_1",
+          "label": "missing fraction · 2026-01-17",
+          "unit": "fraction",
+          "available": true,
+          "common_cells": 59392,
+          "before_valid_cells": 59392,
+          "after_valid_cells": 59392,
+          "changed_cells": 0,
+          "changed_percent": 0,
+          "quantity_type": "measurement difference",
+          "mean_change": 0,
+          "mean_absolute_change": 0,
+          "maximum_absolute_change": 0
+        },
+        {
+          "id": "quality_rejected_nonpositive_power_1",
+          "before_layer": "quality_rejected_nonpositive_power_1",
+          "after_layer": "quality_rejected_nonpositive_power_1",
+          "label": "rejected nonpositive power · 2026-01-17",
+          "unit": "fraction",
+          "available": true,
+          "common_cells": 59392,
+          "before_valid_cells": 59392,
+          "after_valid_cells": 59392,
+          "changed_cells": 0,
+          "changed_percent": 0,
+          "quantity_type": "measurement difference",
+          "mean_change": 0,
+          "mean_absolute_change": 0,
+          "maximum_absolute_change": 0
+        },
+        {
+          "id": "quality_rejected_source_mask_1",
+          "before_layer": "quality_rejected_source_mask_1",
+          "after_layer": "quality_rejected_source_mask_1",
+          "label": "rejected source mask · 2026-01-17",
+          "unit": "fraction",
+          "available": true,
+          "common_cells": 59392,
+          "before_valid_cells": 59392,
+          "after_valid_cells": 59392,
+          "changed_cells": 0,
+          "changed_percent": 0,
+          "quantity_type": "measurement difference",
+          "mean_change": 0,
+          "mean_absolute_change": 0,
+          "maximum_absolute_change": 0
+        }
+      ],
+      "meaning": "Differences are experiment sensitivity on jointly valid cells, not accuracy or confidence. Numeric changes use after minus before. Changing support changes the comparison population."
+    }
+  },
+  "saved_tool": "cc69c03946fa421295e4e259ee062c29",
+  "mobile": [
+    {
+      "tab": "explore",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "tab": "projects",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "tab": "examples",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "tab": "mission",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "tab": "runs",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "tab": "settings",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "tab": "about",
+      "viewport": 390,
+      "width": 390
+    }
+  ],
+  "errors": []
+}

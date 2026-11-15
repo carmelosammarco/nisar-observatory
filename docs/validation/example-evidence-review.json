@@ -1,0 +1,4246 @@
+{
+  "status": "PASS",
+  "review_date": "2026-10-23",
+  "scope": "Replay all examples and independently re-evaluate Timber against archived vectors.\n\nNo new source downloads, no live runtime mutation and no change to science settings.\nThe fresh evaluation uses finite radar candidate/score support. The historical\nreceipt used common radar/optical support; these denominators are NOT interchangeable.",
+  "replay": {
+    "application_version": "0.8.14",
+    "scope": "Isolated seven-example API/restart release gate; never uses the live runtime.\n\nRuns guided and editable recipes, checks exact original rasters/metrics, every\nsaved preview, opening PNG/scale, My Tools export/reopen, and restart recovery.\nProtected inputs and tutorial assets are read-only. This is engineering replay,\nnot independent scientific accuracy, a browser task study or a peak-RAM quota.",
+    "cases": 7,
+    "protected_inputs": 31,
+    "guided_and_editable_jobs": 14,
+    "exact_original_map_comparisons": 502,
+    "saved_map_previews_checked": 655,
+    "saved_recipes_reopened": 7,
+    "runs_reopened_after_restart": 14,
+    "metadata_ready_after_restart": true,
+    "maximum_observed_health_seconds_during_jobs": 0.20375462499214336,
+    "remote_science_bytes": 0,
+    "checks": [
+      {
+        "job": "b6dbffbce0034a71a1bda3665dadae96",
+        "pid": "P01",
+        "case": "P01_Mozambique",
+        "mode": "guided",
+        "original_numeric_maps": 26,
+        "all_saved_map_checks": [
+          {
+            "layer": "backscatter",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_0",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_1",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "change",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "variability",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "count",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "baseline_departure",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "standardized_departure",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "water",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "water_state",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "threshold_sensitive",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "occupancy",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "event_baseline_departure",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "event",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "recovery",
+            "valid_pixels": 0,
+            "available": false,
+            "unavailable_reason": "Recovery cannot be assessed: no acquisition after the comparison date is selected. Add later compatible observations to look for a return to dry."
+          },
+          {
+            "layer": "recovery_lower_days",
+            "valid_pixels": 0,
+            "available": false,
+            "unavailable_reason": "Recovery cannot be assessed: no acquisition after the comparison date is selected. Add later compatible observations to look for a return to dry."
+          },
+          {
+            "layer": "recovery_upper_days",
+            "valid_pixels": 0,
+            "available": false,
+            "unavailable_reason": "Recovery cannot be assessed: no acquisition after the comparison date is selected. Add later compatible observations to look for a return to dry."
+          },
+          {
+            "layer": "unresolved",
+            "valid_pixels": 9047,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_0",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_0",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_0",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_0",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_1",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_1",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_1",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_1",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          }
+        ],
+        "opening_layer": "event",
+        "opening_palette": "standard",
+        "opening_range": [
+          0.0,
+          1.0
+        ],
+        "png_with_legend": true,
+        "remote_science_bytes": 0,
+        "result_sha256": "5a9de508eb709a5d93f44148f01c07a4901f47cfb3f416af334f1bfebc9e196a"
+      },
+      {
+        "job": "83457c5e99da4d7f91088a5615322fd9",
+        "pid": "LAB",
+        "case": "P01_Mozambique",
+        "mode": "editable",
+        "original_numeric_maps": 26,
+        "all_saved_map_checks": [
+          {
+            "layer": "backscatter",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_0",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_1",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "change",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "variability",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "count",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "baseline_departure",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "standardized_departure",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "water",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "water_state",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "threshold_sensitive",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "occupancy",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "event_baseline_departure",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "event",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "recovery",
+            "valid_pixels": 0,
+            "available": false,
+            "unavailable_reason": "No usable later recovery evidence exists for this record. Add observations after the comparison date; missing recovery is not proof of continuing flooding."
+          },
+          {
+            "layer": "recovery_lower_days",
+            "valid_pixels": 0,
+            "available": false,
+            "unavailable_reason": "No valid cells satisfy this layer\u2019s measurement/support requirements. Missing results are not zero change."
+          },
+          {
+            "layer": "recovery_upper_days",
+            "valid_pixels": 0,
+            "available": false,
+            "unavailable_reason": "No valid cells satisfy this layer\u2019s measurement/support requirements. Missing results are not zero change."
+          },
+          {
+            "layer": "unresolved",
+            "valid_pixels": 9047,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_0",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_0",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_0",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_0",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_1",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_1",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_1",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_1",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "trace_flood_history_baseline_brightness_e3b0c442",
+            "valid_pixels": 59392,
+            "available": true,
+            "unavailable_reason": null
+          }
+        ],
+        "opening_layer": "event",
+        "opening_palette": "standard",
+        "opening_range": [
+          0.0,
+          1.0
+        ],
+        "png_with_legend": true,
+        "remote_science_bytes": 0,
+        "result_sha256": "d16a69f4e13c0f2deb38e3d97d6c4b9565f62f2ee2808cd908ae80be8cda7582"
+      },
+      {
+        "job": "d84d695a036a4a28b039e63e5cb71709",
+        "pid": "P02",
+        "case": "P02_Wheeler_Marsh",
+        "mode": "guided",
+        "original_numeric_maps": 49,
+        "all_saved_map_checks": [
+          {
+            "layer": "backscatter",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_0",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_1",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_2",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_3",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_4",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_5",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "change",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "variability",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "count",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "baseline_departure",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "standardized_departure",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "hh_sigma",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "hv_sigma",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "water",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "water_state",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "threshold_sensitive",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "occupancy",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_0",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_0",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_0",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_0",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_water_joint_accepted_fraction_0",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_1",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_1",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_1",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_1",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_water_joint_accepted_fraction_1",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_2",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_2",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_2",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_2",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_water_joint_accepted_fraction_2",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_3",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_3",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_3",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_3",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_water_joint_accepted_fraction_3",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_4",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_4",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_4",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_4",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_water_joint_accepted_fraction_4",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_5",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_5",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_5",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_5",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_water_joint_accepted_fraction_5",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "polarization_ratio_change",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          }
+        ],
+        "opening_layer": "occupancy",
+        "opening_palette": "standard",
+        "opening_range": [
+          0.0,
+          1.0
+        ],
+        "png_with_legend": true,
+        "remote_science_bytes": 0,
+        "result_sha256": "4ea3113cafcccf4bb8dda51d87545e2a49eccfae4bc1295e49dfc5212b94ac0f"
+      },
+      {
+        "job": "2a8fc5ff9cab49a180357f5f5bd4a116",
+        "pid": "LAB",
+        "case": "P02_Wheeler_Marsh",
+        "mode": "editable",
+        "original_numeric_maps": 49,
+        "all_saved_map_checks": [
+          {
+            "layer": "backscatter",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_0",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_1",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_2",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_3",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_4",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_5",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "change",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "variability",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "count",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "baseline_departure",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "standardized_departure",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "hh_sigma",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "hv_sigma",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "water",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "water_state",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "threshold_sensitive",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "occupancy",
+            "valid_pixels": 7162,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_0",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_0",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_0",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_0",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_water_joint_accepted_fraction_0",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_1",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_1",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_1",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_1",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_water_joint_accepted_fraction_1",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_2",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_2",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_2",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_2",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_water_joint_accepted_fraction_2",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_3",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_3",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_3",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_3",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_water_joint_accepted_fraction_3",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_4",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_4",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_4",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_4",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_water_joint_accepted_fraction_4",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_5",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_5",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_5",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_5",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_water_joint_accepted_fraction_5",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "polarization_ratio_change",
+            "valid_pixels": 58564,
+            "available": true,
+            "unavailable_reason": null
+          }
+        ],
+        "opening_layer": "occupancy",
+        "opening_palette": "standard",
+        "opening_range": [
+          0.0,
+          1.0
+        ],
+        "png_with_legend": true,
+        "remote_science_bytes": 0,
+        "result_sha256": "d4efb7e17608f8eca39d75967905b739f118367323adc83de5d9da6c217a6e52"
+      },
+      {
+        "job": "6f4b577d6d824df9a98d1123ace9c02b",
+        "pid": "P03",
+        "case": "P03_Timber_Fire",
+        "mode": "guided",
+        "original_numeric_maps": 43,
+        "all_saved_map_checks": [
+          {
+            "layer": "view_0_hh_change",
+            "valid_pixels": 1130972,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "view_0_hv_change",
+            "valid_pixels": 1130972,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "view_1_hh_change",
+            "valid_pixels": 1130060,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "view_1_hv_change",
+            "valid_pixels": 1130060,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "fire_score",
+            "valid_pixels": 1130714,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "fire_candidate",
+            "valid_pixels": 1130714,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "change_intensity",
+            "valid_pixels": 1131014,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "smoothed_intensity",
+            "valid_pixels": 1130714,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "view_count",
+            "valid_pixels": 1130714,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_0",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_0",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_0",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_0",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_1",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_1",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_1",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_1",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_2",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_2",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_2",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_2",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_3",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_3",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_3",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_3",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_4",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_4",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_4",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_4",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_5",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_5",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_5",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_5",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_6",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_6",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_6",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_6",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_7",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_7",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_7",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_7",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_0",
+            "valid_pixels": 1130060,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_1",
+            "valid_pixels": 1130972,
+            "available": true,
+            "unavailable_reason": null
+          }
+        ],
+        "opening_layer": "fire_score",
+        "opening_palette": "diverging",
+        "opening_range": [
+          -1.4458523511886596,
+          3.922186346054077
+        ],
+        "png_with_legend": true,
+        "remote_science_bytes": 0,
+        "result_sha256": "a789468a9f030baf473399926659b4f86d5bf57082d54cd2002adeb41ac2b736"
+      },
+      {
+        "job": "13bbfb62d4e845f1bc6e105784bd6b28",
+        "pid": "LAB",
+        "case": "P03_Timber_Fire",
+        "mode": "editable",
+        "original_numeric_maps": 43,
+        "all_saved_map_checks": [
+          {
+            "layer": "view_0_hh_change",
+            "valid_pixels": 1130972,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "view_0_hv_change",
+            "valid_pixels": 1130972,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "view_1_hh_change",
+            "valid_pixels": 1130060,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "view_1_hv_change",
+            "valid_pixels": 1130060,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "fire_score",
+            "valid_pixels": 1130714,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "fire_candidate",
+            "valid_pixels": 1130714,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "change_intensity",
+            "valid_pixels": 1131014,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "smoothed_intensity",
+            "valid_pixels": 1130714,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "view_count",
+            "valid_pixels": 1130714,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_0",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_0",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_0",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_0",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_1",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_1",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_1",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_1",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_2",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_2",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_2",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_2",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_3",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_3",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_3",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_3",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_4",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_4",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_4",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_4",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_5",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_5",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_5",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_5",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_6",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_6",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_6",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_6",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_7",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_7",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_7",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_7",
+            "valid_pixels": 1418349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_0",
+            "valid_pixels": 1130060,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_1",
+            "valid_pixels": 1130972,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "trace_dual_change_hh_baseline_3994b780",
+            "valid_pixels": 1130972,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "trace_dual_change_hv_baseline_3994b780",
+            "valid_pixels": 1130972,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "trace_dual_change_hh_baseline_ebf6f646",
+            "valid_pixels": 1130063,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "trace_dual_change_hv_baseline_ebf6f646",
+            "valid_pixels": 1130063,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "trace_threshold_candidate_before_patches_e3b0c442",
+            "valid_pixels": 1130714,
+            "available": true,
+            "unavailable_reason": null
+          }
+        ],
+        "opening_layer": "fire_score",
+        "opening_palette": "diverging",
+        "opening_range": [
+          -1.4458523511886596,
+          3.922186346054077
+        ],
+        "png_with_legend": true,
+        "remote_science_bytes": 0,
+        "result_sha256": "2979baa29fbff418c91a8111e8f493a3a1ea6a331d39c65d4f646a755ee42125"
+      },
+      {
+        "job": "c0ae80ca365043568e58c392bf5e0da6",
+        "pid": "P04",
+        "case": "P04_Mexico_City",
+        "mode": "guided",
+        "original_numeric_maps": 11,
+        "all_saved_map_checks": [
+          {
+            "layer": "count",
+            "valid_pixels": 590241,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "reference_support",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "interval_rate",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "range",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "pair_0",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "pair_1",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "pair_2",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "pair_3",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "pair_4",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "pair_5",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_0",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_1",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_2",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_3",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_4",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_5",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_6",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "los_rate_year",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "los_rate_month",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "los_change",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "los_fit_residual",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "los_pair_residual",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_0",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_0",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_invalid_subswath_0",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_anomaly_0",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_coherence_0",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_component_missing_0",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_other_component_0",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_missing_correction_0",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_ionosphere_interpolated_0",
+            "valid_pixels": 588671,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_coherence_0",
+            "valid_pixels": 588671,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_ionospheric_phase_correction_0",
+            "valid_pixels": 588671,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_1",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_1",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_invalid_subswath_1",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_anomaly_1",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_coherence_1",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_component_missing_1",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_other_component_1",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_missing_correction_1",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_ionosphere_interpolated_1",
+            "valid_pixels": 586181,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_coherence_1",
+            "valid_pixels": 586181,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_ionospheric_phase_correction_1",
+            "valid_pixels": 586181,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_2",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_2",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_invalid_subswath_2",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_anomaly_2",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_coherence_2",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_component_missing_2",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_other_component_2",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_missing_correction_2",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_ionosphere_interpolated_2",
+            "valid_pixels": 577541,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_coherence_2",
+            "valid_pixels": 577541,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_ionospheric_phase_correction_2",
+            "valid_pixels": 577541,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_3",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_3",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_invalid_subswath_3",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_anomaly_3",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_coherence_3",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_component_missing_3",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_other_component_3",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_missing_correction_3",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_ionosphere_interpolated_3",
+            "valid_pixels": 583832,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_coherence_3",
+            "valid_pixels": 583832,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_ionospheric_phase_correction_3",
+            "valid_pixels": 583832,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_4",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_4",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_invalid_subswath_4",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_anomaly_4",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_coherence_4",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_component_missing_4",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_other_component_4",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_missing_correction_4",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_ionosphere_interpolated_4",
+            "valid_pixels": 587822,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_coherence_4",
+            "valid_pixels": 587822,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_ionospheric_phase_correction_4",
+            "valid_pixels": 587822,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_5",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_5",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_invalid_subswath_5",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_anomaly_5",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_coherence_5",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_component_missing_5",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_other_component_5",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_missing_correction_5",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_ionosphere_interpolated_5",
+            "valid_pixels": 588430,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_coherence_5",
+            "valid_pixels": 588430,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_ionospheric_phase_correction_5",
+            "valid_pixels": 588430,
+            "available": true,
+            "unavailable_reason": null
+          }
+        ],
+        "opening_layer": "los_rate_year",
+        "opening_palette": "rainbow",
+        "opening_range": [
+          -30.0,
+          30.0
+        ],
+        "png_with_legend": true,
+        "remote_science_bytes": 0,
+        "result_sha256": "927a39bc0663db4831d0d97eaffbf89fa2b12fc4cc01f7a9aae756b46c422b55"
+      },
+      {
+        "job": "90d48512811c46d6b210dbea91566b7b",
+        "pid": "LAB",
+        "case": "P04_Mexico_City",
+        "mode": "editable",
+        "original_numeric_maps": 11,
+        "all_saved_map_checks": [
+          {
+            "layer": "quality_accepted_fraction_0",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_0",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_invalid_subswath_0",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_anomaly_0",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_coherence_0",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_component_missing_0",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_other_component_0",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_missing_correction_0",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_1",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_1",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_invalid_subswath_1",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_anomaly_1",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_coherence_1",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_component_missing_1",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_other_component_1",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_missing_correction_1",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_2",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_2",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_invalid_subswath_2",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_anomaly_2",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_coherence_2",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_component_missing_2",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_other_component_2",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_missing_correction_2",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_3",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_3",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_invalid_subswath_3",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_anomaly_3",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_coherence_3",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_component_missing_3",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_other_component_3",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_missing_correction_3",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_4",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_4",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_invalid_subswath_4",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_anomaly_4",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_coherence_4",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_component_missing_4",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_other_component_4",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_missing_correction_4",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_5",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_5",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_invalid_subswath_5",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_anomaly_5",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_coherence_5",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_component_missing_5",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_other_component_5",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_missing_correction_5",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "reference_support",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "step_0_latest",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "pair_0",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "pair_1",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "pair_2",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "pair_3",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "pair_4",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "pair_5",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "network_residual",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "step_1_latest",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "trend_residual",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "step_2_latest",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "summary",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "count",
+            "valid_pixels": 602896,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_0",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_1",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_2",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_3",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_4",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_5",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_6",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "change",
+            "valid_pixels": 510464,
+            "available": true,
+            "unavailable_reason": null
+          }
+        ],
+        "opening_layer": "summary",
+        "opening_palette": "rainbow",
+        "opening_range": [
+          -30.0,
+          30.0
+        ],
+        "png_with_legend": true,
+        "remote_science_bytes": 0,
+        "result_sha256": "381ef792defcb1058acd132a1bd24343d723c89c88bf545bc01485d61e36aff9"
+      },
+      {
+        "job": "4451f039936a4f73a99bab5ee935fdf5",
+        "pid": "P05",
+        "case": "P05_Venezuela",
+        "mode": "guided",
+        "original_numeric_maps": 59,
+        "all_saved_map_checks": [
+          {
+            "layer": "group_1_count",
+            "valid_pixels": 50173,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_1_reference_support",
+            "valid_pixels": 50173,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_1_interval_rate",
+            "valid_pixels": 50173,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_1_range",
+            "valid_pixels": 50173,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_1_pair_0",
+            "valid_pixels": 50173,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_1_event_displacement_cm",
+            "valid_pixels": 50173,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_0_group_1",
+            "valid_pixels": 361389,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_0_group_1",
+            "valid_pixels": 361389,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_invalid_subswath_0_group_1",
+            "valid_pixels": 361389,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_anomaly_0_group_1",
+            "valid_pixels": 361389,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_coherence_0_group_1",
+            "valid_pixels": 361389,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_component_missing_0_group_1",
+            "valid_pixels": 361389,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_other_component_0_group_1",
+            "valid_pixels": 361389,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_missing_correction_0_group_1",
+            "valid_pixels": 361389,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_ionosphere_interpolated_0_group_1",
+            "valid_pixels": 82396,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_coherence_0_group_1",
+            "valid_pixels": 82396,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_ionospheric_phase_correction_0_group_1",
+            "valid_pixels": 82396,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_2_count",
+            "valid_pixels": 37083,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_2_reference_support",
+            "valid_pixels": 37083,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_2_interval_rate",
+            "valid_pixels": 37083,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_2_range",
+            "valid_pixels": 37083,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_2_pair_0",
+            "valid_pixels": 37083,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_2_event_displacement_cm",
+            "valid_pixels": 37083,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_0_group_2",
+            "valid_pixels": 223434,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_0_group_2",
+            "valid_pixels": 223434,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_invalid_subswath_0_group_2",
+            "valid_pixels": 223434,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_anomaly_0_group_2",
+            "valid_pixels": 223434,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_coherence_0_group_2",
+            "valid_pixels": 223434,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_component_missing_0_group_2",
+            "valid_pixels": 223434,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_other_component_0_group_2",
+            "valid_pixels": 223434,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_missing_correction_0_group_2",
+            "valid_pixels": 223434,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_ionosphere_interpolated_0_group_2",
+            "valid_pixels": 41038,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_coherence_0_group_2",
+            "valid_pixels": 41038,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_ionospheric_phase_correction_0_group_2",
+            "valid_pixels": 41038,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_3_count",
+            "valid_pixels": 220349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_3_reference_support",
+            "valid_pixels": 220349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_3_interval_rate",
+            "valid_pixels": 220349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_3_range",
+            "valid_pixels": 220349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_3_pair_0",
+            "valid_pixels": 220349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_3_event_displacement_cm",
+            "valid_pixels": 220349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_0_group_3",
+            "valid_pixels": 599227,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_0_group_3",
+            "valid_pixels": 599227,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_invalid_subswath_0_group_3",
+            "valid_pixels": 599227,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_anomaly_0_group_3",
+            "valid_pixels": 599227,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_coherence_0_group_3",
+            "valid_pixels": 599227,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_component_missing_0_group_3",
+            "valid_pixels": 599227,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_other_component_0_group_3",
+            "valid_pixels": 599227,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_missing_correction_0_group_3",
+            "valid_pixels": 599227,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_ionosphere_interpolated_0_group_3",
+            "valid_pixels": 267735,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_coherence_0_group_3",
+            "valid_pixels": 267735,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_ionospheric_phase_correction_0_group_3",
+            "valid_pixels": 267735,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_0",
+            "valid_pixels": 37083,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_1",
+            "valid_pixels": 220349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_2",
+            "valid_pixels": 50173,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "event_displacement_cm",
+            "valid_pixels": 278983,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "event_source",
+            "valid_pixels": 278983,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "event_coverage",
+            "valid_pixels": 278983,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "reference_support",
+            "valid_pixels": 278983,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "event_overlap_spread",
+            "valid_pixels": 27643,
+            "available": true,
+            "unavailable_reason": null
+          }
+        ],
+        "opening_layer": "event_displacement_cm",
+        "opening_palette": "diverging",
+        "opening_range": [
+          -50.0,
+          50.0
+        ],
+        "png_with_legend": true,
+        "remote_science_bytes": 0,
+        "result_sha256": "165e5e8ba41db9b7faf62f0d98708e2e4ee86d45972495bb0459fb035af4ba8b"
+      },
+      {
+        "job": "0eabd8b75e6c4d088091a6c237918a7b",
+        "pid": "LAB",
+        "case": "P05_Venezuela",
+        "mode": "editable",
+        "original_numeric_maps": 59,
+        "all_saved_map_checks": [
+          {
+            "layer": "group_1_count",
+            "valid_pixels": 50173,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_1_reference_support",
+            "valid_pixels": 50173,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_1_interval_rate",
+            "valid_pixels": 50173,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_1_range",
+            "valid_pixels": 50173,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_1_pair_0",
+            "valid_pixels": 50173,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_1_event_displacement_cm",
+            "valid_pixels": 50173,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_0_group_1",
+            "valid_pixels": 361389,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_0_group_1",
+            "valid_pixels": 361389,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_invalid_subswath_0_group_1",
+            "valid_pixels": 361389,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_anomaly_0_group_1",
+            "valid_pixels": 361389,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_coherence_0_group_1",
+            "valid_pixels": 361389,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_component_missing_0_group_1",
+            "valid_pixels": 361389,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_other_component_0_group_1",
+            "valid_pixels": 361389,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_missing_correction_0_group_1",
+            "valid_pixels": 361389,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_ionosphere_interpolated_0_group_1",
+            "valid_pixels": 82396,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_coherence_0_group_1",
+            "valid_pixels": 82396,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_ionospheric_phase_correction_0_group_1",
+            "valid_pixels": 82396,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_2_count",
+            "valid_pixels": 37083,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_2_reference_support",
+            "valid_pixels": 37083,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_2_interval_rate",
+            "valid_pixels": 37083,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_2_range",
+            "valid_pixels": 37083,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_2_pair_0",
+            "valid_pixels": 37083,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_2_event_displacement_cm",
+            "valid_pixels": 37083,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_0_group_2",
+            "valid_pixels": 223434,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_0_group_2",
+            "valid_pixels": 223434,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_invalid_subswath_0_group_2",
+            "valid_pixels": 223434,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_anomaly_0_group_2",
+            "valid_pixels": 223434,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_coherence_0_group_2",
+            "valid_pixels": 223434,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_component_missing_0_group_2",
+            "valid_pixels": 223434,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_other_component_0_group_2",
+            "valid_pixels": 223434,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_missing_correction_0_group_2",
+            "valid_pixels": 223434,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_ionosphere_interpolated_0_group_2",
+            "valid_pixels": 41038,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_coherence_0_group_2",
+            "valid_pixels": 41038,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_ionospheric_phase_correction_0_group_2",
+            "valid_pixels": 41038,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_3_count",
+            "valid_pixels": 220349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_3_reference_support",
+            "valid_pixels": 220349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_3_interval_rate",
+            "valid_pixels": 220349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_3_range",
+            "valid_pixels": 220349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_3_pair_0",
+            "valid_pixels": 220349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "group_3_event_displacement_cm",
+            "valid_pixels": 220349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_0_group_3",
+            "valid_pixels": 599227,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_0_group_3",
+            "valid_pixels": 599227,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_invalid_subswath_0_group_3",
+            "valid_pixels": 599227,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_anomaly_0_group_3",
+            "valid_pixels": 599227,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_coherence_0_group_3",
+            "valid_pixels": 599227,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_component_missing_0_group_3",
+            "valid_pixels": 599227,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_other_component_0_group_3",
+            "valid_pixels": 599227,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_missing_correction_0_group_3",
+            "valid_pixels": 599227,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_ionosphere_interpolated_0_group_3",
+            "valid_pixels": 267735,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_coherence_0_group_3",
+            "valid_pixels": 267735,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_ionospheric_phase_correction_0_group_3",
+            "valid_pixels": 267735,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_0",
+            "valid_pixels": 37083,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_1",
+            "valid_pixels": 220349,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_2",
+            "valid_pixels": 50173,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "event_displacement_cm",
+            "valid_pixels": 278983,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "event_source",
+            "valid_pixels": 278983,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "event_coverage",
+            "valid_pixels": 278983,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "reference_support",
+            "valid_pixels": 278983,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "event_overlap_spread",
+            "valid_pixels": 27643,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "trace_event_pairs_selected_phase_a666dafa",
+            "valid_pixels": 50173,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "trace_event_pairs_selected_phase_23b92b9e",
+            "valid_pixels": 37083,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "trace_event_pairs_selected_phase_7edbf6b4",
+            "valid_pixels": 220349,
+            "available": true,
+            "unavailable_reason": null
+          }
+        ],
+        "opening_layer": "event_displacement_cm",
+        "opening_palette": "diverging",
+        "opening_range": [
+          -50.0,
+          50.0
+        ],
+        "png_with_legend": true,
+        "remote_science_bytes": 0,
+        "result_sha256": "57483eb6840a4aa78bcf87739f7d5dc44047ab743724131eb3e64756733a4ec3"
+      },
+      {
+        "job": "b705a8c2b45344afaa0858e29b191202",
+        "pid": "P06",
+        "case": "P06_Krasheninnikov",
+        "mode": "guided",
+        "original_numeric_maps": 42,
+        "all_saved_map_checks": [
+          {
+            "layer": "backscatter",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_0",
+            "valid_pixels": 1195152,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_1",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_2",
+            "valid_pixels": 1195152,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_3",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_4",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "change",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "variability",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "count",
+            "valid_pixels": 1195153,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "baseline_departure",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "standardized_departure",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "latest_departure",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "surface",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "confirmed_change",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "change_direction",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "first_change",
+            "valid_pixels": 396556,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "repeat_count",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "dated_departure_1",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "dated_departure_2",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "dated_departure_3",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "dated_departure_4",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "largest_step",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_0",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_0",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_0",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_0",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_1",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_1",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_1",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_1",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_2",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_2",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_2",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_2",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_3",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_3",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_3",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_3",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_4",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_4",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_4",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_4",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          }
+        ],
+        "opening_layer": "latest_departure",
+        "opening_palette": "diverging",
+        "opening_range": [
+          -8.0,
+          8.0
+        ],
+        "png_with_legend": true,
+        "remote_science_bytes": 0,
+        "result_sha256": "67e291e2eecdfc606dd62048c79f6ce6750ffd21f344f5f6ca8e7385b1a8124b"
+      },
+      {
+        "job": "0e51fd51265c46b687279247802bd155",
+        "pid": "LAB",
+        "case": "P06_Krasheninnikov",
+        "mode": "editable",
+        "original_numeric_maps": 42,
+        "all_saved_map_checks": [
+          {
+            "layer": "backscatter",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_0",
+            "valid_pixels": 1195152,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_1",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_2",
+            "valid_pixels": 1195152,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_3",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_4",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "change",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "variability",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "count",
+            "valid_pixels": 1195153,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "baseline_departure",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "standardized_departure",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "latest_departure",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "surface",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "confirmed_change",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "change_direction",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "first_change",
+            "valid_pixels": 396556,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "repeat_count",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "dated_departure_1",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "dated_departure_2",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "dated_departure_3",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "dated_departure_4",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "largest_step",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_0",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_0",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_0",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_0",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_1",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_1",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_1",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_1",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_2",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_2",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_2",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_2",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_3",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_3",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_3",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_3",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_4",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_4",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_nonpositive_power_4",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_source_mask_4",
+            "valid_pixels": 1243080,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "trace_surface_baseline_baseline_brightness_e3b0c442",
+            "valid_pixels": 1195152,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "trace_surface_baseline_baseline_spread_e3b0c442",
+            "valid_pixels": 1195152,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "trace_signed_change_signed_before_patches_e3b0c442",
+            "valid_pixels": 1195151,
+            "available": true,
+            "unavailable_reason": null
+          }
+        ],
+        "opening_layer": "latest_departure",
+        "opening_palette": "diverging",
+        "opening_range": [
+          -8.0,
+          8.0
+        ],
+        "png_with_legend": true,
+        "remote_science_bytes": 0,
+        "result_sha256": "bce8fc1a6c011d21ada854efd4ac1e96e877c4b5f54457b262e3e142a6652be1"
+      },
+      {
+        "job": "55c7198ab00c4eff942f6b5ec72f2c2f",
+        "pid": "P07",
+        "case": "P07_Samudra_Tapu",
+        "mode": "guided",
+        "original_numeric_maps": 21,
+        "all_saved_map_checks": [
+          {
+            "layer": "offset_raw_0",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "offset_rejected_0",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "other_component_0",
+            "valid_pixels": 35114,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "radar_magnitude_0",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "other_filtered_0",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "radar_filtered_0",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "horizontal_east_0",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "horizontal_north_0",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "horizontal_bearing_0",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "horizontal_condition_0",
+            "valid_pixels": 12502,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "horizontal_vertical_sensitivity_0",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "horizontal_speed",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "radar_magnitude",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "radar_observation_0",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_0",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "value",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_0",
+            "valid_pixels": 58420,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_0",
+            "valid_pixels": 58420,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_snr_0",
+            "valid_pixels": 58420,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_unpaired_offset_0",
+            "valid_pixels": 58420,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_snr_0",
+            "valid_pixels": 39511,
+            "available": true,
+            "unavailable_reason": null
+          }
+        ],
+        "opening_layer": "horizontal_speed",
+        "opening_palette": "rainbow",
+        "opening_range": [
+          0.0,
+          140.0
+        ],
+        "png_with_legend": true,
+        "remote_science_bytes": 0,
+        "result_sha256": "47a5a66c6aa3d576b649af7b1508b17d99324caa3845d1fbc3932465d30fd0ac"
+      },
+      {
+        "job": "785a3ffcd35d4bf697c58165717d8b8b",
+        "pid": "LAB",
+        "case": "P07_Samudra_Tapu",
+        "mode": "editable",
+        "original_numeric_maps": 21,
+        "all_saved_map_checks": [
+          {
+            "layer": "offset_raw_0",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "offset_rejected_0",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "other_component_0",
+            "valid_pixels": 35114,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "radar_magnitude_0",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "other_filtered_0",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "radar_filtered_0",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "horizontal_east_0",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "horizontal_north_0",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "horizontal_bearing_0",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "horizontal_condition_0",
+            "valid_pixels": 12502,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "horizontal_vertical_sensitivity_0",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "horizontal_speed",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "radar_magnitude",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "radar_observation_0",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "observation_0",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "value",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_accepted_fraction_0",
+            "valid_pixels": 58420,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_missing_fraction_0",
+            "valid_pixels": 58420,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_snr_0",
+            "valid_pixels": 58420,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_rejected_unpaired_offset_0",
+            "valid_pixels": 58420,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "quality_snr_0",
+            "valid_pixels": 39511,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "trace_offset_screen_slantrangeoffset_79892d4a",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "trace_offset_bias_primary_rate_79892d4a",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "trace_offset_screen_alongtrackoffset_79892d4a",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "trace_offset_bias_other_rate_79892d4a",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          },
+          {
+            "layer": "trace_horizontal_velocity_speed_daily_79892d4a",
+            "valid_pixels": 6703,
+            "available": true,
+            "unavailable_reason": null
+          }
+        ],
+        "opening_layer": "horizontal_speed",
+        "opening_palette": "rainbow",
+        "opening_range": [
+          0.0,
+          140.0
+        ],
+        "png_with_legend": true,
+        "remote_science_bytes": 0,
+        "result_sha256": "833bea4b184348ba0b7a2a40d99010d9f18cc421c1d7563d7a3c51569798c730"
+      }
+    ],
+    "status": "PASS"
+  },
+  "boundary_evaluation": {
+    "P03_Timber_Fire": {
+      "protocol": "All common finite fire_score/fire_candidate radar cells; archived vectors rasterized by cell centre on the actual exported grid. AUC independently computed by average-rank Mann\u2013Whitney statistic, including ties.",
+      "historical_protocol": "Earlier published app statistics use common radar/optical support; the optical pixel support is not bundled as a numerical mask, so its AUC is not presented as freshly recomputed.",
+      "reference_independence": {
+        "official_perimeter": "External operational incident boundary, a proxy that can contain unburned islands; not field-level burn truth.",
+        "author_output": "Author-derived result using the same NISAR observations; agreement measures reproduction rather than independent accuracy."
+      },
+      "comparisons": {
+        "official_perimeter": {
+          "tp": 185670,
+          "fp": 655,
+          "fn": 70651,
+          "tn": 873738,
+          "precision": 0.9964846370589024,
+          "recall": 0.7243651515092404,
+          "f1": 0.8389096478901876,
+          "iou": 0.7225188344436835,
+          "auc": 0.9861685037612915,
+          "mapped_ha": 7453.0,
+          "reference_ha": 10252.84,
+          "valid_ha": 45228.56,
+          "reference_sha256": "96e0c698e29e39f100bb6eb4d4e70d5e4daced6acec3502d326d34afb71c51c3"
+        },
+        "author_output": {
+          "tp": 184137,
+          "fp": 2188,
+          "fn": 4620,
+          "tn": 939769,
+          "precision": 0.9882570776868376,
+          "recall": 0.9755240865239435,
+          "f1": 0.9818493022859002,
+          "iou": 0.9643457540129357,
+          "auc": 0.9994359612464905,
+          "mapped_ha": 7453.0,
+          "reference_ha": 7550.28,
+          "valid_ha": 45228.56,
+          "reference_sha256": "ae5787efc9d0f5c6bb109f8684ac9538848bc954668955dbfc53a435af54c95b"
+        }
+      }
+    }
+  }
+}

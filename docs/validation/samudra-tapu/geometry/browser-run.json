@@ -1,0 +1,185 @@
+{
+  "run_id": "ef0de86ae22f4694822bd259981b78af",
+  "algorithm_version": "0.4.2",
+  "source_reader_versions": [
+    "0.3.3"
+  ],
+  "layers": [
+    {
+      "id": "offset_raw_0",
+      "status": 200,
+      "available": true,
+      "min": -72.00754791259766,
+      "max": 72.00754791259766
+    },
+    {
+      "id": "offset_rejected_0",
+      "status": 200,
+      "available": true,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "id": "other_component_0",
+      "status": 200,
+      "available": true,
+      "min": -21.625603561401356,
+      "max": 21.625603561401356
+    },
+    {
+      "id": "radar_magnitude_0",
+      "status": 200,
+      "available": true,
+      "min": 6.697564601898193,
+      "max": 73.47841217041015
+    },
+    {
+      "id": "other_filtered_0",
+      "status": 200,
+      "available": true,
+      "min": -35.059126739501956,
+      "max": 35.059126739501956
+    },
+    {
+      "id": "radar_filtered_0",
+      "status": 200,
+      "available": true,
+      "min": 6.697564601898193,
+      "max": 73.47841217041015
+    },
+    {
+      "id": "horizontal_east_0",
+      "status": 200,
+      "available": true,
+      "min": -104.11664642333984,
+      "max": 104.11664642333984
+    },
+    {
+      "id": "horizontal_north_0",
+      "status": 200,
+      "available": true,
+      "min": -47.448349761962895,
+      "max": 47.448349761962895
+    },
+    {
+      "id": "horizontal_bearing_0",
+      "status": 200,
+      "available": true,
+      "min": 0.0,
+      "max": 360.0
+    },
+    {
+      "id": "horizontal_condition_0",
+      "status": 200,
+      "available": true,
+      "min": 1.5053911399841309,
+      "max": 1.5255665540695191
+    },
+    {
+      "id": "horizontal_vertical_sensitivity_0",
+      "status": 200,
+      "available": true,
+      "min": 22.489338302612303,
+      "max": 23.04050621032715
+    },
+    {
+      "id": "horizontal_speed",
+      "status": 200,
+      "available": true,
+      "min": 9.125656433105469,
+      "max": 109.75952331542969
+    },
+    {
+      "id": "radar_magnitude",
+      "status": 200,
+      "available": true,
+      "min": 6.697564601898193,
+      "max": 73.47841217041015
+    },
+    {
+      "id": "radar_observation_0",
+      "status": 200,
+      "available": true,
+      "min": -72.00754791259766,
+      "max": 72.00754791259766
+    },
+    {
+      "id": "observation_0",
+      "status": 200,
+      "available": true,
+      "min": 9.125656433105469,
+      "max": 109.75952331542969
+    },
+    {
+      "id": "value",
+      "status": 200,
+      "available": true,
+      "min": -72.00754791259766,
+      "max": 72.00754791259766
+    },
+    {
+      "id": "quality_accepted_fraction_0",
+      "status": 200,
+      "available": true,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "id": "quality_missing_fraction_0",
+      "status": 200,
+      "available": true,
+      "min": 0.0,
+      "max": 1e-06
+    },
+    {
+      "id": "quality_rejected_snr_0",
+      "status": 200,
+      "available": true,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "id": "quality_rejected_unpaired_offset_0",
+      "status": 200,
+      "available": true,
+      "min": 0.0,
+      "max": 0.1138781522214379
+    },
+    {
+      "id": "quality_snr_0",
+      "status": 200,
+      "available": true,
+      "min": 5.123401069641114,
+      "max": 86.48735198974616
+    }
+  ],
+  "offline_max_absolute_difference_m_year": 0.0,
+  "source_remote_bytes": 0,
+  "metrics": {
+    "valid_pixels": 6703,
+    "valid_fraction": 0.11473810338925025,
+    "median": 21.787776947021484,
+    "p10": 13.661437034606934,
+    "p90": 49.928428649902344,
+    "common_valid_area_km2": 42.8992
+  },
+  "report": {
+    "headline": "What these observations show",
+    "findings": [
+      "1 compatible GOFF observations cover 2026-01-01 to 2026-01-13. Regional comparisons use 6,703 common analysis cells (42.899 km\u00b2).",
+      "The constrained horizontal estimate retains 6,703 latest-interval cells. Its median is 21.788 m/year. Vertical velocity was fixed at zero; this is not independently validated glacier speed.",
+      "Spatial outlier filtering removed 0 selected-component analysis-cell values across intervals. Supporting radar diagnostics remain component rates in m/year; the selected motion estimate is described separately. Delivered offset layer: layer3."
+    ],
+    "comparison_basis": "fixed common footprint across all selected observations",
+    "next_checks": [
+      "Inspect observation counts and source quality before interpreting a pattern.",
+      "Compare the map and observed dates; blank pixels are missing evidence.",
+      "Use independent observations to test environmental attribution."
+    ],
+    "validation": "Synthetic engineering tests check known calculations and missing-data behavior; independent real-world accuracy is not established."
+  },
+  "tests": {
+    "python": 363,
+    "frontend": 182
+  }
+}

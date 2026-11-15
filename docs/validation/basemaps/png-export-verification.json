@@ -1,0 +1,140 @@
+{
+  "run_id": "6882820bff02402a96d1a286d4f04f60",
+  "params": {
+    "mode": "custom",
+    "palette": "rainbow",
+    "low": -30,
+    "high": 30,
+    "basemap": "light",
+    "place_names": "true",
+    "overlay_opacity": 0.9
+  },
+  "duration_seconds": 1.69,
+  "bytes": 1410928,
+  "metadata": {
+    "style": "light",
+    "place_names": true,
+    "attribution": "Esri, HERE, Garmin, \u00a9 OpenStreetMap contributors, GIS User Community",
+    "tile_zoom": 10,
+    "bounds_mercator": [
+      -11065157.384851394,
+      2171367.712104161,
+      -10992795.195694566,
+      2231614.389889771
+    ],
+    "radar_overlay_opacity": 0.9
+  },
+  "scale": {
+    "min": -30.0,
+    "max": 30.0,
+    "mode": "custom",
+    "palette_name": "rainbow",
+    "clipped_percent": 0.03663333751253761,
+    "shared_frames": 1,
+    "class_values": []
+  },
+  "all_numeric_rasters_unchanged": true,
+  "additional_provider_checks": [
+    {
+      "style": "satellite",
+      "labels": true,
+      "bytes": 1671846,
+      "seconds": 1.3,
+      "metadata": {
+        "style": "satellite",
+        "place_names": true,
+        "attribution": "Esri, Vantor, Earthstar Geographics, GIS User Community; place names: Esri, HERE, Garmin, \u00a9 OpenStreetMap contributors, GIS User Community",
+        "tile_zoom": 10,
+        "bounds_mercator": [
+          -11065157.384851394,
+          2171367.712104161,
+          -10992795.195694566,
+          2231614.389889771
+        ],
+        "radar_overlay_opacity": 0.9
+      }
+    },
+    {
+      "style": "dark",
+      "labels": true,
+      "bytes": 1418337,
+      "seconds": 1.25,
+      "metadata": {
+        "style": "dark",
+        "place_names": true,
+        "attribution": "Esri, HERE, Garmin, \u00a9 OpenStreetMap contributors, GIS User Community",
+        "tile_zoom": 10,
+        "bounds_mercator": [
+          -11065157.384851394,
+          2171367.712104161,
+          -10992795.195694566,
+          2231614.389889771
+        ],
+        "radar_overlay_opacity": 0.9
+      }
+    },
+    {
+      "style": "streets",
+      "labels": true,
+      "bytes": 1594986,
+      "seconds": 0.28,
+      "metadata": {
+        "style": "streets",
+        "place_names": true,
+        "attribution": "Esri, HERE, Garmin, USGS, Intermap, INCREMENT P, NRCan, Esri Japan, METI, Esri China (Hong Kong), Esri Korea, Esri (Thailand), NGCC, \u00a9 OpenStreetMap contributors, GIS User Community",
+        "tile_zoom": 10,
+        "bounds_mercator": [
+          -11065157.384851394,
+          2171367.712104161,
+          -10992795.195694566,
+          2231614.389889771
+        ],
+        "radar_overlay_opacity": 0.9
+      }
+    },
+    {
+      "style": "plain",
+      "labels": false,
+      "bytes": 1298504,
+      "seconds": 0.23,
+      "metadata": {
+        "style": "plain",
+        "place_names": false,
+        "attribution": "",
+        "tile_zoom": 10,
+        "bounds_mercator": [
+          -11065157.384851394,
+          2171367.712104161,
+          -10992795.195694566,
+          2231614.389889771
+        ],
+        "radar_overlay_opacity": 0.9
+      }
+    },
+    {
+      "style": "plain",
+      "labels": true,
+      "bytes": 1335705,
+      "seconds": 0.25,
+      "metadata": {
+        "style": "plain",
+        "place_names": true,
+        "attribution": "place names: Esri, HERE, Garmin, \u00a9 OpenStreetMap contributors, GIS User Community",
+        "tile_zoom": 10,
+        "bounds_mercator": [
+          -11065157.384851394,
+          2171367.712104161,
+          -10992795.195694566,
+          2231614.389889771
+        ],
+        "radar_overlay_opacity": 0.9
+      }
+    }
+  ],
+  "browser_download_completed": true,
+  "browser_provider": "World_Street_Map",
+  "browser_visible_street_tiles_loaded": 18,
+  "python_tests": 374,
+  "frontend_tests": 191,
+  "streets_referrer_policy_unchanged": "no-referrer"
+}

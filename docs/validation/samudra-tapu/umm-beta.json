@@ -1,0 +1,10 @@
+{
+  "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C2850263910-ASF&sort_key=start_date&page_size=1",
+  "status": 200,
+  "hits": "0",
+  "response": {
+    "hits": 0,
+    "took": 12,
+    "items": []
+  }
+}

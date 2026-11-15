@@ -1,0 +1,10 @@
+{
+  "url": "https://cmr.earthdata.nasa.gov/search/collections.json?keyword=NISAR+GOFF&include_granule_counts=true&page_size=100",
+  "status": 400,
+  "hits": null,
+  "response": {
+    "errors": [
+      "Elasticsearch reported a bad request error: [{:type \"illegal_argument_exception\", :reason \"Fielddata is disabled on [provider-id-lowercase-doc-values] in [1_small_collections_700_shards]. Text fields are not optimised for operations that require per-document field data like aggregations and sorting, so these operations are disabled by default. Please use a keyword field instead. Alternatively, set fielddata=true on [provider-id-lowercase-doc-values] in order to load field data by uninverting the inverted index. Note that this can use significant memory.\"}]"
+    ]
+  }
+}

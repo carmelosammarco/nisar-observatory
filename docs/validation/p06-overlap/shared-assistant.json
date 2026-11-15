@@ -1,0 +1,275 @@
+{
+  "assistant_version": "2.0",
+  "project": "P06",
+  "product": "GUNW",
+  "comparison_unit": "cm",
+  "maximum_candidate_offset_span": 2.153724942736341,
+  "comparison_meaning": "Offsets relative to Candidate 1 for each selected observation, in source order. Switching reference subtracts these offsets from the corresponding map. They describe sensitivity of the spatial origin, not accuracy. For GCOV these are departures from the declared per-cell median baseline; phase tools use converted LOS pair changes (daily rates for P09/P13).",
+  "status": "candidates available",
+  "fingerprint": "6e958edf4811180f8d389116ef0a3fae399ccf2e0ae4a220e9eb5d9f7c1fec71",
+  "candidates": [
+    {
+      "patch_cells": 36,
+      "shared_cells": 31,
+      "shared_fraction": 0.8611111111111112,
+      "worst_pair_median_coherence": 0.5553659796714783,
+      "maximum_pair_spatial_mad_rad": 0.29093360900878906,
+      "spatial_spread": 0.29093360900878906,
+      "spread_unit": "rad",
+      "pair_reference_phase_rad": [
+        22.614608764648438,
+        -7.802032947540283,
+        -20.541107177734375
+      ],
+      "reference_values": [
+        22.614608764648438,
+        -7.802032947540283,
+        -20.541107177734375
+      ],
+      "data_suitability": "review needed",
+      "stability": "not independently established",
+      "warnings": [
+        "Worst-pair median accepted-sample coherence is below 0.70; inspect the quality maps."
+      ],
+      "bbox": [
+        -67.11555555555555,
+        10.006892830927226,
+        -67.09788888888889,
+        10.020455695714524
+      ],
+      "id": "candidate_1",
+      "name": "Candidate 1",
+      "area_km2": 2.905630310569181,
+      "relative_rate_to_candidate_1_cm_year": null,
+      "relative_reference_offsets": [
+        -0.0,
+        -0.0,
+        -0.0
+      ]
+    },
+    {
+      "patch_cells": 36,
+      "shared_cells": 33,
+      "shared_fraction": 0.9166666666666666,
+      "worst_pair_median_coherence": 0.4972468316555023,
+      "maximum_pair_spatial_mad_rad": 0.20658302307128906,
+      "spatial_spread": 0.20658302307128906,
+      "spread_unit": "rad",
+      "pair_reference_phase_rad": [
+        21.895401000976562,
+        -7.334946632385254,
+        -19.64212989807129
+      ],
+      "reference_values": [
+        21.895401000976562,
+        -7.334946632385254,
+        -19.64212989807129
+      ],
+      "data_suitability": "review needed",
+      "stability": "not independently established",
+      "warnings": [
+        "Worst-pair median accepted-sample coherence is below 0.70; inspect the quality maps."
+      ],
+      "bbox": [
+        -67.12144444444444,
+        10.034019113080229,
+        -67.10377777777776,
+        10.047583083834146
+      ],
+      "id": "candidate_2",
+      "name": "Candidate 2",
+      "area_km2": 2.905630310569181,
+      "relative_rate_to_candidate_1_cm_year": null,
+      "relative_reference_offsets": [
+        1.3848218247301967,
+        -0.8993664361423607,
+        -1.7309648472899355
+      ]
+    },
+    {
+      "patch_cells": 36,
+      "shared_cells": 34,
+      "shared_fraction": 0.9444444444444444,
+      "worst_pair_median_coherence": 0.47755083441734314,
+      "maximum_pair_spatial_mad_rad": 0.1208028793334961,
+      "spatial_spread": 0.1208028793334961,
+      "spread_unit": "rad",
+      "pair_reference_phase_rad": [
+        23.013938903808594,
+        -7.763649940490723,
+        -20.538454055786133
+      ],
+      "reference_values": [
+        23.013938903808594,
+        -7.763649940490723,
+        -20.538454055786133
+      ],
+      "data_suitability": "review needed",
+      "stability": "not independently established",
+      "warnings": [
+        "Worst-pair median accepted-sample coherence is below 0.70; inspect the quality maps."
+      ],
+      "bbox": [
+        -67.0331111111111,
+        10.034019113080229,
+        -67.01544444444443,
+        10.047583083834146
+      ],
+      "id": "candidate_3",
+      "name": "Candidate 3",
+      "area_km2": 2.905630310569181,
+      "relative_rate_to_candidate_1_cm_year": null,
+      "relative_reference_offsets": [
+        -0.7689031180061445,
+        -0.07390580100196859,
+        -0.005108539372320681
+      ]
+    }
+  ],
+  "current_reference": {
+    "patch_cells": 109824,
+    "shared_cells": 979,
+    "shared_fraction": 0.00891426282051282,
+    "worst_pair_median_coherence": 0.45203807950019836,
+    "maximum_pair_spatial_mad_rad": 0.6865100860595703,
+    "spatial_spread": 0.6865100860595703,
+    "spread_unit": "rad",
+    "pair_reference_phase_rad": [
+      23.138702392578125,
+      -7.581697463989258,
+      -20.11795425415039
+    ],
+    "reference_values": [
+      23.138702392578125,
+      -7.581697463989258,
+      -20.11795425415039
+    ],
+    "data_suitability": "review needed",
+    "stability": "not independently established",
+    "warnings": [
+      "Less than 80% of this patch is usable on every selected pair.",
+      "Worst-pair median accepted-sample coherence is below 0.70; inspect the quality maps."
+    ],
+    "origin": "current reference rectangle",
+    "relative_rate_to_candidate_1_cm_year": null,
+    "relative_reference_offsets": [
+      -1.0091330083168852,
+      -0.42425207540327514,
+      -0.814773467941648
+    ]
+  },
+  "sources": [
+    {
+      "id": "subset-d19d37d31a7ea07b613d70f50ef575f2",
+      "name": "NISAR_L2_PR_GUNW_023_061_A_007_024_4000_SH_20260618T095836_20260618T095911_20260630T095835_20260630T095910_P05023_N_F_J_001",
+      "start": "2026-06-18T09:58:36Z",
+      "end": "2026-06-30T09:58:35Z",
+      "group": "061_A_007_4000_SH_P05023",
+      "bytes_transferred": 0,
+      "quality_paths": [
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/mask",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/coherenceMagnitude",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/connectedComponents",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen"
+      ],
+      "correction_manifest": [
+        {
+          "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen",
+          "operation": "subtract",
+          "units": "radians",
+          "basis": "Delivered GUNW screen is not applied by default; explicit user request."
+        }
+      ]
+    },
+    {
+      "id": "subset-85edd49270001ced9c8aaa5fcee26020",
+      "name": "NISAR_L2_PR_GUNW_022_162_A_006_023_4000_SH_20260613T100623_20260613T100657_20260625T100622_20260625T100656_P05023_N_F_J_001",
+      "start": "2026-06-13T10:06:23Z",
+      "end": "2026-06-25T10:06:22Z",
+      "group": "162_A_006_4000_SH_P05023",
+      "bytes_transferred": 0,
+      "quality_paths": [
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/mask",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/coherenceMagnitude",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/connectedComponents",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen"
+      ],
+      "correction_manifest": [
+        {
+          "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen",
+          "operation": "subtract",
+          "units": "radians",
+          "basis": "Delivered GUNW screen is not applied by default; explicit user request."
+        }
+      ]
+    },
+    {
+      "id": "subset-1ef777939636f7bfe8461f14bc1d97d8",
+      "name": "NISAR_L2_PR_GUNW_022_162_A_007_023_4000_SH_20260613T100656_20260613T100731_20260625T100655_20260625T100730_P05023_N_F_J_001",
+      "start": "2026-06-13T10:06:56Z",
+      "end": "2026-06-25T10:06:55Z",
+      "group": "162_A_007_4000_SH_P05023",
+      "bytes_transferred": 0,
+      "quality_paths": [
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/mask",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/coherenceMagnitude",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/connectedComponents",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen"
+      ],
+      "correction_manifest": [
+        {
+          "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen",
+          "operation": "subtract",
+          "units": "radians",
+          "basis": "Delivered GUNW screen is not applied by default; explicit user request."
+        }
+      ]
+    }
+  ],
+  "grid": {
+    "bbox": [
+      -69.0,
+      9.8,
+      -66.35,
+      11.55
+    ],
+    "resolution_m": 284.09849184986206,
+    "shape": [
+      773,
+      900
+    ],
+    "crs": "EPSG:6933"
+  },
+  "network": {},
+  "rate_comparison_status": "No candidate comparison is available.",
+  "common_cells": 979,
+  "pair_count": 3,
+  "relative_candidate_rate_span_cm_year": null,
+  "selection_method": "Up to 225 bounded windows at up to three sizes (minimum 6 \u00d7 6 cells), seeded by shared support; at least 25 shared cells and 80% shared coverage; exclude supplied affected areas; retain up to three separated patches. Phase: rank by worst-pair median accepted-sample coherence, coverage, then spatial phase MAD.",
+  "threshold_meaning": "25 cells, 80% support and 0.70 coherence are engineering screening rules, not scientifically calibrated reliability thresholds. Coherence is aggregated over already accepted native samples.",
+  "stability": "Not independently established. A coherent, uniform patch may be moving. No land-cover or elevation classification, stable-ground map, GNSS, atmospheric or DEM-error validation is available.",
+  "relative_rate_meaning": "Candidate rates are relative to Candidate 1, which is zero by definition. They describe sensitivity of the spatial origin, not proof that any candidate is stationary. Switching from Candidate 1 to a candidate subtracts that candidate\u2019s relative rate from the map. None is a probability or measurement uncertainty.",
+  "next_step": "Inspect candidate locations on the basemap and choose ground outside suspected change, preferably nearby and at similar elevation when known. You may draw your own reference. If no candidate passes, review coverage or choose another area/date set; thresholds are not silently relaxed.",
+  "warnings": [
+    "No independent stable-ground evidence was supplied.",
+    "A connected chain has no redundant closure check; zero residual cannot establish unwrapping accuracy."
+  ],
+  "assessment_id": "c90b07567ce64a36a9bb1376c7eb47ba",
+  "created_at": "2026-10-18T13:41:08.439246+00:00",
+  "processing_options": {
+    "apply_ionosphere": true,
+    "quake_mosaic": true,
+    "phase_network": false,
+    "event_timestamp": "2026-06-24T22:05:04.053000Z",
+    "resolution": 80.0,
+    "coherence": 0.3,
+    "min_valid_fraction": 0.5,
+    "reference_bbox": [
+      -68.9,
+      9.85,
+      -66.45,
+      10.15
+    ],
+    "event_date": "2026-06-24"
+  }
+}

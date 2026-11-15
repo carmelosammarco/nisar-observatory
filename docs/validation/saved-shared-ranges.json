@@ -1,0 +1,237 @@
+{
+  "scope": "Read-only rendering of one saved observation per distinct unit/kind per saved run, comparing complete display responses against the former concatenated finite-value percentile path. Includes range, PNG, category metadata, clipping and bounds. This is display regression evidence, not scientific transfer validation.",
+  "version": "0.8.6",
+  "runs": 17,
+  "previews": 17,
+  "checks": [
+    {
+      "run": "218ba2badce3424d841203b7750b4e2b",
+      "tool": "LAB",
+      "layer": "observation_0",
+      "frames": 2,
+      "exact_response_identity": true,
+      "source_hashes_unchanged": true,
+      "range": [
+        0.0,
+        1.0
+      ],
+      "png_sha256": "dbf0f9a0866fa4a0ea17abb77187ea8f419f9bd7d4cba28a46c74fd83247622b"
+    },
+    {
+      "run": "226cdce1e929428c9f19a9e524a4c426",
+      "tool": "P05",
+      "layer": "observation_0",
+      "frames": 3,
+      "exact_response_identity": true,
+      "source_hashes_unchanged": true,
+      "range": [
+        -38.45447463989258,
+        38.45447463989258
+      ],
+      "png_sha256": "539ddbd6d4c9a9a8c22d66f1034a37064e31cb7d706d4a7e729e0b5d588e9f05"
+    },
+    {
+      "run": "243a65f0c1ad44a3a701e92105afe361",
+      "tool": "P07",
+      "layer": "observation_0",
+      "frames": 1,
+      "exact_response_identity": true,
+      "source_hashes_unchanged": true,
+      "range": [
+        9.125656433105469,
+        109.75952331542969
+      ],
+      "png_sha256": "3e83c0f8830c13ceeceec9369e65335a73dfa4fe033ab479a61f4f1e3ca47983"
+    },
+    {
+      "run": "374e9a3773b64ad18f2658ce34d09973",
+      "tool": "P07",
+      "layer": "observation_0",
+      "frames": 1,
+      "exact_response_identity": true,
+      "source_hashes_unchanged": true,
+      "range": [
+        9.125656433105469,
+        109.75952331542969
+      ],
+      "png_sha256": "3e83c0f8830c13ceeceec9369e65335a73dfa4fe033ab479a61f4f1e3ca47983"
+    },
+    {
+      "run": "48473c0192ab47648719214a0be2d1d1",
+      "tool": "P04",
+      "layer": "observation_0",
+      "frames": 7,
+      "exact_response_identity": true,
+      "source_hashes_unchanged": true,
+      "range": [
+        -3.3782544803619388,
+        3.3782544803619388
+      ],
+      "png_sha256": "c862874a937bb6381b713f31e31d7969036e971d4f9a9f9103f7fd261fcc46b3"
+    },
+    {
+      "run": "4bb4274d31684be4ab249202c90cd726",
+      "tool": "P03",
+      "layer": "observation_0",
+      "frames": 2,
+      "exact_response_identity": true,
+      "source_hashes_unchanged": true,
+      "range": [
+        0.29730391085147856,
+        6.010215806961057
+      ],
+      "png_sha256": "25c8c5be9a0bfacf5445ef7de2d682df696b06ed916b879a3726b4c67380908f"
+    },
+    {
+      "run": "5cbccaca946e4fc0bb79c78a81ee42e3",
+      "tool": "P06",
+      "layer": "observation_0",
+      "frames": 5,
+      "exact_response_identity": true,
+      "source_hashes_unchanged": true,
+      "range": [
+        -17.716455459594727,
+        -2.363194370269776
+      ],
+      "png_sha256": "0ca19fac0bca656cd03a28c31ef5bed3325cc60881974728c95f57e9db23823f"
+    },
+    {
+      "run": "5e8a203f2abf4e11abcb6b00e8879097",
+      "tool": "P06",
+      "layer": "observation_0",
+      "frames": 5,
+      "exact_response_identity": true,
+      "source_hashes_unchanged": true,
+      "range": [
+        -17.716455459594727,
+        -2.363194370269776
+      ],
+      "png_sha256": "0ca19fac0bca656cd03a28c31ef5bed3325cc60881974728c95f57e9db23823f"
+    },
+    {
+      "run": "69ec159a9b6f44878ca03f21a6ca47fe",
+      "tool": "P02",
+      "layer": "observation_0",
+      "frames": 6,
+      "exact_response_identity": true,
+      "source_hashes_unchanged": true,
+      "range": [
+        0.0,
+        1.0
+      ],
+      "png_sha256": "1960056a46dd2d3d5deeb86346b9ee6b9b3e7ac7fddead35fa334307ee515c0e"
+    },
+    {
+      "run": "8df59e5367994620b52ee1700b70eeec",
+      "tool": "P01",
+      "layer": "observation_0",
+      "frames": 2,
+      "exact_response_identity": true,
+      "source_hashes_unchanged": true,
+      "range": [
+        0.0,
+        1.0
+      ],
+      "png_sha256": "dbf0f9a0866fa4a0ea17abb77187ea8f419f9bd7d4cba28a46c74fd83247622b"
+    },
+    {
+      "run": "90e60510f4a44ce39e2e59c0ddb70f84",
+      "tool": "P03",
+      "layer": "observation_0",
+      "frames": 2,
+      "exact_response_identity": true,
+      "source_hashes_unchanged": true,
+      "range": [
+        0.29730391085147856,
+        6.010215806961057
+      ],
+      "png_sha256": "25c8c5be9a0bfacf5445ef7de2d682df696b06ed916b879a3726b4c67380908f"
+    },
+    {
+      "run": "a6ef1e31e66342eabc9ebac7676e9328",
+      "tool": "P01",
+      "layer": "observation_0",
+      "frames": 2,
+      "exact_response_identity": true,
+      "source_hashes_unchanged": true,
+      "range": [
+        0.0,
+        1.0
+      ],
+      "png_sha256": "dbf0f9a0866fa4a0ea17abb77187ea8f419f9bd7d4cba28a46c74fd83247622b"
+    },
+    {
+      "run": "b9289a43a2154d3b953e4fbe9e8de530",
+      "tool": "P04",
+      "layer": "observation_0",
+      "frames": 7,
+      "exact_response_identity": true,
+      "source_hashes_unchanged": true,
+      "range": [
+        -3.3782544803619388,
+        3.3782544803619388
+      ],
+      "png_sha256": "c862874a937bb6381b713f31e31d7969036e971d4f9a9f9103f7fd261fcc46b3"
+    },
+    {
+      "run": "d6a44899e9d445bcad46466335f93e48",
+      "tool": "LAB",
+      "layer": "observation_0",
+      "frames": 2,
+      "exact_response_identity": true,
+      "source_hashes_unchanged": true,
+      "range": [
+        0.0,
+        1.0
+      ],
+      "png_sha256": "dbf0f9a0866fa4a0ea17abb77187ea8f419f9bd7d4cba28a46c74fd83247622b"
+    },
+    {
+      "run": "e7916bab6fc743f3ac5a4ec65c6f3065",
+      "tool": "LAB",
+      "layer": "observation_0",
+      "frames": 2,
+      "exact_response_identity": true,
+      "source_hashes_unchanged": true,
+      "range": [
+        0.0,
+        1.0
+      ],
+      "png_sha256": "dbf0f9a0866fa4a0ea17abb77187ea8f419f9bd7d4cba28a46c74fd83247622b"
+    },
+    {
+      "run": "ecce190c300141eba8521c0ad947ab7d",
+      "tool": "P05",
+      "layer": "observation_0",
+      "frames": 3,
+      "exact_response_identity": true,
+      "source_hashes_unchanged": true,
+      "range": [
+        -38.45447463989258,
+        38.45447463989258
+      ],
+      "png_sha256": "539ddbd6d4c9a9a8c22d66f1034a37064e31cb7d706d4a7e729e0b5d588e9f05"
+    },
+    {
+      "run": "f6f05e505e54413b86ff68e8a703b5fa",
+      "tool": "P02",
+      "layer": "observation_0",
+      "frames": 6,
+      "exact_response_identity": true,
+      "source_hashes_unchanged": true,
+      "range": [
+        0.0,
+        1.0
+      ],
+      "png_sha256": "1960056a46dd2d3d5deeb86346b9ee6b9b3e7ac7fddead35fa334307ee515c0e"
+    }
+  ],
+  "live_http": {
+    "version": "0.8.6",
+    "matching_previews": 17,
+    "saved_runs": 17,
+    "example_count": 7,
+    "storage_warnings": 0,
+    "active_jobs": 0
+  }
+}

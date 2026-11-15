@@ -1,0 +1,29 @@
+{
+  "grid_shape": [
+    769,
+    784
+  ],
+  "resolution": 80.0,
+  "source_count": 6,
+  "epoch_count": 7,
+  "comparisons": {
+    "rate": {
+      "identical": true,
+      "valid_cells": 510464,
+      "max_abs_difference": 0.0,
+      "median": 1.5972440242767334
+    },
+    "change": {
+      "identical": true,
+      "valid_cells": 510464,
+      "max_abs_difference": 0.0,
+      "median": 0.31078070402145386
+    },
+    "last_epoch": {
+      "identical": true,
+      "valid_cells": 510464,
+      "max_abs_difference": 0.0,
+      "median": 0.31078070402145386
+    }
+  }
+}

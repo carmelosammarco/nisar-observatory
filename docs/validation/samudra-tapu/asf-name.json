@@ -1,0 +1,9 @@
+{
+  "url": "https://api.daac.asf.alaska.edu/services/search/param?granule_list=NISAR_L2_PR_GOFF%2A&maxResults=1&output=geojson",
+  "status": 200,
+  "hits": null,
+  "response": {
+    "type": "FeatureCollection",
+    "features": []
+  }
+}

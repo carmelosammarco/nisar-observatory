@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-20",
+  "scope": "Shared appearance controls across all nine tools and six examples",
+  "python_suite": {
+    "passed": 344
+  },
+  "frontend_suite": {
+    "passed": 174
+  },
+  "last_focused_checks": {
+    "python_passed": 53,
+    "frontend_passed": 26
+  },
+  "automated_coverage": [
+    "Category overrides for binary, water-state and patch-ID maps across P01\u2013P09",
+    "Signed class codes and observed-date labels",
+    "Preview and exported PNG color/legend agreement",
+    "Invalid color payload rejection",
+    "Saving and resetting category colors",
+    "Unchanged numeric raster hashes",
+    "Existing measurement palettes and ranges"
+  ],
+  "browser_case": {
+    "example": "P01_Mozambique",
+    "run": "41ed615cbed1471ba9c985ef1fe29723",
+    "new_water_km2": 90.47,
+    "checks": [
+      "Change candidate color to #00a86b",
+      "PNG download URL includes the applied category override",
+      "Save view, reload, reopen run; #00a86b restored",
+      "Reset to original #145897 and save",
+      "Unavailable recovery explains absence of later acquisitions and hides color controls",
+      "Switch to numerical dB change map; palette enabled; Rainbow applied",
+      "Return to original flood categories for final view"
+    ]
+  },
+  "limits": "This validates appearance and display persistence, not independent environmental accuracy. Only Mozambique was newly replayed in the browser for this change. Existing six-example manifests and tests remain unchanged in scientific content."
+}

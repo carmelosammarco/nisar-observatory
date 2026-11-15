@@ -1,0 +1,106 @@
+{
+  "application_version": "0.8.3",
+  "checked_at": "2026-10-22T17:58:27.630149+00:00",
+  "workflow_contract": {
+    "version": "1.0.0",
+    "sha256": "5e3c61cbbb5971f36bed004421ac7d0b225fd39903546b8e414488664456646f"
+  },
+  "operators": 28,
+  "supported_products": [
+    "GCOV",
+    "GUNW",
+    "GOFF"
+  ],
+  "python_tests": {
+    "passed": 517,
+    "warnings": [
+      "Existing Starlette TestClient/httpx deprecation warning."
+    ]
+  },
+  "frontend_tests": {
+    "passed": 233
+  },
+  "metadata_agreement": {
+    "generated_cases": 3528,
+    "case_generation_sha256": "1985d55dbe52a228edbc742e5fa9ca7847917a69bfdde7261e903957ff9c8874",
+    "python_browser_reports_identical": true,
+    "actual_recipe_validator_agrees": true,
+    "frozen_legacy_source_commit": "8acbe66",
+    "frozen_legacy_accepted_cases": 82,
+    "current_accepted_cases": 82,
+    "acceptance_differences": 0,
+    "scope": "Canonical typed metadata sequences. Generic lengths 0\u20133 over 10 operators/3 products, plus seven full-case prefixes, deletions, duplications, adjacent swaps, product changes and map/output transforms. Not exhaustive over all 16-step combinations or scientific pixel accuracy."
+  },
+  "protected_cases": [
+    {
+      "case": "P01_Mozambique",
+      "maps": 26,
+      "identical": true,
+      "remote_science_bytes": 0
+    },
+    {
+      "case": "P02_Wheeler_Marsh",
+      "maps": 49,
+      "identical": true,
+      "remote_science_bytes": 0
+    },
+    {
+      "case": "P03_Timber_Fire",
+      "maps": 43,
+      "identical": true,
+      "remote_science_bytes": 0
+    },
+    {
+      "case": "P04_Mexico_City",
+      "maps": 11,
+      "identical": true,
+      "remote_science_bytes": 0
+    },
+    {
+      "case": "P05_Venezuela",
+      "maps": 59,
+      "identical": true,
+      "remote_science_bytes": 0
+    },
+    {
+      "case": "P06_Krasheninnikov",
+      "maps": 42,
+      "identical": true,
+      "remote_science_bytes": 0
+    },
+    {
+      "case": "P07_Samudra_Tapu",
+      "maps": 21,
+      "identical": true,
+      "remote_science_bytes": 0
+    }
+  ],
+  "identical_numeric_maps": 251,
+  "browser_evidence": "workflow-contract-browser.json",
+  "browser_checks": [
+    "Unchanged Timber Fire input readiness passed for both views.",
+    "Additional smoother preview displayed actual insertion position, z input/output and selected-result-map scope.",
+    "A zero combined-score cutoff disabled Run with the correct explanation; restoring 2 restored readiness.",
+    "An unchanged Mozambique editable workflow completed locally; all 26 maps, metrics and dated series matched its prior guided run.",
+    "All 26 newly exported Mozambique GeoTIFFs carried the current rule-bundle version and SHA-256.",
+    "No captured browser console warnings or errors. Clean workspace restored after checks."
+  ],
+  "remaining_scope": "Independent scientific/transfer validation, richer internal stage inspection, large-data stress/chunking, portable delivery and separate-user deployment remain in PRODUCTION_READINESS.md.",
+  "final_live_service": {
+    "health": {
+      "status": "ok",
+      "earthdata_connected": false,
+      "version": "0.8.3",
+      "runtime": "project .venv",
+      "science_validation": "exploratory; see docs/VALIDATION.md",
+      "runtime_owner": true,
+      "storage_warning_count": 0
+    },
+    "saved_runs": 16,
+    "examples": 7,
+    "my_tools": 1,
+    "published_rule_version": "1.0.0",
+    "operators": 28,
+    "contract_sha256": "5e3c61cbbb5971f36bed004421ac7d0b225fd39903546b8e414488664456646f"
+  }
+}

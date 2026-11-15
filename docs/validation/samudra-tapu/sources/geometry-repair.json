@@ -1,0 +1,8 @@
+{
+  "issue": "Self-intersection[77.4062 32.4254]",
+  "operation": "shapely.validation.make_valid; retain polygon components only",
+  "original_degree2_area": 0.007674270000000298,
+  "repaired_degree2_area": 0.007674270000000267,
+  "repaired_valid": true,
+  "purpose": "Accepted app study-domain input; historical outline is not current glacier truth"
+}

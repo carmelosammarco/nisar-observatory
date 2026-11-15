@@ -1,0 +1,55 @@
+{
+  "full": {
+    "png": "mexico-full-result-no-reference.png",
+    "extent": "full_result",
+    "bounds": [
+      -11065157.384851394,
+      2171367.712104161,
+      -10992795.195694566,
+      2231614.389889771
+    ],
+    "scale": {
+      "min": -30.0,
+      "max": 30.0,
+      "mode": "custom",
+      "palette_name": "rainbow",
+      "clipped_percent": 0.03663333751253761,
+      "shared_frames": 1,
+      "class_values": []
+    },
+    "reference_outline": false,
+    "visible_radar_fraction": 0.846603726015764
+  },
+  "view": {
+    "png": "mexico-current-view.png",
+    "extent": "current_view",
+    "bounds": [
+      -11218509.767358748,
+      2126478.126893604,
+      -10839687.855177416,
+      2276294.7023325497
+    ],
+    "scale": {
+      "min": -30.0,
+      "max": 30.0,
+      "mode": "custom",
+      "palette_name": "rainbow",
+      "clipped_percent": 0.03663333751253761,
+      "shared_frames": 1,
+      "class_values": []
+    },
+    "reference_outline": false,
+    "visible_radar_fraction": 0.0765686437392701
+  },
+  "all_numeric_rasters_unchanged": true,
+  "colour_scale_bar_identical": true,
+  "python_tests": 392,
+  "frontend_tests": 192,
+  "browser": {
+    "full": "/api/map-image/6882820bff02402a96d1a286d4f04f60/P04/los_rate_year?mode=custom&palette=rainbow&low=-30&high=30&basemap=light&place_names=true&overlay_opacity=0.9",
+    "view": "/api/map-image/6882820bff02402a96d1a286d4f04f60/P04/los_rate_year?mode=custom&palette=rainbow&low=-30&high=30&extent=view&view_bbox=-11218509.767358748%2C2126478.126893604%2C-10839687.855177416%2C2276294.7023325497&basemap=light&place_names=true&overlay_opacity=0.9",
+    "zoomChangesBounds": true,
+    "numericLinkUnchanged": true,
+    "labelsFollowMap": true
+  }
+}

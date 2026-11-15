@@ -1,0 +1,13 @@
+{
+  "url": "https://cmr.earthdata.nasa.gov/search/granules.json?short_name=NISAR_L2_GOFF_BETA_V1&bounding_box=77.36%2C32.39%2C77.57%2C32.56&temporal=2026-01-01T00%3A00%3A00Z%2C2026-01-31T23%3A59%3A59Z&sort_key=start_date&page_size=100",
+  "status": 200,
+  "hits": "0",
+  "response": {
+    "feed": {
+      "updated": "2026-10-20T19:43:26.150Z",
+      "id": "https://cmr.earthdata.nasa.gov:443/search/granules.json?short_name=NISAR_L2_GOFF_BETA_V1&bounding_box=77.36%2C32.39%2C77.57%2C32.56&temporal=2026-01-01T00%3A00%3A00Z%2C2026-01-31T23%3A59%3A59Z&sort_key=start_date&page_size=100",
+      "title": "ECHO granule metadata",
+      "entry": []
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "version": "0.4.5",
+  "failed_assistant_job": "85b2d301bd004fc8a9e0711f9416399a",
+  "failed_source": {
+    "source": "subset-ca1c0b5c4eae3424970aa2d1b2a923b3",
+    "name": "NISAR_L2_PR_GUNW_023_061_A_006_024_4000_SH_20260618T095803_20260618T095837_20260630T095802_20260630T095836_P05023_N_F_J_001",
+    "product": "GUNW",
+    "start": "2026-06-18T09:58:03Z",
+    "end": "2026-06-30T09:58:02Z",
+    "message": "No coherent connected-component pixels survive quality screening."
+  },
+  "successful_assistant_job": "26f70bf113d5436f8803d2a2e5b47e4c",
+  "successful_processing_job": "9e0820abf6fd44c2b199960be6be1aea",
+  "candidates": 3,
+  "original_drawn_reference_shared_cells": 0,
+  "chosen_reference_shared_cells": 31,
+  "quality": "review needed",
+  "remote_science_bytes": 0,
+  "data_deleted": false,
+  "threshold_lowered": false,
+  "request": {
+    "bbox": [
+      -69.0,
+      9.8,
+      -66.35,
+      11.55
+    ],
+    "projects": [
+      "P06"
+    ],
+    "granules": [
+      "subset-ca1c0b5c4eae3424970aa2d1b2a923b3",
+      "subset-85edd49270001ced9c8aaa5fcee26020",
+      "subset-1ef777939636f7bfe8461f14bc1d97d8",
+      "subset-d19d37d31a7ea07b613d70f50ef575f2"
+    ],
+    "options": {
+      "resolution": 80,
+      "coherence": 0.3,
+      "apply_ionosphere": true,
+      "min_valid_fraction": 0.5,
+      "reference_bbox": [
+        -66.68684712933359,
+        9.87307068682554,
+        -66.5066990325599,
+        9.982271033182842
+      ],
+      "event_timestamp": "2026-06-24T22:05:04.053000Z",
+      "event_date": "2026-06-24",
+      "quake_mosaic": true,
+      "phase_network": true
+    }
+  },
+  "tests": {
+    "python_passed": 247,
+    "frontend_passed": 105,
+    "browser_acceptance": "Not performed; live API and real local subset processing verified."
+  }
+}

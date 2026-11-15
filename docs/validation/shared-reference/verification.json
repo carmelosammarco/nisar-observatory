@@ -1,0 +1,133 @@
+{
+  "assistant_job": "c90b07567ce64a36a9bb1376c7eb47ba",
+  "broad_reference_job": "833b82bffee64228b7add27d78bdbcc8",
+  "candidate_reference_job": "de781842da344cf5a96dc9c225d51894",
+  "server": "0.4.4",
+  "sources": [
+    "subset-85edd49270001ced9c8aaa5fcee26020",
+    "subset-1ef777939636f7bfe8461f14bc1d97d8",
+    "subset-d19d37d31a7ea07b613d70f50ef575f2"
+  ],
+  "remote_science_bytes": 0,
+  "candidate": {
+    "patch_cells": 36,
+    "shared_cells": 31,
+    "shared_fraction": 0.8611111111111112,
+    "worst_pair_median_coherence": 0.5553659796714783,
+    "maximum_pair_spatial_mad_rad": 0.29093360900878906,
+    "spatial_spread": 0.29093360900878906,
+    "spread_unit": "rad",
+    "pair_reference_phase_rad": [
+      22.614608764648438,
+      -7.802032947540283,
+      -20.541107177734375
+    ],
+    "reference_values": [
+      22.614608764648438,
+      -7.802032947540283,
+      -20.541107177734375
+    ],
+    "data_suitability": "review needed",
+    "stability": "not independently established",
+    "warnings": [
+      "Worst-pair median accepted-sample coherence is below 0.70; inspect the quality maps."
+    ],
+    "bbox": [
+      -67.11555555555555,
+      10.006892830927226,
+      -67.09788888888889,
+      10.020455695714524
+    ],
+    "id": "candidate_1",
+    "name": "Candidate 1",
+    "area_km2": 2.905630310569181,
+    "relative_rate_to_candidate_1_cm_year": null,
+    "relative_reference_offsets": [
+      -0.0,
+      -0.0,
+      -0.0
+    ]
+  },
+  "current_reference": {
+    "patch_cells": 109824,
+    "shared_cells": 979,
+    "shared_fraction": 0.00891426282051282,
+    "worst_pair_median_coherence": 0.45203807950019836,
+    "maximum_pair_spatial_mad_rad": 0.6865100860595703,
+    "spatial_spread": 0.6865100860595703,
+    "spread_unit": "rad",
+    "pair_reference_phase_rad": [
+      23.138702392578125,
+      -7.581697463989258,
+      -20.11795425415039
+    ],
+    "reference_values": [
+      23.138702392578125,
+      -7.581697463989258,
+      -20.11795425415039
+    ],
+    "data_suitability": "review needed",
+    "stability": "not independently established",
+    "warnings": [
+      "Less than 80% of this patch is usable on every selected pair.",
+      "Worst-pair median accepted-sample coherence is below 0.70; inspect the quality maps."
+    ],
+    "origin": "current reference rectangle",
+    "relative_rate_to_candidate_1_cm_year": null,
+    "relative_reference_offsets": [
+      -1.0091330083168852,
+      -0.42425207540327514,
+      -0.814773467941648
+    ]
+  },
+  "candidate_offset_span_cm": 2.153724942736341,
+  "original_overlap": {
+    "valid_pixels": 27643,
+    "valid_fraction": 0.03973408078194624,
+    "median": 0.4873781204223633,
+    "p10": 0.20752020180225372,
+    "p90": 4.6202392578125
+  },
+  "candidate_overlap": {
+    "valid_pixels": 27643,
+    "valid_fraction": 0.03973408078194624,
+    "median": 0.8676671981811523,
+    "p10": 0.5063431859016418,
+    "p90": 4.8196258544921875
+  },
+  "source_checks": [
+    {
+      "group": "061_A_007_4000_SH_P05023",
+      "reference_cells": 31,
+      "independent_max_error_cm": 1.521737694076819e-05,
+      "remote_bytes": 0
+    },
+    {
+      "group": "162_A_006_4000_SH_P05023",
+      "reference_cells": 31,
+      "independent_max_error_cm": 1.5576329541744371e-06,
+      "remote_bytes": 0
+    },
+    {
+      "group": "162_A_007_4000_SH_P05023",
+      "reference_cells": 31,
+      "independent_max_error_cm": 1.2700777432428367e-05,
+      "remote_bytes": 0
+    }
+  ],
+  "visualization": {
+    "palette_colors": 256,
+    "range_cm": [
+      -50.0,
+      50.0
+    ],
+    "png_bytes": 617187
+  },
+  "independent_accuracy": "Not established. These are internal numerical/quality and reference-sensitivity checks; all suggested patches need review.",
+  "automated_tests": {
+    "python": 244,
+    "frontend": 101,
+    "status": "passed",
+    "browser_acceptance": "Not performed; local API, numerical raster checks and rendered PNG inspection performed."
+  }
+}

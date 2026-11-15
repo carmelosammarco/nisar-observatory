@@ -1,0 +1,197 @@
+{
+  "firstTab": {
+    "id": "skip-to-content",
+    "text": "Skip to main content",
+    "title": "Explore Earth \u00b7 NISAR Observatory",
+    "toolCount": 7
+  },
+  "afterSkip": {
+    "hash": "",
+    "tag": "H1",
+    "text": "See Earth in a different light."
+  },
+  "afterSkipTab": "new-exploration",
+  "pages": [
+    {
+      "page": "Tools",
+      "examined": 108,
+      "contrastIssues": [],
+      "currentSection": "projects",
+      "focusedHeading": "Different questions. Different evidence.",
+      "title": "Tools \u00b7 NISAR Observatory"
+    },
+    {
+      "page": "Examples",
+      "examined": 80,
+      "contrastIssues": [],
+      "currentSection": "examples",
+      "focusedHeading": "Explore a tested case.",
+      "title": "Examples \u00b7 NISAR Observatory"
+    },
+    {
+      "page": "Mission library",
+      "examined": 135,
+      "contrastIssues": [],
+      "currentSection": "mission",
+      "focusedHeading": "Meet the mission behind the map.",
+      "title": "Mission library \u00b7 NISAR Observatory"
+    },
+    {
+      "page": "Runs",
+      "examined": 126,
+      "contrastIssues": [],
+      "currentSection": "runs",
+      "focusedHeading": "Every run leaves a trail.",
+      "title": "Runs \u00b7 NISAR Observatory"
+    },
+    {
+      "page": "Connection",
+      "examined": 54,
+      "contrastIssues": [],
+      "currentSection": "settings",
+      "focusedHeading": "Your data. Your private session.",
+      "title": "Connection \u00b7 NISAR Observatory"
+    },
+    {
+      "page": "About",
+      "examined": 59,
+      "contrastIssues": [],
+      "currentSection": "about",
+      "focusedHeading": "One planet.A shared curiosity.",
+      "title": "About \u00b7 NISAR Observatory"
+    },
+    {
+      "page": "Explore Earth",
+      "examined": 125,
+      "contrastIssues": [],
+      "currentSection": "explore",
+      "focusedHeading": "See Earth in a different light.",
+      "title": "Explore Earth \u00b7 NISAR Observatory"
+    }
+  ],
+  "helpOpen": {
+    "label": "Four steps. A traceable result.",
+    "open": true
+  },
+  "helpClosed": {
+    "closed": true,
+    "focus": "how-button"
+  },
+  "toolSelection": {
+    "id": "P01",
+    "pressed": "true",
+    "tag": "BUTTON"
+  },
+  "nextTool": "P02",
+  "toolSettings": [
+    {
+      "tool": "P01",
+      "examined": 111,
+      "contrastIssues": [],
+      "advancedOpen": true,
+      "currentSection": "explore",
+      "focusedTag": "SUMMARY",
+      "title": "Area & analysis settings \u00b7 NISAR Observatory"
+    },
+    {
+      "tool": "P02",
+      "examined": 112,
+      "contrastIssues": [],
+      "advancedOpen": true,
+      "currentSection": "explore",
+      "focusedTag": "SUMMARY",
+      "title": "Area & analysis settings \u00b7 NISAR Observatory"
+    },
+    {
+      "tool": "P03",
+      "examined": 113,
+      "contrastIssues": [],
+      "advancedOpen": true,
+      "currentSection": "explore",
+      "focusedTag": "SUMMARY",
+      "title": "Area & analysis settings \u00b7 NISAR Observatory"
+    },
+    {
+      "tool": "P04",
+      "examined": 121,
+      "contrastIssues": [],
+      "advancedOpen": true,
+      "currentSection": "explore",
+      "focusedTag": "SUMMARY",
+      "title": "Area & analysis settings \u00b7 NISAR Observatory"
+    },
+    {
+      "tool": "P05",
+      "examined": 132,
+      "contrastIssues": [],
+      "advancedOpen": true,
+      "currentSection": "explore",
+      "focusedTag": "SUMMARY",
+      "title": "Area & analysis settings \u00b7 NISAR Observatory"
+    },
+    {
+      "tool": "P06",
+      "examined": 111,
+      "contrastIssues": [],
+      "advancedOpen": true,
+      "currentSection": "explore",
+      "focusedTag": "SUMMARY",
+      "title": "Area & analysis settings \u00b7 NISAR Observatory"
+    },
+    {
+      "tool": "P07",
+      "examined": 144,
+      "contrastIssues": [],
+      "advancedOpen": true,
+      "currentSection": "explore",
+      "focusedTag": "SUMMARY",
+      "title": "Area & analysis settings \u00b7 NISAR Observatory"
+    }
+  ],
+  "tutorial": {
+    "focus": "H1",
+    "heading": "Wheeler Marsh, Connecticut",
+    "ready": true,
+    "title": "Wheeler Marsh, Connecticut \u00b7 NISAR Observatory"
+  },
+  "tutorialBack": {
+    "cards": 7,
+    "focusedHeading": "Explore a tested case.",
+    "title": "Examples \u00b7 NISAR Observatory"
+  },
+  "savedResult": {
+    "case": "P02_Wheeler_Marsh",
+    "examined": 644,
+    "contrastIssues": []
+  },
+  "console": [],
+  "applicationVersion": "0.8.11",
+  "scope": "Keyboard and named-navigation browser tasks; DOM/CSS text-colour contrast sampling on the listed rendered views. Uses alpha-composited ancestor CSS backgrounds, targets 4.5:1, excludes inactive/decorative/visually-clipped screen-reader-only text. Does not verify pixels inside images, all interaction states, responsive layouts or screen-reader task performance; not a WCAG conformance assessment.",
+  "before": {
+    "page": "Tools",
+    "title": "NISAR Observatory \u00b7 Surface change, made visible",
+    "focus": "Tools sidebar button",
+    "currentNavigationCount": 0,
+    "skipLink": false
+  },
+  "tests": {
+    "python": 653,
+    "frontend": 274
+  },
+  "references": [
+    "https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html",
+    "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+    "https://www.w3.org/WAI/WCAG21/Techniques/general/G1"
+  ],
+  "screenshots": [
+    "docs/screenshots/keyboard-navigation-0.8.11.png",
+    "docs/screenshots/readme-explore-0.8.11.png"
+  ],
+  "preservation": {
+    "exact_file_hash_matches": 1743,
+    "analysis_runs": 19,
+    "reference_assessments": 1,
+    "protected_examples": 7,
+    "new_jobs_added": 0
+  }
+}

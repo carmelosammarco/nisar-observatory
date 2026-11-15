@@ -1,0 +1,86 @@
+{
+  "format": "nisar-observatory-workflow",
+  "schema_version": 1,
+  "engine_version": "1.1.0",
+  "name": "Venezuela earthquake sequence · editable workflow",
+  "description": "Loaded from the tested P05 case study. Compound blocks retain their documented geometry and radiometry assumptions. Editing creates a new experiment.",
+  "product": "GUNW",
+  "method": "custom",
+  "steps": [
+    {
+      "operation": "event_pairs",
+      "parameters": {
+        "timestamp": "2026-06-24T22:05:04.053Z",
+        "date": "2026-06-24",
+        "mosaic": true
+      }
+    },
+    {
+      "operation": "event_los",
+      "parameters": {}
+    },
+    {
+      "operation": "publish",
+      "parameters": {
+        "layer": "event_displacement_cm"
+      }
+    }
+  ],
+  "options": {
+    "apply_ionosphere": true,
+    "quake_mosaic": true,
+    "phase_network": false,
+    "event_timestamp": "2026-06-24T22:05:04.053000Z",
+    "resolution": 80.0,
+    "coherence": 0.3,
+    "min_valid_fraction": 0.5,
+    "reference_bbox": [
+      -68.9,
+      9.85,
+      -66.45,
+      10.15
+    ],
+    "event_date": "2026-06-24"
+  },
+  "display": {
+    "palette": "diverging",
+    "mode": "custom",
+    "layer": "event_displacement_cm",
+    "unit": "cm",
+    "low": -50.0,
+    "high": 50.0,
+    "category_colors": {},
+    "category_opacity": {}
+  },
+  "context": {
+    "bbox": [
+      -69.0,
+      9.8,
+      -66.35,
+      11.55
+    ],
+    "sources": [
+      {
+        "name": "NISAR_L2_PR_GUNW_022_162_A_006_023_4000_SH_20260613T100623_20260613T100657_20260625T100622_20260625T100656_P05023_N_F_J_001",
+        "catalog_id": "G4276284486-ASF",
+        "start": "2026-06-13T10:06:23Z",
+        "end": "2026-06-25T10:06:22Z",
+        "group": "162_A_006_4000_SH_P05023"
+      },
+      {
+        "name": "NISAR_L2_PR_GUNW_022_162_A_007_023_4000_SH_20260613T100656_20260613T100731_20260625T100655_20260625T100730_P05023_N_F_J_001",
+        "catalog_id": "G4276300590-ASF",
+        "start": "2026-06-13T10:06:56Z",
+        "end": "2026-06-25T10:06:55Z",
+        "group": "162_A_007_4000_SH_P05023"
+      },
+      {
+        "name": "NISAR_L2_PR_GUNW_023_061_A_007_024_4000_SH_20260618T095836_20260618T095911_20260630T095835_20260630T095910_P05023_N_F_J_001",
+        "catalog_id": "G4251311930-ASF",
+        "start": "2026-06-18T09:58:36Z",
+        "end": "2026-06-30T09:58:35Z",
+        "group": "061_A_007_4000_SH_P05023"
+      }
+    ]
+  }
+}

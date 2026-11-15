@@ -1,0 +1,32 @@
+{
+  "checked_at_utc": "2026-10-20T20:03:28.845369+00:00",
+  "request": {
+    "bbox": [
+      77.36,
+      32.39,
+      77.57,
+      32.56
+    ],
+    "start": "2025-12-01",
+    "end": "2026-02-28",
+    "products": [
+      "GOFF"
+    ],
+    "maturity": "BETA"
+  },
+  "status": 200,
+  "result": {
+    "GOFF": {
+      "hits": 0,
+      "items": [],
+      "query": "https://cmr.earthdata.nasa.gov/search/granules.json?short_name=NISAR_L2_GOFF_BETA_V1&bounding_box=77.36%2C32.39%2C77.57%2C32.56&temporal=2025-12-01T00%3A00%3A00Z%2C2026-02-28T23%3A59%3A59Z&page_size=200&sort_key=start_date&page_num=1",
+      "fetched_at": "2026-10-20T20:03:28.843543+00:00",
+      "truncated": false,
+      "records_fetched": 0,
+      "records_skipped": 0,
+      "collection": "NISAR_L2_GOFF_BETA_V1",
+      "maturity": "BETA",
+      "scope_note": "Search covers the named BETA V1 collection only. Other releases are not merged automatically. BETA products are pre-calibration data with known issues. Up to 5000 catalog records per product are fetched with pagination."
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "url": "https://cmr.earthdata.nasa.gov/search/granules.json?short_name=NISAR_L2_GCOV_PROVISIONAL_V1&sort_key=start_date&page_size=1",
+  "status": 200,
+  "hits": "0",
+  "response": {
+    "feed": {
+      "updated": "2026-10-20T19:43:49.834Z",
+      "id": "https://cmr.earthdata.nasa.gov:443/search/granules.json?short_name=NISAR_L2_GCOV_PROVISIONAL_V1&sort_key=start_date&page_size=1",
+      "title": "ECHO granule metadata",
+      "entry": []
+    }
+  }
+}

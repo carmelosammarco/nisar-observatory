@@ -1,0 +1,29 @@
+A changing planet. A clearer view. Meet NISAR Observatory: an interactive workspace that turns satellite radar measurements into maps of surface change.
+
+Start in Explore Earth. Select a region, find available observations, and download only the area you need. Use a guided tool, or build an editable sequence of processing steps.
+
+Area and analysis settings keep the geographic boundaries, measurement choices and quality controls together, with explanations to guide each decision.
+
+Tools explains seven focused methods, from water and fire changes to ground and glacier motion. Saved personal workflows appear in My Tools.
+
+Examples provides prepared case studies with real input files, tested settings and comparisons with published research or independent evidence.
+
+Mission library explains the spacecraft, radar products and how to interpret them. This application uses NASA and ISRO mission data from the L-band radar, accessed through NASA archives.
+
+Runs keeps completed analyses and their source records, ready to reopen.
+
+Connection manages the Earthdata session for remote downloads. Prepared local examples can run without signing in.
+
+About introduces Carmelo Sammarco and the project’s NASA Space Apps challenge: Dancing with the SARs.
+
+Now consider a simple question: where did water appear around Chokwe, Mozambique? This example uses observations from January fifth and January seventeenth, twenty twenty-six. Its prepared inputs and settings make the analysis repeatable.
+
+Radar measures reflected signals, rather than taking an ordinary photograph. The workflow screens unreliable samples, then applies a documented rule to identify dark returns consistent with open water.
+
+Blue marks places newly meeting that water-candidate rule. This setup identifies about ninety point five square kilometres of new candidates. It shows where to investigate; it does not measure flood depth or damage.
+
+NASA’s published views show a similar expansion across the floodplain. Their wider perspective and different visualization prevent a pixel-for-pixel accuracy claim. With only two dates, the example also cannot establish when the water receded.
+
+Results can be reopened, exported as illustrated maps or numeric geographic data, and adapted into reusable workflows. Keep the settings and limitations with every result.
+
+NISAR Observatory brings the data, processing steps and explanations into one place, making surface change easier to explore and communicate. Choose a place. Follow the evidence. Make the change understandable.

@@ -1,0 +1,835 @@
+{
+  "project": "P07",
+  "title": "Screened radar-component offset rates",
+  "unit": "m/year",
+  "series": [
+    {
+      "date": "2025-12-20T00:05:26Z",
+      "end": "2026-01-01T00:05:27Z",
+      "median": -1.2002732753753662,
+      "west": -0.5242541432380676,
+      "east": -1.4210436344146729,
+      "valid_fraction": 0.9374529270797672
+    },
+    {
+      "date": "2026-01-01T00:05:27Z",
+      "end": "2026-01-13T00:05:27Z",
+      "median": -10.483231544494629,
+      "west": -10.231697082519531,
+      "east": -10.550503730773926,
+      "valid_fraction": 0.9378979801437863
+    }
+  ],
+  "metrics": {
+    "valid_pixels": 53747,
+    "valid_fraction": 0.9200102704553235,
+    "median": -10.483231544494629,
+    "p10": -37.03904724121094,
+    "p90": 6.917624473571777,
+    "common_valid_area_km2": 343.98080000000004
+  },
+  "notes": [
+    "All plotted regional comparisons use the same pixels valid on every selected date or pair. Per-date coverage is shown separately; missing coverage is never reported as zero change.",
+    "Radar range or along-track component per exact elapsed day; no east/north vector conversion. The configurable spatial MAD filter can remove real localized motion: compare a run with filtering disabled. Diagnostics give cutoff and rejected counts.",
+    "The selected delivered offset layer is used consistently for both components and its own SNR. Filtered radar-plane magnitude requires both components to survive the same configured screening procedure; each component has its own cutoff and optional stable-ground bias. The raw magnitude remains an advanced diagnostic. Norms are positively biased by measurement noise and are not horizontal glacier speed. m/year = m/day \u00d7 365.25, not a year of measurements.",
+    "Input is a local native-grid area extract, not a complete original NASA product; only the saved rectangle can be analyzed.",
+    "Native offsets are SNR-screened before averaging. Radar components are not horizontal flow vectors."
+  ],
+  "extra": {
+    "support": {
+      "mode": "fixed common footprint across all selected observations",
+      "common_pixels": 53747,
+      "common_area_km2": 343.98080000000004,
+      "common_fraction": 0.9200102704553235,
+      "per_observation_valid_pixels": [
+        54766,
+        54792
+      ]
+    },
+    "spatial_context": [
+      {
+        "name": "Samudra Tapu \u00b7 historical RGI6 outline",
+        "role": "zone",
+        "pixels": 12502,
+        "source": "GLIMS WFS RGI_SouthAsiaWest; RGI60-14.15613; outline BGNDATE 20020802, not a 2026 ice boundary"
+      }
+    ],
+    "offset_filter_diagnostics": [
+      {
+        "source": "subset-661f92bd974a9b95eb23567ff30e72d8",
+        "interval_days": 12.000011574074074,
+        "native_screened_grid_pixels": 54766,
+        "spatial_median_offset_m": -0.03913165628910065,
+        "mad_m": 0.12852658331394196,
+        "cutoff_m": 1.5244280993700026,
+        "candidate_outlier_pixels": 8963,
+        "removed_pixels": 0
+      },
+      {
+        "source": "subset-fdae8a421a4f5698c857e90f4f1f48c1",
+        "interval_days": 12.0,
+        "native_screened_grid_pixels": 54792,
+        "spatial_median_offset_m": -0.3443552255630493,
+        "mad_m": 0.12557442486286163,
+        "cutoff_m": 1.4894131384134293,
+        "candidate_outlier_pixels": 8893,
+        "removed_pixels": 0
+      }
+    ],
+    "offset_measurement": {
+      "layer": "layer1",
+      "component": "slantRangeOffset",
+      "unit": "m/year",
+      "annualization_factor": 365.25,
+      "other_component_diagnostics": [
+        {
+          "source": "subset-661f92bd974a9b95eb23567ff30e72d8",
+          "interval_days": 12.000011574074074,
+          "native_screened_grid_pixels": 52943,
+          "spatial_median_offset_m": -0.03898666054010391,
+          "mad_m": 0.19774523377418518,
+          "cutoff_m": 2.3454166687488556,
+          "candidate_outlier_pixels": 8479,
+          "removed_pixels": 0,
+          "local_removed_pixels": 0,
+          "joint_pixels": 52943,
+          "stable_pixels": 0,
+          "median_rate_bias_m_day": null,
+          "bias_applied": false
+        },
+        {
+          "source": "subset-fdae8a421a4f5698c857e90f4f1f48c1",
+          "interval_days": 12.0,
+          "native_screened_grid_pixels": 53253,
+          "spatial_median_offset_m": 0.04434322565793991,
+          "mad_m": 0.19319865107536316,
+          "cutoff_m": 2.291490560674667,
+          "candidate_outlier_pixels": 8217,
+          "removed_pixels": 0,
+          "local_removed_pixels": 0,
+          "joint_pixels": 53253,
+          "stable_pixels": 0,
+          "median_rate_bias_m_day": null,
+          "bias_applied": false
+        }
+      ],
+      "meaning": "Signed radar components and their two-component radar-plane norm. No east/north or horizontal-speed conversion. Annualized values extrapolate the measured pair rate; they are not observed annual displacement."
+    },
+    "stable_terrain": [
+      {
+        "date": "2025-12-20T00:05:26Z",
+        "stable_pixels": 0,
+        "median_rate_bias_m_day": null,
+        "applied": false
+      },
+      {
+        "date": "2026-01-01T00:05:27Z",
+        "stable_pixels": 0,
+        "median_rate_bias_m_day": null,
+        "applied": false
+      }
+    ],
+    "observation_gaps": {
+      "days_between_starts": [
+        12.000011574074074
+      ],
+      "longest_gap_days": 12.000011574074074,
+      "meaning": "Intervals without an acquisition are unobserved, not unchanged."
+    },
+    "independent_validation": {
+      "status": "not evaluated: no independent matched observations"
+    },
+    "method_references": [
+      "https://nisar-docs.asf.alaska.edu/goff/"
+    ]
+  },
+  "sources": [
+    {
+      "id": "subset-661f92bd974a9b95eb23567ff30e72d8",
+      "catalog_id": "G4058624134-ASF",
+      "name": "NISAR_L2_PR_GOFF_008_055_A_018_009_4000_SH_20251220T000526_20251220T000601_20260101T000527_20260101T000601_X05010_N_F_J_001",
+      "start": "2025-12-20T00:05:26Z",
+      "end": "2026-01-01T00:05:27Z",
+      "group": "055_A_018_4000_SH_X05010",
+      "path": "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer1/slantRangeOffset",
+      "reader_version": "0.3.2",
+      "quality_paths": [
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer1/snr",
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer1/snr"
+      ],
+      "additional_paths": {
+        "other_offset": "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer1/alongTrackOffset"
+      },
+      "attributes": {
+        "_FillValue": null,
+        "description": "Raw (unculled, unfiltered) slant range pixel offsets",
+        "grid_mapping": "projection",
+        "max_value": 98.91108703613281,
+        "mean_value": -1.7639493942260742,
+        "min_value": -99.93083190917969,
+        "sample_stddev": 15.150230407714844,
+        "units": "meters",
+        "native_spacing_source_crs": [
+          80.0,
+          80.0
+        ],
+        "native_epsg": 32643,
+        "native_finite_samples": 61976,
+        "native_accepted_samples": 57878,
+        "native_accepted_fraction": 0.9338776300503421,
+        "minimum_native_valid_fraction": 0.5,
+        "native_quality_before_aggregation": true,
+        "offset_layer": "layer1",
+        "correlation_window_samples": {
+          "slantRangeWindowSize": 32,
+          "alongTrackWindowSize": 32
+        },
+        "source_subset": {
+          "bbox": [
+            77.36,
+            32.39,
+            77.57,
+            32.56
+          ],
+          "source_id": "G4058624134-ASF",
+          "version": "area-1"
+        }
+      },
+      "bytes_transferred": 0,
+      "cache_hit": true
+    },
+    {
+      "id": "subset-fdae8a421a4f5698c857e90f4f1f48c1",
+      "catalog_id": "G4058734792-ASF",
+      "name": "NISAR_L2_PR_GOFF_009_055_A_018_010_4000_SH_20260101T000527_20260101T000601_20260113T000527_20260113T000602_X05010_N_F_J_001",
+      "start": "2026-01-01T00:05:27Z",
+      "end": "2026-01-13T00:05:27Z",
+      "group": "055_A_018_4000_SH_X05010",
+      "path": "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer1/slantRangeOffset",
+      "reader_version": "0.3.2",
+      "quality_paths": [
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer1/snr",
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer1/snr"
+      ],
+      "additional_paths": {
+        "other_offset": "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer1/alongTrackOffset"
+      },
+      "attributes": {
+        "_FillValue": null,
+        "description": "Raw (unculled, unfiltered) slant range pixel offsets",
+        "grid_mapping": "projection",
+        "max_value": 99.55656433105469,
+        "mean_value": -0.44758540391921997,
+        "min_value": -99.9308090209961,
+        "sample_stddev": 8.592707633972168,
+        "units": "meters",
+        "native_spacing_source_crs": [
+          80.0,
+          80.0
+        ],
+        "native_epsg": 32643,
+        "native_finite_samples": 61976,
+        "native_accepted_samples": 57841,
+        "native_accepted_fraction": 0.9332806247579708,
+        "minimum_native_valid_fraction": 0.5,
+        "native_quality_before_aggregation": true,
+        "offset_layer": "layer1",
+        "correlation_window_samples": {
+          "slantRangeWindowSize": 32,
+          "alongTrackWindowSize": 32
+        },
+        "source_subset": {
+          "bbox": [
+            77.36,
+            32.39,
+            77.57,
+            32.56
+          ],
+          "source_id": "G4058734792-ASF",
+          "version": "area-1"
+        }
+      },
+      "bytes_transferred": 0,
+      "cache_hit": true
+    }
+  ],
+  "status": "exploratory",
+  "algorithm_version": "0.4.1",
+  "report": {
+    "headline": "What these observations show",
+    "findings": [
+      "2 compatible GOFF observations cover 2025-12-20 to 2026-01-13. Regional comparisons use 53,747 common analysis cells (343.981 km\u00b2).",
+      "Spatial outlier filtering removed 0 selected-component analysis-cell values across intervals. Values are radar-component rates in m/year, not horizontal glacier speed. Delivered offset layer: layer1."
+    ],
+    "comparison_basis": "fixed common footprint across all selected observations",
+    "next_checks": [
+      "Inspect observation counts and source quality before interpreting a pattern.",
+      "Compare the map and observed dates; blank pixels are missing evidence.",
+      "Use independent observations to test environmental attribution."
+    ],
+    "validation": "Synthetic engineering tests check known calculations and missing-data behavior; independent real-world accuracy is not established."
+  },
+  "layers": [
+    {
+      "id": "offset_raw_0",
+      "label": "SNR-screened offset rate before spatial filtering \u00b7 2025-12-20",
+      "unit": "m/year",
+      "kind": "diverging",
+      "min": -559.9646606445312,
+      "max": 559.9646606445312,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "offset_raw_0.png",
+      "raster": "offset_raw_0.tif"
+    },
+    {
+      "id": "offset_rejected_0",
+      "label": "Spatial-filter rejection mask \u00b7 2025-12-20",
+      "unit": "class",
+      "kind": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "offset_rejected_0.png",
+      "raster": "offset_rejected_0.tif"
+    },
+    {
+      "id": "other_component_0",
+      "label": "Other SNR-screened radar-component rate before spatial filtering \u00b7 2025-12-20",
+      "unit": "m/year",
+      "kind": "diverging",
+      "min": -776.2015380859375,
+      "max": 776.2015380859375,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "other_component_0.png",
+      "raster": "other_component_0.tif"
+    },
+    {
+      "id": "radar_magnitude_0",
+      "label": "Two-component radar-plane magnitude before spatial filtering \u00b7 not geographic speed",
+      "unit": "m/year",
+      "kind": "continuous",
+      "min": 0.9531458616256714,
+      "max": 1492.33349609375,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "radar_magnitude_0.png",
+      "raster": "radar_magnitude_0.tif"
+    },
+    {
+      "id": "other_filtered_0",
+      "label": "Other filtered radar-component rate \u00b7 2025-12-20",
+      "unit": "m/year",
+      "kind": "diverging",
+      "min": -776.2014770507812,
+      "max": 776.2014770507812,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "other_filtered_0.png",
+      "raster": "other_filtered_0.tif"
+    },
+    {
+      "id": "radar_filtered_0",
+      "label": "Filtered two-component radar-plane magnitude \u00b7 2025-12-20 \u00b7 not horizontal speed",
+      "unit": "m/year",
+      "kind": "continuous",
+      "min": 0.9531458616256714,
+      "max": 1492.33349609375,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "radar_filtered_0.png",
+      "raster": "radar_filtered_0.tif"
+    },
+    {
+      "id": "offset_raw_1",
+      "label": "SNR-screened offset rate before spatial filtering \u00b7 2026-01-01",
+      "unit": "m/year",
+      "kind": "diverging",
+      "min": -573.7451782226562,
+      "max": 573.7451782226562,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "offset_raw_1.png",
+      "raster": "offset_raw_1.tif"
+    },
+    {
+      "id": "offset_rejected_1",
+      "label": "Spatial-filter rejection mask \u00b7 2026-01-01",
+      "unit": "class",
+      "kind": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "offset_rejected_1.png",
+      "raster": "offset_rejected_1.tif"
+    },
+    {
+      "id": "other_component_1",
+      "label": "Other SNR-screened radar-component rate before spatial filtering \u00b7 2026-01-01",
+      "unit": "m/year",
+      "kind": "diverging",
+      "min": -763.5588989257812,
+      "max": 763.5588989257812,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "other_component_1.png",
+      "raster": "other_component_1.tif"
+    },
+    {
+      "id": "radar_magnitude_1",
+      "label": "Two-component radar-plane magnitude before spatial filtering \u00b7 not geographic speed",
+      "unit": "m/year",
+      "kind": "continuous",
+      "min": 4.925510883331299,
+      "max": 1475.554443359375,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "radar_magnitude_1.png",
+      "raster": "radar_magnitude_1.tif"
+    },
+    {
+      "id": "other_filtered_1",
+      "label": "Other filtered radar-component rate \u00b7 2026-01-01",
+      "unit": "m/year",
+      "kind": "diverging",
+      "min": -763.5588989257812,
+      "max": 763.5588989257812,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "other_filtered_1.png",
+      "raster": "other_filtered_1.tif"
+    },
+    {
+      "id": "radar_filtered_1",
+      "label": "Filtered two-component radar-plane magnitude \u00b7 2026-01-01 \u00b7 not horizontal speed",
+      "unit": "m/year",
+      "kind": "continuous",
+      "min": 4.925510883331299,
+      "max": 1475.554443359375,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "radar_filtered_1.png",
+      "raster": "radar_filtered_1.tif"
+    },
+    {
+      "id": "radar_magnitude",
+      "label": "Latest filtered radar-plane motion magnitude \u00b7 not horizontal glacier speed",
+      "unit": "m/year",
+      "kind": "continuous",
+      "min": 4.925510883331299,
+      "max": 1475.554443359375,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "radar_magnitude.png",
+      "raster": "radar_magnitude.tif"
+    },
+    {
+      "id": "observation_0",
+      "label": "Observation \u00b7 2025-12-20",
+      "unit": "m/year",
+      "kind": "diverging",
+      "frame_index": 0,
+      "start": "2025-12-20T00:05:26Z",
+      "end": "2026-01-01T00:05:27Z",
+      "min": -559.964599609375,
+      "max": 559.964599609375,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "observation_0.png",
+      "raster": "observation_0.tif"
+    },
+    {
+      "id": "observation_1",
+      "label": "Observation \u00b7 2026-01-01",
+      "unit": "m/year",
+      "kind": "diverging",
+      "frame_index": 1,
+      "start": "2026-01-01T00:05:27Z",
+      "end": "2026-01-13T00:05:27Z",
+      "min": -573.7451782226562,
+      "max": 573.7451782226562,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "observation_1.png",
+      "raster": "observation_1.tif"
+    },
+    {
+      "id": "value",
+      "label": "Screened radar-component offset rates",
+      "unit": "m/year",
+      "kind": "continuous",
+      "min": -573.7451782226562,
+      "max": 503.0063781738281,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "value.png",
+      "raster": "value.tif"
+    },
+    {
+      "id": "change",
+      "label": "Difference between last and first observed values",
+      "unit": "m/year",
+      "kind": "diverging",
+      "min": -677.0241088867188,
+      "max": 677.0241088867188,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "change.png",
+      "raster": "change.tif"
+    },
+    {
+      "id": "variability",
+      "label": "Observed maximum minus minimum across acquisitions",
+      "unit": "m/year",
+      "kind": "continuous",
+      "min": 0.9677145481109619,
+      "max": 1011.1971435546875,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "variability.png",
+      "raster": "variability.tif"
+    },
+    {
+      "id": "count",
+      "label": "Number of valid observations",
+      "unit": "count",
+      "kind": "continuous",
+      "min": 1.0,
+      "max": 2.0,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "count.png",
+      "raster": "count.tif"
+    },
+    {
+      "id": "quality_accepted_fraction_0",
+      "label": "accepted fraction \u00b7 2025-12-20",
+      "unit": "fraction",
+      "kind": "continuous",
+      "min": 0.053034983575344086,
+      "max": 1.0,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "quality_accepted_fraction_0.png",
+      "raster": "quality_accepted_fraction_0.tif"
+    },
+    {
+      "id": "quality_missing_fraction_0",
+      "label": "missing fraction \u00b7 2025-12-20",
+      "unit": "fraction",
+      "kind": "continuous",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "quality_missing_fraction_0.png",
+      "raster": "quality_missing_fraction_0.tif"
+    },
+    {
+      "id": "quality_rejected_snr_0",
+      "label": "rejected snr \u00b7 2025-12-20",
+      "unit": "fraction",
+      "kind": "continuous",
+      "min": 0.0,
+      "max": 0.9469649791717529,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "quality_rejected_snr_0.png",
+      "raster": "quality_rejected_snr_0.tif"
+    },
+    {
+      "id": "quality_snr_0",
+      "label": "snr \u00b7 2025-12-20",
+      "unit": "score",
+      "kind": "continuous",
+      "min": 5.714268684387207,
+      "max": 191.75970458984375,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "quality_snr_0.png",
+      "raster": "quality_snr_0.tif"
+    },
+    {
+      "id": "quality_accepted_fraction_1",
+      "label": "accepted fraction \u00b7 2026-01-01",
+      "unit": "fraction",
+      "kind": "continuous",
+      "min": 0.040849994868040085,
+      "max": 1.0,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "quality_accepted_fraction_1.png",
+      "raster": "quality_accepted_fraction_1.tif"
+    },
+    {
+      "id": "quality_missing_fraction_1",
+      "label": "missing fraction \u00b7 2026-01-01",
+      "unit": "fraction",
+      "kind": "continuous",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "quality_missing_fraction_1.png",
+      "raster": "quality_missing_fraction_1.tif"
+    },
+    {
+      "id": "quality_rejected_snr_1",
+      "label": "rejected snr \u00b7 2026-01-01",
+      "unit": "fraction",
+      "kind": "continuous",
+      "min": 0.0,
+      "max": 0.9591500163078308,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "quality_rejected_snr_1.png",
+      "raster": "quality_rejected_snr_1.tif"
+    },
+    {
+      "id": "quality_snr_1",
+      "label": "snr \u00b7 2026-01-01",
+      "unit": "score",
+      "kind": "continuous",
+      "min": 5.73991060256958,
+      "max": 195.8556671142578,
+      "bounds": [
+        [
+          32.38969410111362,
+          77.35999999999999
+        ],
+        [
+          32.56000000000001,
+          77.57059988992381
+        ]
+      ],
+      "image": "quality_snr_1.png",
+      "raster": "quality_snr_1.tif"
+    }
+  ],
+  "grid": {
+    "crs": "EPSG:6933",
+    "resolution_m": 80.0,
+    "shape": [
+      230,
+      254
+    ],
+    "bbox": [
+      77.36,
+      32.39,
+      77.57,
+      32.56
+    ]
+  },
+  "validation_status": "Exploratory; independent scientific accuracy has not been established."
+}

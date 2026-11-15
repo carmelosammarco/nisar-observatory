@@ -1,0 +1,164 @@
+1
+00:00:00,360 --> 00:00:03,350
+A changing planet. A clearer view.
+
+2
+00:00:03,740 --> 00:00:08,225
+Meet NISAR Observatory: an interactive workspace that turns
+
+3
+00:00:08,250 --> 00:00:11,830
+satellite radar measurements into maps of surface change.
+
+4
+00:00:12,590 --> 00:00:16,655
+Start in Explore Earth. Select a region, find
+
+5
+00:00:16,680 --> 00:00:20,600
+available observations, and download only the area you need.
+
+6
+00:00:21,090 --> 00:00:25,460
+Use a guided tool, or build an editable sequence of processing steps.
+
+7
+00:00:26,300 --> 00:00:30,865
+Area and analysis settings keep the geographic boundaries, measurement choices
+
+8
+00:00:30,890 --> 00:00:35,290
+and quality controls together, with explanations to guide each decision.
+
+9
+00:00:36,190 --> 00:00:39,995
+Tools explains seven focused methods, from water and
+
+10
+00:00:40,020 --> 00:00:42,770
+fire changes to ground and glacier motion.
+
+11
+00:00:43,430 --> 00:00:46,380
+Saved personal workflows appear in My Tools.
+
+12
+00:00:47,210 --> 00:00:51,785
+Examples provides prepared case studies with real input files, tested
+
+13
+00:00:51,810 --> 00:00:55,950
+settings and comparisons with published research or independent evidence.
+
+14
+00:00:56,970 --> 00:01:01,880
+Mission library explains the spacecraft, radar products and how to interpret them.
+
+15
+00:01:02,510 --> 00:01:05,375
+This application uses NASA and ISRO mission data
+
+16
+00:01:05,400 --> 00:01:08,630
+from the L-band radar, accessed through NASA archives.
+
+17
+00:01:09,640 --> 00:01:14,310
+Runs keeps completed analyses and their source records, ready to reopen.
+
+18
+00:01:15,210 --> 00:01:18,780
+Connection manages the Earthdata session for remote downloads.
+
+19
+00:01:19,190 --> 00:01:22,010
+Prepared local examples can run without signing in.
+
+20
+00:01:23,040 --> 00:01:26,695
+About introduces Carmelo Sammarco and the project’s NASA
+
+21
+00:01:26,720 --> 00:01:29,510
+Space Apps challenge: Dancing with the SARs.
+
+22
+00:01:30,350 --> 00:01:35,800
+Now consider a simple question: where did water appear around Chokwe, Mozambique?
+
+23
+00:01:36,250 --> 00:01:38,515
+This example uses observations from January
+
+24
+00:01:38,540 --> 00:01:41,510
+fifth and January seventeenth, twenty twenty-six.
+
+25
+00:01:41,960 --> 00:01:45,170
+Its prepared inputs and settings make the analysis repeatable.
+
+26
+00:01:46,190 --> 00:01:50,310
+Radar measures reflected signals, rather than taking an ordinary photograph.
+
+27
+00:01:50,870 --> 00:01:54,575
+The workflow screens unreliable samples, then applies a documented
+
+28
+00:01:54,600 --> 00:01:57,910
+rule to identify dark returns consistent with open water.
+
+29
+00:01:58,870 --> 00:02:02,040
+Blue marks places newly meeting that water-candidate rule.
+
+30
+00:02:02,690 --> 00:02:06,645
+This setup identifies about ninety point five square kilometres of new candidates.
+
+31
+00:02:06,670 --> 00:02:11,120
+It shows where to investigate; it does not measure flood depth or damage.
+
+32
+00:02:12,110 --> 00:02:15,700
+NASA’s published views show a similar expansion across the floodplain.
+
+33
+00:02:15,990 --> 00:02:18,215
+Their wider perspective and different visualization
+
+34
+00:02:18,240 --> 00:02:20,490
+prevent a pixel-for-pixel accuracy claim.
+
+35
+00:02:20,960 --> 00:02:24,950
+With only two dates, the example also cannot establish when the water receded.
+
+36
+00:02:25,930 --> 00:02:29,075
+Results can be reopened, exported as illustrated maps
+
+37
+00:02:29,100 --> 00:02:32,795
+or numeric geographic data, and adapted into reusable workflows.
+
+38
+00:02:32,820 --> 00:02:35,890
+Keep the settings and limitations with every result.
+
+39
+00:02:37,080 --> 00:02:41,175
+NISAR Observatory brings the data, processing steps and explanations into
+
+40
+00:02:41,200 --> 00:02:45,270
+one place, making surface change easier to explore and communicate.
+
+41
+00:02:45,740 --> 00:02:50,120
+Choose a place. Follow the evidence. Make the change understandable.
+

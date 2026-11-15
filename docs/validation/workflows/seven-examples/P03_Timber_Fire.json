@@ -1,0 +1,463 @@
+{
+  "application_version": "0.8.9",
+  "processing_trace": {
+    "version": "1.0.0",
+    "stages": 6,
+    "captured_maps": 5,
+    "stage_evidence": [
+      {
+        "step": 1,
+        "operation": "dual_change",
+        "maps": [
+          {
+            "id": "trace_dual_change_hh_baseline_3994b780",
+            "role": "Captured intermediate",
+            "unit": "power",
+            "label": "HH median linear-power baseline \u00b7 042_D_070_4005_DHDH_P05023"
+          },
+          {
+            "id": "trace_dual_change_hv_baseline_3994b780",
+            "role": "Captured intermediate",
+            "unit": "power",
+            "label": "HV median linear-power baseline \u00b7 042_D_070_4005_DHDH_P05023"
+          },
+          {
+            "id": "trace_dual_change_hh_baseline_ebf6f646",
+            "role": "Captured intermediate",
+            "unit": "power",
+            "label": "HH median linear-power baseline \u00b7 135_A_020_4005_DHDH_P05023"
+          },
+          {
+            "id": "trace_dual_change_hv_baseline_ebf6f646",
+            "role": "Captured intermediate",
+            "unit": "power",
+            "label": "HV median linear-power baseline \u00b7 135_A_020_4005_DHDH_P05023"
+          },
+          {
+            "id": "view_0_hh_change",
+            "role": "Saved method evidence",
+            "unit": "dB",
+            "label": "042_D_070_4005_DHDH_P05023 latest HH minus baseline"
+          },
+          {
+            "id": "view_0_hv_change",
+            "role": "Saved method evidence",
+            "unit": "dB",
+            "label": "042_D_070_4005_DHDH_P05023 latest HV minus baseline"
+          },
+          {
+            "id": "view_1_hh_change",
+            "role": "Saved method evidence",
+            "unit": "dB",
+            "label": "135_A_020_4005_DHDH_P05023 latest HH minus baseline"
+          },
+          {
+            "id": "view_1_hv_change",
+            "role": "Saved method evidence",
+            "unit": "dB",
+            "label": "135_A_020_4005_DHDH_P05023 latest HV minus baseline"
+          },
+          {
+            "id": "change_intensity",
+            "role": "Saved method evidence",
+            "unit": "dB",
+            "label": "Mean absolute HH/HV change across available views"
+          },
+          {
+            "id": "view_count",
+            "role": "Saved method evidence",
+            "unit": "count",
+            "label": "Number of latest valid viewing groups"
+          },
+          {
+            "id": "observation_0",
+            "role": "Saved method evidence",
+            "unit": "dB",
+            "label": "HH + HV absolute change \u00b7 135_A_020_4005_DHDH_P05023 \u00b7 2026-09-03"
+          },
+          {
+            "id": "observation_1",
+            "role": "Saved method evidence",
+            "unit": "dB",
+            "label": "HH + HV absolute change \u00b7 042_D_070_4005_DHDH_P05023 \u00b7 2026-09-09"
+          }
+        ],
+        "diagnostic_keys": [
+          "fire_method"
+        ],
+        "unavailable_reason": null
+      },
+      {
+        "step": 2,
+        "operation": "smooth",
+        "maps": [
+          {
+            "id": "smoothed_intensity",
+            "role": "Saved method evidence",
+            "unit": "dB",
+            "label": "Smoothed absolute HH/HV change"
+          }
+        ],
+        "diagnostic_keys": [],
+        "unavailable_reason": null
+      },
+      {
+        "step": 3,
+        "operation": "robust_score",
+        "maps": [
+          {
+            "id": "fire_score",
+            "role": "Saved method evidence",
+            "unit": "z",
+            "label": "Combined HH/HV surface-change score"
+          }
+        ],
+        "diagnostic_keys": [
+          "fire_method"
+        ],
+        "unavailable_reason": null
+      },
+      {
+        "step": 4,
+        "operation": "threshold",
+        "maps": [
+          {
+            "id": "trace_threshold_candidate_before_patches_e3b0c442",
+            "role": "Captured intermediate",
+            "unit": "class",
+            "label": "Score threshold before removing small patches"
+          }
+        ],
+        "diagnostic_keys": [],
+        "unavailable_reason": null
+      },
+      {
+        "step": 5,
+        "operation": "patches",
+        "maps": [
+          {
+            "id": "fire_candidate",
+            "role": "Saved method evidence",
+            "unit": "class",
+            "label": "Candidate changed patches"
+          }
+        ],
+        "diagnostic_keys": [],
+        "unavailable_reason": null
+      },
+      {
+        "step": 6,
+        "operation": "publish",
+        "maps": [
+          {
+            "id": "fire_score",
+            "role": "Saved method evidence",
+            "unit": "z",
+            "label": "Combined HH/HV surface-change score"
+          }
+        ],
+        "diagnostic_keys": [],
+        "unavailable_reason": null
+      }
+    ]
+  },
+  "metrics": {
+    "candidate_area_ha": 7453.0,
+    "valid_land_ha": 45228.56,
+    "candidate_fraction": 0.16478525957934545,
+    "viewing_groups": 2
+  },
+  "historical_metric_comparison": {
+    "candidate_area_ha": {
+      "previous": 7453.0,
+      "current": 7453.0,
+      "unchanged": true
+    },
+    "valid_land_ha": {
+      "previous": 45228.56,
+      "current": 45228.56,
+      "unchanged": true
+    },
+    "candidate_fraction": {
+      "previous": 0.16478525957934545,
+      "current": 0.16478525957934545,
+      "unchanged": true
+    },
+    "viewing_groups": {
+      "previous": 2,
+      "current": 2,
+      "unchanged": true
+    }
+  },
+  "case": "P03_Timber_Fire",
+  "method": "P03",
+  "source_count": 8,
+  "grid_shape": [
+    1123,
+    1263
+  ],
+  "resolution": 20.0,
+  "steps": [
+    {
+      "operation": "dual_change",
+      "parameters": {
+        "baseline_count": 3,
+        "baseline_end": "2026-08-08"
+      }
+    },
+    {
+      "operation": "smooth",
+      "parameters": {
+        "sigma_m": 80.0
+      }
+    },
+    {
+      "operation": "robust_score",
+      "parameters": {}
+    },
+    {
+      "operation": "threshold",
+      "parameters": {
+        "value": 2.0,
+        "direction": "above"
+      }
+    },
+    {
+      "operation": "patches",
+      "parameters": {
+        "minimum_m2": 100000.0
+      }
+    },
+    {
+      "operation": "publish",
+      "parameters": {
+        "layer": "fire_score"
+      }
+    }
+  ],
+  "reader_arrays_identical": true,
+  "engine_version": "1.1.0",
+  "comparisons": {
+    "view_0_hh_change": {
+      "editable_layer": "view_0_hh_change",
+      "identical": true,
+      "sha256": "b58dc44489bdf47c63d5520a4950e9aafefcc6fb01f2b3e421db95eff8030922"
+    },
+    "view_0_hv_change": {
+      "editable_layer": "view_0_hv_change",
+      "identical": true,
+      "sha256": "1ece7d26b759abfb5d0bad2a98a4d94ef3d43f1092109b86239ffe82beefdfe8"
+    },
+    "view_1_hh_change": {
+      "editable_layer": "view_1_hh_change",
+      "identical": true,
+      "sha256": "9c3a3f40457d57b9339a65e482d2661e3b6dab936394140eea0df1163c8d8a81"
+    },
+    "view_1_hv_change": {
+      "editable_layer": "view_1_hv_change",
+      "identical": true,
+      "sha256": "5a67389fb06352d31d801915997c24a539608ad6818f732d8d8c4b6b161a2586"
+    },
+    "fire_score": {
+      "editable_layer": "fire_score",
+      "identical": true,
+      "sha256": "aa0698b32dcbccac40ef854a6297c94737b5ff7c9586c838a7ba0f686cec153c"
+    },
+    "fire_candidate": {
+      "editable_layer": "fire_candidate",
+      "identical": true,
+      "sha256": "9c88335474933572a5d8f34e3640124e7ecb409fc65b58108b71f68f63617b99"
+    },
+    "change_intensity": {
+      "editable_layer": "change_intensity",
+      "identical": true,
+      "sha256": "3868eaee44266a9b08c5a8ddfd0edf8701f60676113445be74bbb193be444490"
+    },
+    "smoothed_intensity": {
+      "editable_layer": "smoothed_intensity",
+      "identical": true,
+      "sha256": "bc85af825ed45d6d26cd4e664352f263d71b26fa4f752b5968a09a50e80aa109"
+    },
+    "view_count": {
+      "editable_layer": "view_count",
+      "identical": true,
+      "sha256": "81544101cef7ec17eff0b0351a4bc4b4b46fc86042ddd5a33c26ddaf3fe1f1f3"
+    },
+    "quality_accepted_fraction_0": {
+      "editable_layer": "quality_accepted_fraction_0",
+      "identical": true,
+      "sha256": "f4ef1102133face77d22724f6c093068060a0d999884bb39dd38c0fcc1cd0afc"
+    },
+    "quality_missing_fraction_0": {
+      "editable_layer": "quality_missing_fraction_0",
+      "identical": true,
+      "sha256": "0133cc450ab09fa015567a5254be1cb6ce67d1e538f9efd3b49a8e947ef20aec"
+    },
+    "quality_rejected_nonpositive_power_0": {
+      "editable_layer": "quality_rejected_nonpositive_power_0",
+      "identical": true,
+      "sha256": "932608876df02a8b44b9824c5e6e66012f96090386789d3a43b539bf0c4f72b2"
+    },
+    "quality_rejected_source_mask_0": {
+      "editable_layer": "quality_rejected_source_mask_0",
+      "identical": true,
+      "sha256": "afac77b647fa396a831cc737c3fdd0877944e22b82db2ceb8f4cabbd017d9367"
+    },
+    "quality_accepted_fraction_1": {
+      "editable_layer": "quality_accepted_fraction_1",
+      "identical": true,
+      "sha256": "16f9a64720c05d3e02f878b69549338c507c9270ff8d169ed0060c2244a270e5"
+    },
+    "quality_missing_fraction_1": {
+      "editable_layer": "quality_missing_fraction_1",
+      "identical": true,
+      "sha256": "2bed3e4ef33c4fccb18a44e9f67754b917a19c09c8974163a6eb62835e7a91ae"
+    },
+    "quality_rejected_nonpositive_power_1": {
+      "editable_layer": "quality_rejected_nonpositive_power_1",
+      "identical": true,
+      "sha256": "932608876df02a8b44b9824c5e6e66012f96090386789d3a43b539bf0c4f72b2"
+    },
+    "quality_rejected_source_mask_1": {
+      "editable_layer": "quality_rejected_source_mask_1",
+      "identical": true,
+      "sha256": "932608876df02a8b44b9824c5e6e66012f96090386789d3a43b539bf0c4f72b2"
+    },
+    "quality_accepted_fraction_2": {
+      "editable_layer": "quality_accepted_fraction_2",
+      "identical": true,
+      "sha256": "53dc4333d363457eed507ff782c1a2333b69202788279178fe58ed527d953a4c"
+    },
+    "quality_missing_fraction_2": {
+      "editable_layer": "quality_missing_fraction_2",
+      "identical": true,
+      "sha256": "ca64d45aa699193ae3277756e17f650d21aa43b0e4bd3f3dbbe640e3eb77feab"
+    },
+    "quality_rejected_nonpositive_power_2": {
+      "editable_layer": "quality_rejected_nonpositive_power_2",
+      "identical": true,
+      "sha256": "932608876df02a8b44b9824c5e6e66012f96090386789d3a43b539bf0c4f72b2"
+    },
+    "quality_rejected_source_mask_2": {
+      "editable_layer": "quality_rejected_source_mask_2",
+      "identical": true,
+      "sha256": "932608876df02a8b44b9824c5e6e66012f96090386789d3a43b539bf0c4f72b2"
+    },
+    "quality_accepted_fraction_3": {
+      "editable_layer": "quality_accepted_fraction_3",
+      "identical": true,
+      "sha256": "82618ccd67b5b27dbd3c4002ab60304daf6e1ccde166c4cde11e06b1bc8eebaf"
+    },
+    "quality_missing_fraction_3": {
+      "editable_layer": "quality_missing_fraction_3",
+      "identical": true,
+      "sha256": "77fa9f518f7ecc51eee185edd36fa91dc6904705960e49221fa6520baf7777bc"
+    },
+    "quality_rejected_nonpositive_power_3": {
+      "editable_layer": "quality_rejected_nonpositive_power_3",
+      "identical": true,
+      "sha256": "932608876df02a8b44b9824c5e6e66012f96090386789d3a43b539bf0c4f72b2"
+    },
+    "quality_rejected_source_mask_3": {
+      "editable_layer": "quality_rejected_source_mask_3",
+      "identical": true,
+      "sha256": "932608876df02a8b44b9824c5e6e66012f96090386789d3a43b539bf0c4f72b2"
+    },
+    "quality_accepted_fraction_4": {
+      "editable_layer": "quality_accepted_fraction_4",
+      "identical": true,
+      "sha256": "d2698b4f69464c9f5a22439688a23f9939735a9f4877c881364dcaf706e2913d"
+    },
+    "quality_missing_fraction_4": {
+      "editable_layer": "quality_missing_fraction_4",
+      "identical": true,
+      "sha256": "5ce92a8dc41199f67b883c5b1e98a4f38ea04b9dbafd6a340ab4c199fe17ae46"
+    },
+    "quality_rejected_nonpositive_power_4": {
+      "editable_layer": "quality_rejected_nonpositive_power_4",
+      "identical": true,
+      "sha256": "932608876df02a8b44b9824c5e6e66012f96090386789d3a43b539bf0c4f72b2"
+    },
+    "quality_rejected_source_mask_4": {
+      "editable_layer": "quality_rejected_source_mask_4",
+      "identical": true,
+      "sha256": "932608876df02a8b44b9824c5e6e66012f96090386789d3a43b539bf0c4f72b2"
+    },
+    "quality_accepted_fraction_5": {
+      "editable_layer": "quality_accepted_fraction_5",
+      "identical": true,
+      "sha256": "232479086c3fb0e7a6fab4758ebc13be6b844a9df6559f67e8c3f723e3dfc669"
+    },
+    "quality_missing_fraction_5": {
+      "editable_layer": "quality_missing_fraction_5",
+      "identical": true,
+      "sha256": "62771cbfe1ae088510bb4baf8468808e6c2596c1b8eb8b9478948a0989aa6505"
+    },
+    "quality_rejected_nonpositive_power_5": {
+      "editable_layer": "quality_rejected_nonpositive_power_5",
+      "identical": true,
+      "sha256": "932608876df02a8b44b9824c5e6e66012f96090386789d3a43b539bf0c4f72b2"
+    },
+    "quality_rejected_source_mask_5": {
+      "editable_layer": "quality_rejected_source_mask_5",
+      "identical": true,
+      "sha256": "932608876df02a8b44b9824c5e6e66012f96090386789d3a43b539bf0c4f72b2"
+    },
+    "quality_accepted_fraction_6": {
+      "editable_layer": "quality_accepted_fraction_6",
+      "identical": true,
+      "sha256": "dba01e48f98c8e2f00ed495c01b0cadd96912c593166a20c6c12fd412f01bf60"
+    },
+    "quality_missing_fraction_6": {
+      "editable_layer": "quality_missing_fraction_6",
+      "identical": true,
+      "sha256": "beb4b0ef98b45e1e4a14d6c9da3f633766301669a09034219c6f8b1df4b65aee"
+    },
+    "quality_rejected_nonpositive_power_6": {
+      "editable_layer": "quality_rejected_nonpositive_power_6",
+      "identical": true,
+      "sha256": "932608876df02a8b44b9824c5e6e66012f96090386789d3a43b539bf0c4f72b2"
+    },
+    "quality_rejected_source_mask_6": {
+      "editable_layer": "quality_rejected_source_mask_6",
+      "identical": true,
+      "sha256": "932608876df02a8b44b9824c5e6e66012f96090386789d3a43b539bf0c4f72b2"
+    },
+    "quality_accepted_fraction_7": {
+      "editable_layer": "quality_accepted_fraction_7",
+      "identical": true,
+      "sha256": "b87d69cc5a3be0635e38a0da298003bf8920ff2f7349c750cc6782f6e0c8422c"
+    },
+    "quality_missing_fraction_7": {
+      "editable_layer": "quality_missing_fraction_7",
+      "identical": true,
+      "sha256": "9e16f83bd5edec4d861135199eaf384dcc6761cf19512d18fa45dae3e8cc8e59"
+    },
+    "quality_rejected_nonpositive_power_7": {
+      "editable_layer": "quality_rejected_nonpositive_power_7",
+      "identical": true,
+      "sha256": "932608876df02a8b44b9824c5e6e66012f96090386789d3a43b539bf0c4f72b2"
+    },
+    "quality_rejected_source_mask_7": {
+      "editable_layer": "quality_rejected_source_mask_7",
+      "identical": true,
+      "sha256": "932608876df02a8b44b9824c5e6e66012f96090386789d3a43b539bf0c4f72b2"
+    },
+    "observation_0": {
+      "editable_layer": "observation_0",
+      "identical": true,
+      "sha256": "c4cd600d2bf23044f7f7cd70cdb89ed19f07dea6611150c81dd923ea180de3b0"
+    },
+    "observation_1": {
+      "editable_layer": "observation_1",
+      "identical": true,
+      "sha256": "902c9a5feb7fcc11cf3f324ca5ab2795413adc9e2769f44f81b687ce17ae9255"
+    }
+  },
+  "metrics_identical": true,
+  "series_identical": true,
+  "verification_scope": "All existing numeric layers, metrics and dated series",
+  "result": "PASS",
+  "remote_science_bytes": 0,
+  "browser_export_check": "not available: historical saved run was cleared; direct protected-input comparison still completed"
+}

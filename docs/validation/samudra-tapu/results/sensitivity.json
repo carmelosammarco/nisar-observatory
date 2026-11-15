@@ -1,0 +1,559 @@
+{
+  "bbox": [
+    77.36,
+    32.39,
+    77.57,
+    32.56
+  ],
+  "grid_m": 80.0,
+  "glacier": "RGI60-14.15613",
+  "outline_date": "2002-08-02",
+  "published_nisar_m_year": [
+    5.7,
+    139.19
+  ],
+  "published_itslive_m_year": [
+    0.7,
+    132.53
+  ],
+  "quantities_comparable": false,
+  "reason": "Our maps are radar-component rates and radar-plane norms, not geographic horizontal speeds; article omits exact pair IDs and conversion details.",
+  "sources": [
+    {
+      "id": "subset-f900ad0d98cc18507832f57688a7dfc6",
+      "source_id": "G4058425992-ASF",
+      "name": "NISAR_L2_PR_GOFF_006_034_D_072_010_2000_QD_20251124T133843_20251124T133918_20260111T133845_20260111T133920_X05010_N_F_J_001",
+      "start": "2025-11-24T13:38:43Z",
+      "end": "2026-01-11T13:38:45Z",
+      "download_folder": "GOFF_2026-10-21_14-59-01_UTC",
+      "content_sha256": "d8570ef8c54a7131710bed67dd2faab3d28cc47d1585be417940a1355849ff3f",
+      "size_mb": 3.802129
+    },
+    {
+      "id": "subset-661f92bd974a9b95eb23567ff30e72d8",
+      "source_id": "G4058624134-ASF",
+      "name": "NISAR_L2_PR_GOFF_008_055_A_018_009_4000_SH_20251220T000526_20251220T000601_20260101T000527_20260101T000601_X05010_N_F_J_001",
+      "start": "2025-12-20T00:05:26Z",
+      "end": "2026-01-01T00:05:27Z",
+      "download_folder": "GOFF_2026-10-21_14-50-54_UTC",
+      "content_sha256": "6a321fc44beaee18b4c5db1cc3b6c7ce3a1d59650bc9e68160c9aca1b5ca06ad",
+      "size_mb": 4.611843
+    },
+    {
+      "id": "subset-fdae8a421a4f5698c857e90f4f1f48c1",
+      "source_id": "G4058734792-ASF",
+      "name": "NISAR_L2_PR_GOFF_009_055_A_018_010_4000_SH_20260101T000527_20260101T000601_20260113T000527_20260113T000602_X05010_N_F_J_001",
+      "start": "2026-01-01T00:05:27Z",
+      "end": "2026-01-13T00:05:27Z",
+      "download_folder": "GOFF_2026-10-21_14-50-54_UTC",
+      "content_sha256": "5576865abb99082cdbfce7138ace9cda467c9f856e6460d69b5c6a59d2ef2695",
+      "size_mb": 4.571046
+    }
+  ],
+  "experiments": [
+    {
+      "experiment": "descending-layer1-snr-only",
+      "group": "034_D_072_2000_QD_X05010",
+      "start": "2025-11-24T13:38:43Z",
+      "end": "2026-01-11T13:38:45Z",
+      "interval_days": 48.000023148148145,
+      "glacier_grid_cells": 12502,
+      "range_rate_m_year": {
+        "cells": 9393,
+        "min": -634.3260498046875,
+        "p02": -213.0288848876953,
+        "median": 1.1243298053741455,
+        "p90": 302.54132080078125,
+        "p98": 566.719482421875,
+        "max": 712.4720458984375
+      },
+      "radar_plane_magnitude_m_year": {
+        "cells": 9283,
+        "min": 0.27953967452049255,
+        "p02": 4.430139064788818,
+        "median": 62.212379455566406,
+        "p90": 584.2132568359375,
+        "p98": 834.1268920898438,
+        "max": 1257.947265625
+      },
+      "valid_glacier_fraction": 0.7425211966085427,
+      "fraction_magnitude_over_published_max": 0.3831735430356566
+    },
+    {
+      "experiment": "descending-layer1-filtered",
+      "group": "034_D_072_2000_QD_X05010",
+      "start": "2025-11-24T13:38:43Z",
+      "end": "2026-01-11T13:38:45Z",
+      "interval_days": 48.000023148148145,
+      "glacier_grid_cells": 12502,
+      "range_rate_m_year": {
+        "cells": 5290,
+        "min": -46.90214920043945,
+        "p02": -33.50276565551758,
+        "median": -6.1569085121154785,
+        "p90": 13.294058799743652,
+        "p98": 26.484973907470703,
+        "max": 31.504518508911133
+      },
+      "radar_plane_magnitude_m_year": {
+        "cells": 4360,
+        "min": 0.27953967452049255,
+        "p02": 3.1825082302093506,
+        "median": 16.69402313232422,
+        "p90": 40.3482551574707,
+        "p98": 51.30874252319336,
+        "max": 68.9489974975586
+      },
+      "valid_glacier_fraction": 0.3487442009278515,
+      "fraction_magnitude_over_published_max": 0.0
+    },
+    {
+      "experiment": "descending-layer2-snr-only",
+      "group": "034_D_072_2000_QD_X05010",
+      "start": "2025-11-24T13:38:43Z",
+      "end": "2026-01-11T13:38:45Z",
+      "interval_days": 48.000023148148145,
+      "glacier_grid_cells": 12502,
+      "range_rate_m_year": {
+        "cells": 7936,
+        "min": -699.8560180664062,
+        "p02": -86.30804443359375,
+        "median": -4.965963363647461,
+        "p90": 90.49602508544922,
+        "p98": 437.7698669433594,
+        "max": 703.4761352539062
+      },
+      "radar_plane_magnitude_m_year": {
+        "cells": 7848,
+        "min": 0.39858049154281616,
+        "p02": 3.420534610748291,
+        "median": 25.112747192382812,
+        "p90": 265.63720703125,
+        "p98": 704.8314208984375,
+        "max": 1272.1561279296875
+      },
+      "valid_glacier_fraction": 0.6277395616701328,
+      "fraction_magnitude_over_published_max": 0.15239551478083588
+    },
+    {
+      "experiment": "descending-layer2-filtered",
+      "group": "034_D_072_2000_QD_X05010",
+      "start": "2025-11-24T13:38:43Z",
+      "end": "2026-01-11T13:38:45Z",
+      "interval_days": 48.000023148148145,
+      "glacier_grid_cells": 12502,
+      "range_rate_m_year": {
+        "cells": 5779,
+        "min": -32.05190658569336,
+        "p02": -22.879535675048828,
+        "median": -6.827982425689697,
+        "p90": 3.6723170280456543,
+        "p98": 11.912388801574707,
+        "max": 15.813704490661621
+      },
+      "radar_plane_magnitude_m_year": {
+        "cells": 4474,
+        "min": 0.39858049154281616,
+        "p02": 2.7210471630096436,
+        "median": 11.427980422973633,
+        "p90": 26.729955673217773,
+        "p98": 30.990577697753906,
+        "max": 41.554908752441406
+      },
+      "valid_glacier_fraction": 0.3578627419612862,
+      "fraction_magnitude_over_published_max": 0.0
+    },
+    {
+      "experiment": "descending-layer3-snr-only",
+      "group": "034_D_072_2000_QD_X05010",
+      "start": "2025-11-24T13:38:43Z",
+      "end": "2026-01-11T13:38:45Z",
+      "interval_days": 48.000023148148145,
+      "glacier_grid_cells": 12502,
+      "range_rate_m_year": {
+        "cells": 4973,
+        "min": -126.65689086914062,
+        "p02": -14.372688293457031,
+        "median": -7.238063335418701,
+        "p90": 3.2059953212738037,
+        "p98": 44.043479919433594,
+        "max": 443.4166259765625
+      },
+      "radar_plane_magnitude_m_year": {
+        "cells": 4922,
+        "min": 0.6319215297698975,
+        "p02": 3.9450130462646484,
+        "median": 11.20979118347168,
+        "p90": 42.31504821777344,
+        "p98": 69.85971069335938,
+        "max": 667.2714233398438
+      },
+      "valid_glacier_fraction": 0.3936970084786434,
+      "fraction_magnitude_over_published_max": 0.0020316944331572532
+    },
+    {
+      "experiment": "descending-layer3-filtered",
+      "group": "034_D_072_2000_QD_X05010",
+      "start": "2025-11-24T13:38:43Z",
+      "end": "2026-01-11T13:38:45Z",
+      "interval_days": 48.000023148148145,
+      "glacier_grid_cells": 12502,
+      "range_rate_m_year": {
+        "cells": 4464,
+        "min": -19.397933959960938,
+        "p02": -14.346776962280273,
+        "median": -7.61738920211792,
+        "p90": -1.9790279865264893,
+        "p98": 1.668666958808899,
+        "max": 3.1760170459747314
+      },
+      "radar_plane_magnitude_m_year": {
+        "cells": 2984,
+        "min": 0.6319215297698975,
+        "p02": 3.3485820293426514,
+        "median": 8.870068550109863,
+        "p90": 12.78836727142334,
+        "p98": 16.130966186523438,
+        "max": 22.82996368408203
+      },
+      "valid_glacier_fraction": 0.23868181091025437,
+      "fraction_magnitude_over_published_max": 0.0
+    },
+    {
+      "experiment": "layer1-snr-only",
+      "group": "055_A_018_4000_SH_X05010",
+      "start": "2025-12-20T00:05:26Z",
+      "end": "2026-01-01T00:05:27Z",
+      "interval_days": 12.000011574074074,
+      "glacier_grid_cells": 12502,
+      "range_rate_m_year": {
+        "cells": 11488,
+        "min": -2492.24853515625,
+        "p02": -624.239013671875,
+        "median": -3.3056464195251465,
+        "p90": 51.6230354309082,
+        "p98": 632.44140625,
+        "max": 2623.715576171875
+      },
+      "radar_plane_magnitude_m_year": {
+        "cells": 11381,
+        "min": 0.10970505326986313,
+        "p02": 1.8065739870071411,
+        "median": 17.531288146972656,
+        "p90": 554.0806274414062,
+        "p98": 1569.21044921875,
+        "max": 4192.8291015625
+      },
+      "valid_glacier_fraction": 0.9103343465045592,
+      "fraction_magnitude_over_published_max": 0.20323345927422898
+    },
+    {
+      "experiment": "layer1-snr-only",
+      "group": "055_A_018_4000_SH_X05010",
+      "start": "2026-01-01T00:05:27Z",
+      "end": "2026-01-13T00:05:27Z",
+      "interval_days": 12.0,
+      "glacier_grid_cells": 12502,
+      "range_rate_m_year": {
+        "cells": 11627,
+        "min": -2507.35400390625,
+        "p02": -644.2996826171875,
+        "median": -12.608448028564453,
+        "p90": 24.446033477783203,
+        "p98": 581.06103515625,
+        "max": 2363.781005859375
+      },
+      "radar_plane_magnitude_m_year": {
+        "cells": 11540,
+        "min": 0.4197225570678711,
+        "p02": 5.227693557739258,
+        "median": 22.69384002685547,
+        "p90": 501.9518127441406,
+        "p98": 1528.890625,
+        "max": 4463.36669921875
+      },
+      "valid_glacier_fraction": 0.9230523116301392,
+      "fraction_magnitude_over_published_max": 0.1867417677642981
+    },
+    {
+      "experiment": "layer1-filtered",
+      "group": "055_A_018_4000_SH_X05010",
+      "start": "2025-12-20T00:05:26Z",
+      "end": "2026-01-01T00:05:27Z",
+      "interval_days": 12.000011574074074,
+      "glacier_grid_cells": 12502,
+      "range_rate_m_year": {
+        "cells": 8813,
+        "min": -47.52253341674805,
+        "p02": -38.33636474609375,
+        "median": -3.0491881370544434,
+        "p90": 8.680298805236816,
+        "p98": 27.095317840576172,
+        "max": 45.061527252197266
+      },
+      "radar_plane_magnitude_m_year": {
+        "cells": 8310,
+        "min": 0.10970505326986313,
+        "p02": 1.5256125926971436,
+        "median": 11.907238006591797,
+        "p90": 36.44746017456055,
+        "p98": 58.1317138671875,
+        "max": 81.30591583251953
+      },
+      "valid_glacier_fraction": 0.6646936490161575,
+      "fraction_magnitude_over_published_max": 0.0
+    },
+    {
+      "experiment": "layer1-filtered",
+      "group": "055_A_018_4000_SH_X05010",
+      "start": "2026-01-01T00:05:27Z",
+      "end": "2026-01-13T00:05:27Z",
+      "interval_days": 12.0,
+      "glacier_grid_cells": 12502,
+      "range_rate_m_year": {
+        "cells": 8985,
+        "min": -55.814002990722656,
+        "p02": -46.40727615356445,
+        "median": -12.05991268157959,
+        "p90": -1.5906648635864258,
+        "p98": 15.530323028564453,
+        "max": 34.64044952392578
+      },
+      "radar_plane_magnitude_m_year": {
+        "cells": 8540,
+        "min": 0.4197225570678711,
+        "p02": 4.533264636993408,
+        "median": 17.437580108642578,
+        "p90": 38.83016586303711,
+        "p98": 59.80384063720703,
+        "max": 84.07955169677734
+      },
+      "valid_glacier_fraction": 0.683090705487122,
+      "fraction_magnitude_over_published_max": 0.0
+    },
+    {
+      "experiment": "layer2-snr-only",
+      "group": "055_A_018_4000_SH_X05010",
+      "start": "2025-12-20T00:05:26Z",
+      "end": "2026-01-01T00:05:27Z",
+      "interval_days": 12.000011574074074,
+      "glacier_grid_cells": 12502,
+      "range_rate_m_year": {
+        "cells": 9191,
+        "min": -568.3035888671875,
+        "p02": -68.41109466552734,
+        "median": -3.372791051864624,
+        "p90": 4.961916923522949,
+        "p98": 13.882152557373047,
+        "max": 1223.6387939453125
+      },
+      "radar_plane_magnitude_m_year": {
+        "cells": 9138,
+        "min": 0.11009298264980316,
+        "p02": 1.2458500862121582,
+        "median": 10.814641952514648,
+        "p90": 41.859561920166016,
+        "p98": 75.38836669921875,
+        "max": 2020.3428955078125
+      },
+      "valid_glacier_fraction": 0.7309230523116301,
+      "fraction_magnitude_over_published_max": 0.004267892317793828
+    },
+    {
+      "experiment": "layer2-snr-only",
+      "group": "055_A_018_4000_SH_X05010",
+      "start": "2026-01-01T00:05:27Z",
+      "end": "2026-01-13T00:05:27Z",
+      "interval_days": 12.0,
+      "glacier_grid_cells": 12502,
+      "range_rate_m_year": {
+        "cells": 9410,
+        "min": -710.4465942382812,
+        "p02": -81.5528793334961,
+        "median": -12.614080429077148,
+        "p90": -4.937211513519287,
+        "p98": 1.150251030921936,
+        "max": 406.8387145996094
+      },
+      "radar_plane_magnitude_m_year": {
+        "cells": 9373,
+        "min": 0.3546736240386963,
+        "p02": 5.5113301277160645,
+        "median": 17.398601531982422,
+        "p90": 50.86018753051758,
+        "p98": 86.0155029296875,
+        "max": 1651.573486328125
+      },
+      "valid_glacier_fraction": 0.7497200447928332,
+      "fraction_magnitude_over_published_max": 0.004267577083111064
+    },
+    {
+      "experiment": "layer2-filtered",
+      "group": "055_A_018_4000_SH_X05010",
+      "start": "2025-12-20T00:05:26Z",
+      "end": "2026-01-01T00:05:27Z",
+      "interval_days": 12.000011574074074,
+      "glacier_grid_cells": 12502,
+      "range_rate_m_year": {
+        "cells": 8446,
+        "min": -31.406896591186523,
+        "p02": -24.223268508911133,
+        "median": -2.7922868728637695,
+        "p90": 5.170290946960449,
+        "p98": 13.35853385925293,
+        "max": 29.233829498291016
+      },
+      "radar_plane_magnitude_m_year": {
+        "cells": 7995,
+        "min": 0.11009298264980316,
+        "p02": 1.172094464302063,
+        "median": 9.324996948242188,
+        "p90": 23.35341453552246,
+        "p98": 33.23746871948242,
+        "max": 45.68552780151367
+      },
+      "valid_glacier_fraction": 0.6394976803711406,
+      "fraction_magnitude_over_published_max": 0.0
+    },
+    {
+      "experiment": "layer2-filtered",
+      "group": "055_A_018_4000_SH_X05010",
+      "start": "2026-01-01T00:05:27Z",
+      "end": "2026-01-13T00:05:27Z",
+      "interval_days": 12.0,
+      "glacier_grid_cells": 12502,
+      "range_rate_m_year": {
+        "cells": 8515,
+        "min": -40.60169219970703,
+        "p02": -32.974205017089844,
+        "median": -11.873353958129883,
+        "p90": -4.539238452911377,
+        "p98": 1.5012832880020142,
+        "max": 18.568750381469727
+      },
+      "radar_plane_magnitude_m_year": {
+        "cells": 8122,
+        "min": 0.3546736240386963,
+        "p02": 5.334381580352783,
+        "median": 15.715023040771484,
+        "p90": 30.114439010620117,
+        "p98": 39.525089263916016,
+        "max": 53.25925064086914
+      },
+      "valid_glacier_fraction": 0.6496560550311951,
+      "fraction_magnitude_over_published_max": 0.0
+    },
+    {
+      "experiment": "layer3-snr-only",
+      "group": "055_A_018_4000_SH_X05010",
+      "start": "2025-12-20T00:05:26Z",
+      "end": "2026-01-01T00:05:27Z",
+      "interval_days": 12.000011574074074,
+      "glacier_grid_cells": 12502,
+      "range_rate_m_year": {
+        "cells": 6471,
+        "min": -78.00418853759766,
+        "p02": -53.36018371582031,
+        "median": -3.034271717071533,
+        "p90": 2.084761619567871,
+        "p98": 6.689956188201904,
+        "max": 13.44845962524414
+      },
+      "radar_plane_magnitude_m_year": {
+        "cells": 6432,
+        "min": 0.0,
+        "p02": 0.719568133354187,
+        "median": 7.615044593811035,
+        "p90": 31.88849639892578,
+        "p98": 55.97696304321289,
+        "max": 87.92607116699219
+      },
+      "valid_glacier_fraction": 0.5144776835706287,
+      "fraction_magnitude_over_published_max": 0.0
+    },
+    {
+      "experiment": "layer3-snr-only",
+      "group": "055_A_018_4000_SH_X05010",
+      "start": "2026-01-01T00:05:27Z",
+      "end": "2026-01-13T00:05:27Z",
+      "interval_days": 12.0,
+      "glacier_grid_cells": 12502,
+      "range_rate_m_year": {
+        "cells": 6726,
+        "min": -94.109130859375,
+        "p02": -71.97318267822266,
+        "median": -12.476289749145508,
+        "p90": -6.760672569274902,
+        "p98": -2.831023931503296,
+        "max": 6.182919502258301
+      },
+      "radar_plane_magnitude_m_year": {
+        "cells": 6703,
+        "min": 0.7589026093482971,
+        "p02": 6.697564601898193,
+        "median": 15.788060188293457,
+        "p90": 37.980045318603516,
+        "p98": 73.47840881347656,
+        "max": 101.35343933105469
+      },
+      "valid_glacier_fraction": 0.536154215325548,
+      "fraction_magnitude_over_published_max": 0.0
+    },
+    {
+      "experiment": "layer3-filtered",
+      "group": "055_A_018_4000_SH_X05010",
+      "start": "2025-12-20T00:05:26Z",
+      "end": "2026-01-01T00:05:27Z",
+      "interval_days": 12.000011574074074,
+      "glacier_grid_cells": 12502,
+      "range_rate_m_year": {
+        "cells": 6101,
+        "min": -31.436077117919922,
+        "p02": -22.83306121826172,
+        "median": -2.728942632675171,
+        "p90": 2.2264389991760254,
+        "p98": 6.811192989349365,
+        "max": 13.44845962524414
+      },
+      "radar_plane_magnitude_m_year": {
+        "cells": 5826,
+        "min": 0.0,
+        "p02": 0.6880465745925903,
+        "median": 6.661084175109863,
+        "p90": 18.826444625854492,
+        "p98": 29.031761169433594,
+        "max": 43.602813720703125
+      },
+      "valid_glacier_fraction": 0.46600543912973924,
+      "fraction_magnitude_over_published_max": 0.0
+    },
+    {
+      "experiment": "layer3-filtered",
+      "group": "055_A_018_4000_SH_X05010",
+      "start": "2026-01-01T00:05:27Z",
+      "end": "2026-01-13T00:05:27Z",
+      "interval_days": 12.0,
+      "glacier_grid_cells": 12502,
+      "range_rate_m_year": {
+        "cells": 6267,
+        "min": -40.71000289916992,
+        "p02": -33.06363296508789,
+        "median": -12.013765335083008,
+        "p90": -6.496960163116455,
+        "p98": -2.742851972579956,
+        "max": 6.182919502258301
+      },
+      "radar_plane_magnitude_m_year": {
+        "cells": 6000,
+        "min": 0.7589026093482971,
+        "p02": 6.513792037963867,
+        "median": 14.9344482421875,
+        "p90": 27.151025772094727,
+        "p98": 36.4847526550293,
+        "max": 49.1536979675293
+      },
+      "valid_glacier_fraction": 0.47992321228603424,
+      "fraction_magnitude_over_published_max": 0.0
+    }
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "application_version": "0.8.9",
+  "processing_trace": {
+    "version": "1.0.0",
+    "stages": 4,
+    "captured_maps": 0,
+    "stage_evidence": [
+      {
+        "step": 1,
+        "operation": "los",
+        "maps": [
+          {
+            "id": "step_0_latest",
+            "role": "Saved method evidence",
+            "unit": "cm",
+            "label": "Step 1 \u00b7 Phase to relative LOS change \u00b7 latest frame"
+          },
+          {
+            "id": "reference_support",
+            "role": "Saved method evidence",
+            "unit": "class",
+            "label": "Shared reference cells \u00b7 relative zero"
+          }
+        ],
+        "diagnostic_keys": [
+          "reference_diagnostics"
+        ],
+        "unavailable_reason": null
+      },
+      {
+        "step": 2,
+        "operation": "network",
+        "maps": [
+          {
+            "id": "step_1_latest",
+            "role": "Saved method evidence",
+            "unit": "cm",
+            "label": "Step 2 \u00b7 Reconstruct connected acquisition dates \u00b7 latest frame"
+          },
+          {
+            "id": "network_residual",
+            "role": "Saved method evidence",
+            "unit": "cm",
+            "label": "Pair-network residual RMS \u00b7 no independent check for a tree"
+          }
+        ],
+        "diagnostic_keys": [
+          "network_reconstruction"
+        ],
+        "unavailable_reason": null
+      },
+      {
+        "step": 3,
+        "operation": "trend",
+        "maps": [
+          {
+            "id": "step_2_latest",
+            "role": "Saved method evidence",
+            "unit": "cm/year",
+            "label": "Step 3 \u00b7 Fit a movement trend \u00b7 latest frame"
+          },
+          {
+            "id": "trend_residual",
+            "role": "Saved method evidence",
+            "unit": "cm",
+            "label": "Linear-trend residual RMS \u00b7 internal consistency only"
+          }
+        ],
+        "diagnostic_keys": [
+          "trend_fit"
+        ],
+        "unavailable_reason": null
+      },
+      {
+        "step": 4,
+        "operation": "summary",
+        "maps": [
+          {
+            "id": "summary",
+            "role": "Saved method evidence",
+            "unit": "cm/year",
+            "label": "Fitted relative LOS trend \u00b7 final processed map"
+          }
+        ],
+        "diagnostic_keys": [],
+        "unavailable_reason": null
+      }
+    ]
+  },
+  "metrics": {
+    "valid_pixels": 510464,
+    "valid_fraction": 0.8466866590589421,
+    "median": 1.5972440242767334,
+    "p10": -6.169743537902832,
+    "p90": 8.836731910705566,
+    "median_rate_cm_year": 1.5972440242767334,
+    "median_rate_cm_month": 0.13310366868972778,
+    "reference_pixels": 2698,
+    "span_days": 84.00004629629629,
+    "acquisition_dates": 7
+  },
+  "historical_metric_comparison": {
+    "valid_pixels": {
+      "previous": 510464,
+      "current": 510464,
+      "unchanged": true
+    },
+    "valid_fraction": {
+      "previous": 0.8466866590589421,
+      "current": 0.8466866590589421,
+      "unchanged": true
+    },
+    "median": {
+      "previous": 1.5972440242767334,
+      "current": 1.5972440242767334,
+      "unchanged": true
+    },
+    "p10": {
+      "previous": -6.169743537902832,
+      "current": -6.169743537902832,
+      "unchanged": true
+    },
+    "p90": {
+      "previous": 8.836731910705566,
+      "current": 8.836731910705566,
+      "unchanged": true
+    },
+    "median_rate_cm_year": {
+      "previous": 1.5972440242767334,
+      "current": 1.5972440242767334,
+      "unchanged": true
+    },
+    "median_rate_cm_month": {
+      "previous": 0.13310366868972778,
+      "current": 0.13310366868972778,
+      "unchanged": true
+    },
+    "reference_pixels": {
+      "previous": 2698,
+      "current": 2698,
+      "unchanged": true
+    },
+    "span_days": {
+      "previous": 84.00004629629629,
+      "current": 84.00004629629629,
+      "unchanged": true
+    },
+    "acquisition_dates": {
+      "previous": 7,
+      "current": 7,
+      "unchanged": true
+    }
+  },
+  "case": "P04_Mexico_City",
+  "method": "P04",
+  "source_count": 6,
+  "grid_shape": [
+    769,
+    784
+  ],
+  "resolution": 80.0,
+  "steps": [
+    {
+      "operation": "los",
+      "parameters": {}
+    },
+    {
+      "operation": "network",
+      "parameters": {
+        "require_cycles": false
+      }
+    },
+    {
+      "operation": "trend",
+      "parameters": {
+        "annualized": true
+      }
+    },
+    {
+      "operation": "summary",
+      "parameters": {
+        "statistic": "mean"
+      }
+    }
+  ],
+  "reader_arrays_identical": true,
+  "engine_version": "1.1.0",
+  "comparisons": {
+    "observation_0": {
+      "editable_layer": "observation_0",
+      "identical": true,
+      "sha256": "901ff9592a3c7e38cdfd8ef74b49feb64b73bfa717002f944c0cac927fdc8bf5"
+    },
+    "observation_1": {
+      "editable_layer": "observation_1",
+      "identical": true,
+      "sha256": "7a92063678760e735d045e603e064ce014fba1e3b1c88b7065d98d2e33f89117"
+    },
+    "observation_2": {
+      "editable_layer": "observation_2",
+      "identical": true,
+      "sha256": "4db9b83e4613a76af0589ad02bf50c2fc1b6c0e4f608e7aedde1eae3d34e6cf8"
+    },
+    "observation_3": {
+      "editable_layer": "observation_3",
+      "identical": true,
+      "sha256": "68261b651598ba2e1fe8899b248d129f9c2cc05378104fb41904ff652ad02081"
+    },
+    "observation_4": {
+      "editable_layer": "observation_4",
+      "identical": true,
+      "sha256": "4c5882df9616d0b25f8850a864257d63e79c978956ba783178d0078b6b0c609e"
+    },
+    "observation_5": {
+      "editable_layer": "observation_5",
+      "identical": true,
+      "sha256": "b48971e4d8edead32e837cde2a8e47c694faf9ab1f2b8ad6302aac807cdb5dd5"
+    },
+    "observation_6": {
+      "editable_layer": "observation_6",
+      "identical": true,
+      "sha256": "dc8914cce8dde6f82b870ab3b832dbc3b4a1e2aacc1d638cdaa52ca790fe1e0e"
+    },
+    "los_rate_year": {
+      "editable_layer": "summary",
+      "identical": true,
+      "sha256": "3e24945aed216c4cad3ee49b01717f68a7bb5f2e20c1ce104de0f6fac64375d2"
+    },
+    "los_change": {
+      "editable_layer": "change",
+      "identical": true,
+      "sha256": "dc8914cce8dde6f82b870ab3b832dbc3b4a1e2aacc1d638cdaa52ca790fe1e0e"
+    },
+    "los_fit_residual": {
+      "editable_layer": "trend_residual",
+      "identical": true,
+      "sha256": "8fa60025c67a482a833da8edd591c44e46aaf4a653ffa128573b64d888327c56"
+    },
+    "los_pair_residual": {
+      "editable_layer": "network_residual",
+      "identical": true,
+      "sha256": "deb8dd70916a6bf9e7c4b5b6320b85d17cb1ce390f3f6c8a912d98c967793091"
+    }
+  },
+  "metrics_identical": false,
+  "series_identical": false,
+  "verification_scope": "Annualized rate, accumulated change, all reconstructed dates and fit/network residual maps; elementary result uses its own statistics schema",
+  "result": "PASS",
+  "remote_science_bytes": 0,
+  "browser_export_check": "not available: historical saved run was cleared; direct protected-input comparison still completed"
+}

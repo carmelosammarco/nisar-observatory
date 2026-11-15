@@ -1,0 +1,47 @@
+{
+  "True": {
+    "apply_ionosphere": true,
+    "metrics": {
+      "valid_pixels": 281112,
+      "valid_fraction": 0.4040707201379905,
+      "median": 0.6162547469139099,
+      "p10": -14.240774154663086,
+      "p90": 12.935347557067871,
+      "mapped_area_km2": 22689.098551797877,
+      "event_groups": 3,
+      "overlap_area_km2": 2648.56274003688,
+      "reference_pixels": 84772
+    },
+    "overlap_difference_cm": {
+      "valid_pixels": 32815,
+      "valid_fraction": 0.04716831967802214,
+      "median": 2.652495861053467,
+      "p10": 2.15364670753479,
+      "p90": 40.3112907409668
+    },
+    "remote_science_bytes": 0
+  },
+  "False": {
+    "apply_ionosphere": false,
+    "metrics": {
+      "valid_pixels": 281184,
+      "valid_fraction": 0.40417421302285467,
+      "median": -6.189254283905029,
+      "p10": -23.584064483642578,
+      "p90": 4.96294641494751,
+      "mapped_area_km2": 22694.909812419017,
+      "event_groups": 3,
+      "overlap_area_km2": 2671.4042227560763,
+      "reference_pixels": 84795
+    },
+    "overlap_difference_cm": {
+      "valid_pixels": 33098,
+      "valid_fraction": 0.04757510421158545,
+      "median": 11.873269081115723,
+      "p10": 5.03672456741333,
+      "p90": 33.973106384277344
+    },
+    "remote_science_bytes": 0
+  },
+  "meaning": "A correction sensitivity check on identical real local sources and reference. Neither option is selected to force agreement with NASA; unprovided reference/correction choices prevent exact reproduction."
+}
