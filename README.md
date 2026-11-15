@@ -6,14 +6,15 @@ Explore real NASA/ASF **NISAR L-band** observations, build an understandable pro
 
 Developed by **Carmelo Sammarco** for **Dancing with the SARs · 2026 NASA Space Apps Challenge**.
 
-<div align="center">
-  <video controls playsinline preload="none" style="width: 100%; height: auto;" src="frontend/assets/media/nisar-observatory-introduction.mp4" poster="frontend/assets/media/nisar-observatory-introduction.jpg" aria-label="NISAR Observatory introduction">
-    <a href="frontend/assets/media/nisar-observatory-introduction.mp4">
-      <img src="frontend/assets/media/nisar-observatory-introduction.jpg" alt="Open the NISAR Observatory introduction" width="100%">
-    </a>
-  </video>
-  <p><strong><a href="frontend/assets/media/nisar-observatory-introduction.mp4">Open the introduction (MP4)</a></strong> · 2 min 53 sec · <a href="frontend/assets/media/nisar-observatory-introduction.txt">Read the transcript</a></p>
-</div>
+<h2 align="center">Watch the introduction</h2>
+
+https://github.com/user-attachments/assets/294cd7ac-1ce3-4a98-8a81-0e54f6ec638d
+
+<p align="center">
+  2 min 53 sec ·
+  <a href="frontend/assets/media/nisar-observatory-introduction.mp4">Open the MP4</a> ·
+  <a href="frontend/assets/media/nisar-observatory-introduction.txt">Read the transcript</a>
+</p>
 
 **7 guided stories · 7 read-only recorded studies · editable workflows · reusable My Tools · offline study reports**
 
