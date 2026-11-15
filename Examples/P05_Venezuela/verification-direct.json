@@ -1,0 +1,62 @@
+{
+  "tool": "P05",
+  "provenance_verified": true,
+  "protected_input_count": 3,
+  "reader_versions": [
+    "0.3.1"
+  ],
+  "processing_remote_bytes": 0,
+  "metrics": {
+    "valid_pixels": 278983,
+    "valid_fraction": 0.4010104930286043,
+    "median": -2.2451109886169434,
+    "p10": -19.17642593383789,
+    "p90": 7.876505374908447,
+    "mapped_area_km2": 22517.262803708938,
+    "event_groups": 3,
+    "overlap_area_km2": 2231.120518751774,
+    "reference_pixels": 979
+  },
+  "series": [
+    {
+      "date": "2026-06-13T10:06:23Z",
+      "end": "2026-06-25T10:06:22Z",
+      "median_mm": -25.916259765625,
+      "p10_mm": -49.45685577392578,
+      "p90_mm": 3.2274363040924072,
+      "valid_fraction": 0.05330314790858128,
+      "comparison_pixels": 37083,
+      "interval_days": 11.999988425925926,
+      "median_rate_mm_day": -2.1596903800964355,
+      "median_cm": -2.5916259765625,
+      "group": "162_A_006_4000_SH_P05023"
+    },
+    {
+      "date": "2026-06-13T10:06:56Z",
+      "end": "2026-06-25T10:06:55Z",
+      "median_mm": -34.5131950378418,
+      "p10_mm": -204.4875946044922,
+      "p90_mm": 82.29654693603516,
+      "valid_fraction": 0.3167299123185281,
+      "comparison_pixels": 220349,
+      "interval_days": 11.999988425925926,
+      "median_rate_mm_day": -2.8761024475097656,
+      "median_cm": -3.4513195037841795,
+      "group": "162_A_007_4000_SH_P05023"
+    },
+    {
+      "date": "2026-06-18T09:58:36Z",
+      "end": "2026-06-30T09:58:35Z",
+      "median_mm": -6.269143581390381,
+      "p10_mm": -208.84844970703125,
+      "p90_mm": 33.659542083740234,
+      "valid_fraction": 0.07211872933735805,
+      "comparison_pixels": 50173,
+      "interval_days": 11.999988425925926,
+      "median_rate_mm_day": -0.5224291086196899,
+      "median_cm": -0.6269143581390381,
+      "group": "061_A_007_4000_SH_P05023"
+    }
+  ],
+  "scientific_accuracy": "Not established; numerical replay check only."
+}

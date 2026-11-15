@@ -1,0 +1,51 @@
+{
+  "GCOV": {
+    "hits": 2,
+    "items": [
+      {
+        "id": "G4058657013-ASF",
+        "name": "NISAR_L2_PR_GCOV_009_114_A_165_4005_DHDH_A_20260105T034232_20260105T034253_X05010_N_P_J_001",
+        "product": "GCOV",
+        "start": "2026-01-05T03:42:32Z",
+        "end": "2026-01-05T03:42:53Z",
+        "catalog_start": "2026-01-05T03:42:32.000Z",
+        "catalog_end": "2026-01-05T03:42:53.999Z",
+        "size_mb": 3851.747329711914,
+        "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_BETA_V1/NISAR_L2_PR_GCOV_009_114_A_165_4005_DHDH_A_20260105T034232_20260105T034253_X05010_N_P_J_001/NISAR_L2_PR_GCOV_009_114_A_165_4005_DHDH_A_20260105T034232_20260105T034253_X05010_N_P_J_001.h5",
+        "group": "114_A_165_4005_DHDH_X05010",
+        "boxes": [],
+        "polygons": [
+          [
+            "-25.16022 34.33072 -23.85236 34.04361 -24.27101 31.59616 -25.57617 31.85449 -25.16022 34.33072"
+          ]
+        ]
+      },
+      {
+        "id": "G4059040862-ASF",
+        "name": "NISAR_L2_PR_GCOV_010_114_A_165_4005_DHDH_A_20260117T034232_20260117T034254_X05010_N_P_J_001",
+        "product": "GCOV",
+        "start": "2026-01-17T03:42:32Z",
+        "end": "2026-01-17T03:42:54Z",
+        "catalog_start": "2026-01-17T03:42:32.000Z",
+        "catalog_end": "2026-01-17T03:42:54.999Z",
+        "size_mb": 3991.8038578033447,
+        "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_BETA_V1/NISAR_L2_PR_GCOV_010_114_A_165_4005_DHDH_A_20260117T034232_20260117T034254_X05010_N_P_J_001/NISAR_L2_PR_GCOV_010_114_A_165_4005_DHDH_A_20260117T034232_20260117T034254_X05010_N_P_J_001.h5",
+        "group": "114_A_165_4005_DHDH_X05010",
+        "boxes": [],
+        "polygons": [
+          [
+            "-25.20595 34.33933 -23.83864 34.03921 -24.25725 31.59257 -25.62177 31.8624 -25.20595 34.33933"
+          ]
+        ]
+      }
+    ],
+    "query": "https://cmr.earthdata.nasa.gov/search/granules.json?short_name=NISAR_L2_GCOV_BETA_V1&bounding_box=32.9%2C-24.65%2C33.14%2C-24.43&temporal=2026-01-05T00%3A00%3A00Z%2C2026-01-17T23%3A59%3A59Z&page_size=200&sort_key=start_date&page_num=1",
+    "fetched_at": "2026-10-19T18:12:24.875583+00:00",
+    "truncated": false,
+    "records_fetched": 2,
+    "records_skipped": 0,
+    "collection": "NISAR_L2_GCOV_BETA_V1",
+    "maturity": "BETA",
+    "scope_note": "Search covers the named BETA V1 collection only. Other releases are not merged automatically. BETA products are pre-calibration data with known issues. Up to 5000 catalog records per product are fetched with pagination."
+  }
+}

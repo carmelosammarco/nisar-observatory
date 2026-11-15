@@ -1,0 +1,208 @@
+{
+  "format": "nisar-observatory-example-inputs-1",
+  "example": "P07_Samudra_Tapu",
+  "inputs": [
+    {
+      "id": "subset-39fb4c0cd7c48a8db6b66f8449008d58",
+      "name": "NISAR_L2_PR_GOFF_009_055_A_018_010_4000_SH_20260101T000527_20260101T000601_20260113T000527_20260113T000602_X05010_N_F_J_001",
+      "product": "GOFF",
+      "start": "2026-01-01T00:05:27Z",
+      "end": "2026-01-13T00:05:27Z",
+      "catalog_start": "2026-01-01T00:05:27.000Z",
+      "catalog_end": "2026-01-13T00:06:02.999Z",
+      "size_mb": 4.816002,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GOFF_BETA_V1/NISAR_L2_PR_GOFF_009_055_A_018_010_4000_SH_20260101T000527_20260101T000601_20260113T000527_20260113T000602_X05010_N_F_J_001/NISAR_L2_PR_GOFF_009_055_A_018_010_4000_SH_20260101T000527_20260101T000601_20260113T000527_20260113T000602_X05010_N_F_J_001.h5",
+      "group": "055_A_018_4000_SH_X05010",
+      "boxes": [
+        "32.39 77.36 32.56 77.57"
+      ],
+      "polygons": [],
+      "source_id": "G4058734792-ASF",
+      "catalog_id": "G4058734792-ASF",
+      "subset": true,
+      "subset_bbox": [
+        77.36,
+        32.39,
+        77.57,
+        32.56
+      ],
+      "bbox": [
+        77.36,
+        32.39,
+        77.57,
+        32.56
+      ],
+      "bounds": [
+        77.36,
+        32.39,
+        77.57,
+        32.56
+      ],
+      "local": true,
+      "subset_version": "area-1",
+      "subset_created_at": "2026-10-21T15:39:07.471702+00:00",
+      "content_sha256": "6f8950af9a4838b4d66bdd1bd2bc95afb708d9923bab9c456e0f11bc96edb075",
+      "retained_layers": [
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer1/alongTrackOffset",
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer1/alongTrackOffsetVariance",
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer1/correlationSurfacePeak",
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer1/crossOffsetVariance",
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer1/slantRangeOffset",
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer1/slantRangeOffsetVariance",
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer1/snr",
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer2/alongTrackOffset",
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer2/alongTrackOffsetVariance",
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer2/correlationSurfacePeak",
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer2/crossOffsetVariance",
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer2/slantRangeOffset",
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer2/slantRangeOffsetVariance",
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer2/snr",
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer3/alongTrackOffset",
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer3/alongTrackOffsetVariance",
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer3/correlationSurfacePeak",
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer3/crossOffsetVariance",
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer3/slantRangeOffset",
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer3/slantRangeOffsetVariance",
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/HH/layer3/snr",
+        "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/mask"
+      ],
+      "omitted_layers": [
+        {
+          "path": "/science/LSAR/GOFF/metadata/attitude/reference/eulerAngles",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GOFF/metadata/attitude/reference/quaternions",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GOFF/metadata/attitude/secondary/eulerAngles",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GOFF/metadata/attitude/secondary/quaternions",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GOFF/metadata/orbit/reference/position",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GOFF/metadata/orbit/reference/velocity",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GOFF/metadata/orbit/secondary/position",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GOFF/metadata/orbit/secondary/velocity",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GOFF/metadata/processingInformation/parameters/common/frequencyA/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GOFF/metadata/processingInformation/parameters/reference/frequencyA/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GOFF/metadata/processingInformation/parameters/secondary/frequencyA/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GOFF/metadata/radarGrid/elevationAngle",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GOFF/metadata/radarGrid/groundTrackVelocity",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GOFF/metadata/radarGrid/parallelBaseline",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GOFF/metadata/radarGrid/perpendicularBaseline",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GOFF/metadata/radarGrid/referenceSlantRange",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GOFF/metadata/radarGrid/referenceZeroDopplerAzimuthTime",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GOFF/metadata/radarGrid/secondarySlantRange",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GOFF/metadata/radarGrid/secondaryZeroDopplerAzimuthTime",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        }
+      ],
+      "original_size_mb": 1079.4787006378174,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.36,
+              32.39
+            ],
+            [
+              77.57,
+              32.39
+            ],
+            [
+              77.57,
+              32.56
+            ],
+            [
+              77.36,
+              32.56
+            ],
+            [
+              77.36,
+              32.39
+            ]
+          ]
+        ]
+      },
+      "viewing_geometry": {
+        "available": true,
+        "version": "goff-geometry-1",
+        "paths": [
+          "/science/LSAR/GOFF/metadata/radarGrid/losUnitVectorX",
+          "/science/LSAR/GOFF/metadata/radarGrid/losUnitVectorY",
+          "/science/LSAR/GOFF/metadata/radarGrid/alongTrackUnitVectorX",
+          "/science/LSAR/GOFF/metadata/radarGrid/alongTrackUnitVectorY",
+          "/science/LSAR/GOFF/metadata/radarGrid/incidenceAngle"
+        ],
+        "shape": [
+          20,
+          41,
+          43
+        ],
+        "height_range_m": [
+          -500.0,
+          9000.0
+        ],
+        "horizontal_window": [
+          357,
+          400,
+          377,
+          418
+        ],
+        "projection_epsg": 32643,
+        "meaning": "Native height-dependent viewing cubes cropped with an interpolation buffer. No invented heading, incidence angle or terrain height."
+      },
+      "example_id": "P07_Samudra_Tapu",
+      "example_file": "NISAR_L2_PR_GOFF_009_055_A_018_010_4000_SH_20260101T000527_20260101T000601_20260113T000527_20260113T000602_X05010_N_F_J_001__subset_39fb4c0cd7c4.h5",
+      "protected_example": true
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "job_id": "f7d7616087b54b0ca39a7334469e8a35",
+  "tool": "P05",
+  "input_count": 3,
+  "input_bytes": 166472263,
+  "checksums_verified": true,
+  "browser_start_verified": true,
+  "request": {
+    "bbox": [
+      -69.0,
+      9.8,
+      -66.35,
+      11.55
+    ],
+    "granules": [
+      "subset-85edd49270001ced9c8aaa5fcee26020",
+      "subset-1ef777939636f7bfe8461f14bc1d97d8",
+      "subset-d19d37d31a7ea07b613d70f50ef575f2"
+    ],
+    "projects": [
+      "P05"
+    ],
+    "options": {
+      "apply_ionosphere": true,
+      "quake_mosaic": true,
+      "phase_network": false,
+      "event_timestamp": "2026-06-24T22:05:04.053000Z",
+      "resolution": 80.0,
+      "coherence": 0.3,
+      "min_valid_fraction": 0.5,
+      "reference_bbox": [
+        -68.9,
+        9.85,
+        -66.45,
+        10.15
+      ],
+      "event_date": "2026-06-24"
+    },
+    "display": {
+      "palette": "diverging",
+      "mode": "custom",
+      "layer": "event_displacement_cm",
+      "unit": "cm",
+      "low": -50.0,
+      "high": 50.0
+    }
+  },
+  "metrics": {
+    "valid_pixels": 278983,
+    "valid_fraction": 0.4010104930286043,
+    "median": -2.2451109886169434,
+    "p10": -19.17642593383789,
+    "p90": 7.876505374908447,
+    "mapped_area_km2": 22517.262803708938,
+    "event_groups": 3,
+    "overlap_area_km2": 2231.120518751774,
+    "reference_pixels": 979
+  },
+  "grid": {
+    "crs": "EPSG:6933",
+    "resolution_m": 284.09849184986206,
+    "shape": [
+      773,
+      900
+    ],
+    "bbox": [
+      -69.0,
+      9.8,
+      -66.35,
+      11.55
+    ]
+  },
+  "display": {
+    "palette": "diverging",
+    "mode": "custom",
+    "layer": "event_displacement_cm",
+    "unit": "cm",
+    "low": -50.0,
+    "high": 50.0
+  },
+  "source_errors": [],
+  "processing_remote_bytes": 0,
+  "numeric_raster_checked": "event_displacement_cm",
+  "map_image_with_legend_checked": true,
+  "scientific_accuracy": "Not established by engineering checks; read tutorial comparison and limitations."
+}

@@ -1,0 +1,364 @@
+{
+  "id": "P05_Venezuela",
+  "tool": "P05",
+  "title": "Venezuela earthquake sequence",
+  "subtitle": "Three overlapping radar views across a documented earthquake",
+  "product": "GUNW",
+  "request": {
+    "bbox": [
+      -69.0,
+      9.8,
+      -66.35,
+      11.55
+    ],
+    "projects": [
+      "P05"
+    ],
+    "options": {
+      "resolution": 80,
+      "coherence": 0.3,
+      "apply_ionosphere": true,
+      "min_valid_fraction": 0.5,
+      "reference_bbox": [
+        -68.9,
+        9.85,
+        -66.45,
+        10.15
+      ],
+      "event_timestamp": "2026-06-24T22:05:04.053Z",
+      "event_date": "2026-06-24",
+      "quake_mosaic": true,
+      "phase_network": false
+    },
+    "display": {
+      "palette": "diverging",
+      "mode": "custom",
+      "low": -50,
+      "high": 50,
+      "layer": "event_displacement_cm",
+      "unit": "cm"
+    }
+  },
+  "sources": [
+    {
+      "id": "G4276284486-ASF",
+      "name": "NISAR_L2_PR_GUNW_022_162_A_006_023_4000_SH_20260613T100623_20260613T100657_20260625T100622_20260625T100656_P05023_N_F_J_001",
+      "product": "GUNW",
+      "start": "2026-06-13T10:06:23Z",
+      "end": "2026-06-25T10:06:22Z",
+      "catalog_start": "2026-06-13T10:06:23.000Z",
+      "catalog_end": "2026-06-25T10:06:56.999Z",
+      "size_mb": 2174.4582386016846,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_022_162_A_006_023_4000_SH_20260613T100623_20260613T100657_20260625T100622_20260625T100656_P05023_N_F_J_001/NISAR_L2_PR_GUNW_022_162_A_006_023_4000_SH_20260613T100623_20260613T100657_20260625T100622_20260625T100656_P05023_N_F_J_001.h5",
+      "group": "162_A_006_4000_SH_P05023",
+      "boxes": [
+        "9.8 -69.0 11.55 -66.35"
+      ],
+      "polygons": [],
+      "catalog_id": "G4276284486-ASF",
+      "bbox": [
+        -69.0,
+        9.8,
+        -66.35,
+        11.55
+      ],
+      "bounds": [
+        -69.0,
+        9.8,
+        -66.35,
+        11.55
+      ],
+      "original_size_mb": 2174.4582386016846,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -69.0,
+              9.8
+            ],
+            [
+              -66.35,
+              9.8
+            ],
+            [
+              -66.35,
+              11.55
+            ],
+            [
+              -69.0,
+              11.55
+            ],
+            [
+              -69.0,
+              9.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": "G4276300590-ASF",
+      "name": "NISAR_L2_PR_GUNW_022_162_A_007_023_4000_SH_20260613T100656_20260613T100731_20260625T100655_20260625T100730_P05023_N_F_J_001",
+      "product": "GUNW",
+      "start": "2026-06-13T10:06:56Z",
+      "end": "2026-06-25T10:06:55Z",
+      "catalog_start": "2026-06-13T10:06:56.000Z",
+      "catalog_end": "2026-06-25T10:07:30.999Z",
+      "size_mb": 2235.326169013977,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_022_162_A_007_023_4000_SH_20260613T100656_20260613T100731_20260625T100655_20260625T100730_P05023_N_F_J_001/NISAR_L2_PR_GUNW_022_162_A_007_023_4000_SH_20260613T100656_20260613T100731_20260625T100655_20260625T100730_P05023_N_F_J_001.h5",
+      "group": "162_A_007_4000_SH_P05023",
+      "boxes": [
+        "9.8 -69.0 11.55 -66.35"
+      ],
+      "polygons": [],
+      "catalog_id": "G4276300590-ASF",
+      "bbox": [
+        -69.0,
+        9.8,
+        -66.35,
+        11.55
+      ],
+      "bounds": [
+        -69.0,
+        9.8,
+        -66.35,
+        11.55
+      ],
+      "original_size_mb": 2235.326169013977,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -69.0,
+              9.8
+            ],
+            [
+              -66.35,
+              9.8
+            ],
+            [
+              -66.35,
+              11.55
+            ],
+            [
+              -69.0,
+              11.55
+            ],
+            [
+              -69.0,
+              9.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": "G4251311930-ASF",
+      "name": "NISAR_L2_PR_GUNW_023_061_A_007_024_4000_SH_20260618T095836_20260618T095911_20260630T095835_20260630T095910_P05023_N_F_J_001",
+      "product": "GUNW",
+      "start": "2026-06-18T09:58:36Z",
+      "end": "2026-06-30T09:58:35Z",
+      "catalog_start": "2026-06-18T09:58:36.000Z",
+      "catalog_end": "2026-06-30T09:59:10.999Z",
+      "size_mb": 2235.701247215271,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_023_061_A_007_024_4000_SH_20260618T095836_20260618T095911_20260630T095835_20260630T095910_P05023_N_F_J_001/NISAR_L2_PR_GUNW_023_061_A_007_024_4000_SH_20260618T095836_20260618T095911_20260630T095835_20260630T095910_P05023_N_F_J_001.h5",
+      "group": "061_A_007_4000_SH_P05023",
+      "boxes": [
+        "9.8 -69.0 11.55 -66.35"
+      ],
+      "polygons": [],
+      "catalog_id": "G4251311930-ASF",
+      "bbox": [
+        -69.0,
+        9.8,
+        -66.35,
+        11.55
+      ],
+      "bounds": [
+        -69.0,
+        9.8,
+        -66.35,
+        11.55
+      ],
+      "original_size_mb": 2235.701247215271,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -69.0,
+              9.8
+            ],
+            [
+              -66.35,
+              9.8
+            ],
+            [
+              -66.35,
+              11.55
+            ],
+            [
+              -69.0,
+              11.55
+            ],
+            [
+              -69.0,
+              9.8
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "references": [
+    {
+      "url": "https://science.nasa.gov/earth/earth-observatory/where-venezuelas-earthquakes-shifted-the-ground/",
+      "title": "Venezuela earthquake displacement · June 2026",
+      "description": "Published centimeter-scale map using June 13–25 and June 18–30 acquisitions. Compare regional patterns and read its geometry and Urgent Response context; no numerical ground-truth raster is supplied."
+    },
+    {
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zp/executive",
+      "title": "USGS · earthquake event record",
+      "description": "Published reference evidence and context for this case study."
+    }
+  ],
+  "gallery": [
+    {
+      "file": "figures/nasa-published-displacement.jpg",
+      "role": "published",
+      "title": "NASA · published earthquake ground-change map",
+      "alt": "NASA · published earthquake ground-change map",
+      "caption": "NASA Earth Observatory’s published radar displacement visualization for the June 2026 earthquakes. Its image is overlaid on landscape context; our numerical map below uses its own explicit line-of-sight scale.",
+      "credit": "NASA Earth Observatory · Lauren Dauphin; NISAR data from Eric Fielding/JPL",
+      "source_url": "https://science.nasa.gov/earth/earth-observatory/where-venezuelas-earthquakes-shifted-the-ground/",
+      "width": 1280,
+      "height": 853
+    },
+    {
+      "file": "figures/new-example-run.png",
+      "role": "result",
+      "title": "Our result · relative earthquake-interval displacement",
+      "alt": "Northern Venezuela earthquake-interval relative LOS displacement in Diverging −20 to +20 cm over Satellite imagery with place names",
+      "caption": "Three GUNW frames: 13–25 and 18–30 June 2026. This user-provided export uses the Diverging palette from −20 to +20 cm, Satellite imagery with place names and 100% radar opacity. Blue means motion away from each observation’s radar line of sight and red toward it, relative to the processing reference. In this export 9.7% of valid values fall outside the display endpoints and are shown with saturated colours; numeric GeoTIFF values are retained. Background-only gaps are not evidence of no movement. Horizontal and vertical motion are mixed; this is not a damage map.",
+      "credit": "NISAR Observatory · user-provided P05 export · run 29c07952cc63",
+      "width": 1800,
+      "height": 1570
+    }
+  ],
+  "reports": [
+    {
+      "file": "references/p05_VENEZUELA.md",
+      "title": "Venezuela · event, inputs and interpretation"
+    },
+    {
+      "file": "references/p05_OVERLAP_REVIEW.md",
+      "title": "Venezuela · overlap and reference investigation"
+    },
+    {
+      "file": "references/fresh-subset-verification.json",
+      "title": "Fresh-subset reproduction check"
+    }
+  ],
+  "question": "How did the radar line-of-sight distance change across Venezuela’s earthquake sequence?",
+  "method": "Three usable GUNW frames cover pairs 13–25 and 18–30 June 2026 around the documented 24 June 22:05:04.053 UTC event. Native masks, coherence ≥0.30 and accepted fraction ≥0.50 screen phase; delivered ionosphere subtraction is enabled. Each group is referenced, preferably using the same accepted cells. Overlaps choose the highest-coherence valid source, without averaging different LOS geometries.",
+  "expected": "The revised historical comparison substantially reduced artificial overlap differences after native validity-mask and shared-reference fixes. The prepared three-frame mosaic excludes track 061/frame 006, which had no usable coherent pixels in the tested area. This exclusion is explicit; no selected source is silently omitted.",
+  "interpret": "Start with displacement across the earthquake interval in cm, fixed −50 to +50 with Diverging colors. Positive is toward the satellite. Source and overlap maps explain frame selection and disagreement. Playback inspects separate intervals and footprints; it is not cumulative motion or an animation of the earthquake rupture.",
+  "limits": "The inland reference [−68.90,9.85,−66.45,10.15] is a recorded engineering choice without independent proof of physical stability. Different viewing geometry and date intervals remain. The radar intervals cannot separate individual shocks. NASA’s illustration does not supply numerical pixels, exact reference or complete processing parameters. The 80 m request is coarsened to approximately 284.10 m to fit this large rectangle within the 900-cell axis limit; the saved result reports its actual spacing. Overlap improvement measures internal consistency, not geophysical accuracy.",
+  "comparison": [
+    [
+      "Measurement alignment",
+      "Published InSAR displacement illustration with geological interpretation",
+      "Relative event-interval LOS displacement · cm"
+    ],
+    [
+      "Event",
+      "NASA earthquake sequence",
+      "USGS timestamp retained explicitly"
+    ],
+    [
+      "Intervals",
+      "13–25 and 18–30 June",
+      "Same documented intervals; three usable frames"
+    ],
+    [
+      "Display",
+      "NASA ±50 cm illustration",
+      "Fixed ±50 cm; no geodetic accuracy claim"
+    ],
+    [
+      "Comparison support",
+      "Read the original extent, masking and period",
+      "Three usable frames and their union, not three identical footprints. Source-index/overlap maps identify seams and different observation support."
+    ],
+    [
+      "Independent accuracy",
+      "Requires compatible independent numerical measurements or labels",
+      "Not established for arbitrary regions or modified workflows"
+    ]
+  ],
+  "results_table": {
+    "title": "Previous processing comparison · identical overlapping valid cells",
+    "headers": [
+      "Overlap spread statistic",
+      "Earlier processing",
+      "Revised processing"
+    ],
+    "rows": [
+      [
+        "Median · cm",
+        "2.412",
+        "0.487"
+      ],
+      [
+        "90th percentile · cm",
+        "12.086",
+        "4.620"
+      ]
+    ]
+  },
+  "tool_name": "Quake Evidence Explorer",
+  "card_image": {
+    "file": "figures/new-example-run.png",
+    "role": "result",
+    "title": "Our result · relative earthquake-interval displacement",
+    "alt": "Northern Venezuela earthquake-interval relative LOS displacement in Diverging −20 to +20 cm over Satellite imagery with place names",
+    "caption": "Three GUNW frames: 13–25 and 18–30 June 2026. This user-provided export uses the Diverging palette from −20 to +20 cm, Satellite imagery with place names and 100% radar opacity. Blue means motion away from each observation’s radar line of sight and red toward it, relative to the processing reference. In this export 9.7% of valid values fall outside the display endpoints and are shown with saturated colours; numeric GeoTIFF values are retained. Background-only gaps are not evidence of no movement. Horizontal and vertical motion are mixed; this is not a damage map.",
+    "credit": "NISAR Observatory · user-provided P05 export · run 29c07952cc63",
+    "width": 1800,
+    "height": 1570,
+    "label": "Our result · earthquake displacement"
+  },
+  "visual_comparison_note": "Compare the main deformation pattern, allowing for different map extents, masking and viewing geometry. The app combines event-bracketing coverage with different look vectors; it does not recover separate east–west and vertical motion. Color similarity alone is not a quantitative validation.",
+  "evidence": {
+    "label": "Qualitative event-interval comparison",
+    "description": "An event-bracketing LOS mosaic reproduces broad deformation patterns; overlap checks describe internal consistency, not independent displacement accuracy.",
+    "transfer_validation": "Not established on an independently held-out event or region."
+  },
+  "comparison_review": {
+    "review_date": "2026-10-23",
+    "level": "Qualitative event-interval comparison",
+    "conclusion": "An event-bracketing LOS mosaic reproduces broad deformation patterns; overlap checks describe internal consistency, not independent displacement accuracy.",
+    "agrees": [
+      "The selected intervals match NASA’s June 13–25 and June 18–30 2026 observations around the documented event.",
+      "Three usable frames show broad positive/negative relative LOS patterns across the same northern Venezuelan region."
+    ],
+    "differs": [
+      "NASA interprets geological direction using its geometry and earthquake context; the app reports LOS and does not solve east/west or vertical displacement.",
+      "Our groups can differ in look vector, pair dates and reference origin. One tested frame with no usable coherence is explicitly excluded; the large region is coarsened to about 284 m cells."
+    ],
+    "unverified": [
+      "No numerical NASA displacement raster or independently stable reference: no justified pixelwise accuracy statistic.",
+      "Reduced overlap spread is internal agreement only; the interval includes other movement and cannot separate the sequence’s individual shocks or building damage."
+    ],
+    "next_check": "Matched numerical reference displacement and independently justified per-view references, with explicit geometry and time alignment.",
+    "quantity_reference": "Published InSAR displacement illustration with geological interpretation",
+    "quantity_ours": "Relative event-interval LOS displacement · cm",
+    "support": "Three usable frames and their union, not three identical footprints. Source-index/overlap maps identify seams and different observation support.",
+    "role": "Further exploration",
+    "reason": "Useful for demonstrating mosaics, but geometry, references and interval mixing take more explanation than the lead cases.",
+    "reproducibility": "Protected input checksums and unchanged guided/editable replay test implementation reproducibility; they do not test environmental accuracy.",
+    "source_review": "See docs/EXAMPLE_EVIDENCE_REVIEW.md for source access and archived-evidence limits."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "tool": "P07",
+  "provenance_verified": true,
+  "protected_input_count": 1,
+  "reader_versions": [
+    "0.3.3"
+  ],
+  "processing_remote_bytes": 0,
+  "metrics": {
+    "valid_pixels": 6703,
+    "valid_fraction": 0.11473810338925025,
+    "median": 21.787776947021484,
+    "p10": 13.661437034606934,
+    "p90": 49.928428649902344,
+    "common_valid_area_km2": 42.8992
+  },
+  "series": [
+    {
+      "date": "2026-01-01T00:05:27Z",
+      "end": "2026-01-13T00:05:27Z",
+      "median": 21.787776947021484,
+      "west": 22.001920700073242,
+      "east": 20.865272521972656,
+      "valid_fraction": 0.11473810338925025,
+      "comparison_pixels": 6703
+    }
+  ],
+  "scientific_accuracy": "Not established; numerical replay check only."
+}

@@ -1,0 +1,340 @@
+{
+  "job_id": "5e8a203f2abf4e11abcb6b00e8879097",
+  "tool": "P06",
+  "input_count": 5,
+  "input_bytes": 272129641,
+  "checksums_verified": true,
+  "browser_start_verified": false,
+  "request": {
+    "bbox": [
+      160.15,
+      54.51,
+      160.5,
+      54.7
+    ],
+    "granules": [
+      "subset-77b9e708f03ebe015cdc2667f2a5cef5",
+      "subset-0fcfff051a8ea84bd835ccdcd0eb1f48",
+      "subset-52173242b1c76f71ea0f883f6dfade29",
+      "subset-8bb599bf718fcd0077f87f236c8107b5",
+      "subset-c7d5dc882c12434c4a8a73ca7c0bcd4c"
+    ],
+    "projects": [
+      "P06"
+    ],
+    "options": {
+      "surface_method": "evolving",
+      "smoothing_m": 40.0,
+      "baseline_count": 1,
+      "baseline_end": "2026-06-18",
+      "patch_area_m2": 30000.0,
+      "resolution": 20.0,
+      "change_threshold": 3.0,
+      "min_valid_fraction": 0.5,
+      "channel": "HHHH"
+    },
+    "display": {
+      "palette": "diverging",
+      "mode": "custom",
+      "layer": "latest_departure",
+      "unit": "dB",
+      "low": -8.0,
+      "high": 8.0,
+      "category_colors": {},
+      "category_opacity": {}
+    }
+  },
+  "metrics": {
+    "latest_change_area_km2": 145.6028,
+    "repeated_latest_change_area_km2": 128.292,
+    "increasing_area_km2": 145.6028,
+    "decreasing_area_km2": 0.0,
+    "common_valid_area_km2": 478.0604
+  },
+  "grid": {
+    "crs": "EPSG:32657",
+    "resolution_m": 20.0,
+    "shape": [
+      1080,
+      1151
+    ],
+    "bbox": [
+      160.15,
+      54.51,
+      160.5,
+      54.7
+    ]
+  },
+  "display": {
+    "palette": "diverging",
+    "mode": "custom",
+    "layer": "latest_departure",
+    "unit": "dB",
+    "low": -8.0,
+    "high": 8.0,
+    "category_colors": {},
+    "category_opacity": {}
+  },
+  "source_errors": [],
+  "processing_remote_bytes": 0,
+  "numeric_raster_checked": "latest_departure",
+  "map_image_with_legend_checked": true,
+  "opening_map_export": "references/review-opening-map.png",
+  "review_date": "2026-10-22",
+  "scientific_accuracy": "Not established by engineering checks; read tutorial comparison and limitations.",
+  "all_map_checks": [
+    {
+      "layer": "backscatter",
+      "valid_pixels": 1195151,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "observation_0",
+      "valid_pixels": 1195152,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "observation_1",
+      "valid_pixels": 1195151,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "observation_2",
+      "valid_pixels": 1195152,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "observation_3",
+      "valid_pixels": 1195151,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "observation_4",
+      "valid_pixels": 1195151,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "change",
+      "valid_pixels": 1195151,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "variability",
+      "valid_pixels": 1195151,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "count",
+      "valid_pixels": 1195153,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "baseline_departure",
+      "valid_pixels": 1195151,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "standardized_departure",
+      "valid_pixels": 1195151,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "latest_departure",
+      "valid_pixels": 1195151,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "surface",
+      "valid_pixels": 1195151,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "confirmed_change",
+      "valid_pixels": 1195151,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "change_direction",
+      "valid_pixels": 1195151,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "first_change",
+      "valid_pixels": 396556,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "repeat_count",
+      "valid_pixels": 1195151,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "dated_departure_1",
+      "valid_pixels": 1195151,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "dated_departure_2",
+      "valid_pixels": 1195151,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "dated_departure_3",
+      "valid_pixels": 1195151,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "dated_departure_4",
+      "valid_pixels": 1195151,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "largest_step",
+      "valid_pixels": 1195151,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_accepted_fraction_0",
+      "valid_pixels": 1243080,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_missing_fraction_0",
+      "valid_pixels": 1243080,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_nonpositive_power_0",
+      "valid_pixels": 1243080,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_source_mask_0",
+      "valid_pixels": 1243080,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_accepted_fraction_1",
+      "valid_pixels": 1243080,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_missing_fraction_1",
+      "valid_pixels": 1243080,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_nonpositive_power_1",
+      "valid_pixels": 1243080,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_source_mask_1",
+      "valid_pixels": 1243080,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_accepted_fraction_2",
+      "valid_pixels": 1243080,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_missing_fraction_2",
+      "valid_pixels": 1243080,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_nonpositive_power_2",
+      "valid_pixels": 1243080,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_source_mask_2",
+      "valid_pixels": 1243080,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_accepted_fraction_3",
+      "valid_pixels": 1243080,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_missing_fraction_3",
+      "valid_pixels": 1243080,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_nonpositive_power_3",
+      "valid_pixels": 1243080,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_source_mask_3",
+      "valid_pixels": 1243080,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_accepted_fraction_4",
+      "valid_pixels": 1243080,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_missing_fraction_4",
+      "valid_pixels": 1243080,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_nonpositive_power_4",
+      "valid_pixels": 1243080,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_source_mask_4",
+      "valid_pixels": 1243080,
+      "available": true,
+      "reason": null
+    }
+  ],
+  "all_saved_rasters_and_previews_checked": true
+}

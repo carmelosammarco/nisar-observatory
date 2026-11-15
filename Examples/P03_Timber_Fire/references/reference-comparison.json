@@ -1,0 +1,81 @@
+{
+  "optical_auc_vs_current_perimeter": 0.9817679524421692,
+  "created": "2026-10-20T17:13:21.340619+00:00",
+  "status": "REFERENCE_COMPARISON_ONLY_NOT_A_P03_RESULT",
+  "crs": "EPSG:32610",
+  "bounds": [
+    603600.0,
+    4001040.0,
+    628860.0,
+    4023500.0
+  ],
+  "shape": [
+    1123,
+    1263
+  ],
+  "source_bbox": [
+    -121.8484,
+    36.1455,
+    -121.564,
+    36.351
+  ],
+  "window_note": "UTM rectangle inferred from publisher geographic envelope and snapped to 20 m. Its 56,733.96 ha matches the reported 56,734 ha. Original coordinates are not directly supplied; rounding remains a small positional uncertainty.",
+  "published_mask_vs_current_perimeter": {
+    "tp": 188077,
+    "fp": 680,
+    "fn": 68244,
+    "tn": 873827,
+    "precision": 0.9963974845965977,
+    "recall": 0.7337557203662595,
+    "f1": 0.8451417504347553,
+    "iou": 0.7318142730962136,
+    "mapped_ha": 7550.28,
+    "reference_ha": 10252.84,
+    "valid_ha": 45233.12
+  },
+  "optical_mask_vs_current_perimeter": {
+    "tp": 240043,
+    "fp": 5076,
+    "fn": 16278,
+    "tn": 869431,
+    "precision": 0.9792916909745879,
+    "recall": 0.9364936934546916,
+    "f1": 0.9574146458200382,
+    "iou": 0.9183081672704736,
+    "mapped_ha": 9804.76,
+    "reference_ha": 10252.84,
+    "valid_ha": 45233.12
+  },
+  "published_mask_vs_optical": {
+    "tp": 186331,
+    "fp": 2426,
+    "fn": 58788,
+    "tn": 883283,
+    "precision": 0.9871474965166854,
+    "recall": 0.7601654706489501,
+    "f1": 0.858913606652592,
+    "iou": 0.7527156678583692,
+    "mapped_ha": 7550.28,
+    "reference_ha": 9804.76,
+    "valid_ha": 45233.12
+  },
+  "published_vector_area_ha": 7527.0,
+  "sentinel_ids": [
+    "S2C_10SFF_20260801_0_L2A",
+    "S2A_10SFF_20260912_1_L2A"
+  ],
+  "paper_targets": {
+    "NISAR_auc": 0.984,
+    "NISAR_precision": 1.0,
+    "NISAR_recall": 0.73,
+    "NISAR_F1": 0.84,
+    "NISAR_mapped_ha": 7527,
+    "reference_ha": 10280
+  },
+  "limits": [
+    "Published vector outline is an author-derived result, not app processing.",
+    "NIFC current perimeter differs from the study snapshot.",
+    "No NISAR validity or per-track terrain/water mask is imposed on these reference-only metrics.",
+    "Paper AUC requires continuous radar scores; cannot be computed from the published binary polygon alone."
+  ]
+}

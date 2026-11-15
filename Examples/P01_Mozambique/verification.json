@@ -1,0 +1,242 @@
+{
+  "job_id": "a6ef1e31e66342eabc9ebac7676e9328",
+  "tool": "P01",
+  "input_count": 2,
+  "input_bytes": 123790646,
+  "checksums_verified": true,
+  "browser_start_verified": false,
+  "request": {
+    "bbox": [
+      32.9,
+      -24.65,
+      33.14,
+      -24.43
+    ],
+    "granules": [
+      "subset-5cd6e37b9e9335e8ecdf7669d38abf46",
+      "subset-d199429468cfcff711fe8c797f0abeca"
+    ],
+    "projects": [
+      "P01"
+    ],
+    "options": {
+      "resolution": 100.0,
+      "water_threshold": -17.0,
+      "water_method": "single",
+      "min_valid_fraction": 0.5,
+      "flood_date": "2026-01-17",
+      "channel": "HHHH"
+    },
+    "display": {
+      "palette": "standard",
+      "mode": "shared",
+      "layer": "event",
+      "unit": "class",
+      "low": null,
+      "high": null,
+      "category_colors": {},
+      "category_opacity": {}
+    }
+  },
+  "metrics": {
+    "common_valid_area_km2": 593.92,
+    "baseline_water_candidate_km2": 25.16,
+    "latest_water_candidate_km2": 100.65,
+    "water_gain_km2": 90.47,
+    "water_loss_km2": 14.98,
+    "net_water_change_km2": 75.49,
+    "new_water_candidate_km2": 90.47,
+    "observed_dry_again_km2": 0.0,
+    "unresolved_water_candidate_km2": 90.47
+  },
+  "grid": {
+    "crs": "EPSG:6933",
+    "resolution_m": 100.0,
+    "shape": [
+      256,
+      232
+    ],
+    "bbox": [
+      32.9,
+      -24.65,
+      33.14,
+      -24.43
+    ]
+  },
+  "display": {
+    "palette": "standard",
+    "mode": "shared",
+    "layer": "event",
+    "unit": "class",
+    "low": null,
+    "high": null,
+    "category_colors": {},
+    "category_opacity": {}
+  },
+  "source_errors": [],
+  "processing_remote_bytes": 0,
+  "numeric_raster_checked": "event",
+  "map_image_with_legend_checked": true,
+  "opening_map_export": "references/review-opening-map.png",
+  "review_date": "2026-10-22",
+  "scientific_accuracy": "Not established by engineering checks; read tutorial comparison and limitations.",
+  "all_map_checks": [
+    {
+      "layer": "backscatter",
+      "valid_pixels": 59392,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "observation_0",
+      "valid_pixels": 59392,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "observation_1",
+      "valid_pixels": 59392,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "change",
+      "valid_pixels": 59392,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "variability",
+      "valid_pixels": 59392,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "count",
+      "valid_pixels": 59392,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "baseline_departure",
+      "valid_pixels": 59392,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "standardized_departure",
+      "valid_pixels": 59392,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "water",
+      "valid_pixels": 59392,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "water_state",
+      "valid_pixels": 59392,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "threshold_sensitive",
+      "valid_pixels": 59392,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "occupancy",
+      "valid_pixels": 59392,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "event_baseline_departure",
+      "valid_pixels": 59392,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "event",
+      "valid_pixels": 59392,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "recovery",
+      "valid_pixels": 0,
+      "available": false,
+      "reason": "Recovery cannot be assessed: no acquisition after the comparison date is selected. Add later compatible observations to look for a return to dry."
+    },
+    {
+      "layer": "recovery_lower_days",
+      "valid_pixels": 0,
+      "available": false,
+      "reason": "Recovery cannot be assessed: no acquisition after the comparison date is selected. Add later compatible observations to look for a return to dry."
+    },
+    {
+      "layer": "recovery_upper_days",
+      "valid_pixels": 0,
+      "available": false,
+      "reason": "Recovery cannot be assessed: no acquisition after the comparison date is selected. Add later compatible observations to look for a return to dry."
+    },
+    {
+      "layer": "unresolved",
+      "valid_pixels": 9047,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_accepted_fraction_0",
+      "valid_pixels": 59392,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_missing_fraction_0",
+      "valid_pixels": 59392,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_nonpositive_power_0",
+      "valid_pixels": 59392,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_source_mask_0",
+      "valid_pixels": 59392,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_accepted_fraction_1",
+      "valid_pixels": 59392,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_missing_fraction_1",
+      "valid_pixels": 59392,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_nonpositive_power_1",
+      "valid_pixels": 59392,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_source_mask_1",
+      "valid_pixels": 59392,
+      "available": true,
+      "reason": null
+    }
+  ],
+  "all_saved_rasters_and_previews_checked": true
+}

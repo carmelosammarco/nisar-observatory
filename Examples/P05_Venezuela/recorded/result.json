@@ -1,0 +1,2178 @@
+{
+  "project": "P05",
+  "title": "Earthquake interval \u00b7 relative LOS coverage mosaic",
+  "unit": "cm",
+  "series": [
+    {
+      "date": "2026-06-13T10:06:23Z",
+      "end": "2026-06-25T10:06:22Z",
+      "median_mm": -25.916259765625,
+      "p10_mm": -49.45685577392578,
+      "p90_mm": 3.2274363040924072,
+      "valid_fraction": 0.05330314790858128,
+      "comparison_pixels": 37083,
+      "interval_days": 11.999988425925926,
+      "median_rate_mm_day": -2.1596903800964355,
+      "median_cm": -2.5916259765625,
+      "group": "162_A_006_4000_SH_P05023"
+    },
+    {
+      "date": "2026-06-13T10:06:56Z",
+      "end": "2026-06-25T10:06:55Z",
+      "median_mm": -34.5131950378418,
+      "p10_mm": -204.4875946044922,
+      "p90_mm": 82.29654693603516,
+      "valid_fraction": 0.3167299123185281,
+      "comparison_pixels": 220349,
+      "interval_days": 11.999988425925926,
+      "median_rate_mm_day": -2.8761024475097656,
+      "median_cm": -3.4513195037841795,
+      "group": "162_A_007_4000_SH_P05023"
+    },
+    {
+      "date": "2026-06-18T09:58:36Z",
+      "end": "2026-06-30T09:58:35Z",
+      "median_mm": -6.269143581390381,
+      "p10_mm": -208.84844970703125,
+      "p90_mm": 33.659542083740234,
+      "valid_fraction": 0.07211872933735805,
+      "comparison_pixels": 50173,
+      "interval_days": 11.999988425925926,
+      "median_rate_mm_day": -0.5224291086196899,
+      "median_cm": -0.6269143581390381,
+      "group": "061_A_007_4000_SH_P05023"
+    }
+  ],
+  "metrics": {
+    "valid_pixels": 278983,
+    "valid_fraction": 0.4010104930286043,
+    "median": -2.2451109886169434,
+    "p10": -19.17642593383789,
+    "p90": 7.876505374908447,
+    "mapped_area_km2": 22517.262803708938,
+    "event_groups": 3,
+    "overlap_area_km2": 2231.120518751774,
+    "reference_pixels": 979
+  },
+  "notes": [
+    "Each mosaic cell comes from one event group; the selected reference mode is recorded; dates and radar look vectors vary. Inspect the source-group and overlap-difference maps. This is not a common-date time series, east/west motion decomposition or a damage map.",
+    "The overlap difference includes viewing geometry, different post-event dates, reference choices and measurement errors; it is not an accuracy estimate.",
+    "All plotted regional comparisons use the same pixels valid on every selected date or pair. Per-date coverage is shown separately; missing coverage is never reported as zero change.",
+    "The shortest event-bracketing interval is selected. Any signal may also include other changes within that interval; this is not a building-damage map.",
+    "The main earthquake map is displacement in cm across the selected interval, not a rate. Positive is toward the satellite and negative away; neither is automatically east/west or up/down. Raw measured pairs in mm and interval rates remain in Advanced maps.",
+    "Each point is a separate pair interval, not a cumulative displacement time series or a fitted velocity.",
+    "Conversion is \u2212\u03bb \u00d7 (phase \u2212 reference median)/(4\u03c0), in millimeters. Check product sign convention before assigning toward/away language.",
+    "Only the retained native connected component is used. Read the correction manifest: ionospheric subtraction is optional; tropospheric and tidal corrections are not assumed.",
+    "Reference stability is an assumption. No vertical motion, structural safety, failure probability or thaw depth is inferred.",
+    "Input is a local native-grid area extract, not a complete original NASA product; only the saved rectangle can be analyzed.",
+    "Only native connected component 1 retained before averaging. Labels are file-local; see the correction manifest for any explicitly applied screen."
+  ],
+  "extra": {
+    "event_mosaic": {
+      "groups": [
+        {
+          "index": 1,
+          "group": "061_A_007_4000_SH_P05023",
+          "source_id": "subset-d19d37d31a7ea07b613d70f50ef575f2",
+          "start": "2026-06-18T09:58:36Z",
+          "end": "2026-06-30T09:58:35Z",
+          "reference_pixels": 979,
+          "valid_pixels": 50173,
+          "reference_diagnostics": {
+            "domain_reference_version": "1.1",
+            "support_scope": "Reference support is preserved independently of the analysis domain; output summaries use the domain only.",
+            "fixed_pixels": 979,
+            "area_km2": 79.01700205686745,
+            "pairs": [
+              {
+                "source": "subset-d19d37d31a7ea07b613d70f50ef575f2",
+                "reference_pixels": 979,
+                "reference_phase_rad": 23.138702392578125,
+                "reference_phase_p10_rad": 22.274839019775392,
+                "reference_phase_p90_rad": 24.31340980529785,
+                "interval_days": 11.999988425925926
+              }
+            ]
+          },
+          "corrections": [
+            {
+              "source": "subset-d19d37d31a7ea07b613d70f50ef575f2",
+              "applied": [
+                {
+                  "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen",
+                  "operation": "subtract",
+                  "units": "radians",
+                  "basis": "Delivered GUNW screen is not applied by default; explicit user request."
+                }
+              ]
+            }
+          ],
+          "event_controls": [],
+          "pair_network": {
+            "epochs": 2,
+            "pairs": 1,
+            "connected_components": 1,
+            "cycle_rank": 0,
+            "triangle_closures": [],
+            "inversion_performed": false,
+            "interpretation": "Closure is an internal consistency check, not proof of displacement accuracy. Pair endpoints must match exactly; no interpolation or time-series inversion is performed."
+          },
+          "network_model": null,
+          "phase_reference_sensitivity": [],
+          "report": {
+            "headline": "What these observations show",
+            "findings": [
+              "1 compatible GUNW observations cover 2026-06-18 to 2026-06-30. Regional comparisons use 50,173 common analysis cells (4049.561 km\u00b2).",
+              "Reference uses 979 identical cells across pairs. Pair network: 2 epochs, 1 connected component(s), 0 redundant edge(s). Read the P04 motion-model status or the other phase tools\u2019 network-model status to see whether reconstruction was supported.",
+              "Selected event interval: 2026-06-18 to 2026-06-30. It strictly brackets the supplied date and is the shortest matching selected pair; other changes in that interval are not excluded.",
+              "Relative LOS displacement across this interval: spatial median -0.627 cm, p10 -20.885 cm and p90 3.366 cm. Positive is toward the satellite and negative away, relative to the saved reference; these spatial percentiles are not accuracy bounds."
+            ],
+            "comparison_basis": "fixed common footprint across all selected observations",
+            "next_checks": [
+              "Inspect observation counts and source quality before interpreting a pattern.",
+              "Compare the map and observed dates; blank pixels are missing evidence.",
+              "Use independent observations to test environmental attribution."
+            ],
+            "validation": "Synthetic engineering tests check known calculations and missing-data behavior; independent real-world accuracy is not established."
+          }
+        },
+        {
+          "index": 2,
+          "group": "162_A_006_4000_SH_P05023",
+          "source_id": "subset-85edd49270001ced9c8aaa5fcee26020",
+          "start": "2026-06-13T10:06:23Z",
+          "end": "2026-06-25T10:06:22Z",
+          "reference_pixels": 979,
+          "valid_pixels": 37083,
+          "reference_diagnostics": {
+            "domain_reference_version": "1.1",
+            "support_scope": "Reference support is preserved independently of the analysis domain; output summaries use the domain only.",
+            "fixed_pixels": 979,
+            "area_km2": 79.01700205686745,
+            "pairs": [
+              {
+                "source": "subset-85edd49270001ced9c8aaa5fcee26020",
+                "reference_pixels": 979,
+                "reference_phase_rad": -7.581697463989258,
+                "reference_phase_p10_rad": -9.371780395507812,
+                "reference_phase_p90_rad": -6.691695213317871,
+                "interval_days": 11.999988425925926
+              }
+            ]
+          },
+          "corrections": [
+            {
+              "source": "subset-85edd49270001ced9c8aaa5fcee26020",
+              "applied": [
+                {
+                  "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen",
+                  "operation": "subtract",
+                  "units": "radians",
+                  "basis": "Delivered GUNW screen is not applied by default; explicit user request."
+                }
+              ]
+            }
+          ],
+          "event_controls": [],
+          "pair_network": {
+            "epochs": 2,
+            "pairs": 1,
+            "connected_components": 1,
+            "cycle_rank": 0,
+            "triangle_closures": [],
+            "inversion_performed": false,
+            "interpretation": "Closure is an internal consistency check, not proof of displacement accuracy. Pair endpoints must match exactly; no interpolation or time-series inversion is performed."
+          },
+          "network_model": null,
+          "phase_reference_sensitivity": [],
+          "report": {
+            "headline": "What these observations show",
+            "findings": [
+              "1 compatible GUNW observations cover 2026-06-13 to 2026-06-25. Regional comparisons use 37,083 common analysis cells (2993.041 km\u00b2).",
+              "Reference uses 979 identical cells across pairs. Pair network: 2 epochs, 1 connected component(s), 0 redundant edge(s). Read the P04 motion-model status or the other phase tools\u2019 network-model status to see whether reconstruction was supported.",
+              "Selected event interval: 2026-06-13 to 2026-06-25. It strictly brackets the supplied date and is the shortest matching selected pair; other changes in that interval are not excluded.",
+              "Relative LOS displacement across this interval: spatial median -2.592 cm, p10 -4.946 cm and p90 0.323 cm. Positive is toward the satellite and negative away, relative to the saved reference; these spatial percentiles are not accuracy bounds."
+            ],
+            "comparison_basis": "fixed common footprint across all selected observations",
+            "next_checks": [
+              "Inspect observation counts and source quality before interpreting a pattern.",
+              "Compare the map and observed dates; blank pixels are missing evidence.",
+              "Use independent observations to test environmental attribution."
+            ],
+            "validation": "Synthetic engineering tests check known calculations and missing-data behavior; independent real-world accuracy is not established."
+          }
+        },
+        {
+          "index": 3,
+          "group": "162_A_007_4000_SH_P05023",
+          "source_id": "subset-1ef777939636f7bfe8461f14bc1d97d8",
+          "start": "2026-06-13T10:06:56Z",
+          "end": "2026-06-25T10:06:55Z",
+          "reference_pixels": 979,
+          "valid_pixels": 220349,
+          "reference_diagnostics": {
+            "domain_reference_version": "1.1",
+            "support_scope": "Reference support is preserved independently of the analysis domain; output summaries use the domain only.",
+            "fixed_pixels": 979,
+            "area_km2": 79.01700205686745,
+            "pairs": [
+              {
+                "source": "subset-1ef777939636f7bfe8461f14bc1d97d8",
+                "reference_pixels": 979,
+                "reference_phase_rad": -20.11795425415039,
+                "reference_phase_p10_rad": -21.781361389160157,
+                "reference_phase_p90_rad": -19.112226486206055,
+                "interval_days": 11.999988425925926
+              }
+            ]
+          },
+          "corrections": [
+            {
+              "source": "subset-1ef777939636f7bfe8461f14bc1d97d8",
+              "applied": [
+                {
+                  "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen",
+                  "operation": "subtract",
+                  "units": "radians",
+                  "basis": "Delivered GUNW screen is not applied by default; explicit user request."
+                }
+              ]
+            }
+          ],
+          "event_controls": [],
+          "pair_network": {
+            "epochs": 2,
+            "pairs": 1,
+            "connected_components": 1,
+            "cycle_rank": 0,
+            "triangle_closures": [],
+            "inversion_performed": false,
+            "interpretation": "Closure is an internal consistency check, not proof of displacement accuracy. Pair endpoints must match exactly; no interpolation or time-series inversion is performed."
+          },
+          "network_model": null,
+          "phase_reference_sensitivity": [],
+          "report": {
+            "headline": "What these observations show",
+            "findings": [
+              "1 compatible GUNW observations cover 2026-06-13 to 2026-06-25. Regional comparisons use 220,349 common analysis cells (17784.798 km\u00b2).",
+              "Reference uses 979 identical cells across pairs. Pair network: 2 epochs, 1 connected component(s), 0 redundant edge(s). Read the P04 motion-model status or the other phase tools\u2019 network-model status to see whether reconstruction was supported.",
+              "Selected event interval: 2026-06-13 to 2026-06-25. It strictly brackets the supplied date and is the shortest matching selected pair; other changes in that interval are not excluded.",
+              "Relative LOS displacement across this interval: spatial median -3.451 cm, p10 -20.449 cm and p90 8.230 cm. Positive is toward the satellite and negative away, relative to the saved reference; these spatial percentiles are not accuracy bounds."
+            ],
+            "comparison_basis": "fixed common footprint across all selected observations",
+            "next_checks": [
+              "Inspect observation counts and source quality before interpreting a pattern.",
+              "Compare the map and observed dates; blank pixels are missing evidence.",
+              "Use independent observations to test environmental attribution."
+            ],
+            "validation": "Synthetic engineering tests check known calculations and missing-data behavior; independent real-world accuracy is not established."
+          }
+        }
+      ],
+      "selection": "Highest delivered accepted-sample coherence among valid event groups at each cell; ties use sorted group order. No overlap averaging or inferred spatial filling.",
+      "quantity": "Relative LOS change; viewing directions and time windows differ between groups.",
+      "reference": "All groups use the same 979 coherent physical reference cells inside the supplied reference. No event pixels are fitted to remove differences. Stability still requires independent justification.",
+      "reference_mode": "shared physical cells",
+      "shared_reference_pixels": 979,
+      "source_key": {
+        "1": "061_A_007_4000_SH_P05023",
+        "2": "162_A_006_4000_SH_P05023",
+        "3": "162_A_007_4000_SH_P05023"
+      },
+      "overlap_difference_cm": {
+        "valid_pixels": 27643,
+        "valid_fraction": 0.03973408078194624,
+        "median": 0.4873781204223633,
+        "p10": 0.20752020180225372,
+        "p90": 4.6202392578125
+      }
+    },
+    "event_measurement": {
+      "quantity": "relative line-of-sight displacement",
+      "unit": "cm",
+      "positive": "toward the satellite",
+      "negative": "away from the satellite",
+      "geometry": "Multiple same-direction tracks/frames; different LOS vectors are retained, not decomposed into east/up."
+    },
+    "event_selection": {
+      "event_date": "2026-06-24T22:05:04.053000Z",
+      "timing_precision": "timestamp",
+      "selection": "shortest strictly bracketing pair within each group",
+      "matching_pairs": 3
+    },
+    "support": {
+      "mode": "Union event mosaic; fixed common support only within each acquisition group, not across groups.",
+      "common_pixels": 979,
+      "common_area_km2": 79.01700205686745,
+      "common_fraction": 0.0014072157539169181,
+      "mosaic_pixels": 278983,
+      "mosaic_area_km2": 22517.262803708938,
+      "per_observation_valid_pixels": [
+        37083,
+        220349,
+        50173
+      ]
+    },
+    "independent_validation": {
+      "status": "not evaluated: mosaics have different spatial support and geometry; validate each group separately"
+    },
+    "method_references": [
+      "https://science.nasa.gov/earth/earth-observatory/where-venezuelas-earthquakes-shifted-the-ground/",
+      "https://nisar-docs.asf.alaska.edu/gunw/"
+    ],
+    "readiness": {
+      "ready": true,
+      "scope": "metadata only; no data downloaded",
+      "errors": [],
+      "warnings": [
+        "Event mosaics can combine different LOS directions, dates and reference origins. Read each source group before comparing colours across seams.",
+        "Free disk space is checked again before array and export writes. Other applications can consume space after this check.",
+        "Metadata checks do not establish usable pixel coverage or environmental accuracy; those require science reads and independent evidence."
+      ],
+      "checks": [
+        {
+          "label": "Selected sources",
+          "value": "3"
+        },
+        {
+          "label": "Product",
+          "value": "GUNW"
+        },
+        {
+          "label": "Analysis grid",
+          "value": "900 \u00d7 773 cells \u00b7 284.10 m spacing"
+        },
+        {
+          "label": "Reference",
+          "value": "Selected; usable pixels and sensitivity are checked from measurements. Stability remains an assumption."
+        },
+        {
+          "label": "Free runtime disk space",
+          "value": "439.63 GiB free \u00b7 512 MiB safety reserve"
+        },
+        {
+          "label": "Estimated grid working memory",
+          "value": "276 MiB \u00b7 excludes native reads, export and library overhead"
+        }
+      ],
+      "groups": [
+        {
+          "group": "061_A_007_4000_SH_P05023",
+          "count": 1,
+          "intervals": [
+            {
+              "start": "2026-06-18T09:58:36Z",
+              "end": "2026-06-30T09:58:35Z"
+            }
+          ]
+        },
+        {
+          "group": "162_A_006_4000_SH_P05023",
+          "count": 1,
+          "intervals": [
+            {
+              "start": "2026-06-13T10:06:23Z",
+              "end": "2026-06-25T10:06:22Z"
+            }
+          ]
+        },
+        {
+          "group": "162_A_007_4000_SH_P05023",
+          "count": 1,
+          "intervals": [
+            {
+              "start": "2026-06-13T10:06:56Z",
+              "end": "2026-06-25T10:06:55Z"
+            }
+          ]
+        }
+      ],
+      "stage_baselines": [],
+      "disk_space": {
+        "free_bytes": 472051683328,
+        "required_bytes": 0,
+        "reserve_bytes": 536870912,
+        "fits": true,
+        "scope": "Destination filesystem free space; estimates are not a reservation against other applications."
+      },
+      "estimated_trace_bytes": 0,
+      "estimated_trace_maps": 0,
+      "estimated_grid_bytes": 289411200,
+      "memory_budget_bytes": 3221225472
+    },
+    "result_passport": {
+      "contract_version": "1.1.0",
+      "method": "P05",
+      "algorithm_version": "0.4.3",
+      "record": {
+        "start": "2026-06-13T10:06:23Z",
+        "end": "2026-06-30T09:58:35Z"
+      },
+      "baseline": null,
+      "reference": {
+        "bbox": [
+          -68.9,
+          9.85,
+          -66.45,
+          10.15
+        ],
+        "polygon_names": [],
+        "meaning": "Data-suitable reference candidates do not independently establish stable ground. Reference changes shift relative values."
+      },
+      "support": {
+        "mode": "Union event mosaic; fixed common support only within each acquisition group, not across groups.",
+        "common_pixels": 979,
+        "common_area_km2": 79.01700205686745,
+        "common_fraction": 0.0014072157539169181,
+        "mosaic_pixels": 278983,
+        "mosaic_area_km2": 22517.262803708938,
+        "per_observation_valid_pixels": [
+          37083,
+          220349,
+          50173
+        ]
+      },
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "validation": "Engineering reproducibility and checksum checks are separate from independent scientific validation. Read the case-study comparison.",
+      "smoothing_contract": {
+        "version": "1.1.0",
+        "method": "normalized Gaussian",
+        "boundary": "reflect",
+        "minimum_finite_kernel_support": 0.3,
+        "fills_missing_centres": false
+      },
+      "execution_engine_version": null
+    },
+    "execution_fingerprint": "6d78bba10e8cced8849d59589ad586eae1494e33972a97a0250c223c0a306063"
+  },
+  "sources": [
+    {
+      "id": "subset-d19d37d31a7ea07b613d70f50ef575f2",
+      "catalog_id": "G4251311930-ASF",
+      "name": "NISAR_L2_PR_GUNW_023_061_A_007_024_4000_SH_20260618T095836_20260618T095911_20260630T095835_20260630T095910_P05023_N_F_J_001",
+      "start": "2026-06-18T09:58:36Z",
+      "end": "2026-06-30T09:58:35Z",
+      "group": "061_A_007_4000_SH_P05023",
+      "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/unwrappedPhase",
+      "reader_version": "0.3.3",
+      "quality_paths": [
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/mask",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/coherenceMagnitude",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/connectedComponents",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen"
+      ],
+      "additional_paths": {},
+      "attributes": {
+        "_FillValue": null,
+        "description": "Unwrapped interferogram between HH layers",
+        "grid_mapping": "projection",
+        "max_value": 36.79523849487305,
+        "mean_value": -4.3351850509643555,
+        "min_value": -36.52182388305664,
+        "sample_stddev": 6.914064407348633,
+        "units": "radians",
+        "native_spacing_source_crs": [
+          80.0,
+          80.0
+        ],
+        "native_epsg": 32620,
+        "source_validity_mask": {
+          "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/mask",
+          "rule": "Both reference and secondary subswath digits nonzero; fill and anomaly bits excluded before aggregation. Bit 24 records ionospheric interpolation, not an automatic rejection.",
+          "integer_precision": "Lossless uint32 decoding through float64 native read."
+        },
+        "retained_connected_component": 1,
+        "correction_manifest": [
+          {
+            "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen",
+            "operation": "subtract",
+            "units": "radians",
+            "basis": "Delivered GUNW screen is not applied by default; explicit user request."
+          }
+        ],
+        "native_finite_samples": 3203449,
+        "native_accepted_samples": 626528,
+        "native_accepted_fraction": 0.1955792022910307,
+        "minimum_native_valid_fraction": 0.5,
+        "native_quality_before_aggregation": true,
+        "source_subset": {
+          "bbox": [
+            -69.0,
+            9.8,
+            -66.35,
+            11.55
+          ],
+          "source_id": "G4251311930-ASF",
+          "version": "area-1"
+        }
+      },
+      "cache_identity": "89fda8e3fb028903c19c1c6886d96a41de5329a8ee219f376af0ab1ac718691f",
+      "bytes_transferred": 0,
+      "cache_hit": false
+    },
+    {
+      "id": "subset-85edd49270001ced9c8aaa5fcee26020",
+      "catalog_id": "G4276284486-ASF",
+      "name": "NISAR_L2_PR_GUNW_022_162_A_006_023_4000_SH_20260613T100623_20260613T100657_20260625T100622_20260625T100656_P05023_N_F_J_001",
+      "start": "2026-06-13T10:06:23Z",
+      "end": "2026-06-25T10:06:22Z",
+      "group": "162_A_006_4000_SH_P05023",
+      "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/unwrappedPhase",
+      "reader_version": "0.3.3",
+      "quality_paths": [
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/mask",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/coherenceMagnitude",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/connectedComponents",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen"
+      ],
+      "additional_paths": {},
+      "attributes": {
+        "_FillValue": null,
+        "description": "Unwrapped interferogram between HH layers",
+        "grid_mapping": "projection",
+        "max_value": 39.6533088684082,
+        "mean_value": 15.295104026794434,
+        "min_value": -3.7603774070739746,
+        "sample_stddev": 7.534416675567627,
+        "units": "radians",
+        "native_spacing_source_crs": [
+          80.0,
+          80.0
+        ],
+        "native_epsg": 32619,
+        "source_validity_mask": {
+          "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/mask",
+          "rule": "Both reference and secondary subswath digits nonzero; fill and anomaly bits excluded before aggregation. Bit 24 records ionospheric interpolation, not an automatic rejection.",
+          "integer_precision": "Lossless uint32 decoding through float64 native read."
+        },
+        "retained_connected_component": 1,
+        "correction_manifest": [
+          {
+            "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen",
+            "operation": "subtract",
+            "units": "radians",
+            "basis": "Delivered GUNW screen is not applied by default; explicit user request."
+          }
+        ],
+        "native_finite_samples": 654082,
+        "native_accepted_samples": 459681,
+        "native_accepted_fraction": 0.702788029635428,
+        "minimum_native_valid_fraction": 0.5,
+        "native_quality_before_aggregation": true,
+        "source_subset": {
+          "bbox": [
+            -69.0,
+            9.8,
+            -66.35,
+            11.55
+          ],
+          "source_id": "G4276284486-ASF",
+          "version": "area-1"
+        }
+      },
+      "cache_identity": "f7249c4afd49a62bdd7cb5f15ebf551d02a5cfc9f7bfe278457ec5e21b2ca639",
+      "bytes_transferred": 0,
+      "cache_hit": false
+    },
+    {
+      "id": "subset-1ef777939636f7bfe8461f14bc1d97d8",
+      "catalog_id": "G4276300590-ASF",
+      "name": "NISAR_L2_PR_GUNW_022_162_A_007_023_4000_SH_20260613T100656_20260613T100731_20260625T100655_20260625T100730_P05023_N_F_J_001",
+      "start": "2026-06-13T10:06:56Z",
+      "end": "2026-06-25T10:06:55Z",
+      "group": "162_A_007_4000_SH_P05023",
+      "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/unwrappedPhase",
+      "reader_version": "0.3.3",
+      "quality_paths": [
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/mask",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/coherenceMagnitude",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/connectedComponents",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen"
+      ],
+      "additional_paths": {},
+      "attributes": {
+        "_FillValue": null,
+        "description": "Unwrapped interferogram between HH layers",
+        "grid_mapping": "projection",
+        "max_value": 48.899925231933594,
+        "mean_value": 15.357818603515625,
+        "min_value": -10.845358848571777,
+        "sample_stddev": 8.274709701538086,
+        "units": "radians",
+        "native_spacing_source_crs": [
+          80.0,
+          80.0
+        ],
+        "native_epsg": 32619,
+        "source_validity_mask": {
+          "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/mask",
+          "rule": "Both reference and secondary subswath digits nonzero; fill and anomaly bits excluded before aggregation. Bit 24 records ionospheric interpolation, not an automatic rejection.",
+          "integer_precision": "Lossless uint32 decoding through float64 native read."
+        },
+        "retained_connected_component": 1,
+        "correction_manifest": [
+          {
+            "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen",
+            "operation": "subtract",
+            "units": "radians",
+            "basis": "Delivered GUNW screen is not applied by default; explicit user request."
+          }
+        ],
+        "native_finite_samples": 6390268,
+        "native_accepted_samples": 2667901,
+        "native_accepted_fraction": 0.4174943836471334,
+        "minimum_native_valid_fraction": 0.5,
+        "native_quality_before_aggregation": true,
+        "source_subset": {
+          "bbox": [
+            -69.0,
+            9.8,
+            -66.35,
+            11.55
+          ],
+          "source_id": "G4276300590-ASF",
+          "version": "area-1"
+        }
+      },
+      "cache_identity": "34cac8d4cfffa4bb87c369bb32bb243c8e14d245ffc07ca73ee3f5a2568f7bb3",
+      "bytes_transferred": 0,
+      "cache_hit": false
+    }
+  ],
+  "status": "exploratory",
+  "algorithm_version": "0.4.3",
+  "report": {
+    "headline": "What these observations show",
+    "findings": [
+      "3 event groups (shared physical cells) map 22517.263 km\u00b2 of the selected region.",
+      "Relative LOS displacement median -2.245 cm; p10 -19.176, p90 7.877 cm across mapped cells. These describe this mosaic\u2019s spatial values, not earthquake-only motion or uncertainty.",
+      "Inspect per-group dates, references and the source key before comparing this multi-view display with a published map.",
+      "Overlapping referenced LOS views differ by a spatial median 0.487 cm and p90 4.620 cm. These are differences between views, not accuracy bounds. Check this disagreement before interpreting a mosaic seam as ground change."
+    ],
+    "comparison_basis": "Union event mosaic; fixed common support only within each acquisition group, not across groups.",
+    "next_checks": [
+      "Check reference stability independently.",
+      "Inspect each source group and overlap differences.",
+      "Compare against georeferenced independent displacement data."
+    ],
+    "validation": "Engineering behavior can be tested; independent geophysical accuracy is not established."
+  },
+  "display_preferences": {
+    "palette": "diverging",
+    "mode": "custom",
+    "layer": "event_displacement_cm",
+    "unit": "cm",
+    "low": -50.0,
+    "high": 50.0,
+    "category_colors": {},
+    "category_opacity": {}
+  },
+  "application_version": "0.9.0",
+  "processing_options": {
+    "apply_ionosphere": true,
+    "quake_mosaic": true,
+    "phase_network": false,
+    "event_timestamp": "2026-06-24T22:05:04.053000Z",
+    "resolution": 80.0,
+    "coherence": 0.3,
+    "min_valid_fraction": 0.5,
+    "reference_bbox": [
+      -68.9,
+      9.85,
+      -66.45,
+      10.15
+    ],
+    "event_date": "2026-06-24"
+  },
+  "created_at": "2026-11-01T18:52:06.625075+00:00",
+  "reading_guide": {
+    "version": "1.0",
+    "measurement": "Relative LOS displacement across an event-bracketing interval, or a coverage mosaic of separately measured groups.",
+    "colours": "Positive cm is toward the satellite and negative away, relative to the reference. Zero is relative zero, not proof of unchanged terrain. A mosaic can mix viewing directions and intervals; it cannot by itself separate east/west from vertical motion.",
+    "checks": "Check the event time, actual before/after dates, coherence, reference support and independent stability. Inspect individual groups, source-index and overlap-difference maps before interpreting seams. Spatial percentiles and overlap spread are not accuracy bounds.",
+    "cannot": "The pair contains all movement during its interval; it cannot isolate individual shocks, prove earthquake causation at every pixel or map building damage.",
+    "method": "P05",
+    "validation": "Source checksums verify input integrity. Replay checks verify reproducibility. Neither establishes independent environmental accuracy for this run."
+  },
+  "layers": [
+    {
+      "id": "group_1_count",
+      "label": "Number of quality-screened pair observations \u00b7 061_A_007_4000_SH_P05023",
+      "unit": "count",
+      "kind": "continuous",
+      "spatial_scope": "study domain",
+      "valid_pixels": 50173,
+      "valid_fraction": 0.07211872933735805,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 1.0,
+      "max": 2.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "group_1_count.png",
+      "raster": "group_1_count.tif"
+    },
+    {
+      "id": "group_1_reference_support",
+      "label": "Fixed reference support shared by every pair \u00b7 061_A_007_4000_SH_P05023",
+      "unit": "class",
+      "kind": "binary",
+      "spatial_scope": "reference support",
+      "classes": {
+        "0": "Outside reference support",
+        "1": "Reference cells used"
+      },
+      "valid_pixels": 50173,
+      "valid_fraction": 0.07211872933735805,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "group_1_reference_support.png",
+      "raster": "group_1_reference_support.tif"
+    },
+    {
+      "id": "group_1_interval_rate",
+      "label": "Relative phase-equivalent change divided by selected pair days \u00b7 061_A_007_4000_SH_P05023",
+      "unit": "mm/day",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "valid_pixels": 50173,
+      "valid_fraction": 0.07211872933735805,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": -38.093990325927734,
+      "max": 38.093990325927734,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "group_1_interval_rate.png",
+      "raster": "group_1_interval_rate.tif"
+    },
+    {
+      "id": "group_1_range",
+      "label": "Relative phase-equivalent range change \u00b7 061_A_007_4000_SH_P05023",
+      "unit": "mm",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "valid_pixels": 50173,
+      "valid_fraction": 0.07211872933735805,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": -457.12744140625,
+      "max": 457.12744140625,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "group_1_range.png",
+      "raster": "group_1_range.tif"
+    },
+    {
+      "id": "group_1_pair_0",
+      "label": "Pair \u00b7 2026-06-18 \u2192 2026-06-30 \u00b7 061_A_007_4000_SH_P05023",
+      "unit": "mm",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "frame_index": 0,
+      "start": "2026-06-18T09:58:36Z",
+      "end": "2026-06-30T09:58:35Z",
+      "valid_pixels": 50173,
+      "valid_fraction": 0.07211872933735805,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": -457.12744140625,
+      "max": 457.12744140625,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "group_1_pair_0.png",
+      "raster": "group_1_pair_0.tif"
+    },
+    {
+      "id": "group_1_event_displacement_cm",
+      "label": "Relative LOS displacement across the earthquake interval \u00b7 061_A_007_4000_SH_P05023",
+      "unit": "cm",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "start": "2026-06-18T09:58:36Z",
+      "end": "2026-06-30T09:58:35Z",
+      "valid_pixels": 50173,
+      "valid_fraction": 0.07211872933735805,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": -45.71274185180664,
+      "max": 45.71274185180664,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "group_1_event_displacement_cm.png",
+      "raster": "group_1_event_displacement_cm.tif"
+    },
+    {
+      "id": "quality_accepted_fraction_0_group_1",
+      "label": "accepted fraction \u00b7 2026-06-18 \u00b7 061_A_007_4000_SH_P05023",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 361389,
+      "valid_fraction": 0.5194609745579991,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_accepted_fraction_0_group_1.png",
+      "raster": "quality_accepted_fraction_0_group_1.tif"
+    },
+    {
+      "id": "quality_missing_fraction_0_group_1",
+      "label": "missing fraction \u00b7 2026-06-18 \u00b7 061_A_007_4000_SH_P05023",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 361389,
+      "valid_fraction": 0.5194609745579991,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_missing_fraction_0_group_1.png",
+      "raster": "quality_missing_fraction_0_group_1.tif"
+    },
+    {
+      "id": "quality_rejected_invalid_subswath_0_group_1",
+      "label": "rejected invalid subswath \u00b7 2026-06-18 \u00b7 061_A_007_4000_SH_P05023",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 361389,
+      "valid_fraction": 0.5194609745579991,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_rejected_invalid_subswath_0_group_1.png",
+      "raster": "quality_rejected_invalid_subswath_0_group_1.tif"
+    },
+    {
+      "id": "quality_rejected_source_anomaly_0_group_1",
+      "label": "rejected source anomaly \u00b7 2026-06-18 \u00b7 061_A_007_4000_SH_P05023",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 361389,
+      "valid_fraction": 0.5194609745579991,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_rejected_source_anomaly_0_group_1.png",
+      "raster": "quality_rejected_source_anomaly_0_group_1.tif"
+    },
+    {
+      "id": "quality_rejected_coherence_0_group_1",
+      "label": "rejected coherence \u00b7 2026-06-18 \u00b7 061_A_007_4000_SH_P05023",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 361389,
+      "valid_fraction": 0.5194609745579991,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_rejected_coherence_0_group_1.png",
+      "raster": "quality_rejected_coherence_0_group_1.tif"
+    },
+    {
+      "id": "quality_rejected_component_missing_0_group_1",
+      "label": "rejected component missing \u00b7 2026-06-18 \u00b7 061_A_007_4000_SH_P05023",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 361389,
+      "valid_fraction": 0.5194609745579991,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.0,
+      "max": 0.04680320620536804,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_rejected_component_missing_0_group_1.png",
+      "raster": "quality_rejected_component_missing_0_group_1.tif"
+    },
+    {
+      "id": "quality_rejected_other_component_0_group_1",
+      "label": "rejected other component \u00b7 2026-06-18 \u00b7 061_A_007_4000_SH_P05023",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 361389,
+      "valid_fraction": 0.5194609745579991,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_rejected_other_component_0_group_1.png",
+      "raster": "quality_rejected_other_component_0_group_1.tif"
+    },
+    {
+      "id": "quality_rejected_missing_correction_0_group_1",
+      "label": "rejected missing correction \u00b7 2026-06-18 \u00b7 061_A_007_4000_SH_P05023",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 361389,
+      "valid_fraction": 0.5194609745579991,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_rejected_missing_correction_0_group_1.png",
+      "raster": "quality_rejected_missing_correction_0_group_1.tif"
+    },
+    {
+      "id": "quality_ionosphere_interpolated_0_group_1",
+      "label": "ionosphere interpolated \u00b7 2026-06-18 \u00b7 061_A_007_4000_SH_P05023",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 82396,
+      "valid_fraction": 0.11843610751760816,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_ionosphere_interpolated_0_group_1.png",
+      "raster": "quality_ionosphere_interpolated_0_group_1.tif"
+    },
+    {
+      "id": "quality_coherence_0_group_1",
+      "label": "coherence \u00b7 2026-06-18 \u00b7 061_A_007_4000_SH_P05023",
+      "unit": "score",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 82396,
+      "valid_fraction": 0.11843610751760816,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.31379202008247375,
+      "max": 0.6771655082702637,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_coherence_0_group_1.png",
+      "raster": "quality_coherence_0_group_1.tif"
+    },
+    {
+      "id": "quality_ionospheric_phase_correction_0_group_1",
+      "label": "ionospheric phase correction \u00b7 2026-06-18 \u00b7 061_A_007_4000_SH_P05023",
+      "unit": "rad",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 82396,
+      "valid_fraction": 0.11843610751760816,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": -37.3869514465332,
+      "max": -28.786775588989258,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_ionospheric_phase_correction_0_group_1.png",
+      "raster": "quality_ionospheric_phase_correction_0_group_1.tif"
+    },
+    {
+      "id": "group_2_count",
+      "label": "Number of quality-screened pair observations \u00b7 162_A_006_4000_SH_P05023",
+      "unit": "count",
+      "kind": "continuous",
+      "spatial_scope": "study domain",
+      "valid_pixels": 37083,
+      "valid_fraction": 0.05330314790858128,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 1.0,
+      "max": 2.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "group_2_count.png",
+      "raster": "group_2_count.tif"
+    },
+    {
+      "id": "group_2_reference_support",
+      "label": "Fixed reference support shared by every pair \u00b7 162_A_006_4000_SH_P05023",
+      "unit": "class",
+      "kind": "binary",
+      "spatial_scope": "reference support",
+      "classes": {
+        "0": "Outside reference support",
+        "1": "Reference cells used"
+      },
+      "valid_pixels": 37083,
+      "valid_fraction": 0.05330314790858128,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "group_2_reference_support.png",
+      "raster": "group_2_reference_support.tif"
+    },
+    {
+      "id": "group_2_interval_rate",
+      "label": "Relative phase-equivalent change divided by selected pair days \u00b7 162_A_006_4000_SH_P05023",
+      "unit": "mm/day",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "valid_pixels": 37083,
+      "valid_fraction": 0.05330314790858128,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": -4.762288570404053,
+      "max": 4.762288570404053,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "group_2_interval_rate.png",
+      "raster": "group_2_interval_rate.tif"
+    },
+    {
+      "id": "group_2_range",
+      "label": "Relative phase-equivalent range change \u00b7 162_A_006_4000_SH_P05023",
+      "unit": "mm",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "valid_pixels": 37083,
+      "valid_fraction": 0.05330314790858128,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": -57.14741134643555,
+      "max": 57.14741134643555,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "group_2_range.png",
+      "raster": "group_2_range.tif"
+    },
+    {
+      "id": "group_2_pair_0",
+      "label": "Pair \u00b7 2026-06-13 \u2192 2026-06-25 \u00b7 162_A_006_4000_SH_P05023",
+      "unit": "mm",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "frame_index": 0,
+      "start": "2026-06-13T10:06:23Z",
+      "end": "2026-06-25T10:06:22Z",
+      "valid_pixels": 37083,
+      "valid_fraction": 0.05330314790858128,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": -57.14741134643555,
+      "max": 57.14741134643555,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "group_2_pair_0.png",
+      "raster": "group_2_pair_0.tif"
+    },
+    {
+      "id": "group_2_event_displacement_cm",
+      "label": "Relative LOS displacement across the earthquake interval \u00b7 162_A_006_4000_SH_P05023",
+      "unit": "cm",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "start": "2026-06-13T10:06:23Z",
+      "end": "2026-06-25T10:06:22Z",
+      "valid_pixels": 37083,
+      "valid_fraction": 0.05330314790858128,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": -5.714741230010986,
+      "max": 5.714741230010986,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "group_2_event_displacement_cm.png",
+      "raster": "group_2_event_displacement_cm.tif"
+    },
+    {
+      "id": "quality_accepted_fraction_0_group_2",
+      "label": "accepted fraction \u00b7 2026-06-13 \u00b7 162_A_006_4000_SH_P05023",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 223434,
+      "valid_fraction": 0.3211642949547219,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_accepted_fraction_0_group_2.png",
+      "raster": "quality_accepted_fraction_0_group_2.tif"
+    },
+    {
+      "id": "quality_missing_fraction_0_group_2",
+      "label": "missing fraction \u00b7 2026-06-13 \u00b7 162_A_006_4000_SH_P05023",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 223434,
+      "valid_fraction": 0.3211642949547219,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_missing_fraction_0_group_2.png",
+      "raster": "quality_missing_fraction_0_group_2.tif"
+    },
+    {
+      "id": "quality_rejected_invalid_subswath_0_group_2",
+      "label": "rejected invalid subswath \u00b7 2026-06-13 \u00b7 162_A_006_4000_SH_P05023",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 223434,
+      "valid_fraction": 0.3211642949547219,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_rejected_invalid_subswath_0_group_2.png",
+      "raster": "quality_rejected_invalid_subswath_0_group_2.tif"
+    },
+    {
+      "id": "quality_rejected_source_anomaly_0_group_2",
+      "label": "rejected source anomaly \u00b7 2026-06-13 \u00b7 162_A_006_4000_SH_P05023",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 223434,
+      "valid_fraction": 0.3211642949547219,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_rejected_source_anomaly_0_group_2.png",
+      "raster": "quality_rejected_source_anomaly_0_group_2.tif"
+    },
+    {
+      "id": "quality_rejected_coherence_0_group_2",
+      "label": "rejected coherence \u00b7 2026-06-13 \u00b7 162_A_006_4000_SH_P05023",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 223434,
+      "valid_fraction": 0.3211642949547219,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.0,
+      "max": 0.5303808450698853,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_rejected_coherence_0_group_2.png",
+      "raster": "quality_rejected_coherence_0_group_2.tif"
+    },
+    {
+      "id": "quality_rejected_component_missing_0_group_2",
+      "label": "rejected component missing \u00b7 2026-06-13 \u00b7 162_A_006_4000_SH_P05023",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 223434,
+      "valid_fraction": 0.3211642949547219,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_rejected_component_missing_0_group_2.png",
+      "raster": "quality_rejected_component_missing_0_group_2.tif"
+    },
+    {
+      "id": "quality_rejected_other_component_0_group_2",
+      "label": "rejected other component \u00b7 2026-06-13 \u00b7 162_A_006_4000_SH_P05023",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 223434,
+      "valid_fraction": 0.3211642949547219,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_rejected_other_component_0_group_2.png",
+      "raster": "quality_rejected_other_component_0_group_2.tif"
+    },
+    {
+      "id": "quality_rejected_missing_correction_0_group_2",
+      "label": "rejected missing correction \u00b7 2026-06-13 \u00b7 162_A_006_4000_SH_P05023",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 223434,
+      "valid_fraction": 0.3211642949547219,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_rejected_missing_correction_0_group_2.png",
+      "raster": "quality_rejected_missing_correction_0_group_2.tif"
+    },
+    {
+      "id": "quality_ionosphere_interpolated_0_group_2",
+      "label": "ionosphere interpolated \u00b7 2026-06-13 \u00b7 162_A_006_4000_SH_P05023",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 41038,
+      "valid_fraction": 0.058988069570217044,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.5211759209632874,
+      "max": 1.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_ionosphere_interpolated_0_group_2.png",
+      "raster": "quality_ionosphere_interpolated_0_group_2.tif"
+    },
+    {
+      "id": "quality_coherence_0_group_2",
+      "label": "coherence \u00b7 2026-06-13 \u00b7 162_A_006_4000_SH_P05023",
+      "unit": "score",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 41038,
+      "valid_fraction": 0.058988069570217044,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.3407980501651764,
+      "max": 0.8118808269500732,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_coherence_0_group_2.png",
+      "raster": "quality_coherence_0_group_2.tif"
+    },
+    {
+      "id": "quality_ionospheric_phase_correction_0_group_2",
+      "label": "ionospheric phase correction \u00b7 2026-06-13 \u00b7 162_A_006_4000_SH_P05023",
+      "unit": "rad",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 41038,
+      "valid_fraction": 0.058988069570217044,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 28.72908592224121,
+      "max": 36.17636489868164,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_ionospheric_phase_correction_0_group_2.png",
+      "raster": "quality_ionospheric_phase_correction_0_group_2.tif"
+    },
+    {
+      "id": "group_3_count",
+      "label": "Number of quality-screened pair observations \u00b7 162_A_007_4000_SH_P05023",
+      "unit": "count",
+      "kind": "continuous",
+      "spatial_scope": "study domain",
+      "valid_pixels": 220349,
+      "valid_fraction": 0.3167299123185281,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 1.0,
+      "max": 2.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "group_3_count.png",
+      "raster": "group_3_count.tif"
+    },
+    {
+      "id": "group_3_reference_support",
+      "label": "Fixed reference support shared by every pair \u00b7 162_A_007_4000_SH_P05023",
+      "unit": "class",
+      "kind": "binary",
+      "spatial_scope": "reference support",
+      "classes": {
+        "0": "Outside reference support",
+        "1": "Reference cells used"
+      },
+      "valid_pixels": 220349,
+      "valid_fraction": 0.3167299123185281,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "group_3_reference_support.png",
+      "raster": "group_3_reference_support.tif"
+    },
+    {
+      "id": "group_3_interval_rate",
+      "label": "Relative phase-equivalent change divided by selected pair days \u00b7 162_A_007_4000_SH_P05023",
+      "unit": "mm/day",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "valid_pixels": 220349,
+      "valid_fraction": 0.3167299123185281,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": -31.376161575317383,
+      "max": 31.376161575317383,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "group_3_interval_rate.png",
+      "raster": "group_3_interval_rate.tif"
+    },
+    {
+      "id": "group_3_range",
+      "label": "Relative phase-equivalent range change \u00b7 162_A_007_4000_SH_P05023",
+      "unit": "mm",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "valid_pixels": 220349,
+      "valid_fraction": 0.3167299123185281,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": -376.5135803222656,
+      "max": 376.5135803222656,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "group_3_range.png",
+      "raster": "group_3_range.tif"
+    },
+    {
+      "id": "group_3_pair_0",
+      "label": "Pair \u00b7 2026-06-13 \u2192 2026-06-25 \u00b7 162_A_007_4000_SH_P05023",
+      "unit": "mm",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "frame_index": 0,
+      "start": "2026-06-13T10:06:56Z",
+      "end": "2026-06-25T10:06:55Z",
+      "valid_pixels": 220349,
+      "valid_fraction": 0.3167299123185281,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": -376.5135803222656,
+      "max": 376.5135803222656,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "group_3_pair_0.png",
+      "raster": "group_3_pair_0.tif"
+    },
+    {
+      "id": "group_3_event_displacement_cm",
+      "label": "Relative LOS displacement across the earthquake interval \u00b7 162_A_007_4000_SH_P05023",
+      "unit": "cm",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "start": "2026-06-13T10:06:56Z",
+      "end": "2026-06-25T10:06:55Z",
+      "valid_pixels": 220349,
+      "valid_fraction": 0.3167299123185281,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": -37.6513557434082,
+      "max": 37.6513557434082,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "group_3_event_displacement_cm.png",
+      "raster": "group_3_event_displacement_cm.tif"
+    },
+    {
+      "id": "quality_accepted_fraction_0_group_3",
+      "label": "accepted fraction \u00b7 2026-06-13 \u00b7 162_A_007_4000_SH_P05023",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 599227,
+      "valid_fraction": 0.8613295960902688,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_accepted_fraction_0_group_3.png",
+      "raster": "quality_accepted_fraction_0_group_3.tif"
+    },
+    {
+      "id": "quality_missing_fraction_0_group_3",
+      "label": "missing fraction \u00b7 2026-06-13 \u00b7 162_A_007_4000_SH_P05023",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 599227,
+      "valid_fraction": 0.8613295960902688,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_missing_fraction_0_group_3.png",
+      "raster": "quality_missing_fraction_0_group_3.tif"
+    },
+    {
+      "id": "quality_rejected_invalid_subswath_0_group_3",
+      "label": "rejected invalid subswath \u00b7 2026-06-13 \u00b7 162_A_007_4000_SH_P05023",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 599227,
+      "valid_fraction": 0.8613295960902688,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_rejected_invalid_subswath_0_group_3.png",
+      "raster": "quality_rejected_invalid_subswath_0_group_3.tif"
+    },
+    {
+      "id": "quality_rejected_source_anomaly_0_group_3",
+      "label": "rejected source anomaly \u00b7 2026-06-13 \u00b7 162_A_007_4000_SH_P05023",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 599227,
+      "valid_fraction": 0.8613295960902688,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_rejected_source_anomaly_0_group_3.png",
+      "raster": "quality_rejected_source_anomaly_0_group_3.tif"
+    },
+    {
+      "id": "quality_rejected_coherence_0_group_3",
+      "label": "rejected coherence \u00b7 2026-06-13 \u00b7 162_A_007_4000_SH_P05023",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 599227,
+      "valid_fraction": 0.8613295960902688,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_rejected_coherence_0_group_3.png",
+      "raster": "quality_rejected_coherence_0_group_3.tif"
+    },
+    {
+      "id": "quality_rejected_component_missing_0_group_3",
+      "label": "rejected component missing \u00b7 2026-06-13 \u00b7 162_A_007_4000_SH_P05023",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 599227,
+      "valid_fraction": 0.8613295960902688,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_rejected_component_missing_0_group_3.png",
+      "raster": "quality_rejected_component_missing_0_group_3.tif"
+    },
+    {
+      "id": "quality_rejected_other_component_0_group_3",
+      "label": "rejected other component \u00b7 2026-06-13 \u00b7 162_A_007_4000_SH_P05023",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 599227,
+      "valid_fraction": 0.8613295960902688,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_rejected_other_component_0_group_3.png",
+      "raster": "quality_rejected_other_component_0_group_3.tif"
+    },
+    {
+      "id": "quality_rejected_missing_correction_0_group_3",
+      "label": "rejected missing correction \u00b7 2026-06-13 \u00b7 162_A_007_4000_SH_P05023",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 599227,
+      "valid_fraction": 0.8613295960902688,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_rejected_missing_correction_0_group_3.png",
+      "raster": "quality_rejected_missing_correction_0_group_3.tif"
+    },
+    {
+      "id": "quality_ionosphere_interpolated_0_group_3",
+      "label": "ionosphere interpolated \u00b7 2026-06-13 \u00b7 162_A_007_4000_SH_P05023",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 267735,
+      "valid_fraction": 0.3848426045709358,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.28489890694618225,
+      "max": 1.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_ionosphere_interpolated_0_group_3.png",
+      "raster": "quality_ionosphere_interpolated_0_group_3.tif"
+    },
+    {
+      "id": "quality_coherence_0_group_3",
+      "label": "coherence \u00b7 2026-06-13 \u00b7 162_A_007_4000_SH_P05023",
+      "unit": "score",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 267735,
+      "valid_fraction": 0.3848426045709358,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.32321488857269287,
+      "max": 0.8073238134384155,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_coherence_0_group_3.png",
+      "raster": "quality_coherence_0_group_3.tif"
+    },
+    {
+      "id": "quality_ionospheric_phase_correction_0_group_3",
+      "label": "ionospheric phase correction \u00b7 2026-06-13 \u00b7 162_A_007_4000_SH_P05023",
+      "unit": "rad",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 267735,
+      "valid_fraction": 0.3848426045709358,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 19.84634017944336,
+      "max": 43.811981201171875,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "quality_ionospheric_phase_correction_0_group_3.png",
+      "raster": "quality_ionospheric_phase_correction_0_group_3.tif"
+    },
+    {
+      "id": "observation_0",
+      "label": "Relative LOS change \u00b7 2026-06-13 \u2192 2026-06-25 \u00b7 162_A_006_4000_SH_P05023",
+      "unit": "cm",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "frame_index": 0,
+      "start": "2026-06-13T10:06:23Z",
+      "end": "2026-06-25T10:06:22Z",
+      "group": "162_A_006_4000_SH_P05023",
+      "valid_pixels": 37083,
+      "valid_fraction": 0.05330314790858128,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": -5.714741230010986,
+      "max": 5.714741230010986,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "observation_0.png",
+      "raster": "observation_0.tif"
+    },
+    {
+      "id": "observation_1",
+      "label": "Relative LOS change \u00b7 2026-06-13 \u2192 2026-06-25 \u00b7 162_A_007_4000_SH_P05023",
+      "unit": "cm",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "frame_index": 1,
+      "start": "2026-06-13T10:06:56Z",
+      "end": "2026-06-25T10:06:55Z",
+      "group": "162_A_007_4000_SH_P05023",
+      "valid_pixels": 220349,
+      "valid_fraction": 0.3167299123185281,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": -37.6513557434082,
+      "max": 37.6513557434082,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "observation_1.png",
+      "raster": "observation_1.tif"
+    },
+    {
+      "id": "observation_2",
+      "label": "Relative LOS change \u00b7 2026-06-18 \u2192 2026-06-30 \u00b7 061_A_007_4000_SH_P05023",
+      "unit": "cm",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "frame_index": 2,
+      "start": "2026-06-18T09:58:36Z",
+      "end": "2026-06-30T09:58:35Z",
+      "group": "061_A_007_4000_SH_P05023",
+      "valid_pixels": 50173,
+      "valid_fraction": 0.07211872933735805,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": -45.71274185180664,
+      "max": 45.71274185180664,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "observation_2.png",
+      "raster": "observation_2.tif"
+    },
+    {
+      "id": "event_displacement_cm",
+      "label": "Relative LOS displacement \u00b7 event coverage mosaic",
+      "unit": "cm",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "valid_pixels": 278983,
+      "valid_fraction": 0.4010104930286043,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": -37.31881332397461,
+      "max": 37.31881332397461,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "event_displacement_cm.png",
+      "raster": "event_displacement_cm.tif"
+    },
+    {
+      "id": "event_source",
+      "label": "Source group used at each cell \u00b7 see source key",
+      "unit": "source index",
+      "kind": "categorical",
+      "spatial_scope": "study domain",
+      "classes": {
+        "1": "061_A_007_4000_SH_P05023",
+        "2": "162_A_006_4000_SH_P05023",
+        "3": "162_A_007_4000_SH_P05023"
+      },
+      "valid_pixels": 278983,
+      "valid_fraction": 0.4010104930286043,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 1.0,
+      "max": 3.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "event_source.png",
+      "raster": "event_source.tif"
+    },
+    {
+      "id": "event_coverage",
+      "label": "Number of event groups with a valid measurement",
+      "unit": "count",
+      "kind": "continuous",
+      "spatial_scope": "study domain",
+      "valid_pixels": 278983,
+      "valid_fraction": 0.4010104930286043,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 1.0,
+      "max": 2.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "event_coverage.png",
+      "raster": "event_coverage.tif"
+    },
+    {
+      "id": "reference_support",
+      "label": "Union of reference cells used \u00b7 inspect per-group references",
+      "unit": "class",
+      "kind": "binary",
+      "spatial_scope": "reference support",
+      "classes": {
+        "0": "Outside reference support",
+        "1": "Reference cells used"
+      },
+      "valid_pixels": 278983,
+      "valid_fraction": 0.4010104930286043,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "reference_support.png",
+      "raster": "reference_support.tif"
+    },
+    {
+      "id": "event_overlap_spread",
+      "label": "Difference between overlapping referenced LOS views",
+      "unit": "cm",
+      "kind": "continuous",
+      "spatial_scope": "study domain",
+      "valid_pixels": 27643,
+      "valid_fraction": 0.03973408078194624,
+      "interpretation": "LOS mosaics can combine viewing directions, pair intervals and reference origins. Seams need source-by-source inspection. This is not a damage map.",
+      "min": 0.04618547484278679,
+      "max": 8.718932151794434,
+      "bounds": [
+        [
+          9.798997514348608,
+          -68.99999999999999
+        ],
+        [
+          11.549999999999994,
+          -66.34999999999998
+        ]
+      ],
+      "image": "event_overlap_spread.png",
+      "raster": "event_overlap_spread.tif"
+    }
+  ],
+  "grid": {
+    "crs": "EPSG:6933",
+    "resolution_m": 284.09849184986206,
+    "shape": [
+      773,
+      900
+    ],
+    "bbox": [
+      -69.0,
+      9.8,
+      -66.35,
+      11.55
+    ]
+  },
+  "validation_status": "Exploratory; independent scientific accuracy has not been established."
+}

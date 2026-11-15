@@ -1,0 +1,44 @@
+{
+  "same_grid_comparison": {
+    "evolving": {
+      "latest_change_area_km2": 145.6028,
+      "repeated_latest_change_area_km2": 128.292,
+      "increasing_area_km2": 145.6028,
+      "decreasing_area_km2": 0.0,
+      "common_valid_area_km2": 478.0604
+    },
+    "previous_full_processor_status": "Candidate tracking exceeds 1000 objects; increase minimum patch area or narrow the area/date selection.",
+    "previous": {
+      "persistent_change_area_km2": 66.986,
+      "increasing_area_km2": 63.084,
+      "decreasing_area_km2": 3.902
+    }
+  },
+  "threshold_sensitivity": [
+    {
+      "threshold_db": 2,
+      "latest_change_area_km2": 203.7268,
+      "repeated_latest_change_area_km2": 188.7144,
+      "increasing_area_km2": 199.9332,
+      "decreasing_area_km2": 3.7936,
+      "common_valid_area_km2": 478.0604
+    },
+    {
+      "threshold_db": 3,
+      "latest_change_area_km2": 145.6028,
+      "repeated_latest_change_area_km2": 128.292,
+      "increasing_area_km2": 145.6028,
+      "decreasing_area_km2": 0.0,
+      "common_valid_area_km2": 478.0604
+    },
+    {
+      "threshold_db": 4,
+      "latest_change_area_km2": 102.346,
+      "repeated_latest_change_area_km2": 81.5852,
+      "increasing_area_km2": 102.346,
+      "decreasing_area_km2": 0.0,
+      "common_valid_area_km2": 478.0604
+    }
+  ],
+  "interpretation": "Candidate area and method sensitivity, not accuracy against lava ground truth. NASA frames are oblique display imagery; no quantitative lava mask is available."
+}

@@ -1,0 +1,449 @@
+{
+  "job_id": "226cdce1e929428c9f19a9e524a4c426",
+  "tool": "P05",
+  "input_count": 3,
+  "input_bytes": 166472263,
+  "checksums_verified": true,
+  "browser_start_verified": false,
+  "request": {
+    "bbox": [
+      -69.0,
+      9.8,
+      -66.35,
+      11.55
+    ],
+    "granules": [
+      "subset-85edd49270001ced9c8aaa5fcee26020",
+      "subset-1ef777939636f7bfe8461f14bc1d97d8",
+      "subset-d19d37d31a7ea07b613d70f50ef575f2"
+    ],
+    "projects": [
+      "P05"
+    ],
+    "options": {
+      "apply_ionosphere": true,
+      "quake_mosaic": true,
+      "phase_network": false,
+      "event_timestamp": "2026-06-24T22:05:04.053000Z",
+      "resolution": 80.0,
+      "coherence": 0.3,
+      "min_valid_fraction": 0.5,
+      "reference_bbox": [
+        -68.9,
+        9.85,
+        -66.45,
+        10.15
+      ],
+      "event_date": "2026-06-24"
+    },
+    "display": {
+      "palette": "diverging",
+      "mode": "custom",
+      "layer": "event_displacement_cm",
+      "unit": "cm",
+      "low": -50.0,
+      "high": 50.0,
+      "category_colors": {},
+      "category_opacity": {}
+    }
+  },
+  "metrics": {
+    "valid_pixels": 278983,
+    "valid_fraction": 0.4010104930286043,
+    "median": -2.2451109886169434,
+    "p10": -19.17642593383789,
+    "p90": 7.876505374908447,
+    "mapped_area_km2": 22517.262803708938,
+    "event_groups": 3,
+    "overlap_area_km2": 2231.120518751774,
+    "reference_pixels": 979
+  },
+  "grid": {
+    "crs": "EPSG:6933",
+    "resolution_m": 284.09849184986206,
+    "shape": [
+      773,
+      900
+    ],
+    "bbox": [
+      -69.0,
+      9.8,
+      -66.35,
+      11.55
+    ]
+  },
+  "display": {
+    "palette": "diverging",
+    "mode": "custom",
+    "layer": "event_displacement_cm",
+    "unit": "cm",
+    "low": -50.0,
+    "high": 50.0,
+    "category_colors": {},
+    "category_opacity": {}
+  },
+  "source_errors": [],
+  "processing_remote_bytes": 0,
+  "numeric_raster_checked": "event_displacement_cm",
+  "map_image_with_legend_checked": true,
+  "opening_map_export": "references/review-opening-map.png",
+  "review_date": "2026-10-22",
+  "scientific_accuracy": "Not established by engineering checks; read tutorial comparison and limitations.",
+  "all_map_checks": [
+    {
+      "layer": "group_1_count",
+      "valid_pixels": 50173,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "group_1_reference_support",
+      "valid_pixels": 50173,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "group_1_interval_rate",
+      "valid_pixels": 50173,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "group_1_range",
+      "valid_pixels": 50173,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "group_1_pair_0",
+      "valid_pixels": 50173,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "group_1_event_displacement_cm",
+      "valid_pixels": 50173,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_accepted_fraction_0_group_1",
+      "valid_pixels": 361389,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_missing_fraction_0_group_1",
+      "valid_pixels": 361389,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_invalid_subswath_0_group_1",
+      "valid_pixels": 361389,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_source_anomaly_0_group_1",
+      "valid_pixels": 361389,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_coherence_0_group_1",
+      "valid_pixels": 361389,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_component_missing_0_group_1",
+      "valid_pixels": 361389,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_other_component_0_group_1",
+      "valid_pixels": 361389,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_missing_correction_0_group_1",
+      "valid_pixels": 361389,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_ionosphere_interpolated_0_group_1",
+      "valid_pixels": 82396,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_coherence_0_group_1",
+      "valid_pixels": 82396,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_ionospheric_phase_correction_0_group_1",
+      "valid_pixels": 82396,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "group_2_count",
+      "valid_pixels": 37083,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "group_2_reference_support",
+      "valid_pixels": 37083,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "group_2_interval_rate",
+      "valid_pixels": 37083,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "group_2_range",
+      "valid_pixels": 37083,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "group_2_pair_0",
+      "valid_pixels": 37083,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "group_2_event_displacement_cm",
+      "valid_pixels": 37083,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_accepted_fraction_0_group_2",
+      "valid_pixels": 223434,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_missing_fraction_0_group_2",
+      "valid_pixels": 223434,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_invalid_subswath_0_group_2",
+      "valid_pixels": 223434,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_source_anomaly_0_group_2",
+      "valid_pixels": 223434,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_coherence_0_group_2",
+      "valid_pixels": 223434,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_component_missing_0_group_2",
+      "valid_pixels": 223434,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_other_component_0_group_2",
+      "valid_pixels": 223434,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_missing_correction_0_group_2",
+      "valid_pixels": 223434,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_ionosphere_interpolated_0_group_2",
+      "valid_pixels": 41038,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_coherence_0_group_2",
+      "valid_pixels": 41038,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_ionospheric_phase_correction_0_group_2",
+      "valid_pixels": 41038,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "group_3_count",
+      "valid_pixels": 220349,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "group_3_reference_support",
+      "valid_pixels": 220349,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "group_3_interval_rate",
+      "valid_pixels": 220349,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "group_3_range",
+      "valid_pixels": 220349,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "group_3_pair_0",
+      "valid_pixels": 220349,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "group_3_event_displacement_cm",
+      "valid_pixels": 220349,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_accepted_fraction_0_group_3",
+      "valid_pixels": 599227,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_missing_fraction_0_group_3",
+      "valid_pixels": 599227,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_invalid_subswath_0_group_3",
+      "valid_pixels": 599227,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_source_anomaly_0_group_3",
+      "valid_pixels": 599227,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_coherence_0_group_3",
+      "valid_pixels": 599227,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_component_missing_0_group_3",
+      "valid_pixels": 599227,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_other_component_0_group_3",
+      "valid_pixels": 599227,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_rejected_missing_correction_0_group_3",
+      "valid_pixels": 599227,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_ionosphere_interpolated_0_group_3",
+      "valid_pixels": 267735,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_coherence_0_group_3",
+      "valid_pixels": 267735,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "quality_ionospheric_phase_correction_0_group_3",
+      "valid_pixels": 267735,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "observation_0",
+      "valid_pixels": 37083,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "observation_1",
+      "valid_pixels": 220349,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "observation_2",
+      "valid_pixels": 50173,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "event_displacement_cm",
+      "valid_pixels": 278983,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "event_source",
+      "valid_pixels": 278983,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "event_coverage",
+      "valid_pixels": 278983,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "reference_support",
+      "valid_pixels": 278983,
+      "available": true,
+      "reason": null
+    },
+    {
+      "layer": "event_overlap_spread",
+      "valid_pixels": 27643,
+      "available": true,
+      "reason": null
+    }
+  ],
+  "all_saved_rasters_and_previews_checked": true
+}

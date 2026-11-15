@@ -1,0 +1,9 @@
+{
+  "pooled_percentiles": [
+    2,
+    98
+  ],
+  "low_db": -17.716455459594727,
+  "high_db": -2.363194370269776,
+  "meaning": "One fixed display range shared across the five HH acquisitions; numeric rasters unchanged."
+}

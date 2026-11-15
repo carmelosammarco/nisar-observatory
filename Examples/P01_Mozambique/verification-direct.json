@@ -1,0 +1,37 @@
+{
+  "tool": "P01",
+  "provenance_verified": true,
+  "protected_input_count": 2,
+  "reader_versions": [
+    "0.3.1"
+  ],
+  "processing_remote_bytes": 0,
+  "metrics": {
+    "common_valid_area_km2": 593.92,
+    "baseline_water_candidate_km2": 25.16,
+    "latest_water_candidate_km2": 100.65,
+    "water_gain_km2": 90.47,
+    "water_loss_km2": 14.98,
+    "net_water_change_km2": 75.49,
+    "new_water_candidate_km2": 90.47,
+    "observed_dry_again_km2": 0.0,
+    "unresolved_water_candidate_km2": 90.47
+  },
+  "series": [
+    {
+      "date": "2026-01-05T03:42:32Z",
+      "median_db": -11.884480476379395,
+      "water_candidate_km2": 25.16,
+      "valid_fraction": 1.0,
+      "comparison_pixels": 59392
+    },
+    {
+      "date": "2026-01-17T03:42:32Z",
+      "median_db": -10.810014724731445,
+      "water_candidate_km2": 100.65,
+      "valid_fraction": 1.0,
+      "comparison_pixels": 59392
+    }
+  ],
+  "scientific_accuracy": "Not established; numerical replay check only."
+}

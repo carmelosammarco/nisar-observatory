@@ -1,0 +1,3156 @@
+{
+  "project": "P04",
+  "title": "Relative LOS motion \u00b7 fitted multi-date rate",
+  "unit": "cm/year",
+  "series": [
+    {
+      "date": "2025-10-25T01:13:29Z",
+      "end": "2025-11-06T01:13:30Z",
+      "median_mm": 11.588579177856445,
+      "p10_mm": -4.890566825866699,
+      "p90_mm": 26.32094383239746,
+      "valid_fraction": 0.9327230567129322,
+      "comparison_pixels": 510464,
+      "interval_days": 12.000011574074074,
+      "median_rate_mm_day": 0.9657139778137207
+    },
+    {
+      "date": "2025-11-06T01:13:30Z",
+      "end": "2025-11-18T01:13:30Z",
+      "median_mm": -13.157334327697754,
+      "p10_mm": -31.284730911254883,
+      "p90_mm": 2.533460855484009,
+      "valid_fraction": 0.945819842891643,
+      "comparison_pixels": 510464,
+      "interval_days": 12.0,
+      "median_rate_mm_day": -1.0964446067810059
+    },
+    {
+      "date": "2025-11-18T01:13:30Z",
+      "end": "2025-12-12T01:13:31Z",
+      "median_mm": 8.272822380065918,
+      "p10_mm": -8.987943649291992,
+      "p90_mm": 22.207712173461914,
+      "valid_fraction": 0.9066173933812797,
+      "comparison_pixels": 510464,
+      "interval_days": 24.000011574074072,
+      "median_rate_mm_day": 0.34470075368881226
+    },
+    {
+      "date": "2025-12-12T01:13:31Z",
+      "end": "2025-12-24T01:13:32Z",
+      "median_mm": 1.2334864139556885,
+      "p10_mm": -24.73391342163086,
+      "p90_mm": 26.767044067382812,
+      "valid_fraction": 0.9282148164857621,
+      "comparison_pixels": 510464,
+      "interval_days": 12.000011574074074,
+      "median_rate_mm_day": 0.10279043018817902
+    },
+    {
+      "date": "2025-12-24T01:13:32Z",
+      "end": "2026-01-05T01:13:32Z",
+      "median_mm": 5.427611351013184,
+      "p10_mm": -16.56715202331543,
+      "p90_mm": 23.223133087158203,
+      "valid_fraction": 0.9452625328414851,
+      "comparison_pixels": 510464,
+      "interval_days": 12.0,
+      "median_rate_mm_day": 0.45230093598365784
+    },
+    {
+      "date": "2026-01-05T01:13:32Z",
+      "end": "2026-01-17T01:13:33Z",
+      "median_mm": -6.295787811279297,
+      "p10_mm": -14.880829811096191,
+      "p90_mm": 5.614368915557861,
+      "valid_fraction": 0.9487921631591518,
+      "comparison_pixels": 510464,
+      "interval_days": 12.000011574074074,
+      "median_rate_mm_day": -0.5246485471725464
+    }
+  ],
+  "metrics": {
+    "valid_pixels": 510464,
+    "valid_fraction": 0.8466866590589421,
+    "median": 1.5972440242767334,
+    "p10": -6.169743537902832,
+    "p90": 8.836731910705566,
+    "median_rate_cm_year": 1.5972440242767334,
+    "median_rate_cm_month": 0.13310366868972778,
+    "reference_pixels": 2698,
+    "span_days": 84.00004629629629,
+    "acquisition_dates": 7
+  },
+  "notes": [
+    "All plotted regional comparisons use the same pixels valid on every selected date or pair. Per-date coverage is shown separately; missing coverage is never reported as zero change.",
+    "Conversion is \u2212\u03bb \u00d7 (phase \u2212 reference median)/(4\u03c0), in millimeters. Check product sign convention before assigning toward/away language.",
+    "Only the retained native connected component is used. Read the correction manifest: ionospheric subtraction is optional; tropospheric and tidal corrections are not assumed.",
+    "Reference stability is an assumption. No vertical motion, structural safety, failure probability or thaw depth is inferred.",
+    "Mixed processing revisions were explicitly accepted. Algorithm differences may mimic surface change. Compare a single-revision run; release families and viewing geometries remain separate.",
+    "Rate maps fit a trend across reconstructed acquired epochs. The dated timeline shows accumulated relative LOS changes in cm, not separate pair intervals. Original pair maps remain available.",
+    "cm/year is annualized from the selected record; cm/month = cm/year / 12. Positive means toward the satellite, negative away. Neither is automatically vertical sinking.",
+    "A connected tree can be reconstructed but has no independent closure check: a zero pair residual is then guaranteed by the model and is not evidence of accuracy. Fit residual, phase errors and reference assumptions must be inspected.",
+    "Input is a local native-grid area extract, not a complete original NASA product; only the saved rectangle can be analyzed.",
+    "Only native connected component 1 retained before averaging. Labels are file-local; see the correction manifest for any explicitly applied screen."
+  ],
+  "extra": {
+    "support": {
+      "mode": "fixed common footprint across all selected observations",
+      "common_pixels": 510464,
+      "common_area_km2": 3266.9696000000004,
+      "common_fraction": 0.8466866590589421,
+      "per_observation_valid_pixels": [
+        562335,
+        570231,
+        546596,
+        559617,
+        569895,
+        572023
+      ]
+    },
+    "spatial_context": [],
+    "reference_diagnostics": {
+      "domain_reference_version": "1.1",
+      "support_scope": "Reference support is preserved independently of the analysis domain; output summaries use the domain only.",
+      "fixed_pixels": 2698,
+      "area_km2": 17.267200000000003,
+      "pairs": [
+        {
+          "source": "subset-a00f2a4da3128ce98f0f525ee1f5c67a",
+          "reference_pixels": 2698,
+          "reference_phase_rad": -10.45755386352539,
+          "reference_phase_p10_rad": -10.71405849456787,
+          "reference_phase_p90_rad": -10.192788791656493,
+          "interval_days": 12.000011574074074
+        },
+        {
+          "source": "subset-0d12362e5ace476f431c7b7f8c6f5be6",
+          "reference_pixels": 2698,
+          "reference_phase_rad": -62.989112854003906,
+          "reference_phase_p10_rad": -63.15640640258789,
+          "reference_phase_p90_rad": -62.80034294128418,
+          "interval_days": 12.0
+        },
+        {
+          "source": "subset-907ff8755c2268d8881587c6f6cb3a4a",
+          "reference_pixels": 2698,
+          "reference_phase_rad": -75.17278289794922,
+          "reference_phase_p10_rad": -75.36011581420898,
+          "reference_phase_p90_rad": -74.92040939331055,
+          "interval_days": 24.000011574074072
+        },
+        {
+          "source": "subset-a13e844bf5e1f13446eafedc51373af2",
+          "reference_pixels": 2698,
+          "reference_phase_rad": -15.436586380004883,
+          "reference_phase_p10_rad": -15.677672958374023,
+          "reference_phase_p90_rad": -15.265418910980225,
+          "interval_days": 12.000011574074074
+        },
+        {
+          "source": "subset-aa69b5106d1e11de1a678b6f76b05457",
+          "reference_pixels": 2698,
+          "reference_phase_rad": -43.730648040771484,
+          "reference_phase_p10_rad": -43.89875526428223,
+          "reference_phase_p90_rad": -43.57669372558594,
+          "interval_days": 12.0
+        },
+        {
+          "source": "subset-dbb28e3a60346c2f73104c37b8bd2735",
+          "reference_pixels": 2698,
+          "reference_phase_rad": 20.04350471496582,
+          "reference_phase_p10_rad": 19.844952392578126,
+          "reference_phase_p90_rad": 20.167323684692384,
+          "interval_days": 12.000011574074074
+        }
+      ]
+    },
+    "pair_network": {
+      "epochs": 7,
+      "pairs": 6,
+      "connected_components": 1,
+      "cycle_rank": 0,
+      "triangle_closures": [],
+      "inversion_performed": true,
+      "interpretation": "Graph diagnostics and exact-endpoint closure describe the measured pairs. P04 reconstructed the connected graph; see los_model for the fit and its limits. A tree has no independent closure check."
+    },
+    "phase_reference_sensitivity": [],
+    "selected_interval": {
+      "start": "2026-01-05T01:13:32Z",
+      "end": "2026-01-17T01:13:33Z"
+    },
+    "corrections": [
+      {
+        "source": "subset-a00f2a4da3128ce98f0f525ee1f5c67a",
+        "applied": [
+          {
+            "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen",
+            "operation": "subtract",
+            "units": "radians",
+            "basis": "Delivered GUNW screen is not applied by default; explicit user request."
+          }
+        ]
+      },
+      {
+        "source": "subset-0d12362e5ace476f431c7b7f8c6f5be6",
+        "applied": [
+          {
+            "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen",
+            "operation": "subtract",
+            "units": "radians",
+            "basis": "Delivered GUNW screen is not applied by default; explicit user request."
+          }
+        ]
+      },
+      {
+        "source": "subset-907ff8755c2268d8881587c6f6cb3a4a",
+        "applied": [
+          {
+            "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen",
+            "operation": "subtract",
+            "units": "radians",
+            "basis": "Delivered GUNW screen is not applied by default; explicit user request."
+          }
+        ]
+      },
+      {
+        "source": "subset-a13e844bf5e1f13446eafedc51373af2",
+        "applied": [
+          {
+            "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen",
+            "operation": "subtract",
+            "units": "radians",
+            "basis": "Delivered GUNW screen is not applied by default; explicit user request."
+          }
+        ]
+      },
+      {
+        "source": "subset-aa69b5106d1e11de1a678b6f76b05457",
+        "applied": [
+          {
+            "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen",
+            "operation": "subtract",
+            "units": "radians",
+            "basis": "Delivered GUNW screen is not applied by default; explicit user request."
+          }
+        ]
+      },
+      {
+        "source": "subset-dbb28e3a60346c2f73104c37b8bd2735",
+        "applied": [
+          {
+            "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen",
+            "operation": "subtract",
+            "units": "radians",
+            "basis": "Delivered GUNW screen is not applied by default; explicit user request."
+          }
+        ]
+      }
+    ],
+    "los_model": {
+      "epochs": [
+        "2025-10-25T01:13:29+00:00",
+        "2025-11-06T01:13:30+00:00",
+        "2025-11-18T01:13:30+00:00",
+        "2025-12-12T01:13:31+00:00",
+        "2025-12-24T01:13:32+00:00",
+        "2026-01-05T01:13:32+00:00",
+        "2026-01-17T01:13:33+00:00"
+      ],
+      "rank": 6,
+      "redundancy": 0,
+      "reference_epoch": "2025-10-25T01:13:29+00:00",
+      "status": "fitted relative LOS trend",
+      "method": "Connected chronological pair incidence least squares; first acquisition fixed to zero; intercept + linear trend at acquired epochs, 365.25 days/year.",
+      "closure_check_available": false,
+      "closure_interpretation": "Connected tree: zero pair residual is expected by construction; no independent closure check exists.",
+      "common_pixels": 510464,
+      "residual_rms_mm": 1.5280667676049267e-14,
+      "interpretation": "Positive is toward the satellite, negative away. Relative to the chosen reference, not vertical subsidence. Annualized short-window trends do not measure a full year. Fit residual is internal consistency, not accuracy or a confidence interval.",
+      "span_days": 84.00004629629629,
+      "epoch_count": 7,
+      "pair_count": 6
+    },
+    "processing_revisions": [
+      "113_D_079_4000_SH_X05009",
+      "113_D_079_4000_SH_X05010"
+    ],
+    "pair_series": [
+      {
+        "date": "2025-10-25T01:13:29Z",
+        "end": "2025-11-06T01:13:30Z",
+        "median_mm": 11.588579177856445,
+        "p10_mm": -4.890566825866699,
+        "p90_mm": 26.32094383239746,
+        "valid_fraction": 0.9327230567129322,
+        "comparison_pixels": 510464,
+        "interval_days": 12.000011574074074,
+        "median_rate_mm_day": 0.9657139778137207
+      },
+      {
+        "date": "2025-11-06T01:13:30Z",
+        "end": "2025-11-18T01:13:30Z",
+        "median_mm": -13.157334327697754,
+        "p10_mm": -31.284730911254883,
+        "p90_mm": 2.533460855484009,
+        "valid_fraction": 0.945819842891643,
+        "comparison_pixels": 510464,
+        "interval_days": 12.0,
+        "median_rate_mm_day": -1.0964446067810059
+      },
+      {
+        "date": "2025-11-18T01:13:30Z",
+        "end": "2025-12-12T01:13:31Z",
+        "median_mm": 8.272822380065918,
+        "p10_mm": -8.987943649291992,
+        "p90_mm": 22.207712173461914,
+        "valid_fraction": 0.9066173933812797,
+        "comparison_pixels": 510464,
+        "interval_days": 24.000011574074072,
+        "median_rate_mm_day": 0.34470075368881226
+      },
+      {
+        "date": "2025-12-12T01:13:31Z",
+        "end": "2025-12-24T01:13:32Z",
+        "median_mm": 1.2334864139556885,
+        "p10_mm": -24.73391342163086,
+        "p90_mm": 26.767044067382812,
+        "valid_fraction": 0.9282148164857621,
+        "comparison_pixels": 510464,
+        "interval_days": 12.000011574074074,
+        "median_rate_mm_day": 0.10279043018817902
+      },
+      {
+        "date": "2025-12-24T01:13:32Z",
+        "end": "2026-01-05T01:13:32Z",
+        "median_mm": 5.427611351013184,
+        "p10_mm": -16.56715202331543,
+        "p90_mm": 23.223133087158203,
+        "valid_fraction": 0.9452625328414851,
+        "comparison_pixels": 510464,
+        "interval_days": 12.0,
+        "median_rate_mm_day": 0.45230093598365784
+      },
+      {
+        "date": "2026-01-05T01:13:32Z",
+        "end": "2026-01-17T01:13:33Z",
+        "median_mm": -6.295787811279297,
+        "p10_mm": -14.880829811096191,
+        "p90_mm": 5.614368915557861,
+        "valid_fraction": 0.9487921631591518,
+        "comparison_pixels": 510464,
+        "interval_days": 12.000011574074074,
+        "median_rate_mm_day": -0.5246485471725464
+      }
+    ],
+    "los_series": [
+      {
+        "date": "2025-10-25T01:13:29+00:00",
+        "median_cm": 0.0,
+        "p10_cm": 0.0,
+        "p90_cm": 0.0
+      },
+      {
+        "date": "2025-11-06T01:13:30+00:00",
+        "median_cm": 1.1588579416275024,
+        "p10_cm": -0.48905667662620544,
+        "p90_cm": 2.632094383239746
+      },
+      {
+        "date": "2025-11-18T01:13:30+00:00",
+        "median_cm": -0.18816661834716797,
+        "p10_cm": -2.1451056003570557,
+        "p90_cm": 1.4000245332717896
+      },
+      {
+        "date": "2025-12-12T01:13:31+00:00",
+        "median_cm": 0.6845477819442749,
+        "p10_cm": -1.9669626951217651,
+        "p90_cm": 2.401116132736206
+      },
+      {
+        "date": "2025-12-24T01:13:32+00:00",
+        "median_cm": 0.5932130813598633,
+        "p10_cm": -1.9007132053375244,
+        "p90_cm": 2.7565929889678955
+      },
+      {
+        "date": "2026-01-05T01:13:32+00:00",
+        "median_cm": 0.9797393679618835,
+        "p10_cm": -0.9149906635284424,
+        "p90_cm": 2.5360329151153564
+      },
+      {
+        "date": "2026-01-17T01:13:33+00:00",
+        "median_cm": 0.31078070402145386,
+        "p10_cm": -1.5741300582885742,
+        "p90_cm": 2.420860528945923
+      }
+    ],
+    "observation_gaps": {
+      "days_between_starts": [
+        12.000011574074074,
+        12.0,
+        24.000011574074072,
+        12.000011574074074,
+        12.0
+      ],
+      "longest_gap_days": 24.000011574074072,
+      "meaning": "Intervals without an acquisition are unobserved, not unchanged."
+    },
+    "independent_validation": {
+      "status": "not evaluated: no independent matched observations"
+    },
+    "method_references": [
+      "https://nisar-docs.asf.alaska.edu/gunw/",
+      "https://doi.org/10.1016/j.cageo.2019.104331"
+    ],
+    "readiness": {
+      "ready": true,
+      "scope": "metadata only; no data downloaded",
+      "errors": [],
+      "warnings": [
+        "Connected tree: zero pair residual is expected by construction and is not an independent accuracy check.",
+        "Free disk space is checked again before array and export writes. Other applications can consume space after this check.",
+        "Metadata checks do not establish usable pixel coverage or environmental accuracy; those require science reads and independent evidence."
+      ],
+      "checks": [
+        {
+          "label": "Selected sources",
+          "value": "6"
+        },
+        {
+          "label": "Product",
+          "value": "GUNW"
+        },
+        {
+          "label": "Analysis grid",
+          "value": "784 \u00d7 769 cells \u00b7 80.00 m spacing"
+        },
+        {
+          "label": "Reference",
+          "value": "Selected; usable pixels and sensitivity are checked from measurements. Stability remains an assumption."
+        },
+        {
+          "label": "Pair network",
+          "value": "7 acquisition dates \u00b7 0 redundant pair(s)"
+        },
+        {
+          "label": "Free runtime disk space",
+          "value": "439.86 GiB free \u00b7 512 MiB safety reserve"
+        },
+        {
+          "label": "Estimated grid working memory",
+          "value": "405 MiB \u00b7 excludes native reads, export and library overhead"
+        }
+      ],
+      "groups": [
+        {
+          "group": "113_D_079_4000_SH_X05009",
+          "count": 1,
+          "intervals": [
+            {
+              "start": "2025-10-25T01:13:29Z",
+              "end": "2025-11-06T01:13:30Z"
+            }
+          ]
+        },
+        {
+          "group": "113_D_079_4000_SH_X05010",
+          "count": 5,
+          "intervals": [
+            {
+              "start": "2025-11-06T01:13:30Z",
+              "end": "2025-11-18T01:13:30Z"
+            },
+            {
+              "start": "2025-11-18T01:13:30Z",
+              "end": "2025-12-12T01:13:31Z"
+            },
+            {
+              "start": "2025-12-12T01:13:31Z",
+              "end": "2025-12-24T01:13:32Z"
+            },
+            {
+              "start": "2025-12-24T01:13:32Z",
+              "end": "2026-01-05T01:13:32Z"
+            },
+            {
+              "start": "2026-01-05T01:13:32Z",
+              "end": "2026-01-17T01:13:33Z"
+            }
+          ]
+        }
+      ],
+      "stage_baselines": [],
+      "disk_space": {
+        "free_bytes": 472292278272,
+        "required_bytes": 0,
+        "reserve_bytes": 536870912,
+        "fits": true,
+        "scope": "Destination filesystem free space; estimates are not a reservation against other applications."
+      },
+      "estimated_trace_bytes": 0,
+      "estimated_trace_maps": 0,
+      "estimated_grid_bytes": 424438784,
+      "memory_budget_bytes": 3221225472
+    },
+    "result_passport": {
+      "contract_version": "1.1.0",
+      "method": "P04",
+      "algorithm_version": "0.4.0",
+      "record": {
+        "start": "2025-10-25T01:13:29Z",
+        "end": "2026-01-17T01:13:33Z"
+      },
+      "baseline": null,
+      "reference": {
+        "bbox": [
+          -99.28,
+          19.4,
+          -99.24,
+          19.44
+        ],
+        "polygon_names": [],
+        "meaning": "Data-suitable reference candidates do not independently establish stable ground. Reference changes shift relative values."
+      },
+      "support": {
+        "mode": "fixed common footprint across all selected observations",
+        "common_pixels": 510464,
+        "common_area_km2": 3266.9696000000004,
+        "common_fraction": 0.8466866590589421,
+        "per_observation_valid_pixels": [
+          562335,
+          570231,
+          546596,
+          559617,
+          569895,
+          572023
+        ]
+      },
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "validation": "Engineering reproducibility and checksum checks are separate from independent scientific validation. Read the case-study comparison.",
+      "smoothing_contract": {
+        "version": "1.1.0",
+        "method": "normalized Gaussian",
+        "boundary": "reflect",
+        "minimum_finite_kernel_support": 0.3,
+        "fills_missing_centres": false
+      },
+      "execution_engine_version": null
+    },
+    "execution_fingerprint": "26c53937fb124b966a3eff138e43eac06f78cb029916d9c2a2f440e5d02b77a3"
+  },
+  "sources": [
+    {
+      "id": "subset-a00f2a4da3128ce98f0f525ee1f5c67a",
+      "catalog_id": "G4058281119-ASF",
+      "name": "NISAR_L2_PR_GUNW_003_113_D_079_004_4000_SH_20251025T011329_20251025T011404_20251106T011330_20251106T011404_X05009_N_F_J_001",
+      "start": "2025-10-25T01:13:29Z",
+      "end": "2025-11-06T01:13:30Z",
+      "group": "113_D_079_4000_SH_X05009",
+      "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/unwrappedPhase",
+      "reader_version": "0.3.3",
+      "quality_paths": [
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/mask",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/coherenceMagnitude",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/connectedComponents",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen"
+      ],
+      "additional_paths": {},
+      "attributes": {
+        "_FillValue": null,
+        "description": "Unwrapped interferogram between HH layers",
+        "grid_mapping": "projection",
+        "max_value": 29.26177406311035,
+        "mean_value": 8.516424179077148,
+        "min_value": -12.363472938537598,
+        "sample_stddev": 4.151453495025635,
+        "units": "radians",
+        "native_spacing_source_crs": [
+          80.0,
+          80.0
+        ],
+        "native_epsg": 32614,
+        "source_validity_mask": {
+          "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/mask",
+          "rule": "Both reference and secondary subswath digits nonzero; fill and anomaly bits excluded before aggregation. Bit 24 records ionospheric interpolation, not an automatic rejection.",
+          "integer_precision": "Lossless uint32 decoding through float64 native read."
+        },
+        "retained_connected_component": 1,
+        "correction_manifest": [
+          {
+            "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen",
+            "operation": "subtract",
+            "units": "radians",
+            "basis": "Delivered GUNW screen is not applied by default; explicit user request."
+          }
+        ],
+        "native_finite_samples": 606756,
+        "native_accepted_samples": 560821,
+        "native_accepted_fraction": 0.9242941149325264,
+        "minimum_native_valid_fraction": 0.5,
+        "native_quality_before_aggregation": true,
+        "source_subset": {
+          "bbox": [
+            -99.4,
+            19.14,
+            -98.75,
+            19.65
+          ],
+          "source_id": "G4058281119-ASF",
+          "version": "area-1"
+        }
+      },
+      "cache_identity": "6407a304f3ca88ab6326a44c5bc604d89da8575ef7105ecba39f5f9f61ede618",
+      "bytes_transferred": 0,
+      "cache_hit": false
+    },
+    {
+      "id": "subset-0d12362e5ace476f431c7b7f8c6f5be6",
+      "catalog_id": "G4058288661-ASF",
+      "name": "NISAR_L2_PR_GUNW_004_113_D_079_005_4000_SH_20251106T011330_20251106T011404_20251118T011330_20251118T011405_X05010_N_F_J_001",
+      "start": "2025-11-06T01:13:30Z",
+      "end": "2025-11-18T01:13:30Z",
+      "group": "113_D_079_4000_SH_X05010",
+      "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/unwrappedPhase",
+      "reader_version": "0.3.3",
+      "quality_paths": [
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/mask",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/coherenceMagnitude",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/connectedComponents",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen"
+      ],
+      "additional_paths": {},
+      "attributes": {
+        "_FillValue": null,
+        "description": "Unwrapped interferogram between HH layers",
+        "grid_mapping": "projection",
+        "max_value": 35.47380447387695,
+        "mean_value": 11.931446075439453,
+        "min_value": -8.48037338256836,
+        "sample_stddev": 7.631932735443115,
+        "units": "radians",
+        "native_spacing_source_crs": [
+          80.0,
+          80.0
+        ],
+        "native_epsg": 32614,
+        "source_validity_mask": {
+          "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/mask",
+          "rule": "Both reference and secondary subswath digits nonzero; fill and anomaly bits excluded before aggregation. Bit 24 records ionospheric interpolation, not an automatic rejection.",
+          "integer_precision": "Lossless uint32 decoding through float64 native read."
+        },
+        "retained_connected_component": 1,
+        "correction_manifest": [
+          {
+            "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen",
+            "operation": "subtract",
+            "units": "radians",
+            "basis": "Delivered GUNW screen is not applied by default; explicit user request."
+          }
+        ],
+        "native_finite_samples": 606756,
+        "native_accepted_samples": 572306,
+        "native_accepted_fraction": 0.9432226463355945,
+        "minimum_native_valid_fraction": 0.5,
+        "native_quality_before_aggregation": true,
+        "source_subset": {
+          "bbox": [
+            -99.4,
+            19.14,
+            -98.75,
+            19.65
+          ],
+          "source_id": "G4058288661-ASF",
+          "version": "area-1"
+        }
+      },
+      "cache_identity": "9e776f2505b7d303b3c89d0bdb502856ea84d3c2b13c83576e3a1c3c41391160",
+      "bytes_transferred": 0,
+      "cache_hit": false
+    },
+    {
+      "id": "subset-907ff8755c2268d8881587c6f6cb3a4a",
+      "catalog_id": "G4058338815-ASF",
+      "name": "NISAR_L2_PR_GUNW_005_113_D_079_007_4000_SH_20251118T011330_20251118T011405_20251212T011331_20251212T011406_X05010_N_F_J_001",
+      "start": "2025-11-18T01:13:30Z",
+      "end": "2025-12-12T01:13:31Z",
+      "group": "113_D_079_4000_SH_X05010",
+      "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/unwrappedPhase",
+      "reader_version": "0.3.3",
+      "quality_paths": [
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/mask",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/coherenceMagnitude",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/connectedComponents",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen"
+      ],
+      "additional_paths": {},
+      "attributes": {
+        "_FillValue": null,
+        "description": "Unwrapped interferogram between HH layers",
+        "grid_mapping": "projection",
+        "max_value": 27.166316986083984,
+        "mean_value": 11.584630966186523,
+        "min_value": -10.703044891357422,
+        "sample_stddev": 5.273421287536621,
+        "units": "radians",
+        "native_spacing_source_crs": [
+          80.0,
+          80.0
+        ],
+        "native_epsg": 32614,
+        "source_validity_mask": {
+          "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/mask",
+          "rule": "Both reference and secondary subswath digits nonzero; fill and anomaly bits excluded before aggregation. Bit 24 records ionospheric interpolation, not an automatic rejection.",
+          "integer_precision": "Lossless uint32 decoding through float64 native read."
+        },
+        "retained_connected_component": 1,
+        "correction_manifest": [
+          {
+            "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen",
+            "operation": "subtract",
+            "units": "radians",
+            "basis": "Delivered GUNW screen is not applied by default; explicit user request."
+          }
+        ],
+        "native_finite_samples": 606756,
+        "native_accepted_samples": 547056,
+        "native_accepted_fraction": 0.9016078951011609,
+        "minimum_native_valid_fraction": 0.5,
+        "native_quality_before_aggregation": true,
+        "source_subset": {
+          "bbox": [
+            -99.4,
+            19.14,
+            -98.75,
+            19.65
+          ],
+          "source_id": "G4058338815-ASF",
+          "version": "area-1"
+        }
+      },
+      "cache_identity": "7efea3104d83516ca87c116354859c4d2aff1059c7e8ac6a22cde2394eaa324a",
+      "bytes_transferred": 0,
+      "cache_hit": false
+    },
+    {
+      "id": "subset-a13e844bf5e1f13446eafedc51373af2",
+      "catalog_id": "G4058459579-ASF",
+      "name": "NISAR_L2_PR_GUNW_007_113_D_079_008_4000_SH_20251212T011331_20251212T011406_20251224T011332_20251224T011406_X05010_N_F_J_001",
+      "start": "2025-12-12T01:13:31Z",
+      "end": "2025-12-24T01:13:32Z",
+      "group": "113_D_079_4000_SH_X05010",
+      "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/unwrappedPhase",
+      "reader_version": "0.3.3",
+      "quality_paths": [
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/mask",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/coherenceMagnitude",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/connectedComponents",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen"
+      ],
+      "additional_paths": {},
+      "attributes": {
+        "_FillValue": null,
+        "description": "Unwrapped interferogram between HH layers",
+        "grid_mapping": "projection",
+        "max_value": 26.705265045166016,
+        "mean_value": -7.085391998291016,
+        "min_value": -25.38389015197754,
+        "sample_stddev": 4.5018134117126465,
+        "units": "radians",
+        "native_spacing_source_crs": [
+          80.0,
+          80.0
+        ],
+        "native_epsg": 32614,
+        "source_validity_mask": {
+          "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/mask",
+          "rule": "Both reference and secondary subswath digits nonzero; fill and anomaly bits excluded before aggregation. Bit 24 records ionospheric interpolation, not an automatic rejection.",
+          "integer_precision": "Lossless uint32 decoding through float64 native read."
+        },
+        "retained_connected_component": 1,
+        "correction_manifest": [
+          {
+            "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen",
+            "operation": "subtract",
+            "units": "radians",
+            "basis": "Delivered GUNW screen is not applied by default; explicit user request."
+          }
+        ],
+        "native_finite_samples": 606756,
+        "native_accepted_samples": 560773,
+        "native_accepted_fraction": 0.924215005702457,
+        "minimum_native_valid_fraction": 0.5,
+        "native_quality_before_aggregation": true,
+        "source_subset": {
+          "bbox": [
+            -99.4,
+            19.14,
+            -98.75,
+            19.65
+          ],
+          "source_id": "G4058459579-ASF",
+          "version": "area-1"
+        }
+      },
+      "cache_identity": "75aeb6c962744ba2ffab44b21d2c14cbc54a5c1c4e4507ece090419993c48c15",
+      "bytes_transferred": 0,
+      "cache_hit": false
+    },
+    {
+      "id": "subset-aa69b5106d1e11de1a678b6f76b05457",
+      "catalog_id": "G4058584016-ASF",
+      "name": "NISAR_L2_PR_GUNW_008_113_D_079_009_4000_SH_20251224T011332_20251224T011406_20260105T011332_20260105T011407_X05010_N_F_J_001",
+      "start": "2025-12-24T01:13:32Z",
+      "end": "2026-01-05T01:13:32Z",
+      "group": "113_D_079_4000_SH_X05010",
+      "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/unwrappedPhase",
+      "reader_version": "0.3.3",
+      "quality_paths": [
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/mask",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/coherenceMagnitude",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/connectedComponents",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen"
+      ],
+      "additional_paths": {},
+      "attributes": {
+        "_FillValue": null,
+        "description": "Unwrapped interferogram between HH layers",
+        "grid_mapping": "projection",
+        "max_value": 23.357728958129883,
+        "mean_value": 5.862494468688965,
+        "min_value": -14.778373718261719,
+        "sample_stddev": 6.479501724243164,
+        "units": "radians",
+        "native_spacing_source_crs": [
+          80.0,
+          80.0
+        ],
+        "native_epsg": 32614,
+        "source_validity_mask": {
+          "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/mask",
+          "rule": "Both reference and secondary subswath digits nonzero; fill and anomaly bits excluded before aggregation. Bit 24 records ionospheric interpolation, not an automatic rejection.",
+          "integer_precision": "Lossless uint32 decoding through float64 native read."
+        },
+        "retained_connected_component": 1,
+        "correction_manifest": [
+          {
+            "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen",
+            "operation": "subtract",
+            "units": "radians",
+            "basis": "Delivered GUNW screen is not applied by default; explicit user request."
+          }
+        ],
+        "native_finite_samples": 606756,
+        "native_accepted_samples": 571999,
+        "native_accepted_fraction": 0.9427166768849422,
+        "minimum_native_valid_fraction": 0.5,
+        "native_quality_before_aggregation": true,
+        "source_subset": {
+          "bbox": [
+            -99.4,
+            19.14,
+            -98.75,
+            19.65
+          ],
+          "source_id": "G4058584016-ASF",
+          "version": "area-1"
+        }
+      },
+      "cache_identity": "db3ec6f3f7509aad7485dcaab0db156ddef80200b0c14b45a48eb5e2e50660cc",
+      "bytes_transferred": 0,
+      "cache_hit": false
+    },
+    {
+      "id": "subset-dbb28e3a60346c2f73104c37b8bd2735",
+      "catalog_id": "G4058733834-ASF",
+      "name": "NISAR_L2_PR_GUNW_009_113_D_079_010_4000_SH_20260105T011332_20260105T011407_20260117T011333_20260117T011407_X05010_N_F_J_001",
+      "start": "2026-01-05T01:13:32Z",
+      "end": "2026-01-17T01:13:33Z",
+      "group": "113_D_079_4000_SH_X05010",
+      "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/unwrappedPhase",
+      "reader_version": "0.3.3",
+      "quality_paths": [
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/mask",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/coherenceMagnitude",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/connectedComponents",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen"
+      ],
+      "additional_paths": {},
+      "attributes": {
+        "_FillValue": null,
+        "description": "Unwrapped interferogram between HH layers",
+        "grid_mapping": "projection",
+        "max_value": 8.680096626281738,
+        "mean_value": -9.842226028442383,
+        "min_value": -22.361530303955078,
+        "sample_stddev": 4.934049606323242,
+        "units": "radians",
+        "native_spacing_source_crs": [
+          80.0,
+          80.0
+        ],
+        "native_epsg": 32614,
+        "source_validity_mask": {
+          "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/mask",
+          "rule": "Both reference and secondary subswath digits nonzero; fill and anomaly bits excluded before aggregation. Bit 24 records ionospheric interpolation, not an automatic rejection.",
+          "integer_precision": "Lossless uint32 decoding through float64 native read."
+        },
+        "retained_connected_component": 1,
+        "correction_manifest": [
+          {
+            "path": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen",
+            "operation": "subtract",
+            "units": "radians",
+            "basis": "Delivered GUNW screen is not applied by default; explicit user request."
+          }
+        ],
+        "native_finite_samples": 606756,
+        "native_accepted_samples": 574121,
+        "native_accepted_fraction": 0.9462139640975944,
+        "minimum_native_valid_fraction": 0.5,
+        "native_quality_before_aggregation": true,
+        "source_subset": {
+          "bbox": [
+            -99.4,
+            19.14,
+            -98.75,
+            19.65
+          ],
+          "source_id": "G4058733834-ASF",
+          "version": "area-1"
+        }
+      },
+      "cache_identity": "dee68c979566197c6baa9ace10a2d1ed5e67d4fd642c3f43786f6978e0aeee83",
+      "bytes_transferred": 0,
+      "cache_hit": false
+    }
+  ],
+  "status": "exploratory",
+  "algorithm_version": "0.4.0",
+  "report": {
+    "headline": "What these observations show",
+    "findings": [
+      "6 compatible GUNW observations cover 2025-10-25 to 2026-01-17. Regional comparisons use 510,464 common analysis cells (3266.970 km\u00b2).",
+      "Reference uses 2698 identical cells across pairs. Pair network: 7 epochs, 1 connected component(s), 0 redundant edge(s). Read the P04 motion-model status or the other phase tools\u2019 network-model status to see whether reconstruction was supported.",
+      "Fitted relative LOS rate: regional median 1.597 cm/year (0.133 cm per mean month), using 7 acquired dates over 84.000 days. Rates are relative to the saved reference, not vertical subsidence.",
+      "The dated reconstruction is model-derived from measured pairs. No motion is interpolated between acquisitions. Zero pair residuals in a tree do not validate the result."
+    ],
+    "comparison_basis": "fixed common footprint across all selected observations",
+    "next_checks": [
+      "Inspect observation counts and source quality before interpreting a pattern.",
+      "Compare the map and observed dates; blank pixels are missing evidence.",
+      "Use independent observations to test environmental attribution."
+    ],
+    "validation": "Synthetic engineering tests check known calculations and missing-data behavior; independent real-world accuracy is not established."
+  },
+  "display_preferences": {
+    "palette": "rainbow",
+    "mode": "custom",
+    "layer": "los_rate_year",
+    "unit": "cm/year",
+    "low": -30.0,
+    "high": 30.0,
+    "category_colors": {},
+    "category_opacity": {}
+  },
+  "application_version": "0.9.0",
+  "processing_options": {
+    "apply_ionosphere": true,
+    "phase_network": true,
+    "phase_allow_mixed_revisions": true,
+    "resolution": 80.0,
+    "coherence": 0.3,
+    "min_valid_fraction": 0.5,
+    "reference_bbox": [
+      -99.28,
+      19.4,
+      -99.24,
+      19.44
+    ]
+  },
+  "created_at": "2026-11-01T18:51:56.529861+00:00",
+  "reading_guide": {
+    "version": "1.0",
+    "measurement": "A fitted rate of relative line-of-sight (LOS) movement from connected acquisition-date estimates.",
+    "colours": "Positive LOS is toward the satellite; negative is away, relative to the chosen reference. cm/year and cm/month express the same fitted rate; annualizing a short record does not create a year of observations.",
+    "checks": "Check the shared reference support and its independent physical stability, record span, coherence, fit residuals and network redundancy. A tree has no redundant closure test; a zero pair residual can occur by construction.",
+    "cannot": "One viewing direction mixes horizontal and vertical motion. This is not a direct vertical subsidence rate, a guaranteed forecast or independently established geodetic accuracy.",
+    "method": "P04",
+    "validation": "Source checksums verify input integrity. Replay checks verify reproducibility. Neither establishes independent environmental accuracy for this run."
+  },
+  "layers": [
+    {
+      "id": "count",
+      "label": "Number of quality-screened pair observations",
+      "unit": "count",
+      "kind": "continuous",
+      "spatial_scope": "study domain",
+      "valid_pixels": 590241,
+      "valid_fraction": 0.9790096467715825,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 2.0,
+      "max": 6.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "count.png",
+      "raster": "count.tif"
+    },
+    {
+      "id": "reference_support",
+      "label": "Fixed reference support shared by every pair",
+      "unit": "class",
+      "kind": "binary",
+      "spatial_scope": "reference support",
+      "classes": {
+        "0": "Outside reference support",
+        "1": "Reference cells used"
+      },
+      "valid_pixels": 510464,
+      "valid_fraction": 0.8466866590589421,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "reference_support.png",
+      "raster": "reference_support.tif"
+    },
+    {
+      "id": "interval_rate",
+      "label": "Relative phase-equivalent change divided by selected pair days",
+      "unit": "mm/day",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "valid_pixels": 510464,
+      "valid_fraction": 0.8466866590589421,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": -1.5517600774765015,
+      "max": 1.5517600774765015,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "interval_rate.png",
+      "raster": "interval_rate.tif"
+    },
+    {
+      "id": "range",
+      "label": "Relative phase-equivalent range change",
+      "unit": "mm",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "valid_pixels": 510464,
+      "valid_fraction": 0.8466866590589421,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": -18.621139526367188,
+      "max": 18.621139526367188,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "range.png",
+      "raster": "range.tif"
+    },
+    {
+      "id": "pair_0",
+      "label": "Pair \u00b7 2025-10-25 \u2192 2025-11-06",
+      "unit": "mm",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "frame_index": 0,
+      "start": "2025-10-25T01:13:29Z",
+      "end": "2025-11-06T01:13:30Z",
+      "valid_pixels": 510464,
+      "valid_fraction": 0.8466866590589421,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": -33.38894271850586,
+      "max": 33.38894271850586,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "pair_0.png",
+      "raster": "pair_0.tif"
+    },
+    {
+      "id": "pair_1",
+      "label": "Pair \u00b7 2025-11-06 \u2192 2025-11-18",
+      "unit": "mm",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "frame_index": 1,
+      "start": "2025-11-06T01:13:30Z",
+      "end": "2025-11-18T01:13:30Z",
+      "valid_pixels": 510464,
+      "valid_fraction": 0.8466866590589421,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": -42.38421630859375,
+      "max": 42.38421630859375,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "pair_1.png",
+      "raster": "pair_1.tif"
+    },
+    {
+      "id": "pair_2",
+      "label": "Pair \u00b7 2025-11-18 \u2192 2025-12-12",
+      "unit": "mm",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "frame_index": 2,
+      "start": "2025-11-18T01:13:30Z",
+      "end": "2025-12-12T01:13:31Z",
+      "valid_pixels": 510464,
+      "valid_fraction": 0.8466866590589421,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": -29.765573501586914,
+      "max": 29.765573501586914,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "pair_2.png",
+      "raster": "pair_2.tif"
+    },
+    {
+      "id": "pair_3",
+      "label": "Pair \u00b7 2025-12-12 \u2192 2025-12-24",
+      "unit": "mm",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "frame_index": 3,
+      "start": "2025-12-12T01:13:31Z",
+      "end": "2025-12-24T01:13:32Z",
+      "valid_pixels": 510464,
+      "valid_fraction": 0.8466866590589421,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": -39.06056594848633,
+      "max": 39.06056594848633,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "pair_3.png",
+      "raster": "pair_3.tif"
+    },
+    {
+      "id": "pair_4",
+      "label": "Pair \u00b7 2025-12-24 \u2192 2026-01-05",
+      "unit": "mm",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "frame_index": 4,
+      "start": "2025-12-24T01:13:32Z",
+      "end": "2026-01-05T01:13:32Z",
+      "valid_pixels": 510464,
+      "valid_fraction": 0.8466866590589421,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": -36.497013092041016,
+      "max": 36.497013092041016,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "pair_4.png",
+      "raster": "pair_4.tif"
+    },
+    {
+      "id": "pair_5",
+      "label": "Pair \u00b7 2026-01-05 \u2192 2026-01-17",
+      "unit": "mm",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "frame_index": 5,
+      "start": "2026-01-05T01:13:32Z",
+      "end": "2026-01-17T01:13:33Z",
+      "valid_pixels": 510464,
+      "valid_fraction": 0.8466866590589421,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": -18.621139526367188,
+      "max": 18.621139526367188,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "pair_5.png",
+      "raster": "pair_5.tif"
+    },
+    {
+      "id": "observation_0",
+      "label": "Reconstructed relative LOS change \u00b7 2025-10-25",
+      "unit": "cm",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "frame_index": 0,
+      "start": "2025-10-25T01:13:29+00:00",
+      "frame_scope": "epoch",
+      "valid_pixels": 510464,
+      "valid_fraction": 0.8466866590589421,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": -1e-06,
+      "max": 1e-06,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "observation_0.png",
+      "raster": "observation_0.tif"
+    },
+    {
+      "id": "observation_1",
+      "label": "Reconstructed relative LOS change \u00b7 2025-11-06",
+      "unit": "cm",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "frame_index": 1,
+      "start": "2025-11-06T01:13:30+00:00",
+      "frame_scope": "epoch",
+      "valid_pixels": 510464,
+      "valid_fraction": 0.8466866590589421,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": -3.3388943672180176,
+      "max": 3.3388943672180176,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "observation_1.png",
+      "raster": "observation_1.tif"
+    },
+    {
+      "id": "observation_2",
+      "label": "Reconstructed relative LOS change \u00b7 2025-11-18",
+      "unit": "cm",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "frame_index": 2,
+      "start": "2025-11-18T01:13:30+00:00",
+      "frame_scope": "epoch",
+      "valid_pixels": 510464,
+      "valid_fraction": 0.8466866590589421,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": -3.2529919147491455,
+      "max": 3.2529919147491455,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "observation_2.png",
+      "raster": "observation_2.tif"
+    },
+    {
+      "id": "observation_3",
+      "label": "Reconstructed relative LOS change \u00b7 2025-12-12",
+      "unit": "cm",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "frame_index": 3,
+      "start": "2025-12-12T01:13:31+00:00",
+      "frame_scope": "epoch",
+      "valid_pixels": 510464,
+      "valid_fraction": 0.8466866590589421,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": -3.3272650241851807,
+      "max": 3.3272650241851807,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "observation_3.png",
+      "raster": "observation_3.tif"
+    },
+    {
+      "id": "observation_4",
+      "label": "Reconstructed relative LOS change \u00b7 2025-12-24",
+      "unit": "cm",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "frame_index": 4,
+      "start": "2025-12-24T01:13:32+00:00",
+      "frame_scope": "epoch",
+      "valid_pixels": 510464,
+      "valid_fraction": 0.8466866590589421,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": -3.845715045928955,
+      "max": 3.845715045928955,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "observation_4.png",
+      "raster": "observation_4.tif"
+    },
+    {
+      "id": "observation_5",
+      "label": "Reconstructed relative LOS change \u00b7 2026-01-05",
+      "unit": "cm",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "frame_index": 5,
+      "start": "2026-01-05T01:13:32+00:00",
+      "frame_scope": "epoch",
+      "valid_pixels": 510464,
+      "valid_fraction": 0.8466866590589421,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": -3.3750100135803223,
+      "max": 3.3750100135803223,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "observation_5.png",
+      "raster": "observation_5.tif"
+    },
+    {
+      "id": "observation_6",
+      "label": "Reconstructed relative LOS change \u00b7 2026-01-17",
+      "unit": "cm",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "frame_index": 6,
+      "start": "2026-01-17T01:13:33+00:00",
+      "frame_scope": "epoch",
+      "valid_pixels": 510464,
+      "valid_fraction": 0.8466866590589421,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": -3.8501644134521484,
+      "max": 3.8501644134521484,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "observation_6.png",
+      "raster": "observation_6.tif"
+    },
+    {
+      "id": "los_rate_year",
+      "label": "Fitted relative LOS rate \u00b7 annualized",
+      "unit": "cm/year",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "valid_pixels": 510464,
+      "valid_fraction": 0.8466866590589421,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": -16.148656845092773,
+      "max": 16.148656845092773,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "los_rate_year.png",
+      "raster": "los_rate_year.tif"
+    },
+    {
+      "id": "los_rate_month",
+      "label": "Fitted relative LOS rate \u00b7 per mean month",
+      "unit": "cm/month",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "valid_pixels": 510464,
+      "valid_fraction": 0.8466866590589421,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": -1.3457214832305908,
+      "max": 1.3457214832305908,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "los_rate_month.png",
+      "raster": "los_rate_month.tif"
+    },
+    {
+      "id": "los_change",
+      "label": "Reconstructed first-to-last relative LOS change",
+      "unit": "cm",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "valid_pixels": 510464,
+      "valid_fraction": 0.8466866590589421,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": -3.8501644134521484,
+      "max": 3.8501644134521484,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "los_change.png",
+      "raster": "los_change.tif"
+    },
+    {
+      "id": "los_fit_residual",
+      "label": "Linear-trend residual RMS \u00b7 internal fit only",
+      "unit": "cm",
+      "kind": "continuous",
+      "spatial_scope": "study domain",
+      "valid_pixels": 510464,
+      "valid_fraction": 0.8466866590589421,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.23650985956192017,
+      "max": 1.6234811544418335,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "los_fit_residual.png",
+      "raster": "los_fit_residual.tif"
+    },
+    {
+      "id": "los_pair_residual",
+      "label": "Pair-network residual RMS \u00b7 zero by construction for a tree",
+      "unit": "cm",
+      "kind": "continuous",
+      "spatial_scope": "study domain",
+      "valid_pixels": 510464,
+      "valid_fraction": 0.8466866590589421,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 3.203655689341299e-16,
+      "max": 2.7017759096593583e-15,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "los_pair_residual.png",
+      "raster": "los_pair_residual.tif"
+    },
+    {
+      "id": "quality_accepted_fraction_0",
+      "label": "accepted fraction \u00b7 2025-10-25",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_accepted_fraction_0.png",
+      "raster": "quality_accepted_fraction_0.tif"
+    },
+    {
+      "id": "quality_missing_fraction_0",
+      "label": "missing fraction \u00b7 2025-10-25",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_missing_fraction_0.png",
+      "raster": "quality_missing_fraction_0.tif"
+    },
+    {
+      "id": "quality_rejected_invalid_subswath_0",
+      "label": "rejected invalid subswath \u00b7 2025-10-25",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_invalid_subswath_0.png",
+      "raster": "quality_rejected_invalid_subswath_0.tif"
+    },
+    {
+      "id": "quality_rejected_source_anomaly_0",
+      "label": "rejected source anomaly \u00b7 2025-10-25",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_source_anomaly_0.png",
+      "raster": "quality_rejected_source_anomaly_0.tif"
+    },
+    {
+      "id": "quality_rejected_coherence_0",
+      "label": "rejected coherence \u00b7 2025-10-25",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 0.8903723955154419,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_coherence_0.png",
+      "raster": "quality_rejected_coherence_0.tif"
+    },
+    {
+      "id": "quality_rejected_component_missing_0",
+      "label": "rejected component missing \u00b7 2025-10-25",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 0.0984334647655487,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_component_missing_0.png",
+      "raster": "quality_rejected_component_missing_0.tif"
+    },
+    {
+      "id": "quality_rejected_other_component_0",
+      "label": "rejected other component \u00b7 2025-10-25",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_other_component_0.png",
+      "raster": "quality_rejected_other_component_0.tif"
+    },
+    {
+      "id": "quality_rejected_missing_correction_0",
+      "label": "rejected missing correction \u00b7 2025-10-25",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_missing_correction_0.png",
+      "raster": "quality_rejected_missing_correction_0.tif"
+    },
+    {
+      "id": "quality_ionosphere_interpolated_0",
+      "label": "ionosphere interpolated \u00b7 2025-10-25",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 588671,
+      "valid_fraction": 0.9764055492157852,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_ionosphere_interpolated_0.png",
+      "raster": "quality_ionosphere_interpolated_0.tif"
+    },
+    {
+      "id": "quality_coherence_0",
+      "label": "coherence \u00b7 2025-10-25",
+      "unit": "score",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 588671,
+      "valid_fraction": 0.9764055492157852,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.36689284443855286,
+      "max": 0.8820457458496094,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_coherence_0.png",
+      "raster": "quality_coherence_0.tif"
+    },
+    {
+      "id": "quality_ionospheric_phase_correction_0",
+      "label": "ionospheric phase correction \u00b7 2025-10-25",
+      "unit": "rad",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 588671,
+      "valid_fraction": 0.9764055492157852,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 18.40542221069336,
+      "max": 21.69509506225586,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_ionospheric_phase_correction_0.png",
+      "raster": "quality_ionospheric_phase_correction_0.tif"
+    },
+    {
+      "id": "quality_accepted_fraction_1",
+      "label": "accepted fraction \u00b7 2025-11-06",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_accepted_fraction_1.png",
+      "raster": "quality_accepted_fraction_1.tif"
+    },
+    {
+      "id": "quality_missing_fraction_1",
+      "label": "missing fraction \u00b7 2025-11-06",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_missing_fraction_1.png",
+      "raster": "quality_missing_fraction_1.tif"
+    },
+    {
+      "id": "quality_rejected_invalid_subswath_1",
+      "label": "rejected invalid subswath \u00b7 2025-11-06",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_invalid_subswath_1.png",
+      "raster": "quality_rejected_invalid_subswath_1.tif"
+    },
+    {
+      "id": "quality_rejected_source_anomaly_1",
+      "label": "rejected source anomaly \u00b7 2025-11-06",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_source_anomaly_1.png",
+      "raster": "quality_rejected_source_anomaly_1.tif"
+    },
+    {
+      "id": "quality_rejected_coherence_1",
+      "label": "rejected coherence \u00b7 2025-11-06",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_coherence_1.png",
+      "raster": "quality_rejected_coherence_1.tif"
+    },
+    {
+      "id": "quality_rejected_component_missing_1",
+      "label": "rejected component missing \u00b7 2025-11-06",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_component_missing_1.png",
+      "raster": "quality_rejected_component_missing_1.tif"
+    },
+    {
+      "id": "quality_rejected_other_component_1",
+      "label": "rejected other component \u00b7 2025-11-06",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_other_component_1.png",
+      "raster": "quality_rejected_other_component_1.tif"
+    },
+    {
+      "id": "quality_rejected_missing_correction_1",
+      "label": "rejected missing correction \u00b7 2025-11-06",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_missing_correction_1.png",
+      "raster": "quality_rejected_missing_correction_1.tif"
+    },
+    {
+      "id": "quality_ionosphere_interpolated_1",
+      "label": "ionosphere interpolated \u00b7 2025-11-06",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 586181,
+      "valid_fraction": 0.9722754836655079,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_ionosphere_interpolated_1.png",
+      "raster": "quality_ionosphere_interpolated_1.tif"
+    },
+    {
+      "id": "quality_coherence_1",
+      "label": "coherence \u00b7 2025-11-06",
+      "unit": "score",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 586181,
+      "valid_fraction": 0.9722754836655079,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.3514176905155182,
+      "max": 0.8869267702102661,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_coherence_1.png",
+      "raster": "quality_coherence_1.tif"
+    },
+    {
+      "id": "quality_ionospheric_phase_correction_1",
+      "label": "ionospheric phase correction \u00b7 2025-11-06",
+      "unit": "rad",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 586181,
+      "valid_fraction": 0.9722754836655079,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 67.72833251953125,
+      "max": 73.90367126464844,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_ionospheric_phase_correction_1.png",
+      "raster": "quality_ionospheric_phase_correction_1.tif"
+    },
+    {
+      "id": "quality_accepted_fraction_2",
+      "label": "accepted fraction \u00b7 2025-11-18",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_accepted_fraction_2.png",
+      "raster": "quality_accepted_fraction_2.tif"
+    },
+    {
+      "id": "quality_missing_fraction_2",
+      "label": "missing fraction \u00b7 2025-11-18",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_missing_fraction_2.png",
+      "raster": "quality_missing_fraction_2.tif"
+    },
+    {
+      "id": "quality_rejected_invalid_subswath_2",
+      "label": "rejected invalid subswath \u00b7 2025-11-18",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_invalid_subswath_2.png",
+      "raster": "quality_rejected_invalid_subswath_2.tif"
+    },
+    {
+      "id": "quality_rejected_source_anomaly_2",
+      "label": "rejected source anomaly \u00b7 2025-11-18",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_source_anomaly_2.png",
+      "raster": "quality_rejected_source_anomaly_2.tif"
+    },
+    {
+      "id": "quality_rejected_coherence_2",
+      "label": "rejected coherence \u00b7 2025-11-18",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_coherence_2.png",
+      "raster": "quality_rejected_coherence_2.tif"
+    },
+    {
+      "id": "quality_rejected_component_missing_2",
+      "label": "rejected component missing \u00b7 2025-11-18",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_component_missing_2.png",
+      "raster": "quality_rejected_component_missing_2.tif"
+    },
+    {
+      "id": "quality_rejected_other_component_2",
+      "label": "rejected other component \u00b7 2025-11-18",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_other_component_2.png",
+      "raster": "quality_rejected_other_component_2.tif"
+    },
+    {
+      "id": "quality_rejected_missing_correction_2",
+      "label": "rejected missing correction \u00b7 2025-11-18",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_missing_correction_2.png",
+      "raster": "quality_rejected_missing_correction_2.tif"
+    },
+    {
+      "id": "quality_ionosphere_interpolated_2",
+      "label": "ionosphere interpolated \u00b7 2025-11-18",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 577541,
+      "valid_fraction": 0.9579446538043046,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_ionosphere_interpolated_2.png",
+      "raster": "quality_ionosphere_interpolated_2.tif"
+    },
+    {
+      "id": "quality_coherence_2",
+      "label": "coherence \u00b7 2025-11-18",
+      "unit": "score",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 577541,
+      "valid_fraction": 0.9579446538043046,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.32733356952667236,
+      "max": 0.8768848180770874,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_coherence_2.png",
+      "raster": "quality_coherence_2.tif"
+    },
+    {
+      "id": "quality_ionospheric_phase_correction_2",
+      "label": "ionospheric phase correction \u00b7 2025-11-18",
+      "unit": "rad",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 577541,
+      "valid_fraction": 0.9579446538043046,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 82.1407699584961,
+      "max": 86.21925354003906,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_ionospheric_phase_correction_2.png",
+      "raster": "quality_ionospheric_phase_correction_2.tif"
+    },
+    {
+      "id": "quality_accepted_fraction_3",
+      "label": "accepted fraction \u00b7 2025-12-12",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_accepted_fraction_3.png",
+      "raster": "quality_accepted_fraction_3.tif"
+    },
+    {
+      "id": "quality_missing_fraction_3",
+      "label": "missing fraction \u00b7 2025-12-12",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_missing_fraction_3.png",
+      "raster": "quality_missing_fraction_3.tif"
+    },
+    {
+      "id": "quality_rejected_invalid_subswath_3",
+      "label": "rejected invalid subswath \u00b7 2025-12-12",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_invalid_subswath_3.png",
+      "raster": "quality_rejected_invalid_subswath_3.tif"
+    },
+    {
+      "id": "quality_rejected_source_anomaly_3",
+      "label": "rejected source anomaly \u00b7 2025-12-12",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_source_anomaly_3.png",
+      "raster": "quality_rejected_source_anomaly_3.tif"
+    },
+    {
+      "id": "quality_rejected_coherence_3",
+      "label": "rejected coherence \u00b7 2025-12-12",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_coherence_3.png",
+      "raster": "quality_rejected_coherence_3.tif"
+    },
+    {
+      "id": "quality_rejected_component_missing_3",
+      "label": "rejected component missing \u00b7 2025-12-12",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_component_missing_3.png",
+      "raster": "quality_rejected_component_missing_3.tif"
+    },
+    {
+      "id": "quality_rejected_other_component_3",
+      "label": "rejected other component \u00b7 2025-12-12",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_other_component_3.png",
+      "raster": "quality_rejected_other_component_3.tif"
+    },
+    {
+      "id": "quality_rejected_missing_correction_3",
+      "label": "rejected missing correction \u00b7 2025-12-12",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_missing_correction_3.png",
+      "raster": "quality_rejected_missing_correction_3.tif"
+    },
+    {
+      "id": "quality_ionosphere_interpolated_3",
+      "label": "ionosphere interpolated \u00b7 2025-12-12",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 583832,
+      "valid_fraction": 0.9683792892969931,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_ionosphere_interpolated_3.png",
+      "raster": "quality_ionosphere_interpolated_3.tif"
+    },
+    {
+      "id": "quality_coherence_3",
+      "label": "coherence \u00b7 2025-12-12",
+      "unit": "score",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 583832,
+      "valid_fraction": 0.9683792892969931,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.33369889855384827,
+      "max": 0.8875666856765747,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_coherence_3.png",
+      "raster": "quality_coherence_3.tif"
+    },
+    {
+      "id": "quality_ionospheric_phase_correction_3",
+      "label": "ionospheric phase correction \u00b7 2025-12-12",
+      "unit": "rad",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 583832,
+      "valid_fraction": 0.9683792892969931,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 11.011975288391113,
+      "max": 13.619436264038086,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_ionospheric_phase_correction_3.png",
+      "raster": "quality_ionospheric_phase_correction_3.tif"
+    },
+    {
+      "id": "quality_accepted_fraction_4",
+      "label": "accepted fraction \u00b7 2025-12-24",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_accepted_fraction_4.png",
+      "raster": "quality_accepted_fraction_4.tif"
+    },
+    {
+      "id": "quality_missing_fraction_4",
+      "label": "missing fraction \u00b7 2025-12-24",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_missing_fraction_4.png",
+      "raster": "quality_missing_fraction_4.tif"
+    },
+    {
+      "id": "quality_rejected_invalid_subswath_4",
+      "label": "rejected invalid subswath \u00b7 2025-12-24",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_invalid_subswath_4.png",
+      "raster": "quality_rejected_invalid_subswath_4.tif"
+    },
+    {
+      "id": "quality_rejected_source_anomaly_4",
+      "label": "rejected source anomaly \u00b7 2025-12-24",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_source_anomaly_4.png",
+      "raster": "quality_rejected_source_anomaly_4.tif"
+    },
+    {
+      "id": "quality_rejected_coherence_4",
+      "label": "rejected coherence \u00b7 2025-12-24",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_coherence_4.png",
+      "raster": "quality_rejected_coherence_4.tif"
+    },
+    {
+      "id": "quality_rejected_component_missing_4",
+      "label": "rejected component missing \u00b7 2025-12-24",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_component_missing_4.png",
+      "raster": "quality_rejected_component_missing_4.tif"
+    },
+    {
+      "id": "quality_rejected_other_component_4",
+      "label": "rejected other component \u00b7 2025-12-24",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_other_component_4.png",
+      "raster": "quality_rejected_other_component_4.tif"
+    },
+    {
+      "id": "quality_rejected_missing_correction_4",
+      "label": "rejected missing correction \u00b7 2025-12-24",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_missing_correction_4.png",
+      "raster": "quality_rejected_missing_correction_4.tif"
+    },
+    {
+      "id": "quality_ionosphere_interpolated_4",
+      "label": "ionosphere interpolated \u00b7 2025-12-24",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 587822,
+      "valid_fraction": 0.9749973461426183,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_ionosphere_interpolated_4.png",
+      "raster": "quality_ionosphere_interpolated_4.tif"
+    },
+    {
+      "id": "quality_coherence_4",
+      "label": "coherence \u00b7 2025-12-24",
+      "unit": "score",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 587822,
+      "valid_fraction": 0.9749973461426183,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.34443604946136475,
+      "max": 0.8939118385314941,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_coherence_4.png",
+      "raster": "quality_coherence_4.tif"
+    },
+    {
+      "id": "quality_ionospheric_phase_correction_4",
+      "label": "ionospheric phase correction \u00b7 2025-12-24",
+      "unit": "rad",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 587822,
+      "valid_fraction": 0.9749973461426183,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 40.24079895019531,
+      "max": 44.15617752075195,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_ionospheric_phase_correction_4.png",
+      "raster": "quality_ionospheric_phase_correction_4.tif"
+    },
+    {
+      "id": "quality_accepted_fraction_5",
+      "label": "accepted fraction \u00b7 2026-01-05",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_accepted_fraction_5.png",
+      "raster": "quality_accepted_fraction_5.tif"
+    },
+    {
+      "id": "quality_missing_fraction_5",
+      "label": "missing fraction \u00b7 2026-01-05",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_missing_fraction_5.png",
+      "raster": "quality_missing_fraction_5.tif"
+    },
+    {
+      "id": "quality_rejected_invalid_subswath_5",
+      "label": "rejected invalid subswath \u00b7 2026-01-05",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_invalid_subswath_5.png",
+      "raster": "quality_rejected_invalid_subswath_5.tif"
+    },
+    {
+      "id": "quality_rejected_source_anomaly_5",
+      "label": "rejected source anomaly \u00b7 2026-01-05",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_source_anomaly_5.png",
+      "raster": "quality_rejected_source_anomaly_5.tif"
+    },
+    {
+      "id": "quality_rejected_coherence_5",
+      "label": "rejected coherence \u00b7 2026-01-05",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_coherence_5.png",
+      "raster": "quality_rejected_coherence_5.tif"
+    },
+    {
+      "id": "quality_rejected_component_missing_5",
+      "label": "rejected component missing \u00b7 2026-01-05",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_component_missing_5.png",
+      "raster": "quality_rejected_component_missing_5.tif"
+    },
+    {
+      "id": "quality_rejected_other_component_5",
+      "label": "rejected other component \u00b7 2026-01-05",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_other_component_5.png",
+      "raster": "quality_rejected_other_component_5.tif"
+    },
+    {
+      "id": "quality_rejected_missing_correction_5",
+      "label": "rejected missing correction \u00b7 2026-01-05",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 602896,
+      "valid_fraction": 1.0,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_rejected_missing_correction_5.png",
+      "raster": "quality_rejected_missing_correction_5.tif"
+    },
+    {
+      "id": "quality_ionosphere_interpolated_5",
+      "label": "ionosphere interpolated \u00b7 2026-01-05",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 588430,
+      "valid_fraction": 0.9760058119476659,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_ionosphere_interpolated_5.png",
+      "raster": "quality_ionosphere_interpolated_5.tif"
+    },
+    {
+      "id": "quality_coherence_5",
+      "label": "coherence \u00b7 2026-01-05",
+      "unit": "score",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 588430,
+      "valid_fraction": 0.9760058119476659,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": 0.35217997431755066,
+      "max": 0.8897241950035095,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_coherence_5.png",
+      "raster": "quality_coherence_5.tif"
+    },
+    {
+      "id": "quality_ionospheric_phase_correction_5",
+      "label": "ionospheric phase correction \u00b7 2026-01-05",
+      "unit": "rad",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 588430,
+      "valid_fraction": 0.9760058119476659,
+      "interpretation": "Relative line-of-sight motion mixes horizontal and vertical components. Annualized rates describe the observed span. A tree network has no independent closure check.",
+      "min": -27.398693084716797,
+      "max": -22.9952392578125,
+      "bounds": [
+        [
+          19.139508724082503,
+          -99.4
+        ],
+        [
+          19.65,
+          -98.74995939488075
+        ]
+      ],
+      "image": "quality_ionospheric_phase_correction_5.png",
+      "raster": "quality_ionospheric_phase_correction_5.tif"
+    }
+  ],
+  "grid": {
+    "crs": "EPSG:6933",
+    "resolution_m": 80.0,
+    "shape": [
+      769,
+      784
+    ],
+    "bbox": [
+      -99.4,
+      19.14,
+      -98.75,
+      19.65
+    ]
+  },
+  "validation_status": "Exploratory; independent scientific accuracy has not been established."
+}

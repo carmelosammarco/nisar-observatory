@@ -1,0 +1,69 @@
+{
+  "tool": "P06",
+  "provenance_verified": true,
+  "protected_input_count": 5,
+  "reader_versions": [
+    "0.3.1"
+  ],
+  "processing_remote_bytes": 0,
+  "metrics": {
+    "latest_change_area_km2": 145.6028,
+    "repeated_latest_change_area_km2": 128.292,
+    "increasing_area_km2": 145.6028,
+    "decreasing_area_km2": 0.0,
+    "common_valid_area_km2": 478.0604
+  },
+  "series": [
+    {
+      "date": "2026-06-18T08:49:27Z",
+      "median_db": -8.206042289733887,
+      "water_candidate_km2": 49.6696,
+      "valid_fraction": 0.9614441548412009,
+      "change_candidate_km2": 0.0,
+      "brightening_candidate_km2": 0.0,
+      "dimming_candidate_km2": 0.0,
+      "comparison_pixels": 1195151
+    },
+    {
+      "date": "2026-06-30T08:49:26Z",
+      "median_db": -7.02485466003418,
+      "water_candidate_km2": 23.186400000000003,
+      "valid_fraction": 0.9614433503877465,
+      "change_candidate_km2": 41.5848,
+      "brightening_candidate_km2": 41.5848,
+      "dimming_candidate_km2": 0.0,
+      "comparison_pixels": 1195151
+    },
+    {
+      "date": "2026-07-12T08:49:29Z",
+      "median_db": -6.623749256134033,
+      "water_candidate_km2": 3.6652,
+      "valid_fraction": 0.9614441548412009,
+      "change_candidate_km2": 118.7296,
+      "brightening_candidate_km2": 118.7296,
+      "dimming_candidate_km2": 0.0,
+      "comparison_pixels": 1195151
+    },
+    {
+      "date": "2026-07-24T08:49:25Z",
+      "median_db": -6.736897945404053,
+      "water_candidate_km2": 1.9668,
+      "valid_fraction": 0.9614433503877465,
+      "change_candidate_km2": 132.9044,
+      "brightening_candidate_km2": 132.9044,
+      "dimming_candidate_km2": 0.0,
+      "comparison_pixels": 1195151
+    },
+    {
+      "date": "2026-08-17T08:49:24Z",
+      "median_db": -6.6775102615356445,
+      "water_candidate_km2": 0.9756,
+      "valid_fraction": 0.9614433503877465,
+      "change_candidate_km2": 145.6028,
+      "brightening_candidate_km2": 145.6028,
+      "dimming_candidate_km2": 0.0,
+      "comparison_pixels": 1195151
+    }
+  ],
+  "scientific_accuracy": "Not established; numerical replay check only."
+}

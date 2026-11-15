@@ -1,0 +1,43 @@
+{
+  "auc": 0.9862304925918579,
+  "perimeter": {
+    "tp": 185670,
+    "fp": 655,
+    "fn": 70651,
+    "tn": 873243,
+    "precision": 0.9964846370589024,
+    "recall": 0.7243651515092404,
+    "f1": 0.8389096478901876,
+    "iou": 0.7225188344436835,
+    "mapped_ha": 7453.0,
+    "reference_ha": 10252.84,
+    "valid_ha": 45208.76
+  },
+  "published_outline": {
+    "tp": 184137,
+    "fp": 2188,
+    "fn": 4620,
+    "tn": 939274,
+    "precision": 0.9882570776868376,
+    "recall": 0.9755240865239435,
+    "f1": 0.9818493022859002,
+    "iou": 0.9643457540129357,
+    "mapped_ha": 7453.0,
+    "reference_ha": 7550.28,
+    "valid_ha": 45208.76
+  },
+  "app_metrics": {
+    "candidate_area_ha": 7453.0,
+    "valid_land_ha": 45228.56,
+    "candidate_fraction": 0.16478525957934545,
+    "viewing_groups": 2
+  },
+  "normalization": {
+    "median_db": 1.9985551503497896,
+    "scaled_mad_db": 0.36363570711994014,
+    "valid_land_ha": 45228.56
+  },
+  "app_job_id": "e855356e7cdf4acb90bbf84c586688e3",
+  "protected_browser_recipe_verified": true,
+  "bitwise_score_match_to_integrated_benchmark": true
+}

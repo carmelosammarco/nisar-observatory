@@ -1,0 +1,624 @@
+{
+  "format": "nisar-observatory-example-inputs-1",
+  "example": "P05_Venezuela",
+  "inputs": [
+    {
+      "id": "subset-85edd49270001ced9c8aaa5fcee26020",
+      "name": "NISAR_L2_PR_GUNW_022_162_A_006_023_4000_SH_20260613T100623_20260613T100657_20260625T100622_20260625T100656_P05023_N_F_J_001",
+      "product": "GUNW",
+      "start": "2026-06-13T10:06:23Z",
+      "end": "2026-06-25T10:06:22Z",
+      "catalog_start": "2026-06-13T10:06:23.000Z",
+      "catalog_end": "2026-06-25T10:06:56.999Z",
+      "size_mb": 10.779225,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_022_162_A_006_023_4000_SH_20260613T100623_20260613T100657_20260625T100622_20260625T100656_P05023_N_F_J_001/NISAR_L2_PR_GUNW_022_162_A_006_023_4000_SH_20260613T100623_20260613T100657_20260625T100622_20260625T100656_P05023_N_F_J_001.h5",
+      "group": "162_A_006_4000_SH_P05023",
+      "boxes": [
+        "9.8 -69.0 11.55 -66.35"
+      ],
+      "polygons": [],
+      "source_id": "G4276284486-ASF",
+      "catalog_id": "G4276284486-ASF",
+      "subset": true,
+      "subset_bbox": [
+        -69.0,
+        9.8,
+        -66.35,
+        11.55
+      ],
+      "bbox": [
+        -69.0,
+        9.8,
+        -66.35,
+        11.55
+      ],
+      "bounds": [
+        -69.0,
+        9.8,
+        -66.35,
+        11.55
+      ],
+      "local": true,
+      "subset_version": "area-1",
+      "subset_created_at": "2026-10-19T18:51:15.673620+00:00",
+      "content_sha256": "414ffda9a8e203a760c3c487527076f5b62d2722450f775ec6e878b2f6112db2",
+      "retained_layers": [
+        "/science/LSAR/GUNW/grids/frequencyA/pixelOffsets/HH/alongTrackOffset",
+        "/science/LSAR/GUNW/grids/frequencyA/pixelOffsets/HH/correlationSurfacePeak",
+        "/science/LSAR/GUNW/grids/frequencyA/pixelOffsets/HH/slantRangeOffset",
+        "/science/LSAR/GUNW/grids/frequencyA/pixelOffsets/mask",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/coherenceMagnitude",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/connectedComponents",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreenUncertainty",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/unwrappedPhase",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/mask"
+      ],
+      "omitted_layers": [
+        {
+          "path": "/science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/HH/coherenceMagnitude",
+          "reason": "Native window exceeds 8 million pixels. Select a smaller rectangle."
+        },
+        {
+          "path": "/science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/HH/wrappedInterferogram",
+          "reason": "Native window exceeds 8 million pixels. Select a smaller rectangle."
+        },
+        {
+          "path": "/science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/mask",
+          "reason": "Native window exceeds 8 million pixels. Select a smaller rectangle."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/attitude/reference/eulerAngles",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/attitude/reference/quaternions",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/attitude/secondary/eulerAngles",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/attitude/secondary/quaternions",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/orbit/reference/position",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/orbit/reference/velocity",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/orbit/secondary/position",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/orbit/secondary/velocity",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/processingInformation/parameters/common/frequencyA/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/processingInformation/parameters/reference/frequencyA/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/processingInformation/parameters/secondary/frequencyA/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/alongTrackUnitVectorX",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/alongTrackUnitVectorY",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/elevationAngle",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/groundTrackVelocity",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/hydrostaticTroposphericPhaseScreen",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/incidenceAngle",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/losUnitVectorX",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/losUnitVectorY",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/parallelBaseline",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/perpendicularBaseline",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/referenceSlantRange",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/referenceZeroDopplerAzimuthTime",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/secondarySlantRange",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/secondaryZeroDopplerAzimuthTime",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/slantRangeSolidEarthTidesPhase",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/wetTroposphericPhaseScreen",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        }
+      ],
+      "original_size_mb": 2174.4582386016846,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -69.0,
+              9.8
+            ],
+            [
+              -66.35,
+              9.8
+            ],
+            [
+              -66.35,
+              11.55
+            ],
+            [
+              -69.0,
+              11.55
+            ],
+            [
+              -69.0,
+              9.8
+            ]
+          ]
+        ]
+      },
+      "example_id": "P05_Venezuela",
+      "example_file": "NISAR_L2_PR_GUNW_022_162_A_006_023_4000_SH_20260613T100623_20260613T100657_20260625T100622_20260625T100656_P05023_N_F_J_001__subset_85edd4927000.h5",
+      "protected_example": true
+    },
+    {
+      "id": "subset-1ef777939636f7bfe8461f14bc1d97d8",
+      "name": "NISAR_L2_PR_GUNW_022_162_A_007_023_4000_SH_20260613T100656_20260613T100731_20260625T100655_20260625T100730_P05023_N_F_J_001",
+      "product": "GUNW",
+      "start": "2026-06-13T10:06:56Z",
+      "end": "2026-06-25T10:06:55Z",
+      "catalog_start": "2026-06-13T10:06:56.000Z",
+      "catalog_end": "2026-06-25T10:07:30.999Z",
+      "size_mb": 102.83291,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_022_162_A_007_023_4000_SH_20260613T100656_20260613T100731_20260625T100655_20260625T100730_P05023_N_F_J_001/NISAR_L2_PR_GUNW_022_162_A_007_023_4000_SH_20260613T100656_20260613T100731_20260625T100655_20260625T100730_P05023_N_F_J_001.h5",
+      "group": "162_A_007_4000_SH_P05023",
+      "boxes": [
+        "9.8 -69.0 11.55 -66.35"
+      ],
+      "polygons": [],
+      "source_id": "G4276300590-ASF",
+      "catalog_id": "G4276300590-ASF",
+      "subset": true,
+      "subset_bbox": [
+        -69.0,
+        9.8,
+        -66.35,
+        11.55
+      ],
+      "bbox": [
+        -69.0,
+        9.8,
+        -66.35,
+        11.55
+      ],
+      "bounds": [
+        -69.0,
+        9.8,
+        -66.35,
+        11.55
+      ],
+      "local": true,
+      "subset_version": "area-1",
+      "subset_created_at": "2026-10-19T18:54:34.253027+00:00",
+      "content_sha256": "bc61945e0b6a45f321312d2a35ad1b55da7bdbba063964d8012052c66c06041a",
+      "retained_layers": [
+        "/science/LSAR/GUNW/grids/frequencyA/pixelOffsets/HH/alongTrackOffset",
+        "/science/LSAR/GUNW/grids/frequencyA/pixelOffsets/HH/correlationSurfacePeak",
+        "/science/LSAR/GUNW/grids/frequencyA/pixelOffsets/HH/slantRangeOffset",
+        "/science/LSAR/GUNW/grids/frequencyA/pixelOffsets/mask",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/coherenceMagnitude",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/connectedComponents",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreenUncertainty",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/unwrappedPhase",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/mask"
+      ],
+      "omitted_layers": [
+        {
+          "path": "/science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/HH/coherenceMagnitude",
+          "reason": "Native window exceeds 8 million pixels. Select a smaller rectangle."
+        },
+        {
+          "path": "/science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/HH/wrappedInterferogram",
+          "reason": "Native window exceeds 8 million pixels. Select a smaller rectangle."
+        },
+        {
+          "path": "/science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/mask",
+          "reason": "Native window exceeds 8 million pixels. Select a smaller rectangle."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/attitude/reference/eulerAngles",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/attitude/reference/quaternions",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/attitude/secondary/eulerAngles",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/attitude/secondary/quaternions",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/orbit/reference/position",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/orbit/reference/velocity",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/orbit/secondary/position",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/orbit/secondary/velocity",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/processingInformation/parameters/common/frequencyA/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/processingInformation/parameters/reference/frequencyA/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/processingInformation/parameters/secondary/frequencyA/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/alongTrackUnitVectorX",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/alongTrackUnitVectorY",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/elevationAngle",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/groundTrackVelocity",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/hydrostaticTroposphericPhaseScreen",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/incidenceAngle",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/losUnitVectorX",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/losUnitVectorY",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/parallelBaseline",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/perpendicularBaseline",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/referenceSlantRange",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/referenceZeroDopplerAzimuthTime",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/secondarySlantRange",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/secondaryZeroDopplerAzimuthTime",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/slantRangeSolidEarthTidesPhase",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/wetTroposphericPhaseScreen",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        }
+      ],
+      "original_size_mb": 2235.326169013977,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -69.0,
+              9.8
+            ],
+            [
+              -66.35,
+              9.8
+            ],
+            [
+              -66.35,
+              11.55
+            ],
+            [
+              -69.0,
+              11.55
+            ],
+            [
+              -69.0,
+              9.8
+            ]
+          ]
+        ]
+      },
+      "example_id": "P05_Venezuela",
+      "example_file": "NISAR_L2_PR_GUNW_022_162_A_007_023_4000_SH_20260613T100656_20260613T100731_20260625T100655_20260625T100730_P05023_N_F_J_001__subset_1ef777939636.h5",
+      "protected_example": true
+    },
+    {
+      "id": "subset-d19d37d31a7ea07b613d70f50ef575f2",
+      "name": "NISAR_L2_PR_GUNW_023_061_A_007_024_4000_SH_20260618T095836_20260618T095911_20260630T095835_20260630T095910_P05023_N_F_J_001",
+      "product": "GUNW",
+      "start": "2026-06-18T09:58:36Z",
+      "end": "2026-06-30T09:58:35Z",
+      "catalog_start": "2026-06-18T09:58:36.000Z",
+      "catalog_end": "2026-06-30T09:59:10.999Z",
+      "size_mb": 52.860128,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_023_061_A_007_024_4000_SH_20260618T095836_20260618T095911_20260630T095835_20260630T095910_P05023_N_F_J_001/NISAR_L2_PR_GUNW_023_061_A_007_024_4000_SH_20260618T095836_20260618T095911_20260630T095835_20260630T095910_P05023_N_F_J_001.h5",
+      "group": "061_A_007_4000_SH_P05023",
+      "boxes": [
+        "9.8 -69.0 11.55 -66.35"
+      ],
+      "polygons": [],
+      "source_id": "G4251311930-ASF",
+      "catalog_id": "G4251311930-ASF",
+      "subset": true,
+      "subset_bbox": [
+        -69.0,
+        9.8,
+        -66.35,
+        11.55
+      ],
+      "bbox": [
+        -69.0,
+        9.8,
+        -66.35,
+        11.55
+      ],
+      "bounds": [
+        -69.0,
+        9.8,
+        -66.35,
+        11.55
+      ],
+      "local": true,
+      "subset_version": "area-1",
+      "subset_created_at": "2026-10-19T19:01:40.596168+00:00",
+      "content_sha256": "b950405bf43425959d726af36fa1c231aa5aae36b46f812e75248ebe1232454d",
+      "retained_layers": [
+        "/science/LSAR/GUNW/grids/frequencyA/pixelOffsets/HH/alongTrackOffset",
+        "/science/LSAR/GUNW/grids/frequencyA/pixelOffsets/HH/correlationSurfacePeak",
+        "/science/LSAR/GUNW/grids/frequencyA/pixelOffsets/HH/slantRangeOffset",
+        "/science/LSAR/GUNW/grids/frequencyA/pixelOffsets/mask",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/coherenceMagnitude",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/connectedComponents",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreenUncertainty",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/unwrappedPhase",
+        "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/mask"
+      ],
+      "omitted_layers": [
+        {
+          "path": "/science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/HH/coherenceMagnitude",
+          "reason": "Native window exceeds 8 million pixels. Select a smaller rectangle."
+        },
+        {
+          "path": "/science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/HH/wrappedInterferogram",
+          "reason": "Native window exceeds 8 million pixels. Select a smaller rectangle."
+        },
+        {
+          "path": "/science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/mask",
+          "reason": "Native window exceeds 8 million pixels. Select a smaller rectangle."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/attitude/reference/eulerAngles",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/attitude/reference/quaternions",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/attitude/secondary/eulerAngles",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/attitude/secondary/quaternions",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/orbit/reference/position",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/orbit/reference/velocity",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/orbit/secondary/position",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/orbit/secondary/velocity",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/processingInformation/parameters/common/frequencyA/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/processingInformation/parameters/reference/frequencyA/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/processingInformation/parameters/secondary/frequencyA/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/alongTrackUnitVectorX",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/alongTrackUnitVectorY",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/elevationAngle",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/groundTrackVelocity",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/hydrostaticTroposphericPhaseScreen",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/incidenceAngle",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/losUnitVectorX",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/losUnitVectorY",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/parallelBaseline",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/perpendicularBaseline",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/referenceSlantRange",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/referenceZeroDopplerAzimuthTime",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/secondarySlantRange",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/secondaryZeroDopplerAzimuthTime",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/slantRangeSolidEarthTidesPhase",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GUNW/metadata/radarGrid/wetTroposphericPhaseScreen",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        }
+      ],
+      "original_size_mb": 2235.701247215271,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -69.0,
+              9.8
+            ],
+            [
+              -66.35,
+              9.8
+            ],
+            [
+              -66.35,
+              11.55
+            ],
+            [
+              -69.0,
+              11.55
+            ],
+            [
+              -69.0,
+              9.8
+            ]
+          ]
+        ]
+      },
+      "example_id": "P05_Venezuela",
+      "example_file": "NISAR_L2_PR_GUNW_023_061_A_007_024_4000_SH_20260618T095836_20260618T095911_20260630T095835_20260630T095910_P05023_N_F_J_001__subset_d19d37d31a7e.h5",
+      "protected_example": true
+    }
+  ]
+}

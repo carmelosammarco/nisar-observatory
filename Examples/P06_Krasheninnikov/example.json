@@ -1,0 +1,517 @@
+{
+  "id": "P06_Krasheninnikov",
+  "tool": "P06",
+  "tool_name": "Volcano Surface Diary",
+  "title": "Krasheninnikov, Kamchatka",
+  "subtitle": "Follow real radar-scattering changes beside NASA’s volcano time-lapse",
+  "product": "GCOV",
+  "request": {
+    "bbox": [
+      160.15,
+      54.51,
+      160.5,
+      54.7
+    ],
+    "projects": [
+      "P06"
+    ],
+    "options": {
+      "surface_method": "evolving",
+      "channel": "HHHH",
+      "resolution": 20,
+      "baseline_count": 1,
+      "baseline_end": "2026-06-18",
+      "change_threshold": 3,
+      "smoothing_m": 40,
+      "patch_area_m2": 30000,
+      "min_valid_fraction": 0.5
+    },
+    "display": {
+      "palette": "diverging",
+      "mode": "custom",
+      "layer": "latest_departure",
+      "unit": "dB",
+      "low": -8,
+      "high": 8
+    }
+  },
+  "sources": [
+    {
+      "name": "NISAR_L2_PR_GCOV_023_060_D_061_4005_DHDH_A_20260618T084927_20260618T085005_P05023_N_F_J_001",
+      "product": "GCOV",
+      "start": "2026-06-18T08:49:27Z",
+      "end": "2026-06-18T08:50:05Z",
+      "catalog_start": "2026-06-18T08:49:27.000Z",
+      "catalog_end": "2026-06-18T08:50:05.999Z",
+      "size_mb": 54.549876,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_023_060_D_061_4005_DHDH_A_20260618T084927_20260618T085005_P05023_N_F_J_001/NISAR_L2_PR_GCOV_023_060_D_061_4005_DHDH_A_20260618T084927_20260618T085005_P05023_N_F_J_001.h5",
+      "group": "060_D_061_4005_DHDH_P05023",
+      "boxes": [
+        "54.51 160.15 54.7 160.5"
+      ],
+      "polygons": [],
+      "catalog_id": "G4240345872-ASF",
+      "bbox": [
+        160.15,
+        54.51,
+        160.5,
+        54.7
+      ],
+      "bounds": [
+        160.15,
+        54.51,
+        160.5,
+        54.7
+      ],
+      "original_size_mb": 6876.33228969574,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              160.15,
+              54.51
+            ],
+            [
+              160.5,
+              54.51
+            ],
+            [
+              160.5,
+              54.7
+            ],
+            [
+              160.15,
+              54.7
+            ],
+            [
+              160.15,
+              54.51
+            ]
+          ]
+        ]
+      },
+      "id": "G4240345872-ASF"
+    },
+    {
+      "name": "NISAR_L2_PR_GCOV_024_060_D_061_4005_DHDH_A_20260630T084926_20260630T085005_P05023_N_F_J_001",
+      "product": "GCOV",
+      "start": "2026-06-30T08:49:26Z",
+      "end": "2026-06-30T08:50:05Z",
+      "catalog_start": "2026-06-30T08:49:26.000Z",
+      "catalog_end": "2026-06-30T08:50:05.999Z",
+      "size_mb": 54.466766,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_060_D_061_4005_DHDH_A_20260630T084926_20260630T085005_P05023_N_F_J_001/NISAR_L2_PR_GCOV_024_060_D_061_4005_DHDH_A_20260630T084926_20260630T085005_P05023_N_F_J_001.h5",
+      "group": "060_D_061_4005_DHDH_P05023",
+      "boxes": [
+        "54.51 160.15 54.7 160.5"
+      ],
+      "polygons": [],
+      "catalog_id": "G4250844505-ASF",
+      "bbox": [
+        160.15,
+        54.51,
+        160.5,
+        54.7
+      ],
+      "bounds": [
+        160.15,
+        54.51,
+        160.5,
+        54.7
+      ],
+      "original_size_mb": 7036.111344337463,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              160.15,
+              54.51
+            ],
+            [
+              160.5,
+              54.51
+            ],
+            [
+              160.5,
+              54.7
+            ],
+            [
+              160.15,
+              54.7
+            ],
+            [
+              160.15,
+              54.51
+            ]
+          ]
+        ]
+      },
+      "id": "G4250844505-ASF"
+    },
+    {
+      "name": "NISAR_L2_PR_GCOV_025_060_D_061_4005_DHDH_A_20260712T084929_20260712T085004_P05023_N_F_J_001",
+      "product": "GCOV",
+      "start": "2026-07-12T08:49:29Z",
+      "end": "2026-07-12T08:50:04Z",
+      "catalog_start": "2026-07-12T08:49:29.000Z",
+      "catalog_end": "2026-07-12T08:50:04.999Z",
+      "size_mb": 54.405146,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_060_D_061_4005_DHDH_A_20260712T084929_20260712T085004_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_060_D_061_4005_DHDH_A_20260712T084929_20260712T085004_P05023_N_F_J_001.h5",
+      "group": "060_D_061_4005_DHDH_P05023",
+      "boxes": [
+        "54.51 160.15 54.7 160.5"
+      ],
+      "polygons": [],
+      "catalog_id": "G4252643155-ASF",
+      "bbox": [
+        160.15,
+        54.51,
+        160.5,
+        54.7
+      ],
+      "bounds": [
+        160.15,
+        54.51,
+        160.5,
+        54.7
+      ],
+      "original_size_mb": 6326.773406982422,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              160.15,
+              54.51
+            ],
+            [
+              160.5,
+              54.51
+            ],
+            [
+              160.5,
+              54.7
+            ],
+            [
+              160.15,
+              54.7
+            ],
+            [
+              160.15,
+              54.51
+            ]
+          ]
+        ]
+      },
+      "id": "G4252643155-ASF"
+    },
+    {
+      "name": "NISAR_L2_PR_GCOV_026_060_D_061_4005_DHDH_A_20260724T084925_20260724T085003_P05023_N_F_J_001",
+      "product": "GCOV",
+      "start": "2026-07-24T08:49:25Z",
+      "end": "2026-07-24T08:50:03Z",
+      "catalog_start": "2026-07-24T08:49:25.000Z",
+      "catalog_end": "2026-07-24T08:50:03.999Z",
+      "size_mb": 54.372742,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_026_060_D_061_4005_DHDH_A_20260724T084925_20260724T085003_P05023_N_F_J_001/NISAR_L2_PR_GCOV_026_060_D_061_4005_DHDH_A_20260724T084925_20260724T085003_P05023_N_F_J_001.h5",
+      "group": "060_D_061_4005_DHDH_P05023",
+      "boxes": [
+        "54.51 160.15 54.7 160.5"
+      ],
+      "polygons": [],
+      "catalog_id": "G4260821003-ASF",
+      "bbox": [
+        160.15,
+        54.51,
+        160.5,
+        54.7
+      ],
+      "bounds": [
+        160.15,
+        54.51,
+        160.5,
+        54.7
+      ],
+      "original_size_mb": 6868.09623336792,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              160.15,
+              54.51
+            ],
+            [
+              160.5,
+              54.51
+            ],
+            [
+              160.5,
+              54.7
+            ],
+            [
+              160.15,
+              54.7
+            ],
+            [
+              160.15,
+              54.51
+            ]
+          ]
+        ]
+      },
+      "id": "G4260821003-ASF"
+    },
+    {
+      "name": "NISAR_L2_PR_GCOV_028_060_D_061_4005_DHDH_A_20260817T084924_20260817T085002_P05023_N_F_J_001",
+      "product": "GCOV",
+      "start": "2026-08-17T08:49:24Z",
+      "end": "2026-08-17T08:50:02Z",
+      "catalog_start": "2026-08-17T08:49:24.000Z",
+      "catalog_end": "2026-08-17T08:50:02.999Z",
+      "size_mb": 54.335111,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_028_060_D_061_4005_DHDH_A_20260817T084924_20260817T085002_P05023_N_F_J_001/NISAR_L2_PR_GCOV_028_060_D_061_4005_DHDH_A_20260817T084924_20260817T085002_P05023_N_F_J_001.h5",
+      "group": "060_D_061_4005_DHDH_P05023",
+      "boxes": [
+        "54.51 160.15 54.7 160.5"
+      ],
+      "polygons": [],
+      "catalog_id": "G4285465897-ASF",
+      "bbox": [
+        160.15,
+        54.51,
+        160.5,
+        54.7
+      ],
+      "bounds": [
+        160.15,
+        54.51,
+        160.5,
+        54.7
+      ],
+      "original_size_mb": 6867.763945579529,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              160.15,
+              54.51
+            ],
+            [
+              160.5,
+              54.51
+            ],
+            [
+              160.5,
+              54.7
+            ],
+            [
+              160.15,
+              54.7
+            ],
+            [
+              160.15,
+              54.51
+            ]
+          ]
+        ]
+      },
+      "id": "G4285465897-ASF"
+    }
+  ],
+  "references": [
+    {
+      "url": "https://svs.gsfc.nasa.gov/5675/",
+      "title": "NASA’s Krasheninnikov time-lapse and dated frames",
+      "description": "Official 17-date HH L-band NISAR visualization, December 2025 to August 2026. Our five observations match its late-season dates; this is a qualitative reference, not a georeferenced lava mask or peer-reviewed validation paper."
+    },
+    {
+      "url": "https://www.jpl.nasa.gov/news/us-india-satellite-captures-time-lapse-video-of-volcanic-eruption/",
+      "title": "NASA/JPL explains the spreading lava field",
+      "description": "Explains the bright eastern flow field and older northwest flow, radar imagery and 3D presentation. Its full radiometric recipe and exact granule identities are not published."
+    },
+    {
+      "url": "https://volcano.si.edu/volcano.cfm?vn=300190",
+      "title": "Smithsonian eruption chronology and volcano location",
+      "description": "Independent GVP/KVERT reports provide eruption context. Activity began before our June baseline; this is chronology, not a supplied flow boundary."
+    }
+  ],
+  "question": "What changed in radar scattering around Krasheninnikov between June and August 2026?",
+  "method": "Use the five compatible descending-track HH observations on a 20 m local UTM grid. Screen native samples before averaging linear gamma-zero power, then convert to dB. Clip grid cell centres to the selected geographic rectangle and compare only cells usable on every selected date. Subtract the 18 June observed baseline. Smooth each signed departure with normalized Gaussian sigma 40 m while retaining missing cells. Separately retain positive and negative four-connected patches meeting ±3 dB and at least 30,000 m². Map the latest change, first observed qualifying date and same-sign change on consecutive later observations. No spatial reference rectangle, independent lava boundary, optical snow mask or wetness model is used.",
+  "expected": "The recorded run has 478.0604 km² of shared usable support; 145.6028 km² of latest brightness-change candidates, including 128.2920 km² repeated on consecutive later acquisitions. These are scattering-change areas, not lava areas. Bright crater and finger-like eastern-flow structures are recognizable in acquired HH images, but much of the existing flow field predates the baseline.",
+  "interpret": "Start with the latest smoothed departure in dB: red is increased radar brightness and blue decreased brightness, not hot and cold lava. Changed patches apply the saved threshold/area rules; repeated evidence describes sampled dates, not continuous activity. Explore time shows acquired HH brightness with one shared automatic scale. Compare those snapshots with NASA’s dated images to recognize the crater and existing flow field. A stable bright flow can show little change, while snowmelt or wetness elsewhere can produce a strong departure. First-change indices have a date key; they do not establish the exact emplacement time.",
+  "limits": "This is a qualitative surface-scattering case study, not a validated lava-boundary map or an exact reproduction of NASA’s display. The June baseline already contains lava. Snowmelt, wetness and terrain effects contribute broad changes; P06 does not classify them separately or identify temperature, magma, volume or deformation. NASA uses an oblique 3D view and stated 10 m imagery; our north-up analysis uses 20 m cells and 40 m smoothing sigma. Exact source geometry and display processing cannot be certified from NASA’s video. No independent dated lava polygons were used, so precision, recall, IoU and lava-area accuracy are not reported. Missing dates are unobserved, including the 24-day final gap.",
+  "comparison": [
+    [
+      "Measurement alignment",
+      "HH radar brightness and flow morphology in a 3D time-lapse",
+      "Signed baseline-relative scattering change · dB and candidate patches"
+    ],
+    [
+      "Dates",
+      "NASA presents 17 dates from 25 December 2025 to 17 August 2026",
+      "Five matching late-season dates: 18/30 June, 12/24 July and 17 August"
+    ],
+    [
+      "What is shown",
+      "Oblique 3D radar imagery highlighting recognizable lava morphology",
+      "Acquired HH brightness and signed departures from the June baseline; north-up maps"
+    ],
+    [
+      "Existing lava",
+      "An older northwest flow and eastern field are already visible",
+      "Already-bright surfaces may have little later departure; June is not pre-eruption"
+    ],
+    [
+      "Other changes",
+      "Snow or bare ground surrounds the flow depending on season",
+      "Broad slope changes are retained and cannot be labelled lava from brightness alone"
+    ],
+    [
+      "Quantitative validation",
+      "No georeferenced dated lava mask supplied with the visualization",
+      "No lava precision/recall/IoU claimed; input identity, calculations and exports are checked"
+    ],
+    [
+      "Comparison support",
+      "Read the original extent, masking and period",
+      "Five dates, 478.0604 km² shared usable support; the final gap is 24 days. Candidate change area is not lava area."
+    ],
+    [
+      "Independent accuracy",
+      "Requires compatible independent numerical measurements or labels",
+      "Not established for arbitrary regions or modified workflows"
+    ]
+  ],
+  "results_table": {
+    "title": "Observed radar-change results · not lava-area measurements",
+    "headers": [
+      "Measurement",
+      "Our recorded result",
+      "Meaning"
+    ],
+    "rows": [
+      [
+        "Common valid support",
+        "478.06 km²",
+        "Same selected-area cells across all five dates"
+      ],
+      [
+        "Latest candidates · ±3 dB",
+        "145.60 km²",
+        "Brightness departure with smoothing and minimum patch filtering"
+      ],
+      [
+        "Latest repeated candidates",
+        "128.29 km²",
+        "Same sign on at least two consecutive later observations"
+      ],
+      [
+        "Threshold sensitivity · ±2 / ±4 dB",
+        "203.73 / 102.35 km²",
+        "Setting sensitivity, not uncertainty bounds or accuracy"
+      ],
+      [
+        "Remote science reads during local processing",
+        "0 bytes",
+        "The five protected native subsets supply the analysis"
+      ]
+    ]
+  },
+  "visual_comparison_note": "The NASA panel is published reference imagery. Our continuous departure map answers what changed since June, not where all lava exists. The separate acquired-HH strip explains why a flow can remain visible while its departure is small. Compare morphology and dates qualitatively; perspective, spatial support and processing differ. Snowmelt and wetness are not independently separated in this version.",
+  "gallery": [
+    {
+      "file": "figures/nasa-2026-08-17.jpg",
+      "role": "published",
+      "title": "NASA reference · 17 August 2026",
+      "alt": "NASA oblique radar frame showing the Krasheninnikov craters and finger-like flow field",
+      "caption": "Actual dated frame from NASA’s 17-date HH L-band animation. The oblique 3D view and orange styling show flow morphology; they do not measure temperature or supply a georeferenced lava classification.",
+      "credit": "NASA Scientific Visualization Studio · Alex Kekesi; Andrew Wang; Matthew Pritchard; Paul Rosen; Marco Lavalle; NASA/JPL-Caltech/ISRO",
+      "source_url": "https://svs.gsfc.nasa.gov/5675/",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "file": "figures/new-example-run.png",
+      "role": "result",
+      "title": "Our P06 result · latest signed scattering change",
+      "alt": "Krasheninnikov latest smoothed radar-scattering change in Diverging −8 to +8 dB over Satellite imagery, with legend and source details",
+      "caption": "Integrated app output: 17 August versus the already-erupting 18 June baseline. Positive is brighter and negative darker. Shared 20 m UTM grid, sigma 40 m; the ±3 dB and 3 ha rules generate separate candidate masks. This image is the continuous departure map, not a lava classification. Its display range is −8 to +8 dB; numeric exports retain all values. This user-provided export uses the Diverging palette over the Satellite basemap at 100% radar opacity. Background imagery dates may differ from the radar observations.",
+      "credit": "NISAR Observatory · user-provided P06 export · run 583b6e474c06",
+      "width": 1800,
+      "height": 1570
+    },
+    {
+      "file": "figures/acquired-brightness-sequence.png",
+      "role": "context",
+      "title": "Acquired HH brightness · five dates, one scale",
+      "alt": "Five north-up HH radar snapshots focused on the craters and eastern field with a shared dB scale",
+      "caption": "Source-measurement context from our downloaded files, not a second change classification. The eastern finger-like feature and older northwest feature are already bright on 18 June. The zoom window is 160.235–160.365° E, 54.575–54.660° N; processing still uses the full selected study rectangle. All frames share the pooled 2nd–98th percentile display range.",
+      "credit": "NISAR Observatory · five real NASA/ASF GCOV subsets",
+      "width": 2700,
+      "height": 750
+    }
+  ],
+  "reports": [
+    {
+      "file": "references/COMPARISON.md",
+      "title": "Detailed NASA comparison, sensitivity and interpretation limits"
+    },
+    {
+      "file": "references/results/method-comparison.json",
+      "title": "Method comparison and 2/3/4 dB sensitivity"
+    },
+    {
+      "file": "references/results/native-input-verification.json",
+      "title": "Original identities, native quality and SHA-256 audit"
+    },
+    {
+      "file": "references/results/dated-candidates.csv",
+      "title": "Candidate area at each acquired date"
+    }
+  ],
+  "card_image": {
+    "file": "figures/new-example-run.png",
+    "role": "result",
+    "title": "Our P06 result · latest signed scattering change",
+    "alt": "Krasheninnikov latest smoothed radar-scattering change in Diverging −8 to +8 dB over Satellite imagery, with legend and source details",
+    "caption": "Integrated app output: 17 August versus the already-erupting 18 June baseline. Positive is brighter and negative darker. Shared 20 m UTM grid, sigma 40 m; the ±3 dB and 3 ha rules generate separate candidate masks. This image is the continuous departure map, not a lava classification. Its display range is −8 to +8 dB; numeric exports retain all values. This user-provided export uses the Diverging palette over the Satellite basemap at 100% radar opacity. Background imagery dates may differ from the radar observations.",
+    "credit": "NISAR Observatory · user-provided P06 export · run 583b6e474c06",
+    "width": 1800,
+    "height": 1570,
+    "label": "Our result · latest scattering change"
+  },
+  "evidence": {
+    "label": "Qualitative scattering comparison",
+    "description": "The real radar changes are reproducible, but this example does not establish lava detection; seasonal and wetness changes remain mixed with volcanic surface effects.",
+    "transfer_validation": "Not established on an independently held-out event or region."
+  },
+  "comparison_review": {
+    "review_date": "2026-10-23",
+    "level": "Qualitative scattering comparison",
+    "conclusion": "The real radar changes are reproducible, but this example does not establish lava detection; seasonal and wetness changes remain mixed with volcanic surface effects.",
+    "agrees": [
+      "Five selected late-season dates correspond to NASA’s June–August sequence.",
+      "Acquired HH imagery contains recognizable flow/crater morphology alongside the published frames."
+    ],
+    "differs": [
+      "NASA displays oblique 3D brightness imagery across 17 dates; our north-up change map compares five dates against an already-erupting June baseline.",
+      "Our 20 m grid and 40 m smoothing differ from NASA’s stated display; existing lava can remain bright without showing a new departure."
+    ],
+    "unverified": [
+      "No independent dated flow polygons: no lava precision, recall, IoU or lava-area estimate.",
+      "Snowmelt, wetness and terrain effects are not independently separated. First radar change is not eruption onset."
+    ],
+    "next_check": "Independently georeferenced dated flow boundaries and optical/thermal or snow/wetness evidence.",
+    "quantity_reference": "HH radar brightness and flow morphology in a 3D time-lapse",
+    "quantity_ours": "Signed baseline-relative scattering change · dB and candidate patches",
+    "support": "Five dates, 478.0604 km² shared usable support; the final gap is 24 days. Candidate change area is not lava area.",
+    "role": "Further exploration",
+    "reason": "A useful limitations example, but not suitable as the principal evidence of environmental classification accuracy.",
+    "reproducibility": "Protected input checksums and unchanged guided/editable replay test implementation reproducibility; they do not test environmental accuracy.",
+    "source_review": "See docs/EXAMPLE_EVIDENCE_REVIEW.md for source access and archived-evidence limits."
+  }
+}

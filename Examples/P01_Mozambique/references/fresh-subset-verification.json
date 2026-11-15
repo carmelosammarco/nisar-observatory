@@ -1,0 +1,77 @@
+{
+  "job_id": "14172d7019df485f8a298340dcb947da",
+  "tool": "P01",
+  "input_count": 2,
+  "input_bytes": 123790646,
+  "checksums_verified": true,
+  "browser_start_verified": true,
+  "request": {
+    "bbox": [
+      32.9,
+      -24.65,
+      33.14,
+      -24.43
+    ],
+    "granules": [
+      "subset-5cd6e37b9e9335e8ecdf7669d38abf46",
+      "subset-d199429468cfcff711fe8c797f0abeca"
+    ],
+    "projects": [
+      "P01"
+    ],
+    "options": {
+      "resolution": 100.0,
+      "water_threshold": -17.0,
+      "water_method": "single",
+      "min_valid_fraction": 0.5,
+      "flood_date": "2026-01-17",
+      "channel": "HHHH"
+    },
+    "display": {
+      "palette": "standard",
+      "mode": "shared",
+      "layer": "event",
+      "unit": "class",
+      "low": null,
+      "high": null
+    }
+  },
+  "metrics": {
+    "common_valid_area_km2": 593.92,
+    "baseline_water_candidate_km2": 25.16,
+    "latest_water_candidate_km2": 100.65,
+    "water_gain_km2": 90.47,
+    "water_loss_km2": 14.98,
+    "net_water_change_km2": 75.49,
+    "new_water_candidate_km2": 90.47,
+    "observed_dry_again_km2": 0.0,
+    "unresolved_water_candidate_km2": 90.47
+  },
+  "grid": {
+    "crs": "EPSG:6933",
+    "resolution_m": 100.0,
+    "shape": [
+      256,
+      232
+    ],
+    "bbox": [
+      32.9,
+      -24.65,
+      33.14,
+      -24.43
+    ]
+  },
+  "display": {
+    "palette": "standard",
+    "mode": "shared",
+    "layer": "event",
+    "unit": "class",
+    "low": null,
+    "high": null
+  },
+  "source_errors": [],
+  "processing_remote_bytes": 0,
+  "numeric_raster_checked": "event",
+  "map_image_with_legend_checked": true,
+  "scientific_accuracy": "Not established by engineering checks; read tutorial comparison and limitations."
+}

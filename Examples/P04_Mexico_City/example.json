@@ -1,0 +1,542 @@
+{
+  "id": "P04_Mexico_City",
+  "tool": "P04",
+  "title": "Mexico City, Mexico",
+  "subtitle": "A six-pair time series of relative ground motion",
+  "product": "GUNW",
+  "request": {
+    "bbox": [
+      -99.4,
+      19.14,
+      -98.75,
+      19.65
+    ],
+    "projects": [
+      "P04"
+    ],
+    "options": {
+      "apply_ionosphere": true,
+      "phase_allow_mixed_revisions": true,
+      "resolution": 80.0,
+      "coherence": 0.3,
+      "min_valid_fraction": 0.5,
+      "reference_bbox": [
+        -99.28,
+        19.4,
+        -99.24,
+        19.44
+      ],
+      "phase_network": true
+    },
+    "display": {
+      "palette": "rainbow",
+      "mode": "custom",
+      "layer": "los_rate_year",
+      "unit": "cm/year",
+      "low": -30.0,
+      "high": 30.0
+    }
+  },
+  "sources": [
+    {
+      "id": "G4058281119-ASF",
+      "name": "NISAR_L2_PR_GUNW_003_113_D_079_004_4000_SH_20251025T011329_20251025T011404_20251106T011330_20251106T011404_X05009_N_F_J_001",
+      "product": "GUNW",
+      "start": "2025-10-25T01:13:29Z",
+      "end": "2025-11-06T01:13:30Z",
+      "catalog_start": "2025-10-25T01:13:29.000Z",
+      "catalog_end": "2025-11-06T01:14:04.999Z",
+      "size_mb": 2251.2963438034058,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_BETA_V1/NISAR_L2_PR_GUNW_003_113_D_079_004_4000_SH_20251025T011329_20251025T011404_20251106T011330_20251106T011404_X05009_N_F_J_001/NISAR_L2_PR_GUNW_003_113_D_079_004_4000_SH_20251025T011329_20251025T011404_20251106T011330_20251106T011404_X05009_N_F_J_001.h5",
+      "group": "113_D_079_4000_SH_X05009",
+      "boxes": [
+        "19.14 -99.4 19.65 -98.75"
+      ],
+      "polygons": [],
+      "catalog_id": "G4058281119-ASF",
+      "bbox": [
+        -99.4,
+        19.14,
+        -98.75,
+        19.65
+      ],
+      "bounds": [
+        -99.4,
+        19.14,
+        -98.75,
+        19.65
+      ],
+      "original_size_mb": 2251.2963438034058,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -99.4,
+              19.14
+            ],
+            [
+              -98.75,
+              19.14
+            ],
+            [
+              -98.75,
+              19.65
+            ],
+            [
+              -99.4,
+              19.65
+            ],
+            [
+              -99.4,
+              19.14
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": "G4058288661-ASF",
+      "name": "NISAR_L2_PR_GUNW_004_113_D_079_005_4000_SH_20251106T011330_20251106T011404_20251118T011330_20251118T011405_X05010_N_F_J_001",
+      "product": "GUNW",
+      "start": "2025-11-06T01:13:30Z",
+      "end": "2025-11-18T01:13:30Z",
+      "catalog_start": "2025-11-06T01:13:30.000Z",
+      "catalog_end": "2025-11-18T01:14:05.999Z",
+      "size_mb": 2238.900942802429,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_BETA_V1/NISAR_L2_PR_GUNW_004_113_D_079_005_4000_SH_20251106T011330_20251106T011404_20251118T011330_20251118T011405_X05010_N_F_J_001/NISAR_L2_PR_GUNW_004_113_D_079_005_4000_SH_20251106T011330_20251106T011404_20251118T011330_20251118T011405_X05010_N_F_J_001.h5",
+      "group": "113_D_079_4000_SH_X05010",
+      "boxes": [
+        "19.14 -99.4 19.65 -98.75"
+      ],
+      "polygons": [],
+      "catalog_id": "G4058288661-ASF",
+      "bbox": [
+        -99.4,
+        19.14,
+        -98.75,
+        19.65
+      ],
+      "bounds": [
+        -99.4,
+        19.14,
+        -98.75,
+        19.65
+      ],
+      "original_size_mb": 2238.900942802429,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -99.4,
+              19.14
+            ],
+            [
+              -98.75,
+              19.14
+            ],
+            [
+              -98.75,
+              19.65
+            ],
+            [
+              -99.4,
+              19.65
+            ],
+            [
+              -99.4,
+              19.14
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": "G4058338815-ASF",
+      "name": "NISAR_L2_PR_GUNW_005_113_D_079_007_4000_SH_20251118T011330_20251118T011405_20251212T011331_20251212T011406_X05010_N_F_J_001",
+      "product": "GUNW",
+      "start": "2025-11-18T01:13:30Z",
+      "end": "2025-12-12T01:13:31Z",
+      "catalog_start": "2025-11-18T01:13:30.000Z",
+      "catalog_end": "2025-12-12T01:14:06.999Z",
+      "size_mb": 2290.9902324676514,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_BETA_V1/NISAR_L2_PR_GUNW_005_113_D_079_007_4000_SH_20251118T011330_20251118T011405_20251212T011331_20251212T011406_X05010_N_F_J_001/NISAR_L2_PR_GUNW_005_113_D_079_007_4000_SH_20251118T011330_20251118T011405_20251212T011331_20251212T011406_X05010_N_F_J_001.h5",
+      "group": "113_D_079_4000_SH_X05010",
+      "boxes": [
+        "19.14 -99.4 19.65 -98.75"
+      ],
+      "polygons": [],
+      "catalog_id": "G4058338815-ASF",
+      "bbox": [
+        -99.4,
+        19.14,
+        -98.75,
+        19.65
+      ],
+      "bounds": [
+        -99.4,
+        19.14,
+        -98.75,
+        19.65
+      ],
+      "original_size_mb": 2290.9902324676514,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -99.4,
+              19.14
+            ],
+            [
+              -98.75,
+              19.14
+            ],
+            [
+              -98.75,
+              19.65
+            ],
+            [
+              -99.4,
+              19.65
+            ],
+            [
+              -99.4,
+              19.14
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": "G4058459579-ASF",
+      "name": "NISAR_L2_PR_GUNW_007_113_D_079_008_4000_SH_20251212T011331_20251212T011406_20251224T011332_20251224T011406_X05010_N_F_J_001",
+      "product": "GUNW",
+      "start": "2025-12-12T01:13:31Z",
+      "end": "2025-12-24T01:13:32Z",
+      "catalog_start": "2025-12-12T01:13:31.000Z",
+      "catalog_end": "2025-12-24T01:14:06.999Z",
+      "size_mb": 2242.848359107971,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_BETA_V1/NISAR_L2_PR_GUNW_007_113_D_079_008_4000_SH_20251212T011331_20251212T011406_20251224T011332_20251224T011406_X05010_N_F_J_001/NISAR_L2_PR_GUNW_007_113_D_079_008_4000_SH_20251212T011331_20251212T011406_20251224T011332_20251224T011406_X05010_N_F_J_001.h5",
+      "group": "113_D_079_4000_SH_X05010",
+      "boxes": [
+        "19.14 -99.4 19.65 -98.75"
+      ],
+      "polygons": [],
+      "catalog_id": "G4058459579-ASF",
+      "bbox": [
+        -99.4,
+        19.14,
+        -98.75,
+        19.65
+      ],
+      "bounds": [
+        -99.4,
+        19.14,
+        -98.75,
+        19.65
+      ],
+      "original_size_mb": 2242.848359107971,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -99.4,
+              19.14
+            ],
+            [
+              -98.75,
+              19.14
+            ],
+            [
+              -98.75,
+              19.65
+            ],
+            [
+              -99.4,
+              19.65
+            ],
+            [
+              -99.4,
+              19.14
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": "G4058584016-ASF",
+      "name": "NISAR_L2_PR_GUNW_008_113_D_079_009_4000_SH_20251224T011332_20251224T011406_20260105T011332_20260105T011407_X05010_N_F_J_001",
+      "product": "GUNW",
+      "start": "2025-12-24T01:13:32Z",
+      "end": "2026-01-05T01:13:32Z",
+      "catalog_start": "2025-12-24T01:13:32.000Z",
+      "catalog_end": "2026-01-05T01:14:07.999Z",
+      "size_mb": 2258.828561782837,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_BETA_V1/NISAR_L2_PR_GUNW_008_113_D_079_009_4000_SH_20251224T011332_20251224T011406_20260105T011332_20260105T011407_X05010_N_F_J_001/NISAR_L2_PR_GUNW_008_113_D_079_009_4000_SH_20251224T011332_20251224T011406_20260105T011332_20260105T011407_X05010_N_F_J_001.h5",
+      "group": "113_D_079_4000_SH_X05010",
+      "boxes": [
+        "19.14 -99.4 19.65 -98.75"
+      ],
+      "polygons": [],
+      "catalog_id": "G4058584016-ASF",
+      "bbox": [
+        -99.4,
+        19.14,
+        -98.75,
+        19.65
+      ],
+      "bounds": [
+        -99.4,
+        19.14,
+        -98.75,
+        19.65
+      ],
+      "original_size_mb": 2258.828561782837,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -99.4,
+              19.14
+            ],
+            [
+              -98.75,
+              19.14
+            ],
+            [
+              -98.75,
+              19.65
+            ],
+            [
+              -99.4,
+              19.65
+            ],
+            [
+              -99.4,
+              19.14
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": "G4058733834-ASF",
+      "name": "NISAR_L2_PR_GUNW_009_113_D_079_010_4000_SH_20260105T011332_20260105T011407_20260117T011333_20260117T011407_X05010_N_F_J_001",
+      "product": "GUNW",
+      "start": "2026-01-05T01:13:32Z",
+      "end": "2026-01-17T01:13:33Z",
+      "catalog_start": "2026-01-05T01:13:32.000Z",
+      "catalog_end": "2026-01-17T01:14:07.999Z",
+      "size_mb": 2230.8432846069336,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_BETA_V1/NISAR_L2_PR_GUNW_009_113_D_079_010_4000_SH_20260105T011332_20260105T011407_20260117T011333_20260117T011407_X05010_N_F_J_001/NISAR_L2_PR_GUNW_009_113_D_079_010_4000_SH_20260105T011332_20260105T011407_20260117T011333_20260117T011407_X05010_N_F_J_001.h5",
+      "group": "113_D_079_4000_SH_X05010",
+      "boxes": [
+        "19.14 -99.4 19.65 -98.75"
+      ],
+      "polygons": [],
+      "catalog_id": "G4058733834-ASF",
+      "bbox": [
+        -99.4,
+        19.14,
+        -98.75,
+        19.65
+      ],
+      "bounds": [
+        -99.4,
+        19.14,
+        -98.75,
+        19.65
+      ],
+      "original_size_mb": 2230.8432846069336,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -99.4,
+              19.14
+            ],
+            [
+              -98.75,
+              19.14
+            ],
+            [
+              -98.75,
+              19.65
+            ],
+            [
+              -99.4,
+              19.65
+            ],
+            [
+              -99.4,
+              19.14
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "references": [
+    {
+      "url": "https://www.jpl.nasa.gov/news/us-indian-space-mission-maps-extreme-subsidence-in-mexico-city/",
+      "title": "NASA / JPL · Mexico City subsidence",
+      "description": "Published reference evidence and context for this case study."
+    },
+    {
+      "url": "https://www.jpl.nasa.gov/images/pia26709-us-indian-spacecraft-captures-mexico-city-subsidence/",
+      "title": "NASA / JPL · Published motion map PIA26709",
+      "description": "Published reference evidence and context for this case study."
+    }
+  ],
+  "gallery": [
+    {
+      "file": "figures/nasa-published-subsidence.jpg",
+      "role": "published",
+      "title": "NASA/JPL · published Mexico City subsidence",
+      "alt": "NASA/JPL · published Mexico City subsidence",
+      "caption": "PIA26709 · 25 October 2025–17 January 2026. The original map shows mean line-of-sight velocity in cm/year, with airport, city monument and Chalco Lake labels. Blue identifies strong motion away from the radar. Preserve its own legend when reading it.",
+      "credit": "NASA/JPL-Caltech/David Bekaert",
+      "source_url": "https://www.jpl.nasa.gov/images/pia26709-us-indian-spacecraft-captures-mexico-city-subsidence/",
+      "width": 7675,
+      "height": 6600
+    },
+    {
+      "file": "figures/new-example-run.png",
+      "role": "result",
+      "title": "Our result · relative line-of-sight rate",
+      "alt": "Mexico City fitted relative line-of-sight rate in Rainbow from −30 to +30 cm/year, over the Dark basemap with place names",
+      "caption": "Six descending-track 113 GUNW pairs connect seven epochs across the same 84-day period. Recorded reference rectangle; Rainbow −30 to +30 cm/year. Negative values mean motion away from the radar relative to that reference, not directly measured vertical subsidence. This export uses the Dark basemap with place names, 100% radar opacity and an 80 m analysis grid. The processing reference is retained but its rectangle is not drawn. The rate annualizes the observed period; it is not a full year of measurements.",
+      "credit": "NISAR Observatory · user-provided P04 export · run bbebf92fc5db",
+      "width": 1800,
+      "height": 1570
+    }
+  ],
+  "reports": [
+    {
+      "file": "references/MEXICO_ORIGINAL_REPLAY.md",
+      "title": "Mexico City · six-pair replay and NASA comparison"
+    },
+    {
+      "file": "references/fresh-subset-verification.json",
+      "title": "Fresh-subset reproduction check"
+    }
+  ],
+  "question": "Where does a connected six-pair radar record indicate relative line-of-sight motion?",
+  "method": "Six descending track 113/frame 079 BETA pairs link seven acquisitions. Native masks, coherence ≥0.30 and accepted fraction ≥0.50 screen samples; delivered ionosphere phase is subtracted. The recorded reference rectangle establishes relative zero. A connected phase network reconstructs acquisition changes and a fitted annual LOS rate. Mixing X05009/X05010 revisions is explicitly enabled for this historical example.",
+  "expected": "The historical six-pair study reproduced the spatial subsidence pattern in the NASA illustration. It uses the same reference rectangle and a Rainbow scale of −30 to +30 cm/year. Newly generated runs must be checked against the archived numerical evidence; visual agreement alone does not establish geodetic accuracy.",
+  "interpret": "Start with LOS rate in cm/year. Negative is away from the satellite, positive toward it. A yearly rate is an extrapolated fitted rate over the observed interval, not a full year of observation. Time exploration shows reconstructed acquired epochs. Horizontal and vertical movement are mixed in one LOS measurement.",
+  "limits": "Reference rectangle: west −99.28, south 19.40, east −99.24, north 19.44. It is retained for reproducibility; coherence cannot establish physical stability. NASA’s reference image is an illustration, not an independent numerical validation grid. BETA calibration and unmodelled atmosphere/unwrapping effects remain.",
+  "comparison": [
+    [
+      "Measurement alignment",
+      "Published LOS velocity map; article discusses subsidence in cm/month",
+      "Fitted relative LOS rate · cm/year or cm/month; accumulated LOS · cm"
+    ],
+    [
+      "Data",
+      "NASA October 2025–January 2026 example",
+      "Six archived descending track 113 pairs"
+    ],
+    [
+      "Measurement",
+      "LOS motion rate illustration",
+      "Relative fitted LOS cm/year"
+    ],
+    [
+      "Colors",
+      "Published centimetre-rate presentation",
+      "Rainbow, fixed −30 to +30 cm/year"
+    ],
+    [
+      "Comparison support",
+      "Read the original extent, masking and period",
+      "Selected Mexico City rectangle; six pairs and seven reconstructed epochs across 84 days. Compare regional patterns, not identical numerical pixels."
+    ],
+    [
+      "Independent accuracy",
+      "Requires compatible independent numerical measurements or labels",
+      "Not established for arbitrary regions or modified workflows"
+    ]
+  ],
+  "results_table": {
+    "title": "Recorded Mexico City comparison configuration",
+    "headers": [
+      "Measurement / display",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Connected GUNW pairs",
+        "6"
+      ],
+      [
+        "Acquisition epochs",
+        "7"
+      ],
+      [
+        "Record span",
+        "84 days"
+      ],
+      [
+        "Actual analysis spacing",
+        "80 m"
+      ],
+      [
+        "Reference rectangle",
+        "−99.28, 19.40, −99.24, 19.44"
+      ],
+      [
+        "Opening display",
+        "Rainbow · −30 to +30 cm/year"
+      ]
+    ]
+  },
+  "tool_name": "Sinking City Atlas",
+  "card_image": {
+    "file": "figures/new-example-run.png",
+    "role": "result",
+    "title": "Our result · relative line-of-sight rate",
+    "alt": "Mexico City fitted relative line-of-sight rate in Rainbow from −30 to +30 cm/year, over the Dark basemap with place names",
+    "caption": "Six descending-track 113 GUNW pairs connect seven epochs across the same 84-day period. Recorded reference rectangle; Rainbow −30 to +30 cm/year. Negative values mean motion away from the radar relative to that reference, not directly measured vertical subsidence. This export uses the Dark basemap with place names, 100% radar opacity and an 80 m analysis grid. The processing reference is retained but its rectangle is not drawn. The rate annualizes the observed period; it is not a full year of measurements.",
+    "credit": "NISAR Observatory · user-provided P04 export · run bbebf92fc5db",
+    "width": 1800,
+    "height": 1570,
+    "label": "Our result · relative LOS rate"
+  },
+  "visual_comparison_note": "Compare the broad spatial pattern and the cm/year legends. The app’s rate depends on its reference, screening and phase-network fit. Agreement in appearance does not certify pixel-level velocity accuracy or a vertical-motion estimate.",
+  "evidence": {
+    "label": "Qualitative motion-pattern comparison",
+    "description": "The fitted relative LOS pattern is consistent with NASA’s illustration over matching dates; no independent displacement grid establishes geodetic accuracy.",
+    "transfer_validation": "Not established on an independently held-out event or region."
+  },
+  "comparison_review": {
+    "review_date": "2026-10-23",
+    "level": "Qualitative motion-pattern comparison",
+    "conclusion": "The fitted relative LOS pattern is consistent with NASA’s illustration over matching dates; no independent displacement grid establishes geodetic accuracy.",
+    "agrees": [
+      "Six descending-track 113 pairs connect seven dates over 25 October 2025–17 January 2026, matching the NASA comparison period.",
+      "The major relative-motion pattern is visually consistent with the published illustration."
+    ],
+    "differs": [
+      "NASA’s article describes monthly rates; the published figure and our opening map use annual rates. Divide cm/year by 12 for cm per mean month; annualization does not extend the 84-day observation record.",
+      "Our exact reference rectangle, pair-network fitting, quality masks and processing revisions are documented; NASA’s complete numerical processing/reference solution is not supplied."
+    ],
+    "unverified": [
+      "No independent co-registered velocity grid or GNSS measurements: no justified RMSE or speed-accuracy percentage.",
+      "The reference is data-suitable, not independently proven stationary; one LOS view cannot separate vertical and horizontal motion."
+    ],
+    "next_check": "Matched independent geodetic observations with compatible LOS projection, dates and a justified reference.",
+    "quantity_reference": "Published LOS velocity map; article discusses subsidence in cm/month",
+    "quantity_ours": "Fitted relative LOS rate · cm/year or cm/month; accumulated LOS · cm",
+    "support": "Selected Mexico City rectangle; six pairs and seven reconstructed epochs across 84 days. Compare regional patterns, not identical numerical pixels.",
+    "role": "Supporting demonstration · 3",
+    "reason": "Shows a different NISAR product and movement measurement, with a strong visual story and teachable reference/unit limits.",
+    "reproducibility": "Protected input checksums and unchanged guided/editable replay test implementation reproducibility; they do not test environmental accuracy.",
+    "source_review": "See docs/EXAMPLE_EVIDENCE_REVIEW.md for source access and archived-evidence limits."
+  }
+}

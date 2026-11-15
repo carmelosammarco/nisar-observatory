@@ -1,0 +1,322 @@
+{
+  "id": "P01_Mozambique",
+  "tool": "P01",
+  "title": "Chókwè flood, Mozambique",
+  "subtitle": "Two observations of an expanding floodplain",
+  "product": "GCOV",
+  "request": {
+    "bbox": [
+      32.9,
+      -24.65,
+      33.14,
+      -24.43
+    ],
+    "projects": [
+      "P01"
+    ],
+    "options": {
+      "resolution": 100,
+      "channel": "HHHH",
+      "water_threshold": -17,
+      "water_method": "single",
+      "min_valid_fraction": 0.5,
+      "flood_date": "2026-01-17"
+    },
+    "display": {
+      "palette": "standard",
+      "mode": "shared",
+      "layer": "event",
+      "unit": "class"
+    }
+  },
+  "sources": [
+    {
+      "id": "G4058657013-ASF",
+      "name": "NISAR_L2_PR_GCOV_009_114_A_165_4005_DHDH_A_20260105T034232_20260105T034253_X05010_N_P_J_001",
+      "product": "GCOV",
+      "start": "2026-01-05T03:42:32Z",
+      "end": "2026-01-05T03:42:53Z",
+      "catalog_start": "2026-01-05T03:42:32.000Z",
+      "catalog_end": "2026-01-05T03:42:53.999Z",
+      "size_mb": 3851.747329711914,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_BETA_V1/NISAR_L2_PR_GCOV_009_114_A_165_4005_DHDH_A_20260105T034232_20260105T034253_X05010_N_P_J_001/NISAR_L2_PR_GCOV_009_114_A_165_4005_DHDH_A_20260105T034232_20260105T034253_X05010_N_P_J_001.h5",
+      "group": "114_A_165_4005_DHDH_X05010",
+      "boxes": [
+        "-24.65 32.9 -24.43 33.14"
+      ],
+      "polygons": [],
+      "catalog_id": "G4058657013-ASF",
+      "bbox": [
+        32.9,
+        -24.65,
+        33.14,
+        -24.43
+      ],
+      "bounds": [
+        32.9,
+        -24.65,
+        33.14,
+        -24.43
+      ],
+      "original_size_mb": 3851.747329711914,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              32.9,
+              -24.65
+            ],
+            [
+              33.14,
+              -24.65
+            ],
+            [
+              33.14,
+              -24.43
+            ],
+            [
+              32.9,
+              -24.43
+            ],
+            [
+              32.9,
+              -24.65
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": "G4059040862-ASF",
+      "name": "NISAR_L2_PR_GCOV_010_114_A_165_4005_DHDH_A_20260117T034232_20260117T034254_X05010_N_P_J_001",
+      "product": "GCOV",
+      "start": "2026-01-17T03:42:32Z",
+      "end": "2026-01-17T03:42:54Z",
+      "catalog_start": "2026-01-17T03:42:32.000Z",
+      "catalog_end": "2026-01-17T03:42:54.999Z",
+      "size_mb": 3991.8038578033447,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_BETA_V1/NISAR_L2_PR_GCOV_010_114_A_165_4005_DHDH_A_20260117T034232_20260117T034254_X05010_N_P_J_001/NISAR_L2_PR_GCOV_010_114_A_165_4005_DHDH_A_20260117T034232_20260117T034254_X05010_N_P_J_001.h5",
+      "group": "114_A_165_4005_DHDH_X05010",
+      "boxes": [
+        "-24.65 32.9 -24.43 33.14"
+      ],
+      "polygons": [],
+      "catalog_id": "G4059040862-ASF",
+      "bbox": [
+        32.9,
+        -24.65,
+        33.14,
+        -24.43
+      ],
+      "bounds": [
+        32.9,
+        -24.65,
+        33.14,
+        -24.43
+      ],
+      "original_size_mb": 3991.8038578033447,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              32.9,
+              -24.65
+            ],
+            [
+              33.14,
+              -24.65
+            ],
+            [
+              33.14,
+              -24.43
+            ],
+            [
+              32.9,
+              -24.43
+            ],
+            [
+              32.9,
+              -24.65
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "references": [
+    {
+      "url": "https://svs.gsfc.nasa.gov/5661/",
+      "title": "NISAR reveals flooding around Chókwè, Mozambique",
+      "description": "Compare 5 and 17 January 2026 open-water views and HH/HV false-color composites. The Mozambique preset selects a smaller Chókwè study window. This is a NASA visualization, not a peer-reviewed paper or an independent accuracy mask; two dates show change but cannot establish recovery."
+    }
+  ],
+  "gallery": [
+    {
+      "file": "figures/nasa-before-screen.jpg",
+      "role": "published",
+      "title": "NASA · before the flood · 5 January 2026",
+      "alt": "NASA · before the flood · 5 January 2026",
+      "caption": "Published perspective view of the Chókwè region before the event. Compare it with NASA’s 17 January view below, then inspect the app’s smaller north-up change map.",
+      "credit": "NASA Scientific Visualization Studio · visualization 5661",
+      "source_url": "https://svs.gsfc.nasa.gov/5661/",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "file": "figures/nasa-during-screen.jpg",
+      "role": "published",
+      "title": "NASA · active flood · 17 January 2026",
+      "alt": "NASA · active flood · 17 January 2026",
+      "caption": "Blue areas show the published radar visualization of flood conditions. This is a wider perspective scene, not our binary new-water classification or a numerical validation mask.",
+      "credit": "NASA Scientific Visualization Studio · visualization 5661",
+      "source_url": "https://svs.gsfc.nasa.gov/5661/",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "file": "figures/new-example-run.png",
+      "role": "result",
+      "title": "Our result · new water candidates",
+      "alt": "Our result · new water candidates",
+      "caption": "GCOV · 5 → 17 January 2026 · 100 m analysis grid. Blue marks newly detected low-return water candidates; the Satellite basemap remains visible where no new-water candidate is mapped. Place names provide geographic context. This is not flood depth; background imagery dates may differ from NISAR.",
+      "credit": "NISAR Observatory · user-provided result export",
+      "width": 1800,
+      "height": 1570
+    }
+  ],
+  "reports": [
+    {
+      "file": "references/MOZAMBIQUE_FLOOD_COMPARISON.md",
+      "title": "Mozambique · flood-map comparison and threshold sensitivity"
+    },
+    {
+      "file": "references/fresh-subset-verification.json",
+      "title": "Fresh-subset reproduction check"
+    }
+  ],
+  "question": "Where did dark open-water candidates appear between 5 and 17 January 2026?",
+  "method": "The tool masks native GCOV samples, averages calibrated HH power on a 100 m equal-area grid, converts to dB and applies the fixed −17 dB water-candidate rule. It compares exactly the common usable ground between observations. No ground reference is required.",
+  "expected": "The previous run found 90.47 km² of new candidates on 593.92 km² of common ground. Water-candidate area was 25.16 km² before and 100.65 km² during the event. These are regression targets for this recipe, not measured environmental accuracy.",
+  "interpret": "Start with New water at the comparison date. Blue candidates are low radar returns consistent with open water, not confirmed inundation. Explore time shows each acquisition separately. With no later date, no return to dry is observed; an unavailable recovery map is expected.",
+  "limits": "NASA publishes a wider perspective visualization, without a numerical reference mask or full classifier recipe. Our smaller north-up rectangle supports qualitative comparison only. Vegetation, roughness, dry fields and shadow can confound the threshold. Changing −17 dB to −18/−16 dB changed new-candidate area to 51.40/116.75 km².",
+  "comparison": [
+    [
+      "Measurement alignment",
+      "Open-water illustration and HH/HV/ratio composite",
+      "New threshold-defined water candidates · km²"
+    ],
+    [
+      "Dates",
+      "5 and 17 January 2026",
+      "Same dates and local GCOV coverage"
+    ],
+    [
+      "View",
+      "Wider NASA perspective image",
+      "Smaller north-up Chókwè rectangle"
+    ],
+    [
+      "Validation",
+      "Published illustration",
+      "No justified pixel accuracy score"
+    ],
+    [
+      "Comparison support",
+      "Read the original extent, masking and period",
+      "Smaller Chókwè rectangle; 593.92 km² common usable support. Do not compare total blue area across the two map extents."
+    ],
+    [
+      "Independent accuracy",
+      "Requires compatible independent numerical measurements or labels",
+      "Not established for arbitrary regions or modified workflows"
+    ]
+  ],
+  "results_table": {
+    "title": "Previous Chókwè measurements · identical common ground",
+    "headers": [
+      "Measurement",
+      "Previous documented result"
+    ],
+    "rows": [
+      [
+        "5 January candidate water",
+        "25.16 km²"
+      ],
+      [
+        "17 January candidate water",
+        "100.65 km²"
+      ],
+      [
+        "New candidates",
+        "90.47 km²"
+      ],
+      [
+        "Common usable ground",
+        "593.92 km²"
+      ],
+      [
+        "Observed later recovery",
+        "Not observed; no later date selected"
+      ]
+    ]
+  },
+  "tool_name": "Flood Memory",
+  "card_image": {
+    "file": "figures/new-example-run.png",
+    "role": "result",
+    "title": "Our result · new water candidates",
+    "alt": "Our result · new water candidates",
+    "caption": "GCOV · 5 → 17 January 2026 · 100 m analysis grid. Blue marks newly detected low-return water candidates; the Satellite basemap remains visible where no new-water candidate is mapped. Place names provide geographic context. This is not flood depth; background imagery dates may differ from NISAR.",
+    "credit": "NISAR Observatory · user-provided result export",
+    "width": 1800,
+    "height": 1570,
+    "label": "Our result · new water candidates"
+  },
+  "visual_comparison_note": "Compare the appearance and location of flood-related water, not identical colors or pixels. NASA shows a wider perspective scene; our result maps newly detected candidates in a smaller north-up rectangle.",
+  "evidence": {
+    "label": "Qualitative event comparison",
+    "description": "A reproducible two-date water-candidate expansion consistent with NASA’s floodplain imagery; classification accuracy is unmeasured.",
+    "transfer_validation": "Not established on an independently held-out event or region."
+  },
+  "comparison_review": {
+    "review_date": "2026-10-23",
+    "level": "Qualitative event comparison",
+    "conclusion": "A reproducible two-date water-candidate expansion consistent with NASA’s floodplain imagery; classification accuracy is unmeasured.",
+    "agrees": [
+      "The selected NISAR dates match NASA’s 5 and 17 January 2026 observations.",
+      "New low-return candidates follow the floodplain expansion visible in NASA’s reference views."
+    ],
+    "differs": [
+      "NASA shows wider perspective imagery and a polarimetric composite; our smaller north-up map is a binary change rule.",
+      "Our −17 dB HH rule and 100 m grid are explicit; NASA’s complete classification recipe and exact source identities are not supplied."
+    ],
+    "unverified": [
+      "No georeferenced independent water mask or field labels: no justified precision, recall or IoU.",
+      "With only two observations, later recovery and flood duration are unobserved."
+    ],
+    "next_check": "Independent dated inundation labels on the same footprint, plus later acquisitions to assess recovery.",
+    "quantity_reference": "Open-water illustration and HH/HV/ratio composite",
+    "quantity_ours": "New threshold-defined water candidates · km²",
+    "support": "Smaller Chókwè rectangle; 593.92 km² common usable support. Do not compare total blue area across the two map extents.",
+    "role": "Supporting demonstration · 2",
+    "reason": "The easiest before/during story: two dates, a visible floodplain and an explicit threshold-sensitivity limitation.",
+    "reproducibility": "Protected input checksums and unchanged guided/editable replay test implementation reproducibility; they do not test environmental accuracy.",
+    "source_review": "See docs/EXAMPLE_EVIDENCE_REVIEW.md for source access and archived-evidence limits."
+  },
+  "metric_help": [
+    [
+      "New candidates · 90.47 km²",
+      "Cells that did not meet the water rule in the baseline but do meet it on 17 January. This is not the net change in total candidate-water area."
+    ],
+    [
+      "Net candidate-area change · approximately +75.49 km²",
+      "100.65 minus 25.16 km² on the same common footprint. About 14.98 km² lost their candidate classification elsewhere, so new-candidate area can exceed net area change. Loss of classification does not by itself prove physical drying."
+    ],
+    [
+      "Recovery",
+      "No later acquisition is selected. The first-later-dry map is unavailable; missing recovery evidence is not zero recovery time or proof that flooding continued."
+    ]
+  ]
+}

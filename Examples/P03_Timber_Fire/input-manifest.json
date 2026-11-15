@@ -1,0 +1,1822 @@
+{
+  "format": "nisar-observatory-example-inputs-1",
+  "example": "P03_Timber_Fire",
+  "inputs": [
+    {
+      "id": "subset-ae0bd786f66a1b1e707946943dd12091",
+      "name": "NISAR_L2_PR_GCOV_024_042_D_070_4005_DHDH_A_20260629T025641_20260629T025716_P05023_N_F_J_001",
+      "product": "GCOV",
+      "start": "2026-06-29T02:56:41Z",
+      "end": "2026-06-29T02:57:16Z",
+      "catalog_start": "2026-06-29T02:56:41.000Z",
+      "catalog_end": "2026-06-29T02:57:16.999Z",
+      "size_mb": 64.096832,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_042_D_070_4005_DHDH_A_20260629T025641_20260629T025716_P05023_N_F_J_001/NISAR_L2_PR_GCOV_024_042_D_070_4005_DHDH_A_20260629T025641_20260629T025716_P05023_N_F_J_001.h5",
+      "group": "042_D_070_4005_DHDH_P05023",
+      "boxes": [
+        "36.1455 -121.8484 36.351 -121.564"
+      ],
+      "polygons": [],
+      "source_id": "G4250797926-ASF",
+      "catalog_id": "G4250797926-ASF",
+      "subset": true,
+      "subset_bbox": [
+        -121.8484,
+        36.1455,
+        -121.564,
+        36.351
+      ],
+      "bbox": [
+        -121.8484,
+        36.1455,
+        -121.564,
+        36.351
+      ],
+      "bounds": [
+        -121.8484,
+        36.1455,
+        -121.564,
+        36.351
+      ],
+      "local": true,
+      "subset_version": "area-1",
+      "subset_created_at": "2026-10-20T17:06:56.612949+00:00",
+      "content_sha256": "d0fded74009ddfd22ade9b6c446f464f855dd5fc00eb0b71028733aedf5a7c04",
+      "retained_layers": [
+        "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+        "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+        "/science/LSAR/GCOV/grids/frequencyA/inputDataExceptionMask",
+        "/science/LSAR/GCOV/grids/frequencyA/mask",
+        "/science/LSAR/GCOV/grids/frequencyA/numberOfLooks",
+        "/science/LSAR/GCOV/grids/frequencyA/rtcGammaToSigmaFactor",
+        "/science/LSAR/GCOV/grids/frequencyB/HHHH",
+        "/science/LSAR/GCOV/grids/frequencyB/HVHV",
+        "/science/LSAR/GCOV/grids/frequencyB/mask",
+        "/science/LSAR/GCOV/grids/frequencyB/numberOfLooks",
+        "/science/LSAR/GCOV/grids/frequencyB/rtcGammaToSigmaFactor"
+      ],
+      "omitted_layers": [
+        {
+          "path": "/science/LSAR/GCOV/grids/frequencyB/inputDataExceptionMask",
+          "reason": "Layer dimensions differ from its grid."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/attitude/eulerAngles",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/attitude/quaternions",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/rxHorizontalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/rxVerticalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/txHorizontalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/txVerticalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/elevationAntennaPattern/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/elevationAntennaPattern/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/noiseEquivalentBackscatter/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/noiseEquivalentBackscatter/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/elevationAntennaPattern/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/elevationAntennaPattern/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/noiseEquivalentBackscatter/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/noiseEquivalentBackscatter/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/orbit/position",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/orbit/velocity",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/parameters/frequencyA/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/parameters/frequencyB/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/parameters/referenceTerrainHeight",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyA/azimuthIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyA/slantRangeIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyB/azimuthIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyB/slantRangeIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/alongTrackUnitVectorX",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/alongTrackUnitVectorY",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/elevationAngle",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/groundTrackVelocity",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/incidenceAngle",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/losUnitVectorX",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/losUnitVectorY",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/slantRange",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/zeroDopplerAzimuthTime",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/sourceData/processingInformation/parameters/frequencyA/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/sourceData/processingInformation/parameters/frequencyB/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        }
+      ],
+      "original_size_mb": 6134.114377975464,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -121.8484,
+              36.1455
+            ],
+            [
+              -121.564,
+              36.1455
+            ],
+            [
+              -121.564,
+              36.351
+            ],
+            [
+              -121.8484,
+              36.351
+            ],
+            [
+              -121.8484,
+              36.1455
+            ]
+          ]
+        ]
+      },
+      "example_id": "P03_Timber_Fire",
+      "example_file": "NISAR_L2_PR_GCOV_024_042_D_070_4005_DHDH_A_20260629T025641_20260629T025716_P05023_N_F_J_001__subset_ae0bd786f66a.h5",
+      "protected_example": true
+    },
+    {
+      "id": "subset-40fad79d9c4530ee94d9630806862850",
+      "name": "NISAR_L2_PR_GCOV_025_042_D_070_4005_DHDH_A_20260711T025641_20260711T025715_P05023_N_F_J_001",
+      "product": "GCOV",
+      "start": "2026-07-11T02:56:41Z",
+      "end": "2026-07-11T02:57:15Z",
+      "catalog_start": "2026-07-11T02:56:41.000Z",
+      "catalog_end": "2026-07-11T02:57:15.999Z",
+      "size_mb": 64.086192,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_042_D_070_4005_DHDH_A_20260711T025641_20260711T025715_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_042_D_070_4005_DHDH_A_20260711T025641_20260711T025715_P05023_N_F_J_001.h5",
+      "group": "042_D_070_4005_DHDH_P05023",
+      "boxes": [
+        "36.1455 -121.8484 36.351 -121.564"
+      ],
+      "polygons": [],
+      "source_id": "G4249348003-ASF",
+      "catalog_id": "G4249348003-ASF",
+      "subset": true,
+      "subset_bbox": [
+        -121.8484,
+        36.1455,
+        -121.564,
+        36.351
+      ],
+      "bbox": [
+        -121.8484,
+        36.1455,
+        -121.564,
+        36.351
+      ],
+      "bounds": [
+        -121.8484,
+        36.1455,
+        -121.564,
+        36.351
+      ],
+      "local": true,
+      "subset_version": "area-1",
+      "subset_created_at": "2026-10-20T17:14:49.147262+00:00",
+      "content_sha256": "9c7e93eb1affd24e9380ec47fc46fd80e91ae530559f9d426cadac165ffcb4dc",
+      "retained_layers": [
+        "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+        "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+        "/science/LSAR/GCOV/grids/frequencyA/inputDataExceptionMask",
+        "/science/LSAR/GCOV/grids/frequencyA/mask",
+        "/science/LSAR/GCOV/grids/frequencyA/numberOfLooks",
+        "/science/LSAR/GCOV/grids/frequencyA/rtcGammaToSigmaFactor",
+        "/science/LSAR/GCOV/grids/frequencyB/HHHH",
+        "/science/LSAR/GCOV/grids/frequencyB/HVHV",
+        "/science/LSAR/GCOV/grids/frequencyB/mask",
+        "/science/LSAR/GCOV/grids/frequencyB/numberOfLooks",
+        "/science/LSAR/GCOV/grids/frequencyB/rtcGammaToSigmaFactor"
+      ],
+      "omitted_layers": [
+        {
+          "path": "/science/LSAR/GCOV/grids/frequencyB/inputDataExceptionMask",
+          "reason": "Layer dimensions differ from its grid."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/attitude/eulerAngles",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/attitude/quaternions",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/rxHorizontalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/rxVerticalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/txHorizontalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/txVerticalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/elevationAntennaPattern/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/elevationAntennaPattern/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/noiseEquivalentBackscatter/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/noiseEquivalentBackscatter/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/elevationAntennaPattern/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/elevationAntennaPattern/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/noiseEquivalentBackscatter/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/noiseEquivalentBackscatter/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/orbit/position",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/orbit/velocity",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/parameters/frequencyA/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/parameters/frequencyB/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/parameters/referenceTerrainHeight",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyA/azimuthIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyA/slantRangeIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyB/azimuthIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyB/slantRangeIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/alongTrackUnitVectorX",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/alongTrackUnitVectorY",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/elevationAngle",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/groundTrackVelocity",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/incidenceAngle",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/losUnitVectorX",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/losUnitVectorY",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/slantRange",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/zeroDopplerAzimuthTime",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/sourceData/processingInformation/parameters/frequencyA/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/sourceData/processingInformation/parameters/frequencyB/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        }
+      ],
+      "original_size_mb": 5977.654054641724,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -121.8484,
+              36.1455
+            ],
+            [
+              -121.564,
+              36.1455
+            ],
+            [
+              -121.564,
+              36.351
+            ],
+            [
+              -121.8484,
+              36.351
+            ],
+            [
+              -121.8484,
+              36.1455
+            ]
+          ]
+        ]
+      },
+      "example_id": "P03_Timber_Fire",
+      "example_file": "NISAR_L2_PR_GCOV_025_042_D_070_4005_DHDH_A_20260711T025641_20260711T025715_P05023_N_F_J_001__subset_40fad79d9c45.h5",
+      "protected_example": true
+    },
+    {
+      "id": "subset-4ba8edc4dc727299928db30c7b82ae01",
+      "name": "NISAR_L2_PR_GCOV_026_042_D_070_4005_DHDH_A_20260723T025640_20260723T025715_P05023_N_F_J_001",
+      "product": "GCOV",
+      "start": "2026-07-23T02:56:40Z",
+      "end": "2026-07-23T02:57:15Z",
+      "catalog_start": "2026-07-23T02:56:40.000Z",
+      "catalog_end": "2026-07-23T02:57:15.999Z",
+      "size_mb": 64.107988,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_026_042_D_070_4005_DHDH_A_20260723T025640_20260723T025715_P05023_N_F_J_001/NISAR_L2_PR_GCOV_026_042_D_070_4005_DHDH_A_20260723T025640_20260723T025715_P05023_N_F_J_001.h5",
+      "group": "042_D_070_4005_DHDH_P05023",
+      "boxes": [
+        "36.1455 -121.8484 36.351 -121.564"
+      ],
+      "polygons": [],
+      "source_id": "G4260298818-ASF",
+      "catalog_id": "G4260298818-ASF",
+      "subset": true,
+      "subset_bbox": [
+        -121.8484,
+        36.1455,
+        -121.564,
+        36.351
+      ],
+      "bbox": [
+        -121.8484,
+        36.1455,
+        -121.564,
+        36.351
+      ],
+      "bounds": [
+        -121.8484,
+        36.1455,
+        -121.564,
+        36.351
+      ],
+      "local": true,
+      "subset_version": "area-1",
+      "subset_created_at": "2026-10-20T17:20:12.538802+00:00",
+      "content_sha256": "c2abe0a601ba54d358ea4c74d5abd687ec56d3ce333614aa38a2b9658968ddb7",
+      "retained_layers": [
+        "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+        "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+        "/science/LSAR/GCOV/grids/frequencyA/inputDataExceptionMask",
+        "/science/LSAR/GCOV/grids/frequencyA/mask",
+        "/science/LSAR/GCOV/grids/frequencyA/numberOfLooks",
+        "/science/LSAR/GCOV/grids/frequencyA/rtcGammaToSigmaFactor",
+        "/science/LSAR/GCOV/grids/frequencyB/HHHH",
+        "/science/LSAR/GCOV/grids/frequencyB/HVHV",
+        "/science/LSAR/GCOV/grids/frequencyB/mask",
+        "/science/LSAR/GCOV/grids/frequencyB/numberOfLooks",
+        "/science/LSAR/GCOV/grids/frequencyB/rtcGammaToSigmaFactor"
+      ],
+      "omitted_layers": [
+        {
+          "path": "/science/LSAR/GCOV/grids/frequencyB/inputDataExceptionMask",
+          "reason": "Layer dimensions differ from its grid."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/attitude/eulerAngles",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/attitude/quaternions",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/rxHorizontalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/rxVerticalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/txHorizontalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/txVerticalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/elevationAntennaPattern/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/elevationAntennaPattern/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/noiseEquivalentBackscatter/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/noiseEquivalentBackscatter/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/elevationAntennaPattern/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/elevationAntennaPattern/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/noiseEquivalentBackscatter/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/noiseEquivalentBackscatter/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/orbit/position",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/orbit/velocity",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/parameters/frequencyA/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/parameters/frequencyB/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/parameters/referenceTerrainHeight",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyA/azimuthIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyA/slantRangeIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyB/azimuthIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyB/slantRangeIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/alongTrackUnitVectorX",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/alongTrackUnitVectorY",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/elevationAngle",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/groundTrackVelocity",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/incidenceAngle",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/losUnitVectorX",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/losUnitVectorY",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/slantRange",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/zeroDopplerAzimuthTime",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/sourceData/processingInformation/parameters/frequencyA/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/sourceData/processingInformation/parameters/frequencyB/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        }
+      ],
+      "original_size_mb": 6126.007292747498,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -121.8484,
+              36.1455
+            ],
+            [
+              -121.564,
+              36.1455
+            ],
+            [
+              -121.564,
+              36.351
+            ],
+            [
+              -121.8484,
+              36.351
+            ],
+            [
+              -121.8484,
+              36.1455
+            ]
+          ]
+        ]
+      },
+      "example_id": "P03_Timber_Fire",
+      "example_file": "NISAR_L2_PR_GCOV_026_042_D_070_4005_DHDH_A_20260723T025640_20260723T025715_P05023_N_F_J_001__subset_4ba8edc4dc72.h5",
+      "protected_example": true
+    },
+    {
+      "id": "subset-e6b449a88b6eb8de956912b7eb84c52e",
+      "name": "NISAR_L2_PR_GCOV_030_042_D_070_4005_DHDH_A_20260909T025638_20260909T025713_P05023_N_F_J_001",
+      "product": "GCOV",
+      "start": "2026-09-09T02:56:38Z",
+      "end": "2026-09-09T02:57:13Z",
+      "catalog_start": "2026-09-09T02:56:38.000Z",
+      "catalog_end": "2026-09-09T02:57:13.999Z",
+      "size_mb": 64.070408,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_030_042_D_070_4005_DHDH_A_20260909T025638_20260909T025713_P05023_N_F_J_001/NISAR_L2_PR_GCOV_030_042_D_070_4005_DHDH_A_20260909T025638_20260909T025713_P05023_N_F_J_001.h5",
+      "group": "042_D_070_4005_DHDH_P05023",
+      "boxes": [
+        "36.1455 -121.8484 36.351 -121.564"
+      ],
+      "polygons": [],
+      "source_id": "G4311256123-ASF",
+      "catalog_id": "G4311256123-ASF",
+      "subset": true,
+      "subset_bbox": [
+        -121.8484,
+        36.1455,
+        -121.564,
+        36.351
+      ],
+      "bbox": [
+        -121.8484,
+        36.1455,
+        -121.564,
+        36.351
+      ],
+      "bounds": [
+        -121.8484,
+        36.1455,
+        -121.564,
+        36.351
+      ],
+      "local": true,
+      "subset_version": "area-1",
+      "subset_created_at": "2026-10-20T17:25:40.087015+00:00",
+      "content_sha256": "88ff2ca10e8c52c81d4e1ed6139999b4e0653ebf187028ac66e340f09e5a7b14",
+      "retained_layers": [
+        "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+        "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+        "/science/LSAR/GCOV/grids/frequencyA/inputDataExceptionMask",
+        "/science/LSAR/GCOV/grids/frequencyA/mask",
+        "/science/LSAR/GCOV/grids/frequencyA/numberOfLooks",
+        "/science/LSAR/GCOV/grids/frequencyA/rtcGammaToSigmaFactor",
+        "/science/LSAR/GCOV/grids/frequencyB/HHHH",
+        "/science/LSAR/GCOV/grids/frequencyB/HVHV",
+        "/science/LSAR/GCOV/grids/frequencyB/mask",
+        "/science/LSAR/GCOV/grids/frequencyB/numberOfLooks",
+        "/science/LSAR/GCOV/grids/frequencyB/rtcGammaToSigmaFactor"
+      ],
+      "omitted_layers": [
+        {
+          "path": "/science/LSAR/GCOV/grids/frequencyB/inputDataExceptionMask",
+          "reason": "Layer dimensions differ from its grid."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/attitude/eulerAngles",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/attitude/quaternions",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/rxHorizontalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/rxVerticalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/txHorizontalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/txVerticalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/elevationAntennaPattern/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/elevationAntennaPattern/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/noiseEquivalentBackscatter/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/noiseEquivalentBackscatter/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/elevationAntennaPattern/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/elevationAntennaPattern/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/noiseEquivalentBackscatter/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/noiseEquivalentBackscatter/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/orbit/position",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/orbit/velocity",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/parameters/frequencyA/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/parameters/frequencyB/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/parameters/referenceTerrainHeight",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyA/azimuthIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyA/slantRangeIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyB/azimuthIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyB/slantRangeIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/alongTrackUnitVectorX",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/alongTrackUnitVectorY",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/elevationAngle",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/groundTrackVelocity",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/incidenceAngle",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/losUnitVectorX",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/losUnitVectorY",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/slantRange",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/zeroDopplerAzimuthTime",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/sourceData/processingInformation/parameters/frequencyA/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/sourceData/processingInformation/parameters/frequencyB/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        }
+      ],
+      "original_size_mb": 6141.481997489929,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -121.8484,
+              36.1455
+            ],
+            [
+              -121.564,
+              36.1455
+            ],
+            [
+              -121.564,
+              36.351
+            ],
+            [
+              -121.8484,
+              36.351
+            ],
+            [
+              -121.8484,
+              36.1455
+            ]
+          ]
+        ]
+      },
+      "example_id": "P03_Timber_Fire",
+      "example_file": "NISAR_L2_PR_GCOV_030_042_D_070_4005_DHDH_A_20260909T025638_20260909T025713_P05023_N_F_J_001__subset_e6b449a88b6e.h5",
+      "protected_example": true
+    },
+    {
+      "id": "subset-1275ce31e0c6983865b1c1b2ba0e47f4",
+      "name": "NISAR_L2_PR_GCOV_023_135_A_020_4005_DHDH_A_20260623T131719_20260623T131754_P05023_N_F_J_002",
+      "product": "GCOV",
+      "start": "2026-06-23T13:17:19Z",
+      "end": "2026-06-23T13:17:54Z",
+      "catalog_start": "2026-06-23T13:17:19.000Z",
+      "catalog_end": "2026-06-23T13:17:54.999Z",
+      "size_mb": 64.017551,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_023_135_A_020_4005_DHDH_A_20260623T131719_20260623T131754_P05023_N_F_J_002/NISAR_L2_PR_GCOV_023_135_A_020_4005_DHDH_A_20260623T131719_20260623T131754_P05023_N_F_J_002.h5",
+      "group": "135_A_020_4005_DHDH_P05023",
+      "boxes": [
+        "36.1455 -121.8484 36.351 -121.564"
+      ],
+      "polygons": [],
+      "source_id": "G4275294056-ASF",
+      "catalog_id": "G4275294056-ASF",
+      "subset": true,
+      "subset_bbox": [
+        -121.8484,
+        36.1455,
+        -121.564,
+        36.351
+      ],
+      "bbox": [
+        -121.8484,
+        36.1455,
+        -121.564,
+        36.351
+      ],
+      "bounds": [
+        -121.8484,
+        36.1455,
+        -121.564,
+        36.351
+      ],
+      "local": true,
+      "subset_version": "area-1",
+      "subset_created_at": "2026-10-20T17:30:54.934355+00:00",
+      "content_sha256": "876f591e50751664a21ffd6d612afc8a50772b6408d2f4f0b7e06caed9a52f5a",
+      "retained_layers": [
+        "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+        "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+        "/science/LSAR/GCOV/grids/frequencyA/inputDataExceptionMask",
+        "/science/LSAR/GCOV/grids/frequencyA/mask",
+        "/science/LSAR/GCOV/grids/frequencyA/numberOfLooks",
+        "/science/LSAR/GCOV/grids/frequencyA/rtcGammaToSigmaFactor",
+        "/science/LSAR/GCOV/grids/frequencyB/HHHH",
+        "/science/LSAR/GCOV/grids/frequencyB/HVHV",
+        "/science/LSAR/GCOV/grids/frequencyB/mask",
+        "/science/LSAR/GCOV/grids/frequencyB/numberOfLooks",
+        "/science/LSAR/GCOV/grids/frequencyB/rtcGammaToSigmaFactor"
+      ],
+      "omitted_layers": [
+        {
+          "path": "/science/LSAR/GCOV/grids/frequencyB/inputDataExceptionMask",
+          "reason": "Layer dimensions differ from its grid."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/attitude/eulerAngles",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/attitude/quaternions",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/rxHorizontalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/rxVerticalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/txHorizontalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/txVerticalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/elevationAntennaPattern/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/elevationAntennaPattern/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/noiseEquivalentBackscatter/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/noiseEquivalentBackscatter/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/elevationAntennaPattern/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/elevationAntennaPattern/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/noiseEquivalentBackscatter/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/noiseEquivalentBackscatter/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/orbit/position",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/orbit/velocity",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/parameters/frequencyA/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/parameters/frequencyB/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/parameters/referenceTerrainHeight",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyA/azimuthIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyA/slantRangeIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyB/azimuthIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyB/slantRangeIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/alongTrackUnitVectorX",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/alongTrackUnitVectorY",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/elevationAngle",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/groundTrackVelocity",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/incidenceAngle",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/losUnitVectorX",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/losUnitVectorY",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/slantRange",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/zeroDopplerAzimuthTime",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/sourceData/processingInformation/parameters/frequencyA/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/sourceData/processingInformation/parameters/frequencyB/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        }
+      ],
+      "original_size_mb": 5628.700999259949,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -121.8484,
+              36.1455
+            ],
+            [
+              -121.564,
+              36.1455
+            ],
+            [
+              -121.564,
+              36.351
+            ],
+            [
+              -121.8484,
+              36.351
+            ],
+            [
+              -121.8484,
+              36.1455
+            ]
+          ]
+        ]
+      },
+      "example_id": "P03_Timber_Fire",
+      "example_file": "NISAR_L2_PR_GCOV_023_135_A_020_4005_DHDH_A_20260623T131719_20260623T131754_P05023_N_F_J_002__subset_1275ce31e0c6.h5",
+      "protected_example": true
+    },
+    {
+      "id": "subset-3cac6f6ed45a33d9b6d4383bb8cca535",
+      "name": "NISAR_L2_PR_GCOV_024_135_A_020_4005_DHDH_A_20260705T131719_20260705T131753_P05023_N_F_J_001",
+      "product": "GCOV",
+      "start": "2026-07-05T13:17:19Z",
+      "end": "2026-07-05T13:17:53Z",
+      "catalog_start": "2026-07-05T13:17:19.000Z",
+      "catalog_end": "2026-07-05T13:17:53.999Z",
+      "size_mb": 63.999194,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_135_A_020_4005_DHDH_A_20260705T131719_20260705T131753_P05023_N_F_J_001/NISAR_L2_PR_GCOV_024_135_A_020_4005_DHDH_A_20260705T131719_20260705T131753_P05023_N_F_J_001.h5",
+      "group": "135_A_020_4005_DHDH_P05023",
+      "boxes": [
+        "36.1455 -121.8484 36.351 -121.564"
+      ],
+      "polygons": [],
+      "source_id": "G4247956704-ASF",
+      "catalog_id": "G4247956704-ASF",
+      "subset": true,
+      "subset_bbox": [
+        -121.8484,
+        36.1455,
+        -121.564,
+        36.351
+      ],
+      "bbox": [
+        -121.8484,
+        36.1455,
+        -121.564,
+        36.351
+      ],
+      "bounds": [
+        -121.8484,
+        36.1455,
+        -121.564,
+        36.351
+      ],
+      "local": true,
+      "subset_version": "area-1",
+      "subset_created_at": "2026-10-20T17:36:20.537325+00:00",
+      "content_sha256": "4ccbf6d0ace679479f9a4555c7b78a53003acf2ff83c1a1fd6deb1257ee42b1c",
+      "retained_layers": [
+        "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+        "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+        "/science/LSAR/GCOV/grids/frequencyA/inputDataExceptionMask",
+        "/science/LSAR/GCOV/grids/frequencyA/mask",
+        "/science/LSAR/GCOV/grids/frequencyA/numberOfLooks",
+        "/science/LSAR/GCOV/grids/frequencyA/rtcGammaToSigmaFactor",
+        "/science/LSAR/GCOV/grids/frequencyB/HHHH",
+        "/science/LSAR/GCOV/grids/frequencyB/HVHV",
+        "/science/LSAR/GCOV/grids/frequencyB/mask",
+        "/science/LSAR/GCOV/grids/frequencyB/numberOfLooks",
+        "/science/LSAR/GCOV/grids/frequencyB/rtcGammaToSigmaFactor"
+      ],
+      "omitted_layers": [
+        {
+          "path": "/science/LSAR/GCOV/grids/frequencyB/inputDataExceptionMask",
+          "reason": "Layer dimensions differ from its grid."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/attitude/eulerAngles",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/attitude/quaternions",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/rxHorizontalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/rxVerticalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/txHorizontalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/txVerticalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/elevationAntennaPattern/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/elevationAntennaPattern/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/noiseEquivalentBackscatter/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/noiseEquivalentBackscatter/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/elevationAntennaPattern/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/elevationAntennaPattern/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/noiseEquivalentBackscatter/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/noiseEquivalentBackscatter/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/orbit/position",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/orbit/velocity",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/parameters/frequencyA/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/parameters/frequencyB/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/parameters/referenceTerrainHeight",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyA/azimuthIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyA/slantRangeIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyB/azimuthIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyB/slantRangeIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/alongTrackUnitVectorX",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/alongTrackUnitVectorY",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/elevationAngle",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/groundTrackVelocity",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/incidenceAngle",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/losUnitVectorX",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/losUnitVectorY",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/slantRange",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/zeroDopplerAzimuthTime",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/sourceData/processingInformation/parameters/frequencyA/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/sourceData/processingInformation/parameters/frequencyB/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        }
+      ],
+      "original_size_mb": 5484.153409004211,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -121.8484,
+              36.1455
+            ],
+            [
+              -121.564,
+              36.1455
+            ],
+            [
+              -121.564,
+              36.351
+            ],
+            [
+              -121.8484,
+              36.351
+            ],
+            [
+              -121.8484,
+              36.1455
+            ]
+          ]
+        ]
+      },
+      "example_id": "P03_Timber_Fire",
+      "example_file": "NISAR_L2_PR_GCOV_024_135_A_020_4005_DHDH_A_20260705T131719_20260705T131753_P05023_N_F_J_001__subset_3cac6f6ed45a.h5",
+      "protected_example": true
+    },
+    {
+      "id": "subset-43c593d1c67c9269e28131f538d35266",
+      "name": "NISAR_L2_PR_GCOV_025_135_A_020_4005_DHDH_A_20260717T131718_20260717T131753_P05023_N_F_J_001",
+      "product": "GCOV",
+      "start": "2026-07-17T13:17:18Z",
+      "end": "2026-07-17T13:17:53Z",
+      "catalog_start": "2026-07-17T13:17:18.000Z",
+      "catalog_end": "2026-07-17T13:17:53.999Z",
+      "size_mb": 64.000622,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_135_A_020_4005_DHDH_A_20260717T131718_20260717T131753_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_135_A_020_4005_DHDH_A_20260717T131718_20260717T131753_P05023_N_F_J_001.h5",
+      "group": "135_A_020_4005_DHDH_P05023",
+      "boxes": [
+        "36.1455 -121.8484 36.351 -121.564"
+      ],
+      "polygons": [],
+      "source_id": "G4254738142-ASF",
+      "catalog_id": "G4254738142-ASF",
+      "subset": true,
+      "subset_bbox": [
+        -121.8484,
+        36.1455,
+        -121.564,
+        36.351
+      ],
+      "bbox": [
+        -121.8484,
+        36.1455,
+        -121.564,
+        36.351
+      ],
+      "bounds": [
+        -121.8484,
+        36.1455,
+        -121.564,
+        36.351
+      ],
+      "local": true,
+      "subset_version": "area-1",
+      "subset_created_at": "2026-10-20T17:41:28.137369+00:00",
+      "content_sha256": "f1e9a3f50e0200d4c17ed7b3e2f86111183ebc024214e82db5ced2d4a61e1d23",
+      "retained_layers": [
+        "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+        "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+        "/science/LSAR/GCOV/grids/frequencyA/inputDataExceptionMask",
+        "/science/LSAR/GCOV/grids/frequencyA/mask",
+        "/science/LSAR/GCOV/grids/frequencyA/numberOfLooks",
+        "/science/LSAR/GCOV/grids/frequencyA/rtcGammaToSigmaFactor",
+        "/science/LSAR/GCOV/grids/frequencyB/HHHH",
+        "/science/LSAR/GCOV/grids/frequencyB/HVHV",
+        "/science/LSAR/GCOV/grids/frequencyB/mask",
+        "/science/LSAR/GCOV/grids/frequencyB/numberOfLooks",
+        "/science/LSAR/GCOV/grids/frequencyB/rtcGammaToSigmaFactor"
+      ],
+      "omitted_layers": [
+        {
+          "path": "/science/LSAR/GCOV/grids/frequencyB/inputDataExceptionMask",
+          "reason": "Layer dimensions differ from its grid."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/attitude/eulerAngles",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/attitude/quaternions",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/rxHorizontalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/rxVerticalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/txHorizontalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/txVerticalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/elevationAntennaPattern/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/elevationAntennaPattern/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/noiseEquivalentBackscatter/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/noiseEquivalentBackscatter/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/elevationAntennaPattern/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/elevationAntennaPattern/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/noiseEquivalentBackscatter/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/noiseEquivalentBackscatter/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/orbit/position",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/orbit/velocity",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/parameters/frequencyA/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/parameters/frequencyB/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/parameters/referenceTerrainHeight",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyA/azimuthIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyA/slantRangeIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyB/azimuthIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyB/slantRangeIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/alongTrackUnitVectorX",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/alongTrackUnitVectorY",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/elevationAngle",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/groundTrackVelocity",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/incidenceAngle",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/losUnitVectorX",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/losUnitVectorY",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/slantRange",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/zeroDopplerAzimuthTime",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/sourceData/processingInformation/parameters/frequencyA/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/sourceData/processingInformation/parameters/frequencyB/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        }
+      ],
+      "original_size_mb": 5625.003770828247,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -121.8484,
+              36.1455
+            ],
+            [
+              -121.564,
+              36.1455
+            ],
+            [
+              -121.564,
+              36.351
+            ],
+            [
+              -121.8484,
+              36.351
+            ],
+            [
+              -121.8484,
+              36.1455
+            ]
+          ]
+        ]
+      },
+      "example_id": "P03_Timber_Fire",
+      "example_file": "NISAR_L2_PR_GCOV_025_135_A_020_4005_DHDH_A_20260717T131718_20260717T131753_P05023_N_F_J_001__subset_43c593d1c67c.h5",
+      "protected_example": true
+    },
+    {
+      "id": "subset-30054574f0dd0c5edcaa2fbbfe1f61d1",
+      "name": "NISAR_L2_PR_GCOV_029_135_A_020_4005_DHDH_A_20260903T131716_20260903T131751_P05023_N_F_J_001",
+      "product": "GCOV",
+      "start": "2026-09-03T13:17:16Z",
+      "end": "2026-09-03T13:17:51Z",
+      "catalog_start": "2026-09-03T13:17:16.000Z",
+      "catalog_end": "2026-09-03T13:17:51.999Z",
+      "size_mb": 64.011911,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_029_135_A_020_4005_DHDH_A_20260903T131716_20260903T131751_P05023_N_F_J_001/NISAR_L2_PR_GCOV_029_135_A_020_4005_DHDH_A_20260903T131716_20260903T131751_P05023_N_F_J_001.h5",
+      "group": "135_A_020_4005_DHDH_P05023",
+      "boxes": [
+        "36.1455 -121.8484 36.351 -121.564"
+      ],
+      "polygons": [],
+      "source_id": "G4299171281-ASF",
+      "catalog_id": "G4299171281-ASF",
+      "subset": true,
+      "subset_bbox": [
+        -121.8484,
+        36.1455,
+        -121.564,
+        36.351
+      ],
+      "bbox": [
+        -121.8484,
+        36.1455,
+        -121.564,
+        36.351
+      ],
+      "bounds": [
+        -121.8484,
+        36.1455,
+        -121.564,
+        36.351
+      ],
+      "local": true,
+      "subset_version": "area-1",
+      "subset_created_at": "2026-10-20T17:46:58.788525+00:00",
+      "content_sha256": "d907b10c3796ddbb40551a7545a5588a1ec60278f8e092259c95a52960172dc6",
+      "retained_layers": [
+        "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+        "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+        "/science/LSAR/GCOV/grids/frequencyA/inputDataExceptionMask",
+        "/science/LSAR/GCOV/grids/frequencyA/mask",
+        "/science/LSAR/GCOV/grids/frequencyA/numberOfLooks",
+        "/science/LSAR/GCOV/grids/frequencyA/rtcGammaToSigmaFactor",
+        "/science/LSAR/GCOV/grids/frequencyB/HHHH",
+        "/science/LSAR/GCOV/grids/frequencyB/HVHV",
+        "/science/LSAR/GCOV/grids/frequencyB/mask",
+        "/science/LSAR/GCOV/grids/frequencyB/numberOfLooks",
+        "/science/LSAR/GCOV/grids/frequencyB/rtcGammaToSigmaFactor"
+      ],
+      "omitted_layers": [
+        {
+          "path": "/science/LSAR/GCOV/grids/frequencyB/inputDataExceptionMask",
+          "reason": "Layer dimensions differ from its grid."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/attitude/eulerAngles",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/attitude/quaternions",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/rxHorizontalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/rxVerticalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/txHorizontalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/txVerticalCrosspol",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/elevationAntennaPattern/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/elevationAntennaPattern/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/noiseEquivalentBackscatter/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/noiseEquivalentBackscatter/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/elevationAntennaPattern/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/elevationAntennaPattern/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/noiseEquivalentBackscatter/HH",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/noiseEquivalentBackscatter/HV",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/orbit/position",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/orbit/velocity",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/parameters/frequencyA/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/parameters/frequencyB/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/parameters/referenceTerrainHeight",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyA/azimuthIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyA/slantRangeIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyB/azimuthIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/timingCorrections/frequencyB/slantRangeIonosphere",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/alongTrackUnitVectorX",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/alongTrackUnitVectorY",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/elevationAngle",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/groundTrackVelocity",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/incidenceAngle",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/losUnitVectorX",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/losUnitVectorY",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/slantRange",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/radarGrid/zeroDopplerAzimuthTime",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/sourceData/processingInformation/parameters/frequencyA/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/sourceData/processingInformation/parameters/frequencyB/dopplerCentroid",
+          "reason": "Non-geocoded or multidimensional auxiliary dataset is outside this native-grid extract."
+        }
+      ],
+      "original_size_mb": 5624.355122566223,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -121.8484,
+              36.1455
+            ],
+            [
+              -121.564,
+              36.1455
+            ],
+            [
+              -121.564,
+              36.351
+            ],
+            [
+              -121.8484,
+              36.351
+            ],
+            [
+              -121.8484,
+              36.1455
+            ]
+          ]
+        ]
+      },
+      "example_id": "P03_Timber_Fire",
+      "example_file": "NISAR_L2_PR_GCOV_029_135_A_020_4005_DHDH_A_20260903T131716_20260903T131751_P05023_N_F_J_001__subset_30054574f0dd.h5",
+      "protected_example": true
+    }
+  ]
+}

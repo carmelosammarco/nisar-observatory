@@ -1,0 +1,88 @@
+{
+  "job_id": "70214beedd724ad1bf0f603cf2b2e8d7",
+  "tool": "P04",
+  "input_count": 6,
+  "input_bytes": 63022520,
+  "checksums_verified": true,
+  "browser_start_verified": true,
+  "request": {
+    "bbox": [
+      -99.4,
+      19.14,
+      -98.75,
+      19.65
+    ],
+    "granules": [
+      "subset-a00f2a4da3128ce98f0f525ee1f5c67a",
+      "subset-0d12362e5ace476f431c7b7f8c6f5be6",
+      "subset-907ff8755c2268d8881587c6f6cb3a4a",
+      "subset-a13e844bf5e1f13446eafedc51373af2",
+      "subset-aa69b5106d1e11de1a678b6f76b05457",
+      "subset-dbb28e3a60346c2f73104c37b8bd2735"
+    ],
+    "projects": [
+      "P04"
+    ],
+    "options": {
+      "apply_ionosphere": true,
+      "phase_network": true,
+      "phase_allow_mixed_revisions": true,
+      "resolution": 80.0,
+      "coherence": 0.3,
+      "min_valid_fraction": 0.5,
+      "reference_bbox": [
+        -99.28,
+        19.4,
+        -99.24,
+        19.44
+      ]
+    },
+    "display": {
+      "palette": "rainbow",
+      "mode": "custom",
+      "layer": "los_rate_year",
+      "unit": "cm/year",
+      "low": -30.0,
+      "high": 30.0
+    }
+  },
+  "metrics": {
+    "valid_pixels": 510464,
+    "valid_fraction": 0.8466866590589421,
+    "median": 1.5972440242767334,
+    "p10": -6.169743537902832,
+    "p90": 8.836731910705566,
+    "median_rate_cm_year": 1.5972440242767334,
+    "median_rate_cm_month": 0.13310366868972778,
+    "reference_pixels": 2698,
+    "span_days": 84.00004629629629,
+    "acquisition_dates": 7
+  },
+  "grid": {
+    "crs": "EPSG:6933",
+    "resolution_m": 80.0,
+    "shape": [
+      769,
+      784
+    ],
+    "bbox": [
+      -99.4,
+      19.14,
+      -98.75,
+      19.65
+    ]
+  },
+  "display": {
+    "palette": "rainbow",
+    "mode": "custom",
+    "layer": "los_rate_year",
+    "unit": "cm/year",
+    "low": -30.0,
+    "high": 30.0
+  },
+  "source_errors": [],
+  "processing_remote_bytes": 0,
+  "numeric_raster_checked": "los_rate_year",
+  "map_image_with_legend_checked": true,
+  "scientific_accuracy": "Not established by engineering checks; read tutorial comparison and limitations."
+}

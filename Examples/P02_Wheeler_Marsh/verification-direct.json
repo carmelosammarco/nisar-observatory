@@ -1,0 +1,76 @@
+{
+  "tool": "P02",
+  "provenance_verified": true,
+  "protected_input_count": 6,
+  "reader_versions": [
+    "0.3.1"
+  ],
+  "processing_remote_bytes": 0,
+  "metrics": {
+    "common_valid_area_km2": 2.8648000000000002,
+    "baseline_water_candidate_km2": 0.2548,
+    "latest_water_candidate_km2": 0.24600000000000002,
+    "water_gain_km2": 0.0592,
+    "water_loss_km2": 0.068,
+    "net_water_change_km2": -0.0088,
+    "intermittent_water_candidate_km2": 0.732,
+    "always_water_candidate_km2": 0.054400000000000004
+  },
+  "series": [
+    {
+      "date": "2026-08-10T09:58:40Z",
+      "median_db": -8.568290710449219,
+      "water_candidate_km2": 0.2548,
+      "valid_fraction": 0.12229355918311591,
+      "median_hh_sigma_db": -9.61713981628418,
+      "median_hv_sigma_db": -18.508441925048828,
+      "comparison_pixels": 7162
+    },
+    {
+      "date": "2026-08-22T09:58:40Z",
+      "median_db": -9.768000602722168,
+      "water_candidate_km2": 0.5064000000000001,
+      "valid_fraction": 0.12229355918311591,
+      "median_hh_sigma_db": -10.818670272827148,
+      "median_hv_sigma_db": -19.542984008789062,
+      "comparison_pixels": 7162
+    },
+    {
+      "date": "2026-09-03T09:58:39Z",
+      "median_db": -10.606834411621094,
+      "water_candidate_km2": 0.6784,
+      "valid_fraction": 0.12229355918311591,
+      "median_hh_sigma_db": -11.648026466369629,
+      "median_hv_sigma_db": -20.892467498779297,
+      "comparison_pixels": 7162
+    },
+    {
+      "date": "2026-09-15T09:58:39Z",
+      "median_db": -8.877634048461914,
+      "water_candidate_km2": 0.3044,
+      "valid_fraction": 0.12229355918311591,
+      "median_hh_sigma_db": -9.942432403564453,
+      "median_hv_sigma_db": -18.48306655883789,
+      "comparison_pixels": 7162
+    },
+    {
+      "date": "2026-09-27T09:58:39Z",
+      "median_db": -8.508550643920898,
+      "water_candidate_km2": 0.1228,
+      "valid_fraction": 0.12229355918311591,
+      "median_hh_sigma_db": -9.557567596435547,
+      "median_hv_sigma_db": -16.569469451904297,
+      "comparison_pixels": 7162
+    },
+    {
+      "date": "2026-10-09T09:58:40Z",
+      "median_db": -8.899896621704102,
+      "water_candidate_km2": 0.24600000000000002,
+      "valid_fraction": 0.12229355918311591,
+      "median_hh_sigma_db": -9.96957015991211,
+      "median_hv_sigma_db": -18.446653366088867,
+      "comparison_pixels": 7162
+    }
+  ],
+  "scientific_accuracy": "Not established; numerical replay check only."
+}

@@ -1,0 +1,151 @@
+{
+  "input_count": 8,
+  "bytes": 512390698,
+  "records": [
+    {
+      "id": "subset-ae0bd786f66a1b1e707946943dd12091",
+      "source_id": "G4250797926-ASF",
+      "name": "NISAR_L2_PR_GCOV_024_042_D_070_4005_DHDH_A_20260629T025641_20260629T025716_P05023_N_F_J_001",
+      "start": "2026-06-29T02:56:41Z",
+      "group": "042_D_070_4005_DHDH_P05023",
+      "file": "data/subsets/GCOV_2026-10-20_17-06-56_UTC/NISAR_L2_PR_GCOV_024_042_D_070_4005_DHDH_A_20260629T025641_20260629T025716_P05023_N_F_J_001__subset_ae0bd786f66a.h5",
+      "bytes": 64096832,
+      "sha256": "d0fded74009ddfd22ade9b6c446f464f855dd5fc00eb0b71028733aedf5a7c04",
+      "product_version": "1.0.11",
+      "native_spacing_m": 10,
+      "native_shape": [
+        2316,
+        2588
+      ],
+      "native_mask_rejected_fraction": 4.404545490946657e-05,
+      "input_data_exception_pixels": 0
+    },
+    {
+      "id": "subset-40fad79d9c4530ee94d9630806862850",
+      "source_id": "G4249348003-ASF",
+      "name": "NISAR_L2_PR_GCOV_025_042_D_070_4005_DHDH_A_20260711T025641_20260711T025715_P05023_N_F_J_001",
+      "start": "2026-07-11T02:56:41Z",
+      "group": "042_D_070_4005_DHDH_P05023",
+      "file": "data/subsets/GCOV_2026-10-20_17-14-49_UTC/NISAR_L2_PR_GCOV_025_042_D_070_4005_DHDH_A_20260711T025641_20260711T025715_P05023_N_F_J_001__subset_40fad79d9c45.h5",
+      "bytes": 64086192,
+      "sha256": "9c7e93eb1affd24e9380ec47fc46fd80e91ae530559f9d426cadac165ffcb4dc",
+      "product_version": "1.0.11",
+      "native_spacing_m": 10,
+      "native_shape": [
+        2316,
+        2588
+      ],
+      "native_mask_rejected_fraction": 4.387861606511253e-05,
+      "input_data_exception_pixels": 0
+    },
+    {
+      "id": "subset-4ba8edc4dc727299928db30c7b82ae01",
+      "source_id": "G4260298818-ASF",
+      "name": "NISAR_L2_PR_GCOV_026_042_D_070_4005_DHDH_A_20260723T025640_20260723T025715_P05023_N_F_J_001",
+      "start": "2026-07-23T02:56:40Z",
+      "group": "042_D_070_4005_DHDH_P05023",
+      "file": "data/subsets/GCOV_2026-10-20_17-14-49_UTC/NISAR_L2_PR_GCOV_026_042_D_070_4005_DHDH_A_20260723T025640_20260723T025715_P05023_N_F_J_001__subset_4ba8edc4dc72.h5",
+      "bytes": 64107988,
+      "sha256": "c2abe0a601ba54d358ea4c74d5abd687ec56d3ce333614aa38a2b9658968ddb7",
+      "product_version": "1.0.11",
+      "native_spacing_m": 10,
+      "native_shape": [
+        2316,
+        2588
+      ],
+      "native_mask_rejected_fraction": 4.354493837640445e-05,
+      "input_data_exception_pixels": 0
+    },
+    {
+      "id": "subset-e6b449a88b6eb8de956912b7eb84c52e",
+      "source_id": "G4311256123-ASF",
+      "name": "NISAR_L2_PR_GCOV_030_042_D_070_4005_DHDH_A_20260909T025638_20260909T025713_P05023_N_F_J_001",
+      "start": "2026-09-09T02:56:38Z",
+      "group": "042_D_070_4005_DHDH_P05023",
+      "file": "data/subsets/GCOV_2026-10-20_17-14-49_UTC/NISAR_L2_PR_GCOV_030_042_D_070_4005_DHDH_A_20260909T025638_20260909T025713_P05023_N_F_J_001__subset_e6b449a88b6e.h5",
+      "bytes": 64070408,
+      "sha256": "88ff2ca10e8c52c81d4e1ed6139999b4e0653ebf187028ac66e340f09e5a7b14",
+      "product_version": "1.0.11",
+      "native_spacing_m": 10,
+      "native_shape": [
+        2316,
+        2588
+      ],
+      "native_mask_rejected_fraction": 4.471281028688273e-05,
+      "input_data_exception_pixels": 0
+    },
+    {
+      "id": "subset-1275ce31e0c6983865b1c1b2ba0e47f4",
+      "source_id": "G4275294056-ASF",
+      "name": "NISAR_L2_PR_GCOV_023_135_A_020_4005_DHDH_A_20260623T131719_20260623T131754_P05023_N_F_J_002",
+      "start": "2026-06-23T13:17:19Z",
+      "group": "135_A_020_4005_DHDH_P05023",
+      "file": "data/subsets/GCOV_2026-10-20_17-14-49_UTC/NISAR_L2_PR_GCOV_023_135_A_020_4005_DHDH_A_20260623T131719_20260623T131754_P05023_N_F_J_002__subset_1275ce31e0c6.h5",
+      "bytes": 64017551,
+      "sha256": "876f591e50751664a21ffd6d612afc8a50772b6408d2f4f0b7e06caed9a52f5a",
+      "product_version": "1.0.11",
+      "native_spacing_m": 10,
+      "native_shape": [
+        2316,
+        2588
+      ],
+      "native_mask_rejected_fraction": 0.0009728373014284075,
+      "input_data_exception_pixels": 0
+    },
+    {
+      "id": "subset-3cac6f6ed45a33d9b6d4383bb8cca535",
+      "source_id": "G4247956704-ASF",
+      "name": "NISAR_L2_PR_GCOV_024_135_A_020_4005_DHDH_A_20260705T131719_20260705T131753_P05023_N_F_J_001",
+      "start": "2026-07-05T13:17:19Z",
+      "group": "135_A_020_4005_DHDH_P05023",
+      "file": "data/subsets/GCOV_2026-10-20_17-14-49_UTC/NISAR_L2_PR_GCOV_024_135_A_020_4005_DHDH_A_20260705T131719_20260705T131753_P05023_N_F_J_001__subset_3cac6f6ed45a.h5",
+      "bytes": 63999194,
+      "sha256": "4ccbf6d0ace679479f9a4555c7b78a53003acf2ff83c1a1fd6deb1257ee42b1c",
+      "product_version": "1.0.11",
+      "native_spacing_m": 10,
+      "native_shape": [
+        2316,
+        2588
+      ],
+      "native_mask_rejected_fraction": 0.0006938827536684525,
+      "input_data_exception_pixels": 0
+    },
+    {
+      "id": "subset-43c593d1c67c9269e28131f538d35266",
+      "source_id": "G4254738142-ASF",
+      "name": "NISAR_L2_PR_GCOV_025_135_A_020_4005_DHDH_A_20260717T131718_20260717T131753_P05023_N_F_J_001",
+      "start": "2026-07-17T13:17:18Z",
+      "group": "135_A_020_4005_DHDH_P05023",
+      "file": "data/subsets/GCOV_2026-10-20_17-14-49_UTC/NISAR_L2_PR_GCOV_025_135_A_020_4005_DHDH_A_20260717T131718_20260717T131753_P05023_N_F_J_001__subset_43c593d1c67c.h5",
+      "bytes": 64000622,
+      "sha256": "f1e9a3f50e0200d4c17ed7b3e2f86111183ebc024214e82db5ced2d4a61e1d23",
+      "product_version": "1.0.11",
+      "native_spacing_m": 10,
+      "native_shape": [
+        2316,
+        2588
+      ],
+      "native_mask_rejected_fraction": 0.0006903791379370177,
+      "input_data_exception_pixels": 0
+    },
+    {
+      "id": "subset-30054574f0dd0c5edcaa2fbbfe1f61d1",
+      "source_id": "G4299171281-ASF",
+      "name": "NISAR_L2_PR_GCOV_029_135_A_020_4005_DHDH_A_20260903T131716_20260903T131751_P05023_N_F_J_001",
+      "start": "2026-09-03T13:17:16Z",
+      "group": "135_A_020_4005_DHDH_P05023",
+      "file": "data/subsets/GCOV_2026-10-20_17-14-49_UTC/NISAR_L2_PR_GCOV_029_135_A_020_4005_DHDH_A_20260903T131716_20260903T131751_P05023_N_F_J_001__subset_30054574f0dd.h5",
+      "bytes": 64011911,
+      "sha256": "d907b10c3796ddbb40551a7545a5588a1ec60278f8e092259c95a52960172dc6",
+      "product_version": "1.0.11",
+      "native_spacing_m": 10,
+      "native_shape": [
+        2316,
+        2588
+      ],
+      "native_mask_rejected_fraction": 0.000691880687536204,
+      "input_data_exception_pixels": 0
+    }
+  ],
+  "warning": "Any nonzero input exception flag needs interpretation before scientific attribution; product maturity remains PROVISIONAL."
+}

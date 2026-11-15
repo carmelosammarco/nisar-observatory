@@ -1,0 +1,90 @@
+{
+  "tool": "P04",
+  "provenance_verified": true,
+  "protected_input_count": 6,
+  "reader_versions": [
+    "0.3.1"
+  ],
+  "processing_remote_bytes": 0,
+  "metrics": {
+    "valid_pixels": 510464,
+    "valid_fraction": 0.8466866590589421,
+    "median": 1.5972440242767334,
+    "p10": -6.169743537902832,
+    "p90": 8.836731910705566,
+    "median_rate_cm_year": 1.5972440242767334,
+    "median_rate_cm_month": 0.13310366868972778,
+    "reference_pixels": 2698,
+    "span_days": 84.00004629629629,
+    "acquisition_dates": 7
+  },
+  "series": [
+    {
+      "date": "2025-10-25T01:13:29Z",
+      "end": "2025-11-06T01:13:30Z",
+      "median_mm": 11.588579177856445,
+      "p10_mm": -4.890566825866699,
+      "p90_mm": 26.32094383239746,
+      "valid_fraction": 0.9327230567129322,
+      "comparison_pixels": 510464,
+      "interval_days": 12.000011574074074,
+      "median_rate_mm_day": 0.9657139778137207
+    },
+    {
+      "date": "2025-11-06T01:13:30Z",
+      "end": "2025-11-18T01:13:30Z",
+      "median_mm": -13.157334327697754,
+      "p10_mm": -31.284730911254883,
+      "p90_mm": 2.533460855484009,
+      "valid_fraction": 0.945819842891643,
+      "comparison_pixels": 510464,
+      "interval_days": 12.0,
+      "median_rate_mm_day": -1.0964446067810059
+    },
+    {
+      "date": "2025-11-18T01:13:30Z",
+      "end": "2025-12-12T01:13:31Z",
+      "median_mm": 8.272822380065918,
+      "p10_mm": -8.987943649291992,
+      "p90_mm": 22.207712173461914,
+      "valid_fraction": 0.9066173933812797,
+      "comparison_pixels": 510464,
+      "interval_days": 24.000011574074072,
+      "median_rate_mm_day": 0.34470075368881226
+    },
+    {
+      "date": "2025-12-12T01:13:31Z",
+      "end": "2025-12-24T01:13:32Z",
+      "median_mm": 1.2334864139556885,
+      "p10_mm": -24.73391342163086,
+      "p90_mm": 26.767044067382812,
+      "valid_fraction": 0.9282148164857621,
+      "comparison_pixels": 510464,
+      "interval_days": 12.000011574074074,
+      "median_rate_mm_day": 0.10279043018817902
+    },
+    {
+      "date": "2025-12-24T01:13:32Z",
+      "end": "2026-01-05T01:13:32Z",
+      "median_mm": 5.427611351013184,
+      "p10_mm": -16.56715202331543,
+      "p90_mm": 23.223133087158203,
+      "valid_fraction": 0.9452625328414851,
+      "comparison_pixels": 510464,
+      "interval_days": 12.0,
+      "median_rate_mm_day": 0.45230093598365784
+    },
+    {
+      "date": "2026-01-05T01:13:32Z",
+      "end": "2026-01-17T01:13:33Z",
+      "median_mm": -6.295787811279297,
+      "p10_mm": -14.880829811096191,
+      "p90_mm": 5.614368915557861,
+      "valid_fraction": 0.9487921631591518,
+      "comparison_pixels": 510464,
+      "interval_days": 12.000011574074074,
+      "median_rate_mm_day": -0.5246485471725464
+    }
+  ],
+  "scientific_accuracy": "Not established; numerical replay check only."
+}

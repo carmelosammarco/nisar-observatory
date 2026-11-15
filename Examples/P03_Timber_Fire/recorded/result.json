@@ -1,0 +1,5339 @@
+{
+  "project": "P03",
+  "title": "Combined HH/HV surface-change evidence",
+  "unit": "z",
+  "series": [
+    {
+      "date": "2026-09-03T13:17:16Z",
+      "group": "135_A_020_4005_DHDH_P05023",
+      "median_change_db": 1.8436918258666992,
+      "valid_pixels": 1130060
+    },
+    {
+      "date": "2026-09-09T02:56:38Z",
+      "group": "042_D_070_4005_DHDH_P05023",
+      "median_change_db": 1.8563098907470703,
+      "valid_pixels": 1130972
+    }
+  ],
+  "metrics": {
+    "candidate_area_ha": 7453.0,
+    "valid_land_ha": 45228.56,
+    "candidate_fraction": 0.16478525957934545,
+    "viewing_groups": 2
+  },
+  "notes": [
+    "Candidate patches show radar surface change, not independently verified burns, severity, biomass or recovery.",
+    "HH and HV changes are computed separately against each viewing group\u2019s median linear-power baseline; raw opposite-view powers are never averaged.",
+    "The primary map combines the latest selected post-baseline observation per group. These dates are asynchronous; time frames show individual measured views, not a synchronized fused movie.",
+    "Robust normalization depends on the entire selected land window. Cropping or changing water exclusions changes the score and threshold result.",
+    "Native sample screening is applied before averaging. No per-track DEM/LOS terrain-shadow mask is implemented.",
+    "A supplied domain can exclude water; without a justified land domain, water and other unrelated changes can affect normalization.",
+    "Grid posting is not independent spatial resolving power: Gaussian full width at half maximum is 2.355 times smoothing sigma.",
+    "Input is a local native-grid area extract, not a complete original NASA product; only the saved rectangle can be analyzed.",
+    "GCOV source-sample mask is applied before averaging. It is not a terrain-shadow or water classifier."
+  ],
+  "extra": {
+    "fire_method": {
+      "id": "combined",
+      "label": "Combined HH/HV change",
+      "version": "0.8.0",
+      "groups": [
+        {
+          "group": "042_D_070_4005_DHDH_P05023",
+          "baseline_dates": [
+            "2026-06-29T02:56:41Z",
+            "2026-07-11T02:56:41Z",
+            "2026-07-23T02:56:40Z"
+          ],
+          "comparison_dates": [
+            "2026-09-09T02:56:38Z"
+          ],
+          "latest": "2026-09-09T02:56:38Z",
+          "baseline_shared_pixels": 1130972
+        },
+        {
+          "group": "135_A_020_4005_DHDH_P05023",
+          "baseline_dates": [
+            "2026-06-23T13:17:19Z",
+            "2026-07-05T13:17:19Z",
+            "2026-07-17T13:17:18Z"
+          ],
+          "comparison_dates": [
+            "2026-09-03T13:17:16Z"
+          ],
+          "latest": "2026-09-03T13:17:16Z",
+          "baseline_shared_pixels": 1130063
+        }
+      ],
+      "normalization": {
+        "median_db": 1.9985551503497896,
+        "scaled_mad_db": 0.36363570711994014,
+        "valid_land_ha": 45228.56
+      },
+      "smoothing_m": 80.0,
+      "score_threshold": 2.0,
+      "minimum_patch_ha": 10.0,
+      "minimum_patch_cells": 250,
+      "connectivity": 4,
+      "terrain_mask_applied": false,
+      "land_domain_supplied": true
+    },
+    "support": {
+      "mode": "All declared baseline dates per view; latest valid view magnitudes averaged without filling missing pixels",
+      "common_pixels": 1130714,
+      "common_area_km2": 452.2856,
+      "common_fraction": 0.7972043552045371,
+      "per_observation_valid_pixels": [
+        1417362,
+        1418313,
+        1417608,
+        1418308,
+        1417607,
+        1418311,
+        1417617,
+        1418309
+      ]
+    },
+    "spatial_context": [
+      {
+        "name": "Terrestrial study window",
+        "role": "domain",
+        "pixels": 1131014
+      }
+    ],
+    "method_references": [
+      "https://nisar-docs.asf.alaska.edu/gcov/",
+      "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7553393"
+    ],
+    "readiness": {
+      "ready": true,
+      "scope": "metadata only; no data downloaded",
+      "errors": [],
+      "warnings": [
+        "Channel availability and valid native sample overlap are not established by catalog metadata.",
+        "Free disk space is checked again before array and export writes. Other applications can consume space after this check.",
+        "Metadata checks do not establish usable pixel coverage or environmental accuracy; those require science reads and independent evidence."
+      ],
+      "checks": [
+        {
+          "label": "Selected sources",
+          "value": "8"
+        },
+        {
+          "label": "Product",
+          "value": "GCOV"
+        },
+        {
+          "label": "Analysis grid",
+          "value": "1263 \u00d7 1123 cells \u00b7 20.00 m spacing"
+        },
+        {
+          "label": "Required channels",
+          "value": "HH and HV together; availability/conversion is verified when reading"
+        },
+        {
+          "label": "Free runtime disk space",
+          "value": "440.03 GiB free \u00b7 512 MiB safety reserve"
+        },
+        {
+          "label": "Estimated grid working memory",
+          "value": "1212 MiB \u00b7 excludes native reads, export and library overhead"
+        }
+      ],
+      "groups": [
+        {
+          "group": "042_D_070_4005_DHDH_P05023",
+          "count": 4,
+          "intervals": [
+            {
+              "start": "2026-06-29T02:56:41Z",
+              "end": "2026-06-29T02:57:16Z"
+            },
+            {
+              "start": "2026-07-11T02:56:41Z",
+              "end": "2026-07-11T02:57:15Z"
+            },
+            {
+              "start": "2026-07-23T02:56:40Z",
+              "end": "2026-07-23T02:57:15Z"
+            },
+            {
+              "start": "2026-09-09T02:56:38Z",
+              "end": "2026-09-09T02:57:13Z"
+            }
+          ],
+          "baseline_dates": [
+            "2026-06-29T02:56:41Z",
+            "2026-07-11T02:56:41Z",
+            "2026-07-23T02:56:40Z"
+          ],
+          "comparison_dates": [
+            "2026-09-09T02:56:38Z"
+          ]
+        },
+        {
+          "group": "135_A_020_4005_DHDH_P05023",
+          "count": 4,
+          "intervals": [
+            {
+              "start": "2026-06-23T13:17:19Z",
+              "end": "2026-06-23T13:17:54Z"
+            },
+            {
+              "start": "2026-07-05T13:17:19Z",
+              "end": "2026-07-05T13:17:53Z"
+            },
+            {
+              "start": "2026-07-17T13:17:18Z",
+              "end": "2026-07-17T13:17:53Z"
+            },
+            {
+              "start": "2026-09-03T13:17:16Z",
+              "end": "2026-09-03T13:17:51Z"
+            }
+          ],
+          "baseline_dates": [
+            "2026-06-23T13:17:19Z",
+            "2026-07-05T13:17:19Z",
+            "2026-07-17T13:17:18Z"
+          ],
+          "comparison_dates": [
+            "2026-09-03T13:17:16Z"
+          ]
+        }
+      ],
+      "stage_baselines": [],
+      "disk_space": {
+        "free_bytes": 472475836416,
+        "required_bytes": 0,
+        "reserve_bytes": 536870912,
+        "fits": true,
+        "scope": "Destination filesystem free space; estimates are not a reservation against other applications."
+      },
+      "estimated_trace_bytes": 0,
+      "estimated_trace_maps": 0,
+      "estimated_grid_bytes": 1270840704,
+      "memory_budget_bytes": 3221225472
+    },
+    "result_passport": {
+      "contract_version": "1.1.0",
+      "method": "P03",
+      "algorithm_version": "0.8.0",
+      "record": {
+        "start": "2026-06-23T13:17:19Z",
+        "end": "2026-09-09T02:57:13Z"
+      },
+      "baseline": [
+        {
+          "group": "042_D_070_4005_DHDH_P05023",
+          "baseline_dates": [
+            "2026-06-29T02:56:41Z",
+            "2026-07-11T02:56:41Z",
+            "2026-07-23T02:56:40Z"
+          ],
+          "comparison_dates": [
+            "2026-09-09T02:56:38Z"
+          ],
+          "latest": "2026-09-09T02:56:38Z",
+          "baseline_shared_pixels": 1130972
+        },
+        {
+          "group": "135_A_020_4005_DHDH_P05023",
+          "baseline_dates": [
+            "2026-06-23T13:17:19Z",
+            "2026-07-05T13:17:19Z",
+            "2026-07-17T13:17:18Z"
+          ],
+          "comparison_dates": [
+            "2026-09-03T13:17:16Z"
+          ],
+          "latest": "2026-09-03T13:17:16Z",
+          "baseline_shared_pixels": 1130063
+        }
+      ],
+      "reference": {
+        "bbox": null,
+        "polygon_names": [],
+        "meaning": "No spatial reference subtraction declared."
+      },
+      "support": {
+        "mode": "All declared baseline dates per view; latest valid view magnitudes averaged without filling missing pixels",
+        "common_pixels": 1130714,
+        "common_area_km2": 452.2856,
+        "common_fraction": 0.7972043552045371,
+        "per_observation_valid_pixels": [
+          1417362,
+          1418313,
+          1417608,
+          1418308,
+          1417607,
+          1418311,
+          1417617,
+          1418309
+        ]
+      },
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "validation": "Engineering reproducibility and checksum checks are separate from independent scientific validation. Read the case-study comparison.",
+      "smoothing_contract": {
+        "version": "1.1.0",
+        "method": "normalized Gaussian",
+        "boundary": "reflect",
+        "minimum_finite_kernel_support": 0.3,
+        "fills_missing_centres": false
+      },
+      "execution_engine_version": null
+    },
+    "execution_fingerprint": "82f6bb6c493bb1abdbed4a1a73369be70dbb024bd5bb24d5fd12ad135389dedc"
+  },
+  "sources": [
+    {
+      "id": "subset-1275ce31e0c6983865b1c1b2ba0e47f4",
+      "catalog_id": "G4275294056-ASF",
+      "name": "NISAR_L2_PR_GCOV_023_135_A_020_4005_DHDH_A_20260623T131719_20260623T131754_P05023_N_F_J_002",
+      "start": "2026-06-23T13:17:19Z",
+      "end": "2026-06-23T13:17:54Z",
+      "group": "135_A_020_4005_DHDH_P05023",
+      "path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+      "additional_paths": {
+        "cross_power": "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+        "copol_power": "/science/LSAR/GCOV/grids/frequencyA/HHHH"
+      },
+      "attributes": {
+        "_FillValue": null,
+        "description": "Covariance between HH and HH",
+        "grid_mapping": "projection",
+        "long_name": "Geocoded polarimetric covariance term HHHH",
+        "max_value": 7811.4208984375,
+        "mean_value": 0.0835295170545578,
+        "min_value": 9.480711400186315e-17,
+        "sample_stddev": 1.130855917930603,
+        "units": "1",
+        "valid_min": 0.0,
+        "native_spacing_source_crs": [
+          10.0,
+          10.0
+        ],
+        "native_epsg": 32610,
+        "native_finite_samples": 5989653,
+        "native_accepted_samples": 5987977,
+        "native_accepted_fraction": 0.9997201841241888,
+        "minimum_native_valid_fraction": 0.5,
+        "native_quality_before_aggregation": true,
+        "source_subset": {
+          "bbox": [
+            -121.8484,
+            36.1455,
+            -121.564,
+            36.351
+          ],
+          "source_id": "G4275294056-ASF",
+          "version": "area-1"
+        },
+        "polarization_comparison": "matched-cross-to-co-2"
+      },
+      "quality_paths": [
+        "/science/LSAR/GCOV/grids/frequencyA/mask",
+        "/science/LSAR/GCOV/grids/frequencyA/mask"
+      ],
+      "cache_identity": "f8a365b7d27c98a4cfd3c911ff16e9beaace89704a3d3d28591ad3f7b3c686a0",
+      "bytes_transferred": 0,
+      "cache_hit": false,
+      "reader_version": "0.3.3"
+    },
+    {
+      "id": "subset-ae0bd786f66a1b1e707946943dd12091",
+      "catalog_id": "G4250797926-ASF",
+      "name": "NISAR_L2_PR_GCOV_024_042_D_070_4005_DHDH_A_20260629T025641_20260629T025716_P05023_N_F_J_001",
+      "start": "2026-06-29T02:56:41Z",
+      "end": "2026-06-29T02:57:16Z",
+      "group": "042_D_070_4005_DHDH_P05023",
+      "path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+      "additional_paths": {
+        "cross_power": "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+        "copol_power": "/science/LSAR/GCOV/grids/frequencyA/HHHH"
+      },
+      "attributes": {
+        "_FillValue": null,
+        "description": "Covariance between HH and HH",
+        "grid_mapping": "projection",
+        "long_name": "Geocoded polarimetric covariance term HHHH",
+        "max_value": 4586.42236328125,
+        "mean_value": 0.12098845094442368,
+        "min_value": 1.5101623030782588e-17,
+        "sample_stddev": 1.028941035270691,
+        "units": "1",
+        "valid_min": 0.0,
+        "native_spacing_source_crs": [
+          10.0,
+          10.0
+        ],
+        "native_epsg": 32610,
+        "native_finite_samples": 5993544,
+        "native_accepted_samples": 5993544,
+        "native_accepted_fraction": 1.0,
+        "minimum_native_valid_fraction": 0.5,
+        "native_quality_before_aggregation": true,
+        "source_subset": {
+          "bbox": [
+            -121.8484,
+            36.1455,
+            -121.564,
+            36.351
+          ],
+          "source_id": "G4250797926-ASF",
+          "version": "area-1"
+        },
+        "polarization_comparison": "matched-cross-to-co-2"
+      },
+      "quality_paths": [
+        "/science/LSAR/GCOV/grids/frequencyA/mask",
+        "/science/LSAR/GCOV/grids/frequencyA/mask"
+      ],
+      "cache_identity": "3f858d1a5fb8059d3b80cda32b9a923eaf0370b5e492b784f2d3649a86202655",
+      "bytes_transferred": 0,
+      "cache_hit": false,
+      "reader_version": "0.3.3"
+    },
+    {
+      "id": "subset-3cac6f6ed45a33d9b6d4383bb8cca535",
+      "catalog_id": "G4247956704-ASF",
+      "name": "NISAR_L2_PR_GCOV_024_135_A_020_4005_DHDH_A_20260705T131719_20260705T131753_P05023_N_F_J_001",
+      "start": "2026-07-05T13:17:19Z",
+      "end": "2026-07-05T13:17:53Z",
+      "group": "135_A_020_4005_DHDH_P05023",
+      "path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+      "additional_paths": {
+        "cross_power": "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+        "copol_power": "/science/LSAR/GCOV/grids/frequencyA/HHHH"
+      },
+      "attributes": {
+        "_FillValue": null,
+        "description": "Covariance between HH and HH",
+        "grid_mapping": "projection",
+        "long_name": "Geocoded polarimetric covariance term HHHH",
+        "max_value": 7961.66015625,
+        "mean_value": 0.0842733159661293,
+        "min_value": 3.761680267073493e-17,
+        "sample_stddev": 1.076380968093872,
+        "units": "1",
+        "valid_min": 0.0,
+        "native_spacing_source_crs": [
+          10.0,
+          10.0
+        ],
+        "native_epsg": 32610,
+        "native_finite_samples": 5989649,
+        "native_accepted_samples": 5989649,
+        "native_accepted_fraction": 1.0,
+        "minimum_native_valid_fraction": 0.5,
+        "native_quality_before_aggregation": true,
+        "source_subset": {
+          "bbox": [
+            -121.8484,
+            36.1455,
+            -121.564,
+            36.351
+          ],
+          "source_id": "G4247956704-ASF",
+          "version": "area-1"
+        },
+        "polarization_comparison": "matched-cross-to-co-2"
+      },
+      "quality_paths": [
+        "/science/LSAR/GCOV/grids/frequencyA/mask",
+        "/science/LSAR/GCOV/grids/frequencyA/mask"
+      ],
+      "cache_identity": "dbcc30840663a00fb8c60ae94c2ba73834cfe1d5f42338a4090bb2b79375e049",
+      "bytes_transferred": 0,
+      "cache_hit": false,
+      "reader_version": "0.3.3"
+    },
+    {
+      "id": "subset-40fad79d9c4530ee94d9630806862850",
+      "catalog_id": "G4249348003-ASF",
+      "name": "NISAR_L2_PR_GCOV_025_042_D_070_4005_DHDH_A_20260711T025641_20260711T025715_P05023_N_F_J_001",
+      "start": "2026-07-11T02:56:41Z",
+      "end": "2026-07-11T02:57:15Z",
+      "group": "042_D_070_4005_DHDH_P05023",
+      "path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+      "additional_paths": {
+        "cross_power": "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+        "copol_power": "/science/LSAR/GCOV/grids/frequencyA/HHHH"
+      },
+      "attributes": {
+        "_FillValue": null,
+        "description": "Covariance between HH and HH",
+        "grid_mapping": "projection",
+        "long_name": "Geocoded polarimetric covariance term HHHH",
+        "max_value": 6677.93310546875,
+        "mean_value": 0.12143050134181976,
+        "min_value": 1.599736368122646e-17,
+        "sample_stddev": 1.0150601863861084,
+        "units": "1",
+        "valid_min": 0.0,
+        "native_spacing_source_crs": [
+          10.0,
+          10.0
+        ],
+        "native_epsg": 32610,
+        "native_finite_samples": 5993545,
+        "native_accepted_samples": 5993545,
+        "native_accepted_fraction": 1.0,
+        "minimum_native_valid_fraction": 0.5,
+        "native_quality_before_aggregation": true,
+        "source_subset": {
+          "bbox": [
+            -121.8484,
+            36.1455,
+            -121.564,
+            36.351
+          ],
+          "source_id": "G4249348003-ASF",
+          "version": "area-1"
+        },
+        "polarization_comparison": "matched-cross-to-co-2"
+      },
+      "quality_paths": [
+        "/science/LSAR/GCOV/grids/frequencyA/mask",
+        "/science/LSAR/GCOV/grids/frequencyA/mask"
+      ],
+      "cache_identity": "f072958f613a65325e62a46dfa4d12ad9616a1d7bba5c4f0d806fbe071826dd4",
+      "bytes_transferred": 0,
+      "cache_hit": false,
+      "reader_version": "0.3.3"
+    },
+    {
+      "id": "subset-43c593d1c67c9269e28131f538d35266",
+      "catalog_id": "G4254738142-ASF",
+      "name": "NISAR_L2_PR_GCOV_025_135_A_020_4005_DHDH_A_20260717T131718_20260717T131753_P05023_N_F_J_001",
+      "start": "2026-07-17T13:17:18Z",
+      "end": "2026-07-17T13:17:53Z",
+      "group": "135_A_020_4005_DHDH_P05023",
+      "path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+      "additional_paths": {
+        "cross_power": "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+        "copol_power": "/science/LSAR/GCOV/grids/frequencyA/HHHH"
+      },
+      "attributes": {
+        "_FillValue": null,
+        "description": "Covariance between HH and HH",
+        "grid_mapping": "projection",
+        "long_name": "Geocoded polarimetric covariance term HHHH",
+        "max_value": 7610.466796875,
+        "mean_value": 0.08708859980106354,
+        "min_value": 3.049576690466598e-17,
+        "sample_stddev": 1.1977455615997314,
+        "units": "1",
+        "valid_min": 0.0,
+        "native_spacing_source_crs": [
+          10.0,
+          10.0
+        ],
+        "native_epsg": 32610,
+        "native_finite_samples": 5989670,
+        "native_accepted_samples": 5989670,
+        "native_accepted_fraction": 1.0,
+        "minimum_native_valid_fraction": 0.5,
+        "native_quality_before_aggregation": true,
+        "source_subset": {
+          "bbox": [
+            -121.8484,
+            36.1455,
+            -121.564,
+            36.351
+          ],
+          "source_id": "G4254738142-ASF",
+          "version": "area-1"
+        },
+        "polarization_comparison": "matched-cross-to-co-2"
+      },
+      "quality_paths": [
+        "/science/LSAR/GCOV/grids/frequencyA/mask",
+        "/science/LSAR/GCOV/grids/frequencyA/mask"
+      ],
+      "cache_identity": "9e44b53607f85b36533006f393723e187531063e4dd504e6f2cf704d60c9325e",
+      "bytes_transferred": 0,
+      "cache_hit": false,
+      "reader_version": "0.3.3"
+    },
+    {
+      "id": "subset-4ba8edc4dc727299928db30c7b82ae01",
+      "catalog_id": "G4260298818-ASF",
+      "name": "NISAR_L2_PR_GCOV_026_042_D_070_4005_DHDH_A_20260723T025640_20260723T025715_P05023_N_F_J_001",
+      "start": "2026-07-23T02:56:40Z",
+      "end": "2026-07-23T02:57:15Z",
+      "group": "042_D_070_4005_DHDH_P05023",
+      "path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+      "additional_paths": {
+        "cross_power": "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+        "copol_power": "/science/LSAR/GCOV/grids/frequencyA/HHHH"
+      },
+      "attributes": {
+        "_FillValue": null,
+        "description": "Covariance between HH and HH",
+        "grid_mapping": "projection",
+        "long_name": "Geocoded polarimetric covariance term HHHH",
+        "max_value": 6401.7314453125,
+        "mean_value": 0.11859119683504105,
+        "min_value": 9.578957461336586e-18,
+        "sample_stddev": 1.0420807600021362,
+        "units": "1",
+        "valid_min": 0.0,
+        "native_spacing_source_crs": [
+          10.0,
+          10.0
+        ],
+        "native_epsg": 32610,
+        "native_finite_samples": 5993547,
+        "native_accepted_samples": 5993547,
+        "native_accepted_fraction": 1.0,
+        "minimum_native_valid_fraction": 0.5,
+        "native_quality_before_aggregation": true,
+        "source_subset": {
+          "bbox": [
+            -121.8484,
+            36.1455,
+            -121.564,
+            36.351
+          ],
+          "source_id": "G4260298818-ASF",
+          "version": "area-1"
+        },
+        "polarization_comparison": "matched-cross-to-co-2"
+      },
+      "quality_paths": [
+        "/science/LSAR/GCOV/grids/frequencyA/mask",
+        "/science/LSAR/GCOV/grids/frequencyA/mask"
+      ],
+      "cache_identity": "42e4ab404437767b9ca9bbcf9a54bb19ea5b2456cc74c59a639f347aa4bf896f",
+      "bytes_transferred": 0,
+      "cache_hit": false,
+      "reader_version": "0.3.3"
+    },
+    {
+      "id": "subset-30054574f0dd0c5edcaa2fbbfe1f61d1",
+      "catalog_id": "G4299171281-ASF",
+      "name": "NISAR_L2_PR_GCOV_029_135_A_020_4005_DHDH_A_20260903T131716_20260903T131751_P05023_N_F_J_001",
+      "start": "2026-09-03T13:17:16Z",
+      "end": "2026-09-03T13:17:51Z",
+      "group": "135_A_020_4005_DHDH_P05023",
+      "path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+      "additional_paths": {
+        "cross_power": "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+        "copol_power": "/science/LSAR/GCOV/grids/frequencyA/HHHH"
+      },
+      "attributes": {
+        "_FillValue": null,
+        "description": "Covariance between HH and HH",
+        "grid_mapping": "projection",
+        "long_name": "Geocoded polarimetric covariance term HHHH",
+        "max_value": 6434.61865234375,
+        "mean_value": 0.09073324501514435,
+        "min_value": 1.519875554139224e-17,
+        "sample_stddev": 1.230751395225525,
+        "units": "1",
+        "valid_min": 0.0,
+        "native_spacing_source_crs": [
+          10.0,
+          10.0
+        ],
+        "native_epsg": 32610,
+        "native_finite_samples": 5989661,
+        "native_accepted_samples": 5989661,
+        "native_accepted_fraction": 1.0,
+        "minimum_native_valid_fraction": 0.5,
+        "native_quality_before_aggregation": true,
+        "source_subset": {
+          "bbox": [
+            -121.8484,
+            36.1455,
+            -121.564,
+            36.351
+          ],
+          "source_id": "G4299171281-ASF",
+          "version": "area-1"
+        },
+        "polarization_comparison": "matched-cross-to-co-2"
+      },
+      "quality_paths": [
+        "/science/LSAR/GCOV/grids/frequencyA/mask",
+        "/science/LSAR/GCOV/grids/frequencyA/mask"
+      ],
+      "cache_identity": "b80d4ae6d1821b7da7434aef1f2177f891276f78aa095f03aea0dd5d5a6becf4",
+      "bytes_transferred": 0,
+      "cache_hit": false,
+      "reader_version": "0.3.3"
+    },
+    {
+      "id": "subset-e6b449a88b6eb8de956912b7eb84c52e",
+      "catalog_id": "G4311256123-ASF",
+      "name": "NISAR_L2_PR_GCOV_030_042_D_070_4005_DHDH_A_20260909T025638_20260909T025713_P05023_N_F_J_001",
+      "start": "2026-09-09T02:56:38Z",
+      "end": "2026-09-09T02:57:13Z",
+      "group": "042_D_070_4005_DHDH_P05023",
+      "path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+      "additional_paths": {
+        "cross_power": "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+        "copol_power": "/science/LSAR/GCOV/grids/frequencyA/HHHH"
+      },
+      "attributes": {
+        "_FillValue": null,
+        "description": "Covariance between HH and HH",
+        "grid_mapping": "projection",
+        "long_name": "Geocoded polarimetric covariance term HHHH",
+        "max_value": 7136.0146484375,
+        "mean_value": 0.12280979752540588,
+        "min_value": 6.918423251698072e-18,
+        "sample_stddev": 1.1360833644866943,
+        "units": "1",
+        "valid_min": 0.0,
+        "native_spacing_source_crs": [
+          10.0,
+          10.0
+        ],
+        "native_epsg": 32610,
+        "native_finite_samples": 5993540,
+        "native_accepted_samples": 5993540,
+        "native_accepted_fraction": 1.0,
+        "minimum_native_valid_fraction": 0.5,
+        "native_quality_before_aggregation": true,
+        "source_subset": {
+          "bbox": [
+            -121.8484,
+            36.1455,
+            -121.564,
+            36.351
+          ],
+          "source_id": "G4311256123-ASF",
+          "version": "area-1"
+        },
+        "polarization_comparison": "matched-cross-to-co-2"
+      },
+      "quality_paths": [
+        "/science/LSAR/GCOV/grids/frequencyA/mask",
+        "/science/LSAR/GCOV/grids/frequencyA/mask"
+      ],
+      "cache_identity": "428fdf757a777b826ab86fe2720a1e928f95aefc3c30520099e98fcf5d7e0289",
+      "bytes_transferred": 0,
+      "cache_hit": false,
+      "reader_version": "0.3.3"
+    }
+  ],
+  "status": "exploratory",
+  "algorithm_version": "0.8.0",
+  "report": {
+    "headline": "What these observations show",
+    "findings": [
+      "8 real GCOV observations from 2 viewing group(s) produced 7453.00 ha of candidate changed patches within 45228.56 ha of valid land.",
+      "Threshold z \u2265 2; patches \u2265 10 ha. Spatial normalization: median 1.9986 dB, scaled MAD 0.3636 dB.",
+      "This detects surface-scattering change. Independent fire evidence is required for burn attribution; no recovery or severity is measured."
+    ],
+    "comparison_basis": "All declared baseline dates per view; latest valid view magnitudes averaged without filling missing pixels",
+    "next_checks": [
+      "Inspect viewing-group coverage and the declared baseline dates.",
+      "Compare candidate patches with independent fire imagery and boundaries.",
+      "Check water exclusions, terrain effects and sensitivity to the selected land window."
+    ],
+    "validation": "Paper-inspired change detection; case-study agreement does not establish accuracy in other regions."
+  },
+  "display_preferences": {
+    "palette": "diverging",
+    "mode": "shared",
+    "layer": "fire_score",
+    "unit": "z",
+    "low": null,
+    "high": null,
+    "category_colors": {},
+    "category_opacity": {}
+  },
+  "application_version": "0.9.0",
+  "processing_options": {
+    "fire_method": "combined",
+    "smoothing_m": 80.0,
+    "score_threshold": 2.0,
+    "grid_crs": "EPSG:32610",
+    "grid_bounds": [
+      603600.0,
+      4001040.0,
+      628860.0,
+      4023500.0
+    ],
+    "baseline_count": 3,
+    "baseline_end": "2026-08-08",
+    "patch_area_m2": 100000.0,
+    "compare_polarizations": true,
+    "spatial_context": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+              [
+                [
+                  [
+                    -121.79029261234295,
+                    36.224972722857075
+                  ],
+                  [
+                    -121.79051787990159,
+                    36.2247947004441
+                  ],
+                  [
+                    -121.79051510395712,
+                    36.224974972257534
+                  ],
+                  [
+                    -121.79029261234295,
+                    36.224972722857075
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.79181677764944,
+                    36.22715172235931
+                  ],
+                  [
+                    -121.79204204822834,
+                    36.22697369719248
+                  ],
+                  [
+                    -121.7920392755607,
+                    36.2271539690416
+                  ],
+                  [
+                    -121.79181677764944,
+                    36.22715172235931
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.79113263529041,
+                    36.22822661045355
+                  ],
+                  [
+                    -121.78891040761037,
+                    36.22802383597977
+                  ],
+                  [
+                    -121.78803988061681,
+                    36.22675292230625
+                  ],
+                  [
+                    -121.78915514247218,
+                    36.226583914921676
+                  ],
+                  [
+                    -121.78693853591386,
+                    36.22602056156557
+                  ],
+                  [
+                    -121.78694967279912,
+                    36.225299475358796
+                  ],
+                  [
+                    -121.78739187418908,
+                    36.22548425780215
+                  ],
+                  [
+                    -121.78762549747748,
+                    36.22476542617157
+                  ],
+                  [
+                    -121.7880704791172,
+                    36.224769934455054
+                  ],
+                  [
+                    -121.78805100769023,
+                    36.22603183589369
+                  ],
+                  [
+                    -121.78850155792075,
+                    36.225675799430675
+                  ],
+                  [
+                    -121.79005345844432,
+                    36.226052103628376
+                  ],
+                  [
+                    -121.78958902158621,
+                    36.22730950446928
+                  ],
+                  [
+                    -121.79224514003596,
+                    36.22823784637528
+                  ],
+                  [
+                    -121.7913384895922,
+                    36.22931048897382
+                  ],
+                  [
+                    -121.7908962572074,
+                    36.22912572065217
+                  ],
+                  [
+                    -121.79113263529041,
+                    36.22822661045355
+                  ]
+                ],
+                [
+                  [
+                    -121.78936374459398,
+                    36.22748752488341
+                  ],
+                  [
+                    -121.78913846658097,
+                    36.22766554484876
+                  ],
+                  [
+                    -121.78936096572747,
+                    36.227667796538626
+                  ],
+                  [
+                    -121.78936374459398,
+                    36.22748752488341
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.79092401100662,
+                    36.227323003263834
+                  ],
+                  [
+                    -121.79114373457114,
+                    36.2275055233942
+                  ],
+                  [
+                    -121.79092123573766,
+                    36.227503275027985
+                  ],
+                  [
+                    -121.79092401100662,
+                    36.227323003263834
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.79267905672381,
+                    36.22896342523058
+                  ],
+                  [
+                    -121.79245100977433,
+                    36.22932172326957
+                  ],
+                  [
+                    -121.7922340505696,
+                    36.22895893363938
+                  ],
+                  [
+                    -121.79267905672381,
+                    36.22896342523058
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.7931129812834,
+                    36.22968900257698
+                  ],
+                  [
+                    -121.79356076115751,
+                    36.22951321910343
+                  ],
+                  [
+                    -121.79355799171825,
+                    36.22969349097687
+                  ],
+                  [
+                    -121.7931129812834,
+                    36.22968900257698
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.79378049697257,
+                    36.22969573455635
+                  ],
+                  [
+                    -121.79445354765336,
+                    36.22934191894274
+                  ],
+                  [
+                    -121.79422273962261,
+                    36.22988049238633
+                  ],
+                  [
+                    -121.79378049697257,
+                    36.22969573455635
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.80667762555933,
+                    36.23036597259387
+                  ],
+                  [
+                    -121.80690561153202,
+                    36.23000764633668
+                  ],
+                  [
+                    -121.80690013378884,
+                    36.23036819181178
+                  ],
+                  [
+                    -121.80667762555933,
+                    36.23036597259387
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.79266519944127,
+                    36.22986478433145
+                  ],
+                  [
+                    -121.7928821630432,
+                    36.23022757321063
+                  ],
+                  [
+                    -121.79265965635587,
+                    36.23022532793239
+                  ],
+                  [
+                    -121.79266519944127,
+                    36.22986478433145
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.80511458262592,
+                    36.23071097170563
+                  ],
+                  [
+                    -121.80533434917565,
+                    36.23089346646423
+                  ],
+                  [
+                    -121.80511183958508,
+                    36.230891244306974
+                  ],
+                  [
+                    -121.80511458262592,
+                    36.23071097170563
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.80712811876491,
+                    36.23000986511181
+                  ],
+                  [
+                    -121.80757313330362,
+                    36.230014301421114
+                  ],
+                  [
+                    -121.80778195627896,
+                    36.23091788289186
+                  ],
+                  [
+                    -121.80866926105847,
+                    36.23110702201133
+                  ],
+                  [
+                    -121.80866105622172,
+                    36.231647840463424
+                  ],
+                  [
+                    -121.8075457589296,
+                    36.23181702900826
+                  ],
+                  [
+                    -121.80712811876491,
+                    36.23000986511181
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.8088890371381,
+                    36.23128951040193
+                  ],
+                  [
+                    -121.80933952596799,
+                    36.23093339455736
+                  ],
+                  [
+                    -121.80933405921282,
+                    36.231293940296126
+                  ],
+                  [
+                    -121.8088890371381,
+                    36.23128951040193
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.81022683500126,
+                    36.23112252219575
+                  ],
+                  [
+                    -121.80955110445535,
+                    36.231656700368035
+                  ],
+                  [
+                    -121.80955930316581,
+                    36.231115881741616
+                  ],
+                  [
+                    -121.81022683500126,
+                    36.23112252219575
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.80176319561579,
+                    36.23157895178151
+                  ],
+                  [
+                    -121.80355976633817,
+                    36.23051513261945
+                  ],
+                  [
+                    -121.8046723085764,
+                    36.23052625360149
+                  ],
+                  [
+                    -121.80466133228028,
+                    36.231247343878984
+                  ],
+                  [
+                    -121.80577662689618,
+                    36.23107818217716
+                  ],
+                  [
+                    -121.8053151507811,
+                    36.232155374618216
+                  ],
+                  [
+                    -121.80420807568649,
+                    36.231783714172046
+                  ],
+                  [
+                    -121.80421905635937,
+                    36.231062624078696
+                  ],
+                  [
+                    -121.80376579789423,
+                    36.231598992675565
+                  ],
+                  [
+                    -121.8033235222173,
+                    36.23141426957716
+                  ],
+                  [
+                    -121.80308177667077,
+                    36.23267395066783
+                  ],
+                  [
+                    -121.80263674779133,
+                    36.23266949737424
+                  ],
+                  [
+                    -121.80176319561579,
+                    36.23157895178151
+                  ]
+                ],
+                [
+                  [
+                    -121.80264774324725,
+                    36.231948407802115
+                  ],
+                  [
+                    -121.80286475897455,
+                    36.23231117942386
+                  ],
+                  [
+                    -121.80287025563258,
+                    36.23195063459733
+                  ],
+                  [
+                    -121.80264774324725,
+                    36.231948407802115
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.80910608028995,
+                    36.231652271243085
+                  ],
+                  [
+                    -121.80932585889794,
+                    36.23183475886212
+                  ],
+                  [
+                    -121.80910334631683,
+                    36.23183254407828
+                  ],
+                  [
+                    -121.80910608028995,
+                    36.231652271243085
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.8108834476453,
+                    36.23185025076583
+                  ],
+                  [
+                    -121.81133120208781,
+                    36.23167440032055
+                  ],
+                  [
+                    -121.81132847322006,
+                    36.23185467330088
+                  ],
+                  [
+                    -121.8108834476453,
+                    36.23185025076583
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.79086017358179,
+                    36.23146925241574
+                  ],
+                  [
+                    -121.79107990831986,
+                    36.23165177275592
+                  ],
+                  [
+                    -121.79085739774565,
+                    36.231649524050475
+                  ],
+                  [
+                    -121.79086017358179,
+                    36.23146925241574
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.7913024189187,
+                    36.231654021047675
+                  ],
+                  [
+                    -121.79152215521295,
+                    36.23183654059911
+                  ],
+                  [
+                    -121.79129964407895,
+                    36.231834292706274
+                  ],
+                  [
+                    -121.7913024189187,
+                    36.231654021047675
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.7932883935776,
+                    36.23275586772109
+                  ],
+                  [
+                    -121.793736190766,
+                    36.2325800840016
+                  ],
+                  [
+                    -121.79373342141895,
+                    36.2327603557941
+                  ],
+                  [
+                    -121.7932883935776,
+                    36.23275586772109
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.79639253740528,
+                    36.23350833730154
+                  ],
+                  [
+                    -121.79661229086737,
+                    36.233690847767406
+                  ],
+                  [
+                    -121.79638977406205,
+                    36.233688609242314
+                  ],
+                  [
+                    -121.79639253740528,
+                    36.23350833730154
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.80239498682607,
+                    36.23392917653934
+                  ],
+                  [
+                    -121.80261475570713,
+                    36.23411167624854
+                  ],
+                  [
+                    -121.80239223721948,
+                    36.234109448864345
+                  ],
+                  [
+                    -121.80239498682607,
+                    36.23392917653934
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.81395778468107,
+                    36.234585270399286
+                  ],
+                  [
+                    -121.81440554833416,
+                    36.234409408686346
+                  ],
+                  [
+                    -121.81440282625117,
+                    36.23458968178512
+                  ],
+                  [
+                    -121.81395778468107,
+                    36.234585270399286
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.81462534707251,
+                    36.234591886857444
+                  ],
+                  [
+                    -121.81440010414399,
+                    36.234769954878274
+                  ],
+                  [
+                    -121.81440282625117,
+                    36.23458968178512
+                  ],
+                  [
+                    -121.81462534707251,
+                    36.234591886857444
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.81989811326068,
+                    36.239151519136556
+                  ],
+                  [
+                    -121.82034589056548,
+                    36.23897563555287
+                  ],
+                  [
+                    -121.82034318166731,
+                    36.23915590890071
+                  ],
+                  [
+                    -121.81989811326068,
+                    36.239151519136556
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.82696803680285,
+                    36.24264675746096
+                  ],
+                  [
+                    -121.82718788792288,
+                    36.24282921326056
+                  ],
+                  [
+                    -121.82696534274788,
+                    36.24282703112703
+                  ],
+                  [
+                    -121.82696803680285,
+                    36.24264675746096
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.83637978501596,
+                    36.25337638772768
+                  ],
+                  [
+                    -121.83659701486955,
+                    36.25373910080675
+                  ],
+                  [
+                    -121.8363744380113,
+                    36.25373693561746
+                  ],
+                  [
+                    -121.83637978501596,
+                    36.25337638772768
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.83701277530048,
+                    36.25572644340411
+                  ],
+                  [
+                    -121.83723802958333,
+                    36.2555483335703
+                  ],
+                  [
+                    -121.8372353578524,
+                    36.255728607507415
+                  ],
+                  [
+                    -121.83701277530048,
+                    36.25572644340411
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.84330287286248,
+                    36.26696603199588
+                  ],
+                  [
+                    -121.84353080452097,
+                    36.26660763696213
+                  ],
+                  [
+                    -121.84352548780193,
+                    36.26696818496655
+                  ],
+                  [
+                    -121.84330287286248,
+                    36.26696603199588
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.84352282940696,
+                    36.26714845896033
+                  ],
+                  [
+                    -121.84374810276498,
+                    36.26697033752298
+                  ],
+                  [
+                    -121.84374544488149,
+                    36.26715061153088
+                  ],
+                  [
+                    -121.84352282940696,
+                    36.26714845896033
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.73546364278268,
+                    36.20276989551717
+                  ],
+                  [
+                    -121.73568316750128,
+                    36.202952514370565
+                  ],
+                  [
+                    -121.73546074283631,
+                    36.20295016424437
+                  ],
+                  [
+                    -121.73546364278268,
+                    36.20276989551717
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.74609402049673,
+                    36.20576654548359
+                  ],
+                  [
+                    -121.7460997721937,
+                    36.205406006718555
+                  ],
+                  [
+                    -121.74676994412194,
+                    36.205232727513824
+                  ],
+                  [
+                    -121.74676132120325,
+                    36.20577353580741
+                  ],
+                  [
+                    -121.74609402049673,
+                    36.20576654548359
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.75473467386148,
+                    36.20802036883203
+                  ],
+                  [
+                    -121.75495997028841,
+                    36.20784241349667
+                  ],
+                  [
+                    -121.75495711451612,
+                    36.20802268341821
+                  ],
+                  [
+                    -121.75473467386148,
+                    36.20802036883203
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.74205271326211,
+                    36.208068023273434
+                  ],
+                  [
+                    -121.7422780378345,
+                    36.207890092386684
+                  ],
+                  [
+                    -121.74227515297298,
+                    36.20807036143269
+                  ],
+                  [
+                    -121.74205271326211,
+                    36.208068023273434
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.75340288980824,
+                    36.207826202820506
+                  ],
+                  [
+                    -121.75339717109972,
+                    36.20818674244526
+                  ],
+                  [
+                    -121.75317187021065,
+                    36.20836469473951
+                  ],
+                  [
+                    -121.75340288980824,
+                    36.207826202820506
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.7545122332322,
+                    36.208018053832554
+                  ],
+                  [
+                    -121.7542840779482,
+                    36.208376278154844
+                  ],
+                  [
+                    -121.75383919477699,
+                    36.208371646028624
+                  ],
+                  [
+                    -121.7545122332322,
+                    36.208018053832554
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.75582119265292,
+                    36.20965436721673
+                  ],
+                  [
+                    -121.7549456911732,
+                    36.20874376304806
+                  ],
+                  [
+                    -121.75673093720398,
+                    36.2084017252979
+                  ],
+                  [
+                    -121.75582119265292,
+                    36.20965436721673
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.7571273548513,
+                    36.21147093686965
+                  ],
+                  [
+                    -121.75648282390286,
+                    36.210021843882664
+                  ],
+                  [
+                    -121.75714446139891,
+                    36.21038931698809
+                  ],
+                  [
+                    -121.75758935654933,
+                    36.2103939370486
+                  ],
+                  [
+                    -121.7576007563282,
+                    36.20967285689358
+                  ],
+                  [
+                    -121.75870728970895,
+                    36.210044939748805
+                  ],
+                  [
+                    -121.75801430835278,
+                    36.211660445722146
+                  ],
+                  [
+                    -121.7571273548513,
+                    36.21147093686965
+                  ]
+                ],
+                [
+                  [
+                    -121.75780040601838,
+                    36.211117326584294
+                  ],
+                  [
+                    -121.75780895466447,
+                    36.210576516498655
+                  ],
+                  [
+                    -121.75736405844347,
+                    36.21057189723451
+                  ],
+                  [
+                    -121.75735835733154,
+                    36.210932437236615
+                  ],
+                  [
+                    -121.75780040601838,
+                    36.211117326584294
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.76218409181408,
+                    36.21530964512674
+                  ],
+                  [
+                    -121.76218977169835,
+                    36.21494910472957
+                  ],
+                  [
+                    -121.76263469351231,
+                    36.21495370653128
+                  ],
+                  [
+                    -121.76263185460296,
+                    36.21513397676288
+                  ],
+                  [
+                    -121.76218409181408,
+                    36.21530964512674
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.76285715445711,
+                    36.21495600681202
+                  ],
+                  [
+                    -121.76329640163893,
+                    36.215321146681354
+                  ],
+                  [
+                    -121.76285147763335,
+                    36.21531654729975
+                  ],
+                  [
+                    -121.76285715445711,
+                    36.21495600681202
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.76483096487607,
+                    36.21677939430558
+                  ],
+                  [
+                    -121.7632878892747,
+                    36.2158619574612
+                  ],
+                  [
+                    -121.76352170057379,
+                    36.215143175465755
+                  ],
+                  [
+                    -121.763738489336,
+                    36.21550601470506
+                  ],
+                  [
+                    -121.76418624995262,
+                    36.21533034048364
+                  ],
+                  [
+                    -121.76397229538304,
+                    36.21478723168692
+                  ],
+                  [
+                    -121.76330491377631,
+                    36.214780335850804
+                  ],
+                  [
+                    -121.76398080270292,
+                    36.21424642066994
+                  ],
+                  [
+                    -121.76553801662216,
+                    36.21426249616865
+                  ],
+                  [
+                    -121.76708391719467,
+                    36.21499963359873
+                  ],
+                  [
+                    -121.76639672080663,
+                    36.216254648376534
+                  ],
+                  [
+                    -121.76572932612682,
+                    36.21624776582159
+                  ],
+                  [
+                    -121.765498363845,
+                    36.2167862819572
+                  ],
+                  [
+                    -121.76483096487607,
+                    36.21677939430558
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.76727526708675,
+                    36.2169849013286
+                  ],
+                  [
+                    -121.76771737382727,
+                    36.21716975496028
+                  ],
+                  [
+                    -121.76727243861268,
+                    36.217165171814564
+                  ],
+                  [
+                    -121.76727526708675,
+                    36.2169849013286
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.76726961011349,
+                    36.21734544229488
+                  ],
+                  [
+                    -121.76748925020416,
+                    36.217528004579215
+                  ],
+                  [
+                    -121.76726678158916,
+                    36.217525712769564
+                  ],
+                  [
+                    -121.76726961011349,
+                    36.21734544229488
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.76815382969107,
+                    36.217715148056655
+                  ],
+                  [
+                    -121.76748076601086,
+                    36.218068816014565
+                  ],
+                  [
+                    -121.76748925020416,
+                    36.217528004579215
+                  ],
+                  [
+                    -121.76815382969107,
+                    36.217715148056655
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.76879863671236,
+                    36.21916418172005
+                  ],
+                  [
+                    -121.77013065523926,
+                    36.2193581804355
+                  ],
+                  [
+                    -121.77012218865929,
+                    36.21989899224248
+                  ],
+                  [
+                    -121.76879298627863,
+                    36.219524722761484
+                  ],
+                  [
+                    -121.76879863671236,
+                    36.21916418172005
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.77101209110405,
+                    36.21990813628084
+                  ],
+                  [
+                    -121.771228927368,
+                    36.22027096258316
+                  ],
+                  [
+                    -121.77033619895788,
+                    36.22044209067359
+                  ],
+                  [
+                    -121.77033902074129,
+                    36.22026182007879
+                  ],
+                  [
+                    -121.77101209110405,
+                    36.21990813628084
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.77189353938921,
+                    36.2204580858195
+                  ],
+                  [
+                    -121.77144294631525,
+                    36.22081405916791
+                  ],
+                  [
+                    -121.77122610762547,
+                    36.22045123323793
+                  ],
+                  [
+                    -121.77189353938921,
+                    36.2204580858195
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.77255252118454,
+                    36.22100574687979
+                  ],
+                  [
+                    -121.77254688759689,
+                    36.221366288318414
+                  ],
+                  [
+                    -121.77187944795429,
+                    36.22135943923364
+                  ],
+                  [
+                    -121.77188508460337,
+                    36.22099889788488
+                  ],
+                  [
+                    -121.77255252118454,
+                    36.22100574687979
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.7678748148355,
+                    36.22131826657224
+                  ],
+                  [
+                    -121.76810012125107,
+                    36.2211402870406
+                  ],
+                  [
+                    -121.7680972942399,
+                    36.221320557457105
+                  ],
+                  [
+                    -121.7678748148355,
+                    36.22131826657224
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.77321995799092,
+                    36.22101259215318
+                  ],
+                  [
+                    -121.77410987408291,
+                    36.221021713395324
+                  ],
+                  [
+                    -121.77453795876916,
+                    36.222107896591474
+                  ],
+                  [
+                    -121.77387051232817,
+                    36.222101058492015
+                  ],
+                  [
+                    -121.77321995799092,
+                    36.22101259215318
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.7878674620733,
+                    36.22350577890918
+                  ],
+                  [
+                    -121.7880955120297,
+                    36.22314748934303
+                  ],
+                  [
+                    -121.78808994933324,
+                    36.22350803274065
+                  ],
+                  [
+                    -121.7878674620733,
+                    36.22350577890918
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.78786189825736,
+                    36.22386632225473
+                  ],
+                  [
+                    -121.78763662754616,
+                    36.224044339629685
+                  ],
+                  [
+                    -121.78741692177042,
+                    36.22386181329201
+                  ],
+                  [
+                    -121.78786189825736,
+                    36.22386632225473
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.78919960716972,
+                    36.22369956745898
+                  ],
+                  [
+                    -121.7894137599698,
+                    36.22424263412722
+                  ],
+                  [
+                    -121.78896600165287,
+                    36.22441840262214
+                  ],
+                  [
+                    -121.78874907162411,
+                    36.22405560694097
+                  ],
+                  [
+                    -121.78919960716972,
+                    36.22369956745898
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.7874141388047,
+                    36.224042084926744
+                  ],
+                  [
+                    -121.78673831909038,
+                    36.22457613307396
+                  ],
+                  [
+                    -121.78674667272875,
+                    36.224035318336625
+                  ],
+                  [
+                    -121.7874141388047,
+                    36.224042084926744
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.78161825503489,
+                    36.22470440243372
+                  ],
+                  [
+                    -121.78117327483261,
+                    36.224699870163484
+                  ],
+                  [
+                    -121.78118446409955,
+                    36.22397878534166
+                  ],
+                  [
+                    -121.7816266439604,
+                    36.22416358873661
+                  ],
+                  [
+                    -121.78161825503489,
+                    36.22470440243372
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.78807882364376,
+                    36.224229119468355
+                  ],
+                  [
+                    -121.78851824136864,
+                    36.22459416939809
+                  ],
+                  [
+                    -121.78762828003173,
+                    36.224585154544535
+                  ],
+                  [
+                    -121.78807882364376,
+                    36.224229119468355
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.78627383893438,
+                    36.22583352050684
+                  ],
+                  [
+                    -121.78628219615449,
+                    36.22529270597651
+                  ],
+                  [
+                    -121.7867271805595,
+                    36.22529721931161
+                  ],
+                  [
+                    -121.78672161114561,
+                    36.22565776239666
+                  ],
+                  [
+                    -121.78627383893438,
+                    36.22583352050684
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.7827055608232,
+                    36.22633816732777
+                  ],
+                  [
+                    -121.78205484924949,
+                    36.2252497467853
+                  ],
+                  [
+                    -121.7847163835791,
+                    36.22581771049532
+                  ],
+                  [
+                    -121.78470522598191,
+                    36.22653879604213
+                  ],
+                  [
+                    -121.7827055608232,
+                    36.22633816732777
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.78516137069961,
+                    36.22582222970939
+                  ],
+                  [
+                    -121.78649354737645,
+                    36.22601604893923
+                  ],
+                  [
+                    -121.78648797674387,
+                    36.22637659194966
+                  ],
+                  [
+                    -121.78515021718543,
+                    36.22654331537475
+                  ],
+                  [
+                    -121.78516137069961,
+                    36.22582222970939
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.67305960907764,
+                    36.156839239181615
+                  ],
+                  [
+                    -121.67327886053057,
+                    36.15702196825189
+                  ],
+                  [
+                    -121.67305657115308,
+                    36.157019504840946
+                  ],
+                  [
+                    -121.67305960907764,
+                    36.156839239181615
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.67985990007872,
+                    36.162323394933416
+                  ],
+                  [
+                    -121.67963457166996,
+                    36.16250120940411
+                  ],
+                  [
+                    -121.67941529023538,
+                    36.162318491515116
+                  ],
+                  [
+                    -121.67985990007872,
+                    36.162323394933416
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.6769578195454,
+                    36.16301255630272
+                  ],
+                  [
+                    -121.67740546150813,
+                    36.16283720313103
+                  ],
+                  [
+                    -121.67740243286687,
+                    36.16301746892655
+                  ],
+                  [
+                    -121.6769578195454,
+                    36.16301255630272
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.67894950493698,
+                    36.16357544780459
+                  ],
+                  [
+                    -121.67939109762435,
+                    36.16376061901643
+                  ],
+                  [
+                    -121.67894647974914,
+                    36.16375571369026
+                  ],
+                  [
+                    -121.67894950493698,
+                    36.16357544780459
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.6862255237337,
+                    36.16726150135095
+                  ],
+                  [
+                    -121.68689548962085,
+                    36.1670885524308
+                  ],
+                  [
+                    -121.68733411498678,
+                    36.167453961396795
+                  ],
+                  [
+                    -121.6862255237337,
+                    36.16726150135095
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.69416623311633,
+                    36.17113466870148
+                  ],
+                  [
+                    -121.69439155487646,
+                    36.17095682695818
+                  ],
+                  [
+                    -121.69438856423723,
+                    36.17113709373821
+                  ],
+                  [
+                    -121.69416623311633,
+                    36.17113466870148
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.6970117685947,
+                    36.17387016587143
+                  ],
+                  [
+                    -121.69723709211594,
+                    36.17369231887922
+                  ],
+                  [
+                    -121.69723410769502,
+                    36.173872585781126
+                  ],
+                  [
+                    -121.6970117685947,
+                    36.17387016587143
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.6992143011693,
+                    36.17515621554934
+                  ],
+                  [
+                    -121.69943962361391,
+                    36.17497836442146
+                  ],
+                  [
+                    -121.69943664409763,
+                    36.17515863144249
+                  ],
+                  [
+                    -121.6992143011693,
+                    36.17515621554934
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.6994336645549,
+                    36.17533889845784
+                  ],
+                  [
+                    -121.69965302895855,
+                    36.175521580979634
+                  ],
+                  [
+                    -121.69943068498567,
+                    36.175519165467556
+                  ],
+                  [
+                    -121.6994336645549,
+                    36.17533889845784
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.6991994006457,
+                    36.176057550490334
+                  ],
+                  [
+                    -121.69941876644411,
+                    36.17624023344987
+                  ],
+                  [
+                    -121.69919642046156,
+                    36.17623781746158
+                  ],
+                  [
+                    -121.6991994006457,
+                    36.176057550490334
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.70182293416707,
+                    36.17879052174212
+                  ],
+                  [
+                    -121.70204826153054,
+                    36.17861266590038
+                  ],
+                  [
+                    -121.70204528759423,
+                    36.17879293299844
+                  ],
+                  [
+                    -121.70182293416707,
+                    36.17879052174212
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.70399301673974,
+                    36.18205942508782
+                  ],
+                  [
+                    -121.70421241024957,
+                    36.182242099648974
+                  ],
+                  [
+                    -121.70399004688427,
+                    36.182239692220804
+                  ],
+                  [
+                    -121.70399301673974,
+                    36.18205942508782
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.70661691381345,
+                    36.18479229602865
+                  ],
+                  [
+                    -121.70683632099376,
+                    36.18497496597634
+                  ],
+                  [
+                    -121.70661394967351,
+                    36.18497256326628
+                  ],
+                  [
+                    -121.70661691381345,
+                    36.18479229602865
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.70857385595191,
+                    36.18751791551043
+                  ],
+                  [
+                    -121.70879919405459,
+                    36.18734004740847
+                  ],
+                  [
+                    -121.70879623463935,
+                    36.18752031472456
+                  ],
+                  [
+                    -121.70857385595191,
+                    36.18751791551043
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.70879623463935,
+                    36.18752031472456
+                  ],
+                  [
+                    -121.7090156544209,
+                    36.18770298085192
+                  ],
+                  [
+                    -121.70879327519782,
+                    36.187700582035
+                  ],
+                  [
+                    -121.70879623463935,
+                    36.18752031472456
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.70923211674572,
+                    36.18806591392273
+                  ],
+                  [
+                    -121.7090156544209,
+                    36.18770298085192
+                  ],
+                  [
+                    -121.70923803367027,
+                    36.18770537925586
+                  ],
+                  [
+                    -121.70923211674572,
+                    36.18806591392273
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.71630416340217,
+                    36.19084646261981
+                  ],
+                  [
+                    -121.71652361009153,
+                    36.191029115419894
+                  ],
+                  [
+                    -121.71630122080806,
+                    36.19102673036229
+                  ],
+                  [
+                    -121.71630416340217,
+                    36.19084646261981
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.71562522059031,
+                    36.19156037576398
+                  ],
+                  [
+                    -121.71630122080806,
+                    36.19102673036229
+                  ],
+                  [
+                    -121.7160700020832,
+                    36.19156514803823
+                  ],
+                  [
+                    -121.71562522059031,
+                    36.19156037576398
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.71628356469441,
+                    36.19210833669851
+                  ],
+                  [
+                    -121.7165088992761,
+                    36.19193045412578
+                  ],
+                  [
+                    -121.71650595703461,
+                    36.192110721850014
+                  ],
+                  [
+                    -121.71628356469441,
+                    36.19210833669851
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.71779622072025,
+                    36.19482904067879
+                  ],
+                  [
+                    -121.7175679403305,
+                    36.19518719318953
+                  ],
+                  [
+                    -121.7173514204674,
+                    36.19482427445011
+                  ],
+                  [
+                    -121.71779622072025,
+                    36.19482904067879
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.72112929398439,
+                    36.19504500268801
+                  ],
+                  [
+                    -121.7213487635748,
+                    36.19522764697399
+                  ],
+                  [
+                    -121.72112636199891,
+                    36.19522527064431
+                  ],
+                  [
+                    -121.72112929398439,
+                    36.19504500268801
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.72375129144419,
+                    36.197957780807535
+                  ],
+                  [
+                    -121.72332110859875,
+                    36.1970516961626
+                  ],
+                  [
+                    -121.72421073648214,
+                    36.19706118310171
+                  ],
+                  [
+                    -121.72486333936345,
+                    36.197969634706354
+                  ],
+                  [
+                    -121.72375129144419,
+                    36.197957780807535
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.72530523599352,
+                    36.19815464153574
+                  ],
+                  [
+                    -121.72552180171925,
+                    36.19851754660307
+                  ],
+                  [
+                    -121.72529939047665,
+                    36.19851517784234
+                  ],
+                  [
+                    -121.72530523599352,
+                    36.19815464153574
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.72752350407055,
+                    36.198538846858376
+                  ],
+                  [
+                    -121.72774299838122,
+                    36.19872147980335
+                  ],
+                  [
+                    -121.72752058636954,
+                    36.19871911515851
+                  ],
+                  [
+                    -121.72752350407055,
+                    36.198538846858376
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.73104135520352,
+                    36.201100390509794
+                  ],
+                  [
+                    -121.73126668362818,
+                    36.2009224802553
+                  ],
+                  [
+                    -121.73126377425507,
+                    36.20110274874546
+                  ],
+                  [
+                    -121.73104135520352,
+                    36.201100390509794
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.73124631747355,
+                    36.2021843595679
+                  ],
+                  [
+                    -121.73102098529989,
+                    36.202362269674566
+                  ],
+                  [
+                    -121.73102389536368,
+                    36.202182001239386
+                  ],
+                  [
+                    -121.73124631747355,
+                    36.2021843595679
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    -121.74912775781625,
+                    36.2108466815028
+                  ],
+                  [
+                    -121.75291224106856,
+                    36.210705883359175
+                  ],
+                  [
+                    -121.75467754288825,
+                    36.21162576577564
+                  ],
+                  [
+                    -121.75466611547537,
+                    36.21234684489378
+                  ],
+                  [
+                    -121.75511387715893,
+                    36.21217120458028
+                  ],
+                  [
+                    -121.75687638621503,
+                    36.213271325328556
+                  ],
+                  [
+                    -121.75729563841386,
+                    36.21489837577186
+                  ],
+                  [
+                    -121.75885001373251,
+                    36.21509480848222
+                  ],
+                  [
+                    -121.75994240319315,
+                    36.21636823116122
+                  ],
+                  [
+                    -121.76149113172094,
+                    36.216925170333575
+                  ],
+                  [
+                    -121.7614854482208,
+                    36.21728571051615
+                  ],
+                  [
+                    -121.76237531817229,
+                    36.21729491821204
+                  ],
+                  [
+                    -121.76588099759174,
+                    36.22075681918542
+                  ],
+                  [
+                    -121.76699338608064,
+                    36.22076828785676
+                  ],
+                  [
+                    -121.76721020582507,
+                    36.221131121080184
+                  ],
+                  [
+                    -121.76765516348782,
+                    36.221135704887395
+                  ],
+                  [
+                    -121.76765233545616,
+                    36.221315975273846
+                  ],
+                  [
+                    -121.7678748148355,
+                    36.22131826657224
+                  ],
+                  [
+                    -121.7683141205923,
+                    36.221683388774636
+                  ],
+                  [
+                    -121.76830846741466,
+                    36.222043929598264
+                  ],
+                  [
+                    -121.77030515768578,
+                    36.22242506684458
+                  ],
+                  [
+                    -121.77162314000228,
+                    36.22352040281799
+                  ],
+                  [
+                    -121.77450983425405,
+                    36.22391060456778
+                  ],
+                  [
+                    -121.77559979000506,
+                    36.22536416045014
+                  ],
+                  [
+                    -121.77692070329923,
+                    36.2262791690636
+                  ],
+                  [
+                    -121.77869505121005,
+                    36.226657894102196
+                  ],
+                  [
+                    -121.7797907239433,
+                    36.227750871397674
+                  ],
+                  [
+                    -121.78379570283185,
+                    36.22779165148869
+                  ],
+                  [
+                    -121.78379011945421,
+                    36.228152194030855
+                  ],
+                  [
+                    -121.78401820189487,
+                    36.22779391312
+                  ],
+                  [
+                    -121.78535319679354,
+                    36.22780747422211
+                  ],
+                  [
+                    -121.78557012081917,
+                    36.22817027573753
+                  ],
+                  [
+                    -121.78624319388815,
+                    36.22781650668461
+                  ],
+                  [
+                    -121.78667983738687,
+                    36.22836183481695
+                  ],
+                  [
+                    -121.78712762331384,
+                    36.228186075515985
+                  ],
+                  [
+                    -121.78756705812708,
+                    36.22855112903914
+                  ],
+                  [
+                    -121.78711370271849,
+                    36.22908743288412
+                  ],
+                  [
+                    -121.78821230955137,
+                    36.23000006399852
+                  ],
+                  [
+                    -121.78909955271087,
+                    36.23018934722411
+                  ],
+                  [
+                    -121.79063211082482,
+                    36.231827546545716
+                  ],
+                  [
+                    -121.79240942768371,
+                    36.23202579976037
+                  ],
+                  [
+                    -121.79328285276748,
+                    36.233116411230334
+                  ],
+                  [
+                    -121.79528825384078,
+                    36.23295632290824
+                  ],
+                  [
+                    -121.79527995629996,
+                    36.233497138543946
+                  ],
+                  [
+                    -121.79727431875509,
+                    36.23405810484254
+                  ],
+                  [
+                    -121.79815335312483,
+                    36.23478813809008
+                  ],
+                  [
+                    -121.80171642834138,
+                    36.23464358103912
+                  ],
+                  [
+                    -121.80574372659221,
+                    36.23324145341186
+                  ],
+                  [
+                    -121.80841665950578,
+                    36.2330878066283
+                  ],
+                  [
+                    -121.80841118808316,
+                    36.23344835211589
+                  ],
+                  [
+                    -121.80974082567396,
+                    36.23382218848398
+                  ],
+                  [
+                    -121.80996880831576,
+                    36.233463856518
+                  ],
+                  [
+                    -121.8121912550717,
+                    36.23366624348069
+                  ],
+                  [
+                    -121.81284518117924,
+                    36.23457423469449
+                  ],
+                  [
+                    -121.81528202927764,
+                    36.23531959216228
+                  ],
+                  [
+                    -121.81548007451129,
+                    36.2369442537218
+                  ],
+                  [
+                    -121.81502957761938,
+                    36.23730039221877
+                  ],
+                  [
+                    -121.81769177735431,
+                    36.237867633145264
+                  ],
+                  [
+                    -121.81790616454299,
+                    36.23841065192366
+                  ],
+                  [
+                    -121.81723313691708,
+                    36.23876459949476
+                  ],
+                  [
+                    -121.81986288211459,
+                    36.24149507177294
+                  ],
+                  [
+                    -121.82586610003793,
+                    36.241914746223
+                  ],
+                  [
+                    -121.82762220801544,
+                    36.24355467106582
+                  ],
+                  [
+                    -121.82782052526312,
+                    36.2451793150696
+                  ],
+                  [
+                    -121.82979392678261,
+                    36.24718193734244
+                  ],
+                  [
+                    -121.83090671575604,
+                    36.247192818683224
+                  ],
+                  [
+                    -121.83112390370731,
+                    36.24755554129818
+                  ],
+                  [
+                    -121.83268449798503,
+                    36.247390481201194
+                  ],
+                  [
+                    -121.83378121767736,
+                    36.248482979398354
+                  ],
+                  [
+                    -121.83555636255554,
+                    36.24886087384669
+                  ],
+                  [
+                    -121.83554833766237,
+                    36.24940169592366
+                  ],
+                  [
+                    -121.83599614064818,
+                    36.24922575447001
+                  ],
+                  [
+                    -121.83613581652595,
+                    36.254816413463566
+                  ],
+                  [
+                    -121.83635839642719,
+                    36.254818579152094
+                  ],
+                  [
+                    -121.83635304904243,
+                    36.255179126952044
+                  ],
+                  [
+                    -121.83657562998967,
+                    36.255181292254925
+                  ],
+                  [
+                    -121.83657028353221,
+                    36.25554184006081
+                  ],
+                  [
+                    -121.83679286552548,
+                    36.25554400497803
+                  ],
+                  [
+                    -121.83679019277228,
+                    36.25572427888675
+                  ],
+                  [
+                    -121.83701277530048,
+                    36.25572644340411
+                  ],
+                  [
+                    -121.83701010303467,
+                    36.2559067173214
+                  ],
+                  [
+                    -121.83745794042811,
+                    36.25573077119665
+                  ],
+                  [
+                    -121.83766182740294,
+                    36.25699485207294
+                  ],
+                  [
+                    -121.8387667535485,
+                    36.257546484691716
+                  ],
+                  [
+                    -121.83853348987718,
+                    36.25826541915312
+                  ],
+                  [
+                    -121.83941584852289,
+                    36.258814884248864
+                  ],
+                  [
+                    -121.83894665211923,
+                    36.260433028770755
+                  ],
+                  [
+                    -121.8422377008216,
+                    36.26371032960615
+                  ],
+                  [
+                    -121.84222971763663,
+                    36.26425115161964
+                  ],
+                  [
+                    -121.84179248966053,
+                    36.26370601878864
+                  ],
+                  [
+                    -121.84156455894761,
+                    36.264064410688405
+                  ],
+                  [
+                    -121.84265099033394,
+                    36.26587792685677
+                  ],
+                  [
+                    -121.84309621395752,
+                    36.26588223469976
+                  ],
+                  [
+                    -121.84307493908734,
+                    36.26732442653647
+                  ],
+                  [
+                    -121.84548921396477,
+                    36.269691654283406
+                  ],
+                  [
+                    -121.8459052740387,
+                    36.27167896635129
+                  ],
+                  [
+                    -121.84656520406246,
+                    36.27222623232537
+                  ],
+                  [
+                    -121.84540406821615,
+                    36.35100544774569
+                  ],
+                  [
+                    -121.56395972620432,
+                    36.347954192699824
+                  ],
+                  [
+                    -121.56765913101101,
+                    36.145528059403546
+                  ],
+                  [
+                    -121.65989411546795,
+                    36.14659584930293
+                  ],
+                  [
+                    -121.66098395843686,
+                    36.14787013678636
+                  ],
+                  [
+                    -121.66363275864552,
+                    36.14898152429961
+                  ],
+                  [
+                    -121.66603799287016,
+                    36.15135223591185
+                  ],
+                  [
+                    -121.667816175621,
+                    36.15137203321684
+                  ],
+                  [
+                    -121.66843727488173,
+                    36.15408343214147
+                  ],
+                  [
+                    -121.66974964273277,
+                    36.15536011522658
+                  ],
+                  [
+                    -121.67196032673696,
+                    36.15610585365013
+                  ],
+                  [
+                    -121.67258767997396,
+                    36.158456701593764
+                  ],
+                  [
+                    -121.67434174618367,
+                    36.159918530450774
+                  ],
+                  [
+                    -121.67367181645777,
+                    36.160091410003744
+                  ],
+                  [
+                    -121.67409819708578,
+                    36.16117792823261
+                  ],
+                  [
+                    -121.67585235109026,
+                    36.16263973615214
+                  ],
+                  [
+                    -121.67674157323287,
+                    36.162649567872
+                  ],
+                  [
+                    -121.67673551292503,
+                    36.163010099371945
+                  ],
+                  [
+                    -121.6769578195454,
+                    36.16301255630272
+                  ],
+                  [
+                    -121.67695176014729,
+                    36.163373087812296
+                  ],
+                  [
+                    -121.67762171140848,
+                    36.163200190425584
+                  ],
+                  [
+                    -121.67891925184908,
+                    36.165378106406614
+                  ],
+                  [
+                    -121.68046940311605,
+                    36.16575580071947
+                  ],
+                  [
+                    -121.6807068246226,
+                    36.16485692106023
+                  ],
+                  [
+                    -121.68182442329201,
+                    36.164508633132385
+                  ],
+                  [
+                    -121.68313114967383,
+                    36.16614570762464
+                  ],
+                  [
+                    -121.68445299482413,
+                    36.16688143766638
+                  ],
+                  [
+                    -121.68600922309149,
+                    36.16689852879052
+                  ],
+                  [
+                    -121.68577787491131,
+                    36.167436887267456
+                  ],
+                  [
+                    -121.6864358093461,
+                    36.16798500614876
+                  ],
+                  [
+                    -121.68666414685059,
+                    36.167626912717495
+                  ],
+                  [
+                    -121.6877757498494,
+                    36.167639102414384
+                  ],
+                  [
+                    -121.68843069621062,
+                    36.16836747705124
+                  ],
+                  [
+                    -121.68797703554787,
+                    36.16890340393106
+                  ],
+                  [
+                    -121.68886332971329,
+                    36.169093413501294
+                  ],
+                  [
+                    -121.68884831396974,
+                    36.16999474563402
+                  ],
+                  [
+                    -121.68972261761118,
+                    36.17090581485228
+                  ],
+                  [
+                    -121.69327391568811,
+                    36.17130523112217
+                  ],
+                  [
+                    -121.69348128330535,
+                    36.17220899129432
+                  ],
+                  [
+                    -121.69458099262059,
+                    36.17294218601069
+                  ],
+                  [
+                    -121.6947913690705,
+                    36.173665677345866
+                  ],
+                  [
+                    -121.69523903472424,
+                    36.17349025821125
+                  ],
+                  [
+                    -121.69523006771877,
+                    36.17403105848785
+                  ],
+                  [
+                    -121.6961253994245,
+                    36.173680215282594
+                  ],
+                  [
+                    -121.69723112324759,
+                    36.174052852677384
+                  ],
+                  [
+                    -121.69788024415546,
+                    36.1751417115222
+                  ],
+                  [
+                    -121.69877259643542,
+                    36.17497111555128
+                  ],
+                  [
+                    -121.69921132111755,
+                    36.17533648254884
+                  ],
+                  [
+                    -121.69897407450546,
+                    36.17623540106051
+                  ],
+                  [
+                    -121.69985750109531,
+                    36.17660559820872
+                  ],
+                  [
+                    -121.701378227392,
+                    36.17878569799098
+                  ],
+                  [
+                    -121.70155595327648,
+                    36.181492115390654
+                  ],
+                  [
+                    -121.70376768354532,
+                    36.18223728437973
+                  ],
+                  [
+                    -121.70397816719847,
+                    36.1829607606962
+                  ],
+                  [
+                    -121.70574226132302,
+                    36.1838813451648
+                  ],
+                  [
+                    -121.70551396005456,
+                    36.18423947485315
+                  ],
+                  [
+                    -121.7066109855072,
+                    36.185152830498254
+                  ],
+                  [
+                    -121.7074975108278,
+                    36.1853427062134
+                  ],
+                  [
+                    -121.70726625025776,
+                    36.18588110649756
+                  ],
+                  [
+                    -121.70771099817544,
+                    36.18588590918478
+                  ],
+                  [
+                    -121.70813502051617,
+                    36.18715258129993
+                  ],
+                  [
+                    -121.70858273564679,
+                    36.18697711359245
+                  ],
+                  [
+                    -121.70835147729079,
+                    36.187515515883334
+                  ],
+                  [
+                    -121.70857385595191,
+                    36.18751791551043
+                  ],
+                  [
+                    -121.70879327519782,
+                    36.187700582035
+                  ],
+                  [
+                    -121.70900677746661,
+                    36.18824378279655
+                  ],
+                  [
+                    -121.70945153904776,
+                    36.1882485792859
+                  ],
+                  [
+                    -121.70944562298429,
+                    36.18860911395035
+                  ],
+                  [
+                    -121.70989630073402,
+                    36.18825337412333
+                  ],
+                  [
+                    -121.71033219450318,
+                    36.18879896948581
+                  ],
+                  [
+                    -121.71122172451342,
+                    36.18880855108975
+                  ],
+                  [
+                    -121.71145592087127,
+                    36.188089875563335
+                  ],
+                  [
+                    -121.71324676313165,
+                    36.187387944653864
+                  ],
+                  [
+                    -121.71368857240672,
+                    36.18757299295496
+                  ],
+                  [
+                    -121.71323496606107,
+                    36.18810901514158
+                  ],
+                  [
+                    -121.7138903170624,
+                    36.188837256254864
+                  ],
+                  [
+                    -121.71144115356859,
+                    36.18899121291788
+                  ],
+                  [
+                    -121.711206954139,
+                    36.189709888252764
+                  ],
+                  [
+                    -121.71186525160822,
+                    36.190257872726406
+                  ],
+                  [
+                    -121.71319662268638,
+                    36.19045249360247
+                  ],
+                  [
+                    -121.7151716033857,
+                    36.19209640474541
+                  ],
+                  [
+                    -121.71536454626798,
+                    36.19390146811099
+                  ],
+                  [
+                    -121.7160229076152,
+                    36.19444943062809
+                  ],
+                  [
+                    -121.71756500016618,
+                    36.195367460890324
+                  ],
+                  [
+                    -121.72001141995105,
+                    36.19539365067221
+                  ],
+                  [
+                    -121.72066396035063,
+                    36.196302124177684
+                  ],
+                  [
+                    -121.72133117417222,
+                    36.19630925468672
+                  ],
+                  [
+                    -121.72109997295733,
+                    36.196847681996836
+                  ],
+                  [
+                    -121.72153892282775,
+                    36.19721297038015
+                  ],
+                  [
+                    -121.72287043839657,
+                    36.19740748624639
+                  ],
+                  [
+                    -121.72375129144419,
+                    36.197957780807535
+                  ],
+                  [
+                    -121.72352010147088,
+                    36.19849621288344
+                  ],
+                  [
+                    -121.72772841203557,
+                    36.19962282129693
+                  ],
+                  [
+                    -121.72928531468058,
+                    36.19963936278547
+                  ],
+                  [
+                    -121.72861223989212,
+                    36.19999281273702
+                  ],
+                  [
+                    -121.7303828323621,
+                    36.20055250802203
+                  ],
+                  [
+                    -121.7305819622789,
+                    36.20199701493292
+                  ],
+                  [
+                    -121.73123758873385,
+                    36.20272516490293
+                  ],
+                  [
+                    -121.73546074283631,
+                    36.20295016424437
+                  ],
+                  [
+                    -121.73523251720756,
+                    36.20330835111161
+                  ],
+                  [
+                    -121.73811826494058,
+                    36.20369941407851
+                  ],
+                  [
+                    -121.7378842599285,
+                    36.20441814387608
+                  ],
+                  [
+                    -121.73964924014071,
+                    36.20533824272557
+                  ],
+                  [
+                    -121.74007387598249,
+                    36.20660480994401
+                  ],
+                  [
+                    -121.74095784223253,
+                    36.20697471246951
+                  ],
+                  [
+                    -121.74095206662182,
+                    36.20733525042814
+                  ],
+                  [
+                    -121.74161649301391,
+                    36.207522538698136
+                  ],
+                  [
+                    -121.74161360667401,
+                    36.20770280770941
+                  ],
+                  [
+                    -121.74183604531383,
+                    36.20770514666457
+                  ],
+                  [
+                    -121.74183027357691,
+                    36.208065684700884
+                  ],
+                  [
+                    -121.74205271326211,
+                    36.208068023273434
+                  ],
+                  [
+                    -121.7420498278651,
+                    36.208248292298464
+                  ],
+                  [
+                    -121.74360402809496,
+                    36.20844491996824
+                  ],
+                  [
+                    -121.74514096629717,
+                    36.20972314284643
+                  ],
+                  [
+                    -121.7478074315158,
+                    36.20993137507019
+                  ],
+                  [
+                    -121.74912775781625,
+                    36.2108466815028
+                  ]
+                ],
+                [
+                  [
+                    -121.66780092876567,
+                    36.152273360361505
+                  ],
+                  [
+                    -121.66735332736201,
+                    36.15244867872674
+                  ],
+                  [
+                    -121.66779787931335,
+                    36.15245362577346
+                  ],
+                  [
+                    -121.66780092876567,
+                    36.152273360361505
+                  ]
+                ],
+                [
+                  [
+                    -121.67804816249166,
+                    36.16428669551659
+                  ],
+                  [
+                    -121.67782282433667,
+                    36.16446450631838
+                  ],
+                  [
+                    -121.67804513516136,
+                    36.16446696131518
+                  ],
+                  [
+                    -121.67804816249166,
+                    36.16428669551659
+                  ]
+                ],
+                [
+                  [
+                    -121.68203466164009,
+                    36.16523214499853
+                  ],
+                  [
+                    -121.68180932948121,
+                    36.165409963408166
+                  ],
+                  [
+                    -121.68203164333309,
+                    36.165412411058426
+                  ],
+                  [
+                    -121.68203466164009,
+                    36.16523214499853
+                  ]
+                ],
+                [
+                  [
+                    -121.68577787491131,
+                    36.167436887267456
+                  ],
+                  [
+                    -121.6855525445198,
+                    36.16761471270424
+                  ],
+                  [
+                    -121.6857748649325,
+                    36.1676171535322
+                  ],
+                  [
+                    -121.68577787491131,
+                    36.167436887267456
+                  ]
+                ],
+                [
+                  [
+                    -121.69766088500101,
+                    36.174959025845546
+                  ],
+                  [
+                    -121.69743555869613,
+                    36.17513687354428
+                  ],
+                  [
+                    -121.69765790141254,
+                    36.17513929273963
+                  ],
+                  [
+                    -121.69766088500101,
+                    36.174959025845546
+                  ]
+                ],
+                [
+                  [
+                    -121.70966800483302,
+                    36.18861151160702
+                  ],
+                  [
+                    -121.70988742965561,
+                    36.18879417620592
+                  ],
+                  [
+                    -121.70989038670801,
+                    36.188613908850705
+                  ],
+                  [
+                    -121.70966800483302,
+                    36.18861151160702
+                  ]
+                ],
+                [
+                  [
+                    -121.70988742965561,
+                    36.18879417620592
+                  ],
+                  [
+                    -121.71010685549695,
+                    36.18897684041765
+                  ],
+                  [
+                    -121.71010981206625,
+                    36.18879657305236
+                  ],
+                  [
+                    -121.70988742965561,
+                    36.18879417620592
+                  ]
+                ],
+                [
+                  [
+                    -121.71010685549695,
+                    36.18897684041765
+                  ],
+                  [
+                    -121.71032628235707,
+                    36.18915950424221
+                  ],
+                  [
+                    -121.71032923844325,
+                    36.188979236866835
+                  ],
+                  [
+                    -121.71010685549695,
+                    36.18897684041765
+                  ]
+                ],
+                [
+                  [
+                    -121.71345144915401,
+                    36.18847194097181
+                  ],
+                  [
+                    -121.71322611798303,
+                    36.18864981794806
+                  ],
+                  [
+                    -121.71344850027782,
+                    36.188652208584
+                  ],
+                  [
+                    -121.71345144915401,
+                    36.18847194097181
+                  ]
+                ],
+                [
+                  [
+                    -121.71120990826638,
+                    36.18952962083146
+                  ],
+                  [
+                    -121.71076809425357,
+                    36.1893445633342
+                  ],
+                  [
+                    -121.71076513913363,
+                    36.18952483072973
+                  ],
+                  [
+                    -121.71120990826638,
+                    36.18952962083146
+                  ]
+                ],
+                [
+                  [
+                    -121.71076809425357,
+                    36.1893445633342
+                  ],
+                  [
+                    -121.71054866583901,
+                    36.18916190029413
+                  ],
+                  [
+                    -121.71054571023596,
+                    36.18934216767957
+                  ],
+                  [
+                    -121.71076809425357,
+                    36.1893445633342
+                  ]
+                ],
+                [
+                  [
+                    -121.71186525160822,
+                    36.190257872726406
+                  ],
+                  [
+                    -121.71163991169885,
+                    36.19043574648833
+                  ],
+                  [
+                    -121.71186229890412,
+                    36.19043814017225
+                  ],
+                  [
+                    -121.71186525160822,
+                    36.190257872726406
+                  ]
+                ],
+                [
+                  [
+                    -121.71186229890412,
+                    36.19043814017225
+                  ],
+                  [
+                    -121.71208173391469,
+                    36.19062080089903
+                  ],
+                  [
+                    -121.7120846861356,
+                    36.190440533443144
+                  ],
+                  [
+                    -121.71186229890412,
+                    36.19043814017225
+                  ]
+                ],
+                [
+                  [
+                    -121.7222032148556,
+                    36.19740036413218
+                  ],
+                  [
+                    -121.72197787677496,
+                    36.19757825721311
+                  ],
+                  [
+                    -121.72220028507948,
+                    36.19758063209301
+                  ],
+                  [
+                    -121.7222032148556,
+                    36.19740036413218
+                  ]
+                ],
+                [
+                  [
+                    -121.72220028507948,
+                    36.19758063209301
+                  ],
+                  [
+                    -121.72241976411753,
+                    36.197763274530544
+                  ],
+                  [
+                    -121.72242269341008,
+                    36.19758300655978
+                  ],
+                  [
+                    -121.72220028507948,
+                    36.19758063209301
+                  ]
+                ],
+                [
+                  [
+                    -121.72352302831935,
+                    36.1983159448574
+                  ],
+                  [
+                    -121.7233035451523,
+                    36.19813330437786
+                  ],
+                  [
+                    -121.72330061782023,
+                    36.19831357239397
+                  ],
+                  [
+                    -121.72352302831935,
+                    36.1983159448574
+                  ]
+                ],
+                [
+                  [
+                    -121.7464727592023,
+                    36.20991740099251
+                  ],
+                  [
+                    -121.74669232957932,
+                    36.21010000032897
+                  ],
+                  [
+                    -121.74669520452403,
+                    36.20991973103876
+                  ],
+                  [
+                    -121.7464727592023,
+                    36.20991740099251
+                  ]
+                ],
+                [
+                  [
+                    -121.74669232957932,
+                    36.21010000032897
+                  ],
+                  [
+                    -121.74757924023096,
+                    36.21028958578758
+                  ],
+                  [
+                    -121.74758211316143,
+                    36.21010931644189
+                  ],
+                  [
+                    -121.74669232957932,
+                    36.21010000032897
+                  ]
+                ],
+                [
+                  [
+                    -121.74802413319505,
+                    36.210294241394635
+                  ],
+                  [
+                    -121.7477988142542,
+                    36.210472183153094
+                  ],
+                  [
+                    -121.74802126125897,
+                    36.21047451076522
+                  ],
+                  [
+                    -121.74802413319505,
+                    36.210294241394635
+                  ]
+                ],
+                [
+                  [
+                    -121.81063362956625,
+                    36.233650767936716
+                  ],
+                  [
+                    -121.81085341726721,
+                    36.23383325285935
+                  ],
+                  [
+                    -121.81085614742287,
+                    36.233652979969854
+                  ],
+                  [
+                    -121.81063362956625,
+                    36.233650767936716
+                  ]
+                ],
+                [
+                  [
+                    -121.78601512140816,
+                    36.22817479202804
+                  ],
+                  [
+                    -121.7864573364953,
+                    36.22835957810456
+                  ],
+                  [
+                    -121.78646012209619,
+                    36.22817930666406
+                  ],
+                  [
+                    -121.78601512140816,
+                    36.22817479202804
+                  ]
+                ],
+                [
+                  [
+                    -121.78446040995013,
+                    36.22797870646021
+                  ],
+                  [
+                    -121.7846801199384,
+                    36.228161238193124
+                  ],
+                  [
+                    -121.78468290959792,
+                    36.22798096686553
+                  ],
+                  [
+                    -121.78446040995013,
+                    36.22797870646021
+                  ]
+                ],
+                [
+                  [
+                    -121.73744808856912,
+                    36.20387264474927
+                  ],
+                  [
+                    -121.73766762101144,
+                    36.20405526008094
+                  ],
+                  [
+                    -121.7376705160146,
+                    36.20387499123352
+                  ],
+                  [
+                    -121.73744808856912,
+                    36.20387264474927
+                  ]
+                ],
+                [
+                  [
+                    -121.72286165357666,
+                    36.197948290252135
+                  ],
+                  [
+                    -121.72308113518882,
+                    36.19813093151689
+                  ],
+                  [
+                    -121.72308406300453,
+                    36.19795066351068
+                  ],
+                  [
+                    -121.72286165357666,
+                    36.197948290252135
+                  ]
+                ],
+                [
+                  [
+                    -121.72109410843935,
+                    36.19720821779085
+                  ],
+                  [
+                    -121.72087463406582,
+                    36.19702557299795
+                  ],
+                  [
+                    -121.72087170128421,
+                    36.197205840876535
+                  ],
+                  [
+                    -121.72109410843935,
+                    36.19720821779085
+                  ]
+                ],
+                [
+                  [
+                    -121.72087463406582,
+                    36.19702557299795
+                  ],
+                  [
+                    -121.7206551607115,
+                    36.196842927817464
+                  ],
+                  [
+                    -121.72065222744635,
+                    36.19702319568611
+                  ],
+                  [
+                    -121.72087463406582,
+                    36.19702557299795
+                  ]
+                ],
+                [
+                  [
+                    -121.7206551607115,
+                    36.196842927817464
+                  ],
+                  [
+                    -121.72043862209898,
+                    36.19648001438511
+                  ],
+                  [
+                    -121.72043275462768,
+                    36.19684055010811
+                  ],
+                  [
+                    -121.7206551607115,
+                    36.196842927817464
+                  ]
+                ],
+                [
+                  [
+                    -121.72043862209898,
+                    36.19648001438511
+                  ],
+                  [
+                    -121.71999674676357,
+                    36.19629498995072
+                  ],
+                  [
+                    -121.71999381204786,
+                    36.19647525778949
+                  ],
+                  [
+                    -121.72043862209898,
+                    36.19648001438511
+                  ]
+                ],
+                [
+                  [
+                    -121.71955487354467,
+                    36.19610996392071
+                  ],
+                  [
+                    -121.71977434228667,
+                    36.196292611048854
+                  ],
+                  [
+                    -121.71977727748589,
+                    36.196112343220065
+                  ],
+                  [
+                    -121.71955487354467,
+                    36.19610996392071
+                  ]
+                ],
+                [
+                  [
+                    -121.6947883790507,
+                    36.173845944072916
+                  ],
+                  [
+                    -121.69500772834829,
+                    36.17402863484746
+                  ],
+                  [
+                    -121.69501071788565,
+                    36.17384836811016
+                  ],
+                  [
+                    -121.6947883790507,
+                    36.173845944072916
+                  ]
+                ],
+                [
+                  [
+                    -121.68754741729967,
+                    36.167997198068974
+                  ],
+                  [
+                    -121.68776673349103,
+                    36.16817990160688
+                  ],
+                  [
+                    -121.68776973897053,
+                    36.16799963521503
+                  ],
+                  [
+                    -121.68754741729967,
+                    36.167997198068974
+                  ]
+                ],
+                [
+                  [
+                    -121.68511091527999,
+                    36.16742956359369
+                  ],
+                  [
+                    -121.68533022413386,
+                    36.167612271463625
+                  ],
+                  [
+                    -121.68533323513034,
+                    36.16743200523093
+                  ],
+                  [
+                    -121.68511091527999,
+                    36.16742956359369
+                  ]
+                ],
+                [
+                  [
+                    -121.68533925704304,
+                    36.16707147274855
+                  ],
+                  [
+                    -121.68555856546836,
+                    36.16725418020114
+                  ],
+                  [
+                    -121.68556157590253,
+                    36.1670739139411
+                  ],
+                  [
+                    -121.68533925704304,
+                    36.16707147274855
+                  ]
+                ],
+                [
+                  [
+                    -121.68180027287292,
+                    36.16595076150577
+                  ],
+                  [
+                    -121.68201956983684,
+                    36.1661334752415
+                  ],
+                  [
+                    -121.68202258825112,
+                    36.16595320920421
+                  ],
+                  [
+                    -121.68180027287292,
+                    36.16595076150577
+                  ]
+                ],
+                [
+                  [
+                    -121.68068869638434,
+                    36.1659385168241
+                  ],
+                  [
+                    -121.68091403255976,
+                    36.1657607006231
+                  ],
+                  [
+                    -121.68069171782447,
+                    36.165758250877595
+                  ],
+                  [
+                    -121.68068869638434,
+                    36.1659385168241
+                  ]
+                ],
+                [
+                  [
+                    -121.68091403255976,
+                    36.1657607006231
+                  ],
+                  [
+                    -121.68113936771763,
+                    36.16558288397167
+                  ],
+                  [
+                    -121.68091705346428,
+                    36.16558043465486
+                  ],
+                  [
+                    -121.68091403255976,
+                    36.1657607006231
+                  ]
+                ],
+                [
+                  [
+                    -121.67258160157769,
+                    36.158817232740205
+                  ],
+                  [
+                    -121.67236234691569,
+                    36.1586345023758
+                  ],
+                  [
+                    -121.67235930719545,
+                    36.15881476793
+                  ],
+                  [
+                    -121.67258160157769,
+                    36.158817232740205
+                  ]
+                ],
+                [
+                  [
+                    -121.67236234691569,
+                    36.1586345023758
+                  ],
+                  [
+                    -121.67214309327085,
+                    36.15845177162558
+                  ],
+                  [
+                    -121.67214005306903,
+                    36.158632037169276
+                  ],
+                  [
+                    -121.67236234691569,
+                    36.1586345023758
+                  ]
+                ]
+              ]
+            ]
+          },
+          "properties": {
+            "role": "domain",
+            "name": "Terrestrial study window",
+            "source": "Sentinel-2 SCL water exclusions, 1 August and 12 September 2026; 30 m vector simplification. No optical burn-class thresholds used."
+          }
+        }
+      ]
+    },
+    "resolution": 20.0,
+    "min_valid_fraction": 0.5,
+    "channel": "HHHH"
+  },
+  "created_at": "2026-11-01T18:51:46.141746+00:00",
+  "reading_guide": {
+    "version": "1.0",
+    "measurement": "A combined HH/HV scattering-change score from separate pre-event baselines for each radar view, plus thresholded candidate patches.",
+    "colours": "Higher z means more unusual unsigned radar change relative to this selected land window. The score is not a probability. Candidate 0 means the rule was not met, not confirmed unburned; the score can be negative.",
+    "checks": "Check baseline dates and land exclusions, contributing-view count, smoothing and patch threshold. The latest contributing dates can differ by view. Assess terrain/shadow and compare with independent fire evidence.",
+    "cannot": "Scattering change does not establish fire by itself, burn severity, burned vegetation type or ecological recovery. Case-study perimeter agreement does not establish accuracy for another fire.",
+    "method": "P03",
+    "validation": "Source checksums verify input integrity. Replay checks verify reproducibility. Neither establishes independent environmental accuracy for this run."
+  },
+  "layers": [
+    {
+      "id": "view_0_hh_change",
+      "label": "042_D_070_4005_DHDH_P05023 latest HH minus baseline",
+      "unit": "dB",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "valid_pixels": 1130972,
+      "valid_fraction": 0.7973862568380561,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": -3.270798921585083,
+      "max": 3.270798921585083,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "view_0_hh_change.png",
+      "raster": "view_0_hh_change.tif"
+    },
+    {
+      "id": "view_0_hv_change",
+      "label": "042_D_070_4005_DHDH_P05023 latest HV minus baseline",
+      "unit": "dB",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "valid_pixels": 1130972,
+      "valid_fraction": 0.7973862568380561,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": -3.102681875228882,
+      "max": 3.102681875228882,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "view_0_hv_change.png",
+      "raster": "view_0_hv_change.tif"
+    },
+    {
+      "id": "view_1_hh_change",
+      "label": "135_A_020_4005_DHDH_P05023 latest HH minus baseline",
+      "unit": "dB",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "valid_pixels": 1130060,
+      "valid_fraction": 0.7967432557149192,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": -3.310641288757324,
+      "max": 3.310641288757324,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "view_1_hh_change.png",
+      "raster": "view_1_hh_change.tif"
+    },
+    {
+      "id": "view_1_hv_change",
+      "label": "135_A_020_4005_DHDH_P05023 latest HV minus baseline",
+      "unit": "dB",
+      "kind": "diverging",
+      "spatial_scope": "study domain",
+      "valid_pixels": 1130060,
+      "valid_fraction": 0.7967432557149192,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": -3.0384416580200195,
+      "max": 3.0384416580200195,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "view_1_hv_change.png",
+      "raster": "view_1_hv_change.tif"
+    },
+    {
+      "id": "fire_score",
+      "label": "Combined HH/HV surface-change score",
+      "unit": "z",
+      "kind": "continuous",
+      "spatial_scope": "study domain",
+      "valid_pixels": 1130714,
+      "valid_fraction": 0.7972043552045371,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": -1.4459508657455444,
+      "max": 3.921858549118042,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "fire_score.png",
+      "raster": "fire_score.tif"
+    },
+    {
+      "id": "fire_candidate",
+      "label": "Candidate changed patches",
+      "unit": "class",
+      "kind": "binary",
+      "spatial_scope": "study domain",
+      "classes": {
+        "0": "No changed patch candidate",
+        "1": "Changed patch candidate"
+      },
+      "valid_pixels": 1130714,
+      "valid_fraction": 0.7972043552045371,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "fire_candidate.png",
+      "raster": "fire_candidate.tif"
+    },
+    {
+      "id": "change_intensity",
+      "label": "Mean absolute HH/HV change across available views",
+      "unit": "dB",
+      "kind": "continuous",
+      "spatial_scope": "study domain",
+      "valid_pixels": 1131014,
+      "valid_fraction": 0.7974158687318847,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 0.6239816546440125,
+      "max": 4.963641166687012,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "change_intensity.png",
+      "raster": "change_intensity.tif"
+    },
+    {
+      "id": "smoothed_intensity",
+      "label": "Smoothed absolute HH/HV change",
+      "unit": "dB",
+      "kind": "continuous",
+      "spatial_scope": "study domain",
+      "valid_pixels": 1130714,
+      "valid_fraction": 0.7972043552045371,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 1.472755789756775,
+      "max": 3.424682855606079,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "smoothed_intensity.png",
+      "raster": "smoothed_intensity.tif"
+    },
+    {
+      "id": "view_count",
+      "label": "Number of latest valid viewing groups",
+      "unit": "count",
+      "kind": "continuous",
+      "spatial_scope": "study domain",
+      "valid_pixels": 1130714,
+      "valid_fraction": 0.7972043552045371,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 2.0,
+      "max": 3.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "view_count.png",
+      "raster": "view_count.tif"
+    },
+    {
+      "id": "quality_accepted_fraction_0",
+      "label": "accepted fraction \u00b7 2026-06-23",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 1.0,
+      "max": 2.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_accepted_fraction_0.png",
+      "raster": "quality_accepted_fraction_0.tif"
+    },
+    {
+      "id": "quality_missing_fraction_0",
+      "label": "missing fraction \u00b7 2026-06-23",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_missing_fraction_0.png",
+      "raster": "quality_missing_fraction_0.tif"
+    },
+    {
+      "id": "quality_rejected_nonpositive_power_0",
+      "label": "rejected nonpositive power \u00b7 2026-06-23",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_rejected_nonpositive_power_0.png",
+      "raster": "quality_rejected_nonpositive_power_0.tif"
+    },
+    {
+      "id": "quality_rejected_source_mask_0",
+      "label": "rejected source mask \u00b7 2026-06-23",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_rejected_source_mask_0.png",
+      "raster": "quality_rejected_source_mask_0.tif"
+    },
+    {
+      "id": "quality_accepted_fraction_1",
+      "label": "accepted fraction \u00b7 2026-06-29",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 1.0,
+      "max": 2.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_accepted_fraction_1.png",
+      "raster": "quality_accepted_fraction_1.tif"
+    },
+    {
+      "id": "quality_missing_fraction_1",
+      "label": "missing fraction \u00b7 2026-06-29",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_missing_fraction_1.png",
+      "raster": "quality_missing_fraction_1.tif"
+    },
+    {
+      "id": "quality_rejected_nonpositive_power_1",
+      "label": "rejected nonpositive power \u00b7 2026-06-29",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_rejected_nonpositive_power_1.png",
+      "raster": "quality_rejected_nonpositive_power_1.tif"
+    },
+    {
+      "id": "quality_rejected_source_mask_1",
+      "label": "rejected source mask \u00b7 2026-06-29",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_rejected_source_mask_1.png",
+      "raster": "quality_rejected_source_mask_1.tif"
+    },
+    {
+      "id": "quality_accepted_fraction_2",
+      "label": "accepted fraction \u00b7 2026-07-05",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 1.0,
+      "max": 2.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_accepted_fraction_2.png",
+      "raster": "quality_accepted_fraction_2.tif"
+    },
+    {
+      "id": "quality_missing_fraction_2",
+      "label": "missing fraction \u00b7 2026-07-05",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_missing_fraction_2.png",
+      "raster": "quality_missing_fraction_2.tif"
+    },
+    {
+      "id": "quality_rejected_nonpositive_power_2",
+      "label": "rejected nonpositive power \u00b7 2026-07-05",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_rejected_nonpositive_power_2.png",
+      "raster": "quality_rejected_nonpositive_power_2.tif"
+    },
+    {
+      "id": "quality_rejected_source_mask_2",
+      "label": "rejected source mask \u00b7 2026-07-05",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_rejected_source_mask_2.png",
+      "raster": "quality_rejected_source_mask_2.tif"
+    },
+    {
+      "id": "quality_accepted_fraction_3",
+      "label": "accepted fraction \u00b7 2026-07-11",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 1.0,
+      "max": 2.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_accepted_fraction_3.png",
+      "raster": "quality_accepted_fraction_3.tif"
+    },
+    {
+      "id": "quality_missing_fraction_3",
+      "label": "missing fraction \u00b7 2026-07-11",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_missing_fraction_3.png",
+      "raster": "quality_missing_fraction_3.tif"
+    },
+    {
+      "id": "quality_rejected_nonpositive_power_3",
+      "label": "rejected nonpositive power \u00b7 2026-07-11",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_rejected_nonpositive_power_3.png",
+      "raster": "quality_rejected_nonpositive_power_3.tif"
+    },
+    {
+      "id": "quality_rejected_source_mask_3",
+      "label": "rejected source mask \u00b7 2026-07-11",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_rejected_source_mask_3.png",
+      "raster": "quality_rejected_source_mask_3.tif"
+    },
+    {
+      "id": "quality_accepted_fraction_4",
+      "label": "accepted fraction \u00b7 2026-07-17",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 1.0,
+      "max": 2.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_accepted_fraction_4.png",
+      "raster": "quality_accepted_fraction_4.tif"
+    },
+    {
+      "id": "quality_missing_fraction_4",
+      "label": "missing fraction \u00b7 2026-07-17",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_missing_fraction_4.png",
+      "raster": "quality_missing_fraction_4.tif"
+    },
+    {
+      "id": "quality_rejected_nonpositive_power_4",
+      "label": "rejected nonpositive power \u00b7 2026-07-17",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_rejected_nonpositive_power_4.png",
+      "raster": "quality_rejected_nonpositive_power_4.tif"
+    },
+    {
+      "id": "quality_rejected_source_mask_4",
+      "label": "rejected source mask \u00b7 2026-07-17",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_rejected_source_mask_4.png",
+      "raster": "quality_rejected_source_mask_4.tif"
+    },
+    {
+      "id": "quality_accepted_fraction_5",
+      "label": "accepted fraction \u00b7 2026-07-23",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 1.0,
+      "max": 2.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_accepted_fraction_5.png",
+      "raster": "quality_accepted_fraction_5.tif"
+    },
+    {
+      "id": "quality_missing_fraction_5",
+      "label": "missing fraction \u00b7 2026-07-23",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_missing_fraction_5.png",
+      "raster": "quality_missing_fraction_5.tif"
+    },
+    {
+      "id": "quality_rejected_nonpositive_power_5",
+      "label": "rejected nonpositive power \u00b7 2026-07-23",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_rejected_nonpositive_power_5.png",
+      "raster": "quality_rejected_nonpositive_power_5.tif"
+    },
+    {
+      "id": "quality_rejected_source_mask_5",
+      "label": "rejected source mask \u00b7 2026-07-23",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_rejected_source_mask_5.png",
+      "raster": "quality_rejected_source_mask_5.tif"
+    },
+    {
+      "id": "quality_accepted_fraction_6",
+      "label": "accepted fraction \u00b7 2026-09-03",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 1.0,
+      "max": 2.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_accepted_fraction_6.png",
+      "raster": "quality_accepted_fraction_6.tif"
+    },
+    {
+      "id": "quality_missing_fraction_6",
+      "label": "missing fraction \u00b7 2026-09-03",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_missing_fraction_6.png",
+      "raster": "quality_missing_fraction_6.tif"
+    },
+    {
+      "id": "quality_rejected_nonpositive_power_6",
+      "label": "rejected nonpositive power \u00b7 2026-09-03",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_rejected_nonpositive_power_6.png",
+      "raster": "quality_rejected_nonpositive_power_6.tif"
+    },
+    {
+      "id": "quality_rejected_source_mask_6",
+      "label": "rejected source mask \u00b7 2026-09-03",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_rejected_source_mask_6.png",
+      "raster": "quality_rejected_source_mask_6.tif"
+    },
+    {
+      "id": "quality_accepted_fraction_7",
+      "label": "accepted fraction \u00b7 2026-09-09",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 1.0,
+      "max": 2.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_accepted_fraction_7.png",
+      "raster": "quality_accepted_fraction_7.tif"
+    },
+    {
+      "id": "quality_missing_fraction_7",
+      "label": "missing fraction \u00b7 2026-09-09",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_missing_fraction_7.png",
+      "raster": "quality_missing_fraction_7.tif"
+    },
+    {
+      "id": "quality_rejected_nonpositive_power_7",
+      "label": "rejected nonpositive power \u00b7 2026-09-09",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_rejected_nonpositive_power_7.png",
+      "raster": "quality_rejected_nonpositive_power_7.tif"
+    },
+    {
+      "id": "quality_rejected_source_mask_7",
+      "label": "rejected source mask \u00b7 2026-09-09",
+      "unit": "fraction",
+      "kind": "continuous",
+      "spatial_scope": "source quality",
+      "valid_pixels": 1418349,
+      "valid_fraction": 1.0,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 0.0,
+      "max": 1.0,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "quality_rejected_source_mask_7.png",
+      "raster": "quality_rejected_source_mask_7.tif"
+    },
+    {
+      "id": "observation_0",
+      "label": "HH + HV absolute change \u00b7 135_A_020_4005_DHDH_P05023 \u00b7 2026-09-03",
+      "unit": "dB",
+      "kind": "continuous",
+      "frame_index": 0,
+      "start": "2026-09-03T13:17:16Z",
+      "end": "2026-09-03T13:17:51Z",
+      "spatial_scope": "study domain",
+      "valid_pixels": 1130060,
+      "valid_fraction": 0.7967432557149192,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 0.29698240756988525,
+      "max": 5.881137371063232,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "observation_0.png",
+      "raster": "observation_0.tif"
+    },
+    {
+      "id": "observation_1",
+      "label": "HH + HV absolute change \u00b7 042_D_070_4005_DHDH_P05023 \u00b7 2026-09-09",
+      "unit": "dB",
+      "kind": "continuous",
+      "frame_index": 1,
+      "start": "2026-09-09T02:56:38Z",
+      "end": "2026-09-09T02:57:13Z",
+      "spatial_scope": "study domain",
+      "valid_pixels": 1130972,
+      "valid_fraction": 0.7973862568380561,
+      "interpretation": "The score is relative to the selected normalization domain. It detects scattering change, not burn severity, recovery or verified burns. Views can have different latest dates.",
+      "min": 0.298075407743454,
+      "max": 6.1427435874938965,
+      "bounds": [
+        [
+          36.14552805940354,
+          -121.84837887884568
+        ],
+        [
+          36.351005447745685,
+          -121.56395972620432
+        ]
+      ],
+      "image": "observation_1.png",
+      "raster": "observation_1.tif"
+    }
+  ],
+  "grid": {
+    "crs": "EPSG:32610",
+    "resolution_m": 20.0,
+    "shape": [
+      1123,
+      1263
+    ],
+    "bbox": [
+      -121.8484,
+      36.1455,
+      -121.564,
+      36.351
+    ]
+  },
+  "validation_status": "Exploratory; independent scientific accuracy has not been established."
+}
