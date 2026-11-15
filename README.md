@@ -323,7 +323,7 @@ FastAPI serves the local API and static interface. h5py reads bounded geocoded H
 
 Search uses the selected NASA catalog collection, preserving release families. Discovery failures are shown as unknown availability, distinct from successful zero-result searches. The app reads saved originals/subsets first; otherwise it requests remote blocks for the area. Area extraction keeps native science and quality layers—it is not a NASA-generated universal analysis product.
 
-Current limits include 32 inputs per run, bounded native windows and analysis grids, one product per workflow and one trusted user per instance. Global/polar/antimeridian use is constrained by supported coordinate and area rules. Source availability and NASA maintenance are outside the app’s control. [Refinement limits and next validation work](docs/REFINEMENT_0_8.md).
+Current limits include Bounded native windows, one product per workflow and one trusted user per instance.Source availability and NASA maintenance are outside the app’s control.
 
 ## Troubleshooting
 
