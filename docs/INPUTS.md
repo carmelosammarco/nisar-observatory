@@ -158,7 +158,7 @@ The displayed clipping percentage reports finite values outside the limits. End 
 
 ## Mozambique GCOV replay (P01)
 
-The **Mozambique paper’s area** preset selects `[32.90, -24.65, 33.14, -24.43]`, GCOV BETA and comparison date 2026-01-17; it preserves launch-to-today discovery dates. For the documented two-date comparison choose the 2026-01-05 and 2026-01-17 track 114 ascending frame 165 X05010 observations only. Save area subsets, or use the existing exact-window subsets. Flood Memory needs no reference area. With these two dates recovery is unavailable; add later observations to investigate an observed return to dry. See [the comparison record](MOZAMBIQUE_FLOOD_COMPARISON.md).
+The **Mozambique paper’s area** preset selects `[32.90, -24.65, 33.14, -24.43]`, GCOV BETA and comparison date 2026-01-17; it preserves launch-to-today discovery dates. For the documented two-date comparison choose the 2026-01-05 and 2026-01-17 track 114 ascending frame 165 X05010 observations only. Save area subsets, or use the existing exact-window subsets. Flood Memory needs no reference area. With these two dates recovery is unavailable; add later observations to investigate an observed return to dry. See [the comparison record](../Examples/P01_Mozambique/references/MOZAMBIQUE_FLOOD_COMPARISON.md).
 
 
 ## P03 combined HH/HV change · version 0.7.0

@@ -35,7 +35,7 @@ The saved three-source Venezuela subsets have only 979 analysis cells in common,
 
 The multiple-size search identifies smaller patches with 31–34 shared cells and **86–94%** shared coverage. Their worst-view median coherence is **0.478–0.555**, so all remain **review needed**. The largest per-view offset spread between these three candidate choices is approximately **2.15 cm**. This is reference-choice sensitivity, not a displacement accuracy bound or proof of stable terrain. The fourth downloaded source previously failed coherent-component screening and is not silently reintroduced.
 
-See the saved [assessment](validation/p06-overlap/shared-assistant.json), [overlap investigation](P05_OVERLAP_REVIEW.md), and the new end-to-end verification record in `validation/shared-reference/`. These engineering checks do not reproduce an independent geodetic validation of NASA's map.
+See the saved [assessment](validation/p06-overlap/shared-assistant.json), [overlap investigation](../Examples/P05_Venezuela/references/p05_OVERLAP_REVIEW.md), and the new end-to-end verification record in `validation/shared-reference/`. These engineering checks do not reproduce an independent geodetic validation of NASA's map.
 
 ### End-to-end P05 comparison
 

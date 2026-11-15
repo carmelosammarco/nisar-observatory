@@ -10,7 +10,7 @@ Comparable saved maps have linked views and identical colour limits. Numeric com
 
 # Experimental workspace and My tools
 
-Implemented 22 October 2026 · declarative workflow engine 1.1.0 · local, single-user application.
+Declarative workflow engine 1.1.0 · local, single-user application.
 
 Explore Earth opens in an experimental workspace. No guided tool is selected. **New exploration** returns to an empty generic draft. No processing step is added automatically, including when changing product or returning from a guided template to the custom builder. Saved tools and imported recipes retain their recorded steps. Returning through the Explore Earth sidebar keeps an ordinary experimental draft while leaving guided-tool mode. After an example has prepared a workspace, that sidebar action instead starts a clean exploration: no area or reference, no checked files, default settings and no processing steps. Use the tutorial’s **View prepared workspace** button to inspect its recorded setup deliberately. Saved runs, saved recipes and protected inputs remain available. Selecting a geographic preset in experimental mode changes geography, without silently replacing the processing steps with the associated example method.
 
@@ -108,10 +108,10 @@ Shared settings identify the current workflow and its inferred scientific method
 
 Explore Earth presents **Start with the evidence** before **Build a process you can repeat**, keeping data discovery, file selection and download controls ahead of the processing cards for search results, local files and imported examples.
 
-## Refinement release 0.8.0
+## Workflow checks and result records
 
 Execution engine **1.1.0** accepts older 1.0.0 recipe declarations and records the version actually used. **Check workflow** now checks selected metadata and shows exact baseline/later dates, reference requirements, connected-pair warnings and estimated grid memory without reading or downloading satellite arrays. A valid recipe can still be saved before obtaining its inputs. Run applies the same checks and then verifies native quality and usable support.
 
 Smoothing has one contract throughout: normalized Gaussian, reflected edges, at least 30% finite kernel support, and no filling missing central cells. Compatible map operations may repeat after a scientific method and retain their own settings; compound scientific blocks stay unique. Removing optional water tracking skips its actual computation.
 
-New results include a shared interpretation panel and an execution fingerprint distinct from palette choices. GeoTIFF band metadata includes descriptions, units and explicit category labels. Read [the refinement record](REFINEMENT_0_8.md) for changes affecting historical experiments and outstanding independent-validation work.
+New results include a shared interpretation panel and an execution fingerprint distinct from palette choices. GeoTIFF band metadata includes descriptions, units and explicit category labels. See the [verification guide](VALIDATION.md) for the protected workflow replays and why a changed method needs fresh evaluation.

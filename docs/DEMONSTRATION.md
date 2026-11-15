@@ -18,7 +18,7 @@ Open **About → Watch the introduction · 2:53**. The compact player sits besid
 
 The introduction first tours Explore Earth, shared Area & analysis settings, Tools, Examples, Mission library, Runs, Connection and About. It then explains the two-date Mozambique flood case and closes with a final slide. This is an edited presentation of genuine app captures and real results, with synthetic third-person narration, not a continuous live recording.
 
-Active media are in `frontend/assets/media/`: the final MP4, poster JPEG, SRT and transcript. Keep this folder with the app; source releases include it. The optional ToRemove review folder contains the former production workspace and older drafts, with a file-by-file inventory. It is not a dependency of the app or video. The final movie hash is `e6aa7ede24bdaecb0a9f0d407a7988d8c08f3f8fa84ae4367ba99cb62e21fd7f`.
+Active media are in `frontend/assets/media/`: the final MP4, poster JPEG, SRT and transcript. Keep this folder with the app; source releases include it. The final movie hash is `e6aa7ede24bdaecb0a9f0d407a7988d8c08f3f8fa84ae4367ba99cb62e21fd7f`.
 
 NASA SVS [visualization 5661](https://svs.gsfc.nasa.gov/5661/) is the published flood reference. The fresh app analysis reproduced 90.47 km² of new water candidates on 593.92 km² of common usable ground. Different extents and classification meanings allow qualitative comparison only; the map does not measure depth, damage or recovery. Scientific attribution is retained in the images and local media notes.
 

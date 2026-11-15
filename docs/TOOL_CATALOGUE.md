@@ -18,4 +18,4 @@ The removed slope workflow, rainfall controls, Eastern Swiss Alps preset and Por
 Historical exports retain their original tool numbers. Do not import old job directories into a different application version; rerun the original data with the current corresponding tool instead.
 
 
-Shared metadata readiness, strict baseline counts, explicit category labels and exported result interpretation apply across the seven tools. P03 combined mode is version 0.8.0 and clips its analysis domain to the selected geographic rectangle. Read [the release record](REFINEMENT_0_8.md) for reproducibility checks and remaining independent-validation work.
+Shared metadata readiness, strict baseline counts, explicit category labels and exported result interpretation apply across the seven tools. P03 combined mode is version 0.8.0 and clips its analysis domain to the selected geographic rectangle. See the [verification guide](VALIDATION.md) for replay evidence and scientific limits.

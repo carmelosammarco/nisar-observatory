@@ -89,7 +89,7 @@ Native ionospheric subtraction is recommended by the P04 guided setup and record
 
 By default processing revisions remain separate. P04 alone can explicitly join revision numbers in the same release family and geometry; original group names and an algorithm-change warning remain in the result. BETA X revisions are never silently joined with provisional P revisions. Independent regional reference evaluation, if supplied, continues to compare original pair medians in mm, never a cm/year rate against a pair displacement.
 
-The [Mexico City comparison](MEXICO_ORIGINAL_REPLAY.md) uses six downloaded originals and compares against the NASA illustration as a qualitative benchmark. NASA’s image legend uses cm/year; its article also discusses cm/month. Similar patterns are not numerical validation against NASA’s unavailable velocity raster.
+The [Mexico City comparison](../Examples/P04_Mexico_City/references/MEXICO_ORIGINAL_REPLAY.md) uses six downloaded originals and compares against the NASA illustration as a qualitative benchmark. NASA’s image legend uses cm/year; its article also discusses cm/month. Similar patterns are not numerical validation against NASA’s unavailable velocity raster.
 
 P13 additionally fits `intercept + linear term + annual sine + annual cosine` only when at least six reconstructed epochs span a full year and the design is full rank/well conditioned. The annual amplitude and residual describe this phase model; they are not thaw depth or a validated permafrost process. Unmet conditions produce a reason, while pair maps and rate spread remain usable.
 
@@ -124,7 +124,7 @@ Display palettes and ranges are independent of all science calculations. Arbitra
 
 ### Native valid-sample masks · reader 0.3.1
 
-GUNW valid-sample masks are decoded from their documented source attributes before averaging. Packed uint32 words are read through float64 to preserve every bit; the low byte’s reference and secondary decimal subswath digits must both be nonzero. Fill/invalid words and anomaly bits 8–23 are excluded. Water status alone is not a displacement rejection. Bit 24 preserves interpolated-ionosphere provenance. Legitimate zero phase is retained when masks permit it. Native rejection fractions are exported. An unknown delivered mask schema fails explicitly; absent masks carry a warning. Cache version 0.3.1 bypasses old arrays without deleting them. See [the P05 investigation](P05_OVERLAP_REVIEW.md).
+GUNW valid-sample masks are decoded from their documented source attributes before averaging. Packed uint32 words are read through float64 to preserve every bit; the low byte’s reference and secondary decimal subswath digits must both be nonzero. Fill/invalid words and anomaly bits 8–23 are excluded. Water status alone is not a displacement rejection. Bit 24 preserves interpolated-ionosphere provenance. Legitimate zero phase is retained when masks permit it. Native rejection fractions are exported. An unknown delivered mask schema fails explicitly; absent masks carry a warning. Cache version 0.3.1 bypasses old arrays without deleting them. See [the P05 investigation](../Examples/P05_Venezuela/references/p05_OVERLAP_REVIEW.md).
 
 ## Shared reference assistant · application 0.4.4
 
@@ -143,7 +143,7 @@ The prepared Wheeler Marsh rectangle is an extraction window around a published 
 
 P02 algorithm 0.5.0 adds **HH/HV · sigma-zero (paper-inspired)**. Native linear HH and HV power are multiplied by the delivered gamma-to-sigma factor before quality-screened averaging. Both channels use the same valid native support; a cell is a candidate only when **HH < −14 dB AND HV < −23 dB** (editable). Missing required inputs stop this method explicitly; there is no silent single-channel fallback. The previous single-channel gamma-zero calculation remains selectable and older saved setups retain it.
 
-The common domain is finite in both channels on every selected date. Frequency, date maps, patch tracking and zone statistics use this support. The ambiguity layer respects the joint AND rule; threshold sensitivity shifts both thresholds together by ±1/±2 dB and is not a full two-dimensional parameter search. Grid sensitivity averages converted linear powers before reclassification. Optional independent held-out labels evaluate the fixed rule without fitting it. Exported latest HH/HV sigma-zero and joint accepted-support layers make the radiometry inspectable. No Enhanced Lee filter, calibrated tidal-lag model, depth or volume is implemented. Tide association is not classification accuracy. See [the integrated-method comparison](P02_HH_HV_COMPARISON.md) and [the original study record](P02_WHEELER_MARSH.md).
+The common domain is finite in both channels on every selected date. Frequency, date maps, patch tracking and zone statistics use this support. The ambiguity layer respects the joint AND rule; threshold sensitivity shifts both thresholds together by ±1/±2 dB and is not a full two-dimensional parameter search. Grid sensitivity averages converted linear powers before reclassification. Optional independent held-out labels evaluate the fixed rule without fitting it. Exported latest HH/HV sigma-zero and joint accepted-support layers make the radiometry inspectable. No Enhanced Lee filter, calibrated tidal-lag model, depth or volume is implemented. Tide association is not classification accuracy. See [the integrated-method comparison](../Examples/P02_Wheeler_Marsh/references/P02_HH_HV_COMPARISON.md) and [the original study record](../Examples/P02_Wheeler_Marsh/references/P02_WHEELER_MARSH.md).
 
 
 ## P03 combined HH/HV change · version 0.8.0
@@ -176,7 +176,7 @@ All Gaussian smoothing paths use the same reflected-boundary normalized convolut
 
 Fast metadata readiness is shared by guided and editable run routes. It checks dates, viewing groups, baseline availability, reference declaration, pair connectivity/event bracketing and an estimated grid-memory budget. It never substitutes for native channel, quality, common-pixel or viewing-geometry checks. New exports retain readiness, a result interpretation passport, explicit class semantics and a scientific execution fingerprint separate from display settings.
 
-Cache identity includes the complete CRS/affine grid and source generation, not just dimensions and cell spacing. GeoTIFFs include measurement descriptions, units, available classes and reference/record provenance. [Detailed changes and outstanding scientific validation](REFINEMENT_0_8.md).
+Cache identity includes the complete CRS/affine grid and source generation, not just dimensions and cell spacing. GeoTIFFs include measurement descriptions, units, available classes and reference/record provenance. [Current verification and scientific limits](VALIDATION.md).
 
 
 ## Explicit regional measurement comparisons · 0.8.8
@@ -197,10 +197,10 @@ Both glacier components use the same study population for their spatial filters.
 The same domain rule now applies to elementary ordered workflows, which previously retained reference geometry but did not apply a supplied domain. Other context roles remain annotations unless a relevant scientific block consumes them. Result panels explain geometry counts versus actual usable study coverage; COG tags and the execution fingerprint record the spatial contract. Existing saved files are never rewritten.
 
 
-## Native GOFF viewing-geometry windows · 0.8.12
+## Native GOFF viewing-geometry windows
 
 Horizontal processing keeps the existing ENU-vector convention, constrained zero-vertical inversion, height assumption, conditioning and rate units. The geometry reader now selects the same interpolation vertices from the source before loading cube data: two height planes and the spatial bracket of actual transformed analysis-cell centres. It preserves descending/nonuniform axes, exact-grid boundaries and missing-neighbour behaviour; no outside-coverage extrapolation is introduced.
 
 A source-axis metadata bound and HDF5 chunk check precede cube reads. Retained float64 geometry is limited to 64 MiB and target interpolation to batches of 65,536 points; output maps and native-library workspaces are additional. Geometry metadata reports source/read shapes, selected indices, height and resource scope. Adapter `goff-geometry-2` receives its own horizontal-cache identity; older cache files, originals, protected subsets and saved results are preserved. Native subset files keep their delivered height range on disk; the two-plane selection applies to a processing read, not destructive editing of the subset.
 
-The frozen full-cube oracle matches the new output across axis directions, missing neighbours and height boundaries. All five real Samudra Tapu geometry fields and its 21 result maps remain exactly equal. [Evidence](validation/geometry-windowing.json).
+The [protected Samudra Tapu replay](validation/workflows/seven-examples/P07_Samudra_Tapu.json) records the numerical checks for the bundled case.

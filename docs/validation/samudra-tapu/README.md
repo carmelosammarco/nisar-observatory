@@ -12,7 +12,7 @@ The catalog outage is resolved for the BETA search used here. Three January-endi
 
 The [IIRS science article by Malviya, Garg & Thakur](https://science.iirs.gov.in/nisar-for-monitoring-glacier-motion/) ([DOI](https://doi.org/10.65456/iirs.2026.10.3.1)) presents Samudra Tapu NISAR and ITS_LIVE maps for January 2026. Its reported ranges are 5.7–139.19 m/year for NISAR and 0.7–132.53 m/year for ITS_LIVE. The ITS_LIVE comparison is a multiyear reference, not a same-date ground survey. The article does not give exact NISAR pair identifiers, radar band, correlation layer, glacier boundary, velocity-conversion equation or the ITS_LIVE map’s exact temporal support. Its Himalayan case is described as requiring no outlier correction.
 
-We verified the complete official article and its figure, rather than treating its ranges as tuning targets. The unchanged [source figure](sources/iirs-samudra-bara-shigri.png) also contains Bara Shigri; our comparison displays only its Samudra Tapu row. The original article’s velocity computation cannot be reconstructed unambiguously from its published description.
+We verified the complete official article and its figure, rather than treating its ranges as tuning targets. The unchanged [source figure](../../../Examples/P07_Samudra_Tapu/figures/iirs-published-glacier-maps.png) also contains Bara Shigri; our comparison displays only its Samudra Tapu row. The original article’s velocity computation cannot be reconstructed unambiguously from its published description.
 
 Our measurements are signed slant-range/along-track offset rates and their radar-plane norm. They are **not automatically horizontal glacier speed**. A common m/year label does not make these quantities equivalent. No percentage agreement, velocity accuracy, RMSE or correlation against the article is claimed.
 
@@ -34,7 +34,7 @@ The actual file metadata identifies LSAR and a center frequency of 1.239 GHz: th
 
 ## 3. Independent glacier boundary
 
-The GLIMS WFS supplied **RGI60-14.15613**, historical area 80.006 km² and outline date field 2 August 2002. Identification is independently corroborated by [Bisset et al. (2020), table of glaciers](https://www.mdpi.com/2072-4292/12/10/1563). The [downloaded regional outlines](sources/rgi-bbox.geojson), [selected outline](sources/samudra-tapu-rgi6.geojson) and [domain version for app import](sources/study-domain.geojson) are retained.
+The GLIMS WFS supplied **RGI60-14.15613**, historical area 80.006 km² and outline date field 2 August 2002. Identification is independently corroborated by [Bisset et al. (2020), table of glaciers](https://www.mdpi.com/2072-4292/12/10/1563). The [downloaded regional outlines](sources/rgi-bbox.geojson), [selected outline](sources/samudra-tapu-rgi6.geojson) and [domain version for app import](../../../Examples/P07_Samudra_Tapu/references/study-domain.geojson) are retained.
 
 The original WFS polygon has a self-intersection at 77.4062° E, 32.4254° N. The app-import domain was repaired using Shapely make_valid, retaining polygon components; the source geometry and [repair receipt](sources/geometry-repair.json) are preserved. Both versions rasterize to exactly the same 12,502 cells on this grid (zero changed cells).
 

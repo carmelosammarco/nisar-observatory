@@ -4,6 +4,9 @@ import matplotlib;matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from PIL import Image
 R=Path(__file__).resolve().parent;O=R/'results';F=R/'figures'
+def nasa_frame(number):
+ if number==33:return R.parents[2]/'Examples/P06_Krasheninnikov/figures/nasa-2026-08-17.jpg'
+ return R/f'sources/reference-frames/frame-{number:03}.jpg'
 raw=[]
 for k in range(5):
  with rasterio.open(O/f'evolving/observation_{k}.tif') as ds:raw.append(ds.read(1))
@@ -11,7 +14,7 @@ lo,hi=map(float,np.percentile(np.concatenate([a[np.isfinite(a)] for a in raw]),[
 dates=['18 Jun','30 Jun','12 Jul','24 Jul','17 Aug'];frames=[29,30,31,32,33]
 fig,axes=plt.subplots(2,5,figsize=(20,8),layout='constrained')
 for k,(date,n) in enumerate(zip(dates,frames)):
- axes[0,k].imshow(Image.open(R/f'sources/reference-frames/frame-{n:03}.jpg'));axes[0,k].axis('off');axes[0,k].set_title(f'NASA · {date} 2026',fontsize=12)
+ axes[0,k].imshow(Image.open(nasa_frame(n)));axes[0,k].axis('off');axes[0,k].set_title(f'NASA · {date} 2026',fontsize=12)
  with rasterio.open(O/f'evolving/observation_{k}.tif') as ds:
   a=ds.read(1);extent=[ds.bounds.left/1000,ds.bounds.right/1000,ds.bounds.bottom/1000,ds.bounds.top/1000]
  im=axes[1,k].imshow(a,cmap='inferno',vmin=lo,vmax=hi,extent=extent,interpolation='nearest');axes[1,k].set_aspect('equal');axes[1,k].tick_params(labelsize=8);axes[1,k].set_title(f'Our GCOV HH · {date}',fontsize=12);axes[1,k].set_xlabel('UTM easting · km')
@@ -32,7 +35,7 @@ from rasterio.windows import from_bounds
 zoom=[160.235,54.575,160.365,54.660]
 fig,axes=plt.subplots(2,3,figsize=(15,10),layout='constrained')
 for ax,n,date in [(axes[0,0],29,'18 June'),(axes[0,1],33,'17 August')]:
- ax.imshow(Image.open(R/f'sources/reference-frames/frame-{n:03}.jpg'));ax.axis('off');ax.set_title('NASA · '+date+' · oblique view')
+ ax.imshow(Image.open(nasa_frame(n)));ax.axis('off');ax.set_title('NASA · '+date+' · oblique view')
 axes[0,2].axis('off');axes[0,2].text(.02,.9,'What can be compared?',fontsize=17,weight='bold');axes[0,2].text(.02,.79,'Crater geometry and bright flow structures.\n\nWhat cannot be claimed?\nPixelwise agreement, lava-area accuracy,\nor identical processing/viewing geometry.\n\nBelow: north-up detail window;\nnot an exact NASA camera footprint.\nBrightness is not temperature.\nA June baseline already includes old lava.',fontsize=13,va='top',linespacing=1.5)
 for ax,key,title in zip(axes[1],['observation_0','observation_4','latest_departure'],['Our HH · 18 June','Our HH · 17 August','Our smoothed change · June → August']):
  with rasterio.open(O/f'evolving/{key}.tif') as ds:

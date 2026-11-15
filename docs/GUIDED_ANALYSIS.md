@@ -6,7 +6,7 @@ Every result has a concise measured summary, controlled-experiment entry point, 
 
 ---
 
-# Shared analysis preparation and reproducible examples · 0.8.0
+# Shared analysis preparation and reproducible examples
 
 The main path is **Prepare data → Choose reference → Explore results**. Tools without a reference use **Review inputs** for the middle step. The seven scientific methods remain separate; preparation and reusable controls are shared.
 
@@ -55,11 +55,7 @@ The result's opening display recipe, when supplied, is separate from scientific 
 
 ## Verification and scope
 
-Automated checks cover the combined P05 coverage/reference action, all three reference tools, non-reference processing, missing event inputs, explicit source exclusions, checked rectangles/polygons, stale geometry and scoped saved display settings. The normal service replay of the original six Mexico files is documented in [the comparison report](MEXICO_ORIGINAL_REPLAY.md). The initial 0.4.7 checks used automated control tests, local API runs and inspected exported figures. Version 0.4.8 adds [interactive Chrome acceptance](validation/browser-workflow/README.md) for P04 and P05, including data selection, reference checks, source exclusions, result viewing, playback, saved scales and reopening after a service restart.
-
-Version 0.4.7 verification: **282 Python tests and 126 frontend tests passed**. The live P05 controller replay started with one selected file, chose four coverage sources, required explicit exclusion of one unusable source, and completed using the remaining three local subsets. Repeating wider selection preserved that explicit exclusion. The six-original P04 replay completed with the original reference and saved Rainbow range. The running service and frontend/library assets responded successfully. Current verification records are available in [the verification summary](VALIDATION.md) and [protected Examples](../Examples/README.md).
-
-Version 0.4.8: **283 Python tests and 131 frontend tests passed**, plus real-data browser runs. The P04 unit switch updates the visible range fields together with the map. Candidate preview labels are removed before result viewing. The saved-result sidebar clearly distinguishes preparation for a new analysis from the result currently displayed.
+The [verification guide](VALIDATION.md#browser-and-release-verification) links the seven protected replays and checks for tool preparation, editable workflows, saved displays and reopening results. The [Mexico City comparison](../Examples/P04_Mexico_City/references/MEXICO_ORIGINAL_REPLAY.md) documents the six-source replay and its reference, while the [Venezuela comparison](../Examples/P05_Venezuela/references/p05_OVERLAP_REVIEW.md) explains coverage and shared-reference checks.
 
 The dedicated **Area & analysis settings** page always shows shared controls and filters product controls to the selected tool. Earthquake context appears only for P05. Optional correction, sensitivity and diagnostic controls are grouped under **Advanced options**, together with optional spatial context and independent reference data. Changing tools preserves values and does not modify saved results.
 
@@ -118,4 +114,4 @@ The main result becomes estimated horizontal speed. Time exploration shows each 
 
 ## Current shared checks
 
-Guided and editable runs apply metadata readiness before reading science: insufficient baselines, invalid pair dates, disconnected networks, missing references and event-bracketing failures are explained early. The editable **Check workflow** panel also lists exact baseline/later dates and estimated grid memory. Native quality and actual reference support are still checked from measurements. New results start with **How to read this run**, and example cards distinguish comparison evidence from input checksums. See [the refinement record](REFINEMENT_0_8.md).
+Guided and editable runs apply metadata readiness before reading science: insufficient baselines, invalid pair dates, disconnected networks, missing references and event-bracketing failures are explained early. The editable **Check workflow** panel also lists exact baseline/later dates and estimated grid memory. Native quality and actual reference support are still checked from measurements. New results start with **How to read this run**, and example cards distinguish comparison evidence from input checksums. See the [verification guide](VALIDATION.md).

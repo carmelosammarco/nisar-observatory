@@ -9,7 +9,9 @@ from backend.processors import process
 from backend.exports import export_result
 R=Path(__file__).resolve().parent;O=R/'results'
 def main():
- receipt=json.loads((O/'download-receipt.json').read_text());assert receipt['status']=='completed' and len(receipt['saved_areas'])==5
+ receipt_path=O/'download-receipt.json'
+ if not receipt_path.is_file():receipt_path=ROOT/'Examples/P06_Krasheninnikov/download-receipt.json'
+ receipt=json.loads(receipt_path.read_text());assert receipt['status']=='completed' and len(receipt['saved_areas'])==5
  bbox=receipt['request']['bbox'];items=receipt['saved_areas'];records=[]
  for i in items:
   p=ROOT/'data/subsets'/i['subset_path'];sha=hashlib.sha256(p.read_bytes()).hexdigest();assert sha==i['content_sha256']

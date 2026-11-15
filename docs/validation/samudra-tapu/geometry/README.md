@@ -4,7 +4,7 @@ Reviewed and rerun on 21 October 2026 · P07 algorithm 0.4.2 · reader 0.3.3
 
 The new calculation makes the quantity more physically comparable with the published glacier-speed maps. On the **1–13 January 2026 ascending pair**, estimated horizontal speed spans **0.84–144.94 annualized m/year**, with median **21.79 m/year**, over **6,703 cells (42.90 km²; 53.62% of the historical glacier outline)**. The previous radar-plane norm on those same cells reached 101.35 m/year. The high-speed trunk is more prominent after the geometry conversion and resembles the location of the fast trunk in the published figure.
 
-This is a conditional estimate, not an exact reproduction or an independent accuracy validation. Similar maxima do not establish agreement at the same pixels. **Samudra Tapu was accepted as a protected Example on 21 October 2026.** Open the [complete tutorial](../../../../Examples/P07_Samudra_Tapu/README.md) for the exact pair, historical domain and display recipe. The six earlier examples are unchanged.
+This is a conditional estimate, not an exact reproduction or an independent accuracy validation. Similar maxima do not establish agreement at the same pixels. **Samudra Tapu is included as a protected Example.** Open the [complete tutorial](../../../../Examples/P07_Samudra_Tapu/README.md) for the exact pair, historical domain and display recipe. The six earlier examples are unchanged.
 
 ![Published maps, previous radar quantity, new horizontal estimate and vertical-motion sensitivity](samudra-horizontal-comparison.png)
 
@@ -30,7 +30,7 @@ The figure uses **Rainbow and 0–140 m/year** for both app motion maps. Values 
 - Horizontal solution at a **constant 5,000 m ellipsoidal geometry height**; no extrapolation. Maximum condition number 10. Vertical sensitivity scenario 20 m/year.
 - Domain: repaired historical RGI6 outline RGI60-14.15613, dated 2 August 2002. It is not a surveyed January 2026 margin. The earlier repair preserved the 12,502-cell raster domain; see the [repair receipt](../sources/geometry-repair.json).
 
-The complete app request is [january-request.json](january-request.json). Select the Samudra preset, use saved data, keep only the January 1–13 ascending pair, and supply [study-domain.geojson](../sources/study-domain.geojson) under Advanced options → spatial context to reproduce the masked comparison. The preset supplies the geometry mode/height, layer, rate unit and filtering settings; it does not silently import this historical outline or reduce discovery dates.
+The complete app request is [january-request.json](january-request.json). Select the Samudra preset, use saved data, keep only the January 1–13 ascending pair, and supply [study-domain.geojson](../../../../Examples/P07_Samudra_Tapu/references/study-domain.geojson) under Advanced options → spatial context to reproduce the masked comparison. The preset supplies the geometry mode/height, layer, rate unit and filtering settings; it does not silently import this historical outline or reduce discovery dates.
 
 ## Geometry calculation and signs
 
@@ -88,7 +88,7 @@ Each row is a separate single-pair calculation, with its own valid support. “p
 | january-layer2-5000 | 9373 | 74.97% | 23.36 | 127.37 | 1811.79 |
 | january-layer3-5000-filtered | 6088 | 48.70% | 20.85 | 58.17 | 82.37 |
 
-Full values, conditioning, vector components, height differences and source geometry descriptions are in [sensitivity.json](results/sensitivity.json). [evaluate.py](evaluate.py) reruns all 18 experiments offline with the saved subsets. [make_comparison.py](make_comparison.py) regenerates the figure. The publication image is preserved separately from all app output.
+Full values, conditioning, vector components, height differences and source geometry descriptions are in [sensitivity.json](../../../../Examples/P07_Samudra_Tapu/references/sensitivity.json). [evaluate.py](evaluate.py) reruns all 18 experiments offline with the saved subsets. [make_comparison.py](make_comparison.py) regenerates the figure. The publication image is preserved separately from all app output.
 
 ## Files and download provenance
 

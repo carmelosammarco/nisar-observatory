@@ -10,10 +10,10 @@ from matplotlib.colors import LinearSegmentedColormap
 from PIL import Image
 from shapely.geometry import shape
 HERE=Path(__file__).parent;ROOT=HERE.parents[3];bbox=[77.36,32.39,77.57,32.56]
-geo=shape(json.loads((HERE.parent/'sources/study-domain.geojson').read_text())['features'][0]['geometry'])
+geo=shape(json.loads((ROOT/'Examples/P07_Samudra_Tapu/references/study-domain.geojson').read_text())['features'][0]['geometry'])
 cmap=LinearSegmentedColormap.from_list('App Rainbow',np.array(json.loads((ROOT/'backend/mexico_palette.json').read_text()))/255);cmap.set_bad('#e2e8e1')
 fig=plt.figure(figsize=(16,11),facecolor='#f7f8f1');gs=fig.add_gridspec(2,3,height_ratios=[.8,1.2],hspace=.32,wspace=.24)
-ax=fig.add_subplot(gs[0,:2]);img=np.array(Image.open(HERE.parent/'sources/iirs-samudra-bara-shigri.png'));ax.imshow(img);ax.set_ylim(229,0);ax.axis('off');ax.set_title('Published Samudra Tapu maps · NISAR (left) and ITS_LIVE (right)',loc='left',fontsize=12,fontweight='bold')
+ax=fig.add_subplot(gs[0,:2]);img=np.array(Image.open(ROOT/'Examples/P07_Samudra_Tapu/figures/iirs-published-glacier-maps.png'));ax.imshow(img);ax.set_ylim(229,0);ax.axis('off');ax.set_title('Published Samudra Tapu maps · NISAR (left) and ITS_LIVE (right)',loc='left',fontsize=12,fontweight='bold')
 ax=fig.add_subplot(gs[0,2]);ax.axis('off');ax.text(0,1,'A closer quantity,\nwith explicit assumptions',va='top',fontsize=16,fontweight='bold',color='#163f3d');ax.text(0,.71,'Publication NISAR: 5.7–139.19 m/year\nPublication ITS_LIVE: 0.7–132.53 m/year\n\nOur January 1–13 estimate:\n0.84–144.94 m/year · median 21.79\n53.62% of historical outline mapped\n\nZero vertical velocity; 5,000 m geometry height.\nNo spatial filter or stable-ground subtraction.\nExact published pair and conversion unknown.',va='top',fontsize=10.5,linespacing=1.45,color='#355650')
 for col,(name,title,label,limits,colour) in enumerate([
  ('radar_magnitude','Earlier quantity · radar-plane magnitude','Annualized m/year · not horizontal speed',(0,140),cmap),

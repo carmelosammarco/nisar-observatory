@@ -5,7 +5,7 @@ text=f'''## Completed findings · 20 October 2026
 
 **The real-data workflow works. The result supports a qualitative image comparison, not a validated lava-boundary reproduction.** All five subset hashes match their manifests, product version is 1.0.11, native samples are 10 m, and no nonzero input-data-exception pixels were found in the saved windows. The delivered sample masks still screen the few invalid cells; valid samples do not establish environmental attribution. Stored inputs total **{v['bytes']/1024**2:.2f} MiB**. The evaluation and app run read **zero remote science bytes**.
 
-![NASA and our acquired HH maps, focused on the craters and eastern flows](figures/crater-flow-detail.png)
+![NASA and our acquired HH maps, focused on the craters and eastern flows](../../../Examples/P06_Krasheninnikov/references/figures/crater-flow-detail.png)
 
 The double-cone/crater setting, older bright northwest feature and bright finger-like eastern field are recognizable in our acquired HH images. Most of this field is already bright on 18 June. June-to-August departures do not trace that entire existing field: strong increases also appear on broad surrounding slopes and southern/western terrain. That broader pattern is inconsistent with treating the thresholded result as a lava-only map. Snowmelt, wetness and terrain scattering are plausible confounders, but their individual contributions have not been independently measured here. The 3D camera, radiometric/display recipe and exact original source geometries used by NASA cannot be certified from its public video.
 
@@ -28,7 +28,7 @@ The roughly twofold candidate-area difference between 2 and 4 dB shows substanti
 
 **Previous-method resource limit:** its complete object-tracking step exceeded the existing 1,000-object safety cap on these unsmoothed dates. The application cap was not raised. The comparison raster uses the exact previous numerical classification formula after the same geographic clipping; it is explicitly labelled a formula-only comparison, not a successfully completed legacy tracking run. The new method completes normally with 690 objects.
 
-![Same-grid method comparison](figures/processing-comparison.png)
+![Same-grid method comparison](../../../Examples/P06_Krasheninnikov/references/figures/processing-comparison.png)
 
 ## What changed in P06 and the shared experience
 
@@ -43,7 +43,7 @@ The roughly twofold candidate-area difference between 2 and 4 dB shows substanti
 
 '''
 text+=f"Browser-created run **{a['job_id'][:8]}** completed with all five local files; its metrics exactly equal the local study. All **{a['layers_verified']} registered map previews** and their georeferenced float32 rasters were checked. Standalone main-map and first-change PNGs contain legends and provenance; the first-change legend shows acquisition dates. A downloaded numeric GeoTIFF matches its saved file byte for byte. Reopening from Runs restores the signed-change map, Diverging palette and ±8 dB limits. Date exploration resets to a shared brightness scale, approximately −17.72 to −2.36 dB.\n\n"
-text+='''![Verified browser result](figures/browser-p06-result.png)
+text+='''![Verified browser result](../../../Examples/P06_Krasheninnikov/references/figures/browser-p06-result.png)
 
 [App verification receipt](results/app-verification.json). Engineering regression: **306 Python tests and 165 browser-logic tests passed**. These checks establish software behavior, not lava-classification accuracy. The API checks cover actual local data; the browser walkthrough covers preset selection, five-file selection, settings, preparation, execution, reopening and brightness-date exploration. Existing five protected Examples remain unchanged.
 

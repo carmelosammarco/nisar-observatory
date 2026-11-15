@@ -7,7 +7,7 @@ from backend.science import load_observation,target_grid,source_file
 from backend.processors import process
 from backend.exports import export_result
 HERE=Path(__file__).parent;BBOX=[77.36,32.39,77.57,32.56]
-context=json.loads((HERE.parent/'sources/study-domain.geojson').read_text())
+context=json.loads((ROOT/'Examples/P07_Samudra_Tapu/references/study-domain.geojson').read_text())
 grid=target_grid(BBOX,80)
 items=[json.loads(p.read_text()) for p in (ROOT/'data/subsets').glob('GOFF_*/*.json') if p.name.startswith('subset-')]
 items=[i for i in items if i.get('viewing_geometry',{}).get('available') and i['subset_bbox']==BBOX]
